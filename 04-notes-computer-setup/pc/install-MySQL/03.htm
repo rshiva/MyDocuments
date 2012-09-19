@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<title>MySQL安装教程图解_多特软件教程</title>
+<meta http-equiv="expires" content="Sun, 11 Jul 2010 12:55:10 GMT">
+<meta name="keywords" content=" 软件教程,教程下载,photoshop教程,office教程">
+<meta name="description" content="下面的是MySQL安装的图解，用的可执行文件安装的，详细说明了一下！">
+<link rel="stylesheet" type="text/css" href="03_files/n_m_head.css">
+<link href="03_files/n_head.css" type="text/css" rel="stylesheet"><link href="03_files/n_techList0603.css" type="text/css" rel="stylesheet">
+
+<!-- base -->
+<script language="javascript" type="text/javascript" src="03_files/v_search.js"></script>
+<script language="javascript" type="text/javascript" src="03_files/checkSearchForm.js"></script>
+<script language="javascript" type="text/javascript" src="03_files/clickDownAjax3.js"></script><script id="clickCount"></script><script id="clickCountxs"></script>
+<script language="javascript" type="text/javascript" src="03_files/head.js"></script>
+</head><body>
+<div class="page">
+  <div class="p_body">
+      <div class="test_head">
+          <div class="top_n"><span id="userLogin_div"><a href="http://login.duote.com/login.php">登录</a> | <a href="http://login.duote.com/reg.php">注册</a></span>国内最安全的软件下载站_五大杀毒软件检测</div>
+   <div class="h_top">
+               <div id="logo"><a href="http://www.duote.com/index.html" onclick="tj('h1','')" target="_self"><img src="03_files/duoter_logo.gif" alt="多特软件"></a></div>
+<!--search star--> 
+               <div class="search_form">
+                 <form name="Search_form" action="/searchTech.php" method="get" onsubmit="return search_ckdt();">
+					<input value="tech" name="searchType" id="searchTypedt" type="hidden">
+					   <input class="in_search" autocomplete="off" name="so" id="so" onfocus="checkss(this,1)" onblur="checkss(this,2)" onclick="checkss(this,0);" value="QQ" onkeypress="if(event.keyCode==13) document.getElementById('p_submit').click();" type="text">
+                    <div class="searchtool">
+                        <div class="nowSearch" id="headSlected" onclick="if(document.getElementById('headSel').style.display=='none'){document.getElementById('headSel').style.display='block';}else {document.getElementById('headSel').style.display='none';};return false;" onmouseout="drop_mouseout('head');">全部教程</div>
+                <div class="btnSel"><a href="#" onclick="if(document.getElementById('headSel').style.display=='none'){document.getElementById('headSel').style.display='block';}else {document.getElementById('headSel').style.display='none';};return false;" onmouseout="drop_mouseout('head');"></a></div>
+                <div style="clear: both;"></div>
+				<ul class="selOption" id="headSel" style="display: none;">
+									         <li><a href="#" id="_searchTypetech" onclick="return search_show('head','tech',this)" onmouseover="drop_mouseover('head');" onmouseout="drop_mouseout('head');">软件教程</a></li>
+				     				         <li><a href="#" id="_searchType" onclick="return search_show('head','',this)" onmouseover="drop_mouseover('head');" onmouseout="drop_mouseout('head');">全部软件</a></li>
+				     				         <li><a href="#" id="_searchTypeask" onclick="return search_show('head','ask',this)" onmouseover="drop_mouseover('head');" onmouseout="drop_mouseout('head');">使用疑问</a></li>
+				     					
+				</ul>
+              </div>
+			   <input class="searchbtn" id="p_submit" onclick="tj('h3','');recordSoVal();" value="搜 索" type="submit">
+               <span id="searcht2"><a href="http://www.duote.com/v_search.html" onclick="tj('h4','')" target="_blank">高级搜索</a></span>
+			<input disabled="disabled" value="" name="aq" type="hidden"><input disabled="disabled" value="" name="oq" type="hidden"><input disabled="disabled" value="" id="softin" name="softin" type="hidden"></form>
+            </div>
+            <!--search end-->
+            <div id="h_gg"><a href="http://bbs.duote.com/viewthread.php?tid=283697&amp;extra=page%3D1"><img src="03_files/duote_01.gif" alt="放心使用"></a></div>
+            <div style="clear: both;"></div>
+        </div>
+ <!--h_top end-->
+        <div class="nav">
+             <ul>
+                <li class="no_active"><a href="http://www.duote.com/index.html" onclick="tj('h5','')" target="_self">多特首页</a></li>
+				<li class="nav2" id="selnav"><a href="http://www.duote.com/sort.html" onclick="tj('h6','')" target="_self">软件分类
+				<!--[if gte IE 7]><!--></a><!--<![endif]-->
+					<!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul id="nav_d">
+						<!--[if lte IE 6]><iframe src="/images/bg.html" style="position:absolute;z-index:-1; width:100%; height:278px;top:0;left:0;"   frameborder="0" scrolling="no"></iframe><![endif]-->
+						<li><a href="http://www.duote.com/win7/" target="_self" onclick="tj('h234','')">WIN7专区</a></li> 
+					  
+					  			<li><a href="http://www.duote.com/sort/6_0_date_0_1_.html" target="_self" onclick="tj('h220','')">系统程序</a></li>
+										<li><a href="http://www.duote.com/sort/5_0_date_0_1_.html" target="_self" onclick="tj('h221','')">网络工具</a></li>
+										<li><a href="http://www.duote.com/sort/2_0_date_0_1_.html" target="_self" onclick="tj('h222','')">应用软件</a></li>
+										<li><a href="http://www.duote.com/sort/3_0_date_0_1_.html" target="_self" onclick="tj('h223','')">图文处理</a></li>
+										<li><a href="http://www.duote.com/sort/4_0_date_0_1_.html" target="_self" onclick="tj('h224','')">媒体工具</a></li>
+										<li><a href="http://www.duote.com/sort/1_0_date_0_1_.html" target="_self" onclick="tj('h225','')">联络聊天</a></li>
+										<li><a href="http://www.duote.com/sort/7_0_date_0_1_.html" target="_self" onclick="tj('h226','')">病毒安全</a></li>
+										<li><a href="http://www.duote.com/sort/9_0_date_0_1_.html" target="_self" onclick="tj('h227','')">教育教学</a></li>
+										<li><a href="http://www.duote.com/sort/10_0_pic_0_1_.html" target="_self" onclick="tj('h228','')">游戏娱乐</a></li>
+										<li><a href="http://www.duote.com/sort/8_0_date_0_1_.html" target="_self" onclick="tj('h229','')">管理软件</a></li>
+										<li><a href="http://www.duote.com/sort/11_0_date_0_1_.html" class="cYellow1" target="_self" onclick="tj('h230','')">编程开发</a></li>
+										<li><a href="http://www.duote.com/sort/12_0_date_0_1_.html" target="_self" onclick="tj('h231','')">手机软件</a></li>
+										<li><a href="http://www.duote.com/sort/13_0_date_0_1_.html" target="_self" onclick="tj('h232','')">硬件驱动</a></li>
+													<li><a href="http://www.duote.com/green/0_4_date_1.html" target="_self" onclick="tj('h233','')">绿色软件</a></li><li>
+				 </li></ul>
+				 <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				</li>
+				<li class="nav2"><a href="http://www.duote.com/bang/top10.html" onclick="tj('h7','')" target="_self">排行榜</a></li>
+				<li class="nav2"><a href="http://www.duote.com/update/" target="_self" onclick="tj('h8','')">最新更新</a></li>
+				<li class="nav2"><a href="http://www.duote.com/game.html" target="_self" onclick="tj('h9','')">游戏下载</a></li>
+				<li class="nav2"><a href="http://news.duote.com/" onclick="tj('h10','')" target="_self">软件资讯</a></li>
+				<li class="nav2"><a href="http://zhidao.duote.com/" onclick="tj('h11','')" target="_self">问 答</a></li>
+				<li class="nav_active"><a href="http://www.duote.com/tech/" target="_self" onclick="tj('h12','')">软件教程</a></li>
+				<li class="nav2"><a href="http://bbs.duote.com/" onclick="tj('h13','')">软件论坛</a></li>
+				<li class="nav3"><a href="http://www.duote.com/soft/12261.html" onclick="tj('h14','')">装机光盘</a></li>
+             </ul>
+
+        </div>
+<script src="03_files/keyword.js"></script>
+<script src="03_files/ac.js"></script>
+<script src="03_files/p_search.js"></script>
+
+</div>
+</div>
+</div>
+<script>
+InstallAC(document.Search_form,document.Search_form.so,"","search","zh-CN","","","");
+</script><div class="mAutoComplete" style="border: 1px solid black; z-index: 200; padding-top: 0pt; padding-bottom: 0pt; visibility: hidden; position: absolute; background-color: white; left: 685px; top: 92px; width: 341px; font-size: 13px; font-family: arial,sans-serif; word-wrap: break-word;" id="completeDiv"></div><iframe style="border-width: 0pt; z-index: 1; position: absolute; display: block; visibility: hidden; left: 685px; top: 92px; width: 341px;" id="completeIFrame"></iframe><div style="visibility: hidden; position: absolute; width: 0pt; height: 0pt;"><iframe id="completionFrame" name="completionFrame"></iframe></div>
+<div class="page">
+<div class="p_body"><style>
+.numpage,.numpage li{float:left;}
+.numpage li{BORDER:0px solid black;MARGIN:0px 2px;PADDING:0px 5px;}
+.numpage a:link,.numpage a:visited{color:#00F; text-decoration:underline;}
+.numpage a:hover{color:#3aa; text-decoration:none;}
+li.active a:link,.active a:visited{color:black;}
+.bigFont{font-size:18px;}
+.midFont{font-size:14px;}
+.smallFont{font-size:12px;}
+p{margin:0px;}
+</style>
+<script>
+function setFontSize(cn)
+{
+	SetCookie( 'font', cn , 86400*30 );
+	document.getElementById('contentBody').className=cn;
+}
+function SetCookie( sName, sValue , expTime )
+{
+date = new Date();
+var currT = date.getTime();
+var nD = new Date(currT+expTime);
+document.cookie = sName + "=" + escape(sValue) + "; expires=" + nD.toGMTString();
+}
+function GetCookie(sName)
+{
+	var aCookie = document.cookie.split("; ");
+	for (var i=0; i < aCookie.length; i++)
+	{
+		var aCrumb = aCookie[i].split("=");
+		if (sName == aCrumb[0]){ if(aCrumb[1]){ var r = unescape(aCrumb[1]); return r; }}
+	}
+	return '';
+}
+</script>
+<div class="where">您的位置：<a href="http://www.duote.com/" target="_self">多特软件站首页</a> -&gt; <a href="http://www.duote.com/tech/" target="_self">软件教程</a> -&gt; <a href="http://www.duote.com/techlist/11/0/" target="_self">编程开发</a> -&gt; <a href="http://www.duote.com/techlist/11/140/" target="_self">数据库类</a></div>
+
+
+<div class="test_l">
+<div class="line_green">
+  <div class="box_tit">
+   <span class="more"><a href="http://zhidao.duote.com/" onclick="tj('tia1','')">更多&gt;&gt;</a></span>相关问题
+  </div>
+  <div class="in_left_box">
+	  <form name="search" id="search">
+    <input name="key" id="key" value="请输入你的问题" onclick="kFun(0,'')" onblur="kFun(1,'')" onmouseover="this.select()" style="width: 150px; margin-right: 5px;" type="text"><input name="button" id="button" value="答案" style="margin-right: 3px;" onclick="return kFun(2,'tia2');" type="button"><input name="button2" id="button2" value="提问" onclick="return kQues('tia3');" type="button">
+	<input name="fun" id="fun" value="detail" type="hidden">
+	</form>
+    <ul>
+	       <li>·<a href="http://zhidao.duote.com/qs/63101.html" title="魔兽争霸的各个版本在哪有下载的" onclick="tj('ta1')">魔兽争霸的各个版本在哪有下载的</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62656.html" title="红色警戒有模式吗" onclick="tj('ta1')">红色警戒有模式吗</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62647.html" title="NBA2008一开始游戏就自动退出" onclick="tj('ta1')">NBA2008一开始游戏就自动退出</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62259.html" title="【Win7兼容】Windows 7，隐藏系统托盘图标" onclick="tj('ta1')">【Win7兼容】Windows 7，隐藏系统托盘图标</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62258.html" title="【Win7激活】我的windows7系统用电话激活了，不知可用多久？" onclick="tj('ta1')">【Win7激活】我的windows7系统用电话激活了，不知可用多久？</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62237.html" title="Windows 7系统的窗口颜色怎样调整？" onclick="tj('ta1')">Windows 7系统的窗口颜色怎样调整？</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62234.html" title="【Win7安装】win7的引导问题,双系统" onclick="tj('ta1')">【Win7安装】win7的引导问题,双系统</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/62224.html" title="【Win7配置】声卡驱动问题" onclick="tj('ta1')">【Win7配置】声卡驱动问题</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/61928.html" title="爱普生me1+驱动" onclick="tj('ta1')">爱普生me1+驱动</a> </li>
+	    <li>·<a href="http://zhidao.duote.com/qs/61927.html" title="联想14001网卡驱动" onclick="tj('ta1')">联想14001网卡驱动</a> </li>
+		    </ul>
+  </div>
+</div>
+
+<div class="left_box line_green">
+  <div class="box_tit">
+    相关文章
+  </div>
+  <div class="in_left_box">
+    <ul>
+	            <li>·<a href="http://www.duote.com/tech/2/3428.html">如何开启MySQL的远程帐号</a> </li>
+	      <li>·<a href="http://www.duote.com/tech/2/3413.html">Mysql的Root密码遗忘的解决办法</a> </li>
+			</ul>
+  </div>
+</div>
+
+<div class="left_box line_green ">
+  <div class="box_tit">
+    栏目推荐
+  </div>
+  <div class="in_left_box">
+    <ul>
+			<li>·<a href="http://www.duote.com/tech/1/2382.html">JDK环境和Tomcat环境的配置</a></li>
+		<li>·<a href="http://www.duote.com/tech/1/2809.html">如何使用turbo c</a></li>
+		<li>·<a href="http://www.duote.com/tech/1/754.html">五分钟制作ASP图书管理系统</a></li>
+		<li>·<a href="http://www.duote.com/tech/2/4907.html">用Dreamweaver批量做web网页</a></li>
+		<li>·<a href="http://www.duote.com/tech/2/4927.html">如何安装 SQL Server 2000</a></li>
+		<li>·<a href="http://www.duote.com/tech/1/2430.html">MySQL安装教程图解</a></li>
+		<li>·<a href="http://www.duote.com/tech/2/3414.html">phpMyAdmin简明安装教程</a></li>
+		<li>·<a href="http://www.duote.com/tech/2/4919.html">JavaScript中的字符串操作</a></li>
+		<li>·<a href="http://www.duote.com/tech/1/2346.html">CHMFactory的简单应用</a></li>
+		<li>·<a href="http://www.duote.com/tech/2/3413.html">Mysql的Root密码遗忘的解决办法</a></li>
+		    </ul>
+  </div>
+</div>
+
+<div class="left_box line_green">
+  <div class="box_tit">
+    栏目热文
+  </div>
+  <div class="in_left_box">
+    <ul>
+				  <li>·<a href="http://www.duote.com/tech/1/2430.html">MySQL安装教程图解</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/754.html">五分钟制作ASP图书管理系统 ASPMaker简单教程</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/2/4927.html">如何安装 SQL Server 2000</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/2/3061.html">新手教程：教你用Visual FoxPro建立一张表</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/1330.html">eXeScope让电子相册更专业</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/2382.html">JDK环境和Tomcat环境的配置</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/2535.html">解决DOS下“不是内部或外部命令”</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/2809.html">如何使用turbo c</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/1/2351.html">CHM电子书制作中模版的初步应用</a> </li>
+				  <li>·<a href="http://www.duote.com/tech/2/3414.html">phpMyAdmin简明安装教程</a> </li>
+					    </ul>
+  </div>
+</div>
+<div class="test_gg">
+<script language="javascript" type="text/javascript" src="03_files/n_tech_infoleft.js"></script><script type="text/javascript"><!--
+google_ad_client = "pub-7548159653177290";
+/* 教程内容页 250&#42;250 */
+google_ad_slot = "0668439255";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="03_files/show_ads.js"></script><script src="03_files/expansion_embed.js"></script><script src="03_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; height: 250px; position: relative; visibility: visible; width: 250px;"><ins style="border: medium none ; margin: 0pt; padding: 0pt; display: block; height: 250px; position: relative; visibility: visible; width: 250px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame1" marginheight="0" marginwidth="0" name="google_ads_frame" src="03_files/ads.htm" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="250" frameborder="0" height="250" scrolling="no"></iframe></ins></ins>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="test_r">
+<div class="right_box line_green">
+     <div class="box_tit02"></div>
+     <div class="in_right_box">
+   <span id="zt">【字体：<a href="javascript:setFontSize('bigFont');" target="_self" class="bigFont">大</a> <a href="javascript:setFontSize('midFont');" target="_self" class="midFont">中</a> <a href="javascript:setFontSize('smallFont');" target="_self" class="smallFont">小</a>】</span>
+  <h1>MySQL安装教程图解</h1>
+  <h2>文章出处：多特软件站 &nbsp;&nbsp;&nbsp; 更新时间：2009-07-15 &nbsp;&nbsp;&nbsp; 人气：26496 次 &nbsp;&nbsp;&nbsp; <a href="###" target="_self" onclick="bookmarkSite(location.href,document.title);"><img src="03_files/shouc.gif" alt="收藏此页" width="73" align="absmiddle" border="0" height="18"></a></h2>
+   
+	  <p>
+		  </p><table style="font-size: 12px;" align="center" border="0" cellspacing="0">
+		  <tbody><tr>
+		  <td style="padding-top: 15px;" id="contentBody">
+		  
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp; 返回刚才的界面，按“Next”继续</p>
+<p align="center"><img alt="" src="03_files/duote_15_18-37-06.jpg"></p>
+<p>&nbsp;&nbsp; 确认一下先前的设置，如果有误，按“Back”返回重做。按“Install”开始安装。</p>
+<p align="center"><img alt="" src="03_files/duote_15_18-37-33.jpg"></p></td>
+		  </tr>
+		  <tr><td><div class="page_c"><a href="http://www.duote.com/tech/1/2430_2.html" target="_self">&lt;上一页</a> <a href="http://www.duote.com/tech/1/2430_1.html" target="_self">1</a>  <a href="http://www.duote.com/tech/1/2430_2.html" target="_self">2</a>  <span>3</span>  <a href="http://www.duote.com/tech/1/2430_4.html" target="_self">4</a>  <a href="http://www.duote.com/tech/1/2430_5.html" target="_self">5</a>  <a href="http://www.duote.com/tech/1/2430_6.html" target="_self">6</a>  <a href="http://www.duote.com/tech/1/2430_7.html" target="_self">7</a>  <a href="http://www.duote.com/tech/1/2430_8.html" target="_self">8</a> <a href="http://www.duote.com/tech/1/2430_4.html" target="_self">下一页 &gt;</a></div></td></tr>
+		  </tbody></table>
+	  
+
+
+      <div class="bot_nav">
+      <ul>
+      <li class="shang"><a href="http://www.duote.com/tech/1/2429.html" target="_self">美图秀秀让照片大变身</a> <a href="http://www.duote.com/tech/1/2429.html" target="_self"><img src="03_files/shang.gif" width="69" align="absmiddle" border="0" height="19"></a></li>
+      <li class="xia"><a href="http://www.duote.com/tech/1/2431.html" target="_self"><img src="03_files/xia.gif" width="69" align="absmiddle" border="0" height="19"></a> <a href="http://www.duote.com/tech/1/2431.html" target="_self">可爱腮红打造粉嫩脸颊</a></li>
+      <div style="clear: both;"></div>
+      </ul>
+      </div>
+	  	          <dl class="xgrj">
+		        <dt>相关软件</dt>
+				              <dd>·  <a href="http://www.duote.com/soft/3151.html">MYSQL For WindowsV6.0.10</a>&nbsp;(好评:27 差评:8)</dd>
+					  </dl>
+				   
+		       
+</div>
+</div>
+
+</div>
+<div style="clear: both;"></div>
+</div>
+<script language="javascript" type="text/javascript" src="03_files/countTech.htm"></script>
+<script>var ft = GetCookie('font');if(ft)setFontSize(ft);</script>
+
+<div class="footer">
+     <div class="tj">
+         资源统计：无插件软件：<span>25994</span>个  无病毒软件：<span>26466</span>个  本站总软件：<span>26466</span>个  软件教程文章：<span>4587</span>篇  软件总下载次数：<span>4.799亿</span>次
+     </div>
+     <table align="center">
+<tbody><tr>
+	<td valign="bottom">
+ <a href="http://www.duote.com/about.html">关于多特</a>
+| <a href="http://www.duote.com/help.html">帮助(？)</a>
+| <a href="http://www.duote.com/gg.html">联系我们</a>
+| <a href="http://bbs.duote.com/forumdisplay.php?fid=48">提意见</a>
+| <a href="http://submit.duote.com/">软件发布</a>
+| <a href="http://www.duote.com/link.html">友情链接</a>
+| <a href="http://www.duote.com/sitemap.html">网站地图</a></td>
+<td rowspan="2">
+<a href="http://police.cnool.net/"><img src="03_files/jjcc.gif" width="50" border="0"></a></td>
+</tr>
+<tr>
+<td align="center">
+DuoTe.com 版权所有 <a href="http://www.miibeian.gov.cn/">沪ICP备07507114号</a>
+<a href="http://www.3000idc.com/">普尔网络赞助多特部分带宽</a></td>
+</tr>
+</tbody></table>
+<script language="javascript" src="03_files/fun.js"></script>
+<script language="javascript" src="03_files/checkLogin.js"></script>
+<script src="03_files/duotetech.js"></script><img src="03_files/duotetech.txt" vspace="0" width="0" border="0" height="0" hspace="0">
+</div>
+</div> 
+</body></html>

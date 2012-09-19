@@ -1,0 +1,17 @@
+install ruby 1.8.7-p249
+install mysql
+install mysql administor
+install Apache
+install Ruby for Apache
+
+gem install rails
+gem install mysql
+gem install RedCloth -v 4.2 --platform=x86-mswin32-60
+gem install radiant --version "= 0.8.0"
+
+
+radiant --database mysql site_testing
+copy libmySQL.dll to Ruby\bin folder
+ruby script/server 
+ctrl+c
+

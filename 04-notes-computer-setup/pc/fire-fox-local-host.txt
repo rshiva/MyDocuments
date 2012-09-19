@@ -1,0 +1,5 @@
+在Firefox地址栏中输入：about:config
+然后在过滤器中输入：NTLM
+双击network.automatic-ntlm-auth.trusted-uris,
+在输入值中输入localhost
+关闭FireFox,重新访问站点就可以解决这个问题了。

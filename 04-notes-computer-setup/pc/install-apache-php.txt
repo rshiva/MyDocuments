@@ -1,0 +1,86 @@
+(一)
+1.下载apache_2.2.13-win32-x86-no_ssl.msi
+
+2.下载php-5.3.0-Win32-VC6-x86.zip
+  注意VC6版本for Apache, VC9版本for IIS
+  php-5.3.0-nts-Win32-VC6-x86.msi不能为Apache正常安装(?)
+  (注：经本人测试，可以正常安装，只要选对apache的配置路径就行)
+
+3.下载mysql-5.1.38-win32.msi
+
+(二)
+1.默认安装Apache, 如果是安装为"only for the Current User, on Port 8080, when started Manually"
+  则可以httpd -k install来手工安装为windows服务, httpd -k uninstall卸载服务
+    相关命令: httpd -k [start|stop|restart]
+
+2.将php-5.3解压到"d:\php", 把php.ini-development改名为php.ini
+  顾名思义php.ini-development是开发的典型配置, php.ini-production则用于发布时
+
+3.默认安装Mysql
+
+(三)
+1.打开Apache的httpd.conf文件, 任意位置增加如下几行:
+  ; Apache2.2 version
+  LoadModule php5_module "d:/php/php5apache2_2.dll"
+  AddType application/x-httpd-php .php
+  PHPIniDir "d:/php"
+
+2.打开PHP的php.ini文件, 修改:
+  extension_dir = "d:/php/ext"
+  然后根据ext目录里面的dll文件打开扩展包:
+  ; 常用配置
+  extension=php_curl.dll
+  extension=php_gd2.dll
+  extension=php_mbstring.dll
+  ; 支持Mysql
+  extension=php_mysql.dll
+  extension=php_mysqli.dll
+  extension=php_pdo_mysql.dll
+  extension=php_xmlrpc.dll
+  ..
+ 
+  ; 时区设定为中国时区
+  date.timezone = "Asia/Shanghai"
+
+3.使用MySQL Server Instance Config Wizard配置mysql,
+  也可以在安装过程中配置
+ 
+(四)
+1.在Apache的htdocs目录下建立phpinfo.php文件,输入:
+<?php
+phpinfo();
+?>
+ 
+(五)
+1.重启Apache, 在浏览器输入: http://127.0.0.1:8080/phpinfo.php
+
+
+                  [ xdebug ]
+(一)
+1.下载php_xdebug-2.0.5-5.3-vc6.dll
+
+(二)
+1.编辑php.ini文件, 加入下面几行:
+; 使用绝对路径
+; zend_extension_ts (thread safe), 但这里须用zend_extension, 原因未知
+zend_extension="D:/PHP/ext/php_xdebug-2.0.5-5.3-vc6.dll"
+[xdebug]
+; 是否打开远程调式, server方式时必须
+xdebug.remote_enable=on
+;xdebug.remote_host=localhost
+;xdebug.remote_port=9000
+;xdebug.remote_handler="dbgp"
+; 是否跟踪函数调用过程, default(0)
+xdebug.auto_trace=on
+; 是否收集函数调用时传递的参数, default(0)
+xdebug.collect_params=on
+; 是否将返回值写入日志文件, default(0)
+xdebug.collect_return=on
+; 设置输出文件的路径
+xdebug.trace_output_dir="D:/PHP/xdebug"
+; 打开效能监测器
+xdebug.profiler_enable=on
+; 设定效能监测信息输出文件的路径
+xdebug.profiler_output_dir="D:/PHP/xdebug"
+
+2.重启Apache

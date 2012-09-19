@@ -1,0 +1,4 @@
+1) open finder
+2) Command+Shift+G
+3) paste /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/
+4) drag icon to deck

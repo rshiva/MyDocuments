@@ -1,0 +1,5 @@
+To show filshow extensions in XP, 
+
+go into My Computer or Windows Explorer and 
+1£©choose Tools|Folder Options. 
+2£©In the View tab, remove the checkmark next to Hide extensions for known file types.

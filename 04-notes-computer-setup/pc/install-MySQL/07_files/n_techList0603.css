@@ -1,0 +1,78 @@
+/* CSS Document */
+.test_head{ width:990px; height:150px;}
+.where{ height:25px; line-height:25px;}
+.where span{ color:#360; font-weight:700;}
+.test_l{ width:290px; float:left;margin-right:7px; display:inline;}
+.line_green{ border:1px solid #B3E685;}
+.box_tit{height:28px; background: url(http://img.duote.com/images/bg_green.gif) repeat-x; line-height:28px; font-size:14px; font-weight:700; padding-left:10px; color:#fff;}
+.in_left_box{width:268px; background:#fff; padding:10px;}
+.in_left_box table{ padding:0px; margin:0px; height:22px;}
+.in_left_box .btn{ margin:0px 0 0 5px;}
+.in_left_box .in_search{ width:115px;height:20px;border:1px solid #B3E685; margin-left:5px;}
+.test_gg{ margin-top:10px;border:1px #ccc solid; text-align:center; padding:5px; background:#fff;}
+
+.test_r{width:692px;float:left;}
+.box_tit02{height:28px; line-height:28px; background: url(http://img.duote.com/images/bg_ggreen.gif) repeat-x; font-size:14px;font-weight:700;padding-left:10px; color:#360;}
+.right_box{width:690px; background:#fff;}
+.in_right_box{ padding:10px;}
+.in_r_tit{ border-bottom:1px #ccc solid;padding-bottom:10px; height:100%;}
+.in_r_tit li{ background: url(http://img.duote.com/images/but1.gif) no-repeat;width:102px; height:30px; line-height:30px; text-align:center; display:inline-block; float:left; margin-right:10px;}
+.in_r_tit li a{ color:#360;}
+.in_r_tit li a:hover{ color:#333; text-decoration:none;}
+.in_r_tit .hover{background: url(http://img.duote.com/images/but3.gif) no-repeat;width:102px; height:30px; line-height:30px; text-align:center;}
+.in_r_tit .hover a{ color:#fff;}
+.in_r_tit .hover a:hover{ color:#fff; text-decoration:none;}
+.in_r_list{ padding:5px 0px; border-bottom:1px #ccc dotted;}
+.list_title{ height:30px; line-height:30px; color:#360; font-size:14px; font-weight:700;}
+.list_title .time{ float:right; font-size:12px; font-weight:normal; color:#666;}
+.list_title a{ color:#360; text-decoration:none;}
+.list_title a:hover{ color:#333; text-decoration:underline;}
+.list_title .leibie { color:#666; font-size:12px; font-weight:normal;}
+.list_title .leibie a{color:#666;}
+.list_text{ background:#f9fff1; padding:5px; line-height:20px;}
+.see_more{ text-align:right; height:25px; line-height:25px; padding-right:15px;}
+
+#left{ float:left;}
+
+.fanye{ text-align:center; margin-top:10px;}
+.fanye span{ display:inline-block; margin:0px 3px;}
+.fanye a{display:inline-block; margin:0px 3px;}
+.fanye a:hover{ color:#f90; text-decoration:underline;}
+
+.noanswer_text{height:50px; line-height:50px; color:#360; font-size:14px; font-weight:700; text-align:center;}
+.noanswer_text span{ color:#f90;}
+.noanswer_search{ width:270px; margin-left:200px;}
+
+
+.line_orange{border:1px solid #FBB623;}
+.box_tit_org{height:28px; background: url(http://img.duote.com/images/bg_orange.gif) repeat-x; line-height:28px; font-size:14px; font-weight:700; padding-left:10px; color:#fff;}
+.in_xiaolei{width:278px; padding:5px; background:#fff;}
+.leibie_tag{padding:0px 1px; display:inline-block;}
+.leibie_tag li{width:85px; padding:2px 3px 2px 4px;float:left; display:inline-block;}
+.leibie_tag li a{width:70px; height:25px;padding-left:15px; line-height:25px; text-align:left; background:url(http://img.duote.com/images/game_16.gif) no-repeat; color:#34991C; display:inline-block;}
+.leibie_tag li a:hover,.leibie_tag li a.hover{width:70px; height:25px; padding-left:15px;background:url(http://img.duote.com/images/game_17.gif) no-repeat;color:#360; text-decoration:none;}
+.left_box{ margin-top:10px;}
+.more{ float:right; font-size:12px; font-weight:normal; padding-right:5px;}
+.more a{ color:#fff;}
+.in_left_box li{height:20px;line-height:20px;margin-top:3px;width:265px; word-break:keep-all; white-space:nowrap; overflow:hidden; }
+
+.in_right_box h1{ font-size:18px; line-height:40px; text-align:center; color:#f90; font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"}
+.in_right_box h2{ width:664px; font-size:12px; padding:3px; background:#f2f2f2; font-weight:normal; text-align:center;margin:10px 0px;}
+.in_right_box h2 a{ color:#3885C0;}
+#zt{ float:right; padding-top:10px;}
+.bot_nav{ text-align:center; padding:20px 10px; height:25px;}
+.bot_nav a{ color:#3885c0;}
+.bot_nav li{ display:inline-block; height:25px; line-height:25px;}
+.bot_nav li img{ padding-bottom:2px;}
+.shang{ float:left;width:310px; text-align:right;}
+.xia{ float:right;width:310px; text-align:left;}
+.sc{ text-align:right; padding-right:15px; clear:both;}
+.xgrj{ padding-top:15px; border-top:1px #ccc dotted; margin-top:10px;}
+.xgrj dt{ font-size:14px; font-weight:700; line-height:25px; color:#ff6600;font-family:"Î¢ÈíÑÅºÚ","ºÚÌå"}
+.xgrj dd{ height:20px; line-height:20px; margin-top:3px;}
+
+.pageActive{ font-weight:700; color:#5cb20a;}
+
+.page_c{ text-align:center;}
+.page_c a{ padding:0 5px;}
+.page_c span{ background:#FF9900; font-weight:bold; padding:0 5px;}

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>Set up SVN on XP</h1>
+<table width="800" border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="85" align="left" valign="top">01</td>
+    <td width="255" align="left" valign="top">install XP</td>
+    <td width="392" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">02</td>
+    <td align="left" valign="top">install SP2, SP3</td>
+    <td align="left" valign="top"><p>WindowsXP-KB835935-SP2-ENU.exe</p>
+    <p>WindowsXP-KB936929-SP3-x86-ENU.exe</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">03</td>
+    <td align="left" valign="top">install SVN</td>
+    <td align="left" valign="top"><p>using default setting</p>
+    <p>Setup-Subversion-1.5.6.msi</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">04</td>
+    <td align="left" valign="top">install Apache</td>
+    <td align="left" valign="top"><p>using default setting</p>
+    <p>apache_2.2.14-win32-x86-openssl-0.9.8k.msi</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">05</td>
+    <td align="left" valign="top">create Repositories</td>
+    <td align="left" valign="top"><ol>
+      <li>create folder on hard drive<br />
+        C:\Repositories\project1<br />
+      </li>
+      <li>create repositories in command line<br />
+        svnadmin create C:\Repositories\project1        <br />
+      </li>
+    </ol></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">06</td>
+    <td align="left" valign="top">copy SVN models to Apache folder</td>
+    <td align="left" valign="top">copy mod_authz_svn.so and mod_dav_svn.so from C:\Program Files\Subversion\bin to C:\Program Files\Apache Software foundation\Apache2.2\modules</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">07</td>
+    <td align="left" valign="top">update Apache config</td>
+    <td align="left" valign="top"><ol>
+      <li>open C:\Program Files\Apache Software foundation\Apache2.2\conf\httpd.conf</li>
+      <li>add<br />
+        LoadModule dav_module modules/mod_dav.so<br />
+        LoadModule dav_svn_module modules/mod_dav_svn.so<br />
+        LoadModule authz_svn_module modules/mod_authz_svn.so        </li>
+      <li>add to end<br />
+        Include c:/etc/subversion.conf        <br />
+      </li>
+    </ol></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">08</td>
+    <td align="left" valign="top">create a folder to save config file</td>
+    <td align="left" valign="top">create a folder c:/etc</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">09</td>
+    <td align="left" valign="top">set user name and password</td>
+    <td align="left" valign="top"><p>cd C:\Program Files\Apache Software Foundation\Apache2.2\bin<br />
+      htpasswd -cm C:\etc\svn-auth-file harry<br />
+      New password: ***** <br />
+      Re-type new password: *****<br />
+    Adding password for user harry</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">10</td>
+    <td align="left" valign="top">set user w/r right</td>
+    <td align="left" valign="top"><p>in file C:\etc\svn-acl</p>
+      <p>[project1:/]<br />
+        harry = rw</p>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">11</td>
+    <td align="left" valign="top">set SVN config file</td>
+    <td align="left" valign="top"><p>in file C:\etc\subversion.conf</p>
+    <p>&lt;Location /project1&gt;<br />
+DAV svn<br />
+SVNPath C:/Repositories/project1</p>
+    <p> AuthType Basic<br />
+      AuthName &quot;Subversion Project1 repository&quot;<br />
+      AuthUserFile c:/etc/svn-auth-file</p>
+    <p> Require valid-user</p>
+    <p> AuthzSVNAccessFile c:/etc/svn-acl<br />
+    &lt;/Location&gt;</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">12</td>
+    <td align="left" valign="top">test</td>
+    <td align="left" valign="top"><ol>
+      <li>test localhost</li>
+      <li>test localhost/project1 </li>
+    </ol></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">13</td>
+    <td align="left" valign="top">access home router</td>
+    <td align="left" valign="top"><p>http://www.routerlogin.com</p>
+    <p>admin</p>
+    <p>wg82315748</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">14</td>
+    <td align="left" valign="top">get external ip</td>
+    <td align="left" valign="top"><p>on index page</p>
+    <p>ADSL Port / IP Address is the  p to access the router </p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">15</td>
+    <td align="left" valign="top">set router ip</td>
+    <td align="left" valign="top"><p>LAN IP Setup / LAN TCP/IP Setup / IP Address</p>
+    <p>use default 10.0.0.3</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">16</td>
+    <td align="left" valign="top">get computer ip</td>
+    <td align="left" valign="top"><p>ipconfig</p>
+    <p>IP address is computer ip</p>
+    <p>Default Gateway should be 10.0.0.3 same as router ip</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">17</td>
+    <td align="left" valign="top">make computer as server</td>
+    <td align="left" valign="top"><p>Advanced / WAN Setup / Default DMZ Server</p>
+    <p>make it same as computer ip</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">18</td>
+    <td align="left" valign="top">test</td>
+    <td align="left" valign="top"><p>use external ip to test</p>
+    <p>&nbsp;</p></td>
+  </tr>
+</table>
+<h2>&nbsp;</h2>
+</body>
+</html>
