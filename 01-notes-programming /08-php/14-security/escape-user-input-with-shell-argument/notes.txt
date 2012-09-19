@@ -1,0 +1,6 @@
+Filte use input
+
+escapeshellarg(string arguments)
+escapeshellcmd(string command)
+You should use escapeshellcmd() in any case where the user¡¯s input might determine the name of a command to execute.
+

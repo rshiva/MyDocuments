@@ -1,0 +1,65 @@
+/* line 6, ../sass/main.scss */
+.stretch-container {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  border: 1px solid #999999;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+/* line 7, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.stretch-container {
+  *display: inline;
+}
+
+/* line 14, ../sass/main.scss */
+.stretched, #stretch-full, #stretch-offset, #stretch-x, #stretch-y {
+  border: 3px solid #4c6b99;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  background-color: #192433;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+/* line 26, ../sass/main.scss */
+#stretch-full {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 32, ../sass/main.scss */
+#stretch-offset {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+}
+
+/* line 38, ../sass/main.scss */
+#stretch-x {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* line 42, ../sass/main.scss */
+#stretch-y {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}

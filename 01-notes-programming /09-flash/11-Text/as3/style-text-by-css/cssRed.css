@@ -1,0 +1,9 @@
+p {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#990000;
+}
+
+.emphasis {
+	font-weight: bold;
+	font-style: italic;
+}

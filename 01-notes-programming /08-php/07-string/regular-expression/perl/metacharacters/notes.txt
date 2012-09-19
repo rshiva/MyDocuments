@@ -1,0 +1,18 @@
+/\blinux\b/i
+The next returns the first case-insensitive occurrence of the word linux:
+
+\A: Matches only at the beginning of the string.
+\b: Matches a word boundary.
+\B: Matches anything but a word boundary.
+\d: Matches a digit character. This is the same as [0-9].
+\D: Matches a nondigit character.
+\s: Matches a whitespace character.
+\S: Matches a nonwhitespace character.
+[]: Encloses a character class.
+(): Encloses a character grouping or defines a back reference.
+$: Matches the end of a line.
+^: Matches the beginning of a line.
+.: Matches any character except for the newline.
+\: Quotes the next metacharacter.
+\w: Matches any string containing solely underscore and alphanumeric characters. This is the same as [a-zA-Z0-9_].
+\W: Matches a string, omitting the underscore and alphanumeric characters.

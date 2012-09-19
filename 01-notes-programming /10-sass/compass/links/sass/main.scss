@@ -1,0 +1,5 @@
+@import "compass/typography/links/hover-link"; //rollover show underline
+@import "compass/typography/links/link-colors"; // define link colors
+
+#link1 { @include hover-link; } //rollover show underline
+#link2 { @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0); } //link-colors($normal, $hover, $active, $visited, $focus)

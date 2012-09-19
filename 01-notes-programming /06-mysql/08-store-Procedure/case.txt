@@ -1,0 +1,21 @@
+CASE
+	WHEN state="AL" THEN:
+		SET tax_rate = .04;
+	WHEN state="AK" THEN:
+		SET tax_rate = .00;
+		...
+	WHEN state="WY" THEN:
+		SET tax_rate = .04;
+END CASE;
+
+
+
+CASE state
+	WHEN "AL" THEN:
+		SET tax_rate = .04;
+	WHEN "AK" THEN:
+		SET tax_rate = .00;
+		...
+	WHEN "WY" THEN:
+		SET tax_rate = .04;
+END CASE;

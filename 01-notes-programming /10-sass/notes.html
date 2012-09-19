@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SASS</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>SASS</h1></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Install</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="63%" align="left" valign="top">
+          <p class="code">gem install sass</p></td>
+          <td width="37%" align="left" valign="top"><p>install gem</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">sass [sass file name]</p></td>
+          <td align="left" valign="top"><p>check if to see if it works, print in console</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">https://github.com/kuroir/SCSS.tmbundle</p>
+          <p class="code">mkdir -p ~/Library/Application\ Support/TextMate/Bundles <br />
+          cd ~/Library/Application\ Support/TextMate/Bundles <br />
+          git clone git://github.com/kuroir/SCSS.tmbundle.git &quot;SCSS.tmbundle&quot; <br />
+          osascript -e 'tell app &quot;TextMate&quot; to reload bundles'</p></td>
+          <td align="left" valign="top"><p>install bundle for textmate</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Compile</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="63%" align="left" valign="top"><p class="code">sass [ sass file name] [ css file name ]</p></td>
+          <td width="37%" align="left" valign="top"><p>compile sass to css using specific file name</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">sass --watch stylesheet/sass:stylesheet/css</p></td>
+          <td align="left" valign="top"><p>compile all sass in a folder to css in another folder</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">sass convert [ css file name] [ sass file name]</p></td>
+          <td align="left" valign="top"><p>compile css back to sass</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">sass [sass file] [css file] --style expanded</p>
+            <ul>
+              <li>nested (default)</li>
+              <li>expanded (usually css style)</li>
+              <li>compact (all attribute in one line)</li>
+              <li>compressed (all code in one line)</li>
+            </ul></td>
+          <td align="left" valign="top"><p>compile sass to css using different format</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Comment</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="63%" align="left" valign="top"><p class="code">/* comment */</p></td>
+          <td width="37%" align="left" valign="top"><p>will be converted into css</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">// comment</p></td>
+          <td align="left" valign="top"><p>will not be converted into css</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Import</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="63%" align="left" valign="top"><p class="code">@import &quot;colors&quot;; <br />
+          @import &quot;widths&quot;;</p></td>
+          <td width="37%" align="left" valign="top"><p>if imported sass fila start with _ , watch will not create seperate css. Otherwise it going to create seperate css</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Reset CSS</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td align="left" valign="top"><p><a href="http://media.pragprog.com/titles/pg_sass/code/basics/reset.scss" target="_blank">http://media.pragprog.com/titles/pg_sass/code/basics/reset.scss</a></p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Extend attribute</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="31%" align="left" valign="top"><p class="code">.blue_button { <br />
+          background: #336699; <br />
+          font-weight: bold; <br />
+          color: white; <br />
+          padding: 5px; }</p>
+          <p class="code">.checkout_button { @extend .blue_button }</p></td>
+          <td width="34%" align="left" valign="top"><p class="code">.blue_button, .checkout_button { <br />
+          background: #336699; <br />
+          font-weight: bold; <br />
+          color: white; <br />
+          padding: 5px; }</p></td>
+          <td width="35%" align="left" valign="top"><p>extend attribute</p>
+          <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">.checkout_button { @extend .blue_button; <br />
+          color: darken(#336699, 10%); }</p></td>
+          <td align="left" valign="top">&nbsp;</td>
+          <td align="left" valign="top"><p>extend and modify attribute</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Variable</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="65%" align="left" valign="top"><p class="code">$page_width: 300px; <br />
+          #wrapper { width: $page_width;}</p>
+          <p class="code">$helvetica: &quot;helvetica neue&quot;, arial, helvetica, freesans, &quot;liberation sans&quot;, &quot;numbus sans l&quot;, sans-serif;<br />
+          body { font-family: $helvetica; }          </p></td>
+          <td width="35%" align="left" valign="top"><p>all variable start with $</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">$width: 10px; <br />
+          $double_width: $width * 2;</p></td>
+          <td align="left" valign="top"><p>variable calculate</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Mixin</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="65%" align="left" valign="top"><p class="code">@mixin blue_text { <br />
+          color: #336699; <br />
+          font-family: helvetica, arial, sans-serif; <br />
+          font-size: 20px; <br />
+          font-variant: small-caps; }</p>
+          <p class="code">.product_title { @include blue_text; }</p></td>
+          <td width="35%" align="left" valign="top"><p>basic mixin</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">@mixin blue_text($size) { <br />
+          color: #336699; <br />
+          font-family: helvetica, arial, sans-serif; <br />
+          font-size: $size; <br />
+          font-variant: small-caps; }</p>
+          <p class="code">.product_title { @include blue_text (15px); }</p></td>
+          <td align="left" valign="top"><p>pass argument to mixin</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">@mixin blue_text($size: 20px) { <br />
+            color: #336699; <br />
+            font-family: helvetica, arial, sans-serif; <br />
+            font-size: $size; <br />
+            font-variant: small-caps; }</p>
+          <p class="code">.product_title { @include blue_text; }<br />
+          .product_title { @include blue_text (100px); }          </p></td>
+          <td align="left" valign="top"><p>default arguments for mixin</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">@each $member in thom, jonny, colin, phil { <br />
+            .#{$member}_picture { background-image: url(&quot;/image/#{$member}.jpg&quot;); } } <br />
+            <br />
+            .thom_picture { background-image: url(&quot;/image/thom.jpg&quot;); } <br />
+            .jonny_picture { background-image: url(&quot;/image/jonny.jpg&quot;); } <br />
+            .colin_picture { background-image: url(&quot;/image/colin.jpg&quot;); }<br />
+.phil_picture { background-image: url(&quot;/image/phil.jpg&quot;); }</p></td>
+          <td align="left" valign="top"><p>use each</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">@mixin country_color($country) { <br />
+            @if $country == france { color: blue; } <br />
+            @else if $country == spain { color: yellow; } <br />
+            @else if $country == italy { color: green; } <br />
+            @else { color: red; } }</p>
+            <p class="code">.england { @include country_color(england); } <br />
+          .france { @include country_color(france); }</p></td>
+          <td align="left" valign="top">use if</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Cross browser</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="65%" align="left" valign="top"><p class="code">@mixin opacity($opacity) { <br />
+          filter: alpha(opacity=#{$opacity}); // IE 5-9+ <br />
+          opacity: $opacity * 0.01; }</p>
+          <p class="code">.h1 { @include opacity(60); }</p></td>
+          <td width="35%" align="left" valign="top"><p>set transparent</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">@mixin rounded_borders($color, $width: 5px, $rounding: 5px) { <br />
+          -moz-border-radius: $rounding $rounding; <br />
+          -webkit-border-radius: $rounding $rounding; <br />
+          -khtml-border-radius: $rounding $rounding; <br />
+          -o-border-radius: $rounding $rounding; <br />
+          border-radius: $rounding $rounding; <br />
+          border: $width $color solid; }</p>
+          <p class="code">.header { @include rounded_borders(#336699, 3px) }</p></td>
+          <td align="left" valign="top"><p>round corner</p></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

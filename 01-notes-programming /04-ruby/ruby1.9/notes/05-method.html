@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Method</h1></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Method name convention</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td align="left" valign="top">
+          <p><span style="font-size:20px;" class="import">?</span> method name end with &quot;?&quot; will return a boolean value</p>
+          <p><span style="font-size:20px;" class="import">!</span> method name end with &quot;!&quot; will modify the receiver</p>
+          <p><span style="font-size:20px;" class="import">=</span> method name end with &quot;=&quot; can appear on left side of assignment</p>
+          </td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+    <h2>Create method</h2>
+    <table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="60%" align="left" valign="top" class="code"><p>def my_method<br />
+&nbsp;&nbsp;puts &quot;this is a call from method!&quot;<br />
+end</p>
+          <p>my_method<br />
+          </p></td>
+        <td width="40%" align="left" valign="top"><p>basic method</p>
+          <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" class="code"><p>class MyClass<br />
+          &nbsp;&nbsp;def method1<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;puts &quot;method call from class method&quot;<br />
+          &nbsp;&nbsp;end<br />
+          end</p>
+          <p>i_class = MyClass.new()<br />
+          i_class.method1</p></td>
+        <td align="left" valign="top"><p>create and use method in class</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Method arguments</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top" class="code"><p>def my_method(arg1=&quot;default&quot;,arg2=&quot;default&quot;)<br />
+&nbsp;&nbsp;puts &quot;#{arg1}, #{arg2}&quot;<br />
+end</p>
+            <p>my_method(&quot;see&quot;) <span class="import">=&gt; see, default</span><br />
+            </p></td>
+          <td width="40%" align="left" valign="top"><p>using default arguments
+            </p>
+            <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>def my_method(*arg)<br />
+            &nbsp;&nbsp;arg.each {|item| puts item}<br />
+            end</p>
+          <p>my_method(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;)<span class="import"> => 1,2,3</span></p></td>
+          <td align="left" valign="top"><p>using dynamic arguments</p>
+          <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>class MyClass<br />
+            &nbsp;&nbsp;def initialize(&amp;block) <span class="import"># add &amp; for blcok argument</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@block = block<br />
+            &nbsp;&nbsp;end<br />
+  <br />
+            &nbsp;&nbsp;def my_method(arg)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@block.call(arg) <span class="import"># execuate the block</span><br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p>i_variable = MyClass.new() { |item| puts item } <span class="import"># pass block as argument</span><br />
+          i_variable.my_method(&quot;see&quot;) <span class="import">=&gt; see</span></p></td>
+          <td align="left" valign="top"><p>using block as argument</p>
+          <p>&nbsp;</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Call method</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top" class="code"><p>class MyClass<br />
+&nbsp;&nbsp;def my_method<br />
+&nbsp;&nbsp;&nbsp;&nbsp;pri_01()<br />
+&nbsp;&nbsp;end<br />
+<br />
+&nbsp;&nbsp;private<br />
+&nbsp;&nbsp;def pri_01<br />
+&nbsp;&nbsp;&nbsp;&nbsp;puts &quot;from internal&quot;<br />
+&nbsp;&nbsp;end<br />
+end</p>
+            <p>i_variable = MyClass.new()<br />
+              i_variable.my_method <span class="import">=&gt; from internal</span><br />
+            </p></td>
+          <td width="40%" align="left" valign="top"><p>call method in class</p>
+            <p>&nbsp;</p></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

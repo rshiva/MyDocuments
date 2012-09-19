@@ -1,0 +1,7 @@
+IF years_employed < 5 THEN
+	SET bonus = total * .05;
+ELSEIF years_employed >= 5 and years_employed < 10 THEN
+	SET bonus = total * .06;
+ELSEIF years_employed >=10 THEN
+	SET bonus = total * .07;
+END IF

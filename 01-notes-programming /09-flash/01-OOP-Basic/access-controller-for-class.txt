@@ -1,0 +1,21 @@
+Access Controller for class
+	
+	public
+	* To make a class available for use outside the package in which it is defined, we must define it with the public attribute.
+		package zoo {
+			public class VirtualPet {
+			}
+		}
+		
+	interal
+	* If define class access controller to internal. This class can not be access outside the package.
+		package zoo {
+			internal class VirtualPet {
+			}
+		}
+		
+Access Control for variable and class
+public
+internal
+protected
+private

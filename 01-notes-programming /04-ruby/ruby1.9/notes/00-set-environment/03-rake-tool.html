@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%; line-height:150%; font-size:14px;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Rake tool</h1>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td colspan="2" align="left" valign="top"><ul>
+            <li>Rake is a ruby automation tool</li>
+            <li>By default Rake search current folder for a file called &quot;Rakefile&quot;</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td width="37%" align="left" valign="top"><h3>create rake file</h3></td>
+          <td width="63%" align="left" valign="top">put ruby code into a file called Rakefile</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>rake file example</h3></td>
+          <td align="left" valign="top"><p class="code">desc &quot;rake testing&quot; <span class="import"># help description</span><br />
+            task :say_rake do <span class="import"># taks name</span><br />
+            &nbsp;&nbsp;puts &quot;do rake task&quot; <span class="import"># task code here</span><br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>show rake all task description</h3></td>
+          <td align="left" valign="top"><p class="code">$ rake -T</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>call rake task</h3></td>
+          <td align="left" valign="top"><p class="code">$ rake [ task name ]</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>call multi rake task</h3></td>
+          <td align="left" valign="top"><p class="code">desc &quot;rake testing&quot;<br />
+            task :multi =&gt; [:task_1, :task_2] do<br />
+            &nbsp;&nbsp;puts &quot;going to do multi&quot;<br />
+            end</p>
+            <p class="code">desc &quot;task1&quot;<br />
+              task :task_1 do<br />
+              &nbsp;&nbsp;puts &quot;task1 code here&quot;<br />
+              end</p>
+            <p class="code">desc &quot;task2&quot;<br />
+              task :task_2 do<br />
+              &nbsp;&nbsp;puts &quot;task2 code here&quot;<br />
+          end</p></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

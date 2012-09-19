@@ -1,0 +1,4 @@
+ALTER VIEW employee_contact_info_view
+(`First Name`, `Last Name`, `Telephone`) AS
+SELECT first_name, last_name, phone
+FROM employees ORDER BY last_name ASC;

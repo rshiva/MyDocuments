@@ -1,0 +1,9 @@
+Need php5 and later ver.
+
+on Windows
+To enable the mysqli extension on Windows, you need to uncomment the following line from the php.ini file, or add it if it¡¯s not there:
+extension=php_mysqli.dll
+
+Enabling the mysqli Extension on Linux/Unix
+Enabling the mysqli extension on the Linux/Unix platform is accomplished by configuring PHP using the --with-mysqli flag. 
+This flag should point to the location of the mysql_config program available to MySQL 4.1 and greater.

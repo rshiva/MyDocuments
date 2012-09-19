@@ -1,0 +1,449 @@
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=x-gbk">
+<link rel="stylesheet" href="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/index.css">
+<link rel="alternate" type="application/rss+xml" title="ChinaUnix Blog RSS Feed" href="http://blog.chinaunix.net/u/rss.php?id=25605">
+<meta name="keywords" content="Windows下安装Apache2.2 + PHP5.3 + Mysql5.1 - web - linux/unix历程">
+<meta name="description" content="中国最大的IT技术博客-ChinaUnix博客：Windows下安装Apache2.2 + PHP5.3 + Mysql5.1 - web - linux/unix历程">
+<title>Windows下安装Apache2.2 + PHP5.3 + Mysql5.1 - web - linux/unix历程</title>
+</head><body leftmargin="0" topmargin="0" style="background: rgb(255, 255, 255) url() repeat scroll 0% 0%; -moz-background-clip: border; -moz-background-origin: padding; -moz-background-inline-policy: continuous;" align="center" marginheight="0" marginwidth="0">
+
+
+<table style="border-collapse: collapse; height: 25px;" width="100%" background="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/tophem1.gif" border="0" cellpadding="0" cellspacing="0" height="25">
+<tbody><tr> <td id="tool-bar" width="540" align="left" nowrap="nowrap">
+&nbsp;
+<a href="http://blog.chinaunix.net/" target="_blank">博客首页</a>
+<a href="http://blog.chinaunix.net/register.php" target="_blank">注册</a>
+<a href="http://bbs.chinaunix.net/forumdisplay.php?fid=51" target="_blank">建议与交流</a> 
+<a href="http://blog.chinaunix.net/top/" target="_blank">排行榜</a>
+<a href="" target="_blank" onclick="NewWindows('http://www.cublog.cn/addlink.php?url='+location.href+'&amp;title='+document.title);return false;">加入友情链接</a>
+
+</td><form id="loginForm" method="get" target="_blank" action="/search.php"></form>
+<td align="right" nowrap="nowrap">
+<img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/userstar.gif" id="starimg" alt="" width="55" border="0" height="12">
+<a href="http://blog.chinaunix.net/u2/star.php?blogid=25605" id="star" onclick="NewWindows(this.href);return false;" title="给此博客推荐值">推荐</a>
+<a href="http://blog.chinaunix.net/u2/complaint.php?blogid=25605" id="complaint" onclick="NewWindows(this.href);return false;" title="投诉此博客">投诉</a>
+
+ 搜索：<input name="q" size="20" type="text"> <input value="搜索" class="button1" type="submit"> <a href="http://blog.chinaunix.net/help/">帮助</a></td>
+</tr>
+<tr><td colspan="2">
+<table style="border-collapse: collapse;" width="1000" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="1000"></td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+<script language="javascript">
+<!--
+
+navHover = function() {
+var lis = document.getElementById("navmenu").getElementsByTagName("LI");
+for (var i=0; i<lis.length; i++) {
+lis[i].onmouseover=function() {
+this.className+=" iehover";
+}
+lis[i].onmouseout=function() {
+this.className=this.className.replace(new RegExp(" iehover\\b"), "");
+}
+}
+}
+
+function NewWindows(shref){
+var xx=(window.screen.width-450)/2;
+var yy=(window.screen.height-200)/2;
+pp=window.open(shref,"win","menubar=no,location=no,resizable=no,scrollbars=no,status=no,left="+xx+",top="+yy+",Width=450,Height=200");
+}
+function $(s){return document.getElementById(s);}
+//-->
+</script>
+<table style="border-collapse: collapse; background-image: url();" width="100%" bgcolor="#204689" border="0" cellpadding="0" cellspacing="0" height="80">
+<tbody><tr><td width="200" align="center">
+<p style="margin: 5px; line-height: 150%;">
+ <font style="font-size: 14px;" color="#ffffff">
+ 
+<b>
+ 
+ 
+ 
+ linux/unix历程 
+ 
+ 
+</b>
+ 
+ </font></p>
+ 
+</td><td style="color: rgb(170, 198, 246);">
+</td></tr>
+</tbody></table>
+
+<table style="border-collapse: collapse;" width="100%" bgcolor="#eeeeee" border="0" cellpadding="0" cellspacing="0" height="27">
+<tbody><tr><td>&nbsp;
+<a href="http://time.cublog.cn/" class="list1" target="_blank">time.cublog.cn</a>
+ 
+</td><td style="color: rgb(42, 82, 0);" width="680" align="right">
+<ul id="navmenu"><li class="ul0"><a href="http://control.cublog.cn/" target="_blank" class="list1">管理博客</a> </li>
+
+<li class="ul0"><a href="http://control.cublog.cn/article_new.php" target="_blank" class="list1">发表文章</a></li>
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/guestbook.html" class="list1">留言</a></li>
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/links.html" class="list1">收藏夹</a>
+<ul class="ul1"><li><a href="http://blog.chinaunix.net/u/25605/links_11771.html"> · IT综合学习网站<!-- a11771 --></a><!-- 11771 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9312.html"> · 综合<!-- a9312 --></a><!-- 9312 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9311.html"> · red hat<!-- a9311 --></a><!-- 9311 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9308.html"> · 参考博客<!-- a9308 --></a><!-- 9308 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9527.html"> · solaris<!-- a9527 --></a><!-- 9527 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9528.html"> · SELinux<!-- a9528 --></a><!-- 9528 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9529.html"> · NS-2<!-- a9529 --></a><!-- 9529 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9530.html"> · FreeBsd<!-- a9530 --></a><!-- 9530 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9606.html"> · DNS<!-- a9606 --></a><!-- 9606 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_11761.html"> · 版本管理<!-- a11761 --></a><!-- 11761 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_11630.html"> · JAVA<!-- a11630 --></a><!-- 11630 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_11737.html"> · eclipse与插件<!-- a11737 --></a><!-- 11737 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_11048.html"> · 新兴部落<!-- a11048 --></a><!-- 11048 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_12043.html"> · 文学<!-- a12043 --></a><!-- 12043 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_9314.html"> · 政府与人事<!-- a9314 --></a><!-- 9314 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/links_14093.html"> · 信息安全与可信计算<!-- a14093 --></a><!-- 14093 --></li>
+</ul>
+
+</li>
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/group.html" class="list1">博客圈</a></li>
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/music.html" class="list1">音乐</a>
+<!-- 0 -->
+</li>
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/photo.html" class="list1">相册</a>
+<!-- 0 -->
+</li> 
+ 
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/article.html" class="list1">文章</a>
+<ul class="ul1"><li><a href="http://blog.chinaunix.net/u/25605/article_122207.html"> · web<!-- a122207 --></a><!-- 122207 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41114.html"> · 综合<!-- a41114 --></a><!-- 41114 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_114520.html"> · Ubuntu<!-- a114520 --></a><!-- 114520 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_95491.html"> · NS-2<!-- a95491 --></a><!-- 95491 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41112.html"> · red hat<!-- a41112 --></a><!-- 41112 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41175.html"> · solaris<!-- a41175 --></a><!-- 41175 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41402.html"> · FreeBSD<!-- a41402 --></a><!-- 41402 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_42254.html"> · SUSELinux<!-- a42254 --></a><!-- 42254 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41400.html"> · SELinux<!-- a41400 --></a><!-- 41400 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_42720.html"> · DNS<!-- a42720 --></a><!-- 42720 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_44705.html"> · 网络<!-- a44705 --></a><!-- 44705 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_55564.html"> · 项目管理<!-- a55564 --></a><!-- 55564 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_80986.html"> · 可信计算<!-- a80986 --></a><!-- 80986 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_76078.html"> · 排版与文献<!-- a76078 --></a><!-- 76078 --></li>
+<li><a href="http://blog.chinaunix.net/u/25605/article_41113.html"> · 收集连接<!-- a41113 --></a><!-- 41113 --></li>
+</ul>
+
+</li> 
+<li class="ul0"><a href="http://blog.chinaunix.net/u/25605/index.html" class="list1">首页</a></li>
+</ul>
+</td>
+<td width="2"></td>
+</tr>
+</tbody></table>
+<script language="javascript">
+function $(s){return document.getElementById(s);}
+function ShowHideDiv(divid,iImg){
+if($(divid).style.display == "none"){
+iImg.src="../../templates/tech/images/dot2.gif";
+$(divid).style.display = "block";
+iImg.title="收起";
+}else{
+iImg.src="../../templates/tech/images/dot4.gif";
+$(divid).style.display = "none";
+iImg.title="展开";
+}
+}
+if (window.attachEvent) window.attachEvent("onload", navHover);
+</script>
+
+<script language="javascript" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/pv_002.js"></script><div style="display: none;"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/count.htm" id="pv_img" width="1" height="1"></div>
+<script>
+function sendPV(){
+    var pvTrack = new PvTrack();
+    pvTrack.type = 10; // 频道类别ID
+    pvTrack.channel = 22; // 频道ID
+   
+    pvTrack.pageType = 0;
+    pvTrack.track();
+}
+window.setTimeout("sendPV()", 0);
+</script>
+<script language="javascript" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/pv.js" type="text/javascript"></script><script language="javascript" type="text/javascript" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/pvpv.js"></script><script src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ga.js" type="text/javascript"></script><script language="javascript" type="text/javascript" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/g.js"></script><script src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ga.js" type="text/javascript"></script>
+<table style="border-collapse: collapse;" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td valign="top" width="235" align="center">
+<br>
+
+<table style="border-collapse: collapse;" width="220" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0">
+<tbody><tr><td><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/left_bg_top.gif" alt="" border="0"></td></tr>
+<tr><td align="center" bgcolor="#edf2f2" height="25">
+<table style="border-collapse: collapse;" width="200" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="180" align="center"><font style="font-size: 10pt;" color="#1f72d0"><b>关于作者</b></font></td><td width="20"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/dot2_002.gif" title="收起" onclick="ShowHideDiv('aboutwriter',this);return false;" border="0"></td></tr>
+</tbody></table>
+
+</td></tr>
+<tr><td bgcolor="#d2dee2" height="1"></td></tr>
+<tr><td bgcolor="#ffffff" height="1"></td></tr>
+
+<tr><td style="color: rgb(2, 54, 141);" align="center" bgcolor="#f3f6f6">
+<table style="border-collapse: collapse; word-wrap: break-word; table-layout: fixed; color: rgb(2, 54, 141);" id="aboutwriter" width="200" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td align="center">
+<a href="http://blog.chinaunix.net/u/25605/up_user.jpg" target="_blank"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/up_user_pre.jpg" alt="" border="0"></a>
+<table style="border-collapse: collapse; word-wrap: break-word;" width="200" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="200">
+<pre style="margin: 5px; line-height: 150%;" width="25">姓名：快乐生活
+职业：IT业
+年龄：年年变化
+位置：
+个性介绍：
+</pre>	
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+</td></tr>
+<tr><td>
+<table style="border: 1px solid rgb(210, 222, 226); padding: 1px; border-collapse: collapse;" width="220" align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr bgcolor="#edf2f2" height="20">
+<td style="color: rgb(31, 114, 208); font-size: 9pt;" title="上一年" onclick="pushBtm('YU')" width="14" align="center">||</td>
+<td style="color: rgb(31, 114, 208); font-size: 9pt;" title="上一月" onclick="pushBtm('MU')" width="14" align="center">&lt;&lt;</td>
+<td id="YMBG" style="color: rgb(31, 114, 208); font-size: 9pt;" align="center" nowrap="nowrap">2010年7月</td>
+<td id="GZ" style="color: rgb(31, 114, 208); font-size: 9pt;" align="center" nowrap="nowrap">庚寅年（虎）</td>
+<td style="color: rgb(31, 114, 208); font-size: 9pt;" title="下一月" onclick="pushBtm('MD')" width="14" align="center">&gt;&gt;</td>
+<td style="color: rgb(31, 114, 208); font-size: 9pt;" title="下一年" onclick="pushBtm('YD')" width="14" align="center">||</td>
+</tr>
+<tr><td colspan="6">
+<div id="ttdiv" width="210" align="center"><table style="border-collapse: collapse;" id="datetable" width="216" bgcolor="#f6f8f8" border="0" cellpadding="0" cellspacing="0">
+	  <tbody><tr style="color: rgb(166, 170, 151);" align="center" bgcolor="#edf2f2">
+		<td width="32" height="24">日</td>
+		<td width="32">一</td>
+		<td width="32">二</td>
+		<td width="32">三</td>
+		<td width="32">四</td>
+		<td width="32">五</td>
+		<td width="32">六</td></tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font class="" id="SD0" title="" color="#cdbc71" face="Arial Black" size="2"></font><br><font id="LD0" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD1" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD1" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD2" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD2" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD3" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD3" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD4" title="二十" color="#a6aa97" face="Arial Black" size="2">1</font><br><font id="LD4" style="font-size: 7pt;">二十</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD5" title="廿一" color="#a6aa97" face="Arial Black" size="2">2</font><br><font id="LD5" style="font-size: 7pt;">廿一</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD6" title="廿二" color="#cdbc71" face="Arial Black" size="2">3</font><br><font id="LD6" style="font-size: 7pt;">廿二</font></td>	  </tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="" id="SD7" title="廿三" color="#cdbc71" face="Arial Black" size="2">4</font><br><font id="LD7" style="font-size: 7pt;">廿三</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD8" title="廿四" color="#a6aa97" face="Arial Black" size="2">5</font><br><font id="LD8" style="font-size: 7pt;">廿四</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD9" title="廿五" color="#a6aa97" face="Arial Black" size="2">6</font><br><font id="LD9" style="font-size: 7pt;">廿五</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD10" title="小暑" color="#a6aa97" face="Arial Black" size="2">7</font><br><font id="LD10" style="font-size: 7pt;"><font color="limegreen">小暑</font></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD11" title="廿七" color="#a6aa97" face="Arial Black" size="2">8</font><br><font id="LD11" style="font-size: 7pt;">廿七</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD12" title="廿八" color="#a6aa97" face="Arial Black" size="2">9</font><br><font id="LD12" style="font-size: 7pt;">廿八</font></td>	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="" id="SD13" title="廿九" color="#cdbc71" face="Arial Black" size="2">10</font><br><font id="LD13" style="font-size: 7pt;">廿九</font></td>	  </tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="todyaColor" id="SD14" title="三十" color="#cdbc71" face="Arial Black" size="2">11</font><br><font id="LD14" style="font-size: 7pt;">三十</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD15" title="&lt;b&gt;6月小&lt;/b&gt;" color="#a6aa97" face="Arial Black" size="2">12</font><br><font id="LD15" style="font-size: 7pt;"><b>6月小</b></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD16" title="初二" color="#a6aa97" face="Arial Black" size="2">13</font><br><font id="LD16" style="font-size: 7pt;">初二</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD17" title="初三" color="#a6aa97" face="Arial Black" size="2">14</font><br><font id="LD17" style="font-size: 7pt;">初三</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD18" title="初四" color="#a6aa97" face="Arial Black" size="2">15</font><br><font id="LD18" style="font-size: 7pt;">初四</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD19" title="初五" color="#a6aa97" face="Arial Black" size="2">16</font><br><font id="LD19" style="font-size: 7pt;">初五</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD20" title="初六" color="#cdbc71" face="Arial Black" size="2">17</font><br><font id="LD20" style="font-size: 7pt;">初六</font></td>	  </tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="" id="SD21" title="初七" color="#cdbc71" face="Arial Black" size="2">18</font><br><font id="LD21" style="font-size: 7pt;">初七</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD22" title="初八" color="#a6aa97" face="Arial Black" size="2">19</font><br><font id="LD22" style="font-size: 7pt;">初八</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD23" title="初九" color="#a6aa97" face="Arial Black" size="2">20</font><br><font id="LD23" style="font-size: 7pt;">初九</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD24" title="初十" color="#a6aa97" face="Arial Black" size="2">21</font><br><font id="LD24" style="font-size: 7pt;">初十</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD25" title="十一" color="#a6aa97" face="Arial Black" size="2">22</font><br><font id="LD25" style="font-size: 7pt;">十一</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD26" title="大暑" color="#a6aa97" face="Arial Black" size="2">23</font><br><font id="LD26" style="font-size: 7pt;"><font color="limegreen">大暑</font></font></td>	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="" id="SD27" title="十三" color="#cdbc71" face="Arial Black" size="2">24</font><br><font id="LD27" style="font-size: 7pt;">十三</font></td>	  </tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font style="color: rgb(205, 188, 113);" class="" id="SD28" title="十四" color="#cdbc71" face="Arial Black" size="2">25</font><br><font id="LD28" style="font-size: 7pt;">十四</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD29" title="十五" color="#a6aa97" face="Arial Black" size="2">26</font><br><font id="LD29" style="font-size: 7pt;">十五</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD30" title="十六" color="#a6aa97" face="Arial Black" size="2">27</font><br><font id="LD30" style="font-size: 7pt;">十六</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD31" title="十七" color="#a6aa97" face="Arial Black" size="2">28</font><br><font id="LD31" style="font-size: 7pt;">十七</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD32" title="十八" color="#a6aa97" face="Arial Black" size="2">29</font><br><font id="LD32" style="font-size: 7pt;">十八</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD33" title="十九" color="#a6aa97" face="Arial Black" size="2">30</font><br><font id="LD33" style="font-size: 7pt;">十九</font></td>	  <td nowrap="nowrap">
+<font class="" id="SD34" title="二十" color="#cdbc71" face="Arial Black" size="2">31</font><br><font id="LD34" style="font-size: 7pt;">二十</font></td>	  </tr>
+	  <tr align="center">
+	  <td nowrap="nowrap">
+<font class="" id="SD35" title="" color="#cdbc71" face="Arial Black" size="2"></font><br><font id="LD35" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD36" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD36" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD37" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD37" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD38" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD38" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD39" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD39" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD40" title="" color="#a6aa97" face="Arial Black" size="2"></font><br><font id="LD40" style="font-size: 7pt;"></font></td>	  <td nowrap="nowrap">
+<font class="" id="SD41" title="" color="#cdbc71" face="Arial Black" size="2"></font><br><font id="LD41" style="font-size: 7pt;"></font></td>	  </tr>
+</tbody></table></div>
+</td></tr>
+<tr><td colspan="6" height="1"></td></tr>
+</tbody></table>
+
+<script src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/mdate.js"></script>
+<script language="javascript">
+var arrArtdate=new Array('20061028','20061101','20061103','20061109','20061113','20061117','20061123','20061124','20061213','20061219','20061220','20070322','20070323','20070406','20070425','20070626','20070627','20070702','20070813','20070814','20070815','20070821','20070918','20070928','20071015','20071031','20071103','20071221','20071228','20080106','20080107','20080111','20080113','20080130','20080219','20080227','20080321','20080324','20080328','20080404','20080921','20090617','20090805','20091001','20091003','20091007','20091012','20091017','20091104','20091110','20091114','20091121','20091122','20091123');
+
+initial("ttdiv");
+
+</script>
+
+</td></tr>
+<tr><td bgcolor="#d2dee2" height="1"></td></tr>
+<tr><td bgcolor="#ffffff" height="1"></td></tr>
+<tr><td align="center" bgcolor="#edf2f2" height="25">
+<table style="border-collapse: collapse;" width="200" border="0" bordercolor="#111111" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="180" align="center"><font style="font-size: 10pt;" color="#1f72d0"><b>我的分类</b></font></td><td width="20"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/dot2.gif" title="收起" onclick="ShowHideDiv('lefttree',this);return false;" border="0"></td></tr>
+</tbody></table>
+
+</td></tr>
+<tr><td bgcolor="#d2dee2" height="1"></td></tr>
+<tr><td bgcolor="#ffffff" height="1"></td></tr>
+<tr><td style="color: rgb(2, 54, 141);" bgcolor="#f3f6f6">
+<script src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/tree.js"></script>
+<div style="overflow: auto;" id="lefttree"><div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(1,true);"><img id="signContentsTree1" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(1,false);"><img id="iconContentsTree1" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(1,false);">我的文章分类</a></td></tr></tbody></table></div><div id="divContentsTree1" style="display: block;"><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(5,true);"><img id="signContentsTree5" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_122207.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(5,false);"><img id="iconContentsTree5" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_122207.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(5,false);">web</a></td></tr></tbody></table></div><div id="divContentsTree5" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(6,true);"><img id="signContentsTree6" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41114.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(6,false);"><img id="iconContentsTree6" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41114.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(6,false);">综合</a></td></tr></tbody></table></div><div id="divContentsTree6" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(7,true);"><img id="signContentsTree7" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_114520.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(7,false);"><img id="iconContentsTree7" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_114520.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(7,false);">Ubuntu</a></td></tr></tbody></table></div><div id="divContentsTree7" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(8,true);"><img id="signContentsTree8" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_95491.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(8,false);"><img id="iconContentsTree8" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_95491.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(8,false);">NS-2</a></td></tr></tbody></table></div><div id="divContentsTree8" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(9,true);"><img id="signContentsTree9" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41112.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(9,false);"><img id="iconContentsTree9" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41112.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(9,false);">red hat</a></td></tr></tbody></table></div><div id="divContentsTree9" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(10,true);"><img id="signContentsTree10" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41175.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(10,false);"><img id="iconContentsTree10" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41175.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(10,false);">solaris</a></td></tr></tbody></table></div><div id="divContentsTree10" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(11,true);"><img id="signContentsTree11" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41402.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(11,false);"><img id="iconContentsTree11" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41402.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(11,false);">FreeBSD</a></td></tr></tbody></table></div><div id="divContentsTree11" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(12,true);"><img id="signContentsTree12" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_42254.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(12,false);"><img id="iconContentsTree12" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_42254.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(12,false);">SUSELinux</a></td></tr></tbody></table></div><div id="divContentsTree12" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(13,true);"><img id="signContentsTree13" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41400.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(13,false);"><img id="iconContentsTree13" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41400.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(13,false);">SELinux</a></td></tr></tbody></table></div><div id="divContentsTree13" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(14,true);"><img id="signContentsTree14" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_42720.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(14,false);"><img id="iconContentsTree14" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_42720.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(14,false);">DNS</a></td></tr></tbody></table></div><div id="divContentsTree14" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(15,true);"><img id="signContentsTree15" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_44705.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(15,false);"><img id="iconContentsTree15" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_44705.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(15,false);">网络</a></td></tr></tbody></table></div><div id="divContentsTree15" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(16,true);"><img id="signContentsTree16" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_55564.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(16,false);"><img id="iconContentsTree16" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_55564.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(16,false);">项目管理</a></td></tr></tbody></table></div><div id="divContentsTree16" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(17,true);"><img id="signContentsTree17" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_80986.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(17,false);"><img id="iconContentsTree17" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_80986.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(17,false);">可信计算</a></td></tr></tbody></table></div><div id="divContentsTree17" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(18,true);"><img id="signContentsTree18" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_76078.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(18,false);"><img id="iconContentsTree18" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_76078.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(18,false);">排版与文献</a></td></tr></tbody></table></div><div id="divContentsTree18" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(19,true);"><img id="signContentsTree19" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/article_41113.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(19,false);"><img id="iconContentsTree19" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/article_41113.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(19,false);">收集连接</a></td></tr></tbody></table></div><div id="divContentsTree19" style="display: none;"></div></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(2,true);"><img id="signContentsTree2" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/photo.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(2,false);"><img id="iconContentsTree2" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/photo.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(2,false);">我的图片分类</a></td></tr></tbody></table></div><div id="divContentsTree2" style="display: block;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(3,true);"><img id="signContentsTree3" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(3,false);"><img id="iconContentsTree3" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(3,false);">我的链接分类</a></td></tr></tbody></table></div><div id="divContentsTree3" style="display: block;"><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(20,true);"><img id="signContentsTree20" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_11771.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(20,false);"><img id="iconContentsTree20" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_11771.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(20,false);">IT综合学习网站</a></td></tr></tbody></table></div><div id="divContentsTree20" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(21,true);"><img id="signContentsTree21" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9312.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(21,false);"><img id="iconContentsTree21" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9312.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(21,false);">综合</a></td></tr></tbody></table></div><div id="divContentsTree21" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(22,true);"><img id="signContentsTree22" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9311.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(22,false);"><img id="iconContentsTree22" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9311.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(22,false);">red hat</a></td></tr></tbody></table></div><div id="divContentsTree22" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(23,true);"><img id="signContentsTree23" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9308.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(23,false);"><img id="iconContentsTree23" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9308.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(23,false);">参考博客</a></td></tr></tbody></table></div><div id="divContentsTree23" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(24,true);"><img id="signContentsTree24" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9527.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(24,false);"><img id="iconContentsTree24" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9527.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(24,false);">solaris</a></td></tr></tbody></table></div><div id="divContentsTree24" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(25,true);"><img id="signContentsTree25" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9528.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(25,false);"><img id="iconContentsTree25" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9528.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(25,false);">SELinux</a></td></tr></tbody></table></div><div id="divContentsTree25" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(26,true);"><img id="signContentsTree26" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9529.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(26,false);"><img id="iconContentsTree26" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9529.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(26,false);">NS-2</a></td></tr></tbody></table></div><div id="divContentsTree26" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(27,true);"><img id="signContentsTree27" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9530.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(27,false);"><img id="iconContentsTree27" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9530.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(27,false);">FreeBsd</a></td></tr></tbody></table></div><div id="divContentsTree27" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(28,true);"><img id="signContentsTree28" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9606.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(28,false);"><img id="iconContentsTree28" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9606.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(28,false);">DNS</a></td></tr></tbody></table></div><div id="divContentsTree28" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(29,true);"><img id="signContentsTree29" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_11761.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(29,false);"><img id="iconContentsTree29" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_11761.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(29,false);">版本管理</a></td></tr></tbody></table></div><div id="divContentsTree29" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(30,true);"><img id="signContentsTree30" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_11630.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(30,false);"><img id="iconContentsTree30" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_11630.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(30,false);">JAVA</a></td></tr></tbody></table></div><div id="divContentsTree30" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(31,true);"><img id="signContentsTree31" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_11737.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(31,false);"><img id="iconContentsTree31" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_11737.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(31,false);">eclipse与插件</a></td></tr></tbody></table></div><div id="divContentsTree31" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(32,true);"><img id="signContentsTree32" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_11048.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(32,false);"><img id="iconContentsTree32" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_11048.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(32,false);">新兴部落</a></td></tr></tbody></table></div><div id="divContentsTree32" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(33,true);"><img id="signContentsTree33" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Plus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_12043.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(33,false);"><img id="iconContentsTree33" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/ClosedFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_12043.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(33,false);">文学</a></td></tr></tbody></table></div><div id="divContentsTree33" style="display: none;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(34,true);"><img id="signContentsTree34" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_9314.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(34,false);"><img id="iconContentsTree34" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_9314.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(34,false);">政府与人事</a></td></tr></tbody></table></div><div id="divContentsTree34" style="display: block;"></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/TreeBlank.gif" alt="" style="border: 0px none ;" width="19" height="19"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(35,true);"><img id="signContentsTree35" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/links_14093.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(35,false);"><img id="iconContentsTree35" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/links_14093.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(35,false);">信息安全与可信计算</a></td></tr></tbody></table></div><div id="divContentsTree35" style="display: block;"></div></div><div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="middle" nowrap="nowrap"><a href="javascript:void(0)" onclick="javascript: ContentsTree.OnNodeClick(4,true);"><img id="signContentsTree4" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/Minus.gif" alt="" style="border: 0px none ;" width="19" height="19"></a><a href="http://blog.chinaunix.net/u/25605/music.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(4,false);"><img id="iconContentsTree4" src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/OpenFolder.gif" alt="" style="border: 0px none ;" width="19" height="19"></a></td><td valign="middle" nowrap="nowrap"><a href="http://blog.chinaunix.net/u/25605/music.html" class="listtree" onclick="javascript: ContentsTree.OnNodeClick(4,false);">我的音乐分类</a></td></tr></tbody></table></div><div id="divContentsTree4" style="display: block;"></div></div></div>
+<script language="javascript">
+ContentsTree = new CTree("ContentsTree");
+ContentsTree.bAutoClose = false;
+ContentsTree.stTarget = "";
+a0 = ContentsTree.AddNode(null, "我的文章分类", "article.html");
+a0.bOpen=true;
+p0 = ContentsTree.AddNode(null, "我的图片分类", "photo.html");
+p0.bOpen=true;
+f0 = ContentsTree.AddNode(null, "我的链接分类", "links.html");
+f0.bOpen=true;
+m0 = ContentsTree.AddNode(null, "我的音乐分类", "music.html");
+m0.bOpen=true;
+a122207 = ContentsTree.AddNode(a0, "web", "article_122207.html");
+a41114 = ContentsTree.AddNode(a0, "综合", "article_41114.html");
+a114520 = ContentsTree.AddNode(a0, "Ubuntu", "article_114520.html");
+a95491 = ContentsTree.AddNode(a0, "NS-2", "article_95491.html");
+a41112 = ContentsTree.AddNode(a0, "red hat", "article_41112.html");
+a41175 = ContentsTree.AddNode(a0, "solaris", "article_41175.html");
+a41402 = ContentsTree.AddNode(a0, "FreeBSD", "article_41402.html");
+a42254 = ContentsTree.AddNode(a0, "SUSELinux", "article_42254.html");
+a41400 = ContentsTree.AddNode(a0, "SELinux", "article_41400.html");
+a42720 = ContentsTree.AddNode(a0, "DNS", "article_42720.html");
+a44705 = ContentsTree.AddNode(a0, "网络", "article_44705.html");
+a55564 = ContentsTree.AddNode(a0, "项目管理", "article_55564.html");
+a80986 = ContentsTree.AddNode(a0, "可信计算", "article_80986.html");
+a76078 = ContentsTree.AddNode(a0, "排版与文献", "article_76078.html");
+a41113 = ContentsTree.AddNode(a0, "收集连接", "article_41113.html");
+ 
+ 
+f11771 = ContentsTree.AddNode(f0, "IT综合学习网站", "links_11771.html");
+f9312 = ContentsTree.AddNode(f0, "综合", "links_9312.html");
+f9311 = ContentsTree.AddNode(f0, "red hat", "links_9311.html");
+f9308 = ContentsTree.AddNode(f0, "参考博客", "links_9308.html");
+f9527 = ContentsTree.AddNode(f0, "solaris", "links_9527.html");
+f9528 = ContentsTree.AddNode(f0, "SELinux", "links_9528.html");
+f9529 = ContentsTree.AddNode(f0, "NS-2", "links_9529.html");
+f9530 = ContentsTree.AddNode(f0, "FreeBsd", "links_9530.html");
+f9606 = ContentsTree.AddNode(f0, "DNS", "links_9606.html");
+f11761 = ContentsTree.AddNode(f0, "版本管理", "links_11761.html");
+f11630 = ContentsTree.AddNode(f0, "JAVA", "links_11630.html");
+f11737 = ContentsTree.AddNode(f0, "eclipse与插件", "links_11737.html");
+f11048 = ContentsTree.AddNode(f0, "新兴部落", "links_11048.html");
+f12043 = ContentsTree.AddNode(f0, "文学", "links_12043.html");
+f9314 = ContentsTree.AddNode(f0, "政府与人事", "links_9314.html");
+f14093 = ContentsTree.AddNode(f0, "信息安全与可信计算", "links_14093.html");
+ 
+ 
+//document.write(ContentsTree.GetHTMLCode());
+document.getElementById("lefttree").innerHTML=ContentsTree.GetHTMLCode();
+</script>	
+</td></tr>
+<tr><td bgcolor="#d2dee2" height="1"></td></tr>
+<tr><td bgcolor="#ffffff" height="1"></td></tr>
+
+<tr><td><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/left_bg_bottom.gif" alt="" border="0"></td></tr>
+
+</tbody></table>
+
+
+</td><td width="10"></td><td valign="top" align="center">
+
+<br>
+
+
+<table style="border-collapse: collapse;" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="11" height="11"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/g_left_top.gif" alt="" border="0"></td>
+<td width="99%" bgcolor="#dddddd" height="11"></td>
+<td width="11" height="11"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/g_right_top.gif" alt="" border="0"></td>
+</tr>
+
+<tr><td colspan="3" valign="top" width="100%" align="center" bgcolor="#dddddd"> 
+
+
+
+
+
+
+
+
+<br>
+<table style="border-collapse: collapse;" width="96%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="7" height="7"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/w_left_top.gif" alt="" border="0"></td>
+<td width="100%" bgcolor="#f3f3f3"></td>
+<td width="7" height="7"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/w_right_top.gif" alt="" border="0"></td>
+</tr>
+<tr><td colspan="3" align="center" bgcolor="#f3f3f3">
+
+<table style="border-collapse: collapse; word-wrap: break-word;" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td align="center" height="25">
+<font style="font-size: 14pt;" color="#02368d"><b>Windows下安装Apache2.2 + PHP5.3 + Mysql5.1</b></font><br>
+</td></tr>
+<tr><td bgcolor="#d2dee2" height="1"></td></tr>
+<tr><td bgcolor="#ffffff" height="1"></td></tr>
+<tr><td align="center">
+<table style="border-collapse: collapse; word-wrap: break-word;" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td width="100%">
+<div id="art" width="100%" style="margin: 15px;">
+<div><font face="幼圆" size="3">(一)<br>1.下载apache_2.2.13-win32-x86-no_ssl.msi<br><br>2.下载php-5.3.0-Win32-VC6-x86.zip<br>&nbsp; 注意VC6版本for Apache, VC9版本for IIS<br>&nbsp; php-5.3.0-nts-Win32-VC6-x86.msi不能为Apache正常安装(?)</font></div>
+<div><font face="幼圆" size="3">&nbsp; (注：经本人测试，可以正常安装，只要选对apache的配置路径就行)<br><br>3.下载mysql-5.1.38-win32.msi<br><br>(二)<br>1.默认安装Apache, 如果是安装为"only for the Current User, on Port 8080, when started Manually"<br>&nbsp; 则可以httpd -k install来手工安装为windows服务, httpd -k uninstall卸载服务<br>&nbsp;&nbsp;&nbsp; 相关命令: httpd -k [start|stop|restart]<br><br>2.将php-5.3解压到"d:\php", 把php.ini-development改名为php.ini<br>&nbsp; 顾名思义php.ini-development是开发的典型配置, php.ini-production则用于发布时<br><br>3.默认安装Mysql<br><br>(三)<br>1.打开Apache的httpd.conf文件, 任意位置增加如下几行:<br>&nbsp; ; Apache2.2 version<br>&nbsp; LoadModule php5_module "d:/php/php5apache2_2.dll"<br>&nbsp; AddType application/x-httpd-php .php<br>&nbsp; PHPIniDir "d:/php"<br><br>2.打开PHP的php.ini文件, 修改:<br>&nbsp; extension_dir = "d:/php/ext"<br>&nbsp; 然后根据ext目录里面的dll文件打开扩展包:<br>&nbsp; ; 常用配置<br>&nbsp; extension=php_curl.dll<br>&nbsp; extension=php_gd2.dll<br>&nbsp; extension=php_mbstring.dll<br>&nbsp; ; 支持Mysql<br>&nbsp; extension=php_mysql.dll<br>&nbsp; extension=php_mysqli.dll<br>&nbsp; extension=php_pdo_mysql.dll<br>&nbsp; extension=php_xmlrpc.dll<br>&nbsp; ..<br>&nbsp; <br>&nbsp; ; 时区设定为中国时区<br>&nbsp; date.timezone = "Asia/Shanghai"<br><br>3.使用MySQL Server Instance Config Wizard配置mysql,<br>&nbsp; 也可以在安装过程中配置<br>&nbsp; <br>(四)<br>1.在Apache的htdocs目录下建立phpinfo.php文件,输入:<br>&lt;?php<br>phpinfo();<br>?&gt;<br>&nbsp;<br>(五)<br>1.重启Apache, 在浏览器输入: http://127.0.0.1:8080/phpinfo.php<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ xdebug ]<br>(一)<br>1.下载php_xdebug-2.0.5-5.3-vc6.dll<br><br>(二)<br>1.编辑php.ini文件, 加入下面几行:<br>; 使用绝对路径<br>; zend_extension_ts (thread safe), 但这里须用zend_extension, 原因未知<br>zend_extension="D:/PHP/ext/php_xdebug-2.0.5-5.3-vc6.dll"<br>[xdebug]<br>; 是否打开远程调式, server方式时必须<br>xdebug.remote_enable=on<br>;xdebug.remote_host=localhost<br>;xdebug.remote_port=9000<br>;xdebug.remote_handler="dbgp"<br>; 是否跟踪函数调用过程, default(0)<br>xdebug.auto_trace=on<br>; 是否收集函数调用时传递的参数, default(0)<br>xdebug.collect_params=on<br>; 是否将返回值写入日志文件, default(0)<br>xdebug.collect_return=on<br>; 设置输出文件的路径<br>xdebug.trace_output_dir="D:/PHP/xdebug"<br>; 打开效能监测器<br>xdebug.profiler_enable=on<br>; 设定效能监测信息输出文件的路径<br>xdebug.profiler_output_dir="D:/PHP/xdebug"<br><br>2.重启Apache</font><br></div>
+</div>
+</td></tr>
+</tbody></table>
+
+
+<p style="margin: 5px; line-height: 150%;">
+ 
+ 
+</p>
+</td></tr>
+<tr><td height="25">
+&nbsp;<font color="#000099"><b>原文地址</b></font>
+<a href="http://www.cppblog.com/0OO/archive/2009/09/23/97031.html" target="_blank">http://www.cppblog.com/0OO/archive/2009/09/23/97031.html</a>
+</td></tr>
+ 
+ 
+<tr><td align="center" height="25">
+<font color="#295200">发表于： 2009-10-01，修改于： 2009-10-01 09:05，已浏览1640次，有评论0条</font> 
+<a href="http://blog.chinaunix.net/u2/star.php?blogid=25605&amp;artid=2063270" id="star" onclick="NewWindows(this.href);return false;" title="推荐这篇文章">推荐</a>
+<a href="http://blog.chinaunix.net/u2/complaint.php?blogid=25605&amp;artid=2063270" id="complaint" onclick="NewWindows(this.href);return false;" title="投诉这篇文章">投诉</a>
+</td></tr>
+
+
+
+
+</tbody></table>
+
+
+</td></tr>
+<tr><td width="7" height="7"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/w_left_buttom.gif" alt="" border="0"></td>
+<td bgcolor="#f3f3f3"></td>
+<td width="7" height="7"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/w_right_buttom.gif" alt="" border="0"></td>
+</tr>
+</tbody></table>
+
+
+</td></tr><tr><td width="11" height="11"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/g_left_bottom.gif" alt="" border="0"></td>
+<td bgcolor="#dddddd"></td>
+<td width="11" height="11"><img src="Windows%E4%B8%8B%E5%AE%89%E8%A3%85Apache2.2%20+%20PHP5.3%20+%20Mysql5.1_files/g_right_bottom.gif" alt="" border="0"></td>
+</tr>
+</tbody></table>
+<br>
+</td></tr>
+</tbody></table>
+
+
+
+</body></html>

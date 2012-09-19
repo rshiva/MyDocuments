@@ -1,0 +1,19 @@
+/parten/i 
+
+i 
+Perform a case-insensitive search.
+
+g 
+Find all occurrences (perform a global search).
+
+m 
+Treat a string as several (m for multiple) lines. By default, the ^ and $ characters match at the very start and very end of the string in question. Using the m modifier will allow for ^ and $ to match at the beginning of any line in a string.
+
+s 
+Treat a string as a single line, ignoring any newline characters found within; this accomplishes just the opposite of the m modifier.
+
+x 
+Ignore white space and comments within the regular expression.
+
+U 
+Stop at the first match. Many quantifiers are ¡°greedy¡±; they match the pattern as many times as possible rather than just stop at the first match. You can cause them to be ¡°ungreedy¡± with this modifier.

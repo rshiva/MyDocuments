@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Browser objects</h1>
+<hr />
+<p>&nbsp;</p>
+<h2> <a name="windowObject" id="windowObject"></a>Window Object (some properties and methods are not for all browsers)</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666" class="white">The window object represents an open window in a browser. </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="windowObjectP" id="windowObjectP"></a>Window object properties</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_closed.asp">closed</a></td>
+    <td width="350" align="left" valign="top">Returns a Boolean value indicating whether a window has been closed or   	not</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_defaultstatus.asp">defaultStatus</a></td>
+    <td align="left" valign="top">Sets or returns the default text in the statusbar of a window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/dom_obj_document.asp">document</a></td>
+    <td align="left" valign="top">Returns the Document object for the window (<a href="http://www.w3schools.com/jsref/dom_obj_document.asp">See Document object</a>)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_frames.asp">frames</a></td>
+    <td align="left" valign="top">Returns an array of all the frames (including iframes) in the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/obj_history.asp">history</a></td>
+    <td align="left" valign="top">Returns the History object for the window (<a href="http://www.w3schools.com/jsref/obj_history.asp">See History object</a>)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_innerheight.asp">innerHeight</a></td>
+    <td align="left" valign="top">Sets or returns the the inner height of a window's content area</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_innerheight.asp">innerWidth</a></td>
+    <td align="left" valign="top">Sets or returns the the inner width of a window's content area</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_length.asp">length</a></td>
+    <td align="left" valign="top">Returns the number of frames (including iframes) in a window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/obj_location.asp">location</a></td>
+    <td align="left" valign="top">Returns the Location object for the window (<a href="http://www.w3schools.com/jsref/obj_location.asp">See Location object</a>)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_name.asp">name</a></td>
+    <td align="left" valign="top">Sets or returns the name of a window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/obj_navigator.asp">navigator</a></td>
+    <td align="left" valign="top">Returns the Navigator object for the window (<a href="http://www.w3schools.com/jsref/obj_navigator.asp">See   	Navigator object</a>)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_opener.asp">opener</a></td>
+    <td align="left" valign="top">Returns a reference to the window that created the window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_outerheight.asp">outerHeight</a></td>
+    <td align="left" valign="top">Sets or returns the outer height of a window, including   	toolbars/scrollbars</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_outerheight.asp">outerWidth</a></td>
+    <td align="left" valign="top">Sets or returns the outer width of a window, including   	toolbars/scrollbars</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_pagexoffset.asp">pageXOffset</a></td>
+    <td align="left" valign="top">Returns the pixels the current document has been scrolled (horizontally)   	from the upper left corner of the window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_pagexoffset.asp">pageYOffset</a></td>
+    <td align="left" valign="top">Returns the pixels the current document has been scrolled (vertically)   	from the upper left corner of the window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_parent.asp">parent</a></td>
+    <td align="left" valign="top">Returns the parent window of the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/obj_screen.asp">screen</a></td>
+    <td align="left" valign="top">Returns the Screen object for the window <a href="http://www.w3schools.com/jsref/obj_screen.asp">(See   	Screen object)</a></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_screenleft.asp">screenLeft</a></td>
+    <td align="left" valign="top">Returns the x coordinate of the window relative to the screen</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_screenleft.asp">screenTop</a></td>
+    <td align="left" valign="top">Returns the y coordinate of the window relative to the screen</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_screenx.asp">screenX</a></td>
+    <td align="left" valign="top">Returns the x coordinate of the window relative to the screen</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_screenx.asp">screenY</a></td>
+    <td align="left" valign="top">Returns the y coordinate of the window relative to the screen</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_self.asp">self</a></td>
+    <td align="left" valign="top">Returns the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_status.asp">status</a></td>
+    <td align="left" valign="top">Sets the text in the statusbar of a window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_win_top.asp">top</a></td>
+    <td align="left" valign="top">Returns the topmost browser window</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="windowObjectM" id="windowObjectM"></a>Window object methods</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_alert.asp">alert()</a></td>
+    <td align="left" valign="top">Displays an alert box with a message and an OK button</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_focus.asp">focus()</a></td>
+    <td align="left" valign="top">Sets focus to the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_blur.asp">blur()</a></td>
+    <td align="left" valign="top">Removes focus from the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_setinterval.asp">setInterval()</a></td>
+    <td align="left" valign="top">Calls a function or evaluates an expression at specified intervals (in   	milliseconds)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_clearinterval.asp">clearInterval()</a></td>
+    <td align="left" valign="top">Clears a timer set with setInterval()</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_settimeout.asp">setTimeout()</a></td>
+    <td align="left" valign="top">Calls a function or evaluates an expression after a specified number of   	milliseconds</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_cleartimeout.asp">clearTimeout()</a></td>
+    <td align="left" valign="top">Clears a timer set with setTimeout()</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_close.asp">close()</a></td>
+    <td align="left" valign="top">Closes the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_confirm.asp">confirm()</a></td>
+    <td align="left" valign="top">Displays a dialog box with a message and an OK and a Cancel button</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_createpopup.asp">createPopup()</a></td>
+    <td align="left" valign="top">Creates a pop-up window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_moveby.asp">moveBy()</a><a href="http://www.w3schools.com/jsref/met_win_focus.asp"></a></td>
+    <td align="left" valign="top">Moves a window relative to its current position</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_moveto.asp">moveTo()</a></td>
+    <td align="left" valign="top">Moves a window to the specified position</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_open.asp">open()</a></td>
+    <td align="left" valign="top">Opens a new browser window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_print.asp">print()</a></td>
+    <td align="left" valign="top">Prints the content of the current window</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_prompt.asp">prompt()</a></td>
+    <td align="left" valign="top">Displays a dialog box that prompts the visitor for input</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_resizeby.asp">resizeBy()</a></td>
+    <td align="left" valign="top">Resizes the window by the specified pixels</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_resizeto.asp">resizeTo()</a></td>
+    <td align="left" valign="top">Resizes the window to the specified width and height</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">scroll()</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_scrollby.asp">scrollBy()</a></td>
+    <td align="left" valign="top">Scrolls the content by the specified number of pixels</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_scrollto.asp">scrollTo()</a></td>
+    <td align="left" valign="top">Scrolls the content to the specified coordinates</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<h2><a name="documentObject" id="documentObject"></a>Document Object (some properties and methods are not for all browsers) </h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><p class="white">Each HTML document loaded into a browser window becomes a Document object. The Document object provides access to all HTML elements in a page, from within a script.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="documentObjectC" id="documentObjectC"></a>Document Object Collections</h3></td>
+  </tr>
+  <tr>
+    <td width="287" align="left" valign="top"><a href="http://www.w3schools.com/jsref/coll_doc_anchors.asp">anchors[]</a></td>
+    <td width="1167" align="left" valign="top">Returns an array of all the anchors in the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/coll_doc_forms.asp">forms[]</a></td>
+    <td align="left" valign="top">Returns an array of all the forms in the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/coll_doc_images.asp">images[]</a></td>
+    <td align="left" valign="top">Returns an array of all the images in the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/coll_doc_links.asp">links[]</a></td>
+    <td align="left" valign="top">Returns an array of all the links in the document</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="documentObjectP" id="documentObjectP"></a>Document Object Properties</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_cookie.asp">cookie</a></td>
+    <td align="left" valign="top">Returns all name/value pairs of cookies in the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_documentmode.asp">documentMode</a></td>
+    <td align="left" valign="top">Returns the mode used by the browser to render the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_domain.asp">domain</a></td>
+    <td align="left" valign="top">Returns the domain name of the server that loaded the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_lastmodified.asp">lastModified</a></td>
+    <td align="left" valign="top">Returns the date and time the document was last modified</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_readystate.asp">readyState</a></td>
+    <td align="left" valign="top">Returns the (loading) status of the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_referrer.asp">referrer</a></td>
+    <td align="left" valign="top">Returns the URL of the document that loaded the current document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_title.asp">title</a></td>
+    <td align="left" valign="top">Sets or returns the title of the document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_doc_url.asp">URL</a></td>
+    <td align="left" valign="top">Returns the full URL of the document</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="documentObecjtM" id="documentObecjtM"></a>Document Object Methods</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementbyid.asp">getElementById()</a></td>
+    <td align="left" valign="top">Accesses the first element with the specified id</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementsbyname.asp">getElementsByName()</a></td>
+    <td align="left" valign="top">Accesses all elements with a specified name</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementsbytagname.asp">getElementsByTagName()</a></td>
+    <td align="left" valign="top">Accesses all elements with a specified tagname</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_close.asp">close()</a></td>
+    <td align="left" valign="top">Closes the output stream previously opened with document.open()</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_open.asp">open()</a></td>
+    <td align="left" valign="top">Opens an output stream to collect the output from document.write() or document.writeln()</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_write.asp">write()</a></td>
+    <td align="left" valign="top">Writes HTML expressions or JavaScript code to a document</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_writeln.asp">writeln()</a></td>
+    <td align="left" valign="top">Same as write(), but adds a newline character after each statement</td>
+  </tr>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="navigatorObject" id="navigatorObject"></a>Navigator Object</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><p class="white">The navigator object contains information about the browser.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="navigatorObjectP" id="navigatorObjectP"></a>Navigator Object Properties</h3></td>
+  </tr>
+  <tr>
+    <td width="287" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_appcodename.asp">appCodeName</a></td>
+    <td width="1167" align="left" valign="top">Returns the code name of the browser</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_appname.asp">appName</a></td>
+    <td align="left" valign="top">Returns the name of the browser</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_appversion.asp">appVersion</a></td>
+    <td align="left" valign="top">Returns the version information of the browser</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_cookieenabled.asp">cookieEnabled</a></td>
+    <td align="left" valign="top"> Determines whether cookies are enabled in the browser </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_platform.asp">platform</a></td>
+    <td align="left" valign="top"> Returns for which platform the browser is compiled </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_nav_useragent.asp">userAgent</a></td>
+    <td align="left" valign="top"> Returns the user-agent header sent by the browser to the server </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="navigatorObjectM" id="navigatorObjectM"></a>Navigator Object Methods</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_nav_javaenabled.asp">javaEnabled()</a></td>
+    <td align="left" valign="top"> Specifies whether or not the browser has Java enabled </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_nav_taintenabled.asp">taintEnabled()</a></td>
+    <td align="left" valign="top"> Specifies whether or not the browser has data tainting enabled </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="screenObject" id="screenObject"></a>Screen Object</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><p class="white">The screen object contains information about the visitor's screen.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="screenObjectP" id="screenObjectP"></a>Screen Object Properties</h3></td>
+  </tr>
+  <tr>
+    <td width="287" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_screen_availheight.asp">availHeight</a></td>
+    <td width="1167" align="left" valign="top"> Returns the height of the screen (excluding the Windows Taskbar) </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_screen_availwidth.asp">availWidth</a></td>
+    <td align="left" valign="top"> Returns the width of the screen (excluding the Windows Taskbar) </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_screen_height.asp">height</a></td>
+    <td align="left" valign="top"> Returns the total height of the screen </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_screen_width.asp">width</a></td>
+    <td align="left" valign="top"> Returns the total width of the screen </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_screen_colordepth.asp">colorDepth</a></td>
+    <td align="left" valign="top"> Returns the bit depth of the color palette for displaying images </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="historyObject" id="historyObject"></a>History Object</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><p class="white">The history object contains the URLs visited by the user (within a browser window). The history object is part of the window object and is accessed through the window.history property.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="historyObjectP" id="historyObjectP"></a>History Object Properties</h3></td>
+  </tr>
+  <tr>
+    <td width="287" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_his_length.asp">length</a></td>
+    <td width="1167" align="left" valign="top"> Returns the number of URLs in the history list </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="historyObjectM" id="historyObjectM"></a>History Object Methods</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_his_back.asp">back()</a></td>
+    <td align="left" valign="top"> Loads the previous URL in the history list </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_his_forward.asp">forward()</a></td>
+    <td align="left" valign="top"> Loads the next URL in the history list </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_his_go.asp">go()</a></td>
+    <td align="left" valign="top"> Loads a specific URL from the history list </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="locationObject" id="locationObject"></a>Location Object</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><p class="white">The location object contains information about the current URL.The location object is part of the window object and is accessed through the window.location property.</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="locationObjectP" id="locationObjectP"></a>Location Object Properties</h3></td>
+  </tr>
+  <tr>
+    <td width="287" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_hash.asp">hash</a></td>
+    <td width="1167" align="left" valign="top"> Returns the anchor portion of a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_host.asp">host</a></td>
+    <td align="left" valign="top"> Returns the hostname and port of a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_hostname.asp">hostname</a></td>
+    <td align="left" valign="top"> Returns the hostname of a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_href.asp">href</a></td>
+    <td align="left" valign="top"> Returns the entire URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_pathname.asp">pathname</a></td>
+    <td align="left" valign="top"> Returns the path name of a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_port.asp">port</a></td>
+    <td align="left" valign="top"> Returns the port number the server uses for a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_protocol.asp">protocol</a></td>
+    <td align="left" valign="top"> Returns the protocol of a URL </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_loc_search.asp">search</a></td>
+    <td align="left" valign="top"> Returns the query portion of a URL </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="locationObjectM" id="locationObjectM"></a>Location Object Methods</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_loc_assign.asp">assign()</a></td>
+    <td align="left" valign="top"> Loads a new document </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_loc_reload.asp">reload()</a></td>
+    <td align="left" valign="top"> Reloads the current document </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_loc_replace.asp">replace()</a></td>
+    <td align="left" valign="top"> Replaces the current document with a new one </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

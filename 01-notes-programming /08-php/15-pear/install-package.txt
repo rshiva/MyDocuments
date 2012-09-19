@@ -1,0 +1,11 @@
+Automatically Install
+%>pear install Auth
+%>pear install -a Auth_HTTP //Automatically Installing All Dependencies
+
+
+
+Manually Install
+1) Navigate to the PEAR Web site at http://pear.php.net/ and locate the desired package.
+2) Next, click the Download tab found toward the top of the package¡¯s home page. Doing so produces a linked list of the current package and all previous packages released.
+3) Select and download the appropriate package to your server. These packages are stored in TGZ (tar and Gzip) format.
+4) Next, extract the files to an appropriate location.

@@ -1,0 +1,8 @@
+1. 为避免修改失误，请先备份你的 Apache 配置文件 httpd.conf，该配置文件的路径是：
+安装目录\Apache-22\conf\conf\httpd.conf
+2. 文本打开 http.conf 文件，找到 DocumentRoot 为开头的那一行，将
+DocumentRoot “../htdocs”
+改成 DocumentRoot “D:/htdocs”（此路径改成你想要的路径）
+3. 然后找到 http.conf 文件中的如下内容
+# This should be changed to whatever you set DocumentRoot to.
+#

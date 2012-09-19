@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Block</h1>
+    <p>A block is simply a chunk of code enclosed between either braces or the keywords do and end. </p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="69%" align="left" valign="top"><p class="code">some_array.each {|value| puts value * 3 } sum = 0</p></td>
+          <td width="31%" align="left" valign="top"><p>define one line block</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">other_array.each do |value| <br />
+            &nbsp;&nbsp;sum += value <br />
+            &nbsp;&nbsp;puts value / sum <br />
+          end</p></td>
+          <td align="left" valign="top"><p>define block in mutil lines. start with &quot;do&quot;, end with &quot;end&quot;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p><span class="code">sum = 0<br />
+            [1, 2, 3, 4].each do |value|<br />
+            &nbsp;&nbsp;square = value * value<br />
+            &nbsp;&nbsp;sum += square<br />
+            end<br />
+          puts sum</span> =&gt; 30</p></td>
+          <td align="left" valign="top"><p>There is no local variable in block</p>
+          <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p><span class="code">square = &quot;some shape&quot;<br />
+            sum = 0<br />
+            [1, 2, 3, 4].each do |value; square|<br />
+            &nbsp;&nbsp;square = value * value </span><span class="import"># this is a different variable</span><span class="code"><br />
+            &nbsp;&nbsp;sum += square<br />
+            end</span><br />
+            <span class="code">puts sum</span> =&gt; 30<br />
+            <span class="code">puts square</span> =&gt; some shape</p></td>
+          <td align="left" valign="top"><p>block local variable</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">class File<br />
+            &nbsp;&nbsp;def self.open_and_process(*args)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;f = File.open(*args)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;yield f<span class="import"> # jump to block and jump back when block complete</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;f.close()<br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p class="code">File.open_and_process(&quot;testfile&quot;, &quot;r&quot;) do |file|<br />
+              &nbsp;&nbsp;while line = file.gets<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;puts line<br />
+              &nbsp;&nbsp;end<br />
+          end</p></td>
+          <td align="left" valign="top"><p>use block for transition</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">class MyClass<br />
+            &nbsp;&nbsp;def get_block(&amp;action) <span class="import"># parameter start with &amp;, Ruby will look for a block whenever it is called</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@stored_proc = action <span class="import"># store passed block in instance variable</span><br />
+            &nbsp;&nbsp;end<br />
+  <br />
+            &nbsp;&nbsp;def use_block(paramater)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@stored_proc.call(paramater) <span class="import"># used passed block</span><br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p><span class="code">my_variable = MyClass.new<br />
+              my_variable.get_block {|input| puts &quot;the input is #{input}&quot; }<br />
+          my_variable.use_block(&quot;See?&quot;</span>) =&gt;the input is See? </p></td>
+          <td align="left" valign="top"><p>use block as object</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">def use_block_as_object (&amp;action) <span class="import"># parameter start with &amp;, Ruby will look for a block whenever it is called</span><br />
+            &nbsp;&nbsp;action <span class="import"># call block like yield</span><br />
+            end</p>
+            <p><span class="code">my_variable = use_block_as_object {|input| puts &quot;input is #{input}&quot;}<br />
+          my_variable.call(99)</span> =&gt;input is 99</p></td>
+          <td align="left" valign="top"><p>use block as object</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">def n_times(input)<br />
+            &nbsp;&nbsp;lambda {|n| input*n} <span class="import"># use lambda create block </span><br />
+            end </p>
+            <p class="code">my_variable = n_times(&quot;ha&quot;) <span class="import"># give input</span><br />
+          p my_variable.call(3) <span class="import"># give n =&gt; &quot;hahaha&quot; </span></p></td>
+          <td align="left" valign="top"><p>use block as closure</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p><span class="code">proc = -&gt; arg {puts &quot;you input is #{arg}&quot;}</span><span class="import"> # =&gt; is same as lambda { |params| ... }</span><span class="code"><br />
+          proc.call(&quot;hi&quot;)</span> =&gt; you input is hi</p></td>
+          <td align="left" valign="top"><p>use block as closure</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h1>Iterator</h1>
+    <p>A Ruby iterator is simply a method that can invoke a block of code.</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="60%" align="left" valign="top"><p class="code">def three_call<br />
+          &nbsp;&nbsp;yield<br />
+          &nbsp;&nbsp;yield<br />
+          &nbsp;&nbsp;yield<br />
+          end</p>
+          <p class="code">three_call {  puts &quot;hi&quot; }</p></td>
+        <td width="40%" align="left" valign="top"><p>call block using yield</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">def my_method(input)<br />
+          &nbsp;&nbsp;yield (input+1)<br />
+          end</p>
+          <p><span class="code">my_method(10) {| f | puts f}</span> <span class="import">=&gt; 11</span></p></td>
+        <td align="left" valign="top"><p>pass paramater to yield</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p><span class="code">def my_method<br />
+          &nbsp;&nbsp;puts yield (10)</span> <span class="import"># return 10*10</span><br />
+          <span class="code">end</span></p>
+          <p><span class="code">my_method { |f| f*f }</span> <span class="import">=&gt; 100</span></p></td>
+        <td align="left" valign="top"><p>receive value from yield</p></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="top"><h3>Internal iterator</h3>
+          <p>Ruby data collection (array, hash) has build iterator. So array and hash can use buildin iterator loop all elements and pass to block. It means array and hash can use block by themself.</p></td>
+        </tr>
+      <tr>
+        <td align="left" valign="top"><p><span class="code">puts [ 1, 3, 5, 7, 9 ].find { |number| number &gt; 5 }</span> =&gt; 7</p></td>
+        <td align="left" valign="top"><p><span class="import">find</span> pass elements to block and return first matching</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">[ 1,3,5,7,9 ].each { |number| puts number } </p></td>
+        <td align="left" valign="top"><p><span class="import">each</span> can pass each elements to block</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p><span class="code">p [ 1,3,5,7,9 ].collect { |number| number &gt; 5 }</span> =&gt; [false, false, false, true, true</p></td>
+        <td align="left" valign="top"><p><span class="import">collect </span>can pass each elements to block and return a new array</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p><span class="code">p [ 1,3,5,7].inject { |sum, number| sum + number }</span> =&gt; 16</p></td>
+        <td align="left" valign="top"><p> <span class="import">inject</span> can pass each elements to block and return accumulate result</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Enumerators</h2>
+    <p>Ruby external iterator class (enumerators) provide more functions to handle data collection.</p></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="60%" align="left" valign="top"><p><span class="code">my_array = [1,3,5]</span><br />
+            <span class="code">enum_my_array = my_array.to_enum</span> <span class="import">#create enumerator</span></p>
+          <p><span class="code">p enum_my_array.next</span> =&gt;1<br />
+            <span class="code">p enum_my_array.next</span> =&gt;3<br />
+            <span class="code">p enum_my_array.next</span> =&gt;5</p></td>
+        <td width="40%" align="left" valign="top">convert data collection to enumerator </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p><span class="code">my_array = [1,3,5]</span><br />
+            <span class="code">enum_my_array = my_array.each</span> <span class="import">#create enumerator</span></p>
+          <p><span class="code">p enum_my_array.next</span> =&gt;1<br />
+            <span class="code">p enum_my_array.next</span> =&gt;3<br />
+          <span class="code">p enum_my_array.next</span> =&gt;5</p></td>
+        <td align="left" valign="top">convert data collection to enumerator </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">enum_my_array1 = [&quot;item1-1&quot;,&quot;item1-2&quot;,&quot;item1-3&quot;].to_enum <br />
+          enum_my_array2 = [&quot;item2-1&quot;,&quot;item2-2&quot;,&quot;item2-3&quot;].to_enum</p>
+          <p class="code">loop do<br />
+            &nbsp;&nbsp;puts &quot;#{enum_my_array1.next} - #{enum_my_array2.next}&quot;<br />
+            end</p>
+          <p>=&gt; item1-1 - item2-1<br />
+            =&gt; item1-2 - item2-2<br />
+          =&gt; item1-3 - item2-3</p></td>
+        <td align="left" valign="top">parllel loop</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

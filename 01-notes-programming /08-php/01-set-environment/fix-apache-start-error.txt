@@ -1,0 +1,10 @@
+今天安装zen-cart时需要加载php_curl.dll这个动态库，自己想当然的在php.ini里把extension=php_curl.dll 打开以为就可以了。可以在apache的logs里面依然会报错，提示找不到php_curl.dll这个文件，我的extension_dir也配置 php/ext这个目录下面，而且ext这个目录下面也有php_curl.dll这个文件，为什么找不到呢，着实让人挺纳闷的。
+
+网上的资料都是说extension_dir的路径没有配置或是没有打开extension=php_curl.dll,更有甚者说把这个php_curl.dll屏蔽就不报错了，我真是汗颜，我就是要用这个扩展。
+
+原因是并不是所有的dll文件直接打开就可以了，有的是要依赖一些文件的，比如这个php_curl.dll就依赖两个文件（ssleay32.dll和libeay32.dll）如果这两个文件没有配置对那么就会提示找不到此动态库，这两个文件在php的目录下面，在 install.txt这个文件里有对这些库文件加载时的说明。
+
+解决办法：把这两个文件拷贝一份到系统目录下面，我放到windows/system32/下面，或是在httpd.conf的文件中配置一下：
+
+LoadFile "D:/webserver/php/ssleay32.dll"
+LoadFile "D:/webserver/php/libeay32.dll"

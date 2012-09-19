@@ -1,0 +1,9 @@
+// connect mysql with user name "root"
+> mysql -u root -p
+mysql -h 127.0.0.1 -p
+
+// enter password
+> Enter password: xxx
+
+// select database
+> USE test

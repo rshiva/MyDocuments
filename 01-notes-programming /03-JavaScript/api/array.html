@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>RegExp</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="create">create</a> </h3></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="method"> var myArray=new Array();<br />
+myArray[0]=&quot;Item0&quot;;<br />
+myArray[1]=&quot;Item1&quot;;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="method">var myArray2=[&quot;it0&quot;,&quot;it1&quot;,&quot;it2&quot;];</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="method">var myArray3=[[&quot;i1&quot;,&quot;i2&quot;,&quot;i3&quot;],[&quot;i4&quot;,&quot;i5&quot;,&quot;i6&quot;]];</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="method">var s_list= new Array();<br />
+s_list[&quot;tall&quot;]=&quot;Thomas&quot;;<br />
+s_list[&quot;cool&quot;]=&quot;Roger&quot;;<br />
+s_list[&quot;clever&quot;]=&quot;Amber&quot;;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="add-elements">add elements</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_push.asp">push()</a></td>
+    <td width="350" align="left" valign="top">Adds new elements to the end of an array, and returns the new length</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_unshift.asp">unshift()</a></td>
+    <td width="350" align="left" valign="top">Adds new elements to the beginning of an array, and returns the new length</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_splice.asp">splice()</a></td>
+    <td width="350" align="left" valign="top">Adds/Removes elements from an array</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="remove-elements">remove elements</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_pop.asp">pop()</a></td>
+    <td width="350" align="left" valign="top">Removes the last element of an array, and returns that element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_shift.asp">shift()</a></td>
+    <td width="350" align="left" valign="top">Removes the first element of an array, and returns that element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/clear/">clear()</a></td>
+    <td width="350" align="left" valign="top">Clears the array (makes it empty).</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="get-elements">get elements</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_loop_for_in.asp">for ( Elements in Array)</a></td>
+    <td width="350" align="left" valign="top">get all elements</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_slice_array.asp">slice()</a></td>
+    <td width="350" align="left" valign="top">Selects a part of an array, and returns the new array</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_each.htm">each()</a></td>
+    <td width="350" align="left" valign="top">Iterates over the array in ascending numerical index order.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_first.htm">first()</a></td>
+    <td width="350" align="left" valign="top">Returns the first item in the array, or undefined if the array is empty.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_last.htm">last()</a></td>
+    <td width="350" align="left" valign="top">Returns the last item in the array, or undefined if the array is empty.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/indexOf/">indexOf()</a></td>
+    <td width="350" align="left" valign="top">Returns the position of the first occurrence of the argument within the array.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/inspect/">inspect()</a></td>
+    <td width="350" align="left" valign="top">Returns the debug-oriented string representation of an array.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="manipulate">manipulate</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_clone.htm">clone()</a></td>
+    <td width="350" align="left" valign="top">Returns a duplicate of the array, leaving the original array intact.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_from.htm">from()</a></td>
+    <td width="350" align="left" valign="top">Clones an existing array or creates a new one from an array-like collection.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/compact/">compact()</a></td>
+    <td width="350" align="left" valign="top">Returns a new version of the array, without any null/undefined values.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/flatten/">flatten()</a></td>
+    <td width="350" align="left" valign="top">Returns a &quot;flat&quot; (one-dimensional) version of the array.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="order">order</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_reverse.asp">reverse()</a></td>
+    <td width="350" align="left" valign="top">Reverses the order of the elements in an array</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/reverse/">reverse()</a></td>
+    <td width="350" align="left" valign="top">Returns the reversed version of the array. By default, directly reverses   the original. If inline is set to false, uses a clone of the original   array.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_sort.asp">sort()</a></td>
+    <td width="350" align="left" valign="top">Sorts the elements of an array</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="join">join</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_concat_array.asp">concat()</a></td>
+    <td width="350" align="left" valign="top">Joins two or more arrays, and returns a copy of the joined arrays</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_join.asp">join()</a></td>
+    <td width="350" align="left" valign="top">Joins all elements of an array into a string</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="search">search</a></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/uniq/">uniq()</a></td>
+    <td width="350" align="left" valign="top">Produces a duplicate-free version of an array. If no duplicates are found, the original array is returned.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/jsref_concat_array.asp"></a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Array/prototype/without/">without()</a></td>
+    <td width="350" align="left" valign="top">Produces a new version of the array that does not contain any of the specified values.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="convert">convert</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_toarray.htm">toArray()</a></td>
+    <td align="left" valign="top">This is just a local optimization of the mixed-in toArray from Enumerable.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_array_tojson.htm">toJSON()</a></td>
+    <td align="left" valign="top">Returns a JSON string.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

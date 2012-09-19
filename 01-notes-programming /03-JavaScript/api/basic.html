@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>basic </h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top">&nbsp;</td>
+    <td colspan="2" align="left" valign="top"><a href="http://www.prototypejs.org/download">download prototype</a></td>
+    <td colspan="2" align="left" valign="top"><a href="http://docs.jquery.com/Downloading_jQuery">download JQuery</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top">&nbsp;</td>
+    <td colspan="2" align="left" valign="top"><a href="http://script.aculo.us/downloads">download script.aculo.us</a></td>
+    <td colspan="2" align="left" valign="top"><a href="http://jqueryui.com/download">download JQuery UI</a></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3>output</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_write.asp">write()</a></td>
+    <td width="350" align="left" valign="top">Writes HTML expressions or JavaScript code to a document</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_writeln.asp">writeln()</a></td>
+    <td width="350" align="left" valign="top">Same as write(), but adds a newline character after each statement</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_win_alert.asp">alert()</a></td>
+    <td width="350" align="left" valign="top">Displays an alert box with a message and an OK button</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://getfirebug.com/logging">console.log()</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/inspect/">inspect()</a></td>
+    <td width="350" align="left" valign="top">Returns the debug-oriented string representation of element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* CSS Document */
+/*搜索联想的样式*/
+.cAutoComplete{ text-align:left;}
+.cAutoComplete dl{ text-align:right;}
+.mAutoComplete{text-align:left;padding:5px}
+
+/*头部导航  */
+.nav{width:990px;height:37px; font-size:14px; font-weight:700; padding:0px; margin:0px; position:relative; z-index:99;}
+.nav ul{ padding:0px; margin:0px;}
+.nav a{ color:#333; text-decoration:none; display:block;}
+.nav a:hover{ color:#360; text-decoration:none;}
+.nav1{ width:90px; height:35px; background:url(http://img.duote.com/images/duoter_02.gif); line-height:35px; padding-bottom:2px; text-align:center; color:#fff; float:left;}
+.nav1 a{ color:#fff;}
+.nav1 a:hover{ color:#333; text-decoration:none;}
+.nav2{ width:100px; height:35px; background:url(http://img.duote.com/images/duoter_03.gif); line-height:35px; padding-bottom:2px; text-align:center; color:#fff; float:left;}
+.nav3{ width:100px; height:35px; background: url(http://img.duote.com/images/duote_04.gif); line-height:35px; padding-bottom:2px; text-align:center; color:#fff; float:left;}
+.nav .nav3 a:hover{background:url(http://img.duote.com/images/duote_nav04.gif);} 
+.nav ul ul {visibility:hidden;position:absolute;left:3px;top:23px; z-index:100;}   
+.nav table {position:absolute; top:0; left:0; z-index:100;}   
+.nav ul li:hover ul,.nav ul a:hover ul{visibility:visible;}   
+.nav a{display:block; line-height:35px; height:35px;}
+.nav .no_active a:hover{background:url(http://img.duote.com/images/active_nav01.gif);}
+.nav .nav2 a:hover{background:url(http://img.duote.com/images/duoter_nav03.gif);} 
+.nav .nav_active a:hover{background:url(http://img.duote.com/images/duoter_nav03.gif);} 
+#nav_d{ float:left;width:220px;height:224px;font-size:12px; background:#b0f162; border:solid 1px #fff;position: absolute; left:90px; top:35px;z-index:100; font-weight:normal;opacity: 0.90;-moz-opacity: 0.90;filter:alpha(opacity=90);}   
+#nav_d li {float:left;width:108px; text-align:center; color:#133101; height:26px; padding:1px;line-height:26px;  }   
+#nav_d a{ display:inline-block;width:108px;height:26px;color:#133101;line-height:26px;background: url(http://img.duote.com/images/nav_img01.gif) no-repeat 13px 12px; }   
+#nav_d li a:hover{color:#fff;background:#19b400; text-decoration:none;}   
+.nav .nav2 ul li a:hover{color:#fff;background:#19b400; text-decoration:none;}   
+
+
+.nc{ width:990px;height:15px; color:#333; margin:4px 0px; background:url(http://img.duote.com/images/duote_05.gif) no-repeat;}
+.nc span{ margin-left:20px; line-height:15px; width:700px;}
+.nc span div{ float:left; margin:0; padding:0;}
+.nc span a{color:#f90; text-decoration:none;}
+.nc span a:hover{ color:#333; text-decoration:none;}
+#userLogin_div{height:15px; line-height:15px; float:right; background: url(http://img.duote.com/images/duote_06.gif) no-repeat left; padding-left:20px;}
+.top_n  #userLogin_div{ margin-top:8px;}
+
+.fanye{ text-align:center; height:20px; line-height:20px; padding:5px 0px; background:#fff; margin:10px 0px 0px 0px;border:1px #badaa1 solid;}
+.fanye a,.fanye span{ display:inline-block; padding:0px 3px;}
+.fanye2{ text-align:center; height:20px; line-height:20px; padding:5px 0px; background:#fff; margin:10px 0px 0px 0px;border:1px #badaa1 solid;}
+.fanye2 a,.fanye2 span{ display:inline-block; padding:0px 5px;}
+
+.g_footer{ background:#f4f4f4; height:75px; margin-top:10px; padding-top:15px;}
+.pageActive{ font-weight:700; color:#5cb20a;}
+
+#top_box{padding:0px;}
+#top_box1{ margin:0px;}
+.shownav{ height:25px; line-height:25px;}

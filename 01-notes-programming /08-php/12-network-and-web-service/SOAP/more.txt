@@ -1,0 +1,1 @@
+more information see "Beginning PHP and mySQl" p566

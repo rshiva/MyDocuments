@@ -1,0 +1,16 @@
+DELIMITER //
+	CREATE TRIGGER au_reassign_ticket
+	AFTER UPDATE ON technicians
+	FOR EACH ROW
+	BEGIN
+		IF NEW.available = 0 THEN
+		UPDATE tickets SET technician_id=0 WHERE technician_id=NEW.id;
+	END IF;
+END;//
+
+ad: Execute trigger after a DELETE query has taken place
+ai: Execute trigger after an INSERT query has taken place
+au: Execute trigger after an UPDATE query has taken place
+bd: Execute trigger before a DELETE query has taken place
+bi: Execute trigger before an INSERT query has taken place
+bu: Execute trigger before an UPDATE query has taken place

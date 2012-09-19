@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Harry's Notes</title>
+<link href="../css/mycss.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h2>数值运算符</h2>
+<table width="767" border="1" cellpadding="0" cellspacing="1" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="TableBody">
+  <tr>
+    <td width="101" height="30" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE6">运算符</span></td>
+    <td width="132" height="30" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE5">执行的运算</span></td>
+    <td width="168" height="30" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE6">例子</span></td>
+    <td width="351" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE6">说明</span></td>
+  </tr>
+  <tr>
+    <td height="20" align="center" bgcolor="#FFFFFF">+</td>
+    <td height="20" align="center" bgcolor="#FFFFFF">加</td>
+    <td height="20" bgcolor="#FFFFFF">a=8+3</td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">-</td>
+    <td height="20" align="center">减</td>
+    <td height="20">a=8-3</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">*</td>
+    <td height="20" align="center">乘</td>
+    <td height="20">a=8*3</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">/</td>
+    <td height="20" align="center">除</td>
+    <td height="20">a=8/3</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" align="center">%</td>
+    <td height="20" align="center">求模</td>
+    <td height="20">a=9%4 //a=1 </td>
+    <td>求模就是计算余数，9除4的商是2，余数是 1。所以a的值是 1。 </td>
+  </tr>
+  <tr>
+    <td height="20" align="center">++</td>
+    <td height="20" align="center">递增</td>
+    <td height="20">A++</td>
+    <td rowspan="2" valign="top">A++ （先执行其它工作再递增）<br />
+      ++A （先递增再执行其它工作） </td>
+  </tr>
+  <tr>
+    <td height="20" align="center">--</td>
+    <td height="20" align="center">递减</td>
+    <td height="20">A--</td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<h2>比较运算符</h2>
+<table width="400" border="1" cellpadding="0" cellspacing="1" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="TableBody">
+  <tr>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE6">运算符</span></td>
+    <td width="195" height="30" colspan="2" align="center" bgcolor="#CCCCCC" class="tablehead"><span class="STYLE6">执行的运算</span></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&lt;</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">小于</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&gt;</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">大于</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&lt;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">小于等于</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&gt;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">大于等于</td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<h2>字符串运算符</h2>
+<p><br />
+&nbsp;“ + ” 可以把两个字符串连接起来<br />
+<br />
+&nbsp;
+S = &quot;Hello&quot;+&quot;Harry&quot; // s 中存储的是 HelloHarry<br />
+&nbsp; A = &quot;5&quot;+&quot;1&quot; // A中存储的是 51 </p>
+<h1>&nbsp;</h1>
+<h2>逻辑运算符</h2>
+<p>逻辑运算符对两个布尔值进行比较并返回另一个布尔值</p>
+<table width="600" border="1" cellpadding="0" cellspacing="1" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="TableBody">
+  <tr>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">运算符</span></td>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">执行的运算</span></td>
+    <td width="310" align="center" bgcolor="#CCCCCC"><span class="STYLE6">说明</span></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&amp;&amp;</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">与</td>
+    <td align="left" bgcolor="#FFFFFF">两个值都是 true 时，结果为 true <br />
+      如果有一个 false，结果为 false </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">||</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">或</td>
+    <td align="left" bgcolor="#FFFFFF">两个值里有一个为 true，结果为 true<br />
+      两个值都是 false，结果为 false </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">!</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">非</td>
+    <td align="left" bgcolor="#FFFFFF">将 true 转为 false，将 false 转为 true </td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<h2>等于运算符</h2>
+<p>对操作数的值或者标识进行比较，返回布尔值。 </p>
+<table width="600" border="1" cellpadding="0" cellspacing="1" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+  <tr>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">运算符</span></td>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">执行的运算</span></td>
+    <td width="310" align="center" bgcolor="#CCCCCC"><span class="STYLE6">说明</span></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">==</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">等于</td>
+    <td align="left" bgcolor="#FFFFFF">123==&quot;123&quot; //true </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">===</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">严格等于</td>
+    <td align="left" bgcolor="#FFFFFF">123=&quot;123&quot; // false&nbsp; (不执行类型转换) </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">!=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">不等于</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">!==</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">严格不等于</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<h2>赋值运算符</h2>
+<table width="750" border="1" cellpadding="0" cellspacing="1" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+  <tr>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">运算符</span></td>
+    <td height="30" colspan="2" align="center" bgcolor="#CCCCCC"><span class="STYLE6">执行的运算</span></td>
+    <td width="143" align="center" bgcolor="#CCCCCC"><span class="STYLE6">例子</span></td>
+    <td width="310" align="center" bgcolor="#CCCCCC"><span class="STYLE6">说明</span></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值被设为 5 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">+=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">相加并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a+=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值增加 5 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">-=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">相减并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a-=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值减少 5 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">*=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">相乘并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a*=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值乘 5 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">/=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">相除并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a/=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值除 5 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">%=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">求模并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a%=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值对 5 求模</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&lt;&lt;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">向左移位并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a&lt;&lt;=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值左移 5 位 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&gt;&gt;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">向右移位并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a&gt;&gt;=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值右移 5 位 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&gt;&gt;&gt;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">右移位填零并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a&gt;&gt;&gt;=5</td>
+    <td align="left" bgcolor="#FFFFFF">a 的值右移 5 位填零 </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">^=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">取异或并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a^=b</td>
+    <td align="left" bgcolor="#FFFFFF">a 与 b 取异或并赋值给 a </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">|=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">取或并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a|=b</td>
+    <td align="left" bgcolor="#FFFFFF">a 与 b 取或并赋值给 a </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">&amp;=</td>
+    <td colspan="2" align="center" bgcolor="#FFFFFF">取与并赋值</td>
+    <td align="center" bgcolor="#FFFFFF">a&amp;=b</td>
+    <td align="left" bgcolor="#FFFFFF">a 与 b 取与并赋值给 a </td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<h2>条件运算符</h2>
+<p class="important">变量 = 条件 ? 结果1 ： 结果2</p>
+<p class="important">条件成立时，将 <span class="important">结果1</span> 的值赋给变量。条件不成立时，将 <span class="important">结果2</span> 的值赋给变量。 </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

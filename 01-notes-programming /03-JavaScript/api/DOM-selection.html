@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>DOM selection</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectByID" id="selectByID"></a>Select by ID</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementbyid.asp">document.getElementById()</a></td>
+    <td width="350" align="left" valign="top">Accesses the first element with the specified id</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/dollar/">$(&quot;id&quot;)</a></td>
+    <td width="350" align="left" valign="top">If provided with a string, returns the element in the document with matching ID; otherwise returns the passed element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/id-selector/">$(&quot;#id&quot;)</a></td>
+    <td width="350" align="left" valign="top">elects a single element with the given id attribute. </td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectByName" id="selectByName"></a>Select by name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementsbyname.asp">document.getElementsByName()</a></td>
+    <td width="350" align="left" valign="top">Accesses all elements with a specified name</td>
+    <td colspan="2" align="left" valign="top">see elect by attribute</td>
+    <td colspan="2" align="left" valign="top">see elect by attribute</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectByClassName" id="selectByClassName"></a>Select by class name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">$$(&quot;.class&quot;)</td>
+    <td width="350" align="left" valign="top"><p>return matching elements in array</p>
+    <p class="method">$$('#'+mainContainer+' .left-container');</p>
+    <p>combind ID and Class name</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/class-selector/">$(&quot;.class&quot;)</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements with the given class. </p></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectByTagName" id="selectByTagName"></a>Select by tag name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/met_doc_getelementsbytagname.asp">document.getElementsByTagName()</a></td>
+    <td width="350" align="left" valign="top">Accesses all elements with a specified tagname</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/dollar-dollar/">$$('tagName')</a></td>
+    <td width="350" align="left" valign="top">Takes an arbitrary number of CSS selectors (strings) and returns a document-order  array of extended DOM elements that match any of them.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/element-selector/">$(&quot;tagName&quot;)</a></td>
+    <td width="350" align="left" valign="top">Selects all elements with the given tag name.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectByEvent" id="selectByEvent"></a>Select by event</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Event/findElement/">findElement()</a></td>
+    <td width="350" align="left" valign="top">Returns the first DOM element that matches a given CSS selector — starting with the element on which the event occurred, then moving up its ancestor chain. If expression is not given, the element which fired the event is returned.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="selectBySelector" id="selectBySelector"></a>Select by CSS selector</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/select/">select()</a></td>
+    <td width="350" align="left" valign="top">Takes an arbitrary number of CSS selectors and returns an array of descendants of element that match any of them.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/match/">match()</a></td>
+    <td width="350" align="left" valign="top">Checks if element matches the given CSS selector.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="multiSelect" id="multiSelect"></a>Multi select</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">$$ (&quot;selector1, selector2, selectorN&quot;)</td>
+    <td width="350" align="left" valign="top">return matching elements in array </td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/multiple-selector/">$(&quot;selector1, selector2, selectorN&quot;)</a></td>
+    <td width="350" align="left" valign="top">Selects the combined results of all the specified selectors.</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

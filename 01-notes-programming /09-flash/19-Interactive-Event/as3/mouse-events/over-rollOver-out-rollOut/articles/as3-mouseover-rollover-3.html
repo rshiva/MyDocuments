@@ -1,0 +1,1360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:expr="http://www.google.com/2005/gml/expr" xmlns:data="http://www.google.com/2005/gml/data" xmlns:b="http://www.google.com/2005/gml/b" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<link href="http://riafiles.googlepages.com/favico.ico" rel="shortcut icon" type="image/x-icon">
+<!-- <link href='http://riafiles.googlepages.com/bloggerStyles.css' rel='stylesheet' type='text/css' /> <link href='http://riafiles.googlepages.com/bloggerStylesPrint.css' rel='stylesheet' type='text/css' media='print' /> -->
+<link href="as3-mouseover-rollover-3_files/SyntaxHighlighter.css" rel="stylesheet" type="text/css">
+<script src="as3-mouseover-rollover-3_files/bloggerJavascript.js" type="text/javascript"></script>
+<script src="as3-mouseover-rollover-3_files/shCoreMix.js" type="text/javascript"></script>
+<meta content="RIA, Adobe AIR, Flash, ActionScript, Flex, Flash Media Server, SWF, MXML" name="keywords">
+<meta content="RcxLT9jpzczLi+z6S0hKVgH5rFsxR1O0yibyPh+aCjo=" name="verify-v1">
+<meta content="1912c97e9e22a426" name="y_key">
+<script type="text/javascript">(function() { var a=window;function d(){this.t={};this.tick=function(b,c){this.t[b]=[(new Date).getTime(),c]};this.tick("start")}var e=new d;a.jstiming={Timer:d,load:e};try{a.jstiming.pt=a.external.pageT}catch(f){};function g(b){var c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}return c}a.tickAboveFold=function(b){g(b)<=750&&a.jstiming.load.tick("aft")};var h=false;function i(){if(!h){h=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",i,false):a.attachEvent("onscroll",i); })();</script>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="true" name="MSSmartTagsPreventParsing">
+<meta content="blogger" name="generator">
+<link href="http://www.blogger.com/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+<link rel="alternate" type="application/atom+xml" title="Ticore's Blog - Atom" href="http://ticore.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Ticore's Blog - RSS" href="http://ticore.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Ticore's Blog - Atom" href="http://www.blogger.com/feeds/6934949377658966040/posts/default">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=6934949377658966040">
+<link rel="alternate" type="application/atom+xml" title="Ticore's Blog - Atom" href="http://ticore.blogspot.com/feeds/4089796528331156941/comments/default">
+<link href="http://riafiles.googlepages.com/favico.ico" rel="shortcut icon" type="image/x-icon">
+<title>
+Ticore's Blog: AS3 - MouseOver 與 RollOver 差異性 (3)
+</title>
+<style id="page-skin-1" type="text/css"><!--
+
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima Lefty Stretch
+Designer: Douglas Bowman / Darren Delaye
+URL:      www.stopdesign.com
+Date:     14 Jul 2006
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#666">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Georgia, Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 200% Georgia, Serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+*/
+/* Use this with templates/template-twocol.html */
+.navbar {
+position: absolute;
+width: 100%;
+height: 30px;
+left: 0px;
+background: url(#);
+z-index: 100;
+}
+.navbar div {
+display: none;
+}
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font:x-small Georgia Serif;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a:link {
+color:#5588aa;
+text-decoration:none;
+}
+a:visited {
+color:#999999;
+text-decoration:none;
+}
+a:hover {
+color:#cc6600;
+text-decoration:underline;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#header-wrapper {
+margin:0 2% 10px;
+border:1px solid #cccccc;
+}
+#header-inner {
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+#header {
+margin: 5px;
+border: 1px solid #cccccc;
+text-align: center;
+color:#666666;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+font: normal normal 200% Georgia, Serif;
+}
+#header a {
+color:#666666;
+text-decoration:none;
+}
+#header a:hover {
+color:#666666;
+}
+#header .description {
+margin:0 5px 5px;
+padding:0 20px 15px;
+text-transform:uppercase;
+letter-spacing:.2em;
+line-height: 1.4em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+}
+#header img {
+margin-left: auto;
+margin-right: auto;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:0;
+padding:10px;
+text-align:left;
+font: normal normal 100% Georgia, Serif;
+}
+#main-wrapper {
+margin-right: 1%;
+width: 62%;
+float: right;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+html > body #main-wrapper {
+margin-right: 2%;
+}
+#sidebar-wrapper {
+margin-left: 1%;
+width: 30%;
+float: left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+html > body #sidebar-wrapper {
+margin-left: 2%;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999999;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:1.5em 0 .5em;
+}
+.post {
+margin:.5em 0 1.5em;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post h3 {
+margin:.25em 0 0;
+padding:0 0 4px;
+font-size:140%;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+/* display:block; */
+text-decoration:none;
+color:#cc6600;
+font-weight:normal;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post p {
+margin:0 0 .75em;
+line-height:1.6em;
+}
+.post-footer {
+margin: .75em 0;
+color:#999999;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #cccccc;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+.post table {
+border-collapse: collapse;
+border: solid 1px #666666;
+margin: 0.1em;
+}
+.post td {
+padding: 0.2em;
+}
+.author {
+display: none;
+}
+/* Codes
+-----------------------------------------------
+*/
+.post pre {
+border: dotted 1px #666666;
+display: block;
+overflow-x: auto;
+padding: 0.78em;
+white-space: pre;
+font-size: 0.9em;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:1em 0;
+font-weight: bold;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color: #999999;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.2em;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0;
+padding:1pt 0 0;
+}
+.sidebar li {
+margin:0;
+padding:0 0 .25em 15px;
+text-indent:-15px;
+}
+.sidebar .widget, .main .widget {
+border-bottom:1px dotted #cccccc;
+margin:0 0 1em;
+padding:0 0 1em;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+/* AUG Blog Roll
+----------------------------------------------- */
+/*
+.sidebar .blogRoll {
+height: 16em;
+overflow: auto;
+}
+*/
+.sidebar .blogRoll p {
+font-size: 0.75em;
+}
+.sidebar .blogRoll p a {
+font-size: 1.2em;
+}
+.sidebar .ng_buzzAutoTarget div.ng_buzzContainer {
+font-size: 0.9em;
+height: 24em;
+width: 99%;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+.sidebar .ng_buzzAutoTarget a.ng_postTitle {
+font-weight: normal !important;
+}
+/* Links
+-----------------------------------------------
+*/
+#LinkList1 div ul li {
+display: inline; padding: 0px 5px;
+} /* ArchiveList
+-----------------------------------------------
+*/
+#ArchiveList #BlogArchive1_ArchiveList ul {
+display: table-row-group;
+}
+#ArchiveList #BlogArchive1_ArchiveList ul li {
+width: 8em;
+float: left;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+width:660px;
+clear:both;
+margin:0 auto;
+padding-top:15px;
+line-height: 1.6em;
+text-transform:uppercase;
+letter-spacing:.1em;
+text-align: center;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #header {
+margin-left: 0px;
+margin-right: 0px;
+}
+/* Label Cloud Styles
+----------------------------------------------- */
+#labelCloud {
+text-align: justify;
+font-family: arial,sans-serif;
+}
+/*
+#labelCloud {
+height: 24em;
+overflow: auto;
+}
+*/
+#labelCloud .label-cloud li{
+display:inline;
+background-image:none !important;
+padding:0px;
+margin:0;
+vertical-align:baseline !important;
+border:0 !important;
+line-height:1em;
+}
+#labelCloud ul{
+list-style-type:none;
+margin:0 auto;
+padding:0;
+line-height:0%;
+}
+#labelCloud a img{
+border:0;display:inline;
+margin:0 0 0 3px;
+padding:0
+}
+#labelCloud a{
+text-decoration:none
+}
+#labelCloud a:hover{
+text-decoration:underline
+}
+#labelCloud li {
+line-height:130%;
+}
+#labelCloud li a{}
+#labelCloud .label-cloud {}
+#labelCloud .label-count {
+padding-left:0.2em;
+font-size:9px;
+color:#000
+}
+#labelCloud .label-cloud li:before{
+content:"" !important
+}
+@media print {
+/* Header
+-----------------------------------------------
+*/
+.navbar {
+visibility: hidden;
+display: none;
+}
+#header-wrapper {
+margin:0 2% 0px;
+border:1px solid #cccccc;
+}
+#header {
+margin: 5px;
+border: 1px solid #cccccc;
+text-align: center;
+color:#666666;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:0;
+padding:0px;
+}
+#main-wrapper {
+margin: 1%;
+width: 100%;
+overflow: visible;
+}
+html > body #main-wrapper {
+margin-right: 0%;
+}
+#sidebar-wrapper, .blog-pager, .comment-footer, #backlinks-container, .post-feeds {
+visibility: hidden;
+display: none;
+}
+.author {
+display: block;
+}
+/* Codes
+-----------------------------------------------
+*/
+span.fullpost {
+display: inline !important;
+}
+}
+
+--></style>
+<style type="text/css">
+	span.fullpost {
+		display:inline;
+	}
+	</style>
+<link type="text/css" rel="stylesheet" href="as3-mouseover-rollover-3_files/2300090209-widget_css_bundle.css"> <link rel="stylesheet" type="text/css" href="as3-mouseover-rollover-3_files/3727950723-blog_controls.css">
+ <link rel="stylesheet" type="text/css" href="as3-mouseover-rollover-3_files/authorization.css">
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+<style type="text/css">.dp-as .comment { color: #009900; }.dp-as .blockcomment { color: #009900; }.dp-as .string { color: #990000; }.dp-as .preprocessor { color: #0033ff; }.dp-as .definition { color: #9900cc; font-weight: bold; }.dp-as .keyword { color: #0033ff; }.dp-as .variable { color: #6699cc; font-weight: bold; }</style></head><body>
+<div style="top: 0px;" class="navbar section" id="navbar"><div style="display: none;" class="widget Navbar" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="as3-mouseover-rollover-3_files/navbar.htm" marginwidth="0" marginheight="0" id="navbar-iframe" title="Blogger Navigation and Search" scrolling="no" width="100%" frameborder="0" height="30"></iframe>
+<div></div></div></div>
+<div id="outer-wrapper">
+<script type="text/javascript">
+// Auto Hide NavBar
+var navBar = document.getElementById('navbar');
+if (navBar) {
+	navBar.onmouseover = function(){
+		var navBar1 = document.getElementById('Navbar1');
+		if (navBar1) navBar1.style.display='block';
+	};
+	navBar.onmouseout = function(){
+		var navBar1 = document.getElementById('Navbar1');
+		if (navBar1) navBar1.style.display='none';
+	};
+}
+</script>
+<div id="wrap2">
+<!-- skip links for text browsers -->
+<span id="skiplinks" style="display: none;">
+<a href="#main">skip to main </a> | <a href="#sidebar">skip to sidebar</a>
+</span>
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://ticore.blogspot.com/">
+Ticore's Blog
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+Flash、Flex、AIR、ActionScript 相關研究心得
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id="content-wrapper">
+<div id="crosscol-wrapper" style="text-align: center;">
+<div class="crosscol section" id="crosscol"></div>
+</div>
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://ticore.blogspot.com/2007/08/loaderloadbytes-loaderinfourl.html" title="較新的文章">«
+                  較新的文章
+</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://ticore.blogspot.com/2007/08/flash-player-9-update-h264.html" title="較舊的文章">
+較舊的文章
+                  »</a>
+</span>
+<a class="home-link" href="http://ticore.blogspot.com/">
+首頁
+</a>
+</div>
+<div class="clear"></div>
+<div class="blog-posts">
+<!-- google_ad_section_start -->
+<h2 class="date-header">
+2007年8月22日 星期三
+</h2>
+<div class="post uncustomized-post-template">
+<a name="4089796528331156941"></a>
+<h3 class="post-title">
+<a href="http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html">AS3 - MouseOver 與 RollOver 差異性 (3)</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body">
+<p class="author" align="right"><a href="http://ticore.blogspot.com/">Ticore's Blog</a></p>
+<p>
+之前關於 MouseOver 與 RollOver 測試程式也許不是容易理解<br>
+盡可能在所有位置監聽事件<br>
+依據輸出結果以圖片方式表達
+</p>
+<span class="fullpost">
+<p>
+以下程式會建立兩個 MovieClip，於 stage、root、mc1、mc2 都加入監聽<br>
+</p>
+<div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;">view plain</a>&nbsp;|&nbsp;<a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;">print</a>&nbsp;|&nbsp;<a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;">?</a>&nbsp;|&nbsp;</div><div class="columns"><div>∙∙∙∙∙∙∙∙∙10∙∙∙∙∙∙∙∙20∙∙∙∙∙∙∙∙30∙∙∙∙∙∙∙∙40∙∙∙∙∙∙∙∙50∙∙∙∙∙∙∙∙60∙∙∙∙∙∙∙∙70∙∙∙∙∙∙∙∙80∙∙∙∙∙∙∙∙90∙∙∙∙∙∙∙∙100∙∙∙∙∙∙∙110∙∙∙∙∙∙∙120∙∙∙∙∙∙∙130∙∙∙∙∙∙∙140∙∙∙∙∙∙∙150</div></div></div><div style="height: 500px;" class="content"><ol class="dp-as" start="1"><li class="alt"><span><span class="definition">package</span><span>&nbsp;{</span></span></li><li class=""><span>&nbsp;<span class="keyword">import</span><span>&nbsp;flash.display.*;</span></span></li><li class="alt"><span>&nbsp;<span class="keyword">import</span><span>&nbsp;flash.utils.*;</span></span></li><li class=""><span>&nbsp;<span class="keyword">import</span><span>&nbsp;flash.events.*;</span></span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="definition">class</span><span>&nbsp;main&nbsp;</span><span class="keyword">extends</span><span>&nbsp;MovieClip&nbsp;{</span></span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;main():*&nbsp;{</span></span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;<span class="variable">var</span><span>&nbsp;mc1:MovieClip&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;MovieClip();</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="variable">var</span><span>&nbsp;mc2:MovieClip&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;MovieClip();</span></span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;mc1.name=<span class="string">"MC1"</span><span>;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;mc2.name=<span class="string">"MC2"</span><span>;</span></span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;mc1.x&nbsp;=&nbsp;70;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;mc1.y&nbsp;=&nbsp;40;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;mc2.x&nbsp;=&nbsp;60;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;mc2.y&nbsp;=&nbsp;20;</span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;drawRect(mc1.graphics,&nbsp;0,&nbsp;0,&nbsp;100,&nbsp;100,&nbsp;0xFF0000);</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;drawRect(mc2.graphics,&nbsp;0,&nbsp;0,&nbsp;100,&nbsp;100,&nbsp;0x0000FF);</span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;mc1.addChild(mc2);</span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;initEvents(stage);</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;initEvents(<span class="keyword">this</span><span>);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;initEvents(mc1);</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;initEvents(mc2);</span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">this</span><span>.addChild(mc1);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;}</span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;initEvents(obj:InteractiveObject):*&nbsp;{</span></span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.MOUSE_OVER,&nbsp;handler,&nbsp;<span class="keyword">false</span><span>);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.MOUSE_OVER,&nbsp;handler,&nbsp;<span class="keyword">true</span><span>);</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.MOUSE_OUT,&nbsp;handler,&nbsp;<span class="keyword">false</span><span>);</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.MOUSE_OUT,&nbsp;handler,&nbsp;<span class="keyword">true</span><span>);</span></span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.ROLL_OUT,&nbsp;handler,&nbsp;<span class="keyword">false</span><span>);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.ROLL_OUT,&nbsp;handler,&nbsp;<span class="keyword">true</span><span>);</span></span></li><li class="alt"><span>&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.ROLL_OVER,&nbsp;handler,&nbsp;<span class="keyword">true</span><span>);</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;obj.addEventListener(MouseEvent.ROLL_OVER,&nbsp;handler,&nbsp;<span class="keyword">false</span><span>);</span></span></li><li class=""><span>&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;}</span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;handler(evtObj:MouseEvent):*&nbsp;{</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">trace</span><span>(</span><span class="string">"eventPhase&nbsp;:&nbsp;"</span><span>&nbsp;+&nbsp;evtObj.eventPhase&nbsp;+</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">",&nbsp;currentTarget&nbsp;:&nbsp;"</span><span>&nbsp;+&nbsp;evtObj.currentTarget.name&nbsp;+</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">",&nbsp;target&nbsp;:&nbsp;"</span><span>&nbsp;+&nbsp;evtObj.target.name&nbsp;+&nbsp;</span><span class="string">",&nbsp;type&nbsp;:&nbsp;"</span><span>&nbsp;+&nbsp;evtObj.type);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;}</span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">static</span><span>&nbsp;</span><span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;drawRect(g:Graphics,x=0,y=0,w=100,h=100,c=0x0):*&nbsp;{</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;g.lineStyle(1,0x0,1,<span class="keyword">true</span><span>);</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;g.beginFill(c,0.6);</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;g.drawRect(x,y,w,h);</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;g.endFill();</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;}</span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;}</span></li><li class="alt"><span>}</span></li><li class=""><span><span class="comment">//&nbsp;Ticore's&nbsp;Blog&nbsp;-&nbsp;http://ticore.blogspot.com/</span><span></span></span></li></ol><div class="gutter"><ol start="1"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ol></div></div></div><pre style="display: none;" name="code" class="as3:showcolumns:contentHeight[500px]">package {
+ import flash.display.*;
+ import flash.utils.*;
+ import flash.events.*;
+
+ public class main extends MovieClip {
+
+  public function main():* {
+
+   var mc1:MovieClip = new MovieClip();
+   var mc2:MovieClip = new MovieClip();
+
+   mc1.name="MC1";
+   mc2.name="MC2";
+
+   mc1.x = 70;
+   mc1.y = 40;
+   mc2.x = 60;
+   mc2.y = 20;
+
+   drawRect(mc1.graphics, 0, 0, 100, 100, 0xFF0000);
+   drawRect(mc2.graphics, 0, 0, 100, 100, 0x0000FF);
+
+   mc1.addChild(mc2);
+
+   initEvents(stage);
+   initEvents(this);
+   initEvents(mc1);
+   initEvents(mc2);
+
+   this.addChild(mc1);
+   
+  }
+  
+  public function initEvents(obj:InteractiveObject):* {
+
+   obj.addEventListener(MouseEvent.MOUSE_OVER, handler, false);
+   obj.addEventListener(MouseEvent.MOUSE_OVER, handler, true);
+   
+   obj.addEventListener(MouseEvent.MOUSE_OUT, handler, false);
+   obj.addEventListener(MouseEvent.MOUSE_OUT, handler, true);
+
+   obj.addEventListener(MouseEvent.ROLL_OUT, handler, false);
+   obj.addEventListener(MouseEvent.ROLL_OUT, handler, true);
+
+   obj.addEventListener(MouseEvent.ROLL_OVER, handler, true);
+   obj.addEventListener(MouseEvent.ROLL_OVER, handler, false);
+
+  }
+  
+  public function handler(evtObj:MouseEvent):* {
+   
+   trace("eventPhase : " + evtObj.eventPhase +
+      ", currentTarget : " + evtObj.currentTarget.name +
+      ", target : " + evtObj.target.name + ", type : " + evtObj.type);
+   
+  }
+  
+  static public function drawRect(g:Graphics,x=0,y=0,w=100,h=100,c=0x0):* {
+   
+   g.lineStyle(1,0x0,1,true);
+   g.beginFill(c,0.6);
+   g.drawRect(x,y,w,h);
+   g.endFill();
+   
+  }
+  
+ }
+}
+// Ticore's Blog - http://ticore.blogspot.com/
+</pre>
+
+<p>
+以上的程式會在畫面上產生兩個正方形<br>
+用滑鼠滑過正方形<br>
+會得到以下輸出結果：
+</p>
+<pre>eventPhase : 1, currentTarget : null, target : MC1, type : rollOver
+eventPhase : 1, currentTarget : root1, target : MC1, type : rollOver
+eventPhase : 2, currentTarget : MC1, target : MC1, type : rollOver
+eventPhase : 1, currentTarget : null, target : root1, type : rollOver
+eventPhase : 2, currentTarget : root1, target : root1, type : rollOver
+eventPhase : 1, currentTarget : null, target : MC1, type : mouseOver
+eventPhase : 1, currentTarget : root1, target : MC1, type : mouseOver
+eventPhase : 2, currentTarget : MC1, target : MC1, type : mouseOver
+eventPhase : 3, currentTarget : root1, target : MC1, type : mouseOver
+eventPhase : 3, currentTarget : null, target : MC1, type : mouseOver
+eventPhase : 1, currentTarget : null, target : MC1, type : mouseOut
+eventPhase : 1, currentTarget : root1, target : MC1, type : mouseOut
+eventPhase : 2, currentTarget : MC1, target : MC1, type : mouseOut
+eventPhase : 3, currentTarget : root1, target : MC1, type : mouseOut
+eventPhase : 3, currentTarget : null, target : MC1, type : mouseOut
+eventPhase : 1, currentTarget : null, target : MC2, type : rollOver
+eventPhase : 1, currentTarget : root1, target : MC2, type : rollOver
+eventPhase : 1, currentTarget : MC1, target : MC2, type : rollOver
+eventPhase : 2, currentTarget : MC2, target : MC2, type : rollOver
+eventPhase : 1, currentTarget : null, target : MC2, type : mouseOver
+eventPhase : 1, currentTarget : root1, target : MC2, type : mouseOver
+eventPhase : 1, currentTarget : MC1, target : MC2, type : mouseOver
+eventPhase : 2, currentTarget : MC2, target : MC2, type : mouseOver
+eventPhase : 3, currentTarget : MC1, target : MC2, type : mouseOver
+eventPhase : 3, currentTarget : root1, target : MC2, type : mouseOver
+eventPhase : 3, currentTarget : null, target : MC2, type : mouseOver
+eventPhase : 1, currentTarget : null, target : MC2, type : mouseOut
+eventPhase : 1, currentTarget : root1, target : MC2, type : mouseOut
+eventPhase : 1, currentTarget : MC1, target : MC2, type : mouseOut
+eventPhase : 2, currentTarget : MC2, target : MC2, type : mouseOut
+eventPhase : 3, currentTarget : MC1, target : MC2, type : mouseOut
+eventPhase : 3, currentTarget : root1, target : MC2, type : mouseOut
+eventPhase : 3, currentTarget : null, target : MC2, type : mouseOut
+eventPhase : 1, currentTarget : null, target : root1, type : rollOut
+eventPhase : 2, currentTarget : root1, target : root1, type : rollOut
+eventPhase : 1, currentTarget : null, target : MC1, type : rollOut
+eventPhase : 1, currentTarget : root1, target : MC1, type : rollOut
+eventPhase : 2, currentTarget : MC1, target : MC1, type : rollOut
+eventPhase : 1, currentTarget : null, target : MC2, type : rollOut
+eventPhase : 1, currentTarget : root1, target : MC2, type : rollOut
+eventPhase : 1, currentTarget : MC1, target : MC2, type : rollOut
+eventPhase : 2, currentTarget : MC2, target : MC2, type : rollOut
+</pre>
+
+<p>
+根據以上資料，分別將 RollOver、RollOut 與 MouseOver、MouseOut 事件流畫成圖片
+</p>
+
+<p>
+MouseOver、MouseOut Event Flow：
+</p>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_JHhe1vma7nY/RtERxuwi2jI/AAAAAAAAAK8/gSRIpQ9ehVM/s1600-h/EventFlow_Mouse.gif"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="as3-mouseover-rollover-3_files/EventFlow_Mouse.png" alt="" id="BLOGGER_PHOTO_ID_5102879398850386482" border="0"></a>
+
+<p>
+RollOver、RollOut Event Flow：
+</p>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_JHhe1vma7nY/RtERsewi2iI/AAAAAAAAAK0/VNgJcTQzjYU/s1600-h/EventFlow_Roll.gif"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="as3-mouseover-rollover-3_files/EventFlow_Roll.png" alt="" id="BLOGGER_PHOTO_ID_5102879308656073250" border="0"></a>
+
+<p>
+AS3 Dispatch Bubble、Non-Bubble Event Flow：
+</p>
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_JHhe1vma7nY/RtERm-wi2hI/AAAAAAAAAKs/jNdq_sM8g-s/s1600-h/EventFlow_Dispatch.gif"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="as3-mouseover-rollover-3_files/EventFlow_Dispatch.png" alt="" id="BLOGGER_PHOTO_ID_5102879214166792722" border="0"></a>
+
+<p>
+相關連結：<br>
+<a href="http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-1.html">AS3 - MouseOver 與 RollOver 差異性 (1)</a><br>
+<a href="http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-2.html">AS3 - MouseOver 與 RollOver 差異性 (2)</a><br>
+<a href="http://ticore.blogspot.com/2007/09/as3-mouseeventrelatedobject.html">AS3 MouseEvent.relatedObject</a><br>
+<a href="http://ticore.blogspot.com/2007/08/as3-cross-domain-event-flow.html">AS3 Cross-Domain Event Flow</a><br>
+<a href="http://ticore.blogspot.com/2008/03/as-30-mouse-event-mouseenabled.html">AS 3.0 - Mouse Event &amp; mouseEnabled</a>
+</p>
+</span>
+					轉載請註明出處 <a href="http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html">http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html</a>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<p class="post-footer-line post-footer-line-1">
+<span class="post-author">
+張貼者：
+{id: "Ticore"}; //
+</span>
+<span class="post-timestamp">
+位於
+<a class="timestamp-link" href="http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html" title="permanent link">
+8/22/2007 06:56:00 下午
+</a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-action">
+<a href="http://www.blogger.com/email-post.g?blogID=6934949377658966040&amp;postID=4089796528331156941" title="電子郵件發佈">
+<span class="email-post-icon">&nbsp;</span>
+</a>
+</span>
+<span class="item-control blog-admin pid-625723257">
+<a href="http://www.blogger.com/post-edit.g?blogID=6934949377658966040&amp;postID=4089796528331156941" title="編輯文章">
+<span class="quick-edit-icon">&nbsp;</span>
+</a>
+</span>
+</span></p>
+<p class="post-footer-line post-footer-line-2"><span class="post-labels">
+標籤：
+<a href="http://ticore.blogspot.com/search/label/ActionScript" rel="tag">ActionScript</a>,
+<a href="http://ticore.blogspot.com/search/label/AS3" rel="tag">AS3</a>,
+<a href="http://ticore.blogspot.com/search/label/Event-Flow" rel="tag">Event-Flow</a>,
+<a href="http://ticore.blogspot.com/search/label/Event-Listener" rel="tag">Event-Listener</a>,
+<a href="http://ticore.blogspot.com/search/label/Flash" rel="tag">Flash</a>,
+<a href="http://ticore.blogspot.com/search/label/hitArea" rel="tag">hitArea</a>,
+<a href="http://ticore.blogspot.com/search/label/Interaction" rel="tag">Interaction</a>,
+<a href="http://ticore.blogspot.com/search/label/Mouse" rel="tag">Mouse</a>,
+<a href="http://ticore.blogspot.com/search/label/MovieClip" rel="tag">MovieClip</a>
+</span></p>
+<p class="post-footer-line post-footer-line-3"></p>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>
+2
+意見
+                      : 
+</h4>
+<dl id="comments-block">
+<dt class="comment-author" id="comment-2133614071458561815">
+<a name="comment-2133614071458561815"></a>
+<a href="http://www.blogger.com/profile/01402644260113429123" rel="nofollow" target="_blank">
+qop
+</a>
+提到...
+</dt>
+<dd class="comment-body">
+<p>
+有圖有真相 XD<br>rollOver 不能用 mouseOver 實作, 應該可以用 mouseMove 實作。
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a href="#comment-2133614071458561815" title="comment permalink">
+2007年8月23日 上午 12:16
+</a>
+<span class="item-control blog-admin pid-146001971">
+<a href="http://www.blogger.com/delete-comment.g?blogID=6934949377658966040&amp;postID=2133614071458561815" title="刪除意見">
+<span class="delete-comment-icon">&nbsp;</span>
+</a>
+</span>
+</span>
+</dd>
+<dt class="comment-author" id="comment-8984675370776534551">
+<a name="comment-8984675370776534551"></a>
+aladdin
+提到...
+</dt>
+<dd class="comment-body">
+<p>
+mouseOver與rollOver真正的差別在於，mouseOver是傳統browser的行為（用IE試就知道了），rollOver則還是古老的flash 4以來的rollOver。<br><br>但新德說的沒錯，mouseMove本來就可以解決這一切，因為mouseMove本來就是mouse event中最基礎的東西...
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a href="#comment-8984675370776534551" title="comment permalink">
+2007年9月8日 下午 1:38
+</a>
+<span class="item-control blog-admin pid-495189179">
+<a href="http://www.blogger.com/delete-comment.g?blogID=6934949377658966040&amp;postID=8984675370776534551" title="刪除意見">
+<span class="delete-comment-icon">&nbsp;</span>
+</a>
+</span>
+</span>
+</dd>
+</dl>
+<p class="comment-footer">
+<a href="https://www.blogger.com/comment.g?blogID=6934949377658966040&amp;postID=4089796528331156941&amp;isPopup=true" onclick='javascript:window.open(this.href, "bloggerPopup", "toolbar=0,location=0,statusbar=1,menubar=0,scrollbars=yes,width=400,height=450"); return false;'>
+張貼意見
+</a>
+</p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container"><a name="links"></a>
+<h4>
+此文章的連結
+</h4>
+
+<p class="comment-footer">
+<a id="Blog1_backlinks-create-link" href="http://www.blogger.com/blog-this.g" target="_blank" class="comment-link">
+建立連結
+</a>
+</p></div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://ticore.blogspot.com/2007/08/loaderloadbytes-loaderinfourl.html" title="較新的文章">«
+                  較新的文章
+</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://ticore.blogspot.com/2007/08/flash-player-9-update-h264.html" title="較舊的文章">
+較舊的文章
+                  »</a>
+</span>
+<a class="home-link" href="http://ticore.blogspot.com/">
+首頁
+</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+訂閱：
+<a class="feed-link" href="http://ticore.blogspot.com/feeds/4089796528331156941/comments/default" target="_blank" type="application/atom+xml">張貼意見(Atom)</a>, <a class="feed-link" href="http://ticore.blogspot.com/feeds/4089796528331156941/comments/default?alt=rss" target="_blank" type="application/rss+xml">張貼意見(RSS)</a>
+</div>
+</div>
+</div><div class="widget HTML" id="HTML4">
+<h2 class="title">
+Copyrights
+</h2>
+<div class="widget-content">
+<p style="font-size: 0.75em; line-height: 1.2em;"><a href="http://creativecommons.org/licenses/by-nc-sa/2.5/tw/" rel="license">
+<img alt="Creative Commons License" style="border-width: 0pt;" src="as3-mouseover-rollover-3_files/88x31.gif" vspace="4" align="middle" hspace="4"></a>本 
+<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/StillImage" rel="dc:type">著作</span> 係採用
+<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/tw/" rel="license">創用 CC 姓名標示-非商業性-相同方式分享 2.5 台灣 授權條款</a>授權.</p>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML4&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target="configHTML4" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget HTML" id="HTML2">
+<div class="widget-content">
+<!--
+<script type="text/javascript">
+if (typeof(_WidgetManager) == "undefined") {
+	var headID = document.getElementsByTagName("head")[0];
+	var scriptNode = document.createElement('script');
+	scriptNode.type = 'text/javascript';
+	scriptNode.src = 'http://riafiles.googlepages.com/3950888898-widgets.js';
+	headID.appendChild(scriptNode);
+}
+</script>
+-->
+<script type="text/javascript">
+//dp.SyntaxHighlighter.ClipboardSwf = 'http://riafiles.googlepages.com/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML2&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target="configHTML2" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML10">
+<h2 class="title">
+Google SiteSearch
+</h2>
+<div class="widget-content">
+<!-- SiteSearch Google -->
+<form action="http://www.google.com.tw/custom" target="_top" method="get">
+  <table width="100%" bgcolor="#ffffff" border="0">
+    <tbody><tr>
+      <td width="100%" height="32"><input value="ticore.blogspot.com" name="domains" type="hidden">
+        <label for="sbi" style="display: none;">輸入您的搜尋字詞</label>
+        <input maxlength="255" id="sbi" style="width: 99%;" name="q" type="text">
+        <label for="sbb" style="display: none;">提交搜尋表單</label></td>
+      <td><input id="sbb" value="Google 搜尋" name="sa" type="submit"></td>
+    </tr>
+  </tbody></table>
+  <input id="ss0" value="" name="sitesearch" type="radio">
+  <label for="ss0" title="搜尋網頁"><font size="-1" color="black">Web</font></label>
+  <input id="ss1" checked="checked" value="ticore.blogspot.com" name="sitesearch" type="radio">
+  <label for="ss1" title="搜尋 ticore.blogspot.com"><font size="-1" color="black">Ticore's Blog</font></label>
+  <input value="pub-9901231013782014" name="client" type="hidden">
+  <input value="1" name="forid" type="hidden">
+  <input value="UTF-8" name="ie" type="hidden">
+  <input value="UTF-8" name="oe" type="hidden">
+  <input value="GALT:#5588aa;GL:1;DIV:#FFFFFF;VLC:999999;AH:center;BGC:FFFFFF;LBGC:336699;ALC:cc6600;LC:cc6600;T:333333;GFNT:5588aa;GIMP:5588aa;FORID:1" name="cof" type="hidden">
+  <input value="zh-TW" name="hl" type="hidden">
+</form>
+<!-- SiteSearch Google -->
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML10&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML10"));' target="configHTML10" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Profile" id="Profile1">
+<h2>
+關於我自己
+</h2>
+<div class="widget-content">
+<a href="http://www.blogger.com/profile/01433005931305983346"><img alt="我的相片" class="profile-img" src="as3-mouseover-rollover-3_files/TicoreJiju.jpg" width="64" height="80"></a>
+<dl class="profile-datablock">
+<dt class="profile-data">
+Ticore Shih
+</dt>
+<dd class="profile-data">
+板橋, Taiwan
+</dd>
+<dd class="profile-textblock">
+Flash/Flex Developer
+</dd>
+</dl>
+<a class="profile-link" href="http://www.blogger.com/profile/01433005931305983346">
+檢視我的完整簡介
+</a>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target="configProfile1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML9">
+<div class="widget-content">
+<a target="_blank" href="http://get.adobe.com/flashplayer/"><img alt="Get Adobe Flash Player" src="as3-mouseover-rollover-3_files/get_adobe_flash_player.png"></a>
+
+<a target="_blank" href="http://get.adobe.com/air/"><img alt="Get Adobe AIR" src="as3-mouseover-rollover-3_files/get_adobe_air.png"></a>
+
+<!--
+來自 *.cn 的朋友可以經由這網址訪問<br/>
+<a href="http://tc2sc.mojolingo.xuite.net/m2m&#45;0000/ticore.blogspot.com/">Ticore's Blog 簡體版</a>
+
+
+<a href="http://swf.seo.googlepages.com/GoogleIndexingSWFTest01Links.html">&#12288;</a>
+-->
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML9&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML9"));' target="configHTML9" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Subscribe" id="Subscribe1">
+<div style="white-space: nowrap;">
+<h2 class="title">訂閱</h2>
+<div class="widget-content">
+<div class="subscribe-wrapper subscribe-type-POST">
+<div class="subscribe expanded subscribe-type-POST" id="SW_READER_LIST_Subscribe1POST" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class="subscribe-dropdown-arrow" src="as3-mouseover-rollover-3_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle" border="0">
+發表文章
+</span>
+<ul class="feed-reader-links">
+<a class="feed-reader-link" href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" href="http://www.bloglines.com/sub/http://ticore.blogspot.com/feeds/posts/default" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-bloglines.png">
+</a>
+<a class="feed-reader-link" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" href="http://add.my.yahoo.com/content?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2Fposts%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://ticore.blogspot.com/feeds/posts/default" target="_blank">
+<img class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle">
+                Atom
+              </a>
+</ul>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1POST" onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="as3-mouseover-rollover-3_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img alt="" class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle" border="0">
+發表文章
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div class="subscribe-wrapper subscribe-type-PER_POST">
+<div class="subscribe expanded subscribe-type-PER_POST" id="SW_READER_LIST_Subscribe1PER_POST" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img class="subscribe-dropdown-arrow" src="as3-mouseover-rollover-3_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle" border="0">
+意見
+</span>
+<ul class="feed-reader-links">
+<a class="feed-reader-link" href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2F4089796528331156941%2Fcomments%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" href="http://www.bloglines.com/sub/http://ticore.blogspot.com/feeds/4089796528331156941/comments/default" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-bloglines.png">
+</a>
+<a class="feed-reader-link" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2F4089796528331156941%2Fcomments%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2F4089796528331156941%2Fcomments%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" href="http://add.my.yahoo.com/content?url=http%3A%2F%2Fticore.blogspot.com%2Ffeeds%2F4089796528331156941%2Fcomments%2Fdefault" target="_blank">
+<img src="as3-mouseover-rollover-3_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" href="http://ticore.blogspot.com/feeds/4089796528331156941/comments/default" target="_blank">
+<img class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle">
+                Atom
+              </a>
+</ul>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1PER_POST" onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" src="as3-mouseover-rollover-3_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img alt="" class="feed-icon" src="as3-mouseover-rollover-3_files/icon_feed12.png" align="absmiddle" border="0">
+意見
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=Subscribe&amp;widgetId=Subscribe1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target="configSubscribe1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget BlogArchive" id="BlogArchive1">
+<h2>
+blog 歷史文章
+</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul>
+<li class="archivedate"><a href="http://ticore.blogspot.com/2009_03_01_archive.html">三月 2009</a> (21)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2009_02_01_archive.html">二月 2009</a> (9)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_12_01_archive.html">十二月 2008</a> (1)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_11_01_archive.html">十一月 2008</a> (7)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_09_01_archive.html">九月 2008</a> (5)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_07_01_archive.html">七月 2008</a> (3)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_06_01_archive.html">六月 2008</a> (9)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_05_01_archive.html">五月 2008</a> (14)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_04_01_archive.html">四月 2008</a> (7)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_03_01_archive.html">三月 2008</a> (13)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_02_01_archive.html">二月 2008</a> (11)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2008_01_01_archive.html">一月 2008</a> (5)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_12_01_archive.html">十二月 2007</a> (22)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_11_01_archive.html">十一月 2007</a> (13)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_10_01_archive.html">十月 2007</a> (15)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_09_01_archive.html">九月 2007</a> (14)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_08_01_archive.html">八月 2007</a> (13)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_07_01_archive.html">七月 2007</a> (29)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_06_01_archive.html">六月 2007</a> (35)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_05_01_archive.html">五月 2007</a> (10)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_03_01_archive.html">三月 2007</a> (1)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_02_01_archive.html">二月 2007</a> (2)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2007_01_01_archive.html">一月 2007</a> (5)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_12_01_archive.html">十二月 2006</a> (24)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_11_01_archive.html">十一月 2006</a> (15)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_10_01_archive.html">十月 2006</a> (1)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_08_01_archive.html">八月 2006</a> (4)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_07_01_archive.html">七月 2006</a> (5)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_06_01_archive.html">六月 2006</a> (1)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_04_01_archive.html">四月 2006</a> (1)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_03_01_archive.html">三月 2006</a> (7)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_02_01_archive.html">二月 2006</a> (2)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2006_01_01_archive.html">一月 2006</a> (2)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2005_12_01_archive.html">十二月 2005</a> (6)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2005_11_01_archive.html">十一月 2005</a> (2)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2005_10_01_archive.html">十月 2005</a> (2)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2005_09_01_archive.html">九月 2005</a> (10)</li><li class="archivedate"><a href="http://ticore.blogspot.com/2005_04_01_archive.html">四月 2005</a> (1)</li>
+</ul><br>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target="configBlogArchive1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" id="Label1">
+<h2>
+Label Cloud
+</h2>
+<div class="widget-content">
+<div id="labelCloud"><ul class="label-cloud"><br><li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/3D" style="color: rgb(189, 189, 128);" title="2 Posts in 3D">3D</a></li> <li style="font-size: 24px;"><a href="http://ticore.blogspot.com/search/label/ActionScript" style="color: rgb(0, 0, 128);" title="221 Posts in ActionScript">ActionScript</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/ActiveX" style="color: rgb(139, 139, 128);" title="7 Posts in ActiveX">ActiveX</a></li> <li style="font-size: 16px;"><a href="http://ticore.blogspot.com/search/label/Adobe-AIR" style="color: rgb(97, 97, 128);" title="20 Posts in Adobe AIR">Adobe AIR</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Ajax" style="color: rgb(139, 139, 128);" title="7 Posts in Ajax">Ajax</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Alchemy" style="color: rgb(173, 173, 128);" title="3 Posts in Alchemy">Alchemy</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Algorithm" style="color: rgb(145, 145, 128);" title="6 Posts in Algorithm">Algorithm</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Ant" style="color: rgb(216, 216, 128);" title="1 Posts in Ant">Ant</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/ApplicationDomain" style="color: rgb(129, 129, 128);" title="9 Posts in ApplicationDomain">ApplicationDomain</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Array" style="color: rgb(139, 139, 128);" title="7 Posts in Array">Array</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/AS1" style="color: rgb(129, 129, 128);" title="9 Posts in AS1">AS1</a></li> <li style="font-size: 18px;"><a href="http://ticore.blogspot.com/search/label/AS2" style="color: rgb(64, 64, 128);" title="45 Posts in AS2">AS2</a></li> <li style="font-size: 23px;"><a href="http://ticore.blogspot.com/search/label/AS3" style="color: rgb(10, 10, 128);" title="173 Posts in AS3">AS3</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Assembler" style="color: rgb(161, 161, 128);" title="4 Posts in Assembler">Assembler</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/BitmapData" style="color: rgb(124, 124, 128);" title="10 Posts in BitmapData">BitmapData</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/BlendMode" style="color: rgb(139, 139, 128);" title="7 Posts in BlendMode">BlendMode</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Blogger" style="color: rgb(161, 161, 128);" title="4 Posts in Blogger">Blogger</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Books" style="color: rgb(216, 216, 128);" title="1 Posts in Books">Books</a></li> <li style="font-size: 20px;"><a href="http://ticore.blogspot.com/search/label/Bug" style="color: rgb(47, 47, 128);" title="69 Posts in Bug">Bug</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/ByteArray" style="color: rgb(173, 173, 128);" title="3 Posts in ByteArray">ByteArray</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/ByteCode" style="color: rgb(161, 161, 128);" title="4 Posts in ByteCode">ByteCode</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/C%2B%2B" style="color: rgb(152, 152, 128);" title="5 Posts in C++">C++</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Cache" style="color: rgb(161, 161, 128);" title="4 Posts in Cache">Cache</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Cairngorm" style="color: rgb(216, 216, 128);" title="1 Posts in Cairngorm">Cairngorm</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Camera" style="color: rgb(216, 216, 128);" title="1 Posts in Camera">Camera</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Capabilities" style="color: rgb(189, 189, 128);" title="2 Posts in Capabilities">Capabilities</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/CD-Title" style="color: rgb(216, 216, 128);" title="1 Posts in CD Title">CD Title</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Charset" style="color: rgb(173, 173, 128);" title="3 Posts in Charset">Charset</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Codec" style="color: rgb(161, 161, 128);" title="4 Posts in Codec">Codec</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Community" style="color: rgb(189, 189, 128);" title="2 Posts in Community">Community</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Compiler" style="color: rgb(145, 145, 128);" title="6 Posts in Compiler">Compiler</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Compress" style="color: rgb(189, 189, 128);" title="2 Posts in Compress">Compress</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Conference" style="color: rgb(216, 216, 128);" title="1 Posts in Conference">Conference</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Cross-Domain" style="color: rgb(189, 189, 128);" title="2 Posts in Cross Domain">Cross Domain</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/CSS" style="color: rgb(139, 139, 128);" title="7 Posts in CSS">CSS</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Data-Binding" style="color: rgb(129, 129, 128);" title="9 Posts in Data Binding">Data Binding</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/DataGrid" style="color: rgb(152, 152, 128);" title="5 Posts in DataGrid">DataGrid</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Debug" style="color: rgb(129, 129, 128);" title="9 Posts in Debug">Debug</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Decompile" style="color: rgb(161, 161, 128);" title="4 Posts in Decompile">Decompile</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Design%20Patterns" style="color: rgb(216, 216, 128);" title="1 Posts in Design Patterns">Design Patterns</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/dHTML" style="color: rgb(145, 145, 128);" title="6 Posts in dHTML">dHTML</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Dictionary" style="color: rgb(189, 189, 128);" title="2 Posts in Dictionary">Dictionary</a></li> <li style="font-size: 17px;"><a href="http://ticore.blogspot.com/search/label/DisplayObject" style="color: rgb(88, 88, 128);" title="25 Posts in DisplayObject">DisplayObject</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/DividedBox" style="color: rgb(173, 173, 128);" title="3 Posts in DividedBox">DividedBox</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Document-Class" style="color: rgb(152, 152, 128);" title="5 Posts in Document Class">Document Class</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Documents" style="color: rgb(133, 133, 128);" title="8 Posts in Documents">Documents</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Drag-and-Drop" style="color: rgb(216, 216, 128);" title="1 Posts in Drag and Drop">Drag and Drop</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Dreamweaver" style="color: rgb(173, 173, 128);" title="3 Posts in Dreamweaver">Dreamweaver</a></li> <li style="font-size: 17px;"><a href="http://ticore.blogspot.com/search/label/E4X" style="color: rgb(88, 88, 128);" title="25 Posts in E4X">E4X</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Event-Flow" style="color: rgb(161, 161, 128);" title="4 Posts in Event Flow">Event Flow</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/Event-Listener" style="color: rgb(103, 103, 128);" title="17 Posts in Event Listener">Event Listener</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/ExternalInterface" style="color: rgb(161, 161, 128);" title="4 Posts in ExternalInterface">ExternalInterface</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Filter" style="color: rgb(173, 173, 128);" title="3 Posts in Filter">Filter</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Firebug" style="color: rgb(161, 161, 128);" title="4 Posts in Firebug">Firebug</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/Firefox" style="color: rgb(108, 108, 128);" title="15 Posts in Firefox">Firefox</a></li> <li style="font-size: 22px;"><a href="http://ticore.blogspot.com/search/label/Flash" style="color: rgb(21, 21, 128);" title="133 Posts in Flash">Flash</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Flash-CS3" style="color: rgb(189, 189, 128);" title="2 Posts in Flash CS3">Flash CS3</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Flash-CS4" style="color: rgb(145, 145, 128);" title="6 Posts in Flash CS4">Flash CS4</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Flash-Media-Server" style="color: rgb(129, 129, 128);" title="9 Posts in Flash Media Server">Flash Media Server</a></li> <li style="font-size: 19px;"><a href="http://ticore.blogspot.com/search/label/Flash-Player" style="color: rgb(59, 59, 128);" title="51 Posts in Flash Player">Flash Player</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Flash-Remoting" style="color: rgb(145, 145, 128);" title="6 Posts in Flash Remoting">Flash Remoting</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/FlashLite" style="color: rgb(161, 161, 128);" title="4 Posts in FlashLite">FlashLite</a></li> <li style="font-size: 20px;"><a href="http://ticore.blogspot.com/search/label/Flex" style="color: rgb(41, 41, 128);" title="81 Posts in Flex">Flex</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Focus" style="color: rgb(161, 161, 128);" title="4 Posts in Focus">Focus</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Font" style="color: rgb(133, 133, 128);" title="8 Posts in Font">Font</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/FPS" style="color: rgb(216, 216, 128);" title="1 Posts in FPS">FPS</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Frame-Script" style="color: rgb(124, 124, 128);" title="10 Posts in Frame Script">Frame Script</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/FrameLabel" style="color: rgb(189, 189, 128);" title="2 Posts in FrameLabel">FrameLabel</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Function-Closure" style="color: rgb(124, 124, 128);" title="10 Posts in Function Closure">Function Closure</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/GC" style="color: rgb(114, 114, 128);" title="13 Posts in GC">GC</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Global" style="color: rgb(173, 173, 128);" title="3 Posts in Global">Global</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Google" style="color: rgb(216, 216, 128);" title="1 Posts in Google">Google</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/Graphics" style="color: rgb(108, 108, 128);" title="15 Posts in Graphics">Graphics</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/GUI" style="color: rgb(189, 189, 128);" title="2 Posts in GUI">GUI</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/hitArea" style="color: rgb(161, 161, 128);" title="4 Posts in hitArea">hitArea</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/HTML" style="color: rgb(139, 139, 128);" title="7 Posts in HTML">HTML</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/IE" style="color: rgb(121, 121, 128);" title="11 Posts in IE">IE</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Interaction" style="color: rgb(152, 152, 128);" title="5 Posts in Interaction">Interaction</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Java" style="color: rgb(145, 145, 128);" title="6 Posts in Java">Java</a></li> <li style="font-size: 17px;"><a href="http://ticore.blogspot.com/search/label/JavaScript" style="color: rgb(78, 78, 128);" title="32 Posts in JavaScript">JavaScript</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/jsfl" style="color: rgb(189, 189, 128);" title="2 Posts in jsfl">jsfl</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Kaspersky" style="color: rgb(216, 216, 128);" title="1 Posts in Kaspersky">Kaspersky</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Keyboard" style="color: rgb(161, 161, 128);" title="4 Posts in Keyboard">Keyboard</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Layout" style="color: rgb(121, 121, 128);" title="11 Posts in Layout">Layout</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Linux" style="color: rgb(173, 173, 128);" title="3 Posts in Linux">Linux</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/List" style="color: rgb(189, 189, 128);" title="2 Posts in List">List</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Loader" style="color: rgb(152, 152, 128);" title="5 Posts in Loader">Loader</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/loaderInfo" style="color: rgb(152, 152, 128);" title="5 Posts in loaderInfo">loaderInfo</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/LoadVars" style="color: rgb(173, 173, 128);" title="3 Posts in LoadVars">LoadVars</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/LocalConnection" style="color: rgb(173, 173, 128);" title="3 Posts in LocalConnection">LocalConnection</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Localization" style="color: rgb(216, 216, 128);" title="1 Posts in Localization">Localization</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/Mashup" style="color: rgb(108, 108, 128);" title="15 Posts in Mashup">Mashup</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Mask" style="color: rgb(161, 161, 128);" title="4 Posts in Mask">Mask</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Menu" style="color: rgb(216, 216, 128);" title="1 Posts in Menu">Menu</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Metadata-Tag" style="color: rgb(152, 152, 128);" title="5 Posts in Metadata Tag">Metadata Tag</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Mobile" style="color: rgb(173, 173, 128);" title="3 Posts in Mobile">Mobile</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Mouse" style="color: rgb(121, 121, 128);" title="11 Posts in Mouse">Mouse</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/MovieClip" style="color: rgb(108, 108, 128);" title="15 Posts in MovieClip">MovieClip</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Multi-Languages" style="color: rgb(216, 216, 128);" title="1 Posts in Multi Languages">Multi Languages</a></li> <li style="font-size: 19px;"><a href="http://ticore.blogspot.com/search/label/MXML" style="color: rgb(62, 62, 128);" title="48 Posts in MXML">MXML</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Namespace" style="color: rgb(133, 133, 128);" title="8 Posts in Namespace">Namespace</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/NetConnection" style="color: rgb(133, 133, 128);" title="8 Posts in NetConnection">NetConnection</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/NetStream" style="color: rgb(189, 189, 128);" title="2 Posts in NetStream">NetStream</a></li> <li style="font-size: 15px;"><a href="http://ticore.blogspot.com/search/label/NEWS" style="color: rgb(103, 103, 128);" title="17 Posts in NEWS">NEWS</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/NumericStepper" style="color: rgb(189, 189, 128);" title="2 Posts in NumericStepper">NumericStepper</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Object-Comparison" style="color: rgb(133, 133, 128);" title="8 Posts in Object Comparison">Object Comparison</a></li> <li style="font-size: 17px;"><a href="http://ticore.blogspot.com/search/label/Oddity" style="color: rgb(88, 88, 128);" title="25 Posts in Oddity">Oddity</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Package" style="color: rgb(189, 189, 128);" title="2 Posts in Package">Package</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Path" style="color: rgb(152, 152, 128);" title="5 Posts in Path">Path</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Preloader" style="color: rgb(189, 189, 128);" title="2 Posts in Preloader">Preloader</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Programming" style="color: rgb(161, 161, 128);" title="4 Posts in Programming">Programming</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Prototype-Function" style="color: rgb(145, 145, 128);" title="6 Posts in Prototype Function">Prototype Function</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Proxy-Object" style="color: rgb(139, 139, 128);" title="7 Posts in Proxy Object">Proxy Object</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/PureMVC" style="color: rgb(216, 216, 128);" title="1 Posts in PureMVC">PureMVC</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Puzzle" style="color: rgb(152, 152, 128);" title="5 Posts in Puzzle">Puzzle</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/QName" style="color: rgb(152, 152, 128);" title="5 Posts in QName">QName</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Qt4" style="color: rgb(189, 189, 128);" title="2 Posts in Qt4">Qt4</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Red5" style="color: rgb(216, 216, 128);" title="1 Posts in Red5">Red5</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/RegExp" style="color: rgb(173, 173, 128);" title="3 Posts in RegExp">RegExp</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Reparenting" style="color: rgb(152, 152, 128);" title="5 Posts in Reparenting">Reparenting</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/RIA" style="color: rgb(152, 152, 128);" title="5 Posts in RIA">RIA</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/RSL" style="color: rgb(129, 129, 128);" title="9 Posts in RSL">RSL</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Scale-9" style="color: rgb(161, 161, 128);" title="4 Posts in Scale 9">Scale 9</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Scope-Chain" style="color: rgb(124, 124, 128);" title="10 Posts in Scope Chain">Scope Chain</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/scrollRect" style="color: rgb(189, 189, 128);" title="2 Posts in scrollRect">scrollRect</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/SharedObject" style="color: rgb(139, 139, 128);" title="7 Posts in SharedObject">SharedObject</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Silverlight" style="color: rgb(173, 173, 128);" title="3 Posts in Silverlight">Silverlight</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Skin" style="color: rgb(133, 133, 128);" title="8 Posts in Skin">Skin</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Socket" style="color: rgb(216, 216, 128);" title="1 Posts in Socket">Socket</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Sound" style="color: rgb(216, 216, 128);" title="1 Posts in Sound">Sound</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Stream-Server" style="color: rgb(161, 161, 128);" title="4 Posts in Stream Server">Stream Server</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Strict-Mode" style="color: rgb(189, 189, 128);" title="2 Posts in Strict Mode">Strict Mode</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Style" style="color: rgb(216, 216, 128);" title="1 Posts in Style">Style</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/SWF" style="color: rgb(129, 129, 128);" title="9 Posts in SWF">SWF</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/swfObject" style="color: rgb(161, 161, 128);" title="4 Posts in swfObject">swfObject</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/SyntaxHighlighter" style="color: rgb(173, 173, 128);" title="3 Posts in SyntaxHighlighter">SyntaxHighlighter</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Technology" style="color: rgb(121, 121, 128);" title="11 Posts in Technology">Technology</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/TextEngine" style="color: rgb(216, 216, 128);" title="1 Posts in TextEngine">TextEngine</a></li> <li style="font-size: 16px;"><a href="http://ticore.blogspot.com/search/label/TextField" style="color: rgb(101, 101, 128);" title="18 Posts in TextField">TextField</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Threading" style="color: rgb(216, 216, 128);" title="1 Posts in Threading">Threading</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/TileList" style="color: rgb(161, 161, 128);" title="4 Posts in TileList">TileList</a></li> <li style="font-size: 12px;"><a href="http://ticore.blogspot.com/search/label/Timeline" style="color: rgb(152, 152, 128);" title="5 Posts in Timeline">Timeline</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Tools" style="color: rgb(129, 129, 128);" title="9 Posts in Tools">Tools</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Transparent" style="color: rgb(139, 139, 128);" title="7 Posts in Transparent">Transparent</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Tree" style="color: rgb(189, 189, 128);" title="2 Posts in Tree">Tree</a></li> <li style="font-size: 20px;"><a href="http://ticore.blogspot.com/search/label/Trick" style="color: rgb(39, 39, 128);" title="85 Posts in Trick">Trick</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/Tween" style="color: rgb(216, 216, 128);" title="1 Posts in Tween">Tween</a></li> <li style="font-size: 16px;"><a href="http://ticore.blogspot.com/search/label/UIComponent" style="color: rgb(97, 97, 128);" title="20 Posts in UIComponent">UIComponent</a></li> <li style="font-size: 14px;"><a href="http://ticore.blogspot.com/search/label/Undocumented" style="color: rgb(117, 117, 128);" title="12 Posts in Undocumented">Undocumented</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/URL-Encoding" style="color: rgb(173, 173, 128);" title="3 Posts in URL Encoding">URL Encoding</a></li> <li style="font-size: 13px;"><a href="http://ticore.blogspot.com/search/label/Usability" style="color: rgb(133, 133, 128);" title="8 Posts in Usability">Usability</a></li> <li style="font-size: 11px;"><a href="http://ticore.blogspot.com/search/label/Video" style="color: rgb(161, 161, 128);" title="4 Posts in Video">Video</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Weak-Reference" style="color: rgb(189, 189, 128);" title="2 Posts in Weak Reference">Weak Reference</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/WebKit" style="color: rgb(216, 216, 128);" title="1 Posts in WebKit">WebKit</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/WebService" style="color: rgb(216, 216, 128);" title="1 Posts in WebService">WebService</a></li> <li style="font-size: 10px;"><a href="http://ticore.blogspot.com/search/label/Widget" style="color: rgb(173, 173, 128);" title="3 Posts in Widget">Widget</a></li> <li style="font-size: 7px;"><a href="http://ticore.blogspot.com/search/label/XAML" style="color: rgb(216, 216, 128);" title="1 Posts in XAML">XAML</a></li> <li style="font-size: 16px;"><a href="http://ticore.blogspot.com/search/label/XML" style="color: rgb(93, 93, 128);" title="22 Posts in XML">XML</a></li> <li style="font-size: 9px;"><a href="http://ticore.blogspot.com/search/label/Xuite" style="color: rgb(189, 189, 128);" title="2 Posts in Xuite">Xuite</a></li> </ul></div>
+<script type="text/javascript">
+var ts = {"3D":2,"ActionScript":221,"ActiveX":7,"Adobe-AIR":20,"Ajax":7,"Alchemy":3,"Algorithm":6,"Ant":1,"ApplicationDomain":9,"Array":7,"AS1":9,"AS2":45,"AS3":173,"Assembler":4,"BitmapData":10,"BlendMode":7,"Blogger":4,"Books":1,"Bug":69,"ByteArray":3,"ByteCode":4,"C++":5,"Cache":4,"Cairngorm":1,"Camera":1,"Capabilities":2,"CD-Title":1,"Charset":3,"Codec":4,"Community":2,"Compiler":6,"Compress":2,"Conference":1,"Cross-Domain":2,"CSS":7,"Data-Binding":9,"DataGrid":5,"Debug":9,"Decompile":4,"Design Patterns":1,"dHTML":6,"Dictionary":2,"DisplayObject":25,"DividedBox":3,"Document-Class":5,"Documents":8,"Drag-and-Drop":1,"Dreamweaver":3,"E4X":25,"Event-Flow":4,"Event-Listener":17,"ExternalInterface":4,"Filter":3,"Firebug":4,"Firefox":15,"Flash":133,"Flash-CS3":2,"Flash-CS4":6,"Flash-Media-Server":9,"Flash-Player":51,"Flash-Remoting":6,"FlashLite":4,"Flex":81,"Focus":4,"Font":8,"FPS":1,"Frame-Script":10,"FrameLabel":2,"Function-Closure":10,"GC":13,"Global":3,"Google":1,"Graphics":15,"GUI":2,"hitArea":4,"HTML":7,"IE":11,"Interaction":5,"Java":6,"JavaScript":32,"jsfl":2,"Kaspersky":1,"Keyboard":4,"Layout":11,"Linux":3,"List":2,"Loader":5,"loaderInfo":5,"LoadVars":3,"LocalConnection":3,"Localization":1,"Mashup":15,"Mask":4,"Menu":1,"Metadata-Tag":5,"Mobile":3,"Mouse":11,"MovieClip":15,"Multi-Languages":1,"MXML":48,"Namespace":8,"NetConnection":8,"NetStream":2,"NEWS":17,"NumericStepper":2,"Object-Comparison":8,"Oddity":25,"Package":2,"Path":5,"Preloader":2,"Programming":4,"Prototype-Function":6,"Proxy-Object":7,"PureMVC":1,"Puzzle":5,"QName":5,"Qt4":2,"Red5":1,"RegExp":3,"Reparenting":5,"RIA":5,"RSL":9,"Scale-9":4,"Scope-Chain":10,"scrollRect":2,"SharedObject":7,"Silverlight":3,"Skin":8,"Socket":1,"Sound":1,"Stream-Server":4,"Strict-Mode":2,"Style":1,"SWF":9,"swfObject":4,"SyntaxHighlighter":3,"Technology":11,"TextEngine":1,"TextField":18,"Threading":1,"TileList":4,"Timeline":5,"Tools":9,"Transparent":7,"Tree":2,"Trick":85,"Tween":1,"UIComponent":20,"Undocumented":12,"URL-Encoding":3,"Usability":8,"Video":4,"Weak-Reference":2,"WebKit":1,"WebService":1,"Widget":3,"XAML":1,"XML":22,"Xuite":2,'':''};
+genLabelCloud(ts);
+				</script>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=Label&amp;widgetId=Label1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target="configLabel1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget LinkList" id="LinkList1">
+<h2>
+Links
+</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://groups.google.com/group/augtw" target="_blank">Adobe User Group of Taiwan</a>
+</li><li><a href="http://amos-lee.blogspot.com/" target="_blank">Amos</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL2Jsb2cucGl4bmV0Lm5ldC9sb3ZlYnJpYW4=" target="_blank">Brian</a>
+</li><li><a href="http://erinylin.blogspot.com/" target="_blank">Erin</a>
+</li><li><a href="http://idben.blogspot.com/" target="_blank">idben</a>
+</li><li><a href="http://kyle.jolin.info/tt/index.php" target="_blank">Kyle</a>
+</li><li><a href="http://www.luar.com.hk/flashbook/main.php" target="_blank">Luar</a>
+</li><li><a href="http://masolin.blogspot.com/" target="_blank">Maso</a>
+</li><li><a href="http://milkmidi.blogspot.com/" target="_blank">Milkmidi</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL2Jsb2cueHVpdGUubmV0L29zYWtpOTkvYmxvZw==" target="_blank">osaki's blog</a>
+</li><li><a href="http://qops.blogspot.com/" target="_blank">qop</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL3JpYS1ub3Rlcy50d2dvZ28ub3JnL2Jsb2cv" target="_blank">RIA 學習筆記</a>
+</li><li><a href="http://www.silkrt.com/v01/" target="_blank">Silk Route</a>
+</li><li><a href="http://blog.xuite.net/ticore/blog2" target="_blank">Ticore's Blog (Xuite)</a>
+</li><li><a href="http://www.tzpsky.com/" target="_blank">TOM日志</a>
+</li><li><a href="http://blog.mediakid.org/" target="_blank">擴擴咱 2.0</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL3d3dy5taW53dC5jb20=" target="_blank">梅問題</a>
+</li><li><a href="http://twturbochen.blogspot.com/" target="_blank">破手札</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL21pdGNoYm94LndvcmRwcmVzcy5jb20v" target="_blank">米奇的藏寶箱</a>
+</li><li><a href="http://blog.ben.idv.tw/" target="_blank">邦邦</a>
+</li><li><a href="http://riafiles.googlepages.com/link.html?aHR0cDovL3d3dy5saXMxODYuY29t" target="_blank">阿修</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=LinkList&amp;widgetId=LinkList1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target="configLinkList1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Feed" id="Feed1">
+<h2>Recent Comments</h2>
+<div class="widget-content">
+<ul id="Feed1_feedItemListDisplay"><ul><li><span class="item-title"><a target="_self" href="http://ticore.blogspot.com/2009/03/swf10-remove-3d-property.html?showComment=1238474340000#c573444589737892977">用 SERVER SIDE 的方法我用過了但是 SESSION 跟 COOKIE 都在 CLIENT...</a></span><span class="item-date">&nbsp;-&nbsp;2009年3月31日</span><span class="item-author">&nbsp;-&nbsp;阿咩</span></li><li><span class="item-title"><a target="_self" href="http://ticore.blogspot.com/2009/03/as3-html-textfield-type-check.html?showComment=1238468460000#c1219222747653911905">佩服！</a></span><span class="item-date">&nbsp;-&nbsp;2009年3月31日</span><span class="item-author">&nbsp;-&nbsp;Y.Boy</span></li><li><span class="item-title"><a target="_self" href="http://ticore.blogspot.com/2009/03/swf10-remove-3d-property.html?showComment=1238427300000#c3354935483640656049">也可以自己在 server side 用 php 之類的作 proxy 轉導~~</a></span><span class="item-date">&nbsp;-&nbsp;2009年3月31日</span><span class="item-author">&nbsp;-&nbsp;{id: "Ticore"}; //</span></li><li><span class="item-title"><a target="_self" href="http://ticore.blogspot.com/2009/03/swf10-remove-3d-property.html?showComment=1238425680000#c5256959786612201620">正常來說當然是向 A 網站使用囉但是我們總有些東西想要繞過這樣的限制所以才找有沒有繞過安全性限制的方...</a></span><span class="item-date">&nbsp;-&nbsp;2009年3月31日</span><span class="item-author">&nbsp;-&nbsp;阿咩</span></li><li><span class="item-title"><a target="_self" href="http://ticore.blogspot.com/2009/03/swf10-remove-3d-property.html?showComment=1238423100000#c7177854818052942773">那應該循正常管道向 A 網站申請該服務吧!</a></span><span class="item-date">&nbsp;-&nbsp;2009年3月31日</span><span class="item-author">&nbsp;-&nbsp;{id: "Ticore"}; //</span></li></ul></ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=Feed&amp;widgetId=Feed1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("Feed1"));' target="configFeed1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML5">
+<h2 class="title">
+AUG Member’s Blog Roll
+</h2>
+<div class="widget-content">
+<!--
+<div class="blogRoll">
+<script src="http://services.newsgator.com/ngws/headlines.aspx?uid=711073&mid=1">
+</script></div>
+
+<script src="http://nmp.newsgator.com/NGBuzz/Buzz.ashx?buzzId=20399&apiToken=EE94F7387CBE4B82AE29910755B95EDB" language="javascript" type="text/javascript"></script>
+-->
+<div class="ng_buzzAutoTarget">
+<div id="blogRoll" class="ng_buzzContainer"><ul><li><a href="http://milkmidi.blogspot.com/2009/04/pv3d-break.html" target="_blank">PV3D Break轉場特效</a><br>at 2009年4月5日 2:28:00 by milkmidi (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://milkmidi.blogspot.com/2009/04/milkmidi-mytween15.html" target="_blank">milkmidi MyTween1.5</a><br>at 2009年4月5日 2:17:00 by milkmidi (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://groups.google.com/group/augtw/browse_thread/thread/1dda78ff413db1d9" target="_blank">addEventListener的問題(flash Cs3)</a><br>at 2009年4月4日 21:33:37 by 王輝映 (winnie...@gmail.com)</li><hr size="1" noshade="noshade"><li><a href="http://groups.google.com/group/augtw/browse_thread/thread/62d3464809af7de9" target="_blank">Flash按鈕問題</a><br>at 2009年4月4日 19:43:57 by maltase (malt...@gmail.com)</li><hr size="1" noshade="noshade"><li><a href="http://feedproxy.google.com/%7Er/mediakid/%7E3/wTCzUcVLKN8/adobeas-3-and-flex-api.html" target="_blank">收到Adobe寄來的免費AS 3 and Flex API 海報</a><br>at 2009年4月3日 12:45:00 by noreply@blogger.com (mediakid)</li><hr size="1" noshade="noshade"><li><a href="http://erinylin.blogspot.com/2009/03/flex-button-enabledfalse.html" target="_blank">[Flex] Button enabled=false 自動灰階</a><br>at 2009年3月27日 19:44:00 by Erin Lin (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://blog.ben.idv.tw/2009/03/blog-post.html" target="_blank">[徵才]創意引晴 - Flex/php工程師</a><br>at 2009年3月27日 13:33:00 by Ben Chang (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://blog.ben.idv.tw/2009/03/hp-swfscan-swf-decompile.html" target="_blank">HP 推出 SWFScan 協助分析 SWF 的安全問題(更容易 decompile?)</a><br>at 2009年3月27日 12:24:00 by Ben Chang (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://feedproxy.google.com/%7Er/mediakid/%7E3/mjiv6Odv1cc/pingfmblogger1-bug-4.html" target="_blank">發現Ping.fm支援Blogger有1 Bug + 4 缺點</a><br>at 2009年3月8日 13:38:00 by noreply@blogger.com (mediakid)</li><hr size="1" noshade="noshade"><li><a href="http://erinylin.blogspot.com/2009/02/flex-puremvc-multicore-with-modules.html" target="_blank">[Flex] pureMVC MultiCore with Modules</a><br>at 2009年2月27日 20:18:00 by Erin Lin (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://masolin.blogspot.com/2009/02/google-latitude.html" target="_blank">聊聊Google Latitude</a><br>at 2009年2月11日 22:37:00 by Maso (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://ria-notes.twgogo.org/blog/2009/01/13/cairngorm%e5%88%9d%e5%ad%b8%e8%80%85%e5%85%a5%e9%96%80%e6%95%99%e5%ad%b8part7-final-%e5%b7%b4%e5%b8%83buboo-api-json%e6%93%b7%e5%8f%96%e5%af%a6%e4%bd%9c%e7%af%84%e4%be%8b1/" target="_blank">[Cairngorm]初學者入門教學Part.7  Final- 巴布(Buboo) API json擷取實作範例(1)</a><br>at 2009年1月13日 4:21:07 by 蛋蛋蟻</li><hr size="1" noshade="noshade"><li><a href="http://ria-notes.twgogo.org/blog/2009/01/11/remoting%e5%9c%a8net%e7%92%b0%e5%a2%83%e5%af%a6%e4%bd%9cflex-3-remoting-2-flex-builder-%e7%92%b0%e5%a2%83%e8%a8%ad%e5%ae%9a/" target="_blank">[Remoting]在.NET環境實作Flex 3 Remoting - (2) Flex Builder 環境設定</a><br>at 2009年1月11日 3:44:28 by 蛋蛋蟻</li><hr size="1" noshade="noshade"><li><a href="http://idben.blogspot.com/2008/10/blog-post.html" target="_blank">太鼓達人類型遊製作想法</a><br>at 2008年10月16日 13:18:00 by idben (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://masolin.blogspot.com/2008/10/flexas3genie-effect.html" target="_blank">[練習]Flex+AS3=&gt;Genie Effect</a><br>at 2008年10月9日 12:15:00 by Maso (noreply@blogger.com)</li><hr size="1" noshade="noshade"><li><a href="http://qops.blogspot.com/2008/08/uicomponent-bitmap.html" target="_blank">在 UIComponent 中加入 Bitmap</a><br>at 2008年8月28日 17:09:00 by qop (noreply@blogger.com)</li><hr size="1" noshade="noshade"></ul></div>
+<script type="text/javascript">
+window.ng_scriptload = function (data) {
+	var items = data.response.Data;
+	var len = items.length;
+	var res = "<ul>";
+	var tgt = "_blank";
+	for (var i = 0 ; i < len ; ++i) {
+		//res += items[i].FeedName + "<br/>";
+		res += "<li><a href=" + items[i].HtmlUrl + " target=" + tgt + ">";
+		res += items[i].Title + "</a><br/>";
+		res += "at " + items[i].PubDate.toLocaleString() + " by " + items[i].Author + "</li><hr noshade size=" + 1 + "/>";
+	}
+	res += "</ul>";
+	document.getElementById("blogRoll").innerHTML = res;
+}
+</script>
+<script src="as3-mouseover-rollover-3_files/buzz.ashx" type="text/javascript"></script></div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML5&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target="configHTML5" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML1">
+<h2 class="title">
+Google Analytics
+</h2>
+<div class="widget-content">
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="as3-mouseover-rollover-3_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1010697-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=6934949377658966040&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget" onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target="configHTML1" title="編輯">
+<img alt="" src="as3-mouseover-rollover-3_files/icon18_wrench_allbkg.png" width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class="clear">&nbsp;</div>
+</div>
+<!-- end content-wrapper -->
+<div id="footer-wrapper">
+<div class="footer section" id="footer"></div>
+</div>
+</div>
+</div>
+<!-- end outer-wrapper -->
+<script type="text/javascript" src="as3-mouseover-rollover-3_files/1450122297-widgets.js"></script>
+<script type="text/javascript">
+_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=6934949377658966040', 'http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html','6934949377658966040');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=6934949377658966040', '_mujyS9XVvodUQHdxS2OrbOUxxI:1238885753477');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Ticore\47s Blog', 'pageType': 'item', 'url': 'http://ticore.blogspot.com/2007/08/as3-mouseover-rollover-3.html', 'homepageUrl': 'http://ticore.blogspot.com/', 'searchLabel': '', 'searchQuery': '', 'pageName': 'AS3 - MouseOver 與 RollOver 差異性 (3)', 'pageTitle': 'Ticore\47s Blog: AS3 - MouseOver 與 RollOver 差異性 (3)', 'encoding': 'UTF-8', 'locale': 'zh-TW', 'isPrivate': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Ticore\47s Blog - Atom\42 href\75\42http://ticore.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Ticore\47s Blog - RSS\42 href\75\42http://ticore.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Ticore\47s Blog - Atom\42 href\75\42http://www.blogger.com/feeds/6934949377658966040/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\0756934949377658966040\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Ticore\47s Blog - Atom\42 href\75\42http://ticore.blogspot.com/feeds/4089796528331156941/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function d(){this.t\75{};this.tick\75function(b,c){this.t[b]\75[(new Date).getTime(),c]};this.tick(\42start\42)}var e\75new d;a.jstiming\75{Timer:d,load:e};try{a.jstiming.pt\75a.external.pageT}catch(f){};function g(b){var c\0750;if(b.offsetParent){do c+\75b.offsetTop;while(b\75b.offsetParent)}return c}a.tickAboveFold\75function(b){g(b)\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var h\75false;function i(){if(!h){h\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,i,false):a.attachEvent(\42onscroll\42,i); })();\74/script\076'}}]);
+_WidgetManager._SetSystemMarkup({'layout': {'varName': '', 'template': '\74div class\75\47widget-wrap1\47\76\n\74div class\75\47widget-wrap2\47\76\n\74div class\75\47widget-wrap3\47\76\n\74div class\75\47widget-content\47\76\n\74div class\75\47layout-title\47\76\74data:layout-title\76\74/data:layout-title\76\74/div\76\n\74a class\75\47editlink\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 target\75\47chooseWidget\47\76\74data:edit-link\76\74/data:edit-link\76\74/a\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74/div\076'}, 'quickedit': {'varName': '', 'template': '\74div class\75\47clear\47\76\74/div\76\n\74span class\75\47widget-item-control\47\76\n\74span class\75\47item-control blog-admin\47\76\n\74a class\75\47quickedit\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 expr:target\75\47\46quot;config\46quot; + data:widget.instanceId\47 expr:title\75\47data:edit-link\47\76\n\74img alt\75\47\47 height\75\04718\47 src\75\47http://img1.blogblog.com/img/icon18_wrench_allbkg.png\47 width\75\04718\47/\76\n\74/a\76\n\74/span\76\n\74/span\76\n\74div class\75\47clear\47\76\74/div\076'}, 'all-head-content': {'varName': 'page', 'template': '\74data:blog.latencyHeadScript\76\74/data:blog.latencyHeadScript\76\n\74meta expr:content\75\47\46quot;text/html; charset\75\46quot; + data:page.encoding\47 http-equiv\75\47Content-Type\47/\76\n\74meta content\75\47true\47 name\75\47MSSmartTagsPreventParsing\47/\76\n\74meta content\75\47blogger\47 name\75\47generator\47/\76\n\74link href\75\47http://www.blogger.com/favicon.ico\47 rel\75\47icon\47 type\75\47image/vnd.microsoft.icon\47/\76\n\74data:blog.feedLinks\76\74/data:blog.feedLinks\76\n\74data:blog.meTag\76\74/data:blog.meTag\76\n\74data:blog.openIdOpTag\76\74/data:blog.openIdOpTag\76\n\74b:if cond\75\47data:page.isPrivate\47\76\n\74meta content\75\47NOINDEX,NOFOLLOW\47 name\75\47robots\47/\76\n\74/b:if\076'}});
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML10', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML10'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:if cond\75\47data:team \75\75 \46quot;true\46quot;\47\76\n\74ul\76\n\74b:loop values\75\47data:authors\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.userUrl\47\76\n\74data:i.display-name\76\74/data:i.display-name\76\n\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:photo.url !\75 \46quot;\46quot;\47\76\n\74a expr:href\75\47data:userUrl\47\76\74img class\75\47profile-img\47 expr:alt\75\47data:photo.alt\47 expr:height\75\47data:photo.height\47 expr:src\75\47data:photo.url\47 expr:width\75\47data:photo.width\47/\76\74/a\76\n\74/b:if\76\n\74dl class\75\47profile-datablock\47\76\n\74dt class\75\47profile-data\47\76\n\74data:displayname\76\74/data:displayname\76\n\74/dt\76\n\74b:if cond\75\47data:showlocation \75\75 \46quot;true\46quot;\47\76\n\74dd class\75\47profile-data\47\76\n\74data:location\76\74/data:location\76\n\74/dd\76\n\74/b:if\76\n\74b:if cond\75\47data:aboutme !\75 \46quot;\46quot;\47\76\n\74dd class\75\47profile-textblock\47\76\n\74data:aboutme\76\74/data:aboutme\76\n\74/dd\76\n\74/b:if\76\n\74/dl\76\n\74a class\75\47profile-link\47 expr:href\75\47data:userUrl\47\76\n\74data:viewProfileMsg\76\74/data:viewProfileMsg\76\n\74/a\76\n\74/b:if\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:isPublic\47\76\n\74div style\75\47white-space:nowrap\47\76\n\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:loop values\75\47data:feeds\47 var\75\47feed\47\76\n\74div expr:class\75\47\46quot;subscribe-wrapper subscribe-type-\46quot; + data:feed.type\47\76\n\74div expr:class\75\47\46quot;subscribe expanded subscribe-type-\46quot; + data:feed.type\47 expr:id\75\47\46quot;SW_READER_LIST_\46quot; + data:widgetId + data:feed.type\47 style\75\47display:none;\47\76\n\74div class\75\47top\47\76\n\74span class\75\47inner\47 expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74img class\75\47subscribe-dropdown-arrow\47 expr:src\75\47data:arrowDropdownImg\47/\76\n\74img align\75\47absmiddle\47 alt\75\47\47 border\75\0470\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n\74data:feed.title\76\74/data:feed.title\76\n\74/span\76\n\74ul class\75\47feed-reader-links\47\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.google.com/ig/add?source\75bstp\46amp;feedurl\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-google.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.bloglines.com/sub/\46quot; + data:feed.url\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-bloglines.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.netvibes.com/subscribe.php?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-netvibes.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://www.newsgator.com/ngs/subscriber/subext.aspx?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-newsgator.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47\46quot;http://add.my.yahoo.com/content?url\75\46quot; + data:feed.encodedUrl\47 target\75\47_blank\47\76\n\74img expr:src\75\47data:imagePathBase + \46quot;subscribe-yahoo.png\46quot;\47/\76\n\74/a\76\n\74a class\75\47feed-reader-link\47 expr:href\75\47data:feed.url\47 target\75\47_blank\47\76\n\74img align\75\47absmiddle\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n                Atom\n              \74/a\76\n\74/ul\76\n\74/div\76\n\74div class\75\47bottom\47\76\74/div\76\n\74/div\76\n\74div class\75\47subscribe\47 expr:id\75\47\46quot;SW_READER_LIST_CLOSED_\46quot; + data:widgetId +data:feed.type\47 expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74div class\75\47top\47\76\n\74span class\75\47inner\47\76\n\74img class\75\47subscribe-dropdown-arrow\47 expr:src\75\47data:arrowDropdownImg\47/\76\n\74span expr:onclick\75\47\46quot;return(_SW_toggleReaderList(event, \\\46quot;\46quot; + data:widgetId +data:feed.type + \46quot;\\\46quot;));\46quot;\47\76\n\74img align\75\47absmiddle\47 alt\75\47\47 border\75\0470\47 class\75\47feed-icon\47 expr:src\75\47data:feedIconImg\47/\76\n\74data:feed.title\76\74/data:feed.title\76\n\74/span\76\n\74/span\76\n\74/div\76\n\74div class\75\47bottom\47\76\74/div\76\n\74/div\76\n\74/div\76\n\74/b:loop\76\n\74div style\75\47clear:both\47\76\74/div\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/b:if\076'}}, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div id\75\47ArchiveList\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_ArchiveList\46quot;\47\76\n\74b:if cond\75\47data:style \75\75 \46quot;HIERARCHY\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;FLAT\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47flat\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;MENU\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47menu\47\76\74/b:include\76\n\74/b:if\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}, 'flat': {'varName': 'data', 'template': '\74ul\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\74li class\75\47archivedate\47\76\74a expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76 (\74data:i.post-count\76\74/data:i.post-count\76)\74/li\76\74/b:loop\76\n\74/ul\76\74br/\076'}, 'menu': {'varName': 'data', 'template': '\74select expr:id\75\47data:widget.instanceId + \46quot;_ArchiveMenu\46quot;\47\76\n\74option value\75\47\47\76\n\74data:title\76\74/data:title\76\n\74/option\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\74option expr:value\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76(\74data:i.post-count\76\74/data:i.post-count\76)\74/option\76\74/b:loop\76\n\74/select\076'}, 'interval': {'varName': 'intervalData', 'template': '\74b:loop values\75\47data:intervalData\47 var\75\47i\47\76\n\74ul\76\n\74li expr:class\75\47\46quot;archivedate \46quot; + data:i.expclass\47\76\n\74b:include data\75\47i\47 name\75\47toggle\47\76\74/b:include\76\n\74a class\75\47post-count-link\47 expr:href\75\47data:i.url\47\76\n\74data:i.name\76\74/data:i.name\76\n\74/a\76 (\74span class\75\47post-count\47\76\n\74data:i.post-count\76\74/data:i.post-count\76\n\74/span\76)\n                    \74b:if cond\75\47data:i.data\47\76\n\74b:include data\75\47i.data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:i.posts\47\76\n\74b:include data\75\47i.posts\47 name\75\47posts\47\76\74/b:include\76\n\74/b:if\76\n\74/li\76\n\74/ul\76\n\74/b:loop\076'}, 'toggle': {'varName': 'interval', 'template': '\74b:if cond\75\47data:interval.toggleId\47\76\n\74b:if cond\75\47data:interval.expclass \75\75 \46quot;expanded\46quot;\47\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;action\75toggle\46quot; +       \46quot;\46amp;dir\75close\46amp;toggle\75\46quot; + data:interval.toggleId +       \46quot;\46amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy toggle-open\47\76\46#9660; \74/span\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;action\75toggle\46quot; +         \46quot;\46amp;dir\75open\46amp;toggle\75\46quot; + data:interval.toggleId +         \46quot;\46amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy\47\76\46#9658; \74/span\76\n\74/a\76\n\74/b:if\76\n\74/b:if\076'}, 'posts': {'varName': 'posts', 'template': '\74ul class\75\47posts\47\76\n\74b:loop values\75\47data:posts\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.url\47\76\n\74data:i.title\76\74/data:i.title\76\n\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\076'}}, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div id\75\47labelCloud\47\76\74/div\76\n\74script type\75\47text/javascript\47\76\nvar ts \75 {\74b:loop values\75\47data:labels\47 var\75\47label\47\76\46quot;\74data:label.name\76\74/data:label.name\76\46quot;:\74data:label.count\76\74/data:label.count\76,\74/b:loop\76\46#39;\46#39;:\46#39;\46#39;};\ngenLabelCloud(ts);\n				\74/script\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74ul\76\n\74b:loop values\75\47data:links\47 var\75\47link\47\76\74li\76\74a expr:href\75\47data:link.target\47 target\75\47_blank\47\76\74data:link.name\76\74/data:link.name\76\74/a\76\n\74/li\76\74/b:loop\76\n\74b:if cond\75\47data:blog.url \75\75 data:blog.homepageUrl\47\76\n\74li\76\74a href\75\47http://riafiles.googlepages.com/link.html?aHR0cDovL2ZvcnVtLmZsYXNoMnUuY29tLnR3\47 rel\75\47nofollow\47 target\75\47_blank\47\76TWG\74/a\76\74/li\76\n\74li\76\74a href\75\47http://blog.riaproject.com/index.php\47 rel\75\47nofollow\47 target\75\47_blank\47\76Anistar RIA 知識誌\74/a\76\74/li\76\n\74/b:if\76\n\74/ul\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeedView', new _WidgetInfo('Feed1', 'sidebar',{'main': {'varName': '', 'template': '\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74div class\75\47widget-content\47\76\n\74ul expr:id\75\47data:widget.instanceId + \46quot;_feedItemListDisplay\46quot;\47\76\n\74b:loop values\75\47data:feedData.items\47 var\75\47i\47\76\n\74li\76\n\74span class\75\47item-title\47\76\n\74a expr:href\75\47data:i.alternate.href\47\76\n\74data:i.title\76\74/data:i.title\76\n\74/a\76\n\74/span\76\n\74b:if cond\75\47data:showItemDate\47\76\n\74b:if cond\75\47data:i.str_published !\75 \46quot;\46quot;\47\76\n\74span class\75\47item-date\47\76\n                \46#160;-\46#160;\74data:i.str_published\76\74/data:i.str_published\76\n\74/span\76\n\74/b:if\76\n\74/b:if\76\n\74b:if cond\75\47data:showItemAuthor\47\76\n\74b:if cond\75\47data:i.author !\75 \46quot;\46quot;\47\76\n\74span class\75\47item-author\47\76\n                \46#160;-\46#160;\74data:i.author\76\74/data:i.author\76\n\74/span\76\n\74/b:if\76\n\74/b:if\76\n\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Feed1'), {'title': 'Recent Comments', 'showItemDate': true, 'showItemAuthor': true, 'feedUrl': 'http://ticore.blogspot.com/feeds/comments/default?alt\75atom', 'numItemsShow': 5, 'loadingMsg': '載入中...'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main',{'main': {'varName': 'top', 'template': '\74b:include name\75\47nextprev\47\76\74/b:include\76\n\74div class\75\47blog-posts\47\76\n\74b:include data\75\47top\47 name\75\47status-message\47\76\74/b:include\76\n\74data:adStart\76\74/data:adStart\76\n\74b:loop values\75\47data:posts\47 var\75\47post\47\76\n\74b:if cond\75\47data:post.dateHeader\47\76\n\74h2 class\75\47date-header\47\76\n\74data:post.dateHeader\76\74/data:post.dateHeader\76\n\74/h2\76\n\74/b:if\76\n\74b:include data\75\47post\47 name\75\47post\47\76\74/b:include\76\n\74b:if cond\75\47data:blog.pageType \75\75 \46quot;item\46quot;\47\76\n\74b:include data\75\47post\47 name\75\47comments\47\76\74/b:include\76\n\74/b:if\76\n\74/b:loop\76\n\74data:adEnd\76\74/data:adEnd\76\n\74/div\76\n\74b:include name\75\47nextprev\47\76\74/b:include\76\n\74b:include name\75\47feedLinks\47\76\74/b:include\076'}, 'nextprev': {'varName': '', 'template': '\74div class\75\47blog-pager\47 id\75\47blog-pager\47\76\n\74b:if cond\75\47data:newerPageUrl\47\76\n\74span id\75\47blog-pager-newer-link\47\76\n\74a class\75\47blog-pager-newer-link\47 expr:href\75\47data:newerPageUrl\47 expr:title\75\47data:newerPageTitle\47\76\46#171;\n                  \74data:newerPageTitle\76\74/data:newerPageTitle\76\n\74/a\76\n\74/span\76\n\74/b:if\76\n\74b:if cond\75\47data:olderPageUrl\47\76\n\74span id\75\47blog-pager-older-link\47\76\n\74a class\75\47blog-pager-older-link\47 expr:href\75\47data:olderPageUrl\47 expr:title\75\47data:olderPageTitle\47\76\n\74data:olderPageTitle\76\74/data:olderPageTitle\76\n                  \46#187;\74/a\76\n\74/span\76\n\74/b:if\76\n\74b:if cond\75\47data:blog.homepageUrl !\75 data:blog.url\47\76\n\74a class\75\47home-link\47 expr:href\75\47data:blog.homepageUrl\47\76\n\74data:homeMsg\76\74/data:homeMsg\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:newerPageUrl\47\76\n\74a class\75\47home-link\47 expr:href\75\47data:blog.homepageUrl\47\76\n\74data:homeMsg\76\74/data:homeMsg\76\n\74/a\76\n\74/b:if\76\n\74/b:if\76\n\74/div\76\n\74div class\75\47clear\47\76\74/div\076'}, 'post': {'varName': 'post', 'template': '\74div class\75\47post uncustomized-post-template\47\76\n\74a expr:name\75\47data:post.id\47\76\74/a\76\n\74b:if cond\75\47data:post.title\47\76\n\74h3 class\75\47post-title\47\76\n\74b:if cond\75\47data:post.link\47\76\n\74a expr:href\75\47data:post.link\47\76\74data:post.title\76\74/data:post.title\76\74/a\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:post.url\47\76\n\74a expr:href\75\47data:post.url\47\76\74data:post.title\76\74/data:post.title\76\74/a\76\n\74b:else\76\74/b:else\76\n\74data:post.title\76\74/data:post.title\76\n\74/b:if\76\n\74/b:if\76\n\74b:if cond\75\47data:blog.pageType \75\75 \46quot;item\46quot;\47\76\n\74b:else\76\74/b:else\76\n						\46amp;nbsp;\46amp;nbsp;\74a href\75\47javascript: void(0);\47 onclick\75\47showHideContent(this); return false;\47 title\75\47Show/Hide Content\47\76[+/-]\74/a\76\n\74/b:if\76\n\74/h3\76\n\74/b:if\76\n\74div class\75\47post-header-line-1\47\76\74/div\76\n\74div class\75\47post-body\47\76\n\74b:if cond\75\47data:blog.pageType \75\75 \46quot;item\46quot;\47\76\n\74data:post.body\76\74/data:post.body\76\n					轉載請註明出處 \74a expr:href\75\47data:post.url\47\76\74data:post.url\76\74/data:post.url\76\74/a\76\n\74b:else\76\74/b:else\76\n\74data:post.body\76\74/data:post.body\76\n\74a expr:href\75\47data:post.url\47\76Read more...\74/a\76\n\74/b:if\76\n\74div style\75\47clear: both;\47\76\74/div\76\n\74/div\76\n\74div class\75\47post-footer\47\76\n\74p class\75\47post-footer-line post-footer-line-1\47\76\n\74span class\75\47post-author\47\76\n\74b:if cond\75\47data:top.showAuthor\47\76\n\74data:top.authorLabel\76\74/data:top.authorLabel\76\n\74data:post.author\76\74/data:post.author\76\n\74/b:if\76\n\74/span\76\n\74span class\75\47post-timestamp\47\76\n\74b:if cond\75\47data:top.showTimestamp\47\76\n\74data:top.timestampLabel\76\74/data:top.timestampLabel\76\n\74b:if cond\75\47data:post.url\47\76\n\74a class\75\47timestamp-link\47 expr:href\75\47data:post.url\47 title\75\47permanent link\47\76\n\74data:post.timestamp\76\74/data:post.timestamp\76\n\74/a\76\n\74/b:if\76\n\74/b:if\76\n\74/span\76\n\74span class\75\47post-comment-link\47\76\n\74b:if cond\75\47data:blog.pageType !\75 \46quot;item\46quot;\47\76\n\74b:if cond\75\47data:post.allowComments\47\76\n\74a class\75\47comment-link\47 expr:href\75\47data:post.addCommentUrl\47 expr:onclick\75\47data:post.addCommentOnclick\47\76\n\74b:if cond\75\47data:post.numComments \75\75 1\47\0761\n                          \74data:top.commentLabel\76\74/data:top.commentLabel\76\n\74b:else\76\74/b:else\76\n\74data:post.numComments\76\74/data:post.numComments\76\n\74data:top.commentLabelPlural\76\74/data:top.commentLabelPlural\76\n\74/b:if\76\n\74/a\76\n\74/b:if\76\n\74/b:if\76\n\74/span\76\n\74span class\75\47post-backlinks post-comment-link\47\76\n\74b:if cond\75\47data:blog.pageType !\75 \46quot;item\46quot;\47\76\n\74b:if cond\75\47data:post.showBacklinks\47\76\n\74a class\75\47comment-link\47 expr:href\75\47data:post.url + \46quot;#links\46quot;\47\76\n\74data:top.backlinkLabel\76\74/data:top.backlinkLabel\76\n\74/a\76\n\74/b:if\76\n\74/b:if\76\n\74/span\76\n\74span class\75\47post-icons\47\76\n\74b:if cond\75\47data:post.emailPostUrl\47\76\n\74span class\75\47item-action\47\76\n\74a expr:href\75\47data:post.emailPostUrl\47 expr:title\75\47data:top.emailPostMsg\47\76\n\74span class\75\47email-post-icon\47\76\46#160;\74/span\76\n\74/a\76\n\74/span\76\n\74/b:if\76\n\74b:include data\75\47post\47 name\75\47postQuickEdit\47\76\74/b:include\76\n\74/span\76\74/p\76\n\74p class\75\47post-footer-line post-footer-line-2\47\76\74span class\75\47post-labels\47\76\n\74b:if cond\75\47data:post.labels\47\76\n\74data:postLabelsLabel\76\74/data:postLabelsLabel\76\74b:loop values\75\47data:post.labels\47 var\75\47label\47\76\n\74a expr:href\75\47data:label.url\47 rel\75\47tag\47\76\74data:label.name\76\74/data:label.name\76\74/a\76\74b:if cond\75\47data:label.isLast !\75 \46quot;true\46quot;\47\76,\74/b:if\76\74/b:loop\76\n\74/b:if\76\n\74/span\76\74/p\76\n\74p class\75\47post-footer-line post-footer-line-3\47\76\74/p\76\n\74/div\76\n\74/div\076'}, 'postQuickEdit': {'varName': 'post', 'template': '\74b:if cond\75\47data:post.editUrl\47\76\n\74span expr:class\75\47\46quot;item-control \46quot; + data:post.adminClass\47\76\n\74a expr:href\75\47data:post.editUrl\47 expr:title\75\47data:top.editPostMsg\47\76\n\74span class\75\47quick-edit-icon\47\76\46#160;\74/span\76\n\74/a\76\n\74/span\76\n\74/b:if\076'}, 'commentDeleteIcon': {'varName': 'comment', 'template': '\74span expr:class\75\47\46quot;item-control \46quot; + data:comment.adminClass\47\76\n\74a expr:href\75\47data:comment.deleteUrl\47 expr:title\75\47data:top.deleteCommentMsg\47\76\n\74span class\75\47delete-comment-icon\47\76\46#160;\74/span\76\n\74/a\76\n\74/span\076'}, 'backlinkDeleteIcon': {'varName': 'backlink', 'template': '\74span expr:class\75\47\46quot;item-control \46quot; + data:backlink.adminClass\47\76\n\74a expr:href\75\47data:backlink.deleteUrl\47 expr:title\75\47data:top.deleteBacklinkMsg\47\76\n\74span class\75\47delete-comment-icon\47\76\46#160;\74/span\76\n\74/a\76\n\74/span\076'}, 'comments': {'varName': 'post', 'template': '\74div class\75\47comments\47 id\75\47comments\47\76\n\74a name\75\47comments\47\76\74/a\76\n\74b:if cond\75\47data:post.allowComments\47\76\n\74h4\76\n\74b:if cond\75\47data:post.numComments \75\75 1\47\76 1\n                      \74data:commentLabel\76\74/data:commentLabel\76\n                      :\n                      \74b:else\76\74/b:else\76\n\74data:post.numComments\76\74/data:post.numComments\76\n\74data:commentLabelPlural\76\74/data:commentLabelPlural\76\n                      : \74/b:if\76\n\74/h4\76\n\74dl id\75\47comments-block\47\76\n\74b:loop values\75\47data:post.comments\47 var\75\47comment\47\76\n\74dt class\75\47comment-author\47 expr:id\75\47\46quot;comment-\46quot; + data:comment.id\47\76\n\74a expr:name\75\47\46quot;comment-\46quot; + data:comment.id\47\76\74/a\76\n\74b:if cond\75\47data:comment.authorUrl\47\76\n\74a expr:href\75\47data:comment.authorUrl\47 rel\75\47nofollow\47 target\75\47_blank\47\76\n\74data:comment.author\76\74/data:comment.author\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74data:comment.author\76\74/data:comment.author\76\n\74/b:if\76\n\74data:commentPostedByMsg\76\74/data:commentPostedByMsg\76\n\74/dt\76\n\74dd class\75\47comment-body\47\76\n\74b:if cond\75\47data:comment.isDeleted\47\76\n\74span class\75\47deleted-comment\47\76\n\74data:comment.body\76\74/data:comment.body\76\n\74/span\76\n\74b:else\76\74/b:else\76\n\74p\76\n\74data:comment.body\76\74/data:comment.body\76\n\74/p\76\n\74/b:if\76\n\74/dd\76\n\74dd class\75\47comment-footer\47\76\n\74span class\75\47comment-timestamp\47\76\n\74a expr:href\75\47\46quot;#comment-\46quot; + data:comment.id\47 title\75\47comment permalink\47\76\n\74data:comment.timestamp\76\74/data:comment.timestamp\76\n\74/a\76\n\74b:include data\75\47comment\47 name\75\47commentDeleteIcon\47\76\74/b:include\76\n\74/span\76\n\74/dd\76\n\74/b:loop\76\n\74/dl\76\n\74p class\75\47comment-footer\47\76\n\74a expr:href\75\47data:post.addCommentUrl\47 expr:onclick\75\47data:post.addCommentOnclick\47\76\n\74data:postCommentMsg\76\74/data:postCommentMsg\76\n\74/a\76\n\74/p\76\n\74/b:if\76\n\74div id\75\47backlinks-container\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_backlinks-container\46quot;\47\76\n\74b:if cond\75\47data:post.showBacklinks\47\76\n\74b:include data\75\47post\47 name\75\47backlinks\47\76\74/b:include\76\n\74/b:if\76\n\74/div\76\n\74/div\76\n\74/div\076'}, 'comment-form': {'varName': 'post', 'template': '\74div class\75\47comment-form\47\76\n\74a name\75\47comment-form\47\76\74/a\76\n\74h4 id\75\47comment-post-message\47\76\74data:postCommentMsg\76\74/data:postCommentMsg\76\74/h4\76\n\74p\76\74data:blogCommentMessage\76\74/data:blogCommentMessage\76\74/p\76\n\74a expr:href\75\47data:post.commentFormIframeSrc\47 id\75\47comment-editor-src\47 style\75\47display: none\47\76\74/a\76\n\74iframe allowtransparency\75\47true\47 class\75\47blogger-iframe-colorize\47 frameborder\75\0470\47 height\75\047275\47 id\75\47comment-editor\47 scrolling\75\47auto\47 src\75\47\47 width\75\047100%\47\76\74/iframe\76\n\74data:post.iframeColorizer\76\74/data:post.iframeColorizer\76\n\74/div\076'}, 'backlinks': {'varName': 'post', 'template': '\74a name\75\47links\47\76\74/a\76\n\74h4\76\n\74data:post.backlinksLabel\76\74/data:post.backlinksLabel\76\n\74/h4\76\n\74b:if cond\75\47data:post.numBacklinks !\75 0\47\76\n\74dl class\75\47comments-block\47 id\75\47comments-block\47\76\n\74b:loop values\75\47data:post.backlinks\47 var\75\47backlink\47\76\n\74div class\75\47collapsed-backlink backlink-control\47\76\n\74dt class\75\47comment-title\47\76\n\74span class\75\47backlink-toggle-zippy\47\76\46#160;\74/span\76\n\74a expr:href\75\47data:backlink.url\47 rel\75\47nofollow\47 target\75\47_blank\47\76\n\74data:backlink.title\76\74/data:backlink.title\76\n\74/a\76\n\74b:include data\75\47backlink\47 name\75\47backlinkDeleteIcon\47\76\74/b:include\76\n\74/dt\76\n\74dd class\75\47comment-body collapseable\47\76\n\74data:backlink.snippet\76\74/data:backlink.snippet\76\n\74/dd\76\n\74dd class\75\47comment-footer collapseable\47\76\n\74span class\75\47comment-author\47\76\n\74data:post.authorLabel\76\74/data:post.authorLabel\76\n\74data:backlink.author\76\74/data:backlink.author\76\n\74/span\76\n\74span class\75\47comment-timestamp\47\76\n\74data:post.timestampLabel\76\74/data:post.timestampLabel\76\n\74data:backlink.timestamp\76\74/data:backlink.timestamp\76\n\74/span\76\n\74/dd\76\n\74/div\76\n\74/b:loop\76\n\74/dl\76\n\74/b:if\76\n\74p class\75\47comment-footer\47\76\n\74a class\75\47comment-link\47 expr:href\75\47data:post.createLinkUrl\47 expr:id\75\47data:widget.instanceId + \46quot;_backlinks-create-link\46quot;\47 target\75\47_blank\47\76\n\74data:post.createLinkLabel\76\74/data:post.createLinkLabel\76\n\74/a\76\n\74/p\076'}, 'feedLinks': {'varName': '', 'template': '\74b:if cond\75\47data:blog.pageType !\75 \46quot;item\46quot;\47\76\n\74b:if cond\75\47data:feedLinks\47\76\n\74div class\75\47blog-feeds\47\76\n\74b:include data\75\47feedLinks\47 name\75\47feedLinksBody\47\76\74/b:include\76\n\74/div\76\n\74/b:if\76\n\74b:else\76\74/b:else\76\n\74div class\75\47post-feeds\47\76\n\74b:loop values\75\47data:posts\47 var\75\47post\47\76\74b:if cond\75\47data:post.allowComments\47\76\74b:if cond\75\47data:post.feedLinks\47\76\74b:include data\75\47post.feedLinks\47 name\75\47feedLinksBody\47\76\74/b:include\76\74/b:if\76\74/b:if\76\74/b:loop\76\n\74/div\76\n\74/b:if\076'}, 'feedLinksBody': {'varName': 'links', 'template': '\74div class\75\47feed-links\47\76\n\74data:feedLinksMsg\76\74/data:feedLinksMsg\76\n\74b:loop values\75\47data:links\47 var\75\47f\47\76\n\74a class\75\47feed-link\47 expr:href\75\47data:f.url\47 expr:type\75\47data:f.mimeType\47 target\75\47_blank\47\76\74data:f.name\76\74/data:f.name\76(\74data:f.feedType\76\74/data:f.feedType\76)\74/a\76, \74a class\75\47feed-link\47 expr:href\75\47data:f.url + \46quot;?alt\75rss\46quot;\47 target\75\47_blank\47 type\75\47application/rss+xml\47\76\74data:f.name\76\74/data:f.name\76(RSS)\74/a\76\74/b:loop\76\n\74/div\076'}, 'status-message': {'varName': '', 'template': '\74b:if cond\75\47data:navMessage\47\76\n\74div class\75\47status-msg-wrap\47\76\n\74div class\75\47status-msg-body\47\76\n\74data:navMessage\76\74/data:navMessage\76\n\74/div\76\n\74div class\75\47status-msg-border\47\76\n\74div class\75\47status-msg-bg\47\76\n\74div class\75\47status-msg-hidden\47\76\n\74data:navMessage\76\74/data:navMessage\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74div style\75\47clear: both;\47\76\74/div\76\n\74/b:if\076'}}, document.getElementById('Blog1'), {'showBacklinks': true, 'postId': '4089796528331156941'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'main',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\n\74data:title\76\74/data:title\76\n\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML4'), {}, 'displayModeFull'));
+</script>
+</body></html>

@@ -1,0 +1,29 @@
+/* line 4, ../sass/main.scss */
+#link1 {
+  text-decoration: none;
+}
+/* line 4, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+#link1:hover {
+  text-decoration: underline;
+}
+
+/* line 5, ../sass/main.scss */
+#link2 {
+  color: #0000cc;
+}
+/* line 18, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#link2:visited {
+  color: #cccccc;
+}
+/* line 21, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#link2:focus {
+  color: #cccc00;
+}
+/* line 24, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#link2:hover {
+  color: #00cccc;
+}
+/* line 27, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#link2:active {
+  color: #cc00cc;
+}

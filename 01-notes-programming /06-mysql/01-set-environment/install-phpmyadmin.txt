@@ -1,0 +1,16 @@
+local:
+1) download files from www.phpmyadmin.net
+2) extract files and copy to Apache document root directory
+
+ISP with shell login:
+1) First load phpMyAdmin-version.tar.bz2 from phpmyadmin.net
+2) Then transfer this file with an FTP client to the ISP
+3) log in with ssh and execute the Linux-specific commands.
+root# cd <documentroot directory >
+root# tar xjf phpMyAdmin-version.tar.bz2
+root# mv phpMyAdmin-version phpmyadmin
+
+ISP without Shell Login:
+1) unpack phpMyAdmin on the local computer
+2) Then transfer the entire directory tree with an FTP client to the ISP
+Note that your FTP client should use binary (not text) mode.

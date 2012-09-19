@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>control</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3>condition</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_if_else.asp">if</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_switch.asp">switch</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3>loop</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_loop_for.asp">for</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://www.w3schools.com/js/js_loop_for_in.asp">for...in</a></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_loop_while.asp">while</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_break.asp">break</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/js/js_break.asp">continue</a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">label</td>
+    <td width="350" align="left" valign="top"> //The first for statement is labeled &quot;test1&quot;<span class="method"><br />
+      test1 : for (var i = 0; i &lt; 3; i++) {      <br />
+      </span>//The second for statement is labeled &quot;test2&quot;<span class="method"><br />
+      test2 : for (var j = 0; j &lt; 3; j++) {<br />
+if (i == 1 &amp;&amp; j == 1) {<br />
+      </span>// abort current loop, back to loop in top level<span class="method"><br />
+continue test1; <br />
+} else {<br />
+alert(&quot;i = &quot; + i + &quot;, j = &quot; + j);<br />
+}<br />
+}<br />
+}</span><br />
+&quot;i = 0, j = 0&quot;<br />
+&quot;i = 0, j = 1&quot;<br />
+&quot;i = 0, j = 2&quot;<br />
+&quot;i = 1, j = 0&quot;<br />
+&quot;i = 2, j = 0&quot;<br />
+&quot;i = 2, j = 1&quot;<br />
+&quot;i = 2, j = 2&quot;<br />
+Notice how it skips both &quot;i = 1, j = 1&quot; and &quot;i = 1, j = 2&quot;*/</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

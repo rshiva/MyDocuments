@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link id="skin" href="green.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<!--换皮肤开始-->
+<a onClick="setCss('green.css'); return false;" href="#" style="color:#294594">Green</a>
+<a onClick="setCss('red.css'); return false;" href="#" style="color:#7b248c">Red</a>
+<a onClick="setCss('yellow.css'); return false;" href="#"style="color:#298629">Yellow</a>
+<!--换皮肤结束-->
+<script type="text/javascript">
+function SetCookie(name,value){
+   var argv=SetCookie.arguments;
+   var argc=SetCookie.arguments.length;
+   var expires=(2<argc)?argv[2]:null;
+   var path=(3<argc)?argv[3]:null;
+   var domain=(4<argc)?argv[4]:null;
+   var secure=(5<argc)?argv[5]:false;
+   document.cookie=name+"="+escape(value)+((expires==null)?"":("; expires="+expires.toGMTString()))+((path==null)?"":("; path="+path))+((domain==null)?"":("; domain="+domain))+((secure==true)?"; secure":"");
+}
+
+function GetCookie(Name) {
+   var search = Name + "=";
+   var returnvalue = "";
+   if (document.cookie.length > 0) {
+      offset = document.cookie.indexOf(search);
+      if (offset != -1) {
+            offset += search.length;
+            end = document.cookie.indexOf(";", offset);
+            if (end == -1)
+               end = document.cookie.length;
+               returnvalue=unescape(document.cookie.substring(offset,end));
+            }
+      }
+   return returnvalue;
+}
+
+var thisskin;
+thisskin=GetCookie("nowskin3.3");
+if(thisskin!="")
+   {
+   setCss(thisskin);
+   }
+else
+   {
+   setCss("css.css");
+   }
+
+function setCss(url) {
+   if(url!=""){
+      document.getElementById("skin").href="";
+      document.getElementById("skin").href=url;
+      if (this.login_frame1){
+         this.login_frame1.location="../login.asp";
+      }
+      var expdate=new Date();
+      expdate.setTime(expdate.getTime()+(24*60*60*1000*30));
+      SetCookie("nowskin3.3",url,expdate,"/",null,false);
+      var t = document.getElementsByTagName("IFRAME")
+      for( var i = 0;i < t .length;i++ )
+      {
+      t[i].src= t[i].src;
+      }
+    }
+}
+</script>
+</body>
+</html>

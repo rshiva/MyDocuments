@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>DOM event</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="addHandler" id="addHandler"></a>Add handler</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">add handler as html tag attribute</td>
+    <td width="350" align="left" valign="top"><p> <span class="method">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function clickHandler(){<br />
+      alert(&quot;click me&quot;);<br />
+      }<br />
+  &lt;/script&gt;</span></p>
+    <p> <span class="method">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; onclick=&quot;clickHandler()&quot; /&gt;</span></p></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">add handler in traditional model</td>
+    <td width="350" align="left" valign="top"><p class="method">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function clickHandler(){<br />
+      alert(&quot;click me&quot;);<br />
+      }<br />
+  <br />
+      window.onload = function(){<br />
+      document.getElementById(&quot;clickMe&quot;).onclick=clickHandler;<br />
+      }<br />
+  &lt;/script&gt;</p>
+    <p class="method">&lt;input type=&quot;button&quot; value=&quot;Click Me&quot; id=&quot;clickMe&quot; /&gt;</p></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">add handler in W3C model</td>
+    <td width="350" align="left" valign="top"><p><span class="method">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function clickHandler(){<br />
+      alert(&quot;click me&quot;);<br />
+      }<br />
+  <br />
+      </span>// listen to DOM loaded<span class="method"><br />
+      window.addEventListener(<br />
+      'load',<br />
+      function() {<br />
+      </span>// object.addEventListener(event, function, useCapture);<span class="method"><br />
+      document.getElementById(&quot;clickMe2&quot;).addEventListener('click', clickHandler, false);<br />
+      },<br />
+      false<br />
+      )<br />
+  &lt;/script&gt;</span></p>
+    <p class="method">&lt;input type=&quot;button&quot; value=&quot;Click Me 2&quot; id=&quot;clickMe2&quot; /&gt;</p></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/observe/">observe() </a></td>
+    <td width="350" align="left" valign="top">Registers an event handler on a DOM element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/bind/">bind()</a></td>
+    <td width="350" align="left" valign="top"><p>Attach a handler to an event for the elements.</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/on/">on</a></td>
+    <td width="350" align="left" valign="top">Listens for events on an element's descendants, optionally filtering  to match a given CSS selector.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/delegate/">delegate()</a></td>
+    <td width="350" align="left" valign="top"><p>Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/live/">live()</a></td>
+    <td width="350" align="left" valign="top">Attach a handler to the event for all elements which match the current selector, now and in the future.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/one/">one()</a></td>
+    <td width="350" align="left" valign="top">Attach a handler to an event for the elements. The handler is executed at most once per element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/jQuery.proxy/">proxy()</a></td>
+    <td width="350" align="left" valign="top">Takes a function and returns a new one that will always have a particular context.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/trigger/">trigger()</a></td>
+    <td width="350" align="left" valign="top">Execute all handlers and behaviors attached to the matched elements for the given event type.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/triggerHandler/">triggerHandler()</a></td>
+    <td width="350" align="left" valign="top">Execute all handlers attached to an element for an event.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeHandler" id="removeHandler"></a>Remove handler</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/stopObserving/">stopObserving() </a></td>
+    <td width="350" align="left" valign="top">Unregisters an event handler.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/unbind/">unbind()</a></td>
+    <td width="350" align="left" valign="top">Remove a previously-attached event handler from the elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/undelegate/">undelegate()</a></td>
+    <td width="350" align="left" valign="top">Remove a handler from the event for all elements which match the current selector, now or in the future, based upon a specific set of root elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/die/">die()</a></td>
+    <td width="350" align="left" valign="top">Remove all event handlers previously attached using .live() from the elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/stop/">stop</a></td>
+    <td width="350" align="left" valign="top">Stops the event's propagation and prevents its eventual default action from being triggered.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+<tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="eventAttribute" id="eventAttribute"></a>event attribute</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_relatedtarget.asp">relatedTarget</a></td>
+    <td width="350" align="left" valign="top">Returns the element related to the element that triggered the event</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.relatedTarget/">relatedTarget</a></td>
+    <td width="350" align="left" valign="top">The other DOM element involved in the event, if any. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_currenttarget.asp">currentTarget</a></td>
+    <td width="350" align="left" valign="top">Returns the element whose event listeners triggered the event</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.currentTarget/">currentTarget</a></td>
+    <td width="350" align="left" valign="top">The current DOM element within the event bubbling phase.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_target.asp">target</a></td>
+    <td width="350" align="left" valign="top">Returns the element that triggered the event</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.target/">target</a></td>
+    <td width="350" align="left" valign="top">The DOM element that initiated the event. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_type.asp">type</a></td>
+    <td width="350" align="left" valign="top">Returns the name of the event</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.type/">type</a></td>
+    <td width="350" align="left" valign="top">Describes the nature of the event. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_bubbles.asp">bubbles</a></td>
+    <td width="350" align="left" valign="top">Returns a Boolean value that indicates whether or not an event is a bubbling event</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_cancelable.asp">cancelable</a></td>
+    <td width="350" align="left" valign="top"> Returns a Boolean value that indicates whether or not an event can have its default action prevented</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_timestamp.asp">timeStamp</a></td>
+    <td width="350" align="left" valign="top"> Returns the time stamp, in milliseconds, from the epoch (system start or event trigger)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.timeStamp/">timeStamp</a></td>
+    <td width="350" align="left" valign="top">The difference in milliseconds between the time an event is triggered and January 1, 1970.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.pageX/">pageX</a></td>
+    <td width="350" align="left" valign="top">The mouse position relative to the left edge of the document. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.pageY/">pageY</a></td>
+    <td width="350" align="left" valign="top">The mouse position relative to the top edge of the document. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.which/">which</a></td>
+    <td width="350" align="left" valign="top">For key or button events, this attribute indicates the specific button or key that was pressed. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.result/">result</a></td>
+    <td width="350" align="left" valign="top">The last value returned by an event handler that was triggered by this event, unless the value was undefined. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.isDefaultPrevented/">isDefaultPrevented()</a></td>
+    <td width="350" align="left" valign="top">Returns whether event.preventDefault() was ever called on this event object. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.preventDefault/">preventDefault()</a></td>
+    <td width="350" align="left" valign="top">If this method is called, the default action of the event will not be triggered. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.isPropagationStopped/">isPropagationStopped()</a></td>
+    <td width="350" align="left" valign="top">Returns whether event.stopPropagation() was ever called on this event object. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.stopPropagation/">stopPropagation()</a></td>
+    <td width="350" align="left" valign="top">Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.isImmediatePropagationStopped/">isImmediatePropagationStopped()</a></td>
+    <td width="350" align="left" valign="top">Returns whether event.stopImmediatePropagation() was ever called on this event object. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.stopImmediatePropagation/">stopImmediatePropagation()</a></td>
+    <td width="350" align="left" valign="top">Keeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree. </td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.data/">data</a></td>
+    <td width="350" align="left" valign="top">The optional data passed to jQuery.fn.bind when the current executing handler was bound.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/event.namespace/">namespace</a></td>
+    <td width="350" align="left" valign="top">The namespace specified when the event was triggered.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="mouse" id="mouse"></a>mouse <br />
+    </h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onclick.asp">onclick</a></td>
+    <td width="350" align="left" valign="top">Mouse clicks an object</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/click/">click()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;click&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_ondblclick.asp">ondblclick</a></td>
+    <td width="350" align="left" valign="top">Mouse double-clicks an object</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/dblclick/">dblclick()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;dblclick&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focusin/">focusin()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;focusin&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focusout/">focusout()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;focusout&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/hover/">hover()</a></td>
+    <td width="350" align="left" valign="top"><ul>
+      <li>Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.</li>
+      <li>Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/toggle-event/">toggle()</a></td>
+    <td width="350" align="left" valign="top">Bind two or more handlers to the matched elements, to be executed on alternate clicks.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_event_isleftclick.htm">isLeftClick()</a></td>
+    <td width="350" align="left" valign="top">Determines whether a button-related mouse event was about the &quot;left&quot; (primary, actually) button.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/isMiddleClick/">isMiddleClick()</a></td>
+    <td width="350" align="left" valign="top">Determines whether a button-related mouse event involved the middle  mouse button.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/isRightClick/">isRightClick()</a></td>
+    <td width="350" align="left" valign="top">Determines whether a button-related mouse event involved the right  mouse button.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onmousedown.asp">onmousedown</a></td>
+    <td width="350" align="left" valign="top">A mouse button is pressed</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mousedown/">mousedown()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;mousedown&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onmouseup.asp">onmouseup</a></td>
+    <td width="350" align="left" valign="top">A mouse button is released</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mouseup/">mouseup()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;mouseup&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mouseenter/">mouseenter()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mouseleave/">mouseleave()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onmouseover.asp">onmouseover</a></td>
+    <td width="350" align="left" valign="top">The mouse is moved over an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mousemove/">mousemove()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;mousemove&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onmouseout.asp">onmouseout</a></td>
+    <td width="350" align="left" valign="top">The mouse is moved off an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/mouseout/">mouseout()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;mouseout&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onmousemove.asp">onmousemove</a></td>
+    <td width="350" align="left" valign="top">The mouse is moved</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_button.asp">button</a></td>
+    <td width="350" align="left" valign="top">Returns which mouse button was clicked when an event   		was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_clientx.asp">clientX</a></td>
+    <td width="350" align="left" valign="top">Returns the horizontal coordinate of the mouse pointer   		when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_clienty.asp">clientY</a></td>
+    <td width="350" align="left" valign="top">Returns the vertical coordinate of the mouse pointer   		when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_screenx.asp">screenX</a></td>
+    <td width="350" align="left" valign="top">Returns the horizontal coordinate of the mouse pointer when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_screeny.asp">screenY</a></td>
+    <td width="350" align="left" valign="top">Returns the vertical coordinate of the mouse pointer when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Event/pointer/">pointer() </a></td>
+    <td width="350" align="left" valign="top">Returns the absolute position of the pointer for a mouse event.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_event_pointerx.htm">pointerX()</a></td>
+    <td width="350" align="left" valign="top">Returns the absolute horizontal position for a mouse event.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_event_pointery.htm">pointerY()</a></td>
+    <td width="350" align="left" valign="top">Returns the absolute vertical position for a mouse event.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="form" id="form"></a>form</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onblur.asp">onblur</a></td>
+    <td width="350" align="left" valign="top">An element loses focus</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/blur/">blur()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;blur&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focusin/">focusin()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;focusin&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focusout/">focusout()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;focusout&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onfocus.asp">onfocus</a></td>
+    <td width="350" align="left" valign="top">An element gets focus</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focus/">focus()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;focus&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_form_focusfirstelement.htm">focusFirstElement()</a></td>
+    <td width="350" align="left" valign="top">Gives keyboard focus to the first element of the form.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onchange.asp">onchange</a></td>
+    <td width="350" align="left" valign="top">The content of a field changes</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/change/">change()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;change&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onselect.asp">onselect</a></td>
+    <td width="350" align="left" valign="top">Text is selected</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/select/">select()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;select&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">onsubmit</td>
+    <td width="350" align="left" valign="top"><p class="method">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function onsubmitHandler(){<br />
+      alert(document.forms[0].fname.value)<br />
+      }<br />
+  &lt;/script&gt;</p>
+    <p> <span class="method">&lt;form action=&quot;&quot; onsubmit=&quot;onsubmitHandler()&quot;&gt;<br />
+&lt;input type=&quot;text&quot; id=&quot;fname&quot; /&gt;<br />
+&lt;input type=&quot;submit&quot; value=&quot;ok&quot; /&gt;<br />
+&lt;/form&gt;</span></p></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/submit/">submit()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;submit&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">onreset</td>
+    <td width="350" align="left" valign="top"><p class="method">&lt;script type=&quot;text/javascript&quot;&gt;<br />
+      function onsubmitHandler(){<br />
+      alert(document.forms[0].fname.value);<br />
+      }</p>
+      <p class="method"> function resetHandler(){<br />
+        alert(&quot;Reset event&quot;);<br />
+        }<br />
+  &lt;/script&gt;</p>
+    <p> <span class="method">&lt;form action=&quot;&quot; onsubmit=&quot;onsubmitHandler()&quot; onreset=&quot;resetHandler()&quot;&gt;<br />
+&lt;input type=&quot;text&quot; id=&quot;fname&quot; /&gt;<br />
+&lt;input type=&quot;submit&quot; value=&quot;ok&quot; /&gt;<br />
+&lt;input type=&quot;reset&quot; value=&quot;cancel&quot; /&gt;<br />
+&lt;/form&gt;</span></p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Form/reset/">reset() </a></td>
+    <td width="350" align="left" valign="top">Resets a form to its default values.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="keyboard" id="keyboard"></a>keyboard</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onkeydown.asp">onkeydown</a></td>
+    <td width="350" align="left" valign="top">A keyboard key is pressed</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/keydown/">keydown()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;keydown&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onkeyup.asp">onkeyup</a></td>
+    <td width="350" align="left" valign="top">A keyboard key is released</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/keyup/">keyup()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;keyup&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onkeypress.asp">onkeypress</a></td>
+    <td width="350" align="left" valign="top">A keyboard key is pressed or held down</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/keypress/">keypress()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;keypress&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_altkey.asp">altKey</a></td>
+    <td width="350" align="left" valign="top">Returns whether or not the &quot;ALT&quot; key was   		pressed when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_ctrlkey.asp">ctrlKey</a></td>
+    <td width="350" align="left" valign="top">Returns whether or not the &quot;CTRL&quot; key was pressed when   		an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_shiftkey.asp">shiftKey</a></td>
+    <td width="350" align="left" valign="top">Returns whether or not the &quot;SHIFT&quot; key was pressed when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_metakey.asp">metaKey</a></td>
+    <td width="350" align="left" valign="top">Returns whether or not the &quot;meta&quot; key was pressed when an event was triggered</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="loading" id="loading"></a>Loading</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onload.asp">onload</a></td>
+    <td width="350" align="left" valign="top">A page or image is finished loading</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/load-event/">load()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;load&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onunload.asp">onunload</a></td>
+    <td width="350" align="left" valign="top">The user exits the page</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/unload/">unload()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;unload&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/ready/">ready()</a></td>
+    <td width="350" align="left" valign="top">Specify a function to execute when the DOM is fully loaded.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="browser" id="browser"></a>Browser </h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onerror.asp">onerror</a></td>
+    <td width="350" align="left" valign="top">An error occurs when loading a document or an image</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/error/">error()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;error&quot; JavaScript event.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/event_onresize.asp">onresize</a></td>
+    <td width="350" align="left" valign="top">A window or frame is resized</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/resize/">resize()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;resize&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/scroll/">scroll()</a></td>
+    <td width="350" align="left" valign="top">Bind an event handler to the &quot;scroll&quot; JavaScript event, or trigger that event on an element.</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

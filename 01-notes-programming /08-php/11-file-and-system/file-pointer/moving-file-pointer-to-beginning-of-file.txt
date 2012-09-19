@@ -1,0 +1,3 @@
+Moving the File Pointer Back to the Beginning of the File
+
+int rewind(resource handle)

@@ -1,0 +1,28 @@
+Good
+
+Consistency: 
+When multiple applications written in different languages are performing the same database tasks, consolidating these like functions within stored routines decreases otherwise redundant development processes.
+
+Performance: 
+A competent database administrator likely is the most knowledgeable member of the team regarding how to write optimized queries. Therefore, it may make sense to leave the creation of particularly complex database-related operations to this individual by maintaining them as stored routines.
+
+Security: 
+When working in particularly sensitive environments such as finance, health care, and defense, it¡¯s sometimes mandated that access to data is severely restricted. Using stored routines is a great way to ensure that developers have access only to the information necessary to carry out their tasks.
+
+Architecture: 
+Although it¡¯s out of the scope of this book to discuss the advantages of multitier architectures, using stored routines in conjunction with a data layer can further facilitate manageability of large applications. Search the Web for n-tier architecture for more information about this topic.
+
+
+Bad
+
+Performance: 
+Many would argue that the sole purpose of a database is to store data and maintain data relationships, not to execute code that could otherwise be executed by the application. In addition to detracting from what many consider the database¡¯s sole role, executing such logic within the database will consume additional processor and memory resources.
+
+Capability: 
+As you¡¯ll soon learn, the SQL language constructs do offer a fair amount of capability and flexibility; however, most developers find that building these routines is both easier and more comfortable using a full-featured language such as PHP.
+
+Maintainability: 
+Although you can use GUI-based utilities such as MySQL Query Browser (see Chapter 27) to manage stored routines, coding and debugging them is considerably more difficult than writing PHP-based functions using a capable IDE.
+
+Portability: 
+Because stored routines often use database-specific syntax, portability issues will surely arise should you need to use the application in conjunction with another database product.

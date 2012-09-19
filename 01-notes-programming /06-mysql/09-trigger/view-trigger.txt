@@ -1,0 +1,4 @@
+mysql>SHOW TRIGGERS\G
+
+mysql>SELECT * FROM INFORMATION_SCHEMA.triggers
+->WHERE trigger_name="au_reassign_ticket"\G

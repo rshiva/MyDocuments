@@ -1,0 +1,11 @@
+* The default maximum size that LSOs can grow to is 100 KB
+* LSO files are saved to the client computer in a binary file ending with a .sol extension.
+* Flash movies within the same domain can write to and read from the .sol files.
+
+Windows
+it will be in a directory something like this: 
+C:\Documents and Settings\[ username ] \\Application Data\\Macromedia\\Flash Player\\#SharedObjects\\ [ random directory name ]. 
+
+MAC ox
+the directory will be something like 
+/Users/[ username ] /Library/Preferences/Macromedia/Flash Player/#SharedObject/ [ random character directory ].

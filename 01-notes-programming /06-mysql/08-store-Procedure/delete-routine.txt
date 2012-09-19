@@ -1,0 +1,1 @@
+mysql>DROP PROCEDURE calculate_bonus;

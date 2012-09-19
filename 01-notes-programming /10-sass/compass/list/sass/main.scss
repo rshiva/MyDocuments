@@ -1,0 +1,26 @@
+@import "compass/typography/lists/bullets";
+@import "compass/typography/lists/horizontal-list";
+@import "compass/typography/lists/inline-block-list";
+
+#no-bullet{@include no-bullet;} // trun off specific item bullet
+#list2{@include no-bullets;} // turn off all bullets
+
+.container {
+	border: 1px solid #999999;
+  width: 50px;
+  height: 50px;
+  position: relative; }
+
+// horizontal-list
+#list3{
+	@include horizontal-list-container; // set container
+	li{@include horizontal-list-item; } // horizontal-list-item($padding, $direction)
+}
+
+//
+#list4{
+	@include inline-block-list-container;
+	li{
+		@include inline-block-list-item; //inline-block-list-item($padding)
+	}
+}

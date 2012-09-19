@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>object</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td width="500" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td width="500" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td width="500" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td colspan="4" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="create">create</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p><span class="method">function showYear(){<br />
+  &nbsp;&nbsp; console.log(this.year);<br />
+      }<br />
+  <br />
+      function car(make, model, year) {<br />
+  &nbsp;&nbsp; this.make = make;<br />
+  &nbsp;&nbsp; this.model = model;<br />
+  &nbsp;&nbsp; this.year = year;<br />
+  &nbsp;&nbsp; this.showYear=showYear;</span> // refer the showYear function predefined<span class="method"><br />
+    }</span></p>
+      <p><span class="method"> var myCar = new car(&quot;Nissan&quot;, &quot;300ZX&quot;, 1992);<br />
+    myCar.showYear(); </span>// -&gt;1992</p></td>
+    <td align="left" valign="top"><p>&nbsp;</p></td>
+    <td align="left" valign="top">&nbsp; </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><span class="method">var myHonda = {<br />
+&nbsp;&nbsp;
+color: &quot;red&quot;,<br />
+&nbsp;&nbsp;
+wheels: 4,<br />
+&nbsp;&nbsp; </span>// object method<span class="method"><br />
+&nbsp;&nbsp;
+showColor: function() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+console.log(this.color);<br />
+&nbsp;
+},<br />
+&nbsp;&nbsp; </span>// using object<span class="method"><br />
+&nbsp;
+engine: {cylinders: 4, size: 2.2}<br />
+};<br />
+myHonda.showColor(); </span>// -&gt; red</td>
+    <td align="left" valign="top" class="method">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">// create object with default property<span class="method"><br />
+function Employee (name, dept) {<br />
+&nbsp;&nbsp;
+this.name = name || &quot;&quot;;<br />
+&nbsp;&nbsp;
+this.dept = dept || &quot;general&quot;;<br />
+}<br />
+var Jim = new Employee (&quot;Jim&quot;,&quot;marketing&quot;); </span></td>
+    <td align="left" valign="top" class="method">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="add-property">add property</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><span class="method">function car(make, model, year) {<br />
+      &nbsp;&nbsp;
+this.make = make;<br />
+&nbsp;&nbsp;
+this.model = model;<br />
+&nbsp;&nbsp;
+this.year = year;<br />
+}<br />
+var myCar = new car(&quot;Nissan&quot;, &quot;300ZX&quot;, 1992);<br />
+    myCar.color = &quot;black&quot;; </span>// add property to instance</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><span class="method"> function car(make, model, year) {<br />
+      &nbsp;&nbsp;
+this.make = make;<br />
+&nbsp;&nbsp;
+this.model = model;<br />
+&nbsp;&nbsp;
+this.year = year;<br />
+}<br />
+car.prototype.color = &quot;none&quot;; </span>// add property to prototype<span class="method"><br />
+var myCar2 = new car(&quot;Nissan&quot;, &quot;300ZX&quot;, 1992);<br />
+alert(myCar2.color); </span>// none</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="remove-property">remove property</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p> <span class="method">var myobj = new Object;<br />
+      myobj.a = 5;<br />
+      myobj.b = 12;</span></p>
+      <p> //Removes the a property, leaving myobj with only the b property.<span class="method"><br />
+    delete myobj.a;</span></p></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="get-property">get property</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+      // 
+      get property value<span class="method"><br />
+      </span>// for each ... in<span class="method">      <br />
+      var sum = 0;<br />
+      var obj = {prop1: 5, prop2: 13, prop3: 8};<br />
+      for each (var item in obj) { <br />
+      &nbsp;&nbsp;
+sum += item;<br />
+}<br />
+document.write(sum); </span>// prints &quot;26&quot;, which is 5+13+8</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">// get property name<br />
+      // for...in
+      <br />
+      <span class="method">var o = {a:1, b:2, c:3};<br />
+      function show_props(obj, objName) {<br />
+&nbsp; for (var i in obj) { <br />
+&nbsp;  document.write(objName + &quot;.&quot; + i + &quot; = &quot; + obj[i] + &quot;&lt;br /&gt;&quot;);<br /> 
+ }<br />
+}<br />
+show_props(o, &quot;o&quot;);</span><br />
+<br />
+// o.a = 1<br />
+// o.b = 2<br />
+// o.c = 3<br /></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="4" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="iterator">iterator</a></h3>get object property name and value as pair</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p><span class="method">var lang = { name: 'JavaScript', birthYear: 1995 };<br />
+    var it = Iterator(lang); </span>// pass object to Iterator</p>
+    <p><span class="method">var pair = it.next(); </span>// Pair is [&quot;name&quot;, &quot;JavaScript&quot;]<span class="method"><br />
+      document.write(pair);</span></p>
+    <p><span class="method">pair = it.next(); </span>// Pair is [&quot;birthYear&quot;, 1995]<span class="method"><br />
+      document.write(pair);</span></p>
+    <p><span class="method">pair = it.next(); </span>// A StopIteration exception is thrown<span class="method"><br />
+    document.write(pair);</span></p></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p><span class="method">var lang = { name: 'JavaScript', birthYear: 1995 };<br />
+    var it = Iterator(lang); </span>// pass object to Iterator</p>
+    <p><span class="method">for (var pair2 in it){<br />
+document.write(pair2+&quot;&lt;br /&gt;&quot;); </span>//[key, value] pair in turn<span class="method"><br />
+}</span></p>
+    <p><span class="method">var it = Iterator(lang, true);<br />
+      for (var key in it){<br />
+document.write(key+&quot;&lt;br /&gt;&quot;); </span>//each key in turn<span class="method"><br />
+    }</span></p></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>AJAX</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getVsPost" id="getVsPost"></a>GET VS POST</h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top"><p><strong>GET</strong><br />
+      simply retrieving data from a database</p>
+      <p><strong>POST</strong><br />
+    if a request results in a change to the database via an insertion, update, or delete </p></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="createObject" id="createObject"></a>Create Object, Send request to server, get response</h3></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="8" align="left" valign="top">See cook book</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/Request/">Ajax.Request</a></td>
+    <td width="350" align="left" valign="top">Initiates and processes an AJAX request.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax()</a></td>
+    <td width="350" align="left" valign="top"> Perform an asynchronous HTTP (Ajax) request.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.get/">get()</a></td>
+    <td align="left" valign="top"> Load data from the server using a HTTP GET request.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.getJSON/">getJSON()</a></td>
+    <td align="left" valign="top"> Load JSON-encoded data from the server using a GET HTTP request. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.getScript/">getScript()</a></td>
+    <td align="left" valign="top">Load a JavaScript file from the server using a GET HTTP request, then execute it.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.post/">post()</a></td>
+    <td align="left" valign="top">Load data from the server using a HTTP POST request.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/Response/">Ajax.Response</a></td>
+    <td align="left" valign="top">The object passed as the first argument of all Ajax requests callbacks.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.ajaxSetup/">ajaxSetup()</a></td>
+    <td align="left" valign="top">Set default values for future Ajax requests.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/Responders/"></a></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.ajaxPrefilter/">ajaxPrefilter()</a></td>
+    <td align="left" valign="top">Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="updater" id="updater"></a>Update page content</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/Updater/">Ajax.Updater</a></td>
+    <td align="left" valign="top">Performs an AJAX request and updates a container's contents based on the response text.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/PeriodicalUpdater/">Ajax.PeriodicalUpdater</a></td>
+    <td align="left" valign="top">Periodically performs an AJAX request and updates a container's contents based on the response text.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/load/">load()</a></td>
+    <td align="left" valign="top">Load data from the server and place the returned HTML into the matched element.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="event" id="event"></a>Event</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/ajax/Ajax/Responders/">Ajax.Responders</a></td>
+    <td align="left" valign="top">A repository of global listeners notified about every step of Prototype-based Ajax requests.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxComplete/">ajaxComplete()</a></td>
+    <td align="left" valign="top">Register a handler to be called when Ajax requests complete. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxError/">ajaxError()</a></td>
+    <td align="left" valign="top">Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxSend/">ajaxSend()</a></td>
+    <td align="left" valign="top">Attach a function to be executed before an Ajax request is sent. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxStart/">ajaxStart()</a></td>
+    <td align="left" valign="top">Register a handler to be called when the first Ajax request begins. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxStop/">ajaxStop()</a></td>
+    <td align="left" valign="top">Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/ajaxSuccess/">ajaxSuccess()</a></td>
+    <td align="left" valign="top">Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="helper" id="helper"></a>Helper</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/jQuery.param/">param()</a></td>
+    <td align="left" valign="top">Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/serialize/">serialize()</a></td>
+    <td align="left" valign="top">Encode a set of form elements as a string for submission.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/serializeArray/">serializeArray()</a></td>
+    <td align="left" valign="top">Encode a set of form elements as an array of names and values.</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

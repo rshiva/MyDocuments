@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>inheritance</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><p> // define constructor for object A<span class="method"><br />
+      function A(a){<br />
+      this.varA = a;<br />
+      }</span></p>
+      <p> // define A's prototype<span class="method"><br />
+        A.prototype = {<br />
+        varA : null,<br />
+        doSomething : function(){<br />
+        alert(&quot;Hello&quot;);<br />
+        }<br />
+        }</span></p>
+      <p> // define constructor for object B, B will extend A<span class="method"><br />
+        function B(a, b){<br />
+        A.call(this, a); </span>// call super constructor <span class="method"><br />
+        this.varB = b;<br />
+        }</span></p>
+      <p><span class="method"><br />
+        </span>// define B's prototype<span class="method"><br />
+        B.prototype = {<br />
+        varB : null,<br />
+        doSomething : function(){ </span>// override<span class="method"><br />
+        A.prototype.doSomething.apply(this, arguments); </span>// call super<span class="method"><br />
+        }<br />
+        }</span></p>
+      <p> // define extend function<span class="method"><br />
+        function extend(child, supertype){<br />
+        for (var property in supertype.prototype) {<br />
+        if (typeof child.prototype[property] == &quot;undefined&quot;)<br />
+        child.prototype[property] = supertype.prototype[property];<br />
+        }<br />
+        return child;<br />
+        }</span></p>
+      <p class="method"><br />
+        extend(B, A);<br />
+        var b = new B();<br />
+    b.doSomething();</p></td>
+    <td width="500" align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="create-class">create class</a></h3></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top">&nbsp;</td>
+    <td width="500" align="left" valign="top"><p><span class="method">var Player = Class.create({<br />
+      </span>// initialize. Prototype treats it as the class’s constructor<span class="method"><br />
+      initialize: function(firstName, lastName) {<br />
+      this.firstName = firstName;<br />
+      this.lastName = lastName;<br />
+      this.points = 0;<br />
+      },<br />
+  <br />
+      functionName: function(argument){<br />
+      // ...<br />
+      },<br />
+  <br />
+      functionName: function(argument){<br />
+      // ...<br />
+      }<br />
+      });</span></p>
+      <p>// instance class<span class="method"><br />
+    var p = new Player('Andrew', 'Dupont');</span></p></td>
+    <td width="500" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="create-sub-class">create sub class</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><p>// super class<span class="method"><br />
+      var Player = Class.create({<br />
+      </span>// initialize. Prototype treats it as the class’s constructor<span class="method"><br />
+      initialize: function(firstName, lastName) {<br />
+      this.firstName = firstName;<br />
+      this.lastName = lastName;<br />
+      this.points = 0;<br />
+      },<br />
+  <br />
+      functionName: function(argument){<br />
+      // ...<br />
+      },<br />
+  <br />
+      functionName: function(argument){<br />
+      // ...<br />
+      }<br />
+      });</span></p>
+      <p>//sub class<span class="method"><br />
+        var Quarterback = Class.create(Player, {<br />
+        initialize: function($super, firstName, lastName) {<br />
+        </span>// call Player's initialize method<span class="method"><br />
+        $super(firstName, lastName);<br />
+        </span>// define some properties for quarterbacks<span class="method"><br />
+        this.passingYards = 0;<br />
+        this.rushingYards = 0;<br />
+        },<br />
+  <br />
+        functionName: function(argument) {<br />
+        //...<br />
+        },<br />
+  <br />
+        functionName: function(argument) {<br />
+        //...<br />
+        }<br />
+        });<br />
+        </span></p>
+      <p>// instance class it take actually 2 arguments<span class="method"><br />
+    var andrew = new Quarterback('Andrew', 'Dupont');</span></p></td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="add-method-on-the-fly">add method on the fly</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><p>// In Ruby, all classes are mutable and can be changed at any point. <br />
+      // This practice is referred to as “monkeypatching”</p>
+      <p><span class="method">var Player = Class.create({<br />
+        </span>// initialize. Prototype treats it as the class’s constructor<span class="method"><br />
+        initialize: function(firstName, lastName) {<br />
+        this.firstName = firstName;<br />
+        this.lastName = lastName;<br />
+        this.points = 0;<br />
+        },<br />
+  <br />
+        functionName: function(argument){<br />
+        // ...<br />
+        },<br />
+  <br />
+        functionName: function(argument){<br />
+        // ...<br />
+        }<br />
+        });</span></p>
+      <p class="method">var p = new Player('Andrew', 'Dupont');</p>
+      <p class="method">Player.addMethods({<br />
+        makeActive: function() {<br />
+        this.isActive = true;<br />
+        console.log(this + &quot; will be a starter for Sunday's game.&quot;);<br />
+        },<br />
+  <br />
+        makeReserve: function() {<br />
+        this.isActive = false;<br />
+        console.log(this + &quot; will spend Sunday on the bench.&quot;);<br />
+        }<br />
+        });<br />
+      </p>
+      <p><span class="method">andrew.makeReserve(); </span>// -&gt; &quot;Andrew Dupont will spend Sunday on the bench.&quot;<span class="method"><br />
+    andrew.isActive; </span>//-&gt; false</p></td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

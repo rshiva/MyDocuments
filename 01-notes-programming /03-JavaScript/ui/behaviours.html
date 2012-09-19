@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Behaviours</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="200" align="left" valign="top"><a href="http://madrobby.github.com/scriptaculous/draggable/">Draggable</a></td>
+    <td width="500" align="left" valign="top">Make DOM elements draggable</td>
+    <td width="200" align="left" valign="top"><a href="http://docs.jquery.com/UI/Draggable" title="UI/Draggable">Draggable</a></td>
+    <td width="500" align="left" valign="top"> The jQuery UI Draggable plugin makes selected elements draggable by mouse. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://madrobby.github.com/scriptaculous/droppables/">Droppables</a></td>
+    <td width="500" align="left" valign="top">To make an element react when a Draggable is dropped onto it</td>
+    <td align="left" valign="top"><a href="http://docs.jquery.com/UI/Droppable" title="UI/Droppable">Droppable</a></td>
+    <td width="500" align="left" valign="top"> The jQuery UI Droppable plugin makes selected elements droppable (meaning they accept being dropped on by draggables). You can specify which (individually) or which kind of draggables each will accept. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><a href="http://madrobby.github.com/scriptaculous/sortable/">Sortable</a></td>
+    <td width="500" align="left" valign="top">A Sortable is a quick way to initialize many Draggable elements in a container element. When you create a new Sortable, it takes care of the creation of the corresponding draggable Droppables.</td>
+    <td align="left" valign="top"><a href="http://docs.jquery.com/UI/Sortable" title="UI/Sortable">Sortable</a></td>
+    <td width="500" align="left" valign="top"> The jQuery UI Sortable plugin makes selected elements sortable by dragging with the mouse. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://docs.jquery.com/UI/Selectable" title="UI/Selectable">Selectable</a></td>
+    <td width="500" align="left" valign="top"> The jQuery UI Selectable plugin allows for elements to be selected by dragging a box (sometimes called a lasso) with the mouse over the elements. Also, elements can be selected by click or drag while holding the Ctrl/Meta key, allowing for multiple (non-contiguous) selections. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://docs.jquery.com/UI/Resizable" title="UI/Resizable">Resizable</a></td>
+    <td width="500" align="left" valign="top"> The jQuery UI Resizable plugin makes selected elements resizable (meaning they have draggable resize handles). You can specify one or more handles as well as min and max width and height. </td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+WHILE rows > 0 DO
+	SELECT RAND() INTO val1;
+	SELECT RAND() INTO val2;
+	INSERT INTO analysis VALUES(NULL, val1, val2);
+	SET rows = rows - 1;
+END WHILE;

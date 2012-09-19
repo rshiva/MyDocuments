@@ -1,0 +1,3 @@
+Using an installed PEAR package is simple. All you need to do is make the package contents available to your script with include or preferably require. Keep in mind that you need to add the PEAR base directory to your include_path directive; otherwise,
+
+require_once("Numbers/Roman.php");

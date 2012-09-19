@@ -1,0 +1,16 @@
+Because it¡¯s possible to create views based on other views, there must be a way to ensure that attempts to update a nested view do not violate the constraints of their definitions. Furthermore, although some views are updatable, there are cases where it wouldn¡¯t be logical to modify a column value in such a way that it would break some constraint imposed by the view¡¯s underlying query.
+
+Suppose that a view named experienced_age_view was defined with the LOCAL CHECK OPTION option and contains the following query:
+
+SELECT first_name, last_name, age, years_experience FROM experienced_view WHERE age > 65;
+
+Note that this query refers to another view, named experienced_view.
+
+SELECT first_name, last_name, age, years_experience FROM employees WHERE years_experience > 5;
+
+If experienced_age_view were defined with the CASCADED CHECK OPTION option, an attempt to execute the following INSERT query would end in failure:
+
+INSERT INTO experienced_age_view SET
+first_name="Jason", last_name="Gilmore", age="89", years_experience="3";
+
+The reason that it would fail is that the years_experience value of 3 would violate the constraint of experienced_age_view that requires years_experience to be at least 5 years. On the contrary, if the experienced_age_view view were defined as LOCAL, the INSERT query would be valid because only the age value would be greater than 65.

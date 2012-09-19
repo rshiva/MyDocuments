@@ -1,0 +1,3 @@
+RSS offers a formalized means for encapsulating a Web site¡¯s content within an XML-based structure, known as a feed.
+
+With just the feed¡¯s URL, the user can store it, along with others if he likes, into a tool that is capable of retrieving and parsing the feed, allowing the user to do as he pleases with the information.

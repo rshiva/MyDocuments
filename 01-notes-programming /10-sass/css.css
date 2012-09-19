@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{font-family:Arial, Helvetica, sans-serif;}
+p, ul,li{line-height:150%; font-size:14px;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}

@@ -1,0 +1,18 @@
+Session handling
+
+Session handling is accomplished by assigning to each site visitor a unique identifying attribute, known as the session ID (SID), and then correlating that SID with any number of other pieces of data, (eg number of monthly visits, favorite background color, or middle name¡ªyou name it.)
+
+Save SID In Cookies:
+When a user visits a Web site, the server stores information about the user, such as their preferences, in a cookie and sends it to the browser, which saves it. As the user executes a request for another page, the server retrieves the user information and uses it.
+
+However, rather than storing the user preferences in the cookie, the SID is stored in the cookie. As the client navigates throughout the site, the SID is retrieved when necessary, and the various items of data correlated with that SID are furnished for use within the page.
+
+However, keep in mind that because cookie acceptance is a matter ultimately controlled by the client, you must be prepared for the possibility that the user has disabled cookie support within the browser or has purged the cookies from their machine.
+
+
+Save SID In URL:
+The second method used for SID propagation simply involves appending the SID to every local URL found within the requested page.
+
+This method, known as URL rewriting, removes the possibility that your site¡¯s session-handling feature could be negated if the client disables cookies.
+
+However, this method has its drawbacks. First, URL rewriting does not allow for persistence between sessions, because the process of automatically appending a SID to the URL does not continue once the user leaves your site. Second, nothing stops a user from copying that URL into an e-mail and sending it to another user; as long as the session has not expired, the session will continue on the recipient¡¯s workstation.

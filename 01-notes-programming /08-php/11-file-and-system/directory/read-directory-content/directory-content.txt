@@ -1,0 +1,11 @@
+Opening a Directory Handle
+resource opendir(string path)
+
+Closing a Directory Handle
+void closedir(resource directory_handle)
+
+Reading a Directory into an Array
+<?php
+	print_r(scandir("/usr/local/apache2/htdocs"));
+?>
+Array ( [0] => . [1] => .. [2] => articles [3] => images [4] => news [5] => test.php )

@@ -1,0 +1,4 @@
+Renaming a File
+The rename() function renames a file, returning TRUE on success and FALSE otherwise.
+
+boolean rename(string oldname, string newname)

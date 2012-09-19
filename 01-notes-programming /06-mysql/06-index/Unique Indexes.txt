@@ -1,0 +1,10 @@
+Unique Indexes
+
+Like a primary index, a unique index prevents duplicate values from being created. However, the difference is that only one primary index is allowed per table, whereas multiple unique indexes are supported.
+
+CREATE TABLE bookmarks (
+id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+name VARCHAR(75) NOT NULL,
+url VARCHAR(200) NOT NULL UNIQUE,
+description MEDIUMTEXT NOT NULL,
+PRIMARY KEY(id));

@@ -1,0 +1,1 @@
+There is a powerful tool for RSS called "MagpieRSS".  More information about it at "Beginning PHP and MySQl" p546

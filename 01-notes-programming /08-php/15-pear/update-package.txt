@@ -1,0 +1,5 @@
+update single package
+%>pear upgrade [package name]
+
+update all package
+%>pear upgrade-all

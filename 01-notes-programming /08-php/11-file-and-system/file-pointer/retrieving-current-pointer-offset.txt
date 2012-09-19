@@ -1,0 +1,5 @@
+Retrieving the Current Pointer Offset
+
+The ftell() function retrieves the current position of the file pointer¡¯s offset within the resource.
+
+int ftell(resource handle)

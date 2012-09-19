@@ -1,0 +1,6 @@
+DESCRIBE employee_contact_info_view;
+
+SHOW CREATE VIEW employee_contact_info_view\G
+
+SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema="chapter34"\G
+

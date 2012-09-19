@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>DOM selection filters</h1>
+<hr />
+<p>&nbsp;</p>
+<h2><a name="basicFilters" id="basicFilters"></a>Basic Filters</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/animated-selector/">:animated</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements that are in the progress of an animation at the time the selector is run.</p>
+    <p class="method">$(&quot;div:animated&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:eq(index)</td>
+    <td width="350" align="left" valign="top"><p>Select the element at index n within the matched set.</p>
+    <p class="method">$$(&quot;td:eq(2)&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/eq-selector/">:eq(index)</a></td>
+    <td width="350" align="left" valign="top"><p>Select the element at index n within the matched set.</p>
+    <p class="method">$(&quot;td:eq(2)&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:first</td>
+    <td width="350" align="left" valign="top"><p>Selects the first matched element.</p>
+    <p class="method">$$(&quot;tr:first&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/first-selector/">:first</a></td>
+    <td width="350" align="left" valign="top"><p>Selects the first matched element.</p>
+    <p class="method">$(&quot;tr:first&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:last</td>
+    <td width="350" align="left" valign="top"><p>Selects the last matched element.</p>
+    <p class="method">$$(&quot;tr:last&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/last-selector/">:last</a></td>
+    <td width="350" align="left" valign="top"><p>Selects the last matched element.</p>
+    <p class="method">$(&quot;tr:last&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:even</td>
+    <td width="350" align="left" valign="top"><p>Selects even elements, zero-indexed.  See also odd.</p>
+    <p class="method">$$(&quot;tr:even&quot;);</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/even-selector/">:even</a></td>
+    <td width="350" align="left" valign="top"><p>Selects even elements, zero-indexed.  See also odd.</p>
+    <p class="method">$(&quot;tr:even&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:odd</td>
+    <td width="350" align="left" valign="top"><p>Selects odd elements, zero-indexed. See also even.</p>
+    <p class="method">$$(&quot;tr:odd&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/odd-selector/">:odd</a></td>
+    <td width="350" align="left" valign="top"><p>Selects odd elements, zero-indexed. See also even.</p>
+    <p class="method">$(&quot;tr:odd&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:gt(index)</td>
+    <td width="350" align="left" valign="top"><p>Select all elements at an index greater than index within the matched set.</p>
+    <p class="method">$$(&quot;td:gt(4)&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/gt-selector/">:gt(index)</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements at an index greater than index within the matched set.</p>
+    <p class="method">$(&quot;td:gt(4)&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:lt(index)</td>
+    <td width="350" align="left" valign="top"><p>Select all elements at an index less than index within the matched set.</p>
+    <p class="method">$$(&quot;td:lt(4)&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/lt-selector/">:lt(index)</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements at an index less than index within the matched set.</p>
+    <p class="method">$(&quot;td:lt(4)&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:header</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are headers, like h1, h2, h3 and so on.</p>
+    <p class="method">$$(&quot;:header&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/header-selector/">:header</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are headers, like h1, h2, h3 and so on.</p>
+    <p class="method">$(&quot;:header&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><span class="method">:not</span></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that do not match the given selector.</p>
+      <p><br />
+        <span class="method">$$('ul#menu li:not(.current)') </span><br />
+    <span class="method">$$('ul#menu a:not([rel])') </span></p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/not-selector/">:not</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that do not match the given selector.</p>
+    <p class="method">$(&quot;input:not(:checked))</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="attributeFilters" id="attributeFilters"></a>Attribute Filters</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><p class="method">[name]</p></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute, with any value.</p>
+      <p class="method">$$('a[rel]') </p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/has-attribute-selector/">[name]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute, with any value.</p>
+      <p><span class="method">$('div[id]') </span><br />
+      </p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><p class="method">[name=&quot;value&quot;]</p></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value exactly equal to a certain value.</p>
+      <p class="method">$$ ('input[type=&quot;text&quot;]') </p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-equals-selector/">[name=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value exactly equal to a certain value.</p>
+      <p class="method">$('input[value=&quot;Hot Fuzz&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name*=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value containing the a given substring.</p>
+      <p class="method">$$('input[name*=&quot;man&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-contains-selector/">[name*=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value containing the a given substring.</p>
+      <p class="method">$('input[name*=&quot;man&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name~=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.</p>
+      <p><span class="method">$$('a[rel~=external]) </span></p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-contains-word-selector/">[name~=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value containing a given word, delimited by spaces.</p>
+      <p class="method">$('input[name~=&quot;man&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name^=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value beginning exactly with a given string.</p>
+      <p class="method">$$('input[name^=&quot;news&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-starts-with-selector/">[name^=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value beginning exactly with a given string.</p>
+      <p class="method">$('input[name^=&quot;news&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name$=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.</p>
+      <p class="method">$$('input[name$=&quot;letter&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-ends-with-selector/">[name$=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive.</p>
+      <p class="method">$('input[name$=&quot;letter&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name!=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.</p>
+      <p class="method">$$('input[name!=&quot;newsletter&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-not-equal-selector/">[name!=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Select elements that either don't have the specified attribute, or do have the specified attribute but not with a certain value.</p>
+      <p class="method">$('input[name!=&quot;newsletter&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name|=&quot;value&quot;]</td>
+    <td width="350" align="left" valign="top"><p>attribute  equal to a given string or starting with that string followed by a hyphen (-)</p>
+      <p class="method">$$('a[hreflang|=&quot;en&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attribute-contains-prefix-selector/">[name|=&quot;value&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>attribute  equal to a given string or starting with that string followed by a hyphen (-)</p>
+      <p>$('a[hreflang|=&quot;en&quot;]')</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">[name=&quot;value&quot;][name2=&quot;value2&quot;]</td>
+    <td width="350" align="left" valign="top"><p>Matches elements that match all of the specified attribute filters.</p>
+      <p class="method">$$('input[id][name$=&quot;man&quot;]')</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/multiple-attribute-selector/">[name=&quot;value&quot;][name2=&quot;value2&quot;]</a></td>
+    <td width="350" align="left" valign="top"><p>Matches elements that match all of the specified attribute filters.</p>
+      <p class="method">$('input[id][name$=&quot;man&quot;]')</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="treeFilters" id="treeFilters"></a>Tree Filters </h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="UpDownNextPrevious" id="UpDownNextPrevious"></a>Up / Down / Next / Previous</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/up/">up()</a></td>
+    <td width="350" align="left" valign="top">Returns element's first ancestor that matches the given cssRule.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/down/">down()</a></td>
+    <td width="350" align="left" valign="top">Returns element's first descendant that matches cssRule. If no cssRule is provided, all descendants are considered. If no descendant matches these criteria, undefined is returned.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/next/">next()</a></td>
+    <td width="350" align="left" valign="top">Returns element's following sibling that matches the given cssRule. </td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/previous/">previous ()</a></td>
+    <td width="350" align="left" valign="top">Returns element's previous sibling that matches the given cssRule.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="Parent" id="Parent"></a>Parent</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><span class="method">:parent</span></td>
+    <td width="350" align="left" valign="top"><p>Select all elements that are the parent of another element, including text nodes.</p>
+      <p class="method">$$(&quot;td:parent&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/parent-selector/">:parent</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements that are the parent of another element, including text nodes.</p>
+      <p class="method">$(&quot;td:parent&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">parentNode</td>
+    <td width="350" align="left" valign="top">Returns the parent node of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="Child" id="Child"></a>Child</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/childElements/">childElements()</a></td>
+    <td width="350" align="left" valign="top">Collects all of the element's children and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">firstChild</td>
+    <td width="350" align="left" valign="top">Returns the first child of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/firstDescendant/">firstDescendant()</a></td>
+    <td width="350" align="left" valign="top">Returns the first child that is an element. This is opposed to firstChild DOM property which will return any node.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:first-child</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the first child of their parent.</p>
+      <p class="method">$$(&quot;div span:first-child&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/first-child-selector/">:first-child</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the first child of their parent.</p>
+      <p class="method">$(&quot;div span:first-child&quot;) </p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">lastChild</td>
+    <td width="350" align="left" valign="top">Returns the last child of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:last-child</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the last child of their parent.</p>
+      <p class="method">$$(&quot;div span:last-child&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/last-child-selector/">:last-child</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the last child of their parent.</p>
+      <p class="method">$(&quot;div span:last-child&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:nth-child</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the nth-child of their parent.</p>
+      <p class="method">$$(&quot;ul li:nth-child(2)&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/nth-child-selector/">:nth-child</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the nth-child of their parent.</p>
+      <p class="method">$(&quot;ul li:nth-child(2)&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:only-child</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the only child of their parent.</p>
+      <p class="method">$$(&quot;div button:only-child&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/only-child-selector/">:only-child</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are the only child of their parent.</p>
+      <p class="method">$(&quot;div button:only-child&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">parent &gt; child</td>
+    <td width="350" align="left" valign="top"><p><a href="http://api.jquery.com/child-selector/"></a>Selects all direct child elements specified by &quot;child&quot; of elements specified by &quot;parent&quot;.</p>
+      <p class="method">$$(&quot;ul.topnav &gt; li&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/child-selector/">parent &gt; child</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all direct child elements specified by &quot;child&quot; of elements specified by &quot;parent&quot;.</p>
+      <p class="method">$(&quot;ul.topnav &gt; li&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/recursivelyCollect/">recursivelyCollect()</a></td>
+    <td width="350" align="left" valign="top">Recursively collects elements whose relationship is specified by property</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="Sibling" id="Sibling"></a>Sibling</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/siblings/">siblings()</a></td>
+    <td width="350" align="left" valign="top">Collects all of element's siblings and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">nextSibling</td>
+    <td width="350" align="left" valign="top">Returns the element immediately following an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/nextSiblings/">nextSiblings()</a><a href="http://api.prototypejs.org/dom/Element/prototype/previousSiblings/"></a></td>
+    <td width="350" align="left" valign="top">Collects all of element's next siblings and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">previousSibling</td>
+    <td width="350" align="left" valign="top">Returns the element immediately before an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/previousSiblings/">previousSiblings()</a></td>
+    <td width="350" align="left" valign="top">Collects all of element's previous siblings and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><span class="method">prev + next</span></td>
+    <td width="350" align="left" valign="top"><p>reaches only to the immediately following sibling element</p>
+      <p class="method">$$(&quot;label + input&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/next-adjacent-Selector/">prev + next</a></td>
+    <td width="350" align="left" valign="top"><p>reaches only to the immediately following sibling element</p>
+      <p class="method">$(&quot;label + input&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><span class="method">prev ~ siblings</span></td>
+    <td width="350" align="left" valign="top"><p>reach to all following sibling elements</p>
+      <p class="method">$$(&quot;#prev ~ div&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/next-siblings-selector/">prev ~ siblings</a></td>
+    <td width="350" align="left" valign="top"><p>reach to all following sibling elements</p>
+      <p class="method">$(&quot;#prev ~ div&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/adjacent/">adjacent()</a></td>
+    <td width="350" align="left" valign="top">Finds all siblings of the current element that match the given selector(s).</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="ancestorDescemdant" id="ancestorDescemdant"></a>Ancestor / Descemdant</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">ancestor descendant</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are descendants of a given ancestor.</p>
+      <p class="method">$$(&quot;form input&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/descendant-selector/">ancestor descendant</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are descendants of a given ancestor.</p>
+      <p class="method">$(&quot;form input&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/ancestors/">ancestors()</a></td>
+    <td width="350" align="left" valign="top">Collects all of element's ancestors and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://www.tutorialspoint.com/prototype/prototype_element_descendants.htm">descendants()</a></td>
+    <td width="350" align="left" valign="top">Collects all of element's descendants and returns them as an array of extended elements.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method"><a href="http://api.prototypejs.org/dom/Element/descendantOf/">descendantOf()</a></td>
+    <td width="350" align="left" valign="top">Checks if element is a descendant of ancestor.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="contentFilters" id="contentFilters"></a>Content Filters</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:contains()</td>
+    <td width="350" align="left" valign="top"><p>Select all elements that contain the specified text.</p>
+      <p class="method">$$(&quot;div:contains('John')&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/contains-selector/">:contains()</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements that contain the specified text.</p>
+      <p class="method">$(&quot;div:contains('John')&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:empty</td>
+    <td width="350" align="left" valign="top"><p>Select all elements that have no children (including text nodes).</p>
+      <p class="method">$$(&quot;td:empty&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/empty-selector/">:empty</a></td>
+    <td width="350" align="left" valign="top"><p>Select all elements that have no children (including text nodes).</p>
+      <p class="method">$(&quot;td:empty&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:has</td>
+    <td width="350" align="left" valign="top"><p>Selects elements which contain at least one element that matches the specified selector</p>
+      <p class="method">$$(&quot;div:has(p)&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/has-selector/">:has</a></td>
+    <td width="350" align="left" valign="top"><p>Selects elements which contain at least one element that matches the specified selector</p>
+      <p class="method">$(&quot;div:has(p)&quot;)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="formFilters" id="formFilters"></a>Form Filters</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_form_findfirstelement.htm">findFirstElement()</a></td>
+    <td align="left" valign="top">Finds first non-hidden, non-disabled form control.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_form_getelements.htm">getElements()</a></td>
+    <td align="left" valign="top">Returns a collection of all form controls within a form.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/dom/Form/getInputs/">getInputs()</a></td>
+    <td align="left" valign="top">Returns a collection of all INPUT elements in a form. Use optional type and name arguments to restrict the search on these attributes.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:button</td>
+    <td width="350" align="left" valign="top"><p>Selects all button elements and elements of type button.</p>
+      <p class="method">$$(&quot;:button&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/button-selector/">:button</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all button elements and elements of type button.</p>
+      <p class="method">$(&quot;:button&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:checkbox</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type checkbox.</p>
+      <p class="method">$$(&quot;form input:checkbox&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/checkbox-selector/">:checkbox</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type checkbox.</p>
+      <p class="method">$(&quot;form input:checkbox&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:checked</td>
+    <td width="350" align="left" valign="top"><p>Matches all elements that are checked.</p>
+      <p class="method">$$(&quot;input:checked&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/checked-selector/">:checked</a></td>
+    <td width="350" align="left" valign="top"><p>Matches all elements that are checked.</p>
+      <p class="method">$(&quot;input:checked&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:enabled</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are enabled.</p>
+      <p class="method">$$(&quot;input:enabled&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/enabled-selector/">:enabled</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are enabled.</p>
+      <p class="method">$(&quot;input:enabled&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:disabled</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are enabled.</p>
+      <p class="method">$$(&quot;input:disabled&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/disabled-selector/">:disabled</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are disabled.</p>
+      <p class="method">$(&quot;input:disabled&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:file</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type file.</p>
+      <p class="method">$$(&quot;input:file&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/file-selector/">:file</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type file.</p>
+      <p class="method">$(&quot;input:file&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:focus</td>
+    <td width="350" align="left" valign="top">Selects element if it is currently focused.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/focus-selector/">:focus</a></td>
+    <td width="350" align="left" valign="top"><p>Selects element if it is currently focused.</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:image</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type image.</p>
+      <p class="method">$$(&quot;input:image&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/image-selector/">:image</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type image.</p>
+      <p class="method">$(&quot;input:image&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:input</td>
+    <td width="350" align="left" valign="top"><p>Selects all input, textarea, select and button elements.</p>
+      <p class="method">$$(&quot;:input&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/input-selector/">:input</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all input, textarea, select and button elements.</p>
+      <p class="method">$(&quot;:input&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:password</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type password.</p>
+      <p class="method">$$(&quot;input:password&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/password-selector/">:password</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type password.</p>
+      <p class="method">$(&quot;input:password&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:radio</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type radio.</p>
+      <p class="method">$$(&quot;form input:radio&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/radio-selector/">:radio</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type radio.</p>
+      <p class="method">$(&quot;form input:radio&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:reset</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type reset.</p>
+      <p class="method">$$(&quot;input:reset&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/reset-selector/">:reset</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type reset.</p>
+      <p class="method">$(&quot;input:reset&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:selected</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are selected.</p>
+      <p class="method">$$(&quot;select option:selected&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/selected-selector/">:selected</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are selected.</p>
+      <p class="method">$(&quot;select option:selected&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:text</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type text.</p>
+      <p class="method">$$(&quot;form input:text&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/text-selector/">:text</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type text.</p>
+      <p>$(&quot;form input:text&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:submit</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type submit.</p>
+      <p class="method">$(&quot;td :submit&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/submit-selector/">:submit</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements of type submit.</p>
+      <p class="method">$(&quot;td :submit&quot;)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="visibilityFilters" id="visibilityFilters"></a>Visibility Filters</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:hidden</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are hidden</p>
+      <p class="method">$$(&quot;div:hidden&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/hidden-selector/">:hidden</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are hidden</p>
+      <p class="method">$(&quot;div:hidden&quot;)</p></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" class="method">:visible</td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are visible</p>
+      <p class="method">$$(&quot;div:visible&quot;)</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/visible-selector/">:visible</a></td>
+    <td width="350" align="left" valign="top"><p>Selects all elements that are visible</p>
+      <p class="method">$(&quot;div:visible&quot;)</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

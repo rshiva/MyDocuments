@@ -1,0 +1,4 @@
+
+* call functions in another package (call package level function)
+* call functions in another class (need instance)
+* call functions in another class (don't need instance)

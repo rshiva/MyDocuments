@@ -1,0 +1,17 @@
+Brackets ([]) are used to represent a list, or range, of characters to be matched.
+
+[0-9] matches any decimal digit from 0 through 9
+[a-z] matches any character from lowercase a through lowercase z.
+[A-Z] matches any character from uppercase A through uppercase Z.
+[A-Za-z] matches any character from uppercase A through lowercase z.
+
+[:alpha:]: Lowercase and uppercase alphabetical characters. This can also be specified as [A-Za-z].
+[:alnum:]: Lowercase and uppercase alphabetical characters and numerical digits. This can also be specified as [A-Za-z0-9].
+[:cntrl:]: Control characters such as tab, escape, or backspace.
+[:digit:]: Numerical digits 0 through 9. This can also be specified as [0-9].
+[:graph:]: Printable characters found in the range of ASCII 33 to 126.
+[:lower:]: Lowercase alphabetical characters. This can also be specified as [a-z].
+[:punct:]: Punctuation characters, including ~ ` ! @ # $ % ^ & * ( ) - _ + = { } [ ] : ; ' < > , . ? and /.
+[:upper:]: Uppercase alphabetical characters. This can also be specified as [A-Z].
+[:space:]: Whitespace characters, including the space, horizontal tab, vertical tab, new line, form feed, or carriage return.
+[:xdigit:]: Hexadecimal characters. This can also be specified as [a-fA-F0-9].

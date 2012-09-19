@@ -1,0 +1,3 @@
+Unix development team, using 00:00:00 UTC January 1, 1970, as the base from which all dates are calculated.
+
+Caution The Windows operating system doesn¡¯t support negative timestamp values, so the earliest date you could parse with this function on Windows is midnight, January 1, 1970.

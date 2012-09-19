@@ -1,0 +1,14 @@
+p+ matches any string containing at least one p
+p* matches any string containing zero or more p¡¯s.
+p? matches any string containing zero or one p.
+p{2} matches any string containing a sequence of two p¡¯s.
+p{2,3} matches any string containing a sequence of two or three p¡¯s
+
+p$ matches any string with p at the end of it.
+^p matches any string with p at the beginning of it.
+[^a-zA-Z] matches any string not containing any of the characters ranging from a through z and A through Z.
+p.p matches any string containing p, followed by any character, in turn followed by another p.
+
+^.{2}$ matches any string containing exactly two characters.
+<b>(.*)</b> matches any string enclosed within <b> and </b>.
+p(hp)* matches any string containing a p followed by zero or more instances of the sequence hp.

@@ -1,0 +1,3 @@
+Note: Browsers automatically add an empty line before and after a heading.
+
+Search engines use your headings to index the structure and content of your web pages.

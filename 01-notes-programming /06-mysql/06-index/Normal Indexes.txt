@@ -1,0 +1,4 @@
+Normal Indexes
+
+Quite often you¡¯ll want to optimize searches on fields other than those designated as primary or even unique. Because this is a commonplace occurrence, it only makes sense that it should be possible to optimize such searches by indexing these fields. Such indexes are typically called normal, or ordinary.
+

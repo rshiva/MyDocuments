@@ -1,0 +1,44 @@
+@import "compass/layout/stretching";
+@import "compass/utilities";
+@import "compass/css3";
+
+// make the list inline
+.stretch-container {
+  @include inline-block; 
+	border: 1px solid #999999;
+  width: 200px;
+  height: 200px;
+  position: relative; }
+
+// define attribute for all stretched elements
+.stretched {
+  $stretch-color: #4c6b99;
+  border: 3px solid $stretch-color;
+  @include border-radius(8px);
+  display: block;
+  background-color: darken($stretch-color, 30%);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em; }
+
+// first div, stretched in two firection
+#stretch-full {
+  @extend .stretched; //get global attribute
+  @include stretch; // both x and y 
+}
+
+//second div, strectch with offset
+#stretch-offset {
+  @extend .stretched; //get global attribute
+  @include stretch(10px, 20px, 10px, 20px); // top right bottom left
+}
+
+// strectch one direction
+#stretch-x {
+  @extend .stretched;
+  @include stretch-x; }
+ 
+#stretch-y {
+  @extend .stretched;
+  @include stretch-y; }

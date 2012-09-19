@@ -1,0 +1,1 @@
+很多时候，一条quary被反复执行，只是要传入不同的参数。使用 Prepared Statement 可以提高执行效率。

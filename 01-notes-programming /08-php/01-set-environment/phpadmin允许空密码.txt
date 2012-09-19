@@ -1,0 +1,8 @@
+默认phpmyadmin空密码登录是被禁止的，这一行为主要通过配置文件libraries/config.default.php中的两个全局变量控制，
+
+$cfg['Servers'][$i]['nopassword'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+
+$cfg['Servers'][$i]['nopassword'] = true;
+$cfg['Servers'][$i]['AllowNoPassword'] = true;

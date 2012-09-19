@@ -1,0 +1,7 @@
+Installing PEAR on Linux
+
+
+Installing PEAR on Windows
+PEAR is not installed by default with the Windows distribution. To install it, you need to run the go-pear.bat file, located in the PHP distribution¡¯s root directory. This file installs the PEAR command, the necessary support files, and the aforementioned six PEAR packages. Initiate the installation process by changing to the PHP root directory and executing go-pear.bat
+
+%>go-pear.bat

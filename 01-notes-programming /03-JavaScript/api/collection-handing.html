@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Collection handing</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="implementFuncton" id="implementFuncton"></a>Implement function to  collection elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/each/">each()</a></td>
+    <td width="350" align="left" valign="top">Calls iterator for each item in the collection.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/each/">each()</a></td>
+    <td width="350" align="left" valign="top">Iterate over a jQuery object, executing a function for each matched element. </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/eachSlice/">eachSlice()</a></td>
+    <td width="350" align="left" valign="top">Groups items into chunks of the given size. The final &quot;slice&quot; may have fewer than number items; it won't &quot;pad&quot; the last group with empty values. For that behavior, use Enumerable#inGroupsOf.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/inGroupsOf/">inGroupsOf()</a></td>
+    <td width="350" align="left" valign="top">Like Enumerable#eachSlice, but pads out the last chunk with the specified value if necessary and doesn't support the iterator function.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/inject/">inject()</a></td>
+    <td width="350" align="left" valign="top">implement function to elements and return accumulated result</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/collect/">collect</a></td>
+    <td width="350" align="left" valign="top">Returns the result of applying iterator to each element. If no iterator is provided, the elements are simply copied to the returned array. Aliased as map().</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/map/">map</a></td>
+    <td width="350" align="left" valign="top">Aliased as collect()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="callFunction" id="callFunction"></a>Call a function in all collection elements</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/invoke/">invoke()</a></td>
+    <td width="350" align="left" valign="top">Invokes the same method, with the same arguments, for all items in a collection. Returns an array of the results of the method calls.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getProperty" id="getProperty"></a>Get a property in all collection elements</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/pluck/">pluck()</a></td>
+    <td width="350" align="left" valign="top">Optimization for a common use-case of collect(): fetching the same property for all the elements. Returns the property values.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="checkElements" id="checkElements"></a>Check all elements in collection</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/all/">all() </a></td>
+    <td width="350" align="left" valign="top">Determines whether all the elements are &quot;truthy&quot; (boolean-equivalent to true), either directly or through computation by the provided iterator. Stops on the first falsy element found (e.g., the first element that is boolean-equivalent to false, such as undefined, 0, or indeed false)</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/every/">every() </a></td>
+    <td width="350" align="left" valign="top">Alias of: all()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/any/">any</a></td>
+    <td width="350" align="left" valign="top">Determines whether at least one element is truthy (boolean-equivalent to true), either directly or through computation by the provided iterator.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/some/">some</a></td>
+    <td width="350" align="left" valign="top">Alias of: any()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/include/">include() </a></td>
+    <td width="350" align="left" valign="top">Determines whether a given object is in the enumerable or not, based on the == comparison operator (equality with implicit type conversion).</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/member/">member()</a></td>
+    <td width="350" align="left" valign="top">Alias of: include()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/size/">size() </a></td>
+    <td width="350" align="left" valign="top">Returns the size of the enumeration</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/size/">size()</a></td>
+    <td align="left" valign="top">Return the number of elements in the jQuery object.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="findElements" id="findElements"></a>Find elements in collection</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/get/">get()</a></td>
+    <td align="left" valign="top">Retrieve the DOM elements matched by the jQuery object.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/index/">index()</a></td>
+    <td align="left" valign="top">Search for a given element from among the matched elements.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/findAll/">findAll()</a></td>
+    <td width="350" align="left" valign="top">Returns all the elements for which the iterator returned a truthy value. </td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/filter/">filter() </a></td>
+    <td width="350" align="left" valign="top">Alias of: findAll()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/select/">select()</a></td>
+    <td width="350" align="left" valign="top">Alias of: findAll()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/detect/">detect()</a></td>
+    <td width="350" align="left" valign="top">Returns the first element for which the iterator returns a truthy value.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/find/">find()</a></td>
+    <td width="350" align="left" valign="top">Alias of: detect()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/grep/">grep()</a></td>
+    <td width="350" align="left" valign="top"><p>Returns an array containing all of the elements for which the given filter returns true (or a truthy value). If an iterator is provided, it is used to produce the returned value for each selected element; this is done after the element has been selected by the filter.</p>
+    <p>If the given filter is a String, it is converted into a RegExp object. To select elements, each element is passed into the filter's match function, which should return a truthy value to select the element or a falsy value not to. Note that the RegExp match function will convert elements to Strings to perform matching.</p></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/reject/">reject()</a></td>
+    <td width="350" align="left" valign="top">Returns all the elements for which the iterator returns a falsy value.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/partition/">partition()</a></td>
+    <td width="350" align="left" valign="top">Partitions the elements in two groups: those regarded as true, and those considered false.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="sortElements" id="sortElements"></a>Sort elements in collection</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/max/">max()</a></td>
+    <td width="350" align="left" valign="top">Returns the maximum element (or element-based computation), or undefined if the enumeration is empty. Elements are either compared directly, or by first applying the iterator and comparing returned values.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/min/">min()</a></td>
+    <td width="350" align="left" valign="top">Returns the minimum element (or element-based computation), or undefined if the enumeration is empty. Elements are either compared directly, or by first applying the iterator and comparing returned values.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/sortBy/">sortBy()</a></td>
+    <td width="350" align="left" valign="top">Provides a custom-sorted view of the elements based on the criteria computed, for each element, by the iterator.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="convertToArray" id="convertToArray"></a>Convert collection to array</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/dollar-A/">$A()</a></td>
+    <td width="350" align="left" valign="top">Accepts an array-like collection (anything with numeric indices) and returns its equivalent as an actual Array object. </td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/toArray/">toArray()</a></td>
+    <td width="350" align="left" valign="top">Returns an Array containing the elements of the enumeration.</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/toArray/">toArray()</a></td>
+    <td align="left" valign="top">Retrieve all the DOM elements contained in the jQuery set, as an array.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/entries/">entries</a></td>
+    <td width="350" align="left" valign="top">Alias of: toArray()</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Enumerable/prototype/zip/">zip</a></td>
+    <td width="350" align="left" valign="top"><p>Zips together (think of the zipper on a pair of trousers) 2+ sequences, returning a new array of tuples. Each tuple is an array containing one value per original sequence. Tuples can be transformed to something else by applying the optional iterator on them.</p>
+    <p>If supplied, iterator is called with each tuple as its only argument and should return the value to use in place of that tuple.</p></td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="addElements" id="addElements"></a>Add element to collection</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/add/">add()</a></td>
+    <td align="left" valign="top">Add elements to the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/andSelf/">andSelf()</a></td>
+    <td align="left" valign="top">Add the previous set of elements on the stack to the current set.</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

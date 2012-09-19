@@ -1,0 +1,82 @@
+/* line 4, ../sass/main.scss */
+.example table {
+  border: 2px solid black;
+}
+/* line 2, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.example table th {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 6, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.example table td,
+.example table th {
+  padding: 2px;
+}
+/* line 8, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.example table td.numeric,
+.example table th.numeric {
+  text-align: right;
+}
+/* line 14, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table th, .example table td {
+  border-right: 1px solid #233551;
+  border-bottom: 1px solid #233551;
+  border-left-width: 0px;
+  border-top-width: 0px;
+}
+/* line 21, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table th:last-child, .example table th.last, .example table td:last-child, .example table td.last {
+  border-right-width: 0px;
+}
+/* line 29, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table tbody tr:last-child th, .example table tbody tr:last-child td, .example table tfoot tr:last-child th, .example table tfoot tr:last-child td {
+  border-bottom-width: 0px;
+}
+/* line 32, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table tbody tr.last th, .example table tbody tr.last td, .example table tfoot tr.last th, .example table tfoot tr.last td {
+  border-bottom-width: 0px;
+}
+/* line 4, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table thead th {
+  border-bottom: 2px solid black;
+}
+/* line 7, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table tfoot th, .example table tfoot td {
+  border-top: 2px solid black;
+}
+/* line 10, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
+.example table th:first-child {
+  border-right: 2px solid black;
+}
+/* line 2, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table th {
+  background-color: white;
+}
+/* line 4, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table th.even, .example table th:nth-child(2n) {
+  background-color: #dddddd;
+}
+/* line 7, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tr.odd td {
+  background-color: #98c67a;
+}
+/* line 9, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tr.odd td.even, .example table tr.odd td:nth-child(2n) {
+  background-color: #76a458;
+}
+/* line 12, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tr.even td {
+  background-color: #7a98c6;
+}
+/* line 14, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tr.even td.even, .example table tr.even td:nth-child(2n) {
+  background-color: #5876a4;
+}
+/* line 17, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tfoot th, .example table tfoot td {
+  background-color: white;
+}
+/* line 19, ../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.example table tfoot th.even, .example table tfoot th:nth-child(2n), .example table tfoot td.even, .example table tfoot td:nth-child(2n) {
+  background-color: #dddddd;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="alternate stylesheet" href="yellow.css" type="text/css" title="yellow" media="screen, projection"/>
+<link rel="alternate stylesheet" href="red.css" type="text/css" title="red" media="screen, projection"/>
+<link rel="stylesheet" href="green.css" type="text/css" title="green" media="screen, projection"/>
+
+<script>
+function setActiveStyleSheet(title) {
+	var i, a, main;
+	if (title) {
+		for(i=0; (a = document.getElementsByTagName('link')[i]); i++) {
+			if(a.getAttribute('rel').indexOf('style') != -1 && a.getAttribute('title')) {
+				a.disabled = true;
+				if(a.getAttribute('title') == title) a.disabled = false;
+				}
+		}
+	}
+}
+
+function getActiveStyleSheet() {
+	var i, a;
+	for(i=0; (a = document.getElementsByTagName('link')[i]); i++) {
+	if(a.getAttribute('rel').indexOf('style') != -1 && a.getAttribute('title') && !a.disabled) return a.getAttribute('title');
+	}
+	return null;
+}
+</script>
+
+</head>
+
+<body>
+<a href="javascript :void()" onclick="setActiveStyleSheet('red'); return false;" title="红色样式">Red</a>
+<a href="javascript :void()" onclick="setActiveStyleSheet('green'); return false;" title="绿色样式">Green</a>
+<a href="javascript :void()" onclick="setActiveStyleSheet('yellow'); return false;" title="黄色样式">Yellow</a>
+<a href="javascript :void()" onclick="setActiveStyleSheet('none'); return false;" title="没有样式">None</a>
+</body>
+</html>

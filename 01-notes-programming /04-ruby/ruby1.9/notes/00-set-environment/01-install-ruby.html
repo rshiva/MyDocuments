@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%; line-height:150%; font-size:14px;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Install Ruby</h1>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top" class="code"><p>ruby -v</p></td>
+          <td width="40%" align="left" valign="top"><p>检查当前Ruby 版本</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">/usr/bin/ruby -e &quot;$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)&quot;</p></td>
+          <td align="left" valign="top"><p>Install Homebrew</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ bash &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)</p></td>
+          <td align="left" valign="top"><p>install RVM</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p>Create/open  file in your home folder called “.bash_profile” </p></td>
+          <td align="left" valign="top"><p>创建或修改 RVM config</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>export PATH=&quot;./bin:$PATH&quot;  <br />
+          [[ -s &quot;/Users/harry74323/.rvm/scripts/rvm&quot; ]] &amp;&amp; source &quot;/Users/harry74323/.rvm/scripts/rvm&quot;</p></td>
+          <td align="left" valign="top"><p>RVM config 内容</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ echo $USER</p></td>
+          <td align="left" valign="top"><p>如果使用不同用户名，发现当前用户并修改 RVM config</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><ul>
+            <li class="code">rvm reload</li>
+            <li>重新打开 terminal</li>
+          </ul></td>
+          <td align="left" valign="top"><p>重启 RVM</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ rvm install 1.9.3</p></td>
+          <td align="left" valign="top"><p>安装 Ruby 1.9.3</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ rvm use 1.9.3</p></td>
+          <td align="left" valign="top"><p>使用 Ruby 1.9.3</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ ruby -v</p></td>
+          <td align="left" valign="top"><p>再次检查 Ruby 版本</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>$ ruby -e 'puts $:'</p></td>
+          <td align="left" valign="top"><p>查看ruby library</p>
+            <ul>
+              <li>site_ruby hold modules and extensions</li>
+          </ul></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

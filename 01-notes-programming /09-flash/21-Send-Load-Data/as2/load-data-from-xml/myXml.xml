@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flash>
+	<subject>
+		<title>жпнд</title>
+		<content>Just make things link up</content>
+		<ref>001</ref>
+	</subject>
+	<subject>
+		<title>ActionScript</title>
+		<content>Programming issue</content>
+		<ref>002</ref>
+	</subject>
+	<subject>
+		<title>Telecommunicate</title>
+		<content>Transformation issue</content>
+		<ref>003</ref>
+	</subject>
+</flash>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+    <style type="text/css">
+        /* Match the first <p> element */
+        p:first-child
+        {
+            color:blue;
+        }
+
+        /*  Match the first <i> element in all <p> elements */
+        p > i:first-child
+        {
+            font-weight:bold;
+        }
+    </style>
+  </head>
+  <body>
+        <p>I am a strong man.</p>
+        <p>I am a strong man.</p>
+
+        <p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+        <p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+  </body>
+</html>

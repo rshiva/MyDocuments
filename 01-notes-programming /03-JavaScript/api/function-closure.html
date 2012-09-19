@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>function &amp; closure</h1>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td width="474" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Javascript</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>Prototype</strong></h2></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h2 class="white"><strong>JQuery</strong></h2></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="create">create</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p> // declare function<br />
+        <span class="method">function sayHello1(person){<br />
+console.log(person);<br />
+}<br />
+sayHello1(&quot;harry&quot;);</span></p></td>
+    <td width="150" align="left" valign="top"><p>&nbsp;</p></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp; </td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"> // function expression<br />
+      <span class="method">var sayHello2=function(person){<br />
+console.log(person);<br />
+}<br />
+sayHello2(&quot;harry&quot;);</span></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"> // Anonymous Functions<br />
+      <span class="method">document.onclick=function(){<br />
+console.log(&quot;harry&quot;);<br />
+}</span></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="function-in-object">function in object</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"> // define method in constructor<br />
+      <span class="method">var person = {<br />
+name:&quot;none&quot;,<br />
+sayHello: function() {<br />
+console.log(&quot;Hello&quot;);<br />
+}<br />
+};<br />
+person.sayHello(); </span></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p> // refer  external function<br />
+        <span class="method">function showYear(){<br />
+      console.log(this.year);<br />
+      }<br />
+      function car(make, model, year) {<br />
+      this.make = make;<br />
+      this.model = model;<br />
+      this.year = year;<br />
+      this.showYear=showYear; // refer the showYear function predefined<br />
+      }</span></p>
+      <p class="method"> var myCar = new car(&quot;Nissan&quot;, &quot;300ZX&quot;, 1992);<br />
+    myCar.showYear();</p></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p> // add function to prototype (add method on the fly)<br />
+        <span class="method">function car(make, model, year) {<br />
+      this.make = make;<br />
+      this.model = model;<br />
+      this.year = year;<br />
+      }<br />
+        car.prototype={<br />
+        showModel: function (){<br />
+        console.log(this.model);<br />
+        }<br />
+        }<br />
+        var myCar2 = new car(&quot;Nissan&quot;, &quot;300ZX&quot;, 1992);<br />
+    myCar2.showModel();</span></p></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p> // apply and call <span class="method"><br />
+      var myObj={<br />
+      title:&quot;orgTitle&quot;,<br />
+      content:&quot;orgContent&quot;,<br />
+      outPut:function (){<br />
+      document.write(this.title+&quot;&lt;br /&gt;&quot;);<br />
+      document.write(this.content);<br />
+      }<br />
+      }</span></p>
+      <p class="method"> var iMessage={<br />
+        title:&quot;message title&quot;,<br />
+        content:&quot;message content&quot;<br />
+        }</p>
+      <p> // use apply the iMessage will replace this for myObj<span class="method"><br />
+        myObj.outPut.apply(iMessage);<br />
+        </span>// message title<br />
+        // message content </p>
+    <p> // the call() method is same as apply() but it just accept argument not array</p></td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="arguments">arguments</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"> // set default argument<br />
+      <span class="method">function saySomething(message){<br />
+if(!message) message=&quot;Say Something&quot;;<br />
+alert(message);<br />
+}<br />
+saySomething(); </span>//Say Something<span class="method"><br />
+saySomething(&quot;good&quot;);</span>// good</td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"> // pass any number of arguments to function<br />
+      <span class="method">function handleMultiArguments(){<br />
+for(var i=0; i&lt;arguments.length; i++){<br />
+document.write(arguments[i]+&quot;&lt;br /&gt;&quot;);<br />
+}<br />
+}<br />
+handleMultiArguments(&quot;123&quot;,1,new Date());</span><br />
+// 123<br />
+// 1<br />
+// Sat Nov 13 2010 23:33:28 GMT+1100</td>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/argumentNames/">argumentNames()</a></td>
+    <td width="350" align="left" valign="top">Reads the argument names as stated in the function definition and returns  the values as an array of strings (or an empty array if the function is  defined without parameters)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top" ><a href="http://api.prototypejs.org/language/Function/prototype/curry/">curry()</a></td>
+    <td width="350" align="left" valign="top" >predefined function arguments</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="closure">closure</a></h3>
+      A closure is a special kind of object that combines two things: <br />
+      * a function, and the environment in which that function was created. <br />
+      * The environment consists of any local variables that were in-scope at the time that the closure was created.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="method">function makeFunc() {<br />
+var name = &quot;Mozilla&quot;;<br />
+function displayName() {<br />
+alert(name);<br />
+}<br />
+return displayName;<br />
+}<br />
+var myFunc = makeFunc();<br />
+myFunc();</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p class="method">function makeAdder(x) {<br />
+      return function(y) {<br />
+      return x + y;<br />
+      };<br />
+      }</p>
+      <p><span class="method">var add5 = makeAdder(5); </span>// store 5 in add5<span class="method"><br />
+        var add10 = makeAdder(10); </span>// store 10 in add10</p>
+      <p><span class="method">document.write(add5(2));  </span>// 7<span class="method"><br />
+    document.write(add10(2)); </span>// 12</p></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="delay">delay</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/delay/">delay()</a></td>
+    <td width="350" align="left" valign="top">Schedules the function to run after the specified amount of time, passing  any arguments given.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/defer/">defer()</a></td>
+    <td width="350" align="left" valign="top">same as deplay but do it when browser is not busy</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="wrap-function">wrap function</a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/bind/">bind()</a></td>
+    <td width="350" align="left" valign="top">Binds this function to the given context by wrapping it in another function and returning the wrapper. Whenever the resulting &quot;bound&quot; function is called, it will call the original ensuring that this is set to context. Also optionally curries arguments for the function.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/methodize/">methodize() </a></td>
+    <td width="350" align="left" valign="top">Wraps the function inside another function that, when called, pushes this to the original function as the first argument (with any further arguments following it)</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/language/Function/prototype/wrap/">wrap() </a></td>
+    <td width="350" align="left" valign="top">Returns a function &quot;wrapped&quot; around the original function.</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

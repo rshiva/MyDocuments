@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0px;
+	padding:20px;
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 70%;
+	height:3500px;
+}
+
+
+/*------------- table -------------*/
+table{
+	border-collapse:collapse;
+}
+table, td, th{
+	border:1px solid #AAAAAA;
+}
+
+/*------------- heading -------------*/
+h2{margin:10px; padding:0px;}
+h3{margin:0px; padding:0px;}
+
+
+
+/*------------- color theme -------------*/
+.white{color:#FFF;}
+.method{color:#900B09;}
+.green{color:#007700; font-weight:bold;}
+
+tr:hover, tr.altrow{
+	background-color:#c4e4ff;
+}
+
+/*------------- nav -------------*/
+#nav {
+	font-size:14px;
+	padding-bottom:40px;
+}
+#nav li{
+	margin-top:10px;
+}
+
+
+a:link {text-decoration:underline;}    /* unvisited link */
+a:visited {text-decoration:underline;} /* visited link */
+a:hover {text-decoration:none;}   /* mouse over link */
+a:active {text-decoration:none;}  /* selected link */
+a:link, a:visited, a:hover, a:active{color:#900B09; text-decoration:underline;}
+

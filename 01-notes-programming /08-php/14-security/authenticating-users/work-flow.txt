@@ -1,0 +1,5 @@
+1. The client requests a restricted resource.
+2. The server responds to this request with a 401 (Unauthorized access) response message.
+3. The client (browser) recognizes the 401 response and produces a pop-up authentication prompt
+4. The user-supplied credentials (namely, the username and password) are sent back to the server for validation.
+5. If the user is validated, the browser stores the authentication information within its authentication cache. This cache information remains within the browser until the cache is cleared, or until another 401 server response is sent to the browser.

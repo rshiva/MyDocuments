@@ -1,0 +1,8 @@
+If you¡¯re running PHP 5.1 or newer on Linux, PDO is bundled by default, although you should specifically configure it as a shared extension in order to facilitate driver updates. A typical configuration line looks like this:
+%>./configure --with-zlib --enable-pdo=shared --with-pdo-mysql=shared --withmysql
+
+If you¡¯re using PHP 5.1 or newer on the Windows platform, all you need to do is add references to the PDO and driver extensions within the php.ini file. For example, to enable support for MySQL, add the following lines to the Windows Extensions section:
+
+extension=php_pdo_mysql.dll
+
+Again, don¡¯t forget to restart Apache in order for the php.ini changes to take effect.

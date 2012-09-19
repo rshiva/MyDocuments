@@ -1,0 +1,31 @@
+mysqldump + mysql
+---------------------------------------------------------------
+# backup local database
+mysqldump -h localhost -u root -p --opt test_vote>c:/mydb.sql
+
+
+# backup data from server
+mysqldump -h218.16.120.8 -u user -p --opt demo>c:/bkup.sql
+
+
+# import database to local
+1) mysql -u user -p
+2) password
+3) use database
+4) source c:\mybd.sql
+
+
+
+phpmyadmin
+---------------------------------------------------------------
+
+backup data
+1) choose database
+2) select export from top nav
+3) set export page and click go, save file to local computer
+
+
+restore data
+1) if the database doesn't exist, create the database first
+2) choose the database
+3) select import from top nav to restore data.

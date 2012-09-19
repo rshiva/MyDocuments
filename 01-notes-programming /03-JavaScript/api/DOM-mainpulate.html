@@ -1,0 +1,1167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>DOM mainpulation</h1>
+<hr />
+<p>&nbsp;</p>
+<h2> <a name="basic" id="basic"></a>Basic</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="createElements" id="createElements"></a>Create elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><p class="method">document.createElement()</p>
+      <p class="method">&nbsp;</p></td>
+    <td width="350" align="left" valign="top"><span class="method">var a = document.createElement('a');<br />
+a.setAttribute('class', 'foo');<br />
+a.setAttribute('href', '/foo.html');<br />
+a.appendChild(document.createTextNode(&quot;Next page&quot;));</span></td>
+    <td width="150" align="left" valign="top"><p class="method">new Element()</p>
+    <p class="method">&nbsp;</p></td>
+    <td width="350" align="left" valign="top"><span class="method">var a = new Element('a', {'class': 'foo', href: '/foo.html'}).update(&quot;Next page&quot;);</span></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://madrobby.github.com/scriptaculous/builder/">builder</a></td>
+    <td align="left" valign="top">scriptaculous method to create dom elements</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="addElements" id="addElements"></a>Add elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"> <p class="method">appendChild)</p>
+      <p class="method">&nbsp;</p></td>
+    <td width="350" align="left" valign="top"><span class="method">var myElement = document.createElement('&lt;div style=&quot;width:600; height:200;background-color:blue;&quot;&gt;www.java2s.com&lt;/div&gt;');<br />
+document.all.myBody.appendChild(myElement); </span></td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/append/">append()</a></td>
+    <td width="350" align="left" valign="top">Insert content, specified by the parameter, to the end of each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/appendTo/">appendTo()</a></td>
+    <td width="350" align="left" valign="top">Insert every element in the set of matched elements to the end of the target.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/prepend/">prepend()</a></td>
+    <td width="350" align="left" valign="top">Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/prependTo/">prependTo()</a></td>
+    <td width="350" align="left" valign="top">Insert every element in the set of matched elements to the beginning of the target.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/insert/">insert()</a></td>
+    <td width="350" align="left" valign="top">Inserts content above, below, at the top, and/or at the bottom of the given element, depending on the option(s) given.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">insertBefore()</td>
+    <td width="350" align="left" valign="top">Inserts a new child element before an existing child element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/wrap/"></a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/insertBefore/">insertBefore()</a></td>
+    <td width="350" align="left" valign="top">Insert every element in the set of matched elements before the target.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/insertAfter/">insertAfter()</a></td>
+    <td width="350" align="left" valign="top">Insert every element in the set of matched elements after the target.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/before/">before()</a></td>
+    <td width="350" align="left" valign="top">Insert content, specified by the parameter, before each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/after/">after()</a></td>
+    <td width="350" align="left" valign="top">Insert content, specified by the parameter, after each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="copyElements" id="copyElements"></a>Copy elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/clone/">clone()</a></td>
+    <td width="350" align="left" valign="top">Returns a duplicate of element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/clone/">clone()</a></td>
+    <td width="350" align="left" valign="top">Create a deep copy of the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="replaceElements" id="replaceElements"></a>Replace elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/replace/">replace()</a></td>
+    <td width="350" align="left" valign="top">Replaces element itself with newContent and returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/replaceAll/">replaceAll()</a></td>
+    <td width="350" align="left" valign="top">Replace each target element with the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/replaceWith/">replaceWith()</a></td>
+    <td width="350" align="left" valign="top">Replace each element in the set of matched elements with the provided new content.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeElements" id="removeElements"></a>Remove elements</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">removeChild()</td>
+    <td width="350" align="left" valign="top">Removes a child element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/remove/">remove()</a></td>
+    <td width="350" align="left" valign="top"><p>Completely removes element from the document and returns it.</p></td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/remove/">remove()</a></td>
+    <td width="350" align="left" valign="top">Remove the set of matched elements from the DOM.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/detach/">detach()</a></td>
+    <td width="350" align="left" valign="top">Remove the set of matched elements from the DOM.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/empty/">empty()</a></td>
+    <td width="350" align="left" valign="top">Remove all child nodes of the set of matched elements from the DOM.</td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<h2><a name="className" id="className"></a>Class Name</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="hasClassName" id="hasClassName"></a>Has class name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/hasClassName/">hasClassName()</a></td>
+    <td width="350" align="left" valign="top">Checks whether element has the given CSS className.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/hasClass/">hasClass()</a></td>
+    <td width="350" align="left" valign="top">Determine whether any of the matched elements are assigned the given class.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="addClassName" id="addClassName"></a>Add class name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/addClassName/">addClassName()</a></td>
+    <td width="350" align="left" valign="top">Adds the given CSS class name to the element's class names.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/addClass/">addClass()</a></td>
+    <td width="350" align="left" valign="top">Adds the specified class(es) to each of the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeClassName" id="removeClassName"></a>Remove class name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/removeClassName/">removeClassName()</a></td>
+    <td width="350" align="left" valign="top">Removes element's CSS className and returns element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/removeClass/">removeClass()</a></td>
+    <td width="350" align="left" valign="top">Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="toggleClassName" id="toggleClassName"></a>Toggle class name</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/toggleClassName/">toggleClassName()</a></td>
+    <td width="350" align="left" valign="top">Toggles element's CSS className and returns element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/toggleClass/">toggleClass()</a></td>
+    <td width="350" align="left" valign="top">Add or remove one or more classes from each element in the set of matched elements, depending on either the class's presence or the value of the switch argument.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="CSS" id="CSS"></a>CSS</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getStyle" id="getStyle"></a>Get style</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/getStyle/">getStyle()</a></td>
+    <td width="350" align="left" valign="top">Returns the given CSS property value of element. property can be specified in either of its CSS or camelized form.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/css/">css( propertyName )</a></td>
+    <td width="350" align="left" valign="top">Get the value of a style property for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setStyle" id="setStyle"></a>Set style</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">style</span></td>
+    <td width="350" align="left" valign="top">Sets or returns the style attribute of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/setStyle/">setStyle()</a></td>
+    <td width="350" align="left" valign="top">Modifies element's CSS style properties. </td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/css/">css( propertyName, value )</a></td>
+    <td width="350" align="left" valign="top">Set one or more CSS properties for the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="cssHooks" id="cssHooks"></a>CSS hooks</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/jQuery.cssHooks/">cssHooks</a></td>
+    <td width="350" align="left" valign="top">Provides a way to hook directly into jQuery to override how particular CSS properties are retrieved or set. Amongst other uses, cssHooks can be used to create custom, browser-normalized properties for CSS3 features such as box-shadows and gradients.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="attribute" id="attribute"></a>Attribute </h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="hasAttribute" id="hasAttribute"></a>Has attribute</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/hasAttribute/">hasAttribute()</a></td>
+    <td width="350" align="left" valign="top">Simulates the standard compliant DOM method hasAttribute for browsers missing it (Internet Explorer 6 and 7).</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getAttribute" id="getAttribute"></a>Get attribute</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">getAttribute()</td>
+    <td width="350" align="left" valign="top">Returns the value of an attribute</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/readAttribute/">readAttribute()</a></td>
+    <td width="350" align="left" valign="top">Returns the value of element's attribute or null if attribute has not been specified.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/attr/">attr()</a></td>
+    <td width="350" align="left" valign="top">Get the value of an attribute for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setAttribute" id="setAttribute"></a>Set attribute</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">setAttribute()</td>
+    <td width="350" align="left" valign="top">Adds a new attribute to an element</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_writeattribute.htm">writeAttribute()</a></td>
+    <td width="350" align="left" valign="top">Adds, specifies or removes attributes passed as either a hash or a name/value pair.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeAttribute" id="removeAttribute"></a>Remove attribute</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">removeAttribute()</td>
+    <td width="350" align="left" valign="top">Removes a specified attribute from an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/removeAttr/">removeAttr()</a></td>
+    <td width="350" align="left" valign="top">Remove an attribute from each element in the set of matched elements.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="htmlAndText" id="htmlAndText"></a>HTML / Text Content</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getContent" id="getContent"></a>Get content</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_innerhtml.asp">innerHTML</a></td>
+    <td width="350" align="left" valign="top">get content</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/html/">html()</a></td>
+    <td width="350" align="left" valign="top">Get the HTML contents of the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/text/">text() </a></td>
+    <td width="350" align="left" valign="top">Get the combined text contents of each element in the set of matched elements, including their descendants.</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/contents/">contents()</a></td>
+    <td align="left" valign="top">Get the children of each element in the set of matched elements, including text and comment nodes.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="updateContent" id="updateContent"></a>Update content</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_innerhtml.asp">innerHTML</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the HTML contents (+text) of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/update/">update()</a></td>
+    <td width="350" align="left" valign="top">Replaces the content of element with the provided newContent argument and returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/replace/">replace()</a></td>
+    <td width="350" align="left" valign="top">Replaces element by the content of the html argument and returns the removed element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/insert/">insert() </a></td>
+    <td width="350" align="left" valign="top">Inserts content before, after, at the top of, or at the bottom of element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/cleanWhitespace/">cleanWhitespace()</a></td>
+    <td width="350" align="left" valign="top">Removes all of element's text nodes which contain only whitespace. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/empty/">empty()</a></td>
+    <td width="350" align="left" valign="top">Tests whether element is empty (i.e. contains only whitespace).</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_dir.asp">dir</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the text direction of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/html/#html2">html( htmlString )</a></td>
+    <td width="350" align="left" valign="top">Set the HTML contents of each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/text/#text2">text( textString )</a></td>
+    <td width="350" align="left" valign="top">Set the content of each element in the set of matched elements to the specified text.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeContent" id="removeContent"></a>Remove content</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/empty/">empty()</a></td>
+    <td width="350" align="left" valign="top">Remove all child nodes of the set of matched elements from the DOM.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="wrap" id="wrap"></a>Wrap</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/wrap/">wrap()</a></td>
+    <td width="350" align="left" valign="top">Wraps an element inside another, then returns the wrapper.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/wrap/">wrap()</a></td>
+    <td width="350" align="left" valign="top">Wrap an HTML structure around each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/wrapAll/">wrapAll()</a></td>
+    <td width="350" align="left" valign="top">Wrap an HTML structure around all elements in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/wrapInner/">wrapInner()</a></td>
+    <td width="350" align="left" valign="top">Wrap an HTML structure around the content of each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/unwrap/">unwrap()</a></td>
+    <td width="350" align="left" valign="top">Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="property" id="property"></a>Property</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getProperty" id="getProperty"></a>Get property</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/prop/">prop( propertyName )</a></td>
+    <td width="350" align="left" valign="top">Get the value of a property for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setProperty" id="setProperty"></a>Set property</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/prop/">prop( propertyName,value )</a></td>
+    <td width="350" align="left" valign="top">Set one or more properties for the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="removeProperty" id="removeProperty"></a>Remove property</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/removeProp/">removeProp()</a></td>
+    <td width="350" align="left" valign="top">Remove a property for the set of matched elements.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="value" id="value"></a>Value</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getValue" id="getValue"></a>Get value</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/val/">val()</a></td>
+    <td width="350" align="left" valign="top">Get the current value of the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setValue" id="setValue"></a>Set value</h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/val/">val( value )</a></td>
+    <td width="350" align="left" valign="top">Set the value of each element in the set of matched elements.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="widthAndHeight" id="widthAndHeight"></a>Width / Height</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getWidth" id="getWidth"></a>Get width</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">width</span></td>
+    <td width="350" align="left" valign="top">Sets or returns the width attribute of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/getWidth/">getWidth()</a><a href="http://api.prototypejs.org/dom/Element/prototype/getDimensions/"></a></td>
+    <td width="350" align="left" valign="top">Finds and returns the computed width of element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/width/">width()</a></td>
+    <td width="350" align="left" valign="top">Get the current computed width for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">clientWidth</span></td>
+    <td width="350" align="left" valign="top">Returns the viewable width of the content on a page (not including   	borders, margins, or scrollbars)</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/getHeight/"></a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/height/"></a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/innerWidth/">innerWidth()</a><a href="http://api.jquery.com/innerHeight/"></a></td>
+    <td width="350" align="left" valign="top">Get the current computed width for the first element in the set of matched elements, including padding but not border.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/outerWidth/">outerWidth()</a></td>
+    <td width="350" align="left" valign="top">Get the current computed width for the first element in the set of matched elements, including padding and border.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setWidth" id="setWidth"></a>Set width</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">width</span></td>
+    <td width="350" align="left" valign="top">Sets or returns the width attribute of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/getWidth/"></a></td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/width/">width( value )</a></td>
+    <td width="350" align="left" valign="top">Set the CSS width of each element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getHeight" id="getHeight"></a>Get height</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">height</td>
+    <td width="350" align="left" valign="top">Sets or returns the height attribute of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/getHeight/">getHeight()</a></td>
+    <td width="350" align="left" valign="top">Finds and returns the computed height of element.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/height/">height()</a></td>
+    <td width="350" align="left" valign="top">Get the current computed height for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">clientHeight</td>
+    <td width="350" align="left" valign="top">Returns the viewable height of the content on a page (not including   	borders, margins, or scrollbars)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/innerHeight/">innerHeight()</a></td>
+    <td width="350" align="left" valign="top">Get the current computed height for the first element in the set of matched elements, including padding but not border.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/outerHeight/">outerHeight()</a></td>
+    <td width="350" align="left" valign="top">Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setHeight" id="setHeight"></a>Set height</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">height</td>
+    <td width="350" align="left" valign="top">Sets or returns the height attribute of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/height/">height( value )</a></td>
+    <td width="350" align="left" valign="top">Set the CSS height of every matched element.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getDimension" id="getDimension"></a>Get dimension</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/getDimensions/">getDimensions()</a></td>
+    <td width="350" align="left" valign="top">Finds the computed width and height of element and returns them as key/value pairs of an object.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="offsetScrollCoordinate" id="offsetScrollCoordinate"></a>Offset / Scroll / Coordinate</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getOffset" id="getOffset"></a>Get offset</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/offset/">offset() </a></td>
+    <td width="350" align="left" valign="top">Get the current coordinates of the first element in the set of matched elements, relative to the document.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">offsetHeight</span></td>
+    <td width="350" align="left" valign="top">Returns the height of an element, including borders and padding if any,   	but not margins</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">offsetWidth</span></td>
+    <td width="350" align="left" valign="top">Returns the width of an element, including borders and padding if any,   	but not margins</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">offsetTop</span></td>
+    <td width="350" align="left" valign="top">Returns the vertical offset position of the current element relative to   	its offset container</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">offsetLeft</span></td>
+    <td width="350" align="left" valign="top">Returns the horizontal offset position of the current element relative   	to its offset container</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">offsetParent</span></td>
+    <td width="350" align="left" valign="top">Returns the offset container of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_getoffsetparent.htm">getOffsetParent()</a></td>
+    <td width="350" align="left" valign="top">Returns element's closest positioned ancestor. If none is found, the body element is returned.</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/offsetParent/">offsetParent()</a></td>
+    <td width="350" align="left" valign="top">Get the closest ancestor element that is positioned.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_positionedoffset.htm">positionedOffset ()</a></td>
+    <td width="350" align="left" valign="top">Returns element's offset relative to its closest positioned ancestor</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_cumulativeoffset.htm">cumulativeOffset()</a></td>
+    <td width="350" align="left" valign="top">Returns the offsets of element from the top left corner of the document.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_cumulativescrolloffset.htm">cumulativeScrollOffset()</a></td>
+    <td width="350" align="left" valign="top">Calculates the cumulative scroll offset of an element in nested scrolling containers.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_viewportoffset.htm">viewportOffset()</a></td>
+    <td width="350" align="left" valign="top">Returns the X/Y coordinates of element relative to the viewport.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setOffset" id="setOffset"></a>Set offset</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/offset/">offset( coordinates  ) </a></td>
+    <td width="350" align="left" valign="top">Set the current coordinates of every element in the set of matched elements, relative to the document.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getScroll" id="getScroll"></a>Get scroll</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">scrollHeight</span></td>
+    <td width="350" align="left" valign="top">Returns the entire height of an element (including areas hidden with   	scrollbars)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">scrollWidth</span></td>
+    <td width="350" align="left" valign="top">Returns the entire width of an element (including areas hidden with   	scrollbars)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_scrollto.htm">scrollTo ()</a></td>
+    <td width="350" align="left" valign="top">Scrolls the window so that element appears at the top of the viewport. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/scrollLeft/">scrollLeft() </a></td>
+    <td width="350" align="left" valign="top">Get the current horizontal position of the scroll bar for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/scrollTop/">scrollTop() </a></td>
+    <td width="350" align="left" valign="top">Get the current vertical position of the scroll bar for the first element in the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="setScroll" id="setScroll"></a>Set scroll</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/scrollLeft/">scrollLeft( value )</a></td>
+    <td width="350" align="left" valign="top">Set the current horizontal position of the scroll bar for each of the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/scrollTop/">scrollTop( value )</a></td>
+    <td width="350" align="left" valign="top">Set the current vertical position of the scroll bar for each of the set of matched elements.</td>
+  </tr>
+  <tr>
+    <td colspan="6" align="left" valign="top" bgcolor="#CCCCCC"><h3><a name="getCoordinate" id="getCoordinate"></a>Get coordinate</h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/position/">position()</a></td>
+    <td width="350" align="left" valign="top">Get the current coordinates of the first element in the set of matched elements, relative to the offset parent.</td>
+  </tr>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="hideShow" id="hideShow"></a>Hide / Show</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/visible/">visible()</a></td>
+    <td width="350" align="left" valign="top">Returns a Boolean indicating whether or not element is visible</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/hide/">hide() </a></td>
+    <td width="350" align="left" valign="top">Hides and returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/show/">show()</a></td>
+    <td width="350" align="left" valign="top">Displays and returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/toggle/">toggle()</a></td>
+    <td width="350" align="left" valign="top">Toggles the visibility of element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="position" id="position"></a>Position</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_absolutize.htm">absolutize()</a></td>
+    <td width="350" align="left" valign="top">Turns element into an absolutely-positioned element without changing its position in the page layout.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_relativize.htm">relativize ()</a></td>
+    <td width="350" align="left" valign="top">Turns element into an relatively-positioned element without changing its position in the page layout.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_makepositioned.htm">makePositioned()</a></td>
+    <td width="350" align="left" valign="top">Allows for the easy creation of CSS containing block by setting element's CSS position to 'relative' if its initial position is either 'static' or undefined. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_undopositioned.htm">undoPositioned ()</a></td>
+    <td width="350" align="left" valign="top">Sets element back to the state it was before Element.makePositioned was applied to it. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_element_cloneposition.htm">clonePosition()</a></td>
+    <td width="350" align="left" valign="top">Clones the position and/or dimensions of source onto element as defined by the optional argument options.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="clip" id="clip"></a>Clip</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/makeClipping/">makeClipping()</a></td>
+    <td width="350" align="left" valign="top">Simulates the poorly supported CSS clip property by setting element's overflow value to 'hidden'. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/undoClipping/">undoClipping() </a></td>
+    <td width="350" align="left" valign="top">Sets element's CSS overflow property back to the value it had before Element.makeClipping() was applied. Returns element.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="others" id="others"></a>Others</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_id.asp">id</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the id of an element</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/prototype/identify/">identify()</a></td>
+    <td width="350" align="left" valign="top">Returns element's ID. If element does not have an ID, one is generated, assigned to element, and returned.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><span class="method">tagName</span></td>
+    <td width="350" align="left" valign="top">Returns the tagname of an element as a string (in uppercase)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.prototypejs.org/dom/Element/setOpacity/">setOpacity()</a></td>
+    <td width="350" align="left" valign="top">Sets the visual opacity of an element while working around inconsistencies in various browsers.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_title.asp">title</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the title attribute of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_lang.asp">lang</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the language code for an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">nodeName</td>
+    <td width="350" align="left" valign="top">Returns the tagname of an element (in uppercase)</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">nodeType</td>
+    <td width="350" align="left" valign="top">Returns the type of the element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">nodeValue</td>
+    <td width="350" align="left" valign="top">Returns the value of the element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top" class="method">ownerDocument</td>
+    <td width="350" align="left" valign="top">Returns the root element (document object) for an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_tabindex.asp">tabIndex</a></td>
+    <td width="350" align="left" valign="top">Sets or returns the tab order of an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top"><a href="http://www.w3schools.com/jsref/prop_html_accesskey.asp">accessKey</a></td>
+    <td width="350" align="left" valign="top">Sets or returns an accesskey for an element</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="form" id="form"></a>Form</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_form_disable.htm">disable()</a></td>
+    <td width="350" align="left" valign="top">Disables the form as a whole. Form controls will be visible but uneditable.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://www.tutorialspoint.com/prototype/prototype_form_enable.htm">enable()</a></td>
+    <td width="350" align="left" valign="top">Enables a fully or partially disabled form.</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h2><a name="saveData" id="saveData"></a>Save data to DOM elements</h2>
+<table width="1500" border="1" cellpadding="10" cellspacing="0" class="datalist">
+  <tr class="heading">
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Javascript</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>Prototype</strong></h3></td>
+    <td colspan="2" align="left" valign="top" bgcolor="#666666"><h3 class="white"><strong>JQuery</strong></h3></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/data/#data1">data( key, value )</a></td>
+    <td width="350" align="left" valign="top">Store arbitrary data associated with the matched elements<br /></td>
+  </tr>
+  <tr>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top">&nbsp;</td>
+    <td width="350" align="left" valign="top">&nbsp;</td>
+    <td width="150" align="left" valign="top"><a href="http://api.jquery.com/data/#data2">data( key )</a></td>
+    <td width="350" align="left" valign="top">Returns value at named data store for the first element in the jQuery collection, as set by data(name, value).</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+    <td align="left" valign="top"><a href="http://api.jquery.com/removeData/">removeData()</a></td>
+    <td align="left" valign="top">Remove a previously-stored piece of data.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<script type="text/javascript">
+// get tr array
+var rows = document.getElementsByTagName('tr');
+for (var i=0;i<rows.length;i++){
+	rows[i].onmouseover = function(){		//鼠标在行上面的时候
+		this.className += 'altrow';
+	}
+	rows[i].onmouseout = function(){		//鼠标离开时
+		this.className = this.className.replace('altrow','');
+	}
+}
+</script>
+</body>
+</html>

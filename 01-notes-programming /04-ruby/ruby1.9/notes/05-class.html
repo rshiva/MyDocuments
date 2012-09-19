@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Class</h1></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+    <h2>Create class</h2>
+    <table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="60%" align="left" valign="top" class="code"><p>class BookInStock      <br />
+          &nbsp;&nbsp;def initialize(isbn, price)          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;@isbn = isbn          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;@price = Float(price)      <br />
+          &nbsp;&nbsp;end <br />
+          end <br />
+          b1 = BookInStock.new(&quot;isbn1&quot;, 3) <br />
+        </p></td>
+        <td width="40%" align="left" valign="top"><p>create class</p>
+          <p>&nbsp;</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Create sub class</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top"><p class="code">class Parent<br />
+            &nbsp;&nbsp;def initialize<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@greeting = &quot;Hello &quot;<br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p class="code">class Child &lt; Parent<br />
+              &nbsp;&nbsp;def initialize(name)<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;@name = name<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;super() <span class="import"># call constructor in parent class to create greeting</span><br />
+              &nbsp;&nbsp;end<br />
+  <br />
+              &nbsp;&nbsp;def say_hello<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;puts @greeting + @name<br />
+              &nbsp;&nbsp;end<br />
+              end</p>
+            <p><span class="code">my_variable = Child.new(&quot;harry&quot;)<br />
+          my_variable.say_hello</span> =&gt; Hello harry</p></td>
+          <td width="40%" align="left" valign="top"><p>create sub class and call super method</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Set / read attribute</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top" class="code"><p>class MyBook<br />
+            &nbsp;&nbsp;attr_reader :isbn, :price<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;def initialize(isbn,price)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@isbn = isbn<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@price = Float(price)<br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p>iBook = MyBook.new(&quot;Name&quot;,14.5)<br />
+          puts iBook.price</p></td>
+          <td width="40%" align="left" valign="top"><p>read attribute with Ruby build in method. <span class="import">read only</span></p>
+          <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>class MyBook<br />
+            &nbsp;&nbsp;attr_accessor :price<br />
+            &nbsp;&nbsp;def initialize(isbn,price)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@isbn = isbn<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@price = price<br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p>iBook = MyBook.new(&quot;design book&quot;, 30)<br />
+          puts iBook.price</p></td>
+          <td align="left" valign="top"><p>read attribute with Ruby build in method. <span class="import">read/write</span></p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>class MyBook<br />
+            attr_accessor :price<br />
+            &nbsp;&nbsp;def initialize(isbn,price)<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@isbn = isbn<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;@price = price<br />
+            &nbsp;&nbsp;end<br />
+            end</p>
+            <p>iBook = MyBook.new(&quot;design book&quot;,30)<br />
+              puts iBook.price<br />
+              iBook.price = iBook.price*0.75<br />
+          puts iBook.price</p></td>
+          <td align="left" valign="top"><p>write attribute </p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Access control</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td colspan="2" align="left" valign="top"><ul>
+            <li><span class="import">Public method</span>: can be access by everyone. Methods are public by default</li>
+            <li><span class="import">Protected methods</span>: can by access by other instance of same class or its sub class.</li>
+            <li><span class="import">Private methods</span>: self</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td width="60%" align="left" valign="top" class="code"><p>class MyClass<br />
+  &nbsp;&nbsp;protected<span class="import"> # subsequent methods will be 'protected'</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;def method1 <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;#...<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;end<br />
+  <br />
+  &nbsp;&nbsp;private <span class="import"># subsequent methods will be 'private'</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;def method3<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;#...<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;end<br />
+  <br />
+  &nbsp;&nbsp;public <span class="import"># subsequent methods will be 'public'</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;def method5<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;#...<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;end<br />
+          end</p></td>
+          <td width="40%" align="left" valign="top">define access control</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="code"><p>class MyClass<br />
+             &nbsp;&nbsp;def method1<br />
+             &nbsp;&nbsp;end<br />
+             &nbsp;&nbsp;# ... and so on<br />
+             &nbsp;&nbsp;public :method1, :method4<br />
+             &nbsp;&nbsp;protected :method2<br />
+             &nbsp;&nbsp;private :method3<br />
+          end</p></td>
+          <td align="left" valign="top">define access control</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Include other class</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td align="left" valign="top" class="code"><p>require 'csv' <span class="import"># include Ruby library</span><br />
+            require_relative 'book_in_stock' <span class="import">#include another class</span></p>
+            <p>class CsvReader<br />
+              &nbsp;&nbsp;def initialize<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;@books_in_stock = [] <span class="import"># create empty array</span><br />
+              &nbsp;&nbsp;end<br />
+  <br />
+              &nbsp;&nbsp;def read_in_csv_data(csv_file_name)<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;CSV.foreach(csv_file_name, headers: true) do |row|<span class="import"> # loop data from CSV file</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@books_in_stock &lt;&lt; BookInStock.new(row[&quot;ISBN&quot;], row[&quot;Amount&quot;]) <span class="import"># create  BookInStock instance and push to empty array</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;end<br />
+              &nbsp;&nbsp;end<br />
+              end</p></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

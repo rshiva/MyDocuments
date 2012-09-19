@@ -1,0 +1,1 @@
+"SELECT sku, title FROM products WHERE id=1

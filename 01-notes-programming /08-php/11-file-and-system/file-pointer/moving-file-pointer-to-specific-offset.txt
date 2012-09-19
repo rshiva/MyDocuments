@@ -1,0 +1,14 @@
+Moving the File Pointer to a Specific Offset
+
+fseek(resource handle, int offset [, int whence])
+
+If the optional parameter whence is omitted, the position is set offset bytes from the beginning of the file. Otherwise, whence can be set to one of three possible values, which affect the pointer¡¯s position:
+
+SEEK_CUR: 
+Sets the pointer position to the current position plus offset bytes.
+
+SEEK_END: 
+Sets the pointer position to the EOF plus offset bytes. In this case, offset must be set to a negative value.
+
+SEEK_SET: 
+Sets the pointer position to offset bytes. This has the same effect as omitting whence.
