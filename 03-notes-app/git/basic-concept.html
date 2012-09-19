@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td><a href="http://progit.org/book/" target="_blank">http://progit.org/book/</a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#333333" class="white"><h2>The different with Git and SVN</h2></td>
+  </tr>
+  <tr>
+    <td><p><img src="images/18333fig0104-tn.png" width="500" height="223" /><img src="images/18333fig0105-tn.png" width="500" height="222" /></p>
+    <p>Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again—just a link to the previous identical file it has already stored. </p>
+    <ul>
+      <li>Git doesn’t need to go out to the server to get the history and display it for you—it simply reads it directly from your local database. Even if you are not online, git still works fine in most of time</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td bgcolor="#333333"><h2 class="white">The Three States</h2></td>
+  </tr>
+  <tr>
+    <td><p><img src="images/18333fig0106-tn.png" width="500" height="460" /></p>
+      <ol>
+        <li>You modify files in your working directory.</li>
+        <li>You stage the files, adding snapshots of them to your staging area.</li>
+        <li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+        </li>
+      </ol>   
+      <ul>
+        <li><strong>The Git directory</strong> is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</li>
+        <li> <strong>The working directory</strong> is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</li>
+        <li><strong>The staging area</strong> is a simple file, generally contained in your Git directory, that stores information about what will go into your next commit. It’s sometimes referred to as the index, but it’s becoming standard to refer to it as the staging area.</li>
+      </ul>
+      </td>
+  </tr>
+  <tr>
+    <td bgcolor="#333333" class="white"><h2>Git Branching</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p>Branching means you diverge from the main line of development and continue to do work without messing with that main line.</p>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="59%" align="left" valign="top"><img src="images/18333fig0301-tn.png" width="500" height="338" /></td>
+          <td width="41%" align="left" valign="top">Figure 3-1. Single commit repository data.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0302-tn.png" width="500" height="223" /></td>
+          <td align="left" valign="top">Figure 3-2. Git object data for multiple commits.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0303-tn.png" width="500" height="251" /></td>
+          <td align="left" valign="top">Figure 3-3. Branch pointing into the commit data’s history.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0304-tn.png" width="445" height="223" /></td>
+          <td align="left" valign="top">Figure 3-4. Multiple branches pointing into the commit’s data history.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0305-tn.png" width="445" height="310" /></td>
+          <td align="left" valign="top">Figure 3-5. HEAD file pointing to the branch you’re on.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0306-tn.png" width="392" height="310" /></td>
+          <td align="left" valign="top">Figure 3-6. HEAD points to another branch when you switch branches.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0307-tn.png" width="500" height="287" /></td>
+          <td align="left" valign="top">Figure 3-7. The branch that HEAD points to moves forward with each commit.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0308-tn.png" width="500" height="287" /></td>
+          <td align="left" valign="top">Figure 3-8. HEAD moves to another branch on a checkout.</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><img src="images/18333fig0309-tn.png" width="500" height="382" /></td>
+          <td align="left" valign="top">Figure 3-9. The branch histories have diverged.</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:20px;
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+
+table{
+	border-collapse:collapse;
+}
+table, td, th{
+	border:1px solid #AAAAAA;
+}
+
+.white{color:#FFF;}
+.method{color:#900B09;}
+.green{color:#007700;}
+
+h2{margin:10px; padding:0px;}
+h3{margin:0px; padding:0px;}
+
+a:link {text-decoration:underline;}    /* unvisited link */
+a:visited {text-decoration:underline;} /* visited link */
+a:hover {text-decoration:none;}   /* mouse over link */
+a:active {text-decoration:none;}  /* selected link */
+a:link, a:visited, a:hover, a:active{color:#900B09; text-decoration:underline;}
+</style>
+</head>
+
+<body>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#333333"><h2 class="white">working with project</h2></td>
+  </tr>
+  <tr>
+    <td width="500" rowspan="2" align="left" valign="top"><h3>create project</h3></td>
+    <td align="left" valign="top">Select File&gt;New Project</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">drop whole folder into text mate icon</td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>In terminal, open folder as project</h3></td>
+    <td align="left" valign="top"><ol>
+      <li>mate . <span class="green"># a project of the current directory</span></li>
+      <li>mate a.txt b.txt <span class="green"># a project of two files</span></li>
+      <li>mate *.csv <span class="green"># a project of CSV files in the current directory</span></li>
+    </ol></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <td colspan="2" align="left" valign="top" bgcolor="#333333"><h2 class="white">working with drawer</h2></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>change drawer to another side</h3></td>
+    <td align="left" valign="top"><ol>
+      <li>Select <span class="method">View &gt; Hide Project Drawer</span>, if the drawer is currently visible.</li>
+      <li>Move the project window close enough to the edge of the screen so the drawer doesn’t have room to open on the side you don’t want it on.</li>
+      <li>Bring the drawer <span class="method">back with View &gt; Show Project Drawer</span>.</li>
+    </ol></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>group files in drawer</h3></td>
+    <td align="left" valign="top"><p> You can also create groups for the files using the folder button at the bottom of the project drawer or by Apple -clicking several files and selecting Group Selected Files from the action menu at the bottom of the project drawer,</p></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="500" bgcolor="#333333"><h2 class="white">content editing</h2></td>
+    <td width="500" bgcolor="#333333">&nbsp;</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="left" valign="top"><h3>edit model</h3></td>
+    <td align="left" valign="top"><p>Freehanded Editing </p>
+      <ul>
+        <li>Edit&gt;Mode&gt;Freehanded Editing</li>
+        <li>TextMate will allow you to place the caret freely with keyboard arrow movement or a mouse click. If you insert content, TextMate will add the needed whitespace to support the content at that location.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><p>Overwrite Mode</p>
+      <ul>
+        <li>Edit&gt;Mode&gt;Overwrite Mode</li>
+        <li>Instead of inserting text between characters as it usually does, TextMate will replace the characters above the caret as you type.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>add and remove tab</h3></td>
+    <td width="500" align="left" valign="top"><ul>
+      <li>add tab <span class="method">apple + ]</span></li>
+      <li>remove tab <span class="method">apple + [</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" rowspan="5" align="left" valign="top"><h3>move cursor by keyboard</h3></td>
+    <td width="500" align="left" valign="top"><ul>
+      <li>move to a specific line <span class="method">apple + l</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><ul>
+      <li>beginning of the line <span class="method">apple + left</span></li>
+      <li>Beginning of line (aware of wrapped content) <span class="method">control + a</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><ul>
+      <li>end of the line <span class="method">apple + right</span></li>
+      <li>End of line (aware of wrapped content) <span class="method">control + e</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><ul>
+      <li>Beginning of document <span class="method">apple + up</span></li>
+      <li>End of document <span class="method">apple + down</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><ul>
+      <li>Beginning of word <span class="method">alt + left</span></li>
+      <li>End of word <span class="method">alt + right</span></li>
+      <li>Beginning of column <span class="method">alt + up</span></li>
+      <li>End of column <span class="method">alt + down</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>select text by keyboard</h3></td>
+    <td width="500" align="left" valign="top">select text as same as move cursor by keyboard. but need plus shift key.</td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"> <h3>auto completion </h3></td>
+    <td width="500" align="left" valign="top">Every chance you get, start typing the first few letters of something, and press &quot;ESC&quot;. You can use this to finish off variables, methods, tags, or any other name already in your document. When there is more than one completion choice, you just keep pressing &quot;ESC&quot; to cycle through them.</td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>Change letter case</h3></td>
+    <td width="500" align="left" valign="top"><ul>
+      <li>Uppercase selection <span class="method">Ctrl+U</span></li>
+      <li>Lowercase selection <span class="method">Ctrl+Shift+U</span></li>
+      <li>Title case each word of the selection <span class="method">Ctrl+Alt+U</span></li>
+      <li>Reverse the case of the selection <span class="method">Ctrl+G</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>remove new line character</h3></td>
+    <td width="500" align="left" valign="top" class="method">Ctrl+Q</td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>check Spelling</h3></td>
+    <td width="500" align="left" valign="top"><span class="method">Ctrl + click</span> the miss spelling word to see correction</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>Find and replace in current document</h3></td>
+    <td align="left" valign="top" class="method">Apple+F</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>Find and replace in current project</h3></td>
+    <td align="left" valign="top" class="method">Shift+Apple+F</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="10">
+  <tr>
+    <td colspan="2" bgcolor="#333333"><h2 class="white">Bundles</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>open bundle menu</h3></td>
+    <td align="left" valign="top" class="method">Ctrl+ESC</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>open bundle menu</h3></td>
+    <td align="left" valign="top" class="method">Ctrl+Alt+Apple+B</td>
+  </tr>
+  <tr>
+    <td width="500" align="left" valign="top"><h3>TODO bundle</h3></td>
+    <td align="left" valign="top"><p>comments management</p>
+      <ul>
+        <li>open TODO list <span class="method">Ctrl+Shift+T</span></li>
+        <li>insert TODO list <span class="method">type todo then use tab</span></li>
+        <li>insert CHANGED list <span class="method">type todo then tab, change TODO to CHANGED</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="500" rowspan="3" align="left" valign="top"><h3>HTML bundle</h3></td>
+    <td align="left" valign="top">Insert Open/Close Tag Ctrl+Shift+&lt;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><ul>
+      <li>Wrap Selection in Open/Close Tag <span class="method">Ctrl+Shift+W</span></li>
+      <li>Wrap Each Selected Line in Open/Close Tag <span class="method">Ctrl+Shift+Apple+W</span></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">Type tag name then use tab to insert  snippet</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>CSS bundle</h3></td>
+    <td align="left" valign="top">type identifier then use tab to insert snippet</td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="left" valign="top"><h3>Source bundle</h3></td>
+    <td align="left" valign="top">comment selection <span class="method">Apple+/</span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">insert comment body <span class="method">Alt+Apple+/</span></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3>create bundle and snippet</h3></td>
+    <td align="left" valign="top"><ol>
+      <li>open bundle menu</li>
+      <li>click new bundle</li>
+      <li>click new snippet</li>
+      <li>write the content for snippet</li>
+      <li>set activation to tab trigger</li>
+      <li>set the trigger name</li>
+      <li>in the document, after type trigger use tab to insert the snippet</li>
+    </ol></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

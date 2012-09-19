@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333" class="white"><h2>GitHUB Setup </h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h3 dir="ltr"><strong>Global setup:</strong></h3>
+      <a href="http://help.github.com/set-up-git-redirect">Set up git</a><br />
+ git config --global user.name &quot;Your Name&quot;<br />
+ git config --global user.email harry74323@hotmail.com<br />
+<a href="https://github.com/account/ssh">Add your public key</a><br />
+    <strong><br />
+</strong>
+<h3 dir="ltr"><strong>Next steps:</strong></h3>
+<span class="code">mkdir 01-notes<br />
+cd 01-notes<br />
+git init<br />
+touch README<br />
+git add README<br />
+git commit -m 'first commit'<br />
+git remote add origin git@github.com:roamingronin/01-notes.git<br />
+git push -u origin master</span><strong><br />
+    <br />
+</strong>
+<h3 dir="ltr"><strong>Existing Git Repo?</strong></h3>
+<span class="code">cd existing_git_repo<br />
+git remote add origin git@github.com:roamingronin/01-notes.git<br />
+git push -u origin master</span><strong><br />
+    <br />
+</strong>
+<h3 dir="ltr"><strong>Importing a Subversion Repo? </strong><a href="https://github.com/roamingronin/01-notes/imports/new">Click here</a><strong>    <br />
+</strong> </h3>
+<h3 dir="ltr"><strong>When you're done: </strong><a href="https://github.com/roamingronin/01-notes">Continue</a><a href="https://github.com/roamingronin/01-notes"></a></h3></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333" class="white"><h2>Config Git</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top"><h3>config file</h3></td>
+        <td width="70%" align="left" valign="top"><ul>
+          <li><strong>/etc/gitconfig file</strong>: Contains values for every user on the system and all their repositories. If you pass the option --system to git config, it reads and writes from this file specifically.</li>
+          <li><strong>~/.gitconfig file</strong>: Specific to your user. You can make Git read and write to this file specifically by passing the --global option.<br />
+            <pre class="code">$ git config --global user.name &quot;John Doe&quot; <br />$ git config --global user.email johndoe@example.com</pre>
+          </li>
+          <li><strong>config file in the git directory</strong> (that is, .git/config) of whatever repository you’re currently using: Specific to that single repository. </li>
+        </ul>
+          <p>Each level overrides values in the previous level</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>Check config</h3></td>
+        <td align="left" valign="top"><span class="code">$ git config --list</span></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333" class="white"><h2>Getting and Creating Projects</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top"><h3>init</h3></td>
+        <td width="70%" align="left" valign="top"><p><span class="code">$ git init </span>// use git init to make an existing directory of content into a new Git repository. You can do this in any directory at any time, completely locally.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>clone</h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git clone git://github.com/schacon/simplegit.git</span> // use git clone to get a local copy of a Git repository so you can look at it or start modifying it.</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333"><h2><span class="white">Basic Snapshotting</span></h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top"><h3>add<br />
+        </h3></td>
+        <td width="70%" align="left" valign="top"><p><span class="code">$ git add  hello.rb </span>// add specific file</p>
+          <p><span class="code">$ git add . </span>// add all files in working directory</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>status<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git status</span> // check changed files</p>
+          <p><span class="code">$ git status -s</span> // with the -s option, which gives you short output.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>diff<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git diff</span> // show diff of unstaged changes</p>
+          <p><span class="code">$ git diff --cached</span> // show diff of staged changes</p>
+          <p><span class="code">$ git diff HEAD</span> // show diff of all staged or unstaged changes</p>
+          <p><span class="code">$ git diff --stat</span> // show summary of changes instead of a full diff</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>commit<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git commit -m 'commit message'</span> // commit files with commit message</p>
+          <p><span class="code">$ git commit -am 'commit message'</span> // automatically stage all tracked, modified files before the commit</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>reset<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git reset HEAD -- file name with extension</span> // remove specific file from staging (reverts the staging  to what was)</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>rm, mv</h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git rm file</span> // remove specific file from staging (kicks the file off the stage entirely)</p>
+          <p><span class="code">$ git rm file</span> // remove specific file from staging and also delete from hard disc</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333"><h2><span class="white">Branching and Merging</span></h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top"><h3>branch<br />
+        </h3></td>
+        <td width="70%" align="left" valign="top"><p><span class="code">$ git branch</span> // list your available branches</p>
+          <p><span class="code">$ git branch testing</span> // create a branch name is testing</p>
+          <p><span class="code">$ git branch -d testing</span> // delete testing branch</p>
+          <p><span class="code">$ git checkout -b erlang</span> // create a branch called &quot;erlang&quot; and switch to immedicatly</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>checkout<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git checkout master</span> // switch to master branch</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>merge<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git merge removals</span> // merge branch &quot;removals&quot; into current branch</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>log<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git log</span> // show commit history of a branch</p>
+          <p><span class="code">$ git log --oneline</span> // short output</p>
+          <p><span class="code">$ git log --oneline --graph</span> // show merge and commit in graph</p>
+          <p><span class="code">$ git log --oneline erlang ^master</span> // see the commits in master branch</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>tag<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git tag -a v0.9 558151a</span> // add book mark for &quot;v0.9&quot; to specific commit &quot;558151a&quot;</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333"><h2 class="white">Sharing and Updating Projects</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top"><h3>fetch, pull<br />          
+          <br />
+        </h3></td>
+        <td width="70%" align="left" valign="top"><p><span class="code">$ git fetch github</span> // after can you can see all change for that </p>
+          <p><span class="code">$ git merge github/master</span> // merge data from master into your current branch</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>pull</h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git pull origin develop</span> // do fetch and merge from develop into current branch</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>push<br />
+        </h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git push origin develop</span> // upload data to remote</p></td>
+      </tr>
+      <tr>
+        <td rowspan="3" align="left" valign="top"><h3>remote<br />
+        </h3></td>
+        <td align="left" valign="top"><h4>list your remote aliases</h4>
+          <p><span class="code">$ git remote</span> // list your remote aliases</p>
+          <p><span class="code">$ git remote -v</span> // show      actual URL for each alias.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h4>add a new remote repository of your project</h4>
+          <p><span class="code">$ git remote add github git@github.com:schacon/hw.git</span> // </p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h4>removing an existing remote alias</h4>
+          <p class="code">$ git remote rm origin</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>issues</h3></td>
+        <td align="left" valign="top"><p><span class="code">$ git push github master </span><br />
+          To git@github.com:schacon/hw.git  ! [rejected]        master -&gt; master (non-fast-forward) error: failed to push some refs to 'git@github.com:schacon/hw.git' To prevent you from losing history, non-fast-forward updates were rejected Merge the remote changes before pushing again.  See the 'Note about fast-forwards' section of 'git push --help' for details.</p>
+          <p><span class="code">$ git fetch github<br />
+            $ 
+            git merge github/master</span><br />
+          // so update the data then push your changes </p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#333333" class="white"><h2>Inspection and Comparison</h2></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="30%" align="left" valign="top">log<br /></td>
+        <td width="70%" align="left" valign="top"><p><span class="code">$ git log --author=Linus --oneline -5</span> // view commit by a specific author</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">diff<br /></td>
+        <td align="left" valign="top"><p>&nbsp;</p></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
