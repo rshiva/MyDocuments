@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>IO input/output</h1></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+    <h2>Read file</h2>
+    <table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="60%" align="left" valign="top"><p><span class="code">IO.foreach(&quot;test.txt&quot;) {|line| puts line }</span> <span class="import">#open an file, read each line then close</span></p></td>
+        <td width="40%" align="left" valign="top"><p>read each line from the file</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">str = IO.read(&quot;test.txt&quot;)<br />
+          puts str.length</p></td>
+        <td align="left" valign="top"><p>read file and put to string</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">arr = IO.readlines(&quot;test.txt&quot;)<br />
+          puts arr[0] </p></td>
+        <td align="left" valign="top"><p>read file and put to array</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><p class="code">require 'net/http'</p>
+          <p class="code"><span class="import"># get method</span><br />
+            uri = URI('http://10.0.0.6/~harry74323/test.txt')<br />
+            puts Net::HTTP.get(uri)</p>
+          <p class="code"><span class="import"># post method</span><br />
+            uri = URI('http://10.0.0.6/~harry74323/test.txt')<br />
+            res = Net::HTTP.post_form(uri, 'q' =&gt; 'ruby', 'max' =&gt; '50')<br />
+          puts res.body</p></td>
+        <td align="left" valign="top"><p>read file using http</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Write file</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="60%" align="left" valign="top"><p class="code">File.open(&quot;test.txt&quot;, &quot;w&quot;) do |file|<br />
+            &nbsp;&nbsp;file.puts &quot;See?&quot;<br />
+          end</p></td>
+          <td width="40%" align="left" valign="top">&nbsp;</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

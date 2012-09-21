@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%; font-size:14px;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Control</h1></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top">
+    <h2>Comparison Operators</h2>
+    <p class="import">a holds 10 and variable b holds 20</p>
+    <table width="100%" border="1" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="12%" align="left" valign="top"><h3>==</h3></td>
+        <td width="62%" align="left" valign="top"><p>Checks if the value of two operands are equal or not, if yes then condition becomes true.</p></td>
+        <td width="26%" align="left" valign="top"><p>(a == b) is not true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>!=</h3></td>
+        <td align="left" valign="top"><p>Checks if the value of two operands are equal or not, if values are not equal then condition becomes true.</p></td>
+        <td align="left" valign="top"><p>(a != b) is true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>&gt;</h3></td>
+        <td align="left" valign="top"><p>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</p></td>
+        <td align="left" valign="top"><p>(a &gt; b) is not true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>&lt;</h3></td>
+        <td align="left" valign="top"><p>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true</p></td>
+        <td align="left" valign="top"><p>(a &lt; b) is true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>&gt;=</h3></td>
+        <td align="left" valign="top"><p>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</p></td>
+        <td align="left" valign="top"><p>(a &gt;= b) is not true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>&lt;=</h3></td>
+        <td align="left" valign="top"><p>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</p></td>
+        <td align="left" valign="top"><p>(a &lt;= b) is true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>&lt;=&gt;</h3></td>
+        <td align="left" valign="top"><p>Combined comparison operator. </p>
+          <ul>
+            <li>Returns 0 if first operand equals second, </li>
+            <li>Returns 1 if first operand is greater than the second</li>
+            <li> Returns -1 if first operand is less than the second.</li>
+          </ul></td>
+        <td align="left" valign="top"><p>(a &lt;=&gt; b) returns -1.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>===</h3></td>
+        <td align="left" valign="top"><p>Used to test equality within a when clause of a <em>case</em> statement.</p></td>
+        <td align="left" valign="top"><p>(1...10) === 5 returns true.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>.eql?</h3></td>
+        <td align="left" valign="top"><p>True if the receiver and argument have both the same type and equal values.</p></td>
+        <td align="left" valign="top"><p>1 == 1.0 returns true, but 1.eql?(1.0) is false.</p></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top"><h3>equal?</h3></td>
+        <td align="left" valign="top"><p>True if the receiver and argument have the same object id.</p></td>
+        <td align="left" valign="top"><p>1 == 1.0 returns true, but 1.eql?(1.0) is false.</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Logical  Operators
+      </h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="12%" align="left" valign="top"><h3>and</h3></td>
+          <td width="62%" align="left" valign="top"><p>Called Logical AND operator. If both the operands are true then then condition becomes true.</p></td>
+          <td width="26%" align="left" valign="top"><p>(a and b) is true.</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>&amp;&amp;</h3></td>
+          <td align="left" valign="top"><p>Called Logical AND operator. If both the operands are non zero then then condition becomes true.</p></td>
+          <td align="left" valign="top"><p>(a &amp;&amp; b) is true.</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>or</h3></td>
+          <td align="left" valign="top"><p>Called Logical OR Operator. If any of the two operands are non zero then then condition becomes true.</p></td>
+          <td align="left" valign="top"><p>(a or b) is true.</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>||</h3></td>
+          <td align="left" valign="top"><p>Called Logical OR Operator. If any of the two operands are non zero then then condition becomes true.</p></td>
+          <td align="left" valign="top"><p>(a || b) is true.</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>!</h3></td>
+          <td align="left" valign="top"><p>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</p></td>
+          <td align="left" valign="top"><p>!(a &amp;&amp; b) is false.</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>not</h3></td>
+          <td align="left" valign="top"><p>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</p></td>
+          <td align="left" valign="top"><p>not(a &amp;&amp; b) is false.</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Condition</h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="17%" rowspan="2" align="left" valign="top"><h3>if</h3></td>
+          <td width="83%" align="left" valign="top"><p class="code">if x &gt; 3<br />
+              &nbsp;&nbsp;puts &quot;x &gt; 3&quot;<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">puts &quot;x &gt; 3&quot; if x &gt; 3</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>if...elsif</h3></td>
+          <td align="left" valign="top"><p class="code">if x&gt;10<br />
+            &nbsp;&nbsp;puts &quot;x&gt;10&quot;<br />
+            elsif x&lt;6<br />
+            &nbsp;&nbsp;puts &quot;x&lt;6&quot;<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td rowspan="2" align="left" valign="top"><h3>unless</h3></td>
+          <td align="left" valign="top"><p class="code">puts &quot;you will see this if x &lt; 6&quot; unless x&gt;6</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="code">unless x&gt;6<br />
+  &nbsp;&nbsp;puts &quot;you will see this if x &lt; 6&quot; <br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>unless...else</h3></td>
+          <td align="left" valign="top"><p class="code">x=1<br />
+            unless x&gt;2<br />
+            &nbsp;&nbsp;puts &quot;x is less than 2&quot;<br />
+            else<br />
+            &nbsp;&nbsp;puts &quot;x is greater than 2&quot;<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>case</h3></td>
+          <td align="left" valign="top"><p class="code">$age =  5</p>
+            <p class="code">case $age<br />
+              when 0 .. 2<br />
+              &nbsp;&nbsp;puts &quot;baby&quot;<br />
+              when 3 .. 6<br />
+              &nbsp;&nbsp;puts &quot;little child&quot;<br />
+              when 7 .. 12<br />
+              &nbsp;&nbsp;puts &quot;child&quot;<br />
+              when 13 .. 18<br />
+              &nbsp;&nbsp;puts &quot;youth&quot;<br />
+              else<br />
+              &nbsp;&nbsp;puts &quot;adult&quot;<br />
+          end</p></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><h2>Loop
+      </h2>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td colspan="2" align="left" valign="top">
+          <p>more information see iterator and enumerator notes about loop</p>
+          <table width="100%" border="1" cellspacing="0" cellpadding="20">
+            <tr>
+              <td width="16%" align="left" valign="top"><h3>up to</h3></td>
+              <td width="84%" align="left" valign="top"><p class="code">0.upto(5) do |x|<br />
+                &nbsp;&nbsp;print x, &quot; &quot;<br />
+                end<br />
+                <span class="import">#=&gt; 0,1,2,3,4,5</span></p></td>
+              </tr>
+            <tr>
+              <td align="left" valign="top"><h3>down to</h3></td>
+              <td align="left" valign="top"><p class="code">5.downto(0) do |x|<br />
+                &nbsp;&nbsp;print x, &quot; &quot;<br />
+                end<br />
+                <span class="import">#=&gt; 5,4,3,2,1,0</span></p></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><h3>setp</h3></td>
+              <td align="left" valign="top"><p><span class="code">0.step(10, 2) {|x| print x, &quot; &quot; }</span><br />
+                  <span class="import"># =&gt; 0 2 4 6 8 10</span></p></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><h3>times</h3></td>
+              <td align="left" valign="top"><p class="code">5.times do |i|<br />
+                print i, &quot; &quot;<br />
+                end<br />
+                <span class="import">#=&gt; 0 1 2 3 4</span></p></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td width="17%" align="left" valign="top"><h3>while</h3></td>
+          <td width="83%" align="left" valign="top"><p class="code">counter = 0<br />
+            while counter &lt; 3<br />
+              &nbsp;&nbsp;puts counter<br />
+              &nbsp;&nbsp;counter +=1<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>until</h3></td>
+          <td align="left" valign="top"><p class="code">counter = 0<br />
+            until counter &gt; 3<br />
+              &nbsp;&nbsp;puts counter<br />
+              &nbsp;&nbsp;counter +=1<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>for ... in</h3></td>
+          <td align="left" valign="top"><p class="code">for i in 1..3<br />
+            &nbsp;&nbsp;puts i<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>break</h3></td>
+          <td align="left" valign="top"><p class="code">for i in 0..5<br />
+            &nbsp;&nbsp;break if i &gt; 2 <br />
+            &nbsp;&nbsp;puts i<br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>redo</h3></td>
+          <td align="left" valign="top"><p class="code">for i in 0..5<br />
+            &nbsp;&nbsp;redo if i &lt; 2 <span class="import"># go in an infinite loop</span><br />
+          end</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>next</h3></td>
+          <td align="left" valign="top"><p><span class="code">for i in 0..5<br />
+            &nbsp;&nbsp;next if i &lt; 3<br />
+            &nbsp;&nbsp;puts i<br />
+            end</span><br />
+            <span class="import"># =&gt; 3,4,5</span></p></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,61 @@
+Concept if Migration
+	Why use migration
+	Migration is subclass of ActiveRecord
+	Migrations are stored as files in the db/migrate directory, one for each migration class.
+	Migrations file start with a time stamp and followed by an underscore followed by the name of the migration. The name of the migration class (CamelCased version) should match the latter part of the file name. 
+
+
+Create migration
+	generate scaffold
+	generate model
+	generate migration
+
+
+Write migration
+	ActiveRecord support method to handle database
+		add_column
+		add_index
+		change_column
+		change_table
+		create_table
+		drop_table
+		remove_index
+		rename_column
+	ActiveRecord helper
+	ActiveRecord support data type
+		:binary
+		:boolean
+		:date
+		:datetime
+		:decimal
+		:float
+		:integer
+		:primary_key
+		:string
+		:text
+		:time
+		:timestamp
+	Change method support
+		add_column
+		add_index
+		add_timestamps
+		create_table
+		remove_timestamps
+		rename_column
+		rename_index
+		rename_table
+	Up/Down method
+
+
+Edit migration
+	If you have already run the migration then you cannot just edit the migration and run the migration again: Rails thinks it has already run the migration and so will do nothing when you run rake db:migrate. You must rollback the migration (for example with rake db:rollback), edit your migration and then run rake db:migrate to run the corrected version.
+	In general editing existing migrations is not a good idea: you will be creating extra work for yourself and your co-workers and cause major headaches if the existing version of the migration has already been run on production machines. Instead, you should write a new migration that performs the changes you require. Editing a freshly generated migration that has not yet been committed to source control (or, more generally, which has not been propagated beyond your development machine) is relatively harmless.
+
+
+Run migration
+	rails use rake to run migrations. 
+	run specific ver of migration
+	roll back database
+	reset database
+	
+Migration and model validation issue

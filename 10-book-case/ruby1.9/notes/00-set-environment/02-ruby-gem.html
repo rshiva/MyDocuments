@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+ul,li{line-height:150%; line-height:150%; font-size:14px;}
+.code{color:#b51318;}
+.white{color:#ffffff;}
+.import{color:#090;}
+</style>
+</head>
+
+<body>
+<table width="1200" border="1" align="center" cellpadding="20" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><h1>Ruby Gem</h1>
+      <table width="100%" border="1" cellspacing="0" cellpadding="20">
+        <tr>
+          <td colspan="2" align="left" valign="top"><ul>
+            <li>RubyGems is a standardized packaging and installation framework for Ruby libraries and applications.</li>
+            <li>Developers bundle their applications and libraries into single files called gems. These files conform to a standardized format and typically are stored in repositories on the internet.</li>
+            <li>The RubyGems system provides a command-line tool, appropriately named gem, for manipulating these gem files. It also provides integration into Ruby so that your programs can access gems as libraries.</li>
+            <li>Prior to Ruby 1.9, it was your responsibility to install the RubyGems software on your computer. Now, however, Ruby comes with RubyGems baked right in.</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td width="37%" align="left" valign="top"><h3>Check current installed Gems</h3></td>
+          <td width="63%" align="left" valign="top"><p class="code">$ gem list</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Install latest gem</h3></td>
+          <td align="left" valign="top"><p><span class="code">$ gem install [ gem name ]</span><br />
+              <span class="import">#If you’re running gem install on a Unix platform, you’ll need to prefix the command with sudo</span></p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Install specific gem by specific version</h3></td>
+          <td align="left" valign="top"><p class="code">$ gem install builder version '&lt; 2'</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Load gem</h3></td>
+          <td align="left" valign="top"><p class="code">$ require 'builder'</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Load specific version of gem</h3></td>
+          <td align="left" valign="top"><p class="code">gem 'builder', '&lt; 1.0'<br />
+          require 'builder'</p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Read gem help document</h3></td>
+          <td align="left" valign="top"><p><span class="code">$ gem server</span> <span class="import"># start server to show all gem help documents</span></p>
+          <p><span class="code">$ Ctrl + c</span> <span class="import"># stop gem server</span></p></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><h3>Remove gem</h3></td>
+          <td align="left" valign="top"><p class="code">$ gem uninstall [ gem name ]</p></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left" valign="top">more command check <a href="http://docs.rubygems.org/read/chapter/10">http://docs.rubygems.org/read/chapter/10</a></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
