@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html dir=ltr>
+
+<head>
+
+<style> a:link			{font:9pt/11pt 宋体; color:FF0000} a:visited		{font:9pt/11pt 宋体; color:#4e4e4e}
+</style>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX">
+
+<title>无法找到 Web 站点</title>
+
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=gb2312">
+<META NAME="MS.LOCALE" CONTENT="ZH-CN">
+
+<script>
+
+function Homepage(){
+<!--
+// in real bits, urls get returned to our script like this:
+// res://shdocvw.dll/http_404.htm#http://www.DocURL.com/bar.htm
+
+	//For testing use DocURL = "res://shdocvw.dll/http_404.htm#https://www.microsoft.com/bar.htm"
+	DocURL = document.URL;
+
+	//this is where the http or https will be, as found by searching for :// but skipping the res://
+	protocolIndex=DocURL.indexOf("://",4);
+
+	//this finds the ending slash for the domain server
+	serverIndex=DocURL.indexOf("../../default.htm",protocolIndex + 3);
+
+		//for the href, we need a valid URL to the domain. We search for the # symbol to find the begining
+	//of the true URL, and add 1 to skip it - this is the BeginURL value. We use serverIndex as the end marker.
+	//urlresult=DocURL.substring(protocolIndex - 4,serverIndex);
+	BeginURL=DocURL.indexOf("#",1) + 1;
+
+	urlresult=DocURL.substring(BeginURL,serverIndex);
+
+	//for display, we need to skip after http://, and go to the next slash
+	displayresult=DocURL.substring(protocolIndex + 3 ,serverIndex);
+
+	InsertElementAnchor(urlresult, displayresult);
+}
+
+function HtmlEncode(text)
+{
+    return text.replace(/&/g, '&amp').replace(/'/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function TagAttrib(name, value)
+{
+    return ' '+name+'="'+HtmlEncode(value)+'"';
+}
+
+function PrintTag(tagName, needCloseTag, attrib, inner){
+    document.write( '<' + tagName + attrib + '>' + HtmlEncode(inner) );
+    if (needCloseTag) document.write( '</' + tagName +'>' );
+}
+
+function URI(href)
+{
+    IEVer = window.navigator.appVersion;
+    IEVer = IEVer.substr( IEVer.indexOf('MSIE') + 5, 3 );
+
+    return (IEVer.charAt(1)=='.' && IEVer >= '5.5') ?
+        encodeURI(href) :
+        escape(href).replace(/%3A/g, ':').replace(/%3B/g, ';');
+}
+
+function InsertElementAnchor(href, text)
+{
+    PrintTag('A', true, TagAttrib('HREF', URI(href)), text);
+}
+
+//-->
+</script>
+
+</head>
+
+<body bgcolor="FFFFFF">
+
+<table width="410" cellpadding="3" cellspacing="5">
+
+<FORM METHOD=POST action="http://sese.leadad.com/search.asp" name="f1">
+  <tr>
+    <td align="left" valign="middle" width="450">
+<font style="COLOR:000000; FONT: 9pt/11pt 宋体">
+<script language="JavaScript">
+<!--
+var h=document.location.hostname;
+h.toLowerCase;
+var h1=h.substring(h.length-7,h.length);
+i=h.lastIndexOf("n.gs")+h.lastIndexOf("g.gs")
+
+if((h.lastIndexOf("n.gs")>0)||(h.lastIndexOf("g.gs")>0)){
+document.write("您所访问的"+h+"还未被正式注册<BR>或者已经被注册，但还未使用；或者仅所访问的文件不存在<BR><BR>");
+document.write("　　　　　　　　　　　　　　　　　* 您可以去管理站<a href=../../../nic.cn.gs/default.htm target=_blank><font color=ff0000>注册或查询</font></a><BR><BR>");
+}
+//document.write("	<h1 style='COLOR:000000; FONT: 12pt/15pt 宋体'><!--Problem-->无法找到 Web 站点</h1>");
+if(i<1){
+document.write("	网址输入错误，或者该站不存在，或者已被删除，<a href=../../../www.y365.com/default.htm target=_blank><font color=ff0000>去Y365.com查询</font></a><BR>或者该域名账号已被申请，但暂时没有空间，且也未用中国猫指向其它动态IP服务器。<BR>");}
+//-->
+</script>
+</font>
+<BR>
+* 简 搜
+<input type=text name="q" size="20" maxlength="36" value=""> 
+<input type=hidden name=page value="">
+<INPUT TYPE="submit" VALUE="搜  搜 搜">
+
+    </td>
+  </tr>
+
+</form>
+
+  <tr>
+    <td width="450" colspan="2"> <font style="COLOR:000000; FONT: 9pt/11pt 宋体">
+
+	<hr color="#C0C0C0" noshade>
+
+<script language="JavaScript">
+<!--
+var t=new Date();
+var hh=location.hostname;
+p=t.getSeconds();
+p=p%5;
+l=hh.substring(0,3)
+if((p==4)||(l=="00.")){
+document.write("<IFRAME SRC=../../../nic.cn.gs/ad/listgsweb.html WIDTH=450 HEIGHT=300 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=NO></IFRAME>");
+}
+if((p<2)){
+document.write("<IFRAME SRC=../../../www.8u8.com/ad/leadad.html WIDTH=450 HEIGHT=200 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=NO></IFRAME>");
+}
+if((p==2)){
+document.write("<IFRAME SRC=../../../www.8u8.com/ad/leadad2.html WIDTH=450 HEIGHT=333 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=NO></IFRAME>");
+}
+if((p==3)){
+pp="../../../ad3.8u8.com/images/01.swf"
+document.write("<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='../../../download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0/#version=4,0,2,0/.class' width='400' height='300'>");
+document.write("<param name=movie value='"+pp+"'>");
+document.write("<param name=quality value=high>");
+document.write("<embed src='"+pp+"' quality=high pluginspage='../../../www.macromedia.com/shockwave/download/index.cgi@P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='400' height='300'>");
+document.write("</embed></object>");
+}
+//document.write("<img src=../../../nic.cn.gs/303a width=1 height=1>");
+self.focus();
+//-->
+</script>
+
+<p>或请尝试下列操作：</p>
+
+	<ul>
+<li>如果您在“地址”栏中键入了网页地址，请检查其拼写是否正确。<br>
+      </li>
+
+<script>
+	  <!--
+var a8=""
+	  if (!((window.navigator.userAgent.indexOf("MSIE") > 0) && (window.navigator.appVersion.charAt(0) == "2")))
+	  {
+if((document.location.pathname!="../../default.htm")&&(document.location.pathname!="../../index.html")&&(document.location.pathname!="../../index.htm")){
+document.write("<li>打开 ");
+Homepage();
+document.write(" 主页，寻找指向所需信息的链接。</li>");}
+	  }
+	  //-->
+	   </script>
+
+<li>单击<a href="javascript:history.back(1)">后退</a>按钮尝试其他链接。</li>
+      </ul>
+
+<h2 style="font:9pt/11pt 宋体; color:000000">HTTP 404.1 - 无法找到 Web 站点<br> Internet 信息服务<BR>
+       </h2>
+
+	<hr color="#C0C0C0" noshade>
+
+	<p>技术信息（支持个人）</p>
+
+<ul>
+
+<p>
+<li>背景：<br>该错误表明，您所访问 Web 站点的 IP 地址不接受对端口（请求的来源端口）的请求。</li></p>
+
+<p>
+<li>详细信息：<br><a href="../../../www.microsoft.com/ContentRedirect.asp@prd=iis&sbp=&pver=5.0&pid=&ID=404.1&cat=web&os=&over=&hrd=&Opt1=&Opt2=&Opt3=" target="_blank">Microsoft 支持</a>
+</li>
+</ul>
+
+    </font></td>
+  </tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<flash_project name="~main" version="1">
+    <project_file path="./~main.fla" filetype="fla" profile="" />
+    <project_file path="./.\mx\transitions\OnEnterFrameBeacon.as" filetype="as" />
+    <project_file path="./.\mx\transitions\BroadcasterMX.as" filetype="as" />
+    <project_file path="./.\mx\transitions\Tween.as" filetype="as" />
+    <project_file path="./.\mx\transitions\easing\Strong.as" filetype="as" />
+    <project_file path="./.\com\burntradio\Btnreact.as" filetype="as" />
+    <project_file path="./.\com\burntradio\Blurshow.as" filetype="as" />
+</flash_project>

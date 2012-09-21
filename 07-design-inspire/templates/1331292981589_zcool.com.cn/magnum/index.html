@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>Magnum</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="styles/skitter.styles.css" media="all" rel="stylesheet" />
+<!--[if lt IE 9]>
+<link href="styles/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+<script type="text/javascript" src="js/jquery.skitter.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//Menu
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 27,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason.
+					 
+	jQuery(document).ready(function() {
+		jQuery(".box_skitter_large").skitter({
+			animation: "random",
+			interval: 3000,
+			numbers: false, 
+			numbers_align: "right", 
+ 			hideTools: true,
+			controls: false,
+			focus: false,
+			focus_position: true,
+			width_label:'340px', 
+			enable_navigation_keys: true,   
+ 			progressbar: false
+		});
+	});				  
+					 
+});
+</script>
+</head>
+<body>
+
+<div id="outer-container">
+	<div id="container">
+    	<div id="top">
+        	<div id="logo"><a href="index.html"><img src="images/logo.png" alt=""  /></a></div><!-- end #logo -->
+            <div id="nav">
+                <ul id="topnav" class="sf-menu">
+                    <li><a href="index.html"  class="current">Home</a></li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="single-product.html">Product Details</a></li>
+                            <li><a href="single.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Portfolio</a>
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio One Column</a></li>
+                            <li><a href="portfolio2.html">Portfolio Two Column</a></li>
+                            <li><a href="portfolio3.html">Portfolio Three Column</a></li>
+                            <li><a href="portfolio4.html">Portfolio Four Column</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul><!-- #topnav -->
+            </div><!-- #nav -->	
+        </div><!-- end #top -->
+        
+        <div id="header">
+        	<div id="slider-container">
+            	
+                <div class="box_skitter box_skitter_large">
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/content/slide1.jpg" alt="" /></a>
+                            <div class="label_text">
+                                <h3 class="colortext uppercase"> We are Magnum</h3>
+                                <span>Morbi porta neque ut neque iaculis ac venenatis sem consequat.Integer vitae diam quam.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/content/slide2.jpg" alt="" /></a>
+                            <div class="label_text">
+                                <h3 class="colortext uppercase">We make a great themes</h3>
+                                <span>Morbi porta neque ut neque iaculis ac venenatis sem consequat.Integer vitae diam quam.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/content/slide3.jpg" alt="" /></a>
+                            <div class="label_text">
+                                <h3 class="colortext uppercase">Lorem ipsum dolor sit.</h3>
+                                <span>Morbi porta neque ut neque iaculis ac venenatis sem consequat.Integer vitae diam quam.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="shadow-img-slider"></div>
+            </div><!-- end #slider-container -->
+        </div><!-- end #header -->
+        
+        <div id="after-header">
+        	<h1>Hello! WE are <span class="colortext">Magnum</span> and we make a great <span class="colortext">Website</span> Themes.<br/>Let’s Take a Tour and You’ll Love This tHeme.</h1>
+        </div><!-- end #after-header -->
+        
+        <div id="before-content" class="patternbox">
+        	<div class="shadow"></div>
+        	<div class="container940">
+            	<ul class="customlist">
+                	<li>
+                        <img src="images/icons/icon1.png" alt="" class="alignleft" /><h3 class="valignmiddle">Flexible Templates </h3>
+                        <span>Proin cursus purus vitae quam facilisis ac fermentum enim volutpat. Vestibulum non justo augue, sed mattis nisi. Donec id lectus erat, ac imperdiet nisl. </span>
+                    </li>
+                	<li>
+                        <img src="images/icons/icon2.png" alt="" class="alignleft" /><h3 class="valignmiddle">Clean and Simple</h3>
+                        <span>Proin cursus purus vitae quam facilisis ac fermentum enim volutpat. Vestibulum non justo augue, sed mattis nisi. Donec id lectus erat, ac imperdiet nisl. </span>
+                    </li>
+                	<li class="last">
+                        <img src="images/icons/icon3.png" alt="" class="alignleft" /><h3 class="valignmiddle">Great Support</h3>
+                        <span>Proin cursus purus vitae quam facilisis ac fermentum enim volutpat. Vestibulum non justo augue, sed mattis nisi. Donec id lectus erat, ac imperdiet nisl. </span>
+                    </li>
+                </ul>
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #before-content -->
+        
+		<div id="content">
+        	<div id="main">
+                <h2 class="title_pattern uppercase"><span>From The Blog</span></h2>
+                <ul id="recentpost">
+                    <li>
+                        <img src="images/content/pic1.jpg" alt="" class="frame" />
+                        <span class="shadowimg220"></span>
+                        <div class="entry-date">10/01/12 - <a href="#">No Comment</a></div>
+                        <h5 class="colortext"><a href="#">Proin tempus  imperdiet.</a></h5>
+                        <span>Cras faucibus ante ut diam laoreet a congue mi aliquam. Sed interdum nisl pharetra ipsum aliquet tempus. Mauris pulvinar, nisl nec...</span>
+                    </li>
+                    <li>
+                        <img src="images/content/pic2.jpg" alt="" class="frame" />
+                        <span class="shadowimg220"></span>
+                        <div class="entry-date">10/01/12 - <a href="#">No Comment</a></div>
+                        <h5 class="colortext"><a href="#">Proin tempus  imperdiet.</a></h5>
+                        <span>Cras faucibus ante ut diam laoreet a congue mi aliquam. Sed interdum nisl pharetra ipsum aliquet tempus. Mauris pulvinar, nisl nec...</span>
+                    </li>
+                    <li>
+                        <img src="images/content/pic3.jpg" alt="" class="frame" />
+                        <span class="shadowimg220"></span>
+                        <div class="entry-date">10/01/12 - <a href="#">No Comment</a></div>
+                        <h5 class="colortext"><a href="#">Proin tempus  imperdiet.</a></h5>
+                        <span>Cras faucibus ante ut diam laoreet a congue mi aliquam. Sed interdum nisl pharetra ipsum aliquet tempus. Mauris pulvinar, nisl nec...</span>
+                    </li>
+                    <li class="last">
+                        <img src="images/content/pic4.jpg" alt="" class="frame" />
+                        <span class="shadowimg220"></span>
+                        <div class="entry-date">10/01/12 - <a href="#">No Comment</a></div>
+                        <h5 class="colortext"><a href="#">Proin tempus  imperdiet.</a></h5>
+                        <span>Cras faucibus ante ut diam laoreet a congue mi aliquam. Sed interdum nisl pharetra ipsum aliquet tempus. Mauris pulvinar, nisl nec...</span>
+                    </li>
+                </ul>
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end #main -->
+		</div><!-- end #content -->
+        
+        <div id="after-content" class="patternbox">
+        	<div class="container940">
+            	<a href="#" class="button large">Buy Now !</a>
+            	<h2>Started Using the <span class="colortext">Magnum</span> Theme for Your Next <span class="colortext">Project</span> ? Available.</h2>
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #after-content -->
+        
+        
+		<div id="footer">
+        <div id="footer-pattern">
+        
+			<div class="container940">
+            	<div id="footcol1">
+                	<ul>
+                    	<li class="widget-container">
+                            <h2 class="widget-title">Latest Articles</h2>
+                            <ul id="recentpostwidget">
+                                <li>
+                                    <img src="images/content/pic5.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                                <li>
+                                    <img src="images/content/pic6.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol2">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Blogroll</h2>
+                            <ul>
+                            	<li><a href="#">Vivamus hendrerit venenatis quam</a></li>
+                                <li><a href="#">Aenean congue nisl in nibh</a></li>
+                                <li><a href="#">Proin tempus tempus orci eu imperdiet</a></li>
+                                <li><a href="#">Mauris interdum</a></li>
+                                <li><a href="#">Donec id turpis at risus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol3">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Gallery</h2>
+                            <ul id="flickr">
+                            	<li><a href="#"><img src="images/content/pic7.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic8.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic9.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic10.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic11.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic12.jpg" alt="" class="frame" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol4">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">About Magnum</h2>
+                            <div class="textwidget">
+                            <p>
+                            Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et imperdiet odio magna lobortis purus. 
+                            </p>
+                            <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui. </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           
+            <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+            
+        </div><!-- end #footer-pattern -->  
+		</div><!-- end #footer -->
+        
+        <div id="after-footer">
+        	<div class="container940">
+                <div id="sn">
+                	<ul>
+                    	<li><a href="#"><img src="images/icons/fb.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/stumbleupon.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/lastfm.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/twitter.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/youtube.png" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="footertext">
+                    Copyright &copy;2012 Magnum.  All Rights Reserved.
+                </div>
+               <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #after-footer -->
+        
+	</div><!-- end #container -->
+</div><!-- end #outer-container -->
+		
+</body>
+</html>
