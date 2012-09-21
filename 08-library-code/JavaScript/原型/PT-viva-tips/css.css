@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* CSS Document */
+#container{
+	margin:50px;
+}
+
+#cleaning-tips-widget { 
+	font: 13px Arial, sans-serif;
+}
+#cleaning-tips-widget sup {
+	vertical-align: super;
+	font-size: 10px;
+	line-height: 10px;
+}
+#cleaning-tips-widget h2 {
+	font-weight: bold; 
+	font-size: 16px; 
+	width: 650px; 
+	height: 38px; 
+	line-height: 38px;
+	background: #e0f3fb url('images/header-bar-bg.gif');
+	text-shadow: #fff 1px 1px 0px;
+	-moz-border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+	color: #0055a3;
+	text-align: center;
+	margin:0px;
+	border: 1px solid #7cc1e0;
+	border-bottom: 0px;
+}
+#cleaning-tips-widget ul {	
+	padding: 0px;
+	margin: 0px;
+}
+#cleaning-tips-widget li {
+	list-style: none;
+}
+#cleaning-tips-widget ul li {
+	padding: 0px;
+	margin: 0px;
+}
+#cleaning-tips-widget .hidden {
+	display: none;
+}
+#cleaning-tips-widget .container {
+	overflow: hidden;
+	position: relative;
+	background: #000;
+	border: 1px solid #7cc1e0;
+	width: 650px;
+}
+#cleaning-tips-widget .image {
+	width: 2600px;
+	height: 488px;
+}
+#cleaning-tips-widget .image h3 {
+	margin: 0px;
+}
+#cleaning-tips-widget .image .area {
+	width: 650px;
+	height: 100%;
+	float: left;
+}
+#cleaning-tips-widget .image .area ul {
+	height: 100%;
+}
+#cleaning-tips-widget .image .area li {
+	position: absolute;
+	width: auto;
+	height: auto;
+}
+#cleaning-tips-widget .image .area .popup {
+	width: 160px;
+	min-height: 120px;
+	padding: 15px 20px;
+	padding-left: 120px;
+	margin: 10px 8px;
+	background: #fff;
+	text-align: right;
+	color: #0055a3;
+	position: relative;
+	background: #fff url('images/tool-images.jpg') no-repeat -1750px 50%;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-box-shadow: 1px 1px 15px rgba(0,0,0,0.7);
+	-moz-box-shadow: 1px 1px 15px rgba(0,0,0,0.7);
+	box-shadow: 1px 1px 15px rgba(0,0,0,0.7);
+}
+#cleaning-tips-widget .image .area .popup p {
+	display: table;
+	height: 120px;
+	*height: auto;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 20px;
+}
+#cleaning-tips-widget .image .area .popup p span {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 20px;
+}
+#cleaning-tips-widget .area.kitchen {
+	background: url('images/kitchen.jpg') no-repeat;
+}
+#cleaning-tips-widget .area.kitchen .bay-leaves { 
+	left: 50px;
+	top: 330px;
+}
+#cleaning-tips-widget .area.kitchen .olive-oil { 
+	left: 90px;
+	top: 120px;
+}
+#cleaning-tips-widget .area.kitchen .bi-carb { 
+	left: 305px;
+	top: 175px;
+}
+#cleaning-tips-widget .area.kitchen .bi-carb .popup {
+}
+#cleaning-tips-widget .area.kitchen .eucalyptus-oil { 
+	left: 365px;
+	top: 325px;
+}
+#cleaning-tips-widget .area.kitchen .orange-peel { 
+	left: 145px;
+	top: 370px;
+}
+#cleaning-tips-widget .area.bathroom {
+	background: url('images/bathroom.jpg') no-repeat;
+}
+#cleaning-tips-widget .area.bathroom .coke {
+	left: 530px;
+	top: 370px;
+}	
+#cleaning-tips-widget .area.bathroom .toothpaste {
+	left: 150px;
+	top: 375px;
+}
+#cleaning-tips-widget .area.bathroom .liquid-soap {
+	left: 190px;
+	top: 100px;
+}
+#cleaning-tips-widget .area.bathroom .washing-powder {
+	left: 520px;
+	top: 255px;
+}
+#cleaning-tips-widget .area.outdoor {
+	background: url('images/outdoor.jpg') no-repeat;
+}
+#cleaning-tips-widget .area.outdoor .white-vinegar {
+	left: 490px;
+	top: 215px;
+}
+#cleaning-tips-widget .area.outdoor .eucalyptus-oil {
+	left: 350px;
+	top: 350px;
+}
+#cleaning-tips-widget .area.outdoor .essence-oil {
+	left: 380px;
+	top: 170px;
+}
+#cleaning-tips-widget .area.outdoor .bleach {
+	left: 100px;
+	top: 400px;
+}
+#cleaning-tips-widget .area.laundry {
+	background: url('images/laundry.jpg') no-repeat;
+}
+#cleaning-tips-widget .area.laundry .milk {
+	left: 385px;
+	top: 180px;
+}
+#cleaning-tips-widget .area.laundry .lemon {
+	left: 80px;
+	top: 120px;
+}
+#cleaning-tips-widget .area.laundry .clothes {
+	left: 550px;
+	top: 125px;
+}
+#cleaning-tips-widget .area.laundry .white-vinegar {
+	left: 450px;
+	top: 330px;
+}
+#cleaning-tips-widget .area.garage {
+	background: url('images/garage.jpg') no-repeat;
+}
+#cleaning-tips-widget .area.garage .baby-oil {
+	left: 215px;
+	top: 235px;
+}
+#cleaning-tips-widget .area.garage .salt {
+	left: 280px;
+	top: 320px;
+}
+#cleaning-tips-widget .area.garage .two-stroke-blower {
+	left: 25px;
+	top: 300px;
+}
+#cleaning-tips-widget .area.garage .kerosene {
+	left: 125px;
+	top: 400px;
+}
+#cleaning-tips-widget .area .bay-leaves .popup {
+	background: #fff url('images/tool-images.jpg') no-repeat 0px 50%;
+}	
+#cleaning-tips-widget .area .olive-oil .popup {
+	background: #fff url('images/tool-images.jpg') no-repeat -350px 50%;
+}
+#cleaning-tips-widget .area .bi-carb .popup {
+	background: #fff url('images/tool-images.jpg') no-repeat -700px 50%;
+}
+#cleaning-tips-widget .area .eucalyptus-oil .popup {
+	background: #fff url('images/tool-images.jpg') no-repeat -1050px 50%;
+}
+#cleaning-tips-widget .area .orange-peel .popup { 
+	background: #fff url('images/tool-images.jpg') no-repeat -1400px 50%;
+}
+#cleaning-tips-widget .area .coke .popup {
+	background: #fff url('images/tool-images-2.jpg') no-repeat 0px 50%;
+}
+#cleaning-tips-widget .area .toothpaste .popup {
+	background: #fff url('images/tool-images-2.jpg') no-repeat -350px 50%;
+}
+#cleaning-tips-widget .area .washing-powder .popup {
+	background: #fff url('images/tool-images-2.jpg') no-repeat -1050px 50%;
+}
+#cleaning-tips-widget .area .liquid-soap .popup {
+	background: #fff url('images/tool-images-2.jpg') no-repeat -700px 50%;
+}
+#cleaning-tips-widget .area .white-vinegar .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat 0px 50%;
+}
+#cleaning-tips-widget .area .bleach .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat -350px 50%;
+}
+#cleaning-tips-widget .area .baby-oil .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat -700px 50%;
+}
+#cleaning-tips-widget .area .salt .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat -1050px 50%;
+}
+#cleaning-tips-widget .area .kerosene .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat -1400px 50%;
+}
+#cleaning-tips-widget .area .two-stroke-blower .popup {
+	background: #fff url('images/tool-images-3.jpg') no-repeat -1750px 50%;
+}
+#cleaning-tips-widget .area .milk .popup {
+	background: #fff url('images/tool-images-4.jpg') no-repeat 0px 50%;
+}
+#cleaning-tips-widget .area .lemon .popup {
+	background: #fff url('images/tool-images-4.jpg') no-repeat -350px 50%;
+}
+#cleaning-tips-widget .area .clothes .popup {
+	background: #fff url('images/tool-images-4.jpg') no-repeat -700px 50%;
+}
+#cleaning-tips-widget .area .essence-oil .popup {
+	background: #fff url('images/tool-images-4.jpg') no-repeat -1050px 50%;
+}
+#cleaning-tips-widget .area a.trigger {
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+	width: 53px;
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+	background: transparent url('images/tip-icons.png') no-repeat 0px 0px;
+	color: #fff;
+	text-indent: -9999px;
+	margin-left: 0px;
+}
+#cleaning-tips-widget .area a.trigger:hover {
+	background-position: 0px -53px;
+	width: 155px;
+}
+#cleaning-tips-widget .area a.trigger.right:hover {
+	background-position: 0px -103px;
+	margin-left: -102px;
+}
+#cleaning-tips-widget .nav {
+	width: 650px;
+	height: 35px;
+	line-height: 35px;
+	background: #e0f3fb url('images/nav-bar-bg.gif');
+	border: 1px solid #7cc1e0;
+	border-top: 0px;
+	position: relative;
+	overflow: visible;
+}
+#cleaning-tips-widget .nav .arrow {
+	background: transparent url('images/nav-bar-selected.png') no-repeat 50% 0px;
+	height: 11px;
+	width: 100%;
+	display: block;
+	margin-top: -11px;
+	z-index: 0;
+}
+#cleaning-tips-widget .nav ul {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	margin-left: -250px;
+}
+#cleaning-tips-widget .nav li {
+	float: left;
+	width: 100px;
+	height: 100%;
+	text-align: center; 
+}
+#cleaning-tips-widget .nav li a {
+	text-decoration: none;
+	color: #0055a3;
+	text-shadow: #fff 1px 1px 0px;
+	font-weight: bold;
+	line-height: 35px;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#cleaning-tips-widget .nav .arrows {
+	clear: both;
+}
+#cleaning-tips-widget .nav .active { 
+	background: #fff;
+}
+#cleaning-tips-widget .nav .active a { 
+	color: #333;
+}
+#cleaning-tips-widget .nav .active a:hover { 
+	background: #fff;
+	color: #333;
+}
+#cleaning-tips-widget .nav a:hover {
+	color: #fff;
+	background: #0055a3;
+	text-shadow: none;
+}
+#cleaning-tips-widget .nav a.button {
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: #b4dced;
+	text-indent: -9999px;
+}
+#cleaning-tips-widget .nav a.button:hover {
+	background: #0055a3;
+}
+#cleaning-tips-widget .nav a.button.prev {
+	background: url('images/nav-arrows.gif') no-repeat 0px 0px;
+	float: left;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+#cleaning-tips-widget .nav a.button.prev:hover {
+	background: url('images/nav-arrows.gif') no-repeat 0px -22px;
+}
+#cleaning-tips-widget .nav a.button.next {
+	background: url('images/nav-arrows.gif') no-repeat -22px 0px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 6px;
+}
+#cleaning-tips-widget .nav a.button.next:hover {
+	background: url('images/nav-arrows.gif') no-repeat -22px -22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

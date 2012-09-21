@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>index</title>
+		<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+		<script type="text/javascript" charset="utf-8" src="scroller.js"></script>
+		<script type="text/javascript">
+			document.observe('dom:loaded', function(){
+			  var rTicker = new scroller({type:"h",width:285,height:100,dir:1,auto:false,interval:5,speed:2,container:'scroller-container',item:'scroller-item',left:'left-scroll',right:'right-scroll'});
+			})
+		</script>
+	</head>
+	<body>
+		<!-- animated scroller -->
+		<div id="scroller">	
+			<a href="#" id="left-scroll">LEFT</a>	
+			
+			<div id="scroller-group">
+				<div id="scroller-container">
+				  <div class="scroller-item"><p>01</p></div>
+				  <div class="scroller-item"><p>02</p></div>
+				  <div class="scroller-item"><p>03</p></div>
+				  <div class="scroller-item"><p>04</p></div>
+				  <div class="scroller-item"><p>05</p></div>
+				  <div class="scroller-item"><p>06</p></div>
+				</div>
+			</div>
+			
+			<a href="#" id="right-scroll">RIGHT</a>
+		</div>
+	</body>	
+</html>

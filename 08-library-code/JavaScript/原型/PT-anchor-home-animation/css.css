@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+#container{
+	margin:50px;
+}
+
+#home #portfolio {
+	width: 962px;
+	height: 316px;
+	/*overflow: hidden;*/
+	position: relative;
+	float: left;
+	color: #595959;
+	padding: 37px 0 0;
+	border:1px solid #cccccc;
+}
+#home #portfolio #clients {
+	width: 962px;
+	height: 316px;
+	display: inline;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#home #portfolio .client {
+	width: 962px;
+	height: 316px;
+	float: left;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+#home #portfolio .client .image {
+	width: 460px;
+	height: 316px;
+	margin: 0 28px 0 0;
+	overflow: hidden;
+	float: left;
+}
+#home #portfolio .client .info {
+	float: left;
+	display: inline;
+	width: 474px;
+	margin: 70px 0 0;
+}
+#home #portfolio .client .info h5 {
+	font-size: 35px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	float: left;
+	position: relative;
+	display: inline;
+}
+#home #portfolio .client .info h5 span {
+	font-size: 16px;
+	font-weight: normal;
+	margin: 4px 0 0;
+	padding: 0;
+	display: block;
+}
+#home #portfolio .client .info ul {
+	float: right;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#home #portfolio .client .info ul li {
+	line-height: 18px;
+	padding: 0 0 0 14px;
+	margin: 0;
+	background: url('images/icon-arrow-selected.gif') 0px 4px no-repeat;
+}
+#home #portfolio .client .info ul li strong {
+	color: #000;
+}
+#home #portfolio .client .summary {
+	float: right;
+	display: inline;
+	width: 474px;
+	margin: 12px 0 0;
+}
+#home #portfolio .client .summary p {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+#home #portfolio .client .summary ul {
+	margin: 10px 0;
+	padding: 0;
+	list-style-type: none;
+}
+#home #portfolio .client .summary ul li {
+	line-height: 18px;
+	padding: 0 0 0 14px;
+	margin: 0;
+	background: url('images/icon-arrow-selected.gif') 0px 4px no-repeat;
+}
+#home #portfolio #next-btn {
+	display: block;
+	position: absolute;
+	padding: 0 18px 0 0;
+	right: 0px;
+	bottom: 15px;
+	z-index: 5000;
+	font-size: 16px;
+	font-weight: bold;
+	color: #0675e7;
+	background: url('images/icon-pointer.gif') center right no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

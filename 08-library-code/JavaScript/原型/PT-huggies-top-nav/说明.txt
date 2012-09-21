@@ -1,0 +1,35 @@
+<!-- 所有top nav 的图片尽可能做在一个图片里。可以优化读取 -->
+<!-- 网站CSS全局元素的定义，将通用属性首先在 CSS 里定义。后面就可以使用这些设置作为默认属性 -->
+
+
+<body> <!--使用固定的 background image。图片宽度符合1980浏览器宽度。图片两端过渡为纯色。超过1980后显示纯色。-->
+	<div id="page"> <!-- 主container, 居中。960宽 -->
+		<div id="header"> <!-- 所有 header 元素的 container -->
+			<div id="logo"> <!-- logo 元素的container，logo实际上做在 body background image 上 -->
+				<a> <!-- 使用定义宽度，制作hotspot -->
+				<span> <!-- 用背景图显示 AU 或 NZ -->
+			<div id="site-search"> <!-- search bar 元素的container。向右浮动 -->
+				<input> <!-- 使用 css精确定义bg -->
+				<input> <!-- image button -->
+			<div id="main-menu"> <!-- 一级菜单的container -->
+				<ul> 
+					<li> <!-- 设置background时，用 100% 0% 把分隔线的暗线放到最右侧 -->
+						<a> <!-- 把分隔线的亮线设为背景，和上面的暗线合为明暗分隔线 -->
+							<!-- 设置 .first, .last 无background image -->
+							<!-- 通过不同 class name 设置各个 alink 的宽度 -->
+			<div id="main-menu"> <!--  工具菜单的 container, 定义了 background，图标再背景上 -->
+				<ul>
+					<li>
+						<a> <!-- 通过 li.class a 来精确定义 menu item 的宽度 -->
+							<!-- 通过 a:hover 精确移动 background image 显示 rollover state -->
+							 <ul id="more-tools"> <!-- drop down container 定义宽度和位置 -->
+								<li><!-- 定义 background image -->
+									<!-- 第一个和最后一个 li 单独定义background image -->
+									<a> <!-- 定义 alink 的background image -->
+										<!-- 定义 alink 的rollover -->
+										<!-- drop down 显示后，定义alink 的active。当鼠标离开alink后，会继续显示active状态 -->
+										<span><!-- 定义文字的位置 -->
+											  <!-- #more-tools li.week-by-week a span 精确定位背景图片中的icon -->
+									
+						
+			

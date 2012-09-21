@@ -1,0 +1,48 @@
+CSS 思路
+<div id="today-on-huggies"> 
+// 所有元素的容器。
+// 使用 position: relative, 这样下层元素才能使用 position: absolutive
+// 使用 overflow hidden，隐藏超出尺寸的元素
+
+	<div class="left-container">
+	// 所有左侧元素的容器
+	// 使用 position: absolutive 定位，left: 0, top: 0 （左上对齐）
+	// 使用 overflow hidden，隐藏超出尺寸的元素
+	
+		<div class="item">
+		// 动画条容器
+		
+			<div class="text">
+			// 左侧文字的容器
+			// 使用 position: absolutive 定位，left: 0, bottom: 0 （下对齐）
+			// 使用半透明的 png 图做 background image。(产生半透明效果)
+			// z-index 高于其他元素
+			
+				<a><img> // Read more 按钮
+				<h4> 标题
+				<p> 内容
+				
+			<img class="large"> // 大图
+			
+	<div class="right-container">
+	// 所有右侧元素的容器 
+	// 使用 position: absolutive 定位，right: 0, top: 0 (右上对齐)
+	// 使用 overflow hidden，隐藏超出尺寸的元素
+	
+		<div class="animated-menu">
+		// 所有动画条的容器。
+		// 使用这样的结构是因为要通过 JS 把动画条抽出来，添加到上层容器，再移出画面
+		
+			<div class="item">
+			// 动画条容器
+			// 右侧的动画条容器都定义了尺寸
+				
+				<div class="text"> // 文字的容器
+					
+					<a><img> // Read more 按钮， 使用 CSS 隐藏
+					<h4> 标题
+					<p> 内容
+					
+			<img class="tiny"> 
+			// 使用 CSS resize 为小图，
+			// flaot：right

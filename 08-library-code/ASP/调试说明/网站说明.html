@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<link href="说明.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="1" align="left" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+  <tr onclick="change_view('a1')">
+    <td width="100%" height="25" colspan="2" align="center" class="STYLE1">网站说明</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="2" align="center"><table width="100%" border="1" align="left"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+      <tr>
+        <td width="24%" height="25" align="left">系统登录</td>
+        <td width="76%" height="25" align="left">用户：admin 密码：admin888</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改后台设置：</td>
+        <td height="25" align="left">Inc/config.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改首页下拉菜单：</td>
+        <td height="25" align="left">Menu/Menu_content.js</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">网站前台CSS：</td>
+        <td height="25" align="left">数据库文件的表 skin </td>
+      </tr>
+      <tr>
+        <td height="25" align="left">网站后台CSS：</td>
+        <td height="25" align="left">admin/inc/head.asp 里的 CSS</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">系统调试上传</td>
+        <td height="25" align="left"><p>如果是ACCESS数据库，则非常好办，直接把本机的所有文件（包括数据库）用FTP上传到空间上即可。</p>
+          <p>如果是SQL数据库，就麻烦一些。SQL版要分程序（及图片）文件的上传和数据库上传两步。程序（及图片）文件的上传非常简单，用FTP直接上传到空间商即可。接下来是数据库的上传。SQL是不能直接用FTP上传到空间上的。你可以使用下面两种方法来做：</p>
+          <ol>
+            <li>将本机的SQL数据库进行备份成一个文件，如0791idc.bak，将此文件上传到空间上，然后请空间商帮你还原到你的数据库中。这种方法需要空间商的协助，如果你和空间商关系比较好，可以采用此方法，省事省力。</li>
+            <li>在本机重新安装一个ACCESS版，然后在ACCESS版中运行动易提供的数据迁移/转换程序，把SQL数据库中的内容迁移到ACCESS数据库中，再将这个数据库上传到空间上，在空间上再次运行数据迁移/转换程序，把ACCESS数据库中的数据迁移到SQL数据库中。这种方法简单写就是SQL——ACCESS——SQL。</li>
+            <li>如果是SQL版，本机测试时最好就直接联上远程服务器的SQL数据库，这样虽然会慢一些，但不用担心数据库迁移等问题。本机调试好后，放到空间上时，只要把SQL连接字符串中的主机IP由实际IP改为127.0.0.1即可。</li>
+          </ol>
+          <p>最好不要使用SQL2000自带的导入、导出功能，因为这样做将会带来严重的后果：1、可能会导致数据库中的主键、索引、标识等数据库约束统统丢失。</p></td>
+      </tr>
+      <tr>
+        <td height="25" align="left">AC数据库升级到SQL数据库</td>
+        <td height="25" align="left"><p>如果系统使用的是ACCESS数据库，那么当遇到下面的情况之一（只要满足任何一个条件），就应该考虑升级到SQL数据库了<br />
+        </p>
+          <ol>
+            <li>          数据库大小超过100M</li>
+            <li>在线人数经常超过100人</li>
+            <li>网站经常出现服务失效（英文提示：Service Unavailable） </li>
+            <li>服务器经常出现CPU资源被100%占用 </li>
+          </ol></td>
+      </tr>
+      <tr>
+        <td height="25" align="left">打开和关闭FSO文件读写权限的方法</td>
+        <td height="25" align="left"><p>windows98系统<br />
+          在DOS命令行状态输入以下命令：<br />
+          关闭命令：RegSvr32 /u C:\WINDOWS\SYSTEM\scrrun.dll<br />
+          打开命令：RegSvr32 C:\WINDOWS\SYSTEM\scrrun.dll</p>
+          <p>win2000系统：<br />
+            在CMD命令行状态输入以下命令：<br />
+            关闭命令：RegSvr32 /u C:\WINNT\SYSTEM32\scrrun.dll<br />
+            打开命令：RegSvr32 C:\WINNT\SYSTEM32\scrrun.dll </p>
+          <p>Windows 2003：<br />
+            在MS－DOS状态下面键入：<br />
+            关闭命令：Regsvr32 /u c:\windows\system32\scrrun.dll<br />
+          打开命令：Regsvr32 c:\windows\system32\scrrun.dll</p></td>
+      </tr>
+      <tr>
+        <td height="25" align="left">注册fso组件</td>
+        <td height="25" align="left"><ol>
+          <li>首先在系统盘中查找scrrun.dll，如果存在这个文件，请跳到第三步，如果没有，请执行第二步。</li>
+          <li>在安装文件目录i386中找到scrrun.dl_，用winrar解压缩，得scrrun.dll，然后复制到x（你的系统盘）:\windows\system32\目录中。</li>
+          <li>运行regsvr32 scrrun.dll即可。</li>
+        </ol></td>
+      </tr>
+      <tr>
+        <td height="25" align="left">网站的在线编辑器的使用</td>
+        <td height="25" align="left"><p>直接将Word中的内容拷贝下来粘贴到网站的编辑器中，会产生大量Word自动生成的无用代码，从而增加了代码量与页面的大小，一二篇不要紧，几十甚至几百篇后对网站空间及访问的影响就会较大了。且从Word中拷贝下的内容在网页中也不一定会全部保证原拷贝Word中的格式。我的建议是：<br />
+          </p>
+          <ul>
+            <li>将Word中的文章内容全选－复制，新建一个记事本文档进行粘贴，再全选记事本中的内容复制，粘贴到网站编辑器中。整个操作几秒内即可完成，比直接拷贝Word中内容的优点是：去除了直接拷贝Word文档内容而产生的大量的无用代码；缺点是无单独的字体格式，如标题字体等。有一点要注意：Word文档内容中的图片目前无法直接复制到编辑器中。不过您可以将Word文档另存为html文件而得到这些图片后，再进行上传。</li>
+          </ul></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

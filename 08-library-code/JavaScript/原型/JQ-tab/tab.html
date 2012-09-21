@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tab</title>
+
+
+<style>
+body{
+	background:url(images/bg_tile.jpg);
+	margin:0;
+	padding:0;
+}
+
+
+.container{
+	background:url(images/bg_tile.jpg);
+	width:800px;
+	height:534px;
+	margin:50px auto 0;
+}
+
+.menu{
+	width:800px;
+	height:34px;
+}
+
+ul{
+	list-style:none;
+	width:720px;
+	height:34px;
+	margin:0 auto;
+}
+
+.menu li{
+	background:url(images/header_tabs.png) repeat-x;
+	background-position:214px 0;
+	display:block;
+	float:left;
+	width:215px;
+	height:34px;
+	cursor:pointer;
+}
+
+.menu li.current{
+	background-position:0 0;
+}
+
+.menu span{
+	font:bold 22px Verdana, Geneva, sans-serif;
+	color:#FFE;
+	display:block;
+	line-height:34px;
+	text-align:center;
+	text-shadow:2px 2px 2px #666;
+	letter-spacing:4px;
+}
+
+.current span{
+	color:#666;
+	text-shadow:2px 2px 2px #FFF;
+}
+
+
+.content{
+	background:#F9F9F9;
+	width:800px;
+	height:500px;
+	border-radius:12px;	
+	box-shadow:6px 6px 6px rgba(0,0,0,0.6);
+}
+
+.content ul{
+	width:760px;
+	height:500px;
+	list-style:none;
+}
+
+.content li{
+	float:left;
+	width:800px;
+	height:500px;
+	margin-left:-40px;
+	display:block;
+}
+
+.content img{
+	float:left;
+	width:400px;
+	margin:20px 30px;
+}
+
+.info{
+	float:left;
+	width:300px;
+	margin:20px 0;
+	height:auto;
+}
+
+.info p{
+	font:bold 24px Verdana, Geneva, sans-serif;
+	color:#999;
+	display:block;
+	line-height:34px;
+	text-align:center;
+}
+	
+.clear{
+	clear:both;
+}
+</style>
+<script src="js/jquery-1.7.min.js"></script>
+<script>
+$(function(){		   
+	//push copy to copy container
+	$(".info p").each(function(){
+		var txt = $(this).parent().siblings().attr("src");
+		$(this).html(txt);
+	})
+	
+	$(".menu li").click(function(){
+		var index = $(this).index(); //get index order for clicked object
+		$(this).addClass("current").siblings().removeClass("current"); //add flag to clicked
+		$(".content li").eq(index).show().siblings().hide(); // show relative content
+	})  
+})
+</script>
+</head>
+
+
+<body>
+      <div class="container">
+            <div class="menu">
+                  <ul>
+                      <li class="current"><span>one</span></li>
+                      <li><span>two</span></li>
+                      <li><span>three</span></li>
+                  </ul>
+            </div>
+            
+            <div class="content">
+                  <ul>
+                      <li>
+                          <img src="images/Angus Deluxe.png" />
+                          <div class="info"><p></p></div>
+                      </li>
+                      <li style="display:none">
+                          <img src="images/Angus Chipotle BBQ Bacon.png"/>
+                          <div class="info"><p></p></div>
+                      </li>
+                      <li style="display:none">
+                          <img src="images/Quarter Pounder with Cheese.png" />
+                          <div class="info"><p></p></div>
+                      </li>
+                  </ul>
+            </div>
+      </div>
+      
+      
+</body>
+</html>

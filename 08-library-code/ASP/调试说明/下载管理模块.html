@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="说明.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="1" align="center" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+  <tr onclick="change_view('a3')">
+    <td height="25" align="center" class="STYLE1">下载管理模块</td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="top"><table width="100%" border="1" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+      <tr>
+        <td height="25" align="center" bgcolor="#99CCFF">功能</td>
+        <td height="25" align="center" bgcolor="#99CCFF">后台页面</td>
+        <td align="center" bgcolor="#99CCFF">说明</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">分离出的前台页面</td>
+        <td height="25" align="left">在根目录下的“ 下载前台”文件夹</td>
+        <td rowspan="13" align="left" valign="top"><ul>
+          <li>Down_add.asp 在iframe 里调用并传id 给根目录下的upload_Photo.asp</li>
+          <li>id=0 为产品图片 id=1为下载文件</li>
+          <li>upload_Photo.asp 通过表单将参数传给 Upfile_Photo.asp</li>
+          <li>Upfile_Photo.asp 调用上传组件上传文件，并在 119-135 行根据传递的ID判断改写Down_add.asp 中myform的参数</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td width="19%" height="25" align="left">下载类别设置</td>
+        <td width="24%" height="25" align="left">admin/Down_ClassManage.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加一级栏目</td>
+        <td height="25" align="left">admin/Down_ClassAddBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改一级栏目</td>
+        <td height="25" align="left">admin/Down_ClassModifyBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">删除一级栏目</td>
+        <td height="25" align="left">admin/Down_ClassDelBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加二级栏目</td>
+        <td height="25" align="left">admin/Down_ClassAddSmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改二级栏目</td>
+        <td height="25" align="left">admin/Down_ClassModifySmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">删除二级栏目</td>
+        <td height="25" align="left">admin/Down_ClassDelSmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">下载内容管理</td>
+        <td height="25" align="left">admin/Down_Manage.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加下载内容</td>
+        <td height="25" align="left">admin/Down_add.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">修改下载内容</td>
+        <td height="25" align="left">admin/Down_modi.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">存储下载内容</td>
+        <td height="25" align="left">admin/Down_Save.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">删除下载内容</td>
+        <td height="25" align="left">admin/Down_del.asp</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

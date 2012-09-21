@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>MrxSelect Class</title>
+<script type="text/javascript" src="mSelect.js"></script>
+<script type="text/javascript">
+/*
+首先，本JS支持滑动展开，原下拉的onchange事件，selected/disabled属性，
+支持上下键选择，支持表单的reset，应该说该有的都有了吧？
+然后，作者是AngusYoung，2010-4-10
+*/
+var mySelect=new mSelect('mySelect','mSelect.css');
+window.onload=function(){
+	var aS=document.getElementsByTagName('select');
+	for (var i=0;i<aS.length;i++){
+		switch(aS[i].getAttribute('mSty')){
+			case 'redLine':
+				mySelect.Create(aS[i],'redLine');
+				break;
+			case 'blueCircle':
+				mySelect.Create(aS[i],'blueCircle',true);
+				break;
+			case 'orangeHeart':
+				mySelect.Create(aS[i],'orangeHeart',true);
+				break;
+		}
+	}
+}
+</script>
+</head>
+
+<body style="text-align:center;background-color:#CFDFEF">
+<h2>来玩正式的咯，提交表单吧！</h2>
+<form name="goodjob" action="" method="get" onreset="alert('haha, do it.');">
+<p>填写你的姓名：<input name="testname" type="text" /></p>
+<p>选择你的性别：
+<select name="sexy" mSty="orangeHeart">
+	<option>保密</option>
+	<option value="0">女</option>
+	<option value="1">男</option>
+</select>
+</p>
+<p>选择你的地址：
+<select name="addr" mSty="blueCircle" onchange="alert('你选择的地址是'+this.options[this.selectedIndex].text+'对吧？');">
+	<option>火星</option>
+	<option value="GZ">广州</option>
+	<option value="SZ" selected="selected">深圳</option>
+	<option value="ST">汕头</option>
+	<option value="" disabled="disabled">不可选</option>
+	<option value="DG">东莞</option>
+	<option value="ZH">珠海</option>
+</select>
+</p>
+<p>选择你的年龄：
+<select name="age" mSty="redLine">
+	<option value="18-25">18-25</option>
+	<option value="25-30" selected="selected">25-30</option>
+	<option value="30-40">30-40</option>
+</select>
+</p>
+<p><button type="submit"> 提  交 </button><button type="reset"> 重 置 </button></p>
+</form>
+<p>下面是表单外的，不受reset影响。</p>
+<select name="www" mSty="blueCircle">
+	<option>保密</option>
+	<option value="0">女</option>
+	<option value="1">男</option>
+</select>
+</body>
+</html>

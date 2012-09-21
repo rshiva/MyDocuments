@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/********************************** 
+	dimension and background 
+**********************************/
+#flippy, #flippy .item {
+  width: 735px;
+  height: 381px;
+}
+#flippy {
+  position: relative;
+  z-index: 0;
+  margin: 0 5px 15px;
+}
+#flippy .item {
+  position: relative;
+  z-index: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#flippy #flippy-1 { background-image: url('images/flippy-background-1.jpg'); }
+#flippy #flippy-2 { background-image: url('images/flippy-background-2.jpg'); }
+#flippy #flippy-3 { background-image: url('images/flippy-background-3.jpg'); }
+#flippy #flippy-4 { background-image: url('images/flippy-background-4.jpg'); }
+
+/**********************************  
+	heading and font style
+**********************************/
+#flippy .item h2,
+#flippy .item p {
+  color: #ffffff;
+  width: 325px;
+  display: block;
+  float: right;
+  clear: both;
+  padding: 0 45px 0 0;
+}
+#flippy .item h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 72px 0 0;
+}
+#flippy .item h2 a {
+  background: none;
+  color: #fff;
+}
+#flippy .item p {
+  font-size: 1.3em;
+  margin: 15px 0 0;
+}
+#flippy p.more {
+  margin-top: 8px;
+}
+#flippy p.more a {
+  font-weight: bold;
+  color: #fff;
+  padding-right: 20px;
+  background: url('images/icon-more-flippy.gif') right no-repeat;
+}
+
+/**********************************
+	bottom nav
+**********************************/
+#flippy #nav-flippy {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  width: 355px;
+  height: 47px;
+  z-index: 600;
+  background: url('images/flippy-nav-bg.gif') bottom right no-repeat;
+  padding: 0 0 0 13px;
+}
+#flippy #nav-flippy ul {
+  padding: 0;
+  margin: 0;
+}
+#flippy #nav-flippy ul li {
+  display: inline;
+  padding: 0;
+  background: none;
+}
+
+/* nav normal, rollover and selected state */
+#flippy #nav-flippy ul li a {
+  display: block;
+  float: left;
+  width: 25px;
+  height: 47px;
+  overflow: hidden;
+  background: url('images/flippy-position.gif') top left no-repeat;
+  text-indent: -9999em;
+  margin: 0 7px;
+}
+#flippy #nav-flippy ul li a.option:hover,
+#flippy #nav-flippy ul li a.option:focus {
+  background-position:center left;
+  outline: 0;
+  opacity: 0.80;
+}
+#flippy #nav-flippy ul li.current a {
+  background-position: bottom left;
+}
+
+/* information button */
+#flippy #nav-flippy a.information {
+  position: absolute;
+  top: 0; right: 0;
+  display: block;
+  float: right;
+  line-height: 47px;
+  padding: 0 35px 0 0;
+  margin: 0 20px 0 0;
+  font-size: 20px;
+  color: #595959;
+  background: url('images/flippy-info.gif') top right no-repeat;
+  font-family: "Trebuchet MS";
+}
+#flippy #nav-flippy a.information:hover,
+#flippy #nav-flippy a.information:focus {
+  color: #e56410;
+  background-position: bottom right;
+}

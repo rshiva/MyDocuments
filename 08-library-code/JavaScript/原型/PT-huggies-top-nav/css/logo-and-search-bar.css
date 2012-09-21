@@ -1,0 +1,54 @@
+/* LOGO container */
+div#logo{
+    width: 250px;
+    height: 68px;
+    padding: 19px 0 0;
+    float: left;
+}
+
+/* hotspot for logo */
+div#logo a{
+    display: block;
+    width: 154px;
+    height: 38px;
+    text-indent: -9999em; /* move text out to view (hide the text) */
+    overflow: hidden;
+    float: left;
+}
+
+/* AU or NZ site */
+div#logo span{
+    display: block;
+    text-indent: -9999em; /* move text out to view (hide the text) */
+    overflow: hidden;
+    height: 12px;
+    float: left;
+    margin-top: 26px;
+}
+
+/* show au image */
+div#logo .logo-nz{
+    width: 92px;
+    background: url(../images/logo-au.png) no-repeat;
+}
+
+
+/* search bar container */
+div#site-search{
+    float: right;
+    margin: 28px 0 0;
+    width: 235px;
+}
+
+div#site-search .input{
+    width: 179px;
+    height: 31px;
+    padding: 6px 5px 0 5px;
+    margin: 0 5px 0 0;
+    color: #C67DDE;
+    font-size: 12px;
+    border-style: none;
+    background: url(../images/header-bg.png) -257px -222px no-repeat;
+    float: left;
+    display: inline;
+}

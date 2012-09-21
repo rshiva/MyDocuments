@@ -1,0 +1,156 @@
+/*
+ *   This stylesheet is used to serve as a foundation for the
+ *   rest of the styles to be built from. Set base elements
+ *   here and set the more specific stuff in other relevent
+ *   stylesheets.
+ *
+ *  WARNING WARNING WARNING:
+ *  ==============================================================
+ *
+ *    BE EXTREMELY CAREFUL when modifying this stylesheet
+ *    these are foundation (Global) style's and
+ *    will affect everything on the site.
+ *    If you don't understand what it is doing don't modify it.
+ *    If you don't know what will be affected... DO NOT MODIFY.
+ *
+ */
+ 
+ @font-face {
+  font-family: "AYearWithoutRain";
+  src: url("/AYearWithoutRain.eot");
+  src: local(AYearWithoutRain), url('/AYearWithoutRain.ttf') format('opentype');
+  }
+
+
+/****************************************************
+  RESET
+****************************************************/
+/* ATTEMPTING TO CREATE A LEVEL CROSS BROWSER PLAYGROUND */
+html,body,div,span,object,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,small,strike,strong,sub,sup,tt
+dd,dl,dt,li,ol,ul,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+  margin: 0; padding: 0; border: 0;
+  font-weight: normal; font-style: normal;
+  font-size: 100%; line-height: 1;
+  font-family: inherit;
+  text-align: left;
+  text-decoration: none;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+ol,ul { list-style: none; }
+q:before,q:after,a blockquote:before,blockquote:after { content: ""; }
+img { border: 0; }
+/* ^DO NOT ALTER! EVERYTHING WILL BREAK^ */
+
+
+/*****************************************************
+  Base Units
+*****************************************************/
+body { font: 10px/1.3em Verdana, Arial, Sans-Serif; color: #7c7c7c; }  /* DON'T alter font size especially when em's are in use */
+
+
+/*****************************************************
+  Headings
+*****************************************************/
+h1,h2,h3,h4,h5,h6 {  color: #333; }
+h1 { font-size: 25px; line-height: 1.1em; margin: 0em 0 0.5em; }
+h2,h5.title-top { font-size: 26px; line-height: 1.1em; margin: 0.9em 0 0.5em; }
+h3 { font-size: 16px; line-height: 1.3em; margin: 0.9em 0 0.5em; }
+h4 { font-size: 15px; line-height: 1.3em; margin: 0.9em 0 0.5em; }
+h5 { font-size: 14px; margin: 0.9em 0 0.5em; }
+h6 { font-size: 13px; margin: 0.9em 0 0.5em; }
+
+
+/*****************************************************
+  Text elements
+*****************************************************/
+p           { margin: 0 0 .75em; font-size: 12px; line-height: 1.5em; }
+p.last      { margin-bottom: 0; }
+p.abstract  { font-size: 12px; color: #333; }
+
+ul, ol      { font-size: 12px; }
+li          { line-height: 1.45; margin: .75em 0;  }
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; font-size: 13px; line-height: 1.25em; margin: 1.1em 0 0.5em 0; }
+dd          { margin-left: 1.1em; font-size: 12px; line-height: 1.45em; }
+ul ul,
+ol ol,
+ol ul,
+ul ol       { font-size: 1em; } /* when using em make sure this is set so nested list's don't get screwy */
+
+abbr,
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin-top: 1.5em; font-style: italic; }
+del         { color:#666; }
+
+a           { color: #00; text-decoration: underline; font-weight: inherit; }
+a:focus     { color: #000; }
+a:hover     { color: #000; text-decoration: none;}
+a:visited 	{ color: #000; }
+
+blockquote  { font-size: 1.4em; font-style: italic; line-height: 1.35; padding: 0 1.75em .75em; }
+
+strong      { font-weight: bold; }
+em          { font-style: italic; }
+strong em,
+em strong   { font-weight: bold; font-style: italic; color: #333;  }
+
+strong span,
+strong span.caps { font-weight: bold; }
+
+pre         { margin: 1.5em 0; }
+pre,code,tt { font: 1.2em 'lucida console', monospace; line-height: 1.5; }
+tt          { display: block; margin: 1.5em 0; line-height: 1.5; }
+
+sup         { font-size: 0.5em; padding-left: 1px; vertical-align: top; }
+
+
+input[type=submit] { cursor: pointer; }
+
+/* Don't forget to reset these for accessibility */
+/*
+input[type=submit]:focus { border:0; outline:0; }
+*/
+input[type=submit]:-moz-focus-inner { border: 0; }
+input[type=text]:focus,input[type=password]:focus { outline: 0 none; }
+
+/*****************************************************
+  Tables
+*****************************************************/
+table    { margin-bottom: 1.4em; font-size: 12px; }
+th       { font-weight: bold; }
+thead th { font-size: 14px; vertical-align: middle; }
+th,td    { padding: 4px 10px; vertical-align: top; border: 1px solid #ddd; }
+tfoot    { font-style: italic; }
+caption  { background: #ffc; }
+table .last { padding-right: 0; }
+
+
+/*****************************************************
+  System Messages
+*****************************************************/
+.notice  { background-color: #B3BF23; color: #ffffff; font-size: 12px; font-weight: bold; padding: 10px 15px; margin:10px 0; line-height: 16px; }
+.warning { background-color: #cc0000; color: #ffffff; font-size: 12px; font-weight: bold; padding: 10px 15px; margin:10px 0; line-height: 16px; }
+.hint    { background-color: #fff000; color: #777000; font-size: 12px; font-weight: bold; padding: 10px 15px; margin:10px 0; line-height: 16px; }
+.help, .help a { color:#999; }
+.notice a, .warning a { color:#fff; }
+
+.fieldWithErrors { display: inline; }
+.fieldWithErrors input,
+.fieldWithErrors textarea,
+.fieldWithErrors select { border: 1px solid #c30; }
+
+.formError   { color:#c30; font-weight:bold; font-size: 1.1em; }
+.formError a { color:#f70; }
+
+
+/*****************************************************
+  Misc
+*****************************************************/
+.hide, .cloak { display: none; }
+.jsdisabled .cloak { display: inline; }
+.clear { clear: both; }  /* don't use this class unless you absolutley have to */
+.skip-link { height: 1px; text-indent: -9999em; overflow:hidden; position:absolute;}

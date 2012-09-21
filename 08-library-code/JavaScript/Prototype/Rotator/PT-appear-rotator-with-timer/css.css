@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+#flippy{
+	width:700px;
+	height:300px;
+	position: relative;
+	margin:50px;
+}
+
+/***************************
+	content
+****************************/
+#flippy .flippy-content{
+	width:700px;
+	height:300px;
+	margin:0px;
+}
+
+#content1{ background:url('images/bg1.jpg') top left no-repeat; }
+#content2{ background:url('images/bg2.jpg') top left no-repeat; }
+#content3{ background:url('images/bg3.jpg') top left no-repeat; }
+#content4{ background:url('images/bg4.jpg') top left no-repeat; }
+
+#flippy h2{
+	display:block;
+	width:360px;
+	margin:30px 20px 10px 20px;
+	font-size:32px;
+	font-weight:bold;
+	color:#ffffff;
+	float:right;
+}
+
+#flippy p{
+	display:block;
+	width:360px;
+	margin:0px 20px 20px 20px;
+	font-size:13px;
+	color:#ffffff;
+	float:right;
+	line-height:150%;
+}
+
+#flippy p a.more{
+	width:100px;
+	height:15px;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#0091d8;
+	display:block;
+	margin:0px 25px 0px 0px;
+	background:url('images/arrowBG.png') top right no-repeat;
+}
+
+
+#flippy p a.more:hover{
+	color:#0581be;
+	background-position:bottom right;
+} 
+
+/***************************
+	navigation
+****************************/
+#flippy-nav{
+	position:absolute;
+	width:380px;
+	height:50px;
+	bottom:0;
+	right:0;
+}
+
+#flippy-nav ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+#flippy-nav li{
+	display:inline;
+	margin:0px;
+	padding:0px;
+	background:none;
+}
+
+#flippy-nav li a{
+	display:block;
+	width:25px;
+	height:25px;
+	float:left;
+	text-indent:-9999em;
+	background:url('images/navBG.gif') top left no-repeat;
+	margin-right:10px;
+}
+
+#flippy-nav li a:hover{background-position:center left;}
+#flippy-nav li.current a{background-position:bottom left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

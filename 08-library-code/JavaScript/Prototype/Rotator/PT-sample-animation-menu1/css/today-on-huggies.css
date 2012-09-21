@@ -1,0 +1,48 @@
+#today-on-huggies {
+    float: left;
+    display: block;
+    width: 313px;
+    height: 305px;
+    overflow: hidden;
+    position: relative;
+    margin: 50px;
+    margin-left: 500px;
+}
+
+#today-on-huggies .menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 313px;
+    height: 304px;
+    overflow: hidden;
+    border-bottom: solid 1px #D89CE8;
+}
+
+#today-on-huggies .menu-container .item {
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 75px !important;
+    margin: 0;
+    background: #FAF0F8;
+    border-bottom: dotted 1px #D89CE8;
+    cursor: pointer !important;
+}
+
+#today-on-huggies .menu-container .item img {
+    float: right;
+    width:75px;
+    height:75px;
+}
+
+#today-on-huggies .menu-container .item .text {
+    float: left;
+    width: 218px;
+    padding: 10px 10px 0;
+}
+
+#today-on-huggies .menu-container .item .text h4 {
+    margin: 0;
+    padding: 0;
+}

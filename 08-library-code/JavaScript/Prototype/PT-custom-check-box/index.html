@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>from harry's code library</title>
+<style type="text/css" media="screen">
+
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+
+/* -------- global finish -------- */
+
+#field-contents {
+	width:530px; 
+	padding: 20px;
+	float:left;
+	background-color: #FAFAFA;
+	border: 1px solid #E0E0E0; 
+}
+
+.field-input {
+	float:left; 
+	margin-bottom: 20px; 
+}
+
+/* -------- container attribute finish -------- */
+
+.checkbox{ /* background normal */
+	display: block;
+	width: 490px;
+	float:left;
+	
+	/* font */
+	font-size: 16px;
+	color: #5A5A5A;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: 0px 1px 0px white;
+	
+	/* border */
+	border-radius: 7px;
+	border: 2px solid white;
+	
+	/* shadow */
+	box-shadow: 0px 1px 3px rgb(229, 229, 229);
+	-moz-box-shadow: 0px 1px 3px rgb(229, 229, 229);
+	-webkit-box-shadow: 0px 1px 3px rgb(229, 229, 229);
+	
+	/* background */
+	background: -moz-linear-gradient(top, #F9F9F9, #F1F1F1);
+	background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#F1F1F1));
+	background: -moz-linear-gradient(top, #F9F9F9, #F1F1F1);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f1f1f1');
+}
+
+.checkbox:hover { /* background rollver */
+	background-color: rgb(250, 250, 250);
+	border: 2px solid rgb(201, 223, 246);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f8f8f8'); /* for IE*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f8f8f8)); /* for webkit browsers*/
+	background: -moz-linear-gradient(top,  #fcfcfc,  #f8f8f8); /* for firefox 3.6*/
+	cursor: pointer;
+	cursor: hand;
+}
+
+.checkbox.fb_checked { /* background checked */
+	background: white;
+	border: 2px solid #376EE5;
+}
+
+input.fb_hidden { /* hide radio button */
+	position: absolute;
+	left: -10000px;
+}
+
+span.fb_holderWrap { /* check box holder */
+	display: block;
+	float:left;
+	overflow: hidden;
+	margin-top: 0px;
+	margin-right: 16px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: white;
+	width: 52px;
+	height: 52px;
+	background-image: url('checkbox-tick.gif');
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+}
+
+.checkbox.fb_checked span.fb_holderWrap { /* holder checked status */
+	background-color: #376EE5;
+	background-position: 6px 10px;
+}
+
+
+.content { /* checkbox copy */
+	float:left;
+	display: block;
+	margin-left: 52px;
+	padding: 12px 16px 10px 0px;
+	padding-top: 18px;
+	padding-bottom: 16px;
+}
+</style>
+<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+<script type="text/javascript" charset="utf-8" src="javascripts/fancyboxes.js"></script>
+<script type="text/javascript" charset="utf-8">
+		var fb;
+		document.observe('dom:loaded', function(){
+			fb = new FancyBoxes({elements: '#field-contents input'});
+		});
+</script>
+</head>
+
+<body>
+	<div id="field-contents">
+		<div class="field-input">
+			<label class="checkbox">
+				<input type="checkbox" name="use-ssh-key" value="Yes" class="fb_hidden">
+				<span class="fb_holderWrap">
+					<span class="fb_holder"></span>
+				</span>
+				<span class="content">Yes, I would like to provide SSH Key(s)</span>
+			</label>
+		</div>
+		
+		<!--
+		<div class="field-input last">
+			<label class="checkbox fb_checked">
+				<input type="checkbox" name="use-ssh-key" value="Yes" class="fb_hidden">
+				<span class="fb_holderWrap">
+					<span class="fb_holder"></span>
+				</span>
+				<span class="content">Yes, I would like to provide SSH Key(s)</span>
+			</label>
+		</div>
+		-->
+	</div>
+</body>
+</html>

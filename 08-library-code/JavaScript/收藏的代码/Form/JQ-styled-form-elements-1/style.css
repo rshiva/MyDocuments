@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(images/bg-texture.jpg);
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/*============framework===============*/
+
+.header{
+	background:url(images/bg-content-topper.png) center no-repeat;
+	width:960px;
+	height:155px;
+	margin:20px auto 0;
+	color:#FF828E;
+	text-align:center;
+	font:bold 80px 'Bickham Script Pro', 'Edwardian Script ITC', 'Palace Script MT', Zapfino, cursive;
+	line-height:200px;
+	text-shadow:0 0 4px #FCC;
+}
+
+
+.wrapper{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+
+.main{
+	display:block;
+	background:url(images/bg-content.png) center repeat-y;
+	width:100%;
+	height:420px;
+}
+/*============basic===============*/
+fieldset{
+	width:790px;
+	margin:0 auto;
+	padding:10px;
+	border:none;
+}
+
+
+button{
+	border:none;
+	font-size:16px;
+	outline:none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+input[type='text']{
+	background:none;
+	width:300px;
+	height:40px;
+	display:block;
+	margin:20px;
+	outline:none;
+	line-height:40px;
+	font-size:24px;
+	color:#333;
+	border:none;
+	border:2px solid #FF828E;
+    box-shadow:2px 8px 6px -6px rgba(0,0,0,0.8); 
+	background:rgba(255,255,255,0.1);
+}
+
+input[type='text']:focus{
+	background:#FF828E;
+	background:rgba(255,130,142,0.4);
+}
+
+textarea{
+	display:block;
+	width:350px;
+	height:180px;
+	margin:50px 40px;
+	overflow:hidden;
+	outline:none;
+	font-size:24px;
+	line-height:30px;
+	color:#333;
+	border:none;
+	border:2px solid #FF828E;
+	background:rgba(255,255,255,0.1);
+}
+
+textarea:focus{
+	background:#FF828E;
+	background:rgba(255,130,142,0.4);
+}
+
+label{
+	display:block;
+	float:left;
+    background:#FF828E;
+	width:200px;
+	height:60px;
+    box-shadow:2px 8px 6px -6px rgba(0,0,0,0.8); 
+	font-size:28px;
+	line-height:60px;
+	text-align:center;
+	color:#FFF;
+	margin:20px;
+}
+
+
+/*============rate===============*/
+ul.rate{
+	float:left;
+	width:auto;
+	height:35px;
+	margin:20px;
+	padding:0;
+}
+
+li{
+	background:url(images/icon_heart.png) no-repeat;
+	float:left;
+	display:inline;
+	width:35px;
+	height:35px;
+	cursor:pointer;
+}
+
+li.select{
+	background-position:0 -35px;
+}
+
+li.hover{
+	background-position:0 -35px;
+}
+
+
+/*============radioBox===============*/
+.radio{
+	float:left;
+	background:#FFF;
+	width:100px;
+	height:40px;
+	display:block;
+	margin:20px;
+	border:2px solid #FF828E;
+	border-radius:30px;
+	cursor:pointer;
+	font-size:20px;
+	color:#FF828E;
+	line-height:40px;
+	text-align:center;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.4); 
+}
+
+.radio.checked{
+	background:#FF828E;
+	color:#FFF;
+}
+
+.circle{
+	background:#FFF;
+	margin-top:-2px;
+	margin-left:-1px;
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:30px;
+	border:2px solid #FF828E;
+}
+
+.circle.right{
+	margin-left:60px;
+}
+
+.hide{
+	display:none;
+}
+
+
+
+.box-shadow{
+	background:#FF828E;
+	width:120px;
+	height:40px;
+	display:block;
+	margin:20px;
+	border-radius:30px;
+	cursor:pointer;
+	font-size:24px;
+	line-height:40px;
+	text-align:center;
+	color:#fff;
+	box-shadow:1px 1px 5px rgba(0,0,0,0.4); 
+}
+
+
+
+.box-shadow:active{
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=5);/*for ie6,7,8*/
+    box-shadow:inset 1px 1px 5px rgba(0,0,0,0.4); 
+}
+
+
+.pinkCloud{
+	background:url(images/box_about.png);
+	width:435px;
+	height:355px;
+	float:right;
+}
+
+.tips{
+	display:block;
+	width:200px;
+	color:#999;
+	margin:0 auto;
+	text-align:center;
+}
+
+.tips span{
+	font:bold 34px Georgia, "Times New Roman", Times, serif;
+	text-shadow:0 0 4px #CCC;
+	padding:0 20px;
+
+}
+
+span.red{
+	color:#C00;
+	font-size:30px;
+}
+

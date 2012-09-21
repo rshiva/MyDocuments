@@ -1,0 +1,536 @@
+.page-home #main {
+  padding-left: 9px;
+  width: 619px;
+}
+
+.page-home .peak-inactive { display: none; }
+.page-home #peek-inside h1 {
+  font-size:16px;
+  line-height:1.5em;
+  margin:0 0 0.75em;
+  text-align:center;
+}
+
+.page-home #peek-inside p.inline {
+  display:inline;
+}
+
+.page-home #sidebar h2 {
+  width:300px;
+}
+.page-home h3 {
+  font-size:1.5em !important;
+  line-height:1.2em !important;
+}
+.page-home h4 {
+  font-size:1.4em !important;
+  line-height:1.2em !important;
+  margin-bottom:3px !important;
+}
+.page-home #main p,
+.page-home #sidebar p {
+  color:#666 !important;
+  margin-top:0 !important;
+}
+.page-home #main h2 a:hover,
+.page-home #main h3 a:hover,
+.page-home #main h4 a:hover {
+  text-decoration:none;
+}
+
+
+
+.page-home #content .explore-container {
+  clear:both;
+  float:left;
+  margin:10px 0 20px;
+  width:608px;
+  height:31px;
+}
+.page-home #content .explore-container p {
+  line-height:31px !important;
+  padding-left:10px;
+  float:left;
+  color:#333;
+  font-size:14px;
+}
+.page-home #content .explore-container strong {
+  color:#666;
+}
+.page-home #content .explore-container a {
+  float:right;
+  text-indent:-9999px;
+  display:block;
+  height:31px;
+  overflow:hidden;
+}
+
+.page-home #content .biglink {
+  overflow:hidden;
+  height:48px; /*Allows for 2 lines of text*/
+}
+
+
+/*****************************************************
+  Section
+*****************************************************/
+.page-home #section {
+  overflow:hidden;
+}
+.page-home #section p {
+  float:left;
+  width: 190px;
+  height: 35px;
+  background: url(../images/homepage/bg-today-on-huggies.png) no-repeat;
+  text-indent:-9999px;
+  margin-top:-3px;
+}
+.page-home #section ul li a {
+  width:225px;
+  height:27px;
+  text-indent:-9999px;
+  overflow:hidden;
+  background:url(../images/homepage/btn-take-a-peek-inside.png) no-repeat 0 0;
+}
+.page-home #section ul li a { display: block; }
+.jsdisabled .page-home #section ul li a { display: none; }
+.page-home #section ul li a:hover {
+  background-position:0 -27px;
+}
+.page-home #section ul li a.active {
+  background-position:0 -54px;
+}
+
+.page-home #peek-inside {
+  clear:both;
+  float:left;
+  font-size:1em;
+  position:relative;
+  background:#f7e7ff url(../images/homepage/bg-peek-inside.png) repeat-x;
+  border:solid 1px #e6e6e6;
+  border-top:0;
+  border-bottom-color:#e6d4ed;
+}
+.page-home #peek-inside .inner {
+  clear:both;
+  float:left;
+  width:898px;
+  padding:20px 30px 10px;
+}
+.page-home #peek-inside .left-column,
+.page-home #peek-inside .right-column {
+  float:left;
+  width:430px;
+  padding-bottom: 5px;
+}
+.page-home #peek-inside .right-column {
+  float:right;
+}
+.page-home #peek-inside strong {
+  color:#6e2b8c;
+}
+
+
+/*****************************************************
+  Intro
+*****************************************************/
+.page-home #intro {
+  float:left;
+  width:100%;
+  margin:0 0 15px;
+}
+.page-home #intro .banner {
+  float:right;
+}
+
+.page-home #today-on-huggies {
+  float:left;
+  display:block;
+  width:628px;
+  height:305px;
+  overflow:hidden;
+  position:relative;
+}
+
+.page-home #today-on-huggies .main-container {
+  position:absolute;
+  top:0;
+  left:0;
+  width:313px;
+  height:304px;
+  overflow:hidden;
+  border-right:solid 1px #d89ce8;
+  border-bottom:solid 1px #d89ce8;
+}
+.page-home #today-on-huggies .main-container .large {
+  position:absolute;
+  z-index:0;
+}
+.page-home #today-on-huggies .main-container .text {
+  position:absolute;
+  float:left;
+  z-index:1;
+  overflow:hidden;
+  bottom:0;
+  padding:10px;
+  width:293px;
+  background:url(../images/homepage/bg-ask-expert-focus.png);
+}
+.page-home #today-on-huggies .main-container .text h4,
+.page-home #today-on-huggies .main-container .text p {
+  margin:0;
+  width:215px;
+  float:left;
+}
+.page-home #today-on-huggies .main-container .text h4 {
+  font-size:1.5em !important;
+  height:35px;
+  margin:0;
+  overflow:hidden;
+}
+.page-home #today-on-huggies .main-container .text h4 a {
+  color:#FFF !important;
+}
+.page-home #today-on-huggies .main-container .text p {
+  color:#ebdaf2;
+}
+.page-home #today-on-huggies .main-container .text .read-more {
+  float:right;
+}
+.page-home #today-on-huggies .main-container .text .time-ago {
+  display:none;
+}
+
+.page-home #today-on-huggies .menu-container {
+  position:absolute;
+  top:0;
+  right:0;
+  width:313px;
+  height:304px;
+  overflow:hidden;
+  border-left:solid 1px #FFF;
+  border-bottom:solid 1px #d89ce8;
+}
+.page-home #today-on-huggies .menu-container div.item {
+  clear:both;
+  float:left;
+  width:100%;
+  height:75px !important;
+  margin:0;
+  background:#faf0f8;
+  border-bottom:dotted 1px #d89ce8;
+  cursor:pointer !important;
+}
+.page-home #today-on-huggies .menu-container div.item .text {
+  float:left;
+  width:218px;
+  padding:10px 10px 0;
+}
+.page-home #today-on-huggies .menu-container div.item .text h4 {
+  margin:0;
+  padding:0;
+}
+.page-home #today-on-huggies .menu-container div.item .text p.time-ago {
+  font-size:10px;
+  color:#808080;
+}
+.page-home #today-on-huggies .menu-container div.item img {
+  float:right;
+}
+.page-home #today-on-huggies .menu-container .over h4 a,
+.page-home #today-on-huggies .menu-container div.item h4 a:hover {
+  color:#6e2b8c;
+}
+.page-home #today-on-huggies .menu-container div.item .read-more,
+.page-home #today-on-huggies .menu-container div.item .abstract {
+  display:none;
+}
+
+.page-home #today-on-huggies .corner {
+  display:block;
+  width:6px;
+  height:6px;
+  overflow:hidden;
+  position:absolute;
+  z-index:100;
+  background:url(../images/homepage/bg-huggies-today-corners.png) no-repeat top left;
+}
+.page-home #today-on-huggies .top-left {
+  top:0;
+  left:0;
+  background-position:0 0;
+}
+.page-home #today-on-huggies .top-right {
+  top:0;
+  right:0;
+  background-position:right 0;
+}
+.page-home #today-on-huggies .bottom-left {
+  bottom:0;
+  left:0;
+  background-position:0 -4px;
+}
+.page-home #today-on-huggies .bottom-right {
+  bottom:0;
+  right:0;
+  background-position:right -4px;
+}
+
+
+/*****************************************************
+  Sidebar
+*****************************************************/
+.page-home #content #sidebar .openx,
+.page-home #content #sidebar #todays-recipe  {
+  margin-bottom: 20px;
+}
+
+
+/*****************************************************
+  SILO ::Pregnancy
+*****************************************************/
+#content .silo-pregnancy h2 a,
+#content .silo-pregnancy h4 a:hover,
+#content .silo-pregnancy .over h4 a {
+  color:#2aabe2;
+}
+#content .silo-pregnancy h2 {
+  border-bottom-color:#005980;
+  background-position:right -90px;
+}
+#content .silo-pregnancy h4,
+#content .silo-pregnancy strong,
+#content .silo-pregnancy a,
+#content .silo-pregnancy a:hover {
+  color:#005980;
+}
+#content .silo-pregnancy a {
+  border:none;
+}
+
+#content .silo-pregnancy .banner-container {
+  height:131px;
+  background:url(../images/homepage/bg-banner-pregnancy.png) no-repeat;
+}
+#content .silo-pregnancy .banner-container #week-by-week {
+  background:url('../images/homepage/bg-icon-week-by-week.png') no-repeat;
+}
+#content .silo-pregnancy .banner-container #expert-answers {
+  background:url('../images/homepage/bg-icon-expert-answers.png') no-repeat;
+}
+#content .silo-pregnancy .banner-container #yoga {
+  background:url('../images/homepage/bg-icon-yoga.png') no-repeat;
+}
+#content .silo-pregnancy .banner-container #pregnancy-articles {
+  background:url('../images/homepage/bg-icon-pregnancy-articles.png') no-repeat;
+}
+
+#content .silo-pregnancy .explore-container a,
+#content .silo-pregnancy .explore-container {
+  background: url(../images/homepage/bg-explore-pregnancy.png) no-repeat;
+}
+#content .silo-pregnancy .explore-container a {
+  width:170px;
+  background-position:top right;
+}
+
+
+/*****************************************************
+  SILO :: Kids Activities
+*****************************************************/
+#content .silo-kids-activities h2 a:hover,
+#content .silo-kids-activities h3 a:hover,
+#content .silo-kids-activities h4 a:hover,
+#content .silo-kids-activities .over h3 a,
+#content .silo-kids-activities .over h4 a {
+  color:#6e2b8c;
+}
+#content .silo-kids-activities h2 {
+  border-bottom-color:#6e2b8c;
+  background-position:right 0;
+}
+#content .silo-kids-activities h2 a,
+#content .silo-kids-activities strong,
+#content .silo-kids-activities a,
+#content .silo-kids-activities a:hover {
+  color:#90C;
+}
+#content .silo-kids-activities h4 span {
+  color:#c67dde;
+}
+#content .silo-kids-activities a {
+  border:none;
+}
+
+
+#content .silo-kids-activities .banner-container h4 {
+  margin:0 0 5px;
+}
+#content .silo-kids-activities .banner-container .biglink {
+  margin:10px;
+  padding:0;
+  width:284px;
+}
+#content .silo-kids-activities .banner-container .biglink img {
+  float:left;
+}
+#content .silo-kids-activities .banner-container .biglink .text {
+  float:right;
+  height:95px;
+  margin-top:5px;
+  width:170px;
+}
+
+#content .silo-kids-activities #food-activites {
+  height:121px;
+  margin-bottom:5px;
+  background:url(../images/homepage/bg-banner-kids-activities.png) no-repeat;
+}
+#content .silo-kids-activities #food-activites .biglink {
+  height:100px;
+}
+#content .silo-kids-activities #featured-activites .biglink {
+  width:300px;
+  height:70px;
+  margin:0 0 10px;
+}
+#content .silo-kids-activities #food-activites a,
+#content .silo-kids-activities #featured-activites h3 {
+  color:#6e2b8c;
+}
+#content .silo-kids-activities #featured-activites h3 {
+  margin:0 0 15px;
+}
+#content .silo-kids-activities #featured-activites h4 {
+  margin-top:2px;
+}
+#content .silo-kids-activities #featured-activites .text {
+  margin:0 5px 0 0;
+  width:185px;
+}
+
+#content .silo-kids-activities .explore-container a,
+#content .silo-kids-activities .explore-container {
+  background: url(../images/homepage/bg-explore-kids-activities.png) no-repeat;
+}
+#content .silo-kids-activities .explore-container a {
+  width:185px;
+  background-position:top right;
+}
+
+
+/*****************************************************
+  VIDEO + MENU
+*****************************************************/
+#content .silo-videos {
+  float:left;
+  clear:both;
+  width:608px;
+  margin-bottom:5px;
+  display: none;
+}
+#content .silo-videos { display: block; }
+#content .silo-videos h2 {
+  border-bottom-color:#6e2b8c;
+  background-position:right 0;
+  margin-bottom:10px;
+}
+#content .silo-videos a {
+  border:none;
+}
+#content .silo-videos .warning {
+
+}
+#content .silo-videos .warning a {
+  color: #fff;
+}
+.swfenabled .silo-videos .warning { display: none; }
+
+#content .silo-videos .outer,
+#content .silo-videos .inner {
+  background:url('../images/homepage/bg-video.png') no-repeat top left;
+}
+#content .silo-videos .inner {
+  margin-top:7px;
+  padding:0 7px 7px;
+  width: 400px;
+  background-position:bottom left;
+}
+#content .silo-videos .outer h4 {
+  color:#FFF;
+  margin:10px 0 0 35px;
+  width: 370px;
+}
+#content .silo-videos .outer {
+  float:left;
+}
+#content .silo-videos .menu {
+  float:right;
+  width:180px;
+  margin:0;
+}
+
+#content .silo-videos .banner-container .biglink {
+  height:auto;
+  overflow:visible;
+  margin: 3px 0 0;
+  padding:0;
+  width:auto;
+}
+#content .silo-videos .banner-container .biglink p,
+#content .silo-videos .banner-container .biglink h4 a {
+  padding-left:20px;
+}
+#content .silo-videos .banner-container .biglink h4 a {
+  background:url('../images/homepage/bg-icon-videos.png') no-repeat 0 0;
+}
+
+#content .silo-videos .silo-childbirth h4 a {
+  color:#007889;
+  background-position:0 -14px !important;
+}
+#content .silo-videos .silo-childbirth .over h4 a,
+#content .silo-videos .silo-childbirth h4 a:hover {
+  color:#04b49f;
+}
+
+#content .silo-videos .silo-babycare h4 a {
+  color:#007843;
+  background-position:0 -28px !important;
+}
+#content .silo-videos .silo-babycare .over h4 a,
+#content .silo-videos .silo-babycare h4 a:hover {
+  color:#84ba42;
+}
+
+#content .silo-videos .silo-toddler h4 a {
+  color:#800042;
+  background-position:0 -42px !important;
+}
+#content .silo-videos .silo-toddler .over h4 a,
+#content .silo-videos .silo-toddler h4 a:hover {
+  color:#ec3b96;
+}
+
+#content .silo-videos .silo-parenting h4 a {
+  color:#80002f;
+  background-position:0 -56px !important;
+}
+#content .silo-videos .silo-parenting .over h4 a,
+#content .silo-videos .silo-parenting h4 a:hover {
+  color:#cc517e;
+}
+
+#content .silo-videos .silo-products h4 a {
+  color:#6e2b8c;
+  background-position:0 -70px !important;
+}
+#content .silo-videos .silo-products .over h4 a,
+#content .silo-videos .silo-products h4 a:hover {
+  color:#9900cc;
+}
+
+
+
+
+

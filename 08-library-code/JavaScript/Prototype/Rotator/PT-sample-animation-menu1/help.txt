@@ -1,0 +1,53 @@
+HTML + CSS
+<div id="today-on-huggies"> 
+// 顶层容器。使用 position：relative; 这样里面的元素才可以使用 position：absolute; 
+// 使用 overflow: hidden; 来隐藏超出范围的元素
+
+	<div class="menu-container">
+	// 使用 position: absolute; 定位。（保证动画元素正常工作）
+	
+		<div class="animated-menu">
+		// 所有动画条的容器
+		
+			<div class="item">
+			// 动画条，使用 css 定义 mouseRollOver 时的鼠标状态
+			
+				<div class="text">
+				// 文本容器
+				
+				<img />
+				// 图片，使用 css 重新定义尺寸
+				
+				
+JS
+initialize: function(container, interval) {
+	根据导入的顶层容器，
+	选取下层容器
+	选取动画条容器
+	选取所有动画条容器，装入数组。
+	// 经过实践，把所有要读取的元素放入数组可能使得程序不是很易读。但可以有效的防止占用内存的问题。并更易于追踪
+	
+	检查当动画条多于4个时，使用定时函数，按照导入的间隔时间，调用 scroll()
+}
+
+
+scroll: function() {
+	取数组中的第一个元素(第一个动画条)
+	将动画条插入 <div class="menu-container">。 因为这个容器使用 position: absolute。
+	将动画条左移
+	将动画条容器上移
+	动画完成后调用 reset: function()
+}
+
+reset: function() {
+	把取出的元素放入数组最后
+	重置 <div class="animated-menu"> 的 style
+	重置所有动画条的 style
+	把动画条放回 <div class="animated-menu">
+}
+
+
+
+
+
+ 

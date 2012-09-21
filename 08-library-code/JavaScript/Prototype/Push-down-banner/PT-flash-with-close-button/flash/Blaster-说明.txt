@@ -1,0 +1,60 @@
+调用html 里的JS，隐藏或显示 banner
+
+// ---------- Argument 定义 ---------
+scope：flash banner main timeline
+id：promo name
+div: banner container's parent
+el: banner container
+collapsable: 是否显示关闭按钮
+height: banner 高度
+width: banner 宽度
+permanant: 点击关闭按钮后，重新读取页面是否再次显示 banner
+
+
+public function Blaster(scope, id:String, div:String="flash_wide_banner", el:String="openx_wide_zone", collapsable:Boolean=true, height:Number=180, width:Number=960, permanant:Boolean=true){
+	// Argument 本地化
+	_bannerID = id;
+	_bannerContainingDIV = div;
+	_bannerElementDIV = el;
+	_bannerHeight = height;
+	_collapsable = collapsable; //是否显示关闭按钮
+	_perm = permanant; // 点击关闭按钮后，重新读取页面是否再次显示 banner
+
+	// 点击 this 时， 调用 hideBanner()
+	// 让 flash banner 把 this 添加到 stage
+	// 调用 bridgeInit(); 
+}
+
+
+public function hideBanner(e:MouseEvent=null, useElementDiv:Boolean=false, updateCookie:Boolean=true):void{
+	// 如果 updateCookie = true， 调用 setCookie()
+	// 如果 useElementDiv = true，把 _bannerElementDIV 传给HTML 里的huggies.closeBanner(), 否则把 _bannerContainingDIV 传给HTML 里的huggies.closeBanner()
+}
+
+public function revealBanner():void{
+	// 根据创建 banner 时的设置，决定是否显示关闭按钮
+	// 调用 HTML 里的 JS function huggies.openBanner()，传递 _bannerContainingDIV, _bannerHeight 给 JS
+}
+
+
+private function bridgeInit():void{
+	// 检查能否和HTML 里的JS 通讯
+	// 0.1 秒后执行 timerHandler()
+}
+
+private function timerHandler(event:TimerEvent):void {
+	// 执行checkJavaScriptReady()，检查 JS 和 Flash 是否就绪
+	// 终止正在执行的 Timer(因为这个 function 是通过 timer 执行的。当程序被执行后，需要停止timer)
+	// 执行getCookie()，校验写在用户端的 flash cookie
+	// 当 flash cookie 中的 hidden = true，并且在设置banner 时允许显示关闭按钮，执行 hideBanner(null, true, false)，否则执行 revealBanner()
+}	
+
+private function checkJavaScriptReady():Boolean {
+	// 调用 HTML 里 JS 的 huggies.onFlashLoaded.检查 JS 和 Flash 是否就绪。
+	// 返回 Boolean
+}
+
+private function getCookie():Boolean{
+	// 检查客户端，每个banner 特有的flash cookie。并校验 cookie 中的 hidden。
+	// 如果 cookie 中没有 hidden，返回false，否则返回 hidden 的值
+}

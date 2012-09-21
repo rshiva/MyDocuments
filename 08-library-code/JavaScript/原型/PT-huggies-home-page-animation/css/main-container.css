@@ -1,0 +1,53 @@
+#today-on-huggies .main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 313px;
+    height: 304px;
+    overflow: hidden;
+    border-right: solid 1px #D89CE8;
+    border-bottom: solid 1px #D89CE8;
+}
+
+#today-on-huggies .main-container .text {
+    position:absolute;
+    float:left;
+    z-index:1;
+    overflow:hidden;
+    bottom:0;
+    padding:10px;
+    width:293px;
+    background:url(../images/bg-ask-expert-focus.png);
+}
+
+#today-on-huggies .main-container .text .read-more {
+    float: right;
+}
+
+#today-on-huggies .main-container .text h4 {
+    font-size: 1.5em !important;
+    height: 35px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#today-on-huggies .main-container .text h4 a {
+    color: white !important;
+}
+
+#today-on-huggies .main-container .text p {
+    color: #EBDAF2;
+    margin: 0;
+    width: 215px;
+    float: left;
+    font-size: 12px;
+}
+
+#today-on-huggies .main-container .text .time-ago {
+    display: none;
+}
+
+#today-on-huggies .main-container .large {
+    position: absolute;
+    z-index: 0;
+}

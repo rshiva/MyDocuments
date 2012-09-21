@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS round corner</title>
+<style type="text/css" media="screen">
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+
+.round{
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.next-button{
+	display: block;
+	top: 0px;
+	right: 0px;
+	width: 156px;
+	height: 55px;
+	line-height: 55px;
+	padding: 0px;
+	
+	color: white;
+	font-size:25px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow: 0px -1px 0px #4F91EA;
+	text-align: center;
+	
+	cursor: hand;
+	cursor: pointer;
+	
+	/* background */
+	background: #90EDFE;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#90EDFE), to(#0C7AE8));
+	background: -webkit-linear-gradient(#90EDFE, #0C7AE8);
+	background: -moz-linear-gradient(#90EDFE, #0C7AE8);
+	background: -ms-linear-gradient(#90EDFE, #0C7AE8);
+	background: -o-linear-gradient(#90EDFE, #0C7AE8);
+	background: linear-gradient(#90EDFE, #0C7AE8);
+	-pie-background: linear-gradient(#90EDFE, #0C7AE8);
+	
+	/* xOff:0px yOff:2px blur:3px */
+	box-shadow: #666 0px 2px 3px;
+}
+</style>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" charset="utf-8" src="javascripts/PIE.js"></script>
+	<![endif]-->
+	<script type="text/javascript" charset="utf-8">
+		document.observe('dom:loaded', function(){
+			if (window.PIE) {   
+				$$(' .round').each(function(node) { PIE.attach(node); });
+				$$(' .bottom-corner').each(function(node) { PIE.attach(node); });
+			 }
+		})
+	</script>
+</head>
+
+<body>
+<h2>Round corner + Gradiant background</h2>
+<a href="#next" class="round next-button">NEXT</a>
+</body>
+</html>

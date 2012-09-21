@@ -1,0 +1,22 @@
+- 主要作用是用户 click 后把information 送往 GA，并作 redirect
+
+public function FlashTracker(scope:MovieClip,googleAsynch:Boolean=false) {
+	把导入的参数本地化
+}
+
+public function countTotalClick():void {
+	把 string 传给页面内的 GA 代码，再由 GA 代码传递给服务器
+	根据HTML 页面内 GA 代码的不同添加方式，传 string 的方式也有些不同。
+	总的说都是用 ExternalInterface.call()
+}
+
+public function countClickLocation():void {
+	把 string 传给页面内的 GA 代码，再由 GA 代码传递给服务器
+	根据HTML 页面内 GA 代码的不同添加方式，传 string 的方式也有些不同。
+	总的说都是用 ExternalInterface.call()
+}
+
+public function reDirect(reDirectURL:String):void {
+	设置一个延时。点击后如果马上做 redirect，有些浏览器会报错。可能是线程的问题。
+	设置一个timer，1秒后执行 redirect
+}

@@ -1,0 +1,1 @@
+<input id="search-field" class="input" type="text" value="Search here" name="q" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" />

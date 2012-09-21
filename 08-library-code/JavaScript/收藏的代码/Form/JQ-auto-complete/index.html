@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LC'BLOG</title>
+<link href="css/jquery.autocomplete.css" type=text/css rel=stylesheet>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+<script type="text/javascript">
+$().ready(function() {
+	function formatItem(row) {
+		return " <p>"+row[0] +" </p>"+ " <span>" + row[1] + "个结果</span>";
+	}
+	function formatResult(row) {
+		return row[0].replace(/(<.+?>)/gi, '');
+	}
+	function selectItem(li) {
+		makeSearchUrl(document.formkeyword);
+	}
+	$("#keyword").autocomplete("data.html",
+	{
+		delay:10,
+		matchSubset:1,
+		matchContains:1,
+		cacheLength:10,
+		onItemSelect:selectItem,
+		formatItem: formatItem,
+		formatResult: formatResult
+	}
+	);
+
+});
+</script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+ var makeSearchUrl = function(o){
+	var keys = o.keyword.value;
+	if(keys == "" || keys == "请输入关键字"){
+		alert("请输入关键字");
+		o.keyword.focus();
+		return false;
+	}
+	keys = encodeURIComponent(keys);
+	var url = "/article-search-keyword-"+ keys+".html";
+	window.open(url,'_self');
+	return false;
+}
+</script>
+<div class="sidebarBlock">
+<h5>Search</h5>
+<form id="formkeyword" name="formkeyword" method="get" action="search.html" onsubmit="return makeSearchUrl(this)">
+<div class="sidebarSearch">
+<ul>
+<li><input type="text" name="keyword" size="24" maxlength="255" value="" id="keyword" class="text"></input></li>
+<li><input type="submit" value="搜索" class="button"></input></li>
+</ul>
+</div>
+</form>
+</div>
+</body>
+</html>

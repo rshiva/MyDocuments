@@ -1,0 +1,51 @@
+/* main menu */
+div#main-menu {
+    padding: 0;
+    clear: both;
+    height: 40px;
+}
+
+div#main-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    font-size: 12px;
+}
+
+div#main-menu li{
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 39px;
+    font-size: 14px;
+    text-transform: lowercase;
+    background: transparent url(../images/header-divider.gif) 100% 0% no-repeat; /* divider line in dark color */
+}
+
+div#main-menu li a{
+    color: #FFEBF6;
+    display: inline;
+    float: left;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    background: url(../images/header-divider.gif) 0px -39px no-repeat; /* divider line in light color */
+}
+
+/* kill background image for first and last menu item */
+div#main-menu .last { border-right: 0; background: none;}
+div#main-menu .first a { background: none; }
+
+/* set width for each men item */
+div#main-menu .conception a {width: 109px;}
+div#main-menu .pregnancy a {width: 107px;}
+div#main-menu .child-birth a {width: 101px;}
+div#main-menu .baby-care a {width: 103px;}
+div#main-menu .toddler a {width: 85px;}
+div#main-menu .parenting a {width: 99px;}
+div#main-menu .blogs a {width: 75px;}
+div#main-menu .forum a {width: 78px;}
+div#main-menu .nappies a {width: 95px;}
+div#main-menu .promotions a {width: 108px;}

@@ -1,0 +1,10 @@
+<param name="wmode" value="transparent"> 
+If you are also using the embed tag inside of the object tag then you need to add this to the embed tag.
+wmode="transparent"
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="705" height="430">
+<param name="movie" value="images/home.swf" />
+<param name="quality" value="high" />
+<param name="wmode" value="transparent">
+<embed src="images/home.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="705" height="430" wmode="transparent"></embed>
+</object>

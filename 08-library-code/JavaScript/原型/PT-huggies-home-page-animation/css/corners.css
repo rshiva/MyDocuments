@@ -1,0 +1,33 @@
+#today-on-huggies .corner {
+    display: block;
+    width: 6px;
+    height: 6px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    background: url(../images/bg-huggies-today-corners.png) no-repeat top left;
+}
+
+#today-on-huggies .top-right {
+    top: 0;
+    right: 0;
+    background-position: right 0;
+}
+#today-on-huggies .top-left {
+    top: 0;
+    left: 0;
+    background-position: 0 0;
+}
+#today-on-huggies .bottom-left {
+    bottom: 0;
+    left: 0;
+    background-position: 0 -4px;
+}
+#today-on-huggies .bottom-right {
+    bottom: 0;
+    right: 0;
+    background-position: right -4px;
+}
+
+
+

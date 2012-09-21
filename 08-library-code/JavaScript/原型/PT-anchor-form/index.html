@@ -1,0 +1,1225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/order-form.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/fancyboxes.js"></script>
+	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/order-form.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script charset="utf-8" type="text/javascript">
+	  // &lt;![CDATA[
+	  var vpsObj = {
+	    a: {
+	      ram: '512 MB',
+	      storage: '10 GB',
+	      storageGB: 10,
+	      allowance: '10 GB',
+	      cost: 80,
+	      setup: 100,
+	      hoverText: "This VPS does not have enough disk space for Windows"
+	    },
+	    b: {
+	      ram: '1 GB',
+	      storage: '15 GB',
+	      storageGB: 15,
+	      allowance: '15 GB',
+	      cost: 120,
+	      setup: 100,
+	      hoverText: "This VPS does not have enough disk space for Windows"
+	    },
+	    c: {
+	      ram: '1.5 GB',
+	      storage: '20 GB',
+	      storageGB: 20,
+	      allowance: '20 GB',
+	      cost: 160,
+	      setup: 100
+	    },
+	    d: {
+	      ram: '2 GB',
+	      storage: '40 GB',
+	      storageGB: 40,
+	      allowance: '30 GB',
+	      cost: 195,
+	      setup: 100
+	    },
+	    e: {
+	      ram: '3 GB',
+	      storage: '60 GB',
+	      storageGB: 60,
+	      allowance: '40 GB',
+	      cost: 295,
+	      setup: 100
+	    },
+	    f: {
+	      ram: '4 GB',
+	      storage: '80 GB',
+	      storageGB: 80,
+	      allowance: '50 GB',
+	      cost: 390,
+	      setup: 100
+	    },
+	    g: {
+	      ram: '8 GB',
+	      storage: '120 GB',
+	      storageGB: 120,
+	      allowance: '100 GB',
+	      cost: 585,
+	      setup: 100
+	    },
+	    h: {
+	      ram: '12 GB',
+	      storage: '160 GB',
+	      storageGB: 160,
+	      allowance: '150 GB',
+	      cost: 775,
+	      setup: 100
+	    },
+	    i: {
+	      ram: '16 GB',
+	      storage: '200 GB',
+	      storageGB: 200,
+	      allowance: '200 GB',
+	      cost: 960,
+	      setup: 100
+	    }
+	  };
+	  // ]]&gt;
+	</script>
+	<script charset="utf-8" type="text/javascript">
+		// &lt;![CDATA[
+		var fb;
+		var orderForm;
+		document.observe('dom:loaded', function()
+		{
+			if (typeof vpsObj == 'undefined') {
+				vpsObj = false;
+			}
+			buildVPS(vpsObj);
+			fb = new FancyBoxes();
+			orderForm = new OrderForm(
+				'vps-order-form',
+				$('form-container').down('.progress'),
+				'overview-header',
+				'overview-footer'
+			);
+		});
+		// ]]&gt;
+	</script>
+</head>
+
+<body>
+	<div id="main">
+					<h1><span class="caps">VPS</span> Order</h1>
+	<div id="summary">
+	  <p>Complete the below order form and we will build a <span class="caps">VPS</span> for you on the spot! The details will be emailed out to you today! If you don’t want to fill out the form, give us a call on <strong>1300 883 979</strong> and we can do this over the phone, hassle free. Don’t worry, we won’t do the hard sell, we’ll talk you through all the details so you will understand exactly what you’re getting.</p>
+	</div>
+	<div class="order-form">
+
+
+		<noscript>
+			&lt;div class="noscript"&gt;
+				&lt;p&gt;
+					You need to enable Javascript to use this form.&lt;br /&gt;
+					Please &lt;a href="http://www.enable-javascript.com/" target="_blank"&gt;enable Javascript&lt;/a&gt; in your web browser, and reload the page.
+				&lt;/p&gt;
+			&lt;/div&gt;
+		</noscript>
+
+		<div class="interactive-form" id="form-container">
+
+			<div class="progress">
+				<ol class="clearfix" id="order-progress">
+					<li class="first current">
+						<a rel="packages">
+							<span class="text">VPS Packages</span>
+							<span class="status"></span>
+						</a>
+					</li>
+					<li>
+						<a rel="customise">
+							<span class="text">Customise</span>
+							<span style="display: none;" class="status"></span>
+						</a>
+					</li>
+					<li>
+						<a class="extras" rel="extras">
+							<span class="text">Extras</span>
+							<span style="display: none;" class="status"></span>
+						</a>
+					</li>
+					<li>
+						<a class="contract" rel="contact">
+							<span class="text">Contact</span>
+							<span style="display: none;" class="status"></span>
+						</a>
+					</li>
+					<li class="last">
+						<a rel="confirmation">
+							<span class="text">Confirmation</span>
+							<span style="display: none;" class="status"></span>
+						</a>
+					</li>
+				</ol>
+				<div class="thermometer">
+					<div class="mercury"></div>
+				</div>
+			</div>
+
+			<form action="https://buildsystem.anchor.net.au/" method="post" id="vps-order-form">
+
+				<input type="hidden" value="orders@anchor.com.au" name="recipient">
+				<input type="hidden" value="Virtual Private Server Order Form" name="subject">
+				<input type="hidden" value="/servers/quotes/vps-order-confirmation/" name="redirect">
+				<input type="hidden" name="monkeys">
+				<input type="hidden" name="emailAddress">
+
+				<div id="overview-header" class="overview clearfix">
+					<div class="pricing first setup">
+						<div class="wrapper">
+							<h5>Setup</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">One time cost</p>
+						</div>
+					</div>
+					<div class="pricing vps">
+						<div class="wrapper">
+							<h5>VPS Ongoing</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing customisation">
+						<div class="wrapper">
+							<h5>Customisation</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing extras">
+						<div class="wrapper">
+							<h5>Extras</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing total last">
+						<div class="wrapper">
+							<h5>Total</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Setup + First month</p>
+							<span class="logic equals"></span>
+						</div>
+					</div>
+					<div class="next-month">
+						<div class="pricing long">
+							<div class="wrapper">
+								<h5>Starting next month, you will be charged:</h5>
+							</div>
+						</div>
+						<div class="pricing total">
+							<div class="wrapper">
+								<h5>
+									$
+									<span class="amount">0</span>
+									<span>monthly</span>
+								</h5>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="fieldset-wrapper">
+					<fieldset style="xdisplay: none;" id="packages">
+
+						<legend>VPS Packages</legend>
+
+						<div id="vps" class="field clearfix last validate validate[selectOne]">
+							<div class="product">
+								<div class="field-contents">
+									<ul class="headings clearfix">
+										<li>RAM</li>
+										<li>Storage</li>
+										<li class="allowance">Data Allowance</li>
+										<li>Cost</li>
+									</ul>
+									<ul class="radios straight clearfix">
+
+									<li>
+											<label class="radio clearfix hovertip fb_checked fb_box fb_radio fb_block">
+												<input type="radio" value="a" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS A</span>
+													<span class="ram stat">512 MB</span>
+													<span class="storage stat">10 GB</span>
+													<span class="allowance stat">10 GB</span>
+													<span class="cost stat">$80 per month</span>
+												</span>
+											<p class="hovertip"><span class="wrapper"><span class="text">This VPS does not have enough disk space for Windows</span><img src="/images/order-form/tooltip-arrow-side.png" alt="" class="arrow"></span></p></label>
+										</li><li>
+											<label class="radio clearfix hovertip fb_box fb_radio fb_block">
+												<input type="radio" value="b" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS B</span>
+													<span class="ram stat">1 GB</span>
+													<span class="storage stat">15 GB</span>
+													<span class="allowance stat">15 GB</span>
+													<span class="cost stat">$120 per month</span>
+												</span>
+											<p class="hovertip"><span class="wrapper"><span class="text">This VPS does not have enough disk space for Windows</span><img src="/images/order-form/tooltip-arrow-side.png" alt="" class="arrow"></span></p></label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="c" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS C</span>
+													<span class="ram stat">1.5 GB</span>
+													<span class="storage stat">20 GB</span>
+													<span class="allowance stat">20 GB</span>
+													<span class="cost stat">$160 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="d" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS D</span>
+													<span class="ram stat">2 GB</span>
+													<span class="storage stat">40 GB</span>
+													<span class="allowance stat">30 GB</span>
+													<span class="cost stat">$195 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="e" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS E</span>
+													<span class="ram stat">3 GB</span>
+													<span class="storage stat">60 GB</span>
+													<span class="allowance stat">40 GB</span>
+													<span class="cost stat">$295 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="f" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS F</span>
+													<span class="ram stat">4 GB</span>
+													<span class="storage stat">80 GB</span>
+													<span class="allowance stat">50 GB</span>
+													<span class="cost stat">$390 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="g" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS G</span>
+													<span class="ram stat">8 GB</span>
+													<span class="storage stat">120 GB</span>
+													<span class="allowance stat">100 GB</span>
+													<span class="cost stat">$585 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="h" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS H</span>
+													<span class="ram stat">12 GB</span>
+													<span class="storage stat">160 GB</span>
+													<span class="allowance stat">150 GB</span>
+													<span class="cost stat">$775 per month</span>
+												</span>
+											</label>
+										</li><li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="i" name="vps" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content clearfix">
+													<span class="title">VPS I</span>
+													<span class="ram stat">16 GB</span>
+													<span class="storage stat">200 GB</span>
+													<span class="allowance stat">200 GB</span>
+													<span class="cost stat">$960 per month</span>
+												</span>
+											</label>
+										</li></ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div style="padding-top: 270px;" class="costing">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<fieldset style="display: none;" id="customise">
+						<legend>Customise</legend>
+
+						<div id="operating-systems" class="field clearfix validate validate[selectOne]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Select your operating system</h3>
+								</div>
+								<div class="field-contents">
+									<ul class="radios squares clearfix">
+										<li>
+											<label class="radio square debian fb_box fb_radio fb_block">
+												<input type="radio" value="Debian" name="operating-system" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Debian</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio square cent-os fb_box fb_radio fb_block">
+												<input type="radio" value="CentOS" name="operating-system" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">CentOS</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio square red-hat fb_box fb_radio fb_block">
+												<input type="radio" value="Red Hat" name="operating-system" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Red Hat</span>
+													<span class="note">Version 6.1</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="radio square windows toggler rel[ssh-key] fb_box fb_radio fb_block">
+												<input type="radio" value="Windows" name="operating-system" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Windows</span>
+													<span class="note">2008 Web Edition R2</span>
+												</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div style="display: none;" class="costing">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="support-packs" class="field clearfix validate validate[selectOne]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Select your support pack</h3>
+									<a title="more information" class="tooltip-link" href="#tooltip">
+										help
+									</a>
+									<div style="display: none;" class="tooltip-content">
+										<div class="wrapper">
+											<p>
+												<strong>Monitor:</strong> professionally managed hardware<br>
+												<strong>Secure:</strong> managed server security<br>
+												<strong>Complete:</strong> hosting managed all the way to the code
+											</p>
+											<img class="arrow" alt="" src="/images/order-form/tooltip-arrow.png">
+										</div>
+									</div>
+									<p class="note">
+										<a onclick="window.open(this.href); return false;" href="/management/support-packs/">more info</a>
+									</p>
+								</div>
+								<div class="field-contents">
+									<ul class="radios squares clearfix">
+										<li>
+											<label class="radio monitor fb_box fb_radio fb_block">
+												<input type="radio" value="Monitor" name="support-pack" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">Monitor</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio secure fb_box fb_radio fb_block">
+												<input type="radio" value="Secure" name="support-pack" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">Secure</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio complete fb_box fb_radio fb_block">
+												<input type="radio" value="Complete" name="support-pack" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">Complete</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div style="display: none;" class="costing">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix validate validate[required] validate[username]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="username">
+										Choose your desired username
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<input type="text" id="username" name="username" class="text large">
+									</div>
+									<p class="field-note">
+										Your username can only contain letters <code>a-z</code>, numbers <code>0-9</code>, the symbols <code>-_</code>, and <br>
+										no white space.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix last validate validate[domain]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="domain-name">
+										Domain Name
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<input type="text" id="domain-name" name="domain-name" class="text large">
+									</div>
+									<p class="field-note">
+										Your domain should look something like <code>yourdomain.com</code>.<br>
+										There is no need to include the protocol <code><del>http://</del></code>.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<fieldset style="display: none;" id="extras">
+						<legend>Extras</legend>
+
+						<div id="service-upgrades" class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Service Upgrades
+									</h3>
+								</div>
+								<div class="field-subheader clearfix">
+									<h4>Secure Port</h4>
+									<a title="more information" class="tooltip-link" href="#tooltip">
+										help
+									</a>
+									<div style="display: none;" class="tooltip-content">
+										<div class="wrapper">
+											<p>
+												<strong>Shared</strong>:
+												Firewalls you from the Internet but doesn’t separate you from other Anchor customers using the same service.<br>
+												<strong>Private</strong>:
+												Firewall will isolate traffic to your individual server.
+											</p>
+											<img class="arrow" alt="" src="/images/order-form/tooltip-arrow.png">
+										</div>
+									</div>
+								</div>
+								<div id="secure-port" class="field-contents validate validate[selectOne] first">
+									<ul class="radios clearfix">
+										<li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="None" name="secure-port" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">None</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="Shared" name="secure-port" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">Shared</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio clearfix fb_box fb_radio fb_block">
+												<input type="radio" value="Private" name="secure-port" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">Private</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="field-subheader clearfix">
+									<h4>Backups</h4>
+								</div>
+								<div id="backups" class="field-contents">
+									<ul class="checkboxes two-column clearfix">
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Online Disk" name="backups" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Online Disk</span>
+													<span class="note">$3/GB per month</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Offsite Tapes" name="backups" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Offsite Tapes</span>
+													<span class="note">$13.75/GB per month</span>
+												</span>
+												<span class="version"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div style="display: none;" class="costing">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="required-packages" class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Required Packages
+									</h3>
+									<p class="note">You can select more than one added-on package</p>
+								</div>
+								<div class="field-contents">
+									<ul class="checkboxes two-column clearfix">
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Apache" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Apache</span>
+													<span class="note">Version 2.2</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="PostgreSQL" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">PostgreSQL</span>
+													<span class="note">Version 8.4</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="nginx" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">nginx</span>
+													<span class="note">Version 0.7</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="MySQL" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">MySQL</span>
+													<span class="note">Version 5.1</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="IIS" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">IIS</span>
+													<span class="note">Version 7</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="MSSQL" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">MSSQL</span>
+													<span class="note">Version 2008 R2</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Ruby" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Ruby</span>
+													<span class="note">Version 4.5</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Zope" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Zope</span>
+													<span class="note">Version 3.7</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Tomcat" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Tomcat</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix toggler rel[special-build] rel[special-build-notice] fb_box fb_checkbox fb_block">
+												<input type="checkbox" value="Special Build" name="required-packages[]" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+												<span class="content">
+													<span class="title">Special Build</span>
+													<span class="note">Version ?</span>
+												</span>
+											</label>
+										</li>
+									</ul>
+									<div style="display: none;" class="field-input" id="special-build">
+										<label class="subhead" for="special-build-comment">
+											Tell us what you want and we’ll give you a quote
+										</label>
+										<textarea cols="80" rows="6" id="special-build-comment" name="special-build-comment"></textarea>
+									</div>
+									<p class="field-note"><strong>Please note:</strong> some packages may be disabled because they are not available on the operating system you selected.</p>
+								</div>
+							</div>
+							<div class="summary">
+							</div>
+						</div>
+
+
+						<div id="ssh-key" class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Provide SSH Key
+									</h3>
+									<!-- <a href="#tooltip" class="tooltip-link" title="more information">
+										help
+									</a>
+									<div class="tooltip-content" style="display: none;">
+										<div class="wrapper">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<img src="/images/order-form/tooltip-arrow.png" alt="" class="arrow" />
+										</div>
+									</div> -->
+								</div>
+								<div class="field-contents">
+									<div class="field-input last">
+										<label class="checkbox large clearfix toggler rel[ssh-key-container] fb_box fb_checkbox fb_block">
+											<input type="checkbox" value="Yes" name="use-ssh-key" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+											<span class="content">
+												Yes, I would like to provide SSH Key(s)
+											</span>
+										</label>
+									</div>
+									<div style="display: none;" class="add-another field-input validate validate[required]" id="ssh-key-container">
+										<ul>
+											<li>
+												<textarea cols="80" rows="6" name="ssh-key[]"></textarea>
+											</li>
+										</ul>
+										<a href="#add-another">
+											Add another key
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="additional-comments">
+										Additional Comments
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<textarea cols="80" rows="6" id="additional-comments" name="additional-comments"></textarea>
+									</div>
+									<p class="field-note">Add anything special or extra about this server that we may need to know about.</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<fieldset style="display: none;" id="contact">
+						<legend>Contact</legend>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Contact Details</h3>
+								</div>
+								<div class="field-contents">
+									<div class="field-input right-align">
+										<label for="title">Title</label>
+										<select id="title" name="title">
+											<option value="Mr.">Mr.</option>
+											<option value="Mrs.">Mrs.</option>
+											<option value="Miss">Miss</option>
+											<option value="Ms.">Ms.</option>
+											<option value="Dr.">Dr.</option>
+											<option value="Prof.">Prof.</option>
+										</select>
+									</div>
+									<div class="field-input right-align">
+										<h5>Your name</h5>
+										<div class="field-element clearfix">
+											<div class="left validate validate[required]">
+												<input type="text" id="first-name" name="first-name" class="text">
+												<p class="field-note">First name</p>
+											</div>
+											<div class="right validate validate[required]">
+												<input type="text" id="last-name" name="last-name" class="text">
+												<p class="field-note">Last name</p>
+											</div>
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required] validate[email]">
+										<label for="contact-email">Contact email</label>
+										<div class="field-element">
+											<input type="text" id="contact-email" name="contact-email" class="text email">
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="contact-phone">Contact phone</label>
+										<div class="field-element">
+											<input type="text" id="contact-phone" name="contact-phone" class="text phone">
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="address">Address</label>
+										<div class="field-element">
+											<input type="text" id="address" name="address" class="text">
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="city">City</label>
+										<div class="field-element">
+											<input type="text" id="city" name="city" class="text">
+										</div>
+									</div>
+									<div class="field-input right-align state last">
+										<label for="state">State</label>
+										<div class="field-element">
+											<select id="state" name="state">
+											<option value="NSW">NSW</option>
+											<option value="VIC">VIC</option>
+											<option value="QLD">QLD</option>
+											<option value="SA">SA</option>
+											<option value="WA">WA</option>
+											<option value="TAS">TAS</option>
+											<option value="NT">NT</option>
+											<option value="ACT">ACT</option>
+											</select>
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[postcode] validate[required] postcode last">
+										<label for="postcode">Postcode</label>
+										<div class="field-element">
+											<input type="text" maxlength="4" id="postcode" name="postcode" class="text int">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="summary">
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Company Details</h3>
+								</div>
+								<div class="field-contents">
+									<div class="field-input right-align">
+										<label for="company-name">Company name</label>
+										<div class="field-element">
+											<input type="text" id="company-name" name="company-name" class="text">
+										</div>
+									</div>
+									<div class="field-input right-align last validate validate[abn]">
+										<label for="company-abn">Company ABN</label>
+										<div class="field-element">
+											<input type="text" id="company-abn" name="company-abn" class="text">
+										</div>
+									</div>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Payment Option</h3>
+								</div>
+								<div class="field-contents validate validate[selectOne]">
+									<div class="field-input right-align last">
+										<h5>Payment type</h5>
+										<div class="field-element clearfix">
+											<ul class="radios payment-types">
+												<li>
+													<label class="radio toggler opener rel[credit-card-details] fb_box fb_radio fb_block">
+														<input type="radio" value="Credit Card" name="payment-type" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+														<span class="content credit-card">
+															<img alt="Visa, Mastercard" src="/images/order-form/payment-type-credit.png">
+															<span>Credit Card</span>
+														</span>
+													</label>
+												</li>
+												<li>
+													<label class="radio toggler closer rel[credit-card-details] fb_box fb_radio fb_block">
+														<input type="radio" value="EFTPOS" name="payment-type" class="fb_hidden"><span class="fb_holderWrap"><span class="fb_holder"></span></span>
+														<span class="content eftpos">
+															<img alt="EFTPOS" src="/images/order-form/payment-type-eftpos.png">
+															<span>EFTPOS</span>
+														</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div style="display: none;" id="credit-card-details">
+										<div class="field-input right-align validate validate[required]">
+											<label for="card-name">Name on card</label>
+											<div class="field-element">
+												<input type="text" id="card-name" name="card-name" class="text">
+											</div>
+										</div>
+										<div class="field-input right-align validate validate[cardNumber] validate[required]">
+											<label for="card-number">Card number</label>
+											<div class="field-element">
+												<input type="text" id="card-number" name="card-number" class="text">
+											</div>
+										</div>
+										<div class="field-input right-align">
+											<label for="expiry-month">Expiry date</label>
+											<div class="field-element">
+												<select id="expiry-month" name="expiry-month">
+													<option value="1">01</option>
+													<option value="2">02</option>
+													<option value="3">03</option>
+													<option value="4">04</option>
+													<option value="5">05</option>
+													<option value="6">06</option>
+													<option value="7">07</option>
+													<option value="8">08</option>
+													<option value="9">09</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+												<select id="expiry-year" name="expiry-year">
+													<option value="2011">2011</option>
+													<option value="2012">2012</option>
+													<option value="2013">2013</option>
+													<option value="2014">2014</option>
+													<option value="2015">2015</option>
+													<option value="2016">2016</option>
+													<option value="2017">2017</option>
+													<option value="2018">2018</option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="field-input right-align validate validate[int] validate[required] last">
+											<label for="card-code">Card security code</label>
+											<div class="field-element clearfix">
+												<div class="card-code">
+													<input type="text" maxlength="3" id="card-code" name="card-code" class="text">
+												</div>
+												<img class="card-code" alt="Card security code diagram" src="/images/order-form/payment-card-security.gif">
+												<p class="field-note">
+													The last 3 digits on the back of your card
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+					</fieldset>
+
+					<fieldset style="display: none;" id="confirmation">
+						<legend>Confirmation</legend>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Your VPS</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Operating System</dt>
+										<dd class="operating-system"></dd>
+										<dt>HDD</dt>
+										<dd class="vps-storage"></dd>
+										<dt>RAM</dt>
+										<dd class="vps-ram"></dd>
+										<dt class="last">Data Allowance</dt>
+										<dd class="vps-allowance"></dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Support Pack</h3>
+									<p class="support-pack confirmation"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Service Upgrades</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Backups</dt>
+										<dd class="backups"></dd>
+										<dt class="last">Secure Port</dt>
+										<dd class="last secure-port"></dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Required Packages</h3>
+								</div>
+								<div class="field-contents">
+									<ul class="required-packages">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Username</h3>
+									<p class="username confirmation">&nbsp;</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Domain name</h3>
+									<p class="domain-name confirmation">&nbsp;</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Additional Comments</h3>
+								</div>
+								<div class="field-contents">
+									<p class="additional-comments"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Contact Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Name</dt>
+										<dd>
+											<span class="title">&nbsp;</span>
+											<span class="first-name">&nbsp;</span>
+											<span class="last-name">&nbsp;</span>
+										</dd>
+										<dt>Email</dt>
+										<dd class="contact-email">&nbsp;</dd>
+										<dt>Phone</dt>
+										<dd class="contact-phone">&nbsp;</dd>
+										<dt class="last">Address</dt>
+										<dd class="last">
+											<span class="address">&nbsp;</span>,<br>
+											<span class="city">&nbsp;</span>
+											<span class="state">&nbsp;</span>
+											<span class="postcode">&nbsp;</span>
+										</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Company Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Company name</dt>
+										<dd class="company-name">&nbsp;</dd>
+										<dt class="last">Company ABN</dt>
+										<dd class="last company-abn">&nbsp;</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Payment Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Payment Type</dt>
+										<dd class="payment-type">&nbsp;</dd>
+										<dt class="credit-card">Name on Card</dt>
+										<dd class="credit-card card-name">&nbsp;</dd>
+										<dt class="credit-card">Card Number</dt>
+										<dd class="credit-card card-number">&nbsp;</dd>
+										<dt class="credit-card">Expiry Date</dt>
+										<dd class="credit-card card-expiry">&nbsp;</dd>
+										<dt class="credit-card">Security Code</dt>
+										<dd class="credit-card card-code">&nbsp;</dd>
+										<dt class="credit-card last">Credit Card Type</dt>
+										<dd class="credit-card last card-type">&nbsp;</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+					</fieldset>
+
+				</div>
+
+				<div style="display: none;" id="overview-footer" class="overview">
+					<div style="display: none;" class="notice" id="special-build-notice">
+						<p>We’ll contact you regarding the exact price of your build.</p>
+					</div>
+					<div class="pricing long">
+						<div class="wrapper"><h4>Setup + First month</h4></div>
+					</div>
+					<div class="pricing total">
+						<div class="wrapper">
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<span class="logic equals"></span>
+						</div>
+					</div>
+					<div class="next-month clearfix">
+						<div class="pricing long">
+							<div class="wrapper"><h5>Starting next month, you will be charged</h5></div>
+						</div>
+						<div class="pricing total">
+							<div class="wrapper">
+								<h5>
+									$
+									<span class="amount">0</span>
+									<span>monthly</span>
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="navigation">
+					<div class="buttons clearfix">
+						<a class="back button" href="#back">Back</a>
+						<a class="next button" href="#next">Next</a>
+						<input type="submit" value="Order" class="submit button">
+					</div>
+				</div>
+
+			</form>
+		<div>
+	</div>
+	</div></div>
+
+
+
+
+
+				</div>
+</body>
+</html>

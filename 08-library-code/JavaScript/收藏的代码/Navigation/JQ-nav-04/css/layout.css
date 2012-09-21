@@ -1,0 +1,50 @@
+*{margin:0;padding:0;}
+body{background:#FFF;color:#000;text-align:center;font:normal 12px Georgia, Arial, Helvetica, sans-serif;}
+a:link,a:visited{color:#369;text-decoration:underline;}
+a:hover{color:#C80000;text-decoration:none;}
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+
+h1{margin:0 auto;width:100%;background:#353535 url(../img/logo.gif) 0 0 no-repeat;font-size:28px;height:60px;color:#FFF;line-height:60px;text-indent:60px;overflow:hidden;border-bottom:3px solid #999;}
+
+#TBMenu{margin:150px auto;width:950px;}
+#ChannelMenu{margin:0 auto;width:950px;height:36px;background:url(../img/firstM_normal.gif) repeat-x 0 -36px;}
+#ChannelMenu .Shell{background:url(../img/firstM_normal.gif) no-repeat left top;}
+#ChannelMenu .Tab{background:url(../img/firstM_normal.gif) no-repeat bottom right;width:100%;text-align:left;}
+#ChannelMenu .Tab ul{width:935px;margin-left:15px;height:36px;}
+#ChannelMenu .Tab li{float:left;width:100px;padding:0 7px 0 5px;background:url(../img/vertical.png) no-repeat right -50px;}
+#ChannelMenu .Tab a{margin-top:5px;display:block;color:#FFF;font-size:14px;font-weight:bold;height:27px;line-height:27px;text-decoration:none;}
+#ChannelMenu .Tab a span{padding:0 20px;display:block;text-align:center;}
+#ChannelMenu .Tab ul a:hover{background:url(../img/menuStat.png) no-repeat left top;}
+#ChannelMenu .Tab ul a:hover span{background:url(../img/menuStat.png) no-repeat right -27px;}
+#ChannelMenu .Tab li.current a{margin-top:6px;background:url(../img/menuStat.png) no-repeat -10px -60px;color:#000;font-size:14px;font-weight:bold;height:30px;line-height:30px;}
+#ChannelMenu img.new-icon{position: absolute; top: -8px; right: -3px;z-index:10;width:24px;height:18px;}
+#ChannelMenu .Tab li.VipTrade{width:160px;}
+#ChannelMenu .Tab li.VipMyAlipay{width:165px;}
+#ChannelMenu .Tab li.MyAlipay{width:120px;}
+* html #ChannelMenu .Tab li.VipTrade a span,* html #ChannelMenu .Tab li.VipMyAlipay a span{padding:8px 5px 5px;}
+#ChannelMenu .Tab li span img{margin-left:5px;margin-top:-2px;}
+#ChannelMenu .Tab li.current a:hover{background:url(../img/menuStat.png) -10px -60px no-repeat;}
+#ChannelMenu .Tab li.current a span,#ChannelMenu .Tab li.current a:hover span{background:url(../img/menuStat.png) right -90px no-repeat;height:30px;}
+#ChannelMenu h2 span,#ChannelMenu .Tab li.current a span{display:block;background:url(../img/menuStat.png) right -90px no-repeat;height:30px;}
+#ProductMenu{margin:0 auto;clear:both;background:url(../img/secdM_normal.png) 0 -37px repeat-x;height:37px;width:950px;}
+#ProductMenu .Shell{background:url(../img/secdM_normal.png) no-repeat left top;}
+#ProductMenu .Tab{background:url(../img/secdM_normal.png) no-repeat right bottom;width:100%;text-align:left;}
+#ProductMenu .Tab ul{height:37px;overflow:hidden;margin-left:10px;}
+#ProductMenu .Tab li{float:left;padding:8px 7px 0 7px;display:block;background:url(../img/vertical.png) no-repeat left 13px;width:90px;margin-left:-1px;}
+#ProductMenu .Tab a{display:block;color:#666;height:22px;line-height:22px;text-decoration:none;text-align:center;}
+#ProductMenu .Tab a span{padding:1px 2px 0 2px;display:block;font-size:12px;text-align:center;}
+#ProductMenu .Tab a:hover{background:url(../img/menuStat.png) -10px -130px no-repeat;color:#FF0;}
+#ProductMenu .Tab a:hover span{background:url(../img/menuStat.png) right -152px no-repeat;}
+#ProductMenu .Tab a:hover{color:#FF7300;}
+#ProductMenu .Tab li.Current a{background:url(../img/menuStat.png) -10px -175px no-repeat;color:#FFF;}
+#ProductMenu .Tab li.Current a span{background:url(../img/menuStat.png) right -197px no-repeat;}
+#ProductMenu .Tab li.Current a:hover{background:url(../img/menuStat.png) -10px -175px no-repeat;color:#FF0;}
+#ProductMenu .Tab li.Current a:hover span{background:url(../img/menuStat.png) right -197px no-repeat;}
+
+.hidden{display:none;clear:both;}
+
+#footer{margin:0 auto;width:960px;padding:15px 0;overflow:hidden;border-top:1px solid #999;}
+#footer p{margin:0 auto;padding:5px 0;width:960px;line-height:20px;text-align:center;font-size:14px;}

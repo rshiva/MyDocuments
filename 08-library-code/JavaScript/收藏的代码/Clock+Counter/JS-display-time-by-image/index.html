@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+<style type="text/css">
+</style>
+    
+<script type="text/javascript">
+function getDigits(){
+    num=new Array("numbers/0fdr.gif","numbers/1fdr.gif","numbers/2fdr.gif","numbers/3fdr.gif","numbers/4fdr.gif","numbers/5fdr.gif","numbers/6fdr.gif","numbers/7fdr.gif","numbers/8fdr.gif","numbers/9fdr.gif");
+    time=new Date();
+
+    //-------------- display hour ----------------
+    hour=time.getHours()
+    if (hour<10){
+        document.getElementById('hour1').src=num[0];
+        h2="'" + hour + "'";
+        h2=h2.charAt(1);
+        document.getElementById('hour2').src=num[h2];
+    }else{
+        h1="'" + hour + "'";
+        h1=h1.charAt(1);
+        document.getElementById('hour1').src=num[h1];
+        h2="'" + hour + "'";
+        h2=h2.charAt(2);
+        document.getElementById('hour2').src=num[h2];
+    }
+
+    //-------------- display minutes --------------
+    minute=time.getMinutes();
+    if (minute<10){
+        document.getElementById('minute1').src=num[0];
+        m2="'" + minute + "'";
+        m2=m2.charAt(1);
+        document.getElementById('minute2').src=num[m2];
+    }else{
+        m1="'" + minute + "'";
+        m1=m1.charAt(1);
+        document.getElementById('minute1').src=num[m1];
+        m2="'" + minute + "'";
+        m2=m2.charAt(2);
+        document.getElementById('minute2').src=num[m2];
+     }
+
+    //-------------- display seconds --------------
+    second=time.getSeconds();
+    if (second<10){
+        document.getElementById('second1').src=num[0];
+        s2="'" + second + "'";
+        s2=s2.charAt(1);
+        document.getElementById('second2').src=num[s2];
+    }else{
+        s1="'" + second + "'";
+        s1=s1.charAt(1);
+        document.getElementById('second1').src=num[s1];
+        s2="'" + second + "'";
+        s2=s2.charAt(2);
+        document.getElementById('second2').src=num[s2];
+    }
+}
+function showTime(){
+    timer=setTimeout("getDigits()",10);
+    interval=setInterval("getDigits()",1000);
+}
+function stopInterval(){
+    clearTimeout(timer);
+    clearInterval(interval);
+}
+</script>
+</head>
+
+<body onload="showTime()" onunload="stopInterval()" bgcolor="#000000">
+<img id="hour1" alt="" />
+<img id="hour2" alt=""/>
+<img id="minute1" alt="" />
+<img id="minute2" alt="" />
+<img id="second1" alt="" />
+<img id="second2" alt="" />
+</body>
+</html>

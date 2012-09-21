@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+#container{
+	width:850px;
+	margin:50px;
+	position: relative;
+}
+
+#pushDown-openBtn a{
+	display:block;
+	width:800px;
+	height:64px;
+	font-size:32px;
+	font-weight:bold;
+	color:#ffffff;
+	padding:15px 0px 0px 30px;
+	background:url('images/trigger-bg.jpg') top left no-repeat;
+}
+
+#pushDown-content{
+	position:absolute;
+	top:0;
+	left:0;
+	width:800px;
+	background:#4d4d4d;
+}
+
+#pushDown-content h2{
+	display:block;
+	font-size:32px;
+	font-weight:bold;
+	width:740px;
+	color:#ffffff;
+	margin:20px 30px 10px 30px;
+}
+
+#pushDown-content p{
+	display:block;
+	font-size:13px;
+	width:740px;
+	color:#ffffff;
+	margin:0px 30px 30px 30px;
+}
+
+#pushDown-closeBtn{
+	position:absolute;
+	top:0;
+	right:0;
+	display:block;
+	margin:0px;
+	padding:0px;
+	width:55px;
+	height:34px;
+	cursor:pointer;
+	text-indent:-9999em;
+	background:url('images/close.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

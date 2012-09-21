@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, small, strike, strong, sub, sup, tt dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+#container{
+	margin:100px;
+	width:800px;
+	height:500px;
+	position:relative;
+	background:#cccccc;
+}
+
+/* buttons */
+#container .btn{ width:100px; height:100px; display:block; position:absolute; }
+
+#btn1{ background:url(images/btn1.png) top left no-repeat; top:80px; left:80px; }
+#btn2{ background:url(images/btn2.png) top left no-repeat; top:80px; left:350px; }
+#btn3{ background:url(images/btn3.png) top left no-repeat; top:80px; left:620px; }
+#btn4{ background:url(images/btn4.png) top left no-repeat; top:265px; left:80px; }
+#btn5{ background:url(images/btn5.png) top left no-repeat; top:265px; left:350px; }
+#btn6{ background:url(images/btn6.png) top left no-repeat; top:265px; left:620px; }
+
+/* arrows */
+#arrow-1{ position:absolute; top:-27px; left:77px; }
+#arrow-2{ position:absolute; top:-27px; left:345px; }
+#arrow-3{ position:absolute; top:-27px; left:620px; }
+#arrow-4{ position:absolute; top:219px; left:77px; }
+#arrow-5{ position:absolute; top:219px; left:345px; }
+#arrow-6{ position:absolute; top:219px; left:620px; }
+
+#container .bottom-panel{
+	display:block;
+	position:absolute;
+	left:30px;
+	top:200px;
+	width:750px;
+	z-index:999;
+}
+
+#container .top-panel{
+	display:block;
+	position:absolute;
+	left:30px;
+	top:18px;
+	width:750px;
+	z-index:998;
+}
+
+.copy-panel{
+	padding-left:20px;
+	padding-right:30px;
+	padding-top:30px;
+	background:url(images/background.png) top left no-repeat;
+	min-height:220px;
+}

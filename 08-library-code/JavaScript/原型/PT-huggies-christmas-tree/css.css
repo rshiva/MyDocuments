@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, small, strike, strong, sub, sup, tt dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+#christmas {width: 628px; height: 444px; display:block; background: url(images/xmas-tree.jpg) no-repeat; margin: 0px 0 15px -9px; position:relative}
+/* define public attribute in one class name */
+#christmas .branch {display:block; overflow: visible; position:absolute}
+/* define individual attribute in id */
+#xmas-1 {left: 314px; top: 113px }
+#xmas-2 {left: 274px; top: 203px }
+#xmas-3 {left: 353px; top: 201px }
+#xmas-4 {left: 289px; top: 296px }
+#xmas-5 {left: 193px; top: 340px }
+#xmas-6 {left: 391px; top: 356px }
+#xmas-7 {left: 385px; top: 280px }
+
+#christmas a.ball {width: 25px; height: 25px; background: url(images/xmas-tree-dot.png) top left no-repeat; position:absolute; top: 0; left: 0; display:block}
+#christmas a.ball span{ display:none}
+
+
+#christmas .item {background: url(images/xmas-tree-card-right.png) top right no-repeat; width: 276px; height: 75px; display:block; padding: 9px 8px 20px 0px; position:absolute; left: 20px; top: -100px}
+#christmas .left {background: url(images/xmas-tree-card-left.png) top left no-repeat; left: -275px; padding: 9px 0px 20px 8px}
+#christmas h4, #christmas img {position:absolute; top:9px; width: 75px; height: 75px}
+#christmas h4 {margin:15px 0 0 0; padding: 0; width: 150px}
+#christmas .right h4 {left: 43px}
+#christmas .left h4 {left: 95px}
+#christmas .right img {right: 8px}
+#christmas .left img {left:8px}

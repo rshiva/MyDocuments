@@ -1,0 +1,80 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background:#4d4d4d;
+}
+
+.container{
+	position:relative;
+	width:810px;
+	height:300px;
+	margin:50px;
+	float:left;
+	background:#2c2c2c;
+}
+
+
+#container1-mask, #container2-mask{
+	display:block;
+	position:relative; /* fix ie9 and ie7 issues */
+	width:690px;
+	height:300px;
+	margin:0px 60px 0px 60px;
+	float:left;
+	overflow:hidden;
+}
+
+#container1-items-container, #container2-items-container{
+	height:300px;
+}
+
+#container1-items-container .scroller-item{
+	width:690px;
+	height:300px;
+	float:left;
+}
+
+#container2-items-container .item{
+	width:228px;
+	height:300px;
+	float:left;
+	border-right:1px solid #636262;
+	border-left:1px solid #636262;
+}
+
+#container1-left-btn, #container2-left-btn{
+	display:block;
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:120px;
+	left:10px;
+	background:url('images/arrow-left.png') top left;
+	text-indent: -9999em;
+}
+
+#container1-right-btn, #container2-right-btn{
+	display:block;
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:120px;
+	right:10px;
+	background:url('images/arrow-right.png') top left;
+	text-indent: -9999em;
+}
+
+#container1-left-btn:hover, #container2-left-btn:hover{background:url('images/arrow-left.png') bottom left;}
+#container1-right-btn:hover, #container2-right-btn:hover{background:url('images/arrow-right.png') bottom left;}
+
+h2{
+	margin:20px 0px 20px 0px;
+	font-size:32px;
+	color:#ffffff;
+}
+
+#container2-items-container h2{ margin-left:20px; }
+
+p{
+	font-size:14px;
+	color:#ffffff;
+}

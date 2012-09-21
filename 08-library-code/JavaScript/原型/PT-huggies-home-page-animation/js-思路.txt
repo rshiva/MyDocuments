@@ -1,0 +1,44 @@
+JS 思路
+
+创建 AnimationMenu 实例，导入顶层容器的名称，动画间隔时间
+
+选取左侧容器
+选取右侧上层容器
+选取右侧动画条容器
+选取左侧和右侧的所有动画条，放入一个数组
+
+选取左侧的动画条，复制。
+重新定义复制动画条中图片的尺寸 toggle_image: function(image)
+把复制动画条插入右侧动画条容器的底部
+
+检查动画条总共是否多于 4个
+
+开始执行定时动画 scroll: function() 
+
+toggle_image: function(image){
+	取导入图片的 class name
+	根据 class name 判断是大图，还是小图
+	把大图转小图，或把小图转大图 （转换尺寸和class name）
+	用 writeAttribute 把新的尺寸和 class name 赋给图片
+}
+
+scroll: function() {
+	选取右侧动画条容器中第一个动画条
+	插入右侧上层容器的顶部
+	将第一个动画条向左侧移出容器
+	将右侧动画条容器上移，填补留出的空间
+	将移出动画条的文本复制给左侧动画条
+	
+	复制移出动画条中的图片
+	重新定义图片尺寸 toggle_image: function(image)
+	把图片插入到左侧容器
+	将图片从右侧移入左侧，动画开始前先将图片就位，动画结束后重置元素 reset: function() 
+}
+
+reset: function() {
+	清空右侧动画条容器的 inline style
+	清空所有动画条的 inline style
+	把左侧容器中被覆盖的图片删除
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CSS round corner</title>
+<style type="text/css" media="screen">
+body{font-family:Arial, Helvetica, sans-serif;}
+p{line-height:150%; font-size:14px;}
+
+.bottom-corner{
+	border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+}
+
+.round{
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.button1{
+	border: 1px solid #696;
+	padding: 60px 0;
+	text-align: center; 
+	width: 200px;
+	background: #EEFF99;
+}
+
+
+</style>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" charset="utf-8" src="javascripts/PIE.js"></script>
+	<![endif]-->
+	<script type="text/javascript" charset="utf-8">
+		document.observe('dom:loaded', function(){
+			if (window.PIE) {   
+				$$(' .round').each(function(node) { PIE.attach(node); });
+				$$(' .bottom-corner').each(function(node) { PIE.attach(node); });
+			 }
+		})
+	</script>
+</head>
+
+<body>
+<h2>Specific round corner</h2> <div class="bottom-corner button1" style=""></div>
+</body>
+</html>

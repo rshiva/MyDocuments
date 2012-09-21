@@ -1,0 +1,36 @@
+#scroller {
+	width: 960px;
+	height: 100px;0
+	float:left;
+	display:block;
+}
+#scroller-group {
+	float:left;
+	width: 285px;
+	overflow:hidden;
+	display:block;
+	height: 100px;
+	position:relative;
+}
+#scroller .scroller-item {
+	width: 285px;
+	height: 100px;
+	float: left;
+	border:1px solid #888888;
+	display: block;
+}
+
+#left-scroll,
+#right-scroll {
+	width: 60px;
+	height: 100px;
+	display: block;
+	background:#ff0000;
+}
+#left-scroll {
+	float:left;
+	margin-left: 10px;
+}
+#right-scroll {
+	float:left;
+}

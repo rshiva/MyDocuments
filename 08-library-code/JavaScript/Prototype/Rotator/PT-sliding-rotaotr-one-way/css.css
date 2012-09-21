@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+#container{
+	margin:50px;
+}
+
+#flippy{
+	width:800px;
+	height:300px;
+	position:relative;
+	background:#4d4d4d;
+	overflow:visible;
+}
+
+#content-container{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+#content-container .article{
+	margin:0px;
+	padding:30px;
+	width:740px;
+	height:240px;
+	display:inline;
+	float:left;	
+}
+
+#content-container .article h2{
+	margin:0px;
+	padding:0px;
+}
+
+#flippy a.next-btn{
+	display:block;
+	width:37px;
+	height:37px;
+	position: absolute;
+	bottom:20px;
+	right:20px;
+	text-indent:-9999em;
+	background:url('images/btnBG.png') top left no-repeat;
+}
+#flippy a.next-btn:hover{
+	opacity: 1;
+	background-position: bottom left;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+<style type="text/css">
+    
+</style>
+    
+<script type="text/javascript">
+message="The best way to learn, is to study examples. -www.W3Schools.com";
+pos=0;
+maxlength=message.length+1;
+
+function writemsg(){
+    if (pos<maxlength){
+        txt=message.substring(pos,0);
+        document.getElementById('msgfield').innerHTML=txt;
+        pos++;
+        timer=setTimeout("writemsg()",50);
+    }
+}
+
+function stoptimer(){
+    clearTimeout(timer);
+}
+</script>
+</head>
+
+<body onload="writemsg()" onunload="stoptimer()">
+    <h2 id="msgfield"></h2>
+</body>
+</html>

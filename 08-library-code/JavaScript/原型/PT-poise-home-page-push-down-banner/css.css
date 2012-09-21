@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+#container{
+	width:800px;
+	margin:50px;
+	position: relative;
+}
+
+#overlay_banner_trigger a {
+    background: url("images/overlay-trigger.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 42px;
+    margin: 15px 0 0 18px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 734px;
+}
+
+#overlay_banner {
+    background: none repeat scroll 0 0 #FAF4F6;
+    border: 1px solid #E1D0D8;
+    left: 20px;
+    position: absolute;
+    top: 0;
+    width: 728px;
+}
+
+#overlay_banner .container {
+    position: relative;
+}
+
+
+#overlay_banner h2 {
+    color: #A20F60;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#overlay_banner p {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 28px 28px;
+}
+
+#overlay_banner a {
+    color: #FE00B6;
+}
+
+#overlay_banner .close {
+    background: url("images/btn-close.jpg") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 33px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -999em;
+    top: 0;
+    width: 93px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

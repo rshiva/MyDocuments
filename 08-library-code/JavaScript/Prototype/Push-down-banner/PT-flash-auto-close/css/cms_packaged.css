@@ -1,0 +1,1441 @@
+   html,body,div,span,object, h1,h2,h3,h4,h5,h6,p,blockquote,pre, a,abbr,acronym,address,big,cite,code, del,dfn,em,img,small,strike,strong,sub,sup,tt dd,dl,dt,li,ol,ul,fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td {margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; text-decoration: none}
+table {border-collapse: collapse; border-spacing: 0}
+ol,ul {list-style: none}
+q:before,q:after,a blockquote:before,blockquote:after {content: ""}
+img {border: 0}
+span {font-weight: inherit; font-style: inherit}
+  body {font: 10px/1.3em Arial, Verdana, Sans-Serif; color: #444}
+  h1,h2,h3,h4,h5,h6 {font-weight: bold; color: #9900cc}
+h1 {font-size: 25px; line-height: 1.1em; margin-bottom: 0.5em}
+h2 {font-size: 18px; line-height: 1.1em; margin: 0.9em 0 0.5em}
+h3 {font-size: 16px; line-height: 1.3em; margin: 0.9em 0 0.5em}
+h4 {font-size: 15px; line-height: 1.3em; margin: 0.9em 0 0.5em}
+h5 {font-size: 14px; margin: 0.9em 0 0.5em}
+h6 {font-size: 13px; margin: 0.9em 0 0.5em}
+ p {margin: 0 0 .75em; font-size: 12px; line-height: 1.5em}
+p.last {margin-bottom: 0}
+p.abstract {font-size: 12px; color: #333}
+ul, ol {font-size: 12px}
+li {line-height: 1.45; margin: .75em 0}
+dl {margin: 0 0 1.5em 0}
+dl dt {font-weight: bold; font-size: 13px; line-height: 1.25em; margin: 1.1em 0 0.5em 0}
+dd {margin-left: 1.1em; font-size: 12px; line-height: 1.45em}
+ul ul, ol ol, ol ul, ul ol {font-size: 1em}
+ abbr, acronym {border-bottom: 1px dotted #666}
+address {margin-top: 1.5em; font-style: italic}
+del {color:#666}
+a {color: #9900cc; text-decoration: none; font-weight: inherit}
+a:focus {color: #6e2b8c}
+a:hover {color: #6e2b8c}
+blockquote {font-size: 1.4em; font-style: italic; line-height: 1.35; padding: 0 1.75em .75em}
+strong {font-weight: bold}
+em {font-style: italic}
+strong em, em strong {font-weight: bold; font-style: italic; color: #333}
+strong span, strong span.caps {font-weight: bold}
+pre {margin: 1.5em 0}
+pre,code,tt {font: 1.2em 'lucida console', monospace; line-height: 1.5}
+tt {display: block; margin: 1.5em 0; line-height: 1.5}
+sup {font-size: 0.5em; padding-left: 1px; vertical-align: top}
+input[type=submit] {cursor: pointer}
+  input[type=submit]:-moz-focus-inner {border: 0}
+input[type=text]:focus,input[type=password]:focus {outline: 0 none}
+ table {margin-bottom: 1.4em; font-size: 12px}
+th {font-weight: bold}
+thead th {font-size: 14px; vertical-align: middle}
+th,td {padding: 4px 10px; vertical-align: top; border: 1px solid #ddd}
+tfoot {font-style: italic}
+caption {background: #ffc}
+table .last {padding-right: 0}
+ .notice {background-color: #D1E23A; color: #1D2611;; font-size: 12px; font-weight: bold; padding: 10px; margin:10px 0}
+.warning {background-color: #cc0000; color: #fff; font-size: 12px; font-weight: bold; padding: 10px; margin:10px 0}
+.hint {background-color: #ffffaa; color: #333; font-size: 12px; padding:10px}
+.help, .help a {color:#999}
+.fieldWithErrors {display: inline}
+.fieldWithErrors input, .fieldWithErrors textarea, .fieldWithErrors select {border: 1px solid #c30}
+.formError {color:#c30; font-weight:bold; font-size: 1.1em}
+.formError a {color:#f70}
+ .hide, .cloak {display: none}
+.jsdisabled .cloak {display: auto}
+.autoclear, .clear {clear: both}
+ .openx {clear: both; display: block; margin: 0 0 20px}
+.skip-link {height: 1px; text-indent: -9999em; overflow:hidden; position:absolute;}
+  body {background: #faf0f8 url(../images/layout/bg.jpg) top center no-repeat}
+#page {width: 960px; margin: 0 auto; position: relative}
+ #header {height: 162px; width: 960px; margin: 0 0 10px; position: relative; background: url(../images/layout/header-bg.png) 0 19px no-repeat; display:inline; float:left}
+div[id] #header{ background: url(../images/layout/header-bg.png) 0 18px no-repeat}
+ #logo {width: 250px; height: 68px; padding: 19px 0 0; float: left}
+#logo a {display: block; width: 154px; height: 38px; text-indent: -9999em; overflow: hidden; float:left}
+#logo span {display: block; text-indent: -9999em; overflow: hidden; height:12px; float:left; margin-top:26px}
+#logo .logo-au {width:59px; background:url(../images/layout/logo-au.png) no-repeat}
+#logo .logo-nz {width:92px; background:url(../images/layout/logo-nz.png) no-repeat}
+ #site-search {float: right; margin: 28px 0 0; width: 235px}
+.jsdisabled #site-search {margin: 28px 0 0}
+#site-search .input {width: 179px; height: 31px; padding: 6px 5px 0 5px; margin: 0 5px 0 0; color: #c67dde; font-size: 12px; border-style: none; background: url(../images/layout/header-bg.png) -257px -222px no-repeat; float: left; display: inline}
+ #like-us {float:right; margin:28px 10px 0px 10px}
+ #main-menu {padding: 0; clear: both; height: 40px}
+#main-menu ul {list-style-type: none; padding: 0; margin: 0; height: 40px}
+#main-menu li {float: left; display: inline; margin: 0; padding: 0; line-height: 39px; font-size: 14px; text-transform: lowercase; background: transparent url(../images/layout/header-divider.gif) 100% 0% no-repeat}
+#main-menu li a, #main-menu li span {color: #ffebf6; display: inline; float: left; text-align: center; height: 39px; line-height: 39px; background: url(../images/layout/header-divider.gif) 0px -39px no-repeat}
+#main-menu li a:hover, #main-menu li span:hover {color: #ffffff; cursor: pointer; text-decoration: none !important; text-shadow: #6e2b8c -1px 2px 4px}
+ #main-menu .conception a {width:109px}
+#main-menu .pregnancy a {width:107px}
+#main-menu .child-birth a {width:101px}
+#main-menu .baby-care a {width:103px}
+#main-menu .toddler a {width:85px}
+#main-menu .parenting a {width:99px}
+#main-menu .blogs a {width:75px}
+#main-menu .forum a {width:78px}
+#main-menu .nappies a {width:95px}
+#main-menu .promotions a {width:108px}
+#main-menu .tools-link a {width: 50px; visibility: visible; text-indent: 0}
+.jsdisabled #main-menu #tools-link a {visibility: hidden}
+ *html #main-menu #tools-link a {width:48px}
+#main-menu .first a {background:none}
+#main-menu .last {border-right:0; background:none}
+ #tools-link {float: right !important; margin-right: 5px !important}
+#tools-menu {height: 36px; overflow: hidden; background: url(../images/layout/header-bg.png) 0 -108px no-repeat}
+div[id]#tools-menu{ overflow: visible}
+#tools-menu ul {height: 36px; margin-left: 5px}
+#tools-menu ul li {margin: 4px 4px 0 0; display: block; float: left; position: relative; list-style: none}
+#tools-menu ul li[class] {margin-top: 3px}
+#tools-menu li a {display: block; padding-top: 9px; height: 24px; padding-left: 30px; color:#9900cc}
+#tools-menu li a:hover{ color: #9900cc; opacity: 1}
+li.book-club a {width: 65px;}
+li.baby-names a{width: 81px;}
+li.kids-activities a{width: 89px;}
+li.expert-panel a{width: 81px;}
+li.kids-recipes a{width: 79px}
+li.photo-centre a{width: 83px;}
+li.baby-room-design a{width: 135px;}
+li.more-tools a{width: 61px}
+li.kids-recipes a:hover{ background: url(../images/layout/header-bg.png) -5px -147px no-repeat !important;}
+li.book-club a:hover{ background: url(../images/layout/header-bg.png) -118px -147px no-repeat !important;}
+li.baby-names a:hover{ background: url(../images/layout/header-bg.png) -217px -147px no-repeat !important;}
+li.kids-activities a:hover{ background: url(../images/layout/header-bg.png) -332px -147px no-repeat !important;}
+li.expert-panel a:hover{ background: url(../images/layout/header-bg.png) -455px -147px no-repeat !important;}
+li.photo-centre a:hover{ background: url(../images/layout/header-bg.png) -570px -147px no-repeat !important;}
+li.baby-room-design a:hover{ background: url(../images/layout/header-bg.png) -687px -147px no-repeat !important;}
+li.more-tools a:hover{ background: url(../images/layout/header-bg.png) -856px -147px no-repeat !important;}
+ li.kids-recipes:hover a{ color: #9900cc !important; background: url(../images/layout/header-bg.png) -5px -147px no-repeat !important}
+li.more-tools:hover a{ color: #9900cc !important; background: url(../images/layout/header-bg.png) -856px -147px no-repeat !important}
+#tools-menu li:hover .dropdown {display: block}
+#tools-menu .dropdown {z-index: 2000; position: absolute; left: -4px; width: 248px; padding-top: 0px; display: none}
+#tools-menu .dropdown li {line-height: 0px; display: block; float:left; height: 28px; width: 233px; margin: 0px !important; padding: 3px 7px 0px 7px; background: url(../images/layout/header-bg.png) -709px -185px no-repeat !important}
+#tools-menu .dropdown li a {background: none; display: block; width: 232px; height: 28px; padding:0px; background: url(../images/layout/header-bg.png) -468px -222px no-repeat !important}
+#tools-menu .dropdown li a:hover{ color: #9900cc !important; background: none !important; background: url(../images/layout/header-bg.png) -468px -190px no-repeat !important}
+#tools-menu .dropdown li a span {display: block; width: 200px; height: 22px; padding-left: 8px; padding-top: 8px}
+#tools-menu .dropdown li.first {padding-top: 8px; background: url(../images/layout/header-bg.png) -709px -181px no-repeat !important}
+#tools-menu .dropdown li.last {padding-bottom: 8px; background: url(../images/layout/header-bg.png) -709px -336px no-repeat !important}
+ li.more-tools{ width: 99px}
+#tools-menu li.more-tools > a{ padding-left: 8px; padding-right: 30px}
+#tools-menu #more-tools{ left: -152px}
+ #tools-menu #more-tools li a span {display: block; width: 200px; height: 22px; padding-left: 30px; padding-top: 8px}
+#tools-menu #more-tools li.week-by-week a span {background: url(../images/layout/header-bg.png) -0px -189px no-repeat !important;}
+#tools-menu #more-tools li.mums-stories a span {background: url(../images/layout/header-bg.png) -0px -215px no-repeat !important;}
+#tools-menu #more-tools li.ovulation-calendar a span {background: url(../images/layout/header-bg.png) -0px -243px no-repeat !important;}
+#tools-menu #more-tools li.baby-eye-colour a span {background: url(../images/layout/header-bg.png) -0px -273px no-repeat !important;}
+#tools-menu #more-tools li.fertility-calendar a span {background: url(../images/layout/header-bg.png) -0px -305px no-repeat !important;}
+#tools-menu #more-tools li.ebooks a span {background: url(../images/layout/header-bg.png) -0px -305px no-repeat !important;}
+#tools-menu #more-tools li.child-height-calculator a span {background: url(../images/layout/header-bg.png) -0px -335px no-repeat !important;}
+#tools-menu #more-tools li.pregnancy-stages a span {background: url(../images/layout/header-bg.png) -2px -395px no-repeat !important;}
+#tools-menu #more-tools li.baby-room-decorator a span {background: url(../images/layout/header-bg.png) -2px -365px no-repeat !important;}
+ #page-features{ float:left; background: #ffffff; width: 958px; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6; border-bottom:1px solid #e6e6e6}
+ #breadcrumbs {padding: 5px 10px 5px 0; float: left; width: 520px; height: 16px; overflow: hidden; font-size: 0.9em; text-transform: lowercase}
+#breadcrumbs ul {padding: 0 0 0 23px; margin: 0; list-style-type:none; background: url(../images/layout/breadcrumb-home.gif) 3px -2px no-repeat}
+#breadcrumbs li {padding: 0; margin: 0; display: inline; color: #c67dde}
+#breadcrumbs li a {color: #c67dde; padding: 0 15px 0 0; outline: 0; background: url(../images/layout/breadcrumb-separator.gif) 100% 50% no-repeat}
+#breadcrumbs li a:hover, #breadcrumbs li a:focus {color: #9900ca}
+ #page-tools {padding: 6px 0 0 0; float: right; width:104px; margin:0px auto}
+#page-tools ul {margin:0; padding:0}
+#page-tools ul li {float:left; line-height:13px; margin:0; padding:0; display:block; height:19px;}
+#page-tools ul .print {background: url(../images/layout/print.png) no-repeat; padding-left:15px; margin-right:5px}
+#page-tools ul .share {background: url(../images/layout/share.png) no-repeat; padding-left:7px; width:50px; margin-right:3px; margin-top:-2px; line-height:17px}
+#page-tools ul li a{ color:#c67dde; font-size:11px}
+#share-list {width:205px; height:80px; background-color:#e7f2da}
+#share-list li, #share-list li a {width:43px; height:48px; display:inline; float:left; color:#333}
+#share-list li {margin-left:18px; margin-top:10px}
+#share-list .share-facebook {background:url(../images/sharing/fb-logo.png) 5px 0px no-repeat; margin-left:10px; width:54px}
+#share-list .share-twitter {background:url(../images/sharing/tw-logo.png) no-repeat; padding-left:4px; width:39px}
+#share-list .share-email {background:url(../images/sharing/em-logo.png) no-repeat; margin-right:10px; padding-left:4px; width:39px}
+#share-list li span { float:left; color:#333; margin-top:50px}
+.lv_Caption {font-size:13px; padding-bottom:5px; color:#333}
+ #member-status {width: 285px; padding: 5px 10px 6px 11px; float: right; overflow: hidden; background: #d1e23b}
+#member-status a {font-weight: bold; color: #3a4c22}
+#member-status a:hover {color: #1d2611}
+#member-status .welcome, #member-status .actions {display: inline; font-size: 12px; line-height: 1.4em}
+#member-status .welcome {float: left; width: 120px; height: 18px; overflow:hidden; white-space:nowrap}
+#member-status .actions {float:right}
+ #flash_wide_banner {width:960px; height:0.01px; overflow:hidden; float:left}
+ #section {height: 35px; width: 940px; padding: 10px 5px 0 15px; background-image: url(../images/layout/silo-headings.jpg); background-position: 0px 0px; background-repeat: no-repeat; float: left}
+#section p{ display: inline; float: left; margin: 0; padding: 0; color: #ffffff; font-size: 23px; line-height: 23px; text-transform: lowercase; text-shadow: #444444 1px 1px 0px; font-family: "Century Gothic", Arial, Sans-Serif}
+#section ul {display: inline; float: right; list-style-type: none; padding: 0; margin: 0; font-size: 14px; color: #ffffff}
+#section ul li {display: inline; line-height: 27px; padding: 0; margin: 0; float: right; margin: 0 5px}
+#section ul li a {display: block; line-height: 27px; background-image: url(../images/layout/default-section.png); background-repeat: no-repeat; color: #ffffff; text-indent: -9999em; overflow: hidden;  }
+ .silo-home #section {background-image: url(../images/layout/homepage-heading.jpg)}
+.silo-baby-products #section, .section-promotions #section, #ipboard_body #section{ background-position: 0px -45px}
+.silo-conception #section{ background-position: 0px -90px}
+.silo-pregnancy #section{ background-position: 0px -135px}
+.silo-child-birth #section{ background-position: 0px -180px}
+.silo-baby-care #section{ background-position: 0px -225px}
+.silo-toddler #section{ background-position: 0px -270px}
+.silo-parenting #section{ background-position: 0px -315px}
+.silo-baby-names #section{ background-position: 0px -360px}
+.silo-kids-activities #section, .silo-kids-recipes #section{ background-position: 0px -405px}
+.silo-my-huggies #section{ background-position: 0px -450px}
+ .silo-conception #section ul li a {background-image: url(../images/layout/conception-section.png)}
+.silo-pregnancy #section ul li a {background-image: url(../images/layout/pregnancy-section.png)}
+.silo-child-birth #section ul li a {background-image: url(../images/layout/child-birth-section.png)}
+.silo-baby-care #section ul li a {background-image: url(../images/layout/baby-care-section.png)}
+.silo-toddler #section ul li a {background-image: url(../images/layout/toddler-section.png)}
+.silo-parenting #section ul li a {background-image: url(../images/layout/parenting-section.png)}
+.silo-baby-products #section ul li a {background-image: url(../images/layout/products-section.png)}
+#ipboard_body #section ul li a {background-image: url(../images/layout/forum-section.png)}
+.section-promotions #section ul li a, .silo-promotions #section ul li a {background-image: url(../images/layout/promotion-section.png)}
+#section ul li a.section-expert {background-position: 0px -46px; width: 102px}
+#section ul li a.section-expert:hover {background-position: 0px -73px}
+#section ul .current a.section-expert {background-position: 0px -100px}
+#section ul li a.section-stories {background-position: -102px -46px; width:126px}
+#section ul li a.section-stories:hover {background-position: -102px -73px}
+#section ul .current a.section-stories {background-position: -102px -100px}
+#section ul li a.section-videos {background-position: -228px -46px; width: 90px}
+#section ul li a.section-videos:hover {background-position: -228px -73px}
+#section ul .current a.section-videos {background-position: -228px -100px}
+ #section ul li a.section-faq {background-position: 0px -46px; width: 138px}
+#section ul li a.section-faq:hover {background-position: 0px -73px}
+#section ul .current a.section-faq {background-position: 0px -100px}
+#section ul li a.section-ads {background-position: -138px -46px; width: 120px}
+#section ul li a.section-ads:hover {background-position: -138px -73px}
+#section ul .current a.section-ads {background-position: -138px -100px}
+#section ul li a.section-range {background-position: -258px -46px; width: 146px}
+#section ul li a.section-range:hover {background-position: -258px -73px}
+#section ul .current a.section-range {background-position: -258px -100px}
+ #section ul li a.section-winners {background-position: 0px -46px; width: 100px}
+#section ul li a.section-winners:hover {background-position: 0px -73px}
+#section ul .current a.section-winners {background-position: 0px -100px}
+#section ul li a.section-archived {background-position: -100px -46px; width: 95px}
+#section ul li a.section-archived:hover {background-position: -100px -73px}
+#section ul .current a.section-archived {background-position: -100px -100px}
+.section-promotions #section ul li a.section-blog, .silo-promotions #section ul li a.section-blog {background-position: -195px -46px; width: 75px}
+.section-promotions #section ul li a.section-blog:hover, .silo-promotions #section ul li a.section-blog:hover {background-position: -195px -73px}
+.section-promotions #section ul .current a.section-blog, .silo-promotions #section ul .current a.section-blog {background-position: -195px -100px}
+ #section ul li a.section-forum-profile {background-position: 0px -46px; width: 87px}
+#section ul li a.section-forum-profile:hover {background-position: 0px -73px}
+#section ul .current a.section-forum-profile {background-position: 0px -100px}
+#section ul li a.section-forum-faq {background-position: -87px -46px; width: 118px}
+#section ul li a.section-forum-faq:hover {background-position: -87px -73px}
+#section ul .current a.section-forum-faq {background-position: -87px -100px}
+#section ul li a.section-forum-message {background-position: -205px -46px; width: 113px}
+#section ul li a.section-forum-message:hover {background-position: -205px -73px}
+#section ul .current a.section-forum-message {background-position: -205px -100px}
+ #section ul li a.section-blog {background-position: -102px -46px; width: 75px}
+#section ul li a.section-blog:hover {background-position: -102px -73px}
+#section ul .current a.section-blog {background-position: -102px -100px}
+.silo-baby-products #section ul li a.section-blog {background-position: -258px -46px; width: 75px}
+.silo-baby-products #section ul li a.section-blog:hover {background-position: -258px -73px}
+.silo-baby-products #section ul .current a.section-blog {background-position: -258px -100px}
+ #content {float: left; width: 938px; background: #ffffff; padding: 15px 10px; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6}
+  #introduction {width: 435px; padding: 5px 473px 15px 30px; margin: 0 0 15px; background-position: bottom right; background-repeat: no-repeat}
+#introduction h1 {font-size: 33px; border-bottom: none; text-transform: lowercase; font-family:"Century Gothic", Arial}
+#introduction h1 span {font-size: 20px; font-weight: normal; display: block; margin-bottom: -5px}
+ #main {float:left; width:628px}
+ #sidebar {float:right; width:300px}
+ #in_this_section {float: left; padding: 0 0 12px 0; background: #c379db}
+#in_this_section .wrap {float: left; width: 100%; background: url(../images/layout/in_this_section/bg-rptd.gif) top repeat-y}
+#in_this_section .wrap .blocks {float: left; width: 954px; padding: 10px 0 0 6px; background: url(../images/layout/in_this_section/default-bg.gif) top repeat-x}
+.silo-conception #in_this_section {background-color: #565be6}
+.silo-conception #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/conception-bg.gif) top repeat-x}
+.silo-pregnancy #in_this_section {background-color: #2bace2}
+.silo-pregnancy #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/pregnancy-bg.gif) top repeat-x}
+.silo-child-birth #in_this_section {background-color: #05b49f}
+.silo-child-birth #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/child-birth-bg.gif) top repeat-x}
+.silo-baby-care #in_this_section {background-color: #019253}
+.silo-baby-care #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/baby-care-bg.gif) top repeat-x}
+.silo-toddler #in_this_section {background-color: #ec3c96}
+.silo-toddler #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/toddler-bg.gif) top repeat-x}
+.silo-parenting #in_this_section {background-color: #c0235d}
+.silo-parenting #in_this_section .wrap .blocks {background: url(../images/layout/in_this_section/parenting-bg.gif) top repeat-x}
+#in_this_section .block {position: relative; display:inline; float: left; width: 306px; margin: 0 5px; padding-bottom: 3px}
+#in_this_section .block .title {margin-right: 30px; font-size: 16px; font-weight: bold}
+#in_this_section .block .title a {color: #fff; cursor: default}
+#in_this_section .block .title a .all {right: 30px; position:absolute; top: 1px; font-size: 14px; color: #fff; font-weight: normal; border-bottom: 1px dotted #fff; cursor: pointer}
+#in_this_section .block .title a .all:hover {border-bottom: 1px solid}
+#in_this_section .expert .title {padding-left: 15px; background: url('../images/layout/in_this_section/icon-expert.gif') left no-repeat;  }
+html[xmlns] #in_this_section .expert .title {background: url('../images/layout/in_this_section/icon-expert.png') left no-repeat;  }
+#in_this_section .videos .title {padding-left: 17px; background: url('../images/layout/in_this_section/icon-video.gif') left no-repeat;  }
+html[xmlns] #in_this_section .videos .title {background: url('../images/layout/in_this_section/icon-video.png') left no-repeat;  }
+#in_this_section .forums .title {padding-left: 25px; background: url('../images/layout/in_this_section/icon-forum.gif') left no-repeat;  }
+html[xmlns] #in_this_section .forums .title {background: url('../images/layout/in_this_section/icon-forum.png') left no-repeat;  }
+#in_this_section .block .feed {position: absolute; right: 0; top: 0; text-indent: -999em; overflow: hidden}
+#in_this_section .block .feed a {display: block; height: 20px; width: 20px; background-image: url('../images/layout/in_this_section/rss-default.gif'); background-position: 0 0}
+#in_this_section .block .feed a:hover {background-position: 0 -20px}
+.silo-conception #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-conception.gif')}
+.silo-pregnancy #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-pregnancy.gif')}
+.silo-child-birth #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-childbirth.gif')}
+.silo-baby-care #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-babycare.gif')}
+.silo-toddler #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-toddler.gif')}
+.silo-parenting #in_this_section .block .feed a {background-image: url('../images/layout/in_this_section/rss-parenting.gif')}
+#in_this_section .block .content {margin-top: 12px; padding:12px}
+#in_this_section .forums .content {padding:5px 0}
+#in_this_section .forums li {border-bottom:1px dotted #ac1f52; font-size:15px; line-height:21px; padding:0px 12px 8px 12px; margin:5px 0; background:url(../images/layout/in_this_section/quote.png) bottom right no-repeat}
+#in_this_section .forums li span {font-size:10px; margin-top:6px; display:block}
+#in_this_section .forums li span.caps {display: inline; font-size: 15px; margin-top: 0px}
+ #also_on_huggies {clear: both; float: left; width: 958px; padding-bottom: 10px; background: #fff; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6}
+#also_on_huggies .heading {font-size: 13px; color: #80449a; padding: 8px 10px; text-transform: lowercase; background: #f2e3f5; border-top: 1px solid #e3bfef; border-bottom: 1px solid #e3bfef}
+#also_on_huggies .blocks {float: left; width: 950px; padding: 0 5px}
+#also_on_huggies .block {float: left; width: 180px; padding: 0 5px}
+#also_on_huggies .block .title {display: block; margin: 0; padding: 0}
+#also_on_huggies .block .title a {display: block}
+#also_on_huggies .block .title .text {display: block; font-size: 15px; padding: 7px 0; margin: 5px 0 10px 0; font-weight: bold; border-bottom: 1px solid}
+#also_on_huggies .block .title .image {display: block; margin: 0 0 10px 0; height: 180px; width: 180px; background: grey}
+#also_on_huggies .block p {font-size: 11px}
+#also_on_huggies ul {margin-top: 13px}
+#also_on_huggies li {font-size: 11px; padding-left: 12px; background: url('../images/layout/bullet-dot-purple.png') 0 4px no-repeat}
+.template-landing #also_on_huggies, .product-landing #also_on_huggies {display: none}
+ #footer {clear: both; float: left; width: 960px; margin-bottom: 20px; background: #c177da url('../images/layout/bg-footer.png') center bottom no-repeat}
+#footer .block {float: left; width: 20%}
+#footer .block .title {padding: 9px 12px; font-size: 15px; color: #80459a; text-transform: lowercase; background: #f5e9f7 url('../images/layout/bg-footer-divider.png') left no-repeat; border-bottom: 1px solid #ad5acd}
+#footer .first .title {background-image: none}
+#footer .block ul {margin: 12px; list-style: none}
+#footer .block ul li {margin: 0; padding: 0 0 0 15px; font-size: 11px; line-height: 1.8em; background: url('../images/bullets/footer-bullet.png') 0 6px no-repeat}
+#footer .block ul a {color: #ecd6f3; text-decoration: none}
+#footer .block ul a:hover {text-decoration: underline}
+ .jsfenabled #jsfalt {display: none}
+#jsfalt {clear: both; margin: 0 0 20px; padding: 4px 10px 5px; font-size: 13px; color: #80449a; text-align: right; font-weight: bold; text-transform: lowercase; border-top: 1px solid #ecd7f3; border-bottom: 1px solid #deb8ea; border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; background: #f2e3f5}
+#jsfalt a:hover {border-bottom: 1px solid; color: #a8150b}
+ #copyright_notice {clear: left; width: 700px; float: left; padding-bottom: 10px}
+#copyright_notice p {font-size: 11px; color: #cd8ce1; text-align: left}
+#copyright_notice p a, #copyright_notice p abbr {border: 0; color: #cd8ce1; text-decoration: none}
+#copyright_notice p a:hover {text-decoration: underline}
+#mobile_link {float:right; width:170px}
+#mobile_link a {display:block; height: 16px; padding: 9px 10px 6px 27px; margin-top: -6px; border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; -webkit-border-radius: 4px 4px 4px 4px; background: #fff url('../images/mobile/icon-mobile.png') 11px 7px no-repeat}
+a#security-alert-home-page{ margin: -40px 0 17px 420px; display: block; width: 120px; padding: 5px 0px 3px 25px; color: #BF3032; height: 15px; font-size: 11px; background: url('../images/layout/icon-alert.jpg') top left no-repeat}
+a#security-alert{ display:none; position: absolute; top: 222px; left: 380px; display: block; width: 120px; padding: 5px 0px 3px 25px; color: #BF3032; height: 15px; font-size: 11px; background: url('../images/layout/icon-alert.jpg') top left no-repeat}
+a#security-alert:hover, a#security-alert-home-page:hover{ color: #BF3032 !important; text-decoration: underline !important}
+#like-us {float: right; margin: 27px 10px 0}
+#like-us a{ display: block; margin-top: 0px; text-indent: -999em; overflow: hidden; height: 38px; width: 194px; background: transparent url('../../images/layout/like-us-on-fb.png') top left no-repeat}
+span.caps {text-transform:capitalize}
+  #main .listing table {margin-bottom: 15px; width: 100%}
+#main .listing table th, #main .listing table td {border: 0; font-size: 12px; padding: 6px 10px; vertical-align: middle}
+#main .listing thead {color: #6d6d6d; background-color: #F2F2F2; border-bottom: 1px solid #e6e6e6}
+#main .listing tbody td {border-bottom: 1px dotted #e6e6e6}
+#main .listing tbody td a {font-weight: bold; color: #333}
+#main .listing tbody td a:hover {color: #b444da; border-bottom: 1px dashed}
+#main .listing .popularity {padding-top:15px; padding-bottom:0}
+#main .listing .description {float:none; display:auto; width:auto}
+ #main .listing .share, #main .listing td.share, #main .listing .share .field {text-align: center}
+ #main .listing tbody .unisex a:hover {}
+#main .listing tbody .girl a:hover {color: #ec3b96}
+#main .listing tbody .boy a:hover {color: #1598d0}
+#main .listing thead .gender {text-indent: -999em; width: 18px}
+#main .listing tbody .gender {text-indent: -999em}
+#main .listing tbody .gender span {display: block; width: 18px; height: 20px; background: url('../images/bullets/sprite-gender.gif') no-repeat}
+#main .listing tbody .gender .girl {background-position: 0 -48px}
+#main .listing tbody .gender .boy {background-position: 0 -96px}
+  #sidebar .listing {float: left; width: 100%; background: #faf0f8; margin: 0 0 20px; border-collapse: collapse}
+#sidebar .listing .heading {height: 14px; padding: 10px; border-bottom: 1px solid #d89ce8; background: #eedaf4 url(../images/widgets/bg-listing-sidebar-heading.png) top no-repeat}
+#sidebar .listing .heading .title {float: left; margin: 0; padding: 0; font-size: 15px; color: #600080}
+#sidebar .listing .heading .more {float: right}
+#sidebar .listing .heading .more a {border-bottom: 1px dotted}
+#sidebar .listing .heading .more a:hover {border-bottom: 1px solid}
+#sidebar .listing li {clear: left; float: left; margin: 0; padding: 0; width: 100%; border-bottom: 1px dotted #d89ce8}
+#sidebar .listing li a {display: block; width: 300px; height: 50px; overflow: hidden}
+#sidebar .listing li.over, #sidebar .listing li a:hover, #sidebar .listing li a:focus {background: #eedaf4}
+#sidebar .listing li a .image {display: block; float: left; width: 67px; margin-right: 10px; overflow: hidden}
+#sidebar .listing li a .text {display: block; float: left; width: 194px; overflow: hidden; font-size: 13px; color: #9900cc; font-weight: bold; line-height: 1.5em; padding: 5px 10px 12px 0}
+#sidebar .listing li a .text strong {display: block; width: 500px; overflow: hidden; font-size: 14px; color: #9900cc; padding-top: 4px}
+#sidebar .listing li a .text em {font-style: normal; font-weight: normal; font-size: 11px; color: #c67dde}
+ #sidebar .listing-reading .heading {height: 13px; padding: 12px; border-bottom: 0; background: #eedaf4 url(../images/widgets/bg-listing-sidebar-heading-reading.gif) top no-repeat}
+#sidebar .listing-reading li {padding: 10px 10px !important}
+#sidebar .listing-reading li a {padding-bottom: 0 !important}
+#sidebar .listing-reading li a .image {float: left !important; margin-right: 10px; border: 1px solid #ffcae0}
+#sidebar .listing-reading li a .image img {height: 65px; width: 65px}
+#sidebar .listing-reading li a .text {width: 180px; padding-top: 0 !important; padding-bottom: 0 !important}
+#sidebar .listing-reading li a .text .title {color: #ec3b96}
+#sidebar .listing-reading li a .text .description {display: block; font-size: 11px; color: #666666}
+ #about {color: #333; position: relative !important; background: #fcf6b4 url(../images/widgets/about/bg-about-bottom.png) bottom left no-repeat; margin: 0 0 20px; padding-bottom: 12px}
+.about-open {position: relative}
+.about-closed {position: relative; background: #fcf6b4 url(../images/widgets/about/bg-about-closed-bottom.png) bottom left no-repeat !important; padding-bottom: 7px !important}
+#about .heading {position: relative; height: 47px; background: transparent url(../images/widgets/about/bg-about-top.png) top left no-repeat; border: none}
+.about-closed .heading {background: transparent url(../images/widgets/about/bg-about-closed-top.png) top left no-repeat !important}
+#about .heading em {position: absolute; top: 10px; left: 13px; display: block; width: 52px; height: 18px; background: transparent url(../images/widgets/about/text-about.gif) top left no-repeat; text-indent: -9999px}
+#about .heading span {position: absolute; top: 30px; left: 12px; font-size: 15px}
+#about .text p {padding: 12px 12px 0 12px}
+#about .extend {position: absolute; top: 12px; right: 12px}
+#about .extend a {display: block; width: 18px; height: 18px; overflow: hidden; background-image: url(../images/widgets/about/sprite-shared.gif); background-repeat: no-repeat; background-position: 0 -50px; text-indent: -9999px; outline: 0}
+#about .extend a:hover, #about .extend a:focus {opacity: 0.75; filter: Alpha(Opacity=75)}
+.about-closed .extend a {background-position: 0 0 !important}
+ #sidebar .member-status {width: 300px; background: #d1e23b url(../images/week_by_week/baby-status-bottom.gif) bottom no-repeat; float: left; margin-bottom: 20px}
+#sidebar .member-status .status-content {padding: 5px; background: url(../images/week_by_week/baby-status-top.gif) top no-repeat}
+#sidebar .member-status .status-info {width: 290px; display: block; float: left; background: #fff url(../images/week_by_week/baby-status-info-cap.gif) top no-repeat; margin-bottom: 5px}
+#sidebar .member-status .status-cap {background: url(../images/week_by_week/baby-status-info.gif) bottom no-repeat; width: 260px; display: block; float: left; padding: 17px 10px 20px 20px}
+#sidebar .member-status p {margin: 5px 0; color: #628139}
+#sidebar .member-status p a {color: #3a4c22; border-bottom: 1px dotted #3a4c22}
+#sidebar .member-status p a:hover {border: 0}
+#sidebar .member-status h4 {font-size: 15px; padding: 0 0 0 15px; margin: 2px 0 6px; color: #3A4D22; font-weight: normal}
+#sidebar .member-status .status-footer {padding: 0 5px 5px 5px; float: left}
+ #sidebar .member-status .status-footer a {display: block; float: left; padding: 0 0 0 9px; height: 32px; font-size: 14px; background: url(../images/week_by_week/baby-status-btn-left.gif) left top no-repeat}
+#sidebar .member-status .status-footer a span {font-size: 14px; height: 23px; display: block; padding: 9px 9px 0 0; background: url(../images/week_by_week/baby-status-btn-right.gif) right top no-repeat; text-align: center; color: #333; cursor: pointer}
+#sidebar .member-status .status-footer a strong {color: #333}
+#sidebar .member-status .status-footer a.signin {width: 90px; margin-right: 5px}
+#sidebar .member-status .status-footer a.join {width: 177px}
+#sidebar .member-status .status-footer a.update {width: 281px}
+ #sidebar #share .status-cap {padding: 10px; width: 270px}
+#sidebar #share .status-cap p.cta {padding: 0 0 0 38px; background: url("../images/widgets/share-apps-bullet.gif") top left no-repeat}
+#sidebar #share .count {float: left; width: 83px; padding-bottom: 4px; font-size: 15px; color: #b9ce00; text-align: center; font-weight: bold}
+#sidebar #share .count a {color: #b9ce00; font-weight: bold}
+#sidebar #share .count a .value {display: block; text-align: center; font-size: 45px; font-weight: bold}
+#sidebar #share .count a:hover, #sidebar #share .count a:focus {color: #3a4d22; outline: 0}
+#sidebar #share .details {float: right; width: 176px}
+#sidebar #share .details p {font-size: 13px; color: #3a4d22}
+#sidebar #share .details ul li {font-size: 12px; margin: 0 0 0px 0; padding: 0; line-height: 1.65em}
+#sidebar #share .details ul li a {color: #618239}
+#sidebar #share .details ul li a:hover {color: #3a4d22}
+#sidebar #share .status-cap .shareon {list-style-type: none; clear:both}
+#sidebar #share .status-cap .shareon li {display: inline; float: left; margin: 15px 10px 0}
+#sidebar #share .status-cap .shareon li a {display: block; overflow: hidden; text-align:center; padding-top:50px; width: 47px; height: 20px; font-size:10px; font-weight:bold; color:#618239; letter-spacing:-0.3px; background: url(../images/widgets/member_feature/sharing-buttons.gif) no-repeat}
+#sidebar #share .status-cap .shareon .facebook a {background-position: 0 0}
+#sidebar #share .status-cap .shareon .twitter a {background-position: -47px 0}
+#sidebar #share .status-cap .shareon .email a {background-position: -94px 0 }
+#sidebar #share .status-cap .shareon .forum a {background-position: -140px 0 }
+ .alert, .notice, .warning {color:#fff; font-size:15px; font-weight:normal; padding:15px 15px 15px 55px; margin:0 0 10px 0; border-color:#c57fdb; border-style:solid; border-width:0 1px 1px 0}
+.notice {background:#c57fdb url(../images/membership/big-green-tick.png) 15px 50% no-repeat}
+.warning {background:#f3614b url(../images/membership/red-exclamation-mark.jpg) 15px 50% no-repeat}
+.alert {background:#FFE750 url(../images/membership/yellow-exclamation-mark.png) 15px 50% no-repeat; color:#6F5F30}
+.notice a, .warning a, .warning strong{ color:#fff !important; font-weight:bold !important}
+.alert a {color:#6F5F30; font-weight:bold}
+ .fieldWithErrors {display:inline}
+ #main form h2 {color:#3a4d22}
+form .row {background-color:#f5faf0; border-bottom:1px solid #e1f2cb; display:block; width:580px; padding:15px; clear:left; overflow:hidden;  margin-bottom:1px;  }
+* html form .row { height:1%}
+form .row label {width:153px; padding:1px 0 1px 12px; font-size:15px; line-height:18px; color:#3a4d22; float:left; text-transform:lowercase}
+form .full label {width:auto; padding-bottom:10px}
+form .row .input label {background:none; padding:0; font-size:11px; margin-top:0px; float:none; display:block; width:auto; text-transform: none}
+form .required label {background:transparent url(../images/forms/asterisk.gif) 0 2px no-repeat}
+form .select .input .group input, form .select .input .group label, form .radio .input .group input, form .radio .input .group label{ float:left; line-height:14px; width:auto; margin-top:2px}
+form .row .group label {text-transform:none}
+form .row .input {float:right; overflow:hidden; font-size:12px; color:#555; width:405px; display:inline}
+form .row select, form .row input, form .row textarea {width:398px; border:1px solid #ccdbb8}
+form .text .input textarea {width:390px; height:144px; padding:3px; font-family:Arial; font-size:13px}
+form .row .group {float:left; width:auto; display:inline; margin-right:15px}
+form .row .last {margin-right:0px}
+ form .row .first-name, form .row .last-name, form .row .phone, form .row .age, form .row .weightkg{ width:190px}
+ form .row .street-name {width:210px}
+form .row .street-number{ width:50px}
+form .row .street-type {width:100px}
+form .row .suburb {width:190px; margin-top:5px}
+form .row .state, form .row .city {width:120px; margin-top:5px}
+form .row .postcode {width:55px; margin-top:5px}
+form .row .dob select {width: 120px; margin-right: 8px}
+form .submit {float:right; margin-top:20px; margin-right:20px}
+ form .checkbox .input input, form .copyright .input input {width:auto; float:left}
+form .row .input .checkbox {width:370px; float:right; text-transform:none}
+form .q {float:left; margin-left:-10px}
+form .q a {background-color:#F0F7FA; border:1px solid #E6CBF2; display:block; height:10px; padding:4px 0 3px 3px; width:10px}
+#main .disclaimer p, form .disclaimer p {font-size:11px; margin:0}
+form .disclaimer {padding:15px 15px 10px}
+#signup_fields .disclaimer {padding:0}
+ .formError {color:#fff; background-color:#f3614b; font-size:11px; font-weight:normal; background:#f3614b url('/images/membership/warning-icon.gif') 2px 50% no-repeat; padding:3px 0 3px 21px; margin:1px 0 0 0; clear:left}
+.fieldWithErrors input, .fieldWithErrors select, .fieldWithErrors textarea {border:1px solid #f3614b !important; background-color:#ffffe5 !important}
+.street-number-error {width:31px}
+.postcode-error {width:36px}
+ .membership-form {background:#fff url(../images/membership/form-bg-top.gif) no-repeat; padding:15px 15px 0 15px; width:578px; margin-top:15px}
+.membership-form strong {color:#333333 !important}
+.membership-form .row {clear:left; margin-bottom:10px; overflow:hidden; background-color:transparent;  border-bottom:none;  float:none;  width:auto;  padding:0;  }
+.membership-form .row label {width: 143px}
+.membership-form .row .postcode {width:59px;  }
+.membership-form .row .address {width:403px;  }
+.membership-form .child {margin:0 0 10px 0 !important; width:377px !important}
+.membership-form .child, .membership-form #password_row {color:#3a4d22; background-color:#f7fbd2; padding:10px !important; font-size:12px; position:relative}
+.membership-form #password_row label {width:auto; font-size:12px; padding:0}
+.membership-form #password_row input {width:370px}
+#password_resets-new .input input {width:388px}
+.membership-form #password_row, .membership-form #children {clear:left; margin:15px 0 5px 181px}
+.membership-form #add_child_link {text-align:right}
+.membership-form .badge {float:right; margin-top:1px}
+.membership-form .select {float:left; overflow:hidden; font-size:12px; color:#555}
+.membership-form .select select {display:block; color:#3A4C22; border:1px solid #A3C500}
+.membership-form .radio label, .membership-form .select label, .membership-form .text label {padding-left:12px; float:left; display:block; font-size:14px; color:#3a4d22}
+.membership-form .text input {border:1px solid #a3c500; padding:3px; display:block; color:#3A4C22}
+.membership-form .text input{ width:196px}
+.membership-form .row label {width:168px}
+.membership-form .row .input {width:auto; float:left}
+.membership-form .row .group {width:auto; float:left}
+.membership-form .select select {width:204px}
+.membership-form .row label a {color:#4F692E; text-decoration:underline}
+.membership-form .row label a, .membership-form .badge, #add_child_link {border-bottom:none !important}
+.membership-form select {padding:3px}
+.membership-form .formError {color:#fff; background-color:#f3614b; font-size:11px; font-weight:normal; background:#f3614b url(../images/membership/warning-icon.gif) 2px 50% no-repeat; padding:3px 0 3px 21px; margin:1px 0 0 0}
+.membership-form .fieldWithErrors input, .membership-form .fieldWithErrors select {border:2px solid #f3614b !important; background-color:#ffffe5 !important}
+.membership-form .submit {background:#fff url(../images/membership/form-bg-bottom.gif) no-repeat; text-align:right; margin:0 -15px 0 -15px; padding-top:20px; float:none;  }
+.membership-form .checkbox {margin:10px 0px 10px 180px}
+.membership-form .checkbox input {width:auto;  text-transform:none}
+.membership-form .checkbox label {background:none;  font-size:12px;  padding:0;  float:none;  width:auto;  }
+.membership-form .radio .input label {background:none; padding:0; float:none; width:auto; display:inline; height:auto; line-height:inherit; color:#3a4d22}
+.membership-form .required label {background:transparent url(/images/forms/green-asterisk.gif) top left no-repeat}
+.membership-form a {color:#4f692e; text-decoration:underline}
+.membership-form .remove-link {position:absolute; right:8px; top:8px}
+.confirm .required label{ width:143px}
+.confirm .row .input{ width:423px; float:right}
+.confirm .input input{ width:196px;   }
+.confirm .row .address{ width:414px}
+ .wbw-thumb {width:105px; height:72px; display:block}
+ .trimester-3 {background-image: url(../images/week_by_week/trimester-3.jpg); background-repeat: no-repeat}
+.week-42{ background-position:-1260px 0px;}
+.week-41{ background-position:-1260px 0px;}
+.week-40{ background-position:-1260px 0px;}
+.week-39{ background-position:-1155px 0px;}
+.week-38{ background-position:-1050px 0px;}
+.week-37{ background-position:-945px 0px;}
+.week-36{ background-position:-840px 0px;}
+.week-35{ background-position:-735px 0px;}
+.week-34{ background-position:-630px 0px;}
+.week-33{ background-position:-525px 0px;}
+.week-32{ background-position:-420px 0px;}
+.week-31{ background-position:-315px 0px;}
+.week-30{ background-position:-210px 0px;}
+.week-29{ background-position:-105px 0px;}
+.week-28{ background-position:0px 0px;}
+ .trimester-2 {background: url(../images/week_by_week/trimester-2.jpg); background-repeat: no-repeat}
+.week-27{ background-position:-1365px 0px;}
+.week-26{ background-position:-1260px 0px;}
+.week-25{ background-position:-1155px 0px;}
+.week-24{ background-position:-1050px 0px;}
+.week-23{ background-position:-945px 0px;}
+.week-22{ background-position:-840px 0px;}
+.week-21{ background-position:-735px 0px;}
+.week-20{ background-position:-630px 0px;}
+.week-19{ background-position:-525px 0px;}
+.week-18{ background-position:-420px 0px;}
+.week-17{ background-position:-315px 0px;}
+.week-16{ background-position:-210px 0px;}
+.week-15{ background-position:-105px 0px;}
+.week-14{ background-position:0px 0px;}
+ .trimester-1 {background: url(../images/week_by_week/trimester-1.jpg); background-repeat: no-repeat}
+.week-13{ background-position:-1260px 0px;}
+.week-12{ background-position:-1155px 0px;}
+.week-11{ background-position:-1050px 0px;}
+.week-10{ background-position:-945px 0px;}
+.week-9{ background-position:-840px 0px;}
+.week-8{ background-position:-735px 0px;}
+.week-7{ background-position:-630px 0px;}
+.week-6{ background-position:-525px 0px;}
+.week-5{ background-position:-420px 0px;}
+.week-4{ background-position:-315px 0px;}
+.week-3{ background-position:-210px 0px;}
+.week-2{ background-position:-105px 0px;}
+.week-1{ background-position:0px 0px;}
+ .silo-ask-our-experts {float:left; margin-top: 0; margin-bottom:20px}
+#sidebar .silo-ask-our-experts {margin-bottom: 20px !important}
+.silo-ask-our-experts h2 {margin-top: 0 !important; padding-top: 2px !important; padding-bottom: 8px !important; margin-bottom:1px}
+.silo-ask-our-experts #search-widget {background-color:#eedaf4; border-bottom-color:#c280e0; clear:both; float:left; padding:20px}
+.silo-ask-our-experts #search-widget input.keywords {border:solid 1px #d7b2df; color:#c67dde; font-size:15px; margin-bottom:10px; padding:3px; width:254px}
+.silo-ask-our-experts #search-widget select {width:210px; float:left; padding:5px}
+.silo-ask-our-experts #search-widget input.submit {float:right; margin:0}
+.page-home .silo-ask-our-experts #recent-answers, #sidebar .silo-ask-our-experts #recent-answers{ float:left; width:280px; padding:0 10px; background:#f7f0fa}
+.silo-ask-our-experts #recent-answers p {margin:0}
+.silo-ask-our-experts #recent-answers .icon {float:left}
+.silo-ask-our-experts #recent-answers .outer {float:right; width:227px; padding:0 0 10px; background-position:bottom left !important}
+.silo-ask-our-experts #recent-answers .inner {padding:10px 10px 0 30px}
+.page-home .silo-ask-our-experts #recent-answers .question, .page-home .silo-ask-our-experts #recent-answers .answer, #sidebar .silo-ask-our-experts #recent-answers .question, #sidebar .silo-ask-our-experts #recent-answers .answer {clear:both; float:left; width:280px; margin-bottom:10px}
+.page-home .silo-ask-our-experts #recent-answers .question .outer, .page-home .silo-ask-our-experts #recent-answers .question .inner, #sidebar .silo-ask-our-experts #recent-answers .question .outer, #sidebar .silo-ask-our-experts #recent-answers .question .inner{ background:url('../images/homepage/bg-ask-expert-question.png') no-repeat top left}
+.page-home .silo-ask-our-experts #recent-answers .answer .outer, .page-home .silo-ask-our-experts #recent-answers .answer .inner, #sidebar .silo-ask-our-experts #recent-answers .answer .outer, #sidebar .silo-ask-our-experts #recent-answers .answer .inner {background:url('../images/homepage/bg-ask-expert-answer.png') no-repeat top left}
+.silo-ask-our-experts #recent-answers .answer .inner p {color:#02884d !important}
+.silo-ask-our-experts #recent-answers .answer .inner p.date {color:#3d73b9 !important; font-size:10px; padding-top:5px}
+.silo-ask-our-experts #browse-expert-answers {padding:10px; clear:both; background:url(../images/homepage/bg-browse-our-expert-answers.png) no-repeat; width:280px; height:45px}
+.silo-ask-our-experts #browse-expert-answers a {color:#333; display:block; font-size:1.4em; text-align:center; text-indent:20px; height:34px; line-height:34px; background-color:transparent}
+.silo-ask-our-experts #browse-expert-answers a:hover {color:#6e2b8c}
+ #section-nav {height: 25px; margin: 0; padding: 1px 2px 0px 2px; overflow: hidden; list-style: none; background: #fff url('../images/layout/bg-section-nav.gif') repeat-x; float:left; width:956px}
+#section-nav li {float: left; height: 22px; margin: 3px 2px; font-size: 11px; display: inline}
+#section-nav li a {display: block; float: left; text-decoration: none; padding-left: 3px; color: #666666; background: url('../images/layout/section-nav-item-bg.gif') top left no-repeat}
+#section-nav li a:hover {color: #333333}
+#section-nav li a.current {display: block; float: left; text-decoration: none; padding-left: 3px; background: url('../images/layout/section-nav-item-bg.gif') top left no-repeat}
+#section-nav li a span {display: block; float: left; height: 15px; padding: 6px 10px 0 7px; cursor: pointer; background: url('../images/layout/section-nav-item-bg.gif') top right no-repeat}
+#section-nav .current a, #section-nav .parent_of_current a {margin-top: 1px; background: url('../images/layout/section-nav-item-bg.gif') bottom left no-repeat}
+#section-nav .current a span, #section-nav .parent_of_current a span {background: url('../images/layout/section-nav-item-bg.gif') bottom right no-repeat}
+ .further-reading {margin: 0 0 15px}
+.further-reading p.menu-back {font-size: 15px; line-height: 18px; padding: 8px 0 5px 23px; margin: 0 0 10px; border-bottom: 1px solid; background-position: -944px -436px; background-repeat: no-repeat}
+.further-reading p.menu-back a {text-decoration: none}
+.further-reading ul {list-style-type: none; padding: 0; margin: 0}
+.further-reading ul li {padding: 0; margin: 0; display: inline}
+.further-reading ul li a {text-decoration: none; line-height: 13px; padding: 8px 8px 8px 26px; border-bottom: 1px solid; margin: 0 0 4px; background: -940px -489px no-repeat; display: block; overflow: hidden}
+ .further-reading p.menu-back {border-bottom-color: #c67dde; background-image: url(../images/layout/default-section.png)}
+.further-reading ul li a {background-color: #f0f7fa; border-bottom-color: #e6cbf2; background-image: url(../images/layout/default-section.png)}
+ .banner-container {float:left; margin-top:10px; width:608px}
+.banner-container .biglink {float:left; display:inline; width:245px; padding-left:45px; margin:12px 0 0 10px}
+.banner-container h3, .banner-container h4 {margin:0px}
+.banner-container p {font-size:11px; line-height:1.4em; margin:0}
+#sidebar .silo-ask-our-experts h2, #sidebar .silo-baby-names h2, .page-home #main h2, .page-home #sidebar h2 {background:url(../images/homepage/bg-module-headings.png) no-repeat right 0; border-bottom-width:1px; border-bottom-style:solid; clear:both; color:#9900cc; font-size:26px; height:26px; float:left; margin-top:0; margin-bottom:0; padding:14px 0 5px; width:608px; text-transform:lowercase}
+#sidebar .silo-ask-our-experts h2 {margin-top:25px}
+#sidebar .silo-ask-our-experts h2 a {color:#9900cc !important}
+#sidebar .silo-ask-our-experts h2 a:hover {color:#6E2B8C !important}
+ .silo-baby-names h2 a, .silo-baby-names h3 a:hover, .silo-baby-names h4 a:hover, .silo-baby-names .over h3 a, .silo-baby-names .over h4 a {color:#fd840f !important}
+.silo-baby-names h2 {border-bottom-color:#cc6600 !important; background-position:right -45px}
+.silo-baby-names h3, .silo-baby-names strong, .silo-baby-names a, .silo-baby-names a:hover {color:#cc6600 !important}
+#content .silo-baby-names ul li {background-image:url(../images/bullets/baby-names-bullet-large.gif); background-repeat:no-repeat}
+.silo-baby-names a {border:none}
+.silo-baby-names a:hover {text-decoration:underline}
+.silo-baby-names .banner-container {height:74px; background:url(../images/homepage/bg-banner-baby-names.png) no-repeat}
+.silo-baby-names .banner-container #names-find {background:url('../images/homepage/bg-icon-find-baby-names.png') no-repeat}
+.silo-baby-names .banner-container #names-share {background:url('../images/homepage/bg-icon-share-baby-names.png') no-repeat}
+.silo-baby-names .lists-container, .silo-baby-names .lists-container div.boys, .silo-baby-names .lists-container div.girls, .silo-baby-names .lists-container div.generic {float:left; width:49%}
+.silo-baby-names .lists-container ul li {background-position:4px; padding:0 0 0 20px; margin:0.25em 0; height:20px; line-height:20px}
+#content .silo-baby-names .lists-container .boys li, #content .silo-baby-names .lists-container .girls li {background-image:url(../images/baby_names/sprite-gender.gif); background-position:0 0; background-repeat:no-repeat; padding:0 0 0 24px}
+.silo-baby-names .lists-container .girls li.girl {background-position:0 -50px !important}
+.silo-baby-names .lists-container div.generic {width:100%}
+.silo-baby-names .lists-container li a {color:#666}
+.silo-baby-names .explore-container a, .silo-baby-names .explore-container {background: url(../images/homepage/bg-explore-baby-names.png) no-repeat}
+.silo-baby-names .explore-container a {width:180px; background-position:top right}
+ #sidebar .silo-baby-names .banner-container {background:url(../images/layout/sidebar-babynames.png) no-repeat}
+#sidebar .silo-baby-names h2, #sidebar .silo-ask-our-experts h2 {width:300px}
+#sidebar .silo-baby-names h2 {background-position: 235px -45px}
+#sidebar .banner-container, #sidebar .explore-container, #sidebar .lists-container {width:300px; float:left}
+#sidebar #names-share {display:none}
+#sidebar .silo-baby-names .explore-container {background:none}
+#sidebar .silo-baby-names .explore-container p {padding-top:10px}
+#sidebar .silo-baby-names .explore-container a {background: url(../images/layout/try-babynames.png) no-repeat; float:right; width:176px; height:24px; text-indent: -9999em}
+  #tell-story {width:608px;  position:relative}
+#tell-story p {color:#444}
+#tell-story h1 {font-size:15px; font-weight:normal; color:#6e2b8c; border-bottom:1px solid #6e2b8c; padding:6px 0 7px; margin:5px 0 10px}
+#tell-story .membership-form .submit {float:none; margin:0 -10px 0 -15px}
+#new_story .author {float:left; width:50px; background:transparent url(/images/membership/member.gif) no-repeat; padding-top:53px; text-align:center; color:#D31145; font-size:11px; font-weight:bold}
+#new_story .your-story {margin:0 0 0 51px; padding:0 20px 10px 35px; background:transparent url(/images/ask_an_expert/ask-question-bg.gif) no-repeat}
+#new_story .your-story-bottom {background:transparent url(/images/ask_an_expert/ask-question-bg-bottom.gif) no-repeat; margin:0 0 10px 66px}
+#new_story .your-story label {display:block; font-size:small; font-weight:bold; color:#333; padding:0 0 5px 0; float:none; line-height:auto; text-transform:none; width:auto}
+#new_story .your-story label span {font-weight:normal}
+#new_story .your-story .inline label {display:inline; padding:0 5px 0 0}
+#new_story .your-story .row {padding:10px 0 0; background-color:transparent; border-bottom:none; clear:none; margin-bottom:auto; overflow:auto; width:auto}
+#new_story #story_title, #new_story #story_story {width:490px; border:1px solid #ccc; padding:5px; font:small arial, sans-serif}
+#new_story #story_title {height:30px}
+#new_story #story_story {height:110px}
+#new_story #story_story_topic_id {width:132px}
+#new_story .submit {text-align:right}
+#new_story .membership-form {margin:0 0 0 66px; width:517px; background:#fff url('/images/ask_an_expert/form-bg-top.gif') no-repeat}
+#new_story .membership-form .submit {background:#fff url('/images/ask_an_expert/form-bg-bottom.gif') no-repeat}
+#new_story .membership-form .select label, #new_story .membership-form .text label {width:100px}
+#new_story .membership-form .checkbox, #new_story .membership-form #children, #new_story .membership-form #password_row {margin-left:121px}
+#new_story .formError {color:#fff; background-color:#f3614b; font-size:11px; font-weight:normal; background:#f3614b url('/images/membership/warning-icon.gif') 2px 50% no-repeat; padding:3px 0 3px 21px; margin:1px 0 5px}
+#new_story .your-story .fieldWithErrors input, #new_story .your-story .fieldWithErrors select, #new_story .your-story .fieldWithErrors textarea {border:2px solid #f3614b !important; background-color:#ffffe5 !important}
+#new_story .your-story .fieldWithErrors textarea {width:488px !important}
+#new_story .your-story .fieldWithErrors select {width:140px !important}
+#new_story .your-story .inline .formError {margin-left:168px; width:119px}
+ .pagination {margin-top:20px; padding-top:7px; height:26px; text-align:center; background:url(/images/ask_an_expert/pagination-bg.gif) top left repeat-x; position:relative; clear:both}
+.pagination .prev_page {display:block; background:url(/images/ask_an_expert/previous-arrow.gif) 0 50% no-repeat; padding-left:15px; position:absolute; font-size:12px; color:#333; left:10px; top:7px}
+.pagination .next_page {display:block; background:url(/images/ask_an_expert/next-arrow.gif) 100% 50% no-repeat; padding-right:15px; position:absolute; font-size:12px; color:#333; right:10px; top:7px}
+.pagination .disabled { }
+.pagination a {padding:0 5px; border:none; color:#333 !important}
+.pagination .current {padding:0 4px; background-color:#e6e6e6; border:1px solid #cacaca}
+ #social-promo, #social-name {height: 20px; display:block; padding: 15px 0}
+#social-promo {padding: 0}
+.huggies-like {width: 100px; height: 20px; float:left; display:block}
+.huggies-fb {width: 65px; height: 20px; margin: 10px 0px; display:block}
+ .prototip {font: 11px Arial, Helvetica, sans-serif; color: #000}
+ .prototip .default {width: 250px; color: #fff}
+.prototip .default .toolbar {background: #f1f1f1; font-weight: bold}
+.prototip .default .title {padding: 5px}
+.prototip .default .content {padding: 5px; background: #9900cc; line-height:13px}
+ .prototip .toolsdrop {width: 250px; color: #9900cc}
+.prototip .toolsdrop .toolbar {background: #ffffff; font-weight: bold}
+.prototip .toolsdrop .title {padding: 5px}
+.prototip .toolsdrop .content {padding: 0px; background: #fff}
+ .prototip .promotion-entry {color: #BE8E66; width:240px}
+.prototip .promotionentry .content {padding: 5px; background: #FFF6E7}
+.prototip .promotionentry .content strong {font-weight: bold; color:#5b381a}
+.prototip .promotionentry .content .tip-img {float:left; width: 64px; margin-right: 5px}
+.prototip .promotionentry .content .tip-info {float:right; width: 150px}
+ .prototipLoader {position: absolute; top: -1000px; left: -1000px; height: 14px; width: 14px; border: 1px solid #dddddd; overflow: hidden}
+ .prototip{position:absolute;overflow:hidden;}.prototip .tooltip,.prototip .toolbar,.prototip .toolbar .title{position:relative;}.prototip .content{clear:both;}.prototip .toolbar .close{position:relative;text-decoration:none;float:right;width:19px;height:15px;display:block;line-height:0;font-size:0;border:0;cursor:pointer;}.prototip .tooltip{clear:both;float:left;}.prototip .borderLeftWrapper,.prototip .borderRightWrapper{position:absolute;top:0;left:0;width:300px;height:20px;}.prototip .borderFrame{height:100%;width:100%;float:left;margin:0;padding:0;position:relative;}.prototip .borderTop,.prototip .borderBottom{overflow:hidden;}.prototip .borderRow{list-style-type:none;float:left;width:100%;position:relative;clear:both;margin:0;padding:0;}.prototip_CornerWrapper{position:absolute;top:0;left:0;width:100%;height:100%;margin:0;padding:0;clear:both;}.prototip_Corner{float:left;position:relative;}.prototip canvas{position:relative;float:left;}.prototip_CornerTr,.prototip_CornerBr{float:right;}.prototip_BetweenCorners{position:absolute;top:0;left:0;width:100%;overflow:hidden;clear:both;}.prototip .borderMiddle{position:relative;float:left;}.prototip .borderCenter{position:relative;float:left;height:100%;}.prototip_StemWrapper{position:relative;width:100%;height:auto;clear:both;}.prototip_StemBox{float:left;position:relative;}.prototip_Stem{width:100%;position:absolute;overflow:hidden;}.iframeShim{position:absolute;border:0;margin:0;padding:0;background:none;overflow:hidden;}.prototip .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.prototip .clearfix{display:inline-block;}
+.prototip .clearfix{display:block;}
+ .lv_contentTop ol, .lv_contentTop ul, .lv_contentTop li {padding-left:25px}
+.lv_contentTop ol, .lv_contentTop ul {margin-top:7px}
+.lv_contentTop li {list-style-type:decimal !important; margin-bottom:5px !important}
+#lightview {position: absolute; top: 50%; left: 50%; height: 150px; width: 150px; margin: -75px 0 0 -75px; padding: 0; text-align: left}
+ .lv_Container {position: relative; width: 100%; height: 100%; background: none; padding: 0; margin: 0}
+.lv_Button {cursor: pointer; text-decoration: none; border: none; background: none; margin: 0; padding: 0}
+ .lv_Sides {position: absolute; top: 50%; left: 0; clear: both; width: 100%; padding: 0; margin: 0}
+.lv_Sides * {padding: 0; margin: 0}
+.lv_Sides li {list-style-type: none; position: relative}
+.lv_PrevSide {float: left}
+.lv_NextSide {float: right}
+.lv_Sides .lv_Wrapper {width: 100%; height: 100%; cursor: pointer}
+.lv_Sides .lv_Button {float: left; background: none}
+ .lv_Frames {width: 100%; height: 100%; position: relative; padding: 0; margin: 0}
+.lv_Frames li {list-style-type: none; margin: 0; padding: 0}
+.lv_Frame {width: 100%; display: block}
+.lv_Frame * {padding: 0; margin: 0}
+.lv_FrameTop {position: absolute; left: 0; width: 100%; display: block}
+.lv_FrameBottom {position: relative; float: left; clear: both}
+.lv_Liquid {position: relative; float: left; width: 100%; overflow: hidden; clear: both}
+.lv_Liquid .lv_Filler {position: absolute; height: 100%; width: 2px; top: 0; left: 50%}
+.lv_Half {display: block; height: 100%; clear: both; line-height: 0px}
+.lv_Half li {list-style-type: none}
+.lv_Corner {float: left; position: relative}
+.lv_CornerTr, .lv_CornerBr {float: right}
+.lv_Fill {position: absolute; top: 0; width: 100%; height: 100%}
+.lv_Half .lv_CornerWrapper {float: left; position: relative; width: 50%; height: 100%; overflow: hidden}
+.lv_HalfRight .lv_CornerWrapper {float: right}
+.lv_Corner {position: relative}
+.lv_Corner canvas {position: relative}
+.lv_HalfLeft .lv_Corner {float: left}
+.lv_HalfRight .lv_Corner {position: relative; float: right}
+ .lv_Center {position: relative; clear: both; height: 100%; overflow: hidden; background: none; padding: 0; margin: 0}
+.lv_WrapUp {position: absolute; left: 0; height: 100%; width: 100%; overflow: hidden; padding: 0; margin: 0}
+.lv_WrapDown {position: relative; height: 100%; width: 100%; overflow: hidden; padding: 0; margin: 0}
+.lv_WrapCenter {position: relative; padding: 0; margin: 0}
+ .lv_Loading {position: absolute; top: 50%; left: 50%}
+.lv_Loading .lv_Button {float: left; height: 100%; width: 100%}
+.lv_MediaWrapper {position: relative; width: 100%; display: block; overflow: hidden; clear: both; padding: 0; margin: 0}
+.lv_MediaWrapper img {position: relative; float: left; padding: 0; margin: 0}
+ .lv_PrevNext {position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 0; margin: 0}
+.lv_PrevNext * {padding: 0; margin: 0}
+.lv_PrevNext .lv_Button {position: relative; height: 100%}
+.lv_PrevButton {float: left}
+.lv_NextButton {float: right}
+ .lv_MenuBar {clear: both; position: relative; width: 100%; font: 11px Arial, Helvetica, sans-serif; color: #7a7a7a; padding: 0; margin: 0; text-align: left}
+.lv_MenuBar * {padding: 0; margin: 0;}
+.lv_Close {position: relative; float: right; overflow: hidden; width: 100%; height: 100%}
+.lv_Data {position: relative; float: left; padding-bottom: 3px; line-height: 13px; overflow: hidden}
+ .lv_Data li {list-style-type: none; float: left; margin-top: 3px}
+.lv_DataText {width: 100%}
+.lv_DataText .lv_Title {font-weight: bold; margin-bottom: 2px}
+.lv_DataText .lv_Caption {clear: both}
+.lv_Data .lv_ImgNumber {color: #a7a7a7; margin-right: 5px; margin-top: 5px}
+.lv_Data .lv_innerPrevNext, .lv_Data .lv_Slideshow {position: relative; border-left: 1px solid #d7d7d7; padding: 0 5px; margin-top: 5px; vertical-align: middle}
+.lv_Data .lv_Slideshow {padding-right: 0px}
+.lv_Data .lv_innerPrevNext .lv_Button, .lv_Data .lv_Slideshow .lv_Button { float: left; background-position: center left; background-repeat: no-repeat}
+ .lv_contentTop, .lv_contentBottom {position: relative; float: left; margin: 0; padding: 0; clear: both}
+#lightview iframe {float: left; border: 0; clear: both; padding: 0; margin: 0; background: none}
+ .lv_topButtons {position: absolute; left: 0; width: 100%; overflow: hidden; margin: 0; padding: 0}
+.lv_topcloseButtonImage {cursor: pointer}
+ #lightviewError p {padding: 0 0 10px 0}
+#lightviewError div {padding: 6px; font: 11px Arial, Helvetica, sans-serif}
+#lightviewError .message {background: #fcb5b5; color: #dd1f1f; margin-bottom: 3px}
+#lightviewError .type {font-weight: bold}
+#lightviewError .pluginspage {background: #b5fcbd; color: #21be30}
+#lightviewError a, #lightviewError a:hover, #lightviewError a:visited {color: #21be30; text-decoration: none; background: none; font-weight: bold; border-bottom: 1px solid #7de689}
+#lightviewError p {margin-left: 0; padding: 0}
+#lv_overlay {position: absolute;  top: 0; left: 0; height: 100%; width: 100%}
+ #lightviewController {position: fixed; bottom: 0; top: 0; left: 50%; margin: 0; padding: 0; color: #d2d2d2; font: 11px Arial, Helvetica, sans-serif}
+* html body #lightviewController { position: absolute; top: auto; margin-top: expression( (-1 * this.offsetHeight / 2 + (document.documentElement ? document.documentElement.scrollTop : 0) + (Lightview.controllerOffset || 0)) + 'px')}
+#lightviewController ul {display: block; height: 100%; float: left; margin: 0; padding: 0; position: relative}
+.lv_controllerTop, .lv_controllerMiddle, .lv_controllerBottom {list-style-type: none; float: left; display: block; position: relative; clear: both; overflow: hidden; margin: 0; padding: 0}
+.lv_controllerCenter {width: auto; float: left}
+.lv_controllerCornerWrapper {position: absolute; width: 100%; height: 100%; margin: 0; padding: 0}
+.lv_controllerCornerWrapperTopLeft, .lv_controllerCornerWrapperBottomLeft {top: 0; left: -100%;}
+.lv_controllerCornerWrapperTopRight, .lv_controllerCornerWrapperBottomRight {top: 0; left: 100%;}
+#lightviewController .lv_CornerWrapper {width: 100%}
+#lightviewController .lv_Corner {float: left}
+#lightviewController .lv_Corner {float: right; position: relative}
+#lightviewController .lv_CornerTr, #lightviewController .lv_CornerBr {float: left}
+.lv_controllerBetweenCorners {position: relative; height: 100%; overflow: hidden}
+.lv_controllerMiddle {position: relative; height: 100%; float: left}
+.lv_controllerCenter {float: left; width: auto;}
+.lv_controllerCenter li {list-style-type: none; float: left; display: inline; position: relative; clear: none}
+.lv_controllerSetNumber {float: left; text-align: center}
+#lightviewController .lv_Button {float: left; position: relative; height: 100%; clear: none}
+.lv_controllerSetNumber {position: relative; height: 100%; padding-right: 3px}
+.lv_controllerPrev, .lv_controllerNext, .lv_controllerSlideshow, .lv_controllerClose {float: left; position: relative; height: 100%; padding-left: 3px}
+.lv_controllerPrev {border-left: 1px solid #3c3c3c}
+#lightviewController .lv_controllerNext {padding-right: 3px; border-right: 1px solid #3c3c3c}
+* html #lightview { position: absolute; margin-top: expression( (-1 * this.offsetHeight / 2 + (document.documentElement ? document.documentElement.scrollTop : 0) - (Lightview.controllerHeight || 0)) + 'px'); margin-left: expression( -1 * this.offsetWidth / 2 + (document.documentElement ? document.documentElement.scrollLeft : 0) + 'px')}
+ html #lv_overlay {position: absolute; height: expression(((window.Enumerable && window.Enumerable.max) ? [document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight].max() : document.documentElement.scrollHeight) + 'px' ); width: expression(((window.Enumerable && window.Enumerable.max) ? [document.body.scrollWidth, document.documentElement.scrollWidth, document.body.offsetWidth, document.documentElement.clientHeight].max() : document.documentElement.scrollWidth) + 'px' )}
+  #main h1 {font-size: 25px; line-height: 26px; padding: 0 0 5px 0; margin: 0 0 25px 0; font-weight: normal; border-bottom: 1px solid; text-transform:lowercase}
+#main h1 span.caps {text-transform: none !important}
+#main h2 {font-size: 18px; line-height: 21px; margin: 28px 0 15px}
+#main h3 {margin: 19px 0 6px}
+#main p {margin: 8px 0}
+#main strong {color: #333333}
+#main ul {padding: 0; list-style-type: none}
+#main ul li {padding: 0 0 0 35px; background-position: 20px 4px; background-repeat: no-repeat}
+#main ol {padding: 0 0 0 30px; list-style:decimal}
+#main img.page-image {float: right; margin: 0 0 25px 25px}
+#main p.byline {font-size: 11px; color: #808080; margin-top: -20px; margin-bottom: 20px}
+#main p.author-credit{ font-size: 11px; color: #808080; margin-top: 0px; margin-bottom: 0px}
+#main p.byline a, #main p.byline span {color:#808080; border-bottom: 1px dotted #808080 !important}
+#main p.author-credit{ font-size: 11px; color: #808080; margin-top: 0px; margin-bottom: 0px}
+.template-week-by-week-detail #main, .template-content #main, .template-recipe-landing #main, .template-recipe-content #main, #promotions-show #main {width: 608px; padding: 0 0 0 10px}
+.template-content #main a {border-bottom: 1px dashed}
+.template-content #main a.image {border: 0 !important}
+.template-content #main blockquote {display: inline; width: 195px; float: right; padding: 15px 0 15px 0; margin: 0 0 0 15px; font-size: 18px; background: url('../images/layout/bg-blockquote.png') bottom right no-repeat; border-bottom: 1px solid}
+.template-content #main blockquote p {margin: 0; font-size: 18px}
+  #main ul.features {float: left; width: 100%; padding-bottom: 10px}
+#main ul.features li {background: none; float: left; width: 275px; padding: 0 15px 0 10px; margin: 0}
+#main ul.features li img {float: left; padding-top: 15px}
+#main ul.features li h4, #main ul.features li p {padding-left: 100px}
+#main ul.features li h4 {color: #9900cc}
+#main ul.features li p {font-size: 11px}
+#main ul.features .left-clear {clear:left}
+#main ul.features li a , #main ul.features li a:hover {text-decoration:none; border-bottom:none}
+ #landing .child {width: 936px; height: 292px; padding: 1px 0px 0 1px; margin: 0 0 15px; position: relative; float: left; display: inline; background: -282px -128px no-repeat}
+#landing .child h1, #landing .child h2, #landing .child h3 {line-height: 20px; display: block; font-weight: bold; font-size: 19px; margin: 0 0 15px; padding: 0}
+#landing .child h1 a:hover, #landing .child h2 a:hover, #landing .child h3 a:hover {border-bottom: 1px solid}
+#landing .child h1 a, #landing .child h2 a, #landing .child h3 a {text-decoration: none; border-bottom: 1px dotted}
+#landing .child .image {height: 288px; padding: 1px 0 0 1px; float: left; overflow: hidden; border-right: 1px solid}
+#landing .child img {float: left; display: inline; width: 324px}
+#landing .child .page-summary {float: left; display: inline; width: 324px; height: 255px; padding: 14px; border-left: 1px solid; overflow: hidden}
+#landing .child .page-summary p {color: #666666; margin: 0 0 8px}
+#landing .child .page-children {float: right; display: inline; width: 249px; padding: 11px 0 0; background: 0 -682px no-repeat}
+#landing .child .page-children ul {position: relative; list-style-type: none; padding: 0; margin: 0; height: 238px; overflow: hidden}
+#landing .child .page-children ul li {display: block; position: relative; margin: 4px 0 0 0; padding: 0; float: left; width: 100%}
+#landing .child .page-children ul li a {display: block; line-height: 17px; margin: 0 0 1px 0; padding: 0 0 0 34px; background: 16px 4px no-repeat; font-size: 12px; font-weight: bold; text-decoration: none}
+#landing .child .page-children .browse {display: block; width: 225px; height: 32px; padding: 0 12px 10px; line-height: 32px; text-align: center; color: #333333; text-decoration: none; font-size: 13px; background: -667px -46px no-repeat; clear: both}
+#landing .child .page-children .browse em {font-weight:bold; font-style:normal}
+ #main .child {width: 618px; padding: 0 10px 0 0; margin: 0 0 15px; position: relative; float: left; display: inline}
+#main .child h3 {line-height: 33px; border-bottom: 1px solid #005980; font-weight: bold; font-size: 19px; margin: 0 0 7px 0; padding: 0}
+#main .child h3 a{ text-decoration: none}
+#main .child img {float: left; display: inline; width: 184px; height: 184px; background-color: #ccc}
+#main .child .page-summary {float: right; width: 419px}
+#main .child .page-summary p {color: #666666; line-height: 1.5em; margin: 0 0 8px}
+#main .child .page-summary ul {position: relative; list-style-type: none; padding: 0; margin: 0}
+#main .child .page-summary ul li {width: 175px; margin: 5px 4px 0 0; padding: 0 0 0 26px; float: left; display: inline; border-bottom: 1px solid #cce7f3; background-color: #f0f7fa; background-position:-940px -488px; background-repeat:no-repeat}
+#main .child .page-summary ul li a {display: block; line-height: 14px; padding: 8px 10px 8px 0; font-size: 12px; font-weight: bold; text-decoration: none}
+ #flippy {position: relative; height: 260px; width: 938px; overflow: hidden; margin: 0 0 15px; background: 0 -421px no-repeat}
+#flippy .image {float: left; height: 256px; width: 310px; margin: 0; padding: 2px 0 0 2px; overflow: hidden}
+#flippy .content {padding-top: 15px; padding-left: 15px; width: 285px; height:237px; overflow: hidden}
+#flippy .content h2 {font-size: 18px; margin: 0 0 10px}
+#flippymenu {position: absolute; top: 0; right: 0; width: 318px; height: 260px}
+#flippymenu ul {margin: 0; padding: 0; list-style: none}
+#flippymenu li img {float: left; margin-right: 13px}
+#flippymenu li {margin: 0; padding: 0 0 0 18px}
+#flippymenu .current {background: -648px -46px no-repeat}
+#flippymenu li a {display: block; height: 50px; font-size: 14px; padding: 1px 0 0 0; border-bottom: 1px dotted #78c8be}
+#flippymenu .current a, #flippymenu li a:hover, #flippymenu li a:focus {outline: 0; background: -319px -46px no-repeat}
+#flippymenu li a span {display: inline-block; padding-top: 18px; font-weight: bold}
+#flippymenu .last a {border-bottom: 0}
+ .forum-excerpt {width: 568px; padding: 20px; position: relative; background: #f7f0fa url(../images/layout/forum_and_aae_excerpt.png) -1030px 100% no-repeat; float: left; display: inline; padding:0 20px 40px; margin-bottom: 10px}
+.forum-excerpt h2 {display: block; width: 568px; height: 32px; text-indent: -999em; background: #f7f0fa url(../images/layout/forum_and_aae_excerpt.png) -1638px 0px no-repeat; margin: 0 0 0}
+.forum-excerpt p {font-size: 12px; color: #6e2b8c; font-weight: bold; margin: 8px 0; padding: 0; clear: both; float: left; display: inline}
+.forum-excerpt .excerpt {margin: 8px 0; clear: both; position: relative; float: left; display: inline}
+.forum-excerpt .excerpt .user {width: 51px; float: left; text-align: center}
+.forum-excerpt .excerpt .user img {width: 51px; height: 51px; background: #ccc; float: left; display: inline; margin: 0 0 5px 0}
+.forum-excerpt .excerpt .user cite {font-weight: bold; color:#333333}
+.forum-excerpt .excerpt .post {width: 517px; padding: 17px 0 0; float: right; color: #333333; position: relative; background: url(../images/layout/forum_and_aae_excerpt.png) 0px 0% no-repeat}
+.forum-excerpt .excerpt .post .post-body {font-weight: normal; color: #333333; position: relative; padding: 0pt 25px 0pt 30px}
+.forum-excerpt .excerpt .post .post-body p {color: #333333; margin: 0; font-weight: normal; float: none}
+.forum-excerpt .excerpt .post div.info {display: block; width: 473px; padding: 10px 10px 12px 34px; color: #666666; background: url(../images/layout/forum_and_aae_excerpt.png) 0px 100% no-repeat}
+ .has-video {display:inline-block; height:9px; margin-left:5px; width:14px; text-indent: -999em; background-position:-946px -549px; background-repeat:no-repeat}
+ #video-player {width: 608px; margin: 10px 15px 10px 0; position: relative; background: #ffffff 0px 0px no-repeat; float:left; display: block;  }
+.swfenabled #video-player {display: block}
+#video-player .widescreen , #video-player .normal{ overflow: hidden; width: 596px; padding: 0 6px; float: left; display:inline}
+#video-player .normal {height: 338px; background: #ffffff 0px -34px no-repeat}
+#video-player .widescreen {height: 270px; background: #ffffff 0px -102px no-repeat}
+#video-player .information {width: 100%; height: 35px; float: left}
+#video-player .information h2 {font-size: 15px; line-height: 33px; margin: 0; padding: 0 0 0 29px; float: left; display: inline}
+#video-player .information a {font-size: 11px; line-height: 16px; margin: 7px 10px 0; border-bottom: 1px dashed; float: right; display: inline}
+#video-player #video-area, #video-player #player {float: left; display: inline}
+#video-player #video-area{ border:1px solid #333333}
+ #video-player .related-videos {width: 188px; float: right; display: inline}
+#video-player .related-videos .video {width: 186px; height: 106px; overflow: hidden; border: 1px solid #333333; margin: 0 0 4px 0; position: relative}
+#video-player .related-videos .video .meta {background: url(../images/layout/transparent-black.png) top left; position: absolute; width: 166px; height: 86px; padding: 10px; overflow: hidden; top: 0px; left: 0px}
+#video-player .related-videos .video .meta:hover {cursor:pointer}
+#video-player .related-videos .video .meta h5 {color: #ffffff; font-size: 12px; margin: 0}
+#video-player .related-videos .video .meta p {color: #ffffff; font-size: 11px; line-height: 1.3em}
+#video-player .related-videos .video .meta a {display: block; width: 165px; height: 15px; padding: 5px 0 0 21px; background: #000000 -945px -605px no-repeat; color: #ffffff; position: absolute; bottom: 0px; left: 0px; border-bottom:0px}
+#video-player .related-videos .video .meta a:hover {text-decoration:none; border-bottom:0px}
+#video-player .related-videos .video .image {width: 186px; height: 106px; overflow: hidden}
+#video-player .related-videos .video .image img {width: 186px}
+ #video-player .widescreen .related-videos {width: 126px}
+#video-player .widescreen .related-videos .video {width: 124px; height: 83px; margin: 0 0 4px 0}
+#video-player .widescreen .related-videos .video .meta {width: 106px; height: 63px}
+#video-player .widescreen .related-videos .video .meta a {width: 103px}
+#video-player .widescreen .related-videos .video .image {width: 124px; height: 83px; overflow: hidden}
+#video-player .widescreen .related-videos .video .image img {width: 124px; height: 83px}
+ #video-heading {width: 938px; position: relative; padding-top:10px; margin-bottom: 15px; background-position: 0 -372px; background-repeat: no-repeat; float:left; display:inline}
+#video-heading .normal, #video-heading .widescreen {width:918px; float:left; display:inline; background-position: bottom left; background-repeat: no-repeat; padding: 0 10px 10px 10px}
+#video-heading .normal {height: 300px}
+#video-heading .widescreen {height: 288px}
+.normal #video-area, .widescreen #video-area {width:400px; display:block; float:left}
+#video-player .widescreen #video-area {width:464px}
+#video-heading .normal #video-area {width:400px; height:300px}
+#video-heading .widescreen #video-area {width:512px; height:288px}
+#video-heading .information {margin: 0 10px 0 20px; float: left; display: block; position:relative}
+#video-heading .normal .information {width: 486px}
+#video-heading .widescreen .information {width: 374px}
+#video-heading .information #video-summary {float:left; overflow: hidden}
+#video-heading .information h1 {font-size: 20px; line-height: 26px; margin: 0 0 18px}
+#video-heading .normal a.read-on, #video-heading .widescreen a.read-on {margin-top:20px; float:left; clear:both; display: block; width: 89px; height: 31px; line-height: 31px; font-size: 14px; padding: 0 0 0 17px; color: #333333; font-weight: bold; background-position: -166px -384px; background-repeat: no-repeat}
+ #video-landing {margin: 0 0 0 0; position: relative}
+#video-landing .video {width: 188px; height: 235px; padding: 10px; float: left; position: relative}
+#video-landing .current {background: 0 -128px no-repeat}
+#video-landing .video .image {width: 186px; height: 105px; overflow: hidden; border: 1px solid #cccccc; position: relative}
+#video-landing .video .image img{ width: 188px}
+#video-landing .video .image .thumb-overlay {position: absolute; top: 0px; left: 0px; display: none}
+#video-landing .current .image .thumb-overlay {display: block}
+#video-landing .video .information {height: 95px; overflow: hidden}
+#video-landing .video .information h2 {font-size: 14px; line-height: 14px; height: 28px; margin: 5px 0}
+#video-landing .video .information .summary p {font-size: 11px; line-height: 15px; color: #333333; margin: 0 0 5px}
+#video-landing .video .actions {float: left; clear: both; margin: 7px 0 0}
+#video-landing .video .actions a {display: inline; height: 27px; line-height: 27px; font-size: 12px; font-weight: bold; color: #333333; text-align: center; float: left}
+#video-landing .video .actions .play {width: 82px; padding: 0 0 0 10px; margin: 0 5px 0 0; background: #ffffff url(../images/layout/default-section.png) 0px -384px no-repeat}
+#video-landing .video .actions .read {width: 65px; background: #ffffff url(../images/layout/default-section.png) -97px -384px no-repeat}
+#content-introduction {margin-bottom:10px}
+#flashintrodiv ul {display: none}
+.swfenabled #content-introduction {height: 282px !important; overflow: hidden; visibility: hidden}
+ table.borderless th, table.borderless td {border:0px}
+ #main .product-placement img {padding-top: 20px}
+#main .product-placement a {border-bottom: none !important}
+.rounded-list{ margin:10px; padding:7px 15px 7px 15px; -moz-border-radius: 10px; border-radius: 10px; background:#faf0ff}
+.silo-conception .rounded-list {background:#f0f3ff}
+.silo-pregnancy .rounded-list {background:#f0faff}
+.silo-child-birth .rounded-list {background:#f0fdff}
+.silo-baby-care .rounded-list {background:#f0fff8}
+.silo-toddler .rounded-list {background:#fff0f8}
+.silo-parenting .rounded-list {background:#fff0f5}
+.ebook-row{ width: 608px; float: left; clear: both; min-height: 280px; background: url(../images/ebook/bg-ebook-row.jpg) top center no-repeat}
+.ebook{ margin-left: 25px; float: left; width: 170px; min-height: 280px}
+.ebook .title{ width: 170px; text-align: center; clear: both; padding-top: 20px}
+.ebook .title h3{ font-size: 14px; text-align: center}
+.ebook .title p{ font-size: 11px; text-align: center}
+.ebook .thumb{ width: 114px; height: 155px; background: #efefef; margin: 0px auto}
+.prototip .ebook-entries .content{ color: #5a371a; background: none !important}
+.e-book-tip-info{ width:140px; padding-top: 13px; height: 40px; text-indent: 30px; background: url(../images/ebook/bg-ebook-cloud.png) top center no-repeat}
+ .page-apps #main .row {width: 608px; min-height: 280px; margin: 50px 0 20px 0; clear: left; background: url(/images/ebook/bg-ebook-row.jpg) 50% 80px no-repeat; overflow: hidden}
+.page-apps #main .row .thumb {position: relative; display: block; float: left; margin-left: 30px; padding: 0; height: 320px; width: 240px}
+.page-apps #main .row a {border-bottom: none !important}
+.page-apps #main .row .thumb h3 {display: block; text-align: center; position: absolute; width: 100%; top: 250px}
+.page-apps #main .row a:hover h3 {color: #90C}
+.page-apps #main .row .thumb.vertical {background: url(/images/mobile-apps/iphone-thumb-bg.png) no-repeat 60px 0px}
+.page-apps #main .row .thumb.horizontal {background: url(/images/mobile-apps/iphone-thumb-bg.png) no-repeat -240px 0px}
+.page-apps #main .row .thumb.vertical img {width: 100px; height: 150px; margin: 43px 0 0 71px}
+.page-apps #main .row .thumb.horizontal img {width: 150px; height: 100px; margin: 125px 0 0 43px}
+ #content h1 , #main h1{ border-bottom-color: #6e2b8c}
+#content h1, #content h2, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {color: #6e2b8c}
+#main ul li {background-image: url(../images/bullets/default-bullet-small.gif)}
+#main a , #landing .child .page-children .browse:hover{ color: #9900cc}
+#main a:hover, #main strong {color: #6e2b8c}
+.template-content #main a {border-bottom-color: #9900cc}
+.template-content #main blockquote {color: #6e2b8c; border-bottom-color: #9900cc}
+ #introduction {background-image: url(../images/landing/intro-bg-default.jpg)}
+#introduction h1 span {color: #9900cc}
+ #landing .child {background-image: url(../images/layout/default-section.png)}
+#landing .child h3 a{ border-bottom-color: #6e2b8c}
+#landing .child .image {border-right-color: #cfaae0}
+#landing .child .page-summary {border-left-color: #ffffff}
+#landing .child .page-children {background-image: url(../images/layout/default-section.png)}
+#landing .child .page-children ul li a {background-image: url(../images/bullets/default-bullet-large.gif)}
+#landing .child .page-children .browse {background-image: url(../images/layout/default-section.png)}
+#landing #video-title, #landing #video-summary {color:#fff}
+ #main .child h3 {border-bottom-color: #6e2b8c}
+#main .child h3 a{ color: #6e2b8c}
+#main .child .page-summary ul li {border-bottom-color: #e6cbf2; background-color: #f0f7fa; background-image: url(../images/layout/default-section.png)}
+ #flippy {background-image: url(../images/layout/default-section.png)}
+#flippymenu .current {background-image: url(../images/layout/default-section.png)}
+#flippymenu li a {border-bottom-color: #78c8be}
+#flippymenu .current a, #flippymenu li a:hover, #flippymenu li a:focus {background-image: url(../images/layout/default-section.png) }
+ #video-player, #video-player .widescreen, #video-player .normal, #video-heading, #video-heading .widescreen, #video-heading .normal{ background-image: url(../images/layout/default-video.png)}
+#video-player .information h2 {color: #ffffff !important}
+#video-player .information a {color: #ffffff !important; border-bottom-color: #ffffff !important}
+#video-player .related-videos .video .meta a, #video-heading a.read-on, #video-landing .current, .has-video {background-image: url(../images/layout/default-section.png)}
+#video-heading .information h1, #video-heading .information p {color: #fff !important}
+ .silo-ask-our-experts #recent-answers {padding:0; background:none; float:left; width:280px}
+.silo-ask-our-experts #recent-answers .question, .silo-ask-our-experts #recent-answers .answer {clear:both; float:left; width:280px; margin-bottom:10px}
+.silo-ask-our-experts #recent-answers .question .outer, .silo-ask-our-experts #recent-answers .question .inner {background: url(../images/layout/in_this_section/bg-ask-expert-question.png) no-repeat}
+.silo-ask-our-experts #recent-answers .answer .outer, .silo-ask-our-experts #recent-answers .answer .inner {background: url(../images/layout/in_this_section/bg-ask-expert-answer.png) no-repeat}
+.silo-ask-our-experts, .silo-ask-our-experts #recent-answers .answer {margin-bottom:0}
+ .silo-baby-products #landing .child .image {border-right: 0px}
+.silo-baby-products #landing .child .page-summary {border-left:0px}
+ .silo-conception #content h1, .silo-conception #main h1 {border-bottom-color: #344b97}
+.silo-conception #content h1, .silo-conception #content h2, .silo-conception #main h1, .silo-conception #main h2, .silo-conception #main h3, .silo-conception #main h4, .silo-conception #main h5, .silo-conception #main h6 {color: #344b97}
+.silo-conception #main ul li {background-image: url(../images/bullets/conception-bullet-small.gif)}
+.silo-conception #main a, .silo-conception #content a, .silo-conception #landing .child .page-children .browse:hover{ color: #5f64fe}
+.silo-conception #content strong, .silo-conception #main strong, .silo-conception #content a:hover, .silo-conception #main a:hover{ color: #344b97}
+.silo-conception .template-content #main a {border-bottom-color: #5f64fe}
+.silo-conception .template-content #main blockquote {color: #344b97; border-bottom-color: #5f64fe}
+ .silo-conception #introduction {background-image: url(../images/landing/intro-bg-conception.jpg)}
+.silo-conception #introduction h1 span {color: #5f64fe}
+ .silo-conception #landing .child {background-image: url(../images/layout/conception-section.png)}
+.silo-conception #landing .child h3 a{ border-bottom-color: #344b97}
+.silo-conception #landing .child .image {border-right-color: #8097e0}
+.silo-conception #landing .child .page-summary {border-left-color: #ffffff}
+.silo-conception #landing .child .page-children {background-image: url(../images/layout/conception-section.png)}
+.silo-conception #landing .child .page-children ul li a {background-image: url(../images/bullets/conception-bullet-large.gif)}
+.silo-conception #landing .child .page-children .browse {background-image: url(../images/layout/conception-section.png)}
+ .silo-conception #main .child h3 {border-bottom-color: #344b97}
+.silo-conception #main .child .page-summary ul li {border-bottom-color: #cce7f3; background-color: #f0f7fa; background-image: url(../images/layout/conception-section.png)}
+.silo-conception #main .child .page-summary ul li:hover {border-bottom-color: #8097e0; background-color: #dae0f2}
+ .silo-conception #flippy {background-image: url(../images/layout/conception-section.png)}
+.silo-conception #flippymenu .current {background-image: url(../images/layout/conception-section.png)}
+.silo-conception #flippymenu li a {border-bottom-color: #78c8be}
+.silo-conception #flippymenu .current a, .silo-conception #flippymenu li a:hover, .silo-conception #flippymenu li a:focus {background-image: url(../images/layout/conception-section.png) }
+ .silo-conception .further-reading p.menu-back {border-bottom-color: #344B97; background-image: url(../images/layout/conception-section.png)}
+.silo-conception .further-reading ul li a {background-color: #f0f7fa; border-bottom-color: #cce7f3; background-image: url(../images/layout/conception-section.png)}
+ .silo-conception #video-player , .silo-conception #video-player .widescreen, .silo-conception #video-player .normal .silo-conception #video-heading, .silo-conception #video-heading .widescreen, .silo-conception #video-heading .normal{ background-image: url(../images/layout/conception-video.png)}
+.silo-conception #video-player .related-videos .video .meta a, .silo-conception #video-heading a.read-on, .silo-conception #video-landing .current, .silo-conception .has-video {background-image: url(../images/layout/conception-section.png)}
+  .silo-pregnancy #content h1, .silo-pregnancy #main h1{ border-bottom-color: #005980}
+.silo-pregnancy #content h1, .silo-pregnancy #content h2, .silo-pregnancy #main h1, .silo-pregnancy #main h2, .silo-pregnancy #main h3, .silo-pregnancy #main h4, .silo-pregnancy #main h5, .silo-pregnancy #main h6 {color: #005980}
+.silo-pregnancy #main ul li {background-image: url(../images/bullets/pregnancy-bullet-small.gif)}
+.silo-pregnancy #main a, .silo-pregnancy #content a , .silo-pregnancy #landing .child .page-children .browse:hover{ color: #1292c9}
+.silo-pregnancy #content strong, .silo-pregnancy #main strong, .silo-pregnancy #content a:hover, .silo-pregnancy #main a:hover{ color: #005980}
+.silo-pregnancy .template-content #main a {border-bottom-color: #1292c9}
+.silo-pregnancy .template-content #main blockquote {color: #005980; border-bottom-color: #1292c9}
+ .silo-pregnancy #introduction {background-image: url(../images/landing/intro-bg-pregnancy.jpg)}
+.silo-pregnancy #introduction h1 {color: #005980}
+.silo-pregnancy #introduction h1 span {color: #2aabe2}
+ .silo-pregnancy #landing .child {background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy #landing .child h3 a{ border-bottom-color: #005980}
+.silo-pregnancy #landing .child .image {border-right-color: #80c3e0}
+.silo-pregnancy #landing .child .page-summary {border-left-color: #ffffff}
+.silo-pregnancy #landing .child .page-children {background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy #landing .child .page-children ul li a {background-image: url(../images/bullets/pregnancy-bullet-large.gif)}
+.silo-pregnancy #landing .child .page-children .browse {background-image: url(../images/layout/pregnancy-section.png)}
+ .silo-pregnancy #main .child h3 {border-bottom-color: #005980}
+.silo-pregnancy #main .child .page-summary ul li {border-bottom-color: #cce7f3; background-color: #f0f7fa; background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy #main .child .page-summary ul li:hover {border-bottom-color: #80c3e0; background-color: #daebf2}
+ .silo-pregnancy #flippy {background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy #flippymenu .current {background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy #flippymenu li a {border-bottom-color: #78c8be}
+.silo-pregnancy #flippymenu .current a, .silo-pregnancy #flippymenu li a:hover, .silo-pregnancy #flippymenu li a:focus {background-image: url(../images/layout/pregnancy-section.png) }
+ .silo-pregnancy .further-reading p.menu-back {border-bottom-color: #005980; background-image: url(../images/layout/pregnancy-section.png)}
+.silo-pregnancy .further-reading ul li a {background-color: #f0f7fa; border-bottom-color: #cbe7f2; background-image: url(../images/layout/pregnancy-section.png)}
+ .silo-pregnancy #video-player, .silo-pregnancy #video-player .widescreen, .silo-pregnancy #video-player .normal, .silo-pregnancy #video-heading, .silo-pregnancy #video-heading .widescreen, .silo-pregnancy #video-heading .normal{ background-image: url(../images/layout/pregnancy-video.png)}
+.silo-pregnancy #video-player .related-videos .video .meta a, .silo-pregnancy #video-heading a.read-on, .silo-pregnancy #video-landing .current, .silo-pregnancy .has-video {background-image: url(../images/layout/pregnancy-section.png)}
+ .silo-child-birth #content h1 , .silo-child-birth #main h1{ border-bottom-color: #007889}
+.silo-child-birth #content h1, .silo-child-birth #content h2, .silo-child-birth #main h1, .silo-child-birth #main h2, .silo-child-birth #main h3, .silo-child-birth #main h4, .silo-child-birth #main h5, .silo-child-birth #main h6 {color: #007889}
+.silo-child-birth #main ul li {background-image: url(../images/bullets/child-birth-bullet-small.gif)}
+.silo-child-birth #main a, .silo-child-birth #content a, .silo-child-birth #landing .child .page-children .browse:hover {color: #039c8a}
+.silo-child-birth #content strong, .silo-child-birth #main strong, .silo-child-birth #content a:hover, .silo-child-birth #main a:hover{ color: #007889}
+.silo-child-birth .template-content #main a {border-bottom-color: #039c8a}
+.silo-child-birth .template-content #main blockquote {color: #007889; border-bottom-color: #039c8a}
+ .silo-child-birth #introduction {background-image: url(../images/landing/intro-bg-child-birth.jpg)}
+.silo-child-birth #introduction h1 span {color: #04b49f}
+ .silo-child-birth #landing .child {background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth #landing .child h3 a{ border-bottom-color: #007889}
+.silo-child-birth #landing .child .image {border-right-color: #80d5e0}
+.silo-child-birth #landing .child .page-summary {border-left-color: #ffffff}
+.silo-child-birth #landing .child .page-children {background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth #landing .child .page-children ul li a {background-image: url(../images/bullets/child-birth-bullet-large.gif)}
+.silo-child-birth #landing .child .page-children .browse {background-image: url(../images/layout/child-birth-section.png)}
+ .silo-child-birth #main .child h3 {border-bottom-color: #007889}
+.silo-child-birth #main .child .page-summary ul li {border-bottom-color: #cbeef2; background-color: #f0f9fa; background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth #main .child .page-summary ul li:hover {border-bottom-color: #80d5e0; background-color: #daeff2}
+ .silo-child-birth #flippy {background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth #flippymenu .current {background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth #flippymenu li a {border-bottom-color: #78c8be}
+.silo-child-birth #flippymenu .current a, .silo-child-birth #flippymenu li a:hover, .silo-child-birth #flippymenu li a:focus {background-image: url(../images/layout/child-birth-section.png) }
+ .silo-child-birth .further-reading p.menu-back {border-bottom-color: #007889; background-image: url(../images/layout/child-birth-section.png)}
+.silo-child-birth .further-reading ul li a {background-color: #f0f7fa; color: #007889; border-bottom-color: #cbe7f2; background-image: url(../images/layout/child-birth-section.png)}
+ .silo-child-birth #video-heading, .silo-child-birth #video-player, .silo-child-birth #video-player .widescreen, .silo-child-birth #video-player .normal, .silo-child-birth #video-heading, .silo-child-birth #video-heading .widescreen, .silo-child-birth #video-heading .normal{ background-image: url(../images/layout/child-birth-video.png)}
+.silo-child-birth #video-player .related-videos .video .meta a , .silo-child-birth #video-heading a.read-on, .silo-child-birth #video-landing .current, .silo-child-birth .has-video {background-image: url(../images/layout/child-birth-section.png)}
+ .silo-baby-care #content h1, .silo-baby-care #main h1{ border-bottom-color: #007843}
+.silo-baby-care #content h1, .silo-baby-care #content h2, .silo-baby-care #main h1, .silo-baby-care #main h2, .silo-baby-care #main h3, .silo-baby-care #main h4, .silo-baby-care #main h5, .silo-baby-care #main h6 {color: #007843}
+.silo-baby-care #main ul li {background-image: url(../images/bullets/baby-care-bullet-small.gif)}
+.silo-baby-care #main a, .silo-baby-care #content a, .silo-baby-care #landing .child .page-children .browse:hover {color: #6aa128}
+.silo-baby-care #content strong, .silo-baby-care #main strong, .silo-baby-care #content a:hover, .silo-baby-care #main a:hover{ color: #007843}
+.silo-baby-care .template-content #main a {border-bottom-color: #6aa128}
+.silo-baby-care .template-content #main blockquote {color: #007843; border-bottom-color: #6aa128}
+ .silo-baby-care #introduction {background-image: url(../images/landing/intro-bg-baby-care.jpg)}
+.silo-baby-care #introduction h1 span {color: #84ba42}
+ .silo-baby-care #landing .child {background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care #landing .child h3 a{ border-bottom-color: #007843}
+.silo-baby-care #landing .child .image {border-right-color: #80e0b7}
+.silo-baby-care #landing .child .page-summary {border-left-color: #ffffff}
+.silo-baby-care #landing .child .page-children {background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care #landing .child .page-children ul li a {background-image: url(../images/bullets/baby-care-bullet-large.gif)}
+.silo-baby-care #landing .child .page-children .browse {background-image: url(../images/layout/baby-care-section.png)}
+ .silo-baby-care #main .child h3 {border-bottom-color: #007843}
+.silo-baby-care #main .child .page-summary ul li {border-bottom-color: #cbf2e1; background-color: #f0faf6; background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care #main .child .page-summary ul li:hover {border-bottom-color: #80e0b7; background-color: #daf2e8}
+ .silo-baby-care #flippy {background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care #flippymenu .current {background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care #flippymenu li a {border-bottom-color: #78c8be}
+.silo-baby-care #flippymenu .current a, .silo-baby-care #flippymenu li a:hover, .silo-baby-care #flippymenu li a:focus {background-image: url(../images/layout/baby-care-section.png) }
+ .silo-baby-care .further-reading p.menu-back {border-bottom-color: #007843; background-image: url(../images/layout/baby-care-section.png)}
+.silo-baby-care .further-reading ul li a {background-color: #f0f7fa; border-bottom-color: #cbf2e1; background-image: url(../images/layout/baby-care-section.png)}
+ .silo-baby-care #video-heading, .silo-baby-care #video-player, .silo-baby-care #video-player .widescreen, .silo-baby-care #video-player .normal, .silo-baby-care #video-heading, .silo-baby-care #video-heading .widescreen, .silo-baby-care #video-heading .normal{ background-image: url(../images/layout/baby-care-video.png)}
+.silo-baby-care #video-player .related-videos .video .meta a , .silo-baby-care #video-heading a.read-on, .silo-baby-care #video-landing .current, .silo-baby-care .has-video {background-image: url(../images/layout/baby-care-section.png)}
+ .silo-toddler #content h1, .silo-toddler #main h1{ border-bottom-color: #800042}
+.silo-toddler #content h1, .silo-toddler #content h2, .silo-toddler #main h1, .silo-toddler #main h2, .silo-toddler #main h3, .silo-toddler #main h4, .silo-toddler #main h5, .silo-toddler #main h6 {color: #800042}
+.silo-toddler #main ul li {background-image: url(../images/bullets/toddler-bullet-small.gif)}
+.silo-toddler #main a, .silo-toddler #content a , .silo-toddler #landing .child .page-children .browse:hover{ color: #ec3b96}
+.silo-toddler #content strong, .silo-toddler #main strong, .silo-toddler #content a:hover, .silo-toddler #main a:hover{ color: #800042}
+.silo-toddler .template-content #main a {border-bottom-color: #ec3b96}
+.silo-toddler .template-content #main blockquote {color: #800042; border-bottom-color: #ec3b96}
+ .silo-toddler #introduction {background-image: url(../images/landing/intro-bg-toddler.jpg)}
+.silo-toddler #introduction h1 span {color: #800042}
+ .silo-toddler #landing .child {background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler #landing .child h3 a{ border-bottom-color: #800042}
+.silo-toddler #landing .child .image {border-right-color: #e080a7}
+.silo-toddler #landing .child .page-summary {border-left-color: #ffffff}
+.silo-toddler #landing .child .page-children {background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler #landing .child .page-children ul li a {background-image: url(../images/bullets/toddler-bullet-large.gif)}
+.silo-toddler #landing .child .page-children .browse {background-image: url(../images/layout/toddler-section.png)}
+ .silo-toddler #main .child h3 {border-bottom-color: #800042}
+.silo-toddler #main .child .page-summary ul li {border-bottom-color: #f2cbe0; background-color: #faf0f5; background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler #main .child .page-summary ul li:hover {border-bottom-color: #e080b2; background-color: #f2dae7}
+ .silo-toddler #flippy {background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler #flippymenu .current {background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler #flippymenu li a {border-bottom-color: #78c8be}
+.silo-toddler #flippymenu .current a, .silo-toddler #flippymenu li a:hover, .silo-toddler #flippymenu li a:focus {background-image: url(../images/layout/toddler-section.png) }
+ .silo-toddler .further-reading p.menu-back {border-bottom-color: #800042; background-image: url(../images/layout/toddler-section.png)}
+.silo-toddler .further-reading ul li a {background-color: #faf0f5; color: #37b0e4; border-bottom-color: #f2cbe0; background-image: url(../images/layout/toddler-section.png)}
+ .silo-toddler #video-heading, .silo-toddler #video-player, .silo-toddler #video-player .widescreen, .silo-toddler #video-player .normal, .silo-toddler #video-heading, .silo-toddler #video-heading .widescreen, .silo-toddler #video-heading .normal{ background-image: url(../images/layout/toddler-video.png)}
+.silo-toddler #video-player .related-videos .video .meta a , .silo-toddler #video-heading a.read-on, .silo-toddler #video-landing .current , .silo-toddler .has-video {background-image: url(../images/layout/toddler-section.png)}
+ .silo-parenting #content h1, .silo-parenting #main h1{ border-bottom-color: #80002f}
+.silo-parenting #content h1, .silo-parenting #content h2, .silo-parenting #main h1, .silo-parenting #main h2, .silo-parenting #main h3, .silo-parenting #main h4, .silo-parenting #main h5, .silo-parenting #main h6 {color: #80002f}
+.silo-parenting #main ul li {background-image: url(../images/bullets/parenting-bullet-small.gif)}
+.silo-parenting #main a, .silo-parenting #content a , .silo-parenting #landing .child .page-children .browse:hover{ color: #b33663}
+.silo-parenting #content strong, .silo-parenting #main strong, .silo-parenting #content a:hover, .silo-parenting #main a:hover{ color: #80002f}
+.silo-parenting .template-content #main a {border-bottom-color: #b33663}
+.silo-parenting .template-content #main blockquote {color: #80002f; border-bottom-color: #b33663}
+ .silo-parenting #introduction {background-image: url(../images/landing/intro-bg-parenting.jpg)}
+.silo-parenting #introduction h1 span {color: #cc517e}
+ .silo-parenting #landing .child {background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #landing .child h3 a{ border-bottom-color: #80002f}
+.silo-parenting #landing .child .image {border-right-color: #e080a7}
+.silo-parenting #landing .child .page-summary {border-left-color: #ffffff}
+.silo-parenting #landing .child .page-children {background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #landing .child .page-children ul li a {background-image: url(../images/bullets/parenting-bullet-large.gif); color: #cc517e}
+.silo-parenting #landing .child .page-children ul li a:hover {color: #80002f}
+.silo-parenting #landing .child .page-children .browse {background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #landing .child .page-children a.browse:hover {color: #cc517e}
+ .silo-parenting #main .child h3 {border-bottom-color: #80002f}
+.silo-parenting #main .child .page-summary ul li {border-bottom-color: #f2cbda; background-color: #faf0f4; background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #main .child .page-summary ul li:hover {border-bottom-color: #e080a7; background-color: #f2dae3}
+ .silo-parenting #flippy {background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #flippymenu .current {background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting #flippymenu li a {border-bottom-color: #78c8be}
+.silo-parenting #flippymenu .current a, .silo-parenting #flippymenu li a:hover, .silo-parenting #flippymenu li a:focus {background-image: url(../images/layout/parenting-section.png) }
+ .silo-parenting .further-reading p.menu-back {border-bottom-color: #cc517e; background-image: url(../images/layout/parenting-section.png)}
+.silo-parenting .further-reading ul li a {background-color: #faf0f4; border-bottom-color: #f2cbda; background-image: url(../images/layout/parenting-section.png)}
+ .silo-parenting #video-heading, .silo-parenting #video-player, .silo-parenting #video-player .widescreen, .silo-parenting #video-player .normal, .silo-parenting #video-heading, .silo-parenting #video-heading .widescreen, .silo-parenting #video-heading .normal{ background-image: url(../images/layout/parenting-video.png)}
+.silo-parenting #video-player .related-videos .video .meta a , .silo-parenting #video-heading a.read-on, .silo-parenting #video-landing .current, .silo-parenting .has-video {background-image: url(../images/layout/parenting-section.png)}
+ .silo-baby-products .baby-products #introduction {background-image: url(../images/landing/intro-bg-products.jpg); height: 241px}
+.country-nz .silo-baby-products .baby-products #introduction {background-image: url(../images/landing/intro-bg-products-nz.jpg)}
+.twtr-widget {font-family:"lucida grande",lucida,tahoma,helvetica,arial,sans-serif !important; font-size:12px !important; position:relative}
+.twtr-fullscreen {font-size:220% !important}
+.twtr-widget .twtr-spinner {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:transparent url(http://widgets.twimg.com/j/1/spinner.gif) no-repeat scroll 0 0; height:14px; position:absolute; right:3px; top:3px; width:14px}
+.twtr-inactive {display:none}
+.twtr-widget a img {border:0 none !important}
+.twtr-doc {-moz-border-radius-bottomleft:5px; -moz-border-radius-bottomright:5px; -moz-border-radius-topleft:5px; -moz-border-radius-topright:5px; font-weight:normal; overflow:hidden; text-align:left; width:100%}
+.twtr-bd {padding:0 1px}
+.twtr-widget .twtr-tweet-wrap {overflow:hidden; padding:6px 8px}
+.twtr-fullscreen .twtr-tweet-wrap {padding:20px}
+.twtr-widget .twtr-tweet {border-bottom:1px dotted #DDDDDD; overflow:hidden}
+.twtr-widget .twtr-tweet a.twtr-reply {visibility:hidden}
+* html .twtr-widget .twtr-tweet a.twtr-reply {visibility:visible}
+.twtr-widget .twtr-tweet:hover a.twtr-reply {visibility:visible}
+.twtr-widget-profile img.twtr-profile-img {border:0 none !important; display:block; float:left; height:31px; width:31px}
+.twtr-widget h3, .twtr-widget h4, .twtr-widget p {line-height:1.2 !important; margin:0 !important; padding:0 !important; width:auto !important}
+.twtr-widget-profile h3, .twtr-widget-profile h4 {margin:0 0 0 40px !important}
+.twtr-widget h3 {font-size:11px !important; font-weight:normal !important}
+.twtr-widget h4 {font-size:16px !important}
+.twtr-widget i, .twtr-widget .twtr-new-results {display:block; font-size:9px; font-style:normal; margin-top:2px}
+.twtr-widget .twtr-new-results {bottom:5px; display:block; margin:0 auto -10px; padding:3px; position:relative; text-align:center}
+.twtr-tweet {float:left; clear:left; display:block; width:300px; background-color: #F7F0FA}
+html>body .twtr-tweet {background-color: transparent}
+.twtr-results-inner {bottom:-2px; font-size:100%; line-height:1; margin:0 auto; padding:4px 0; position:relative; text-align:center; width:40%; z-index:2}
+.twtr-results-hr {-moz-background-clip:border; -moz-background-inline-policy:continuous; -moz-background-origin:padding; background:transparent none repeat scroll 0 0; border-bottom:1px dotted #DDDDDD; bottom:7px; height:1px; overflow:hidden; position:relative; width:100%; z-index:1}
+.twtr-new-results span {display:block; font-size:9px !important; position:relative; top:-14px; z-index:3}
+.twtr-fullscreen .twtr-new-results span {font-size:24px !important}
+.twtr-hd {overflow:hidden; padding:10px; position:relative}
+.twtr-fullscreen .twtr-hd {height:0; padding:0}
+.twtr-timeline {-moz-border-radius-bottomleft:6px; -moz-border-radius-bottomright:6px; -moz-border-radius-topleft:6px; -moz-border-radius-topright:6px; overflow:hidden; position:relative; z-index:2}
+.twtr-scroll .twtr-timeline {overflow-x:hidden; overflow-y:auto}
+.twtr-widget .twtr-tweet:last-child {border-bottom-width:0}
+.twtr-ft {position:relative; height:36px; width:300px; float:left}
+.twtr-ft div {overflow:hidden; padding:10px}
+.twtr-ft span {float:right; text-align:right}
+.twtr-ft a {display:block; float:left}
+.twtr-ft span a {float:none}
+.twtr-avatar {display:block; float:left; height:40px; overflow:hidden; width:40px}
+.twtr-fullscreen .twtr-avatar {height:80px; width:80px}
+.twtr-img {height:25px; width:25px}
+.twtr-img img {height:30px; width:30px}
+.twtr-fullscreen .twtr-img img {height:72px; width:72px}
+.twtr-fullscreen a.twtr-join-conv {display:none}
+.twtr-tweet-text {margin-left:40px}
+.twtr-fullscreen .twtr-tweet-text {margin-left:90px}
+.twtr-doc a {text-decoration:none !important}
+.twtr-doc a:hover {text-decoration:underline !important}
+ #twtr-widget-1 .twtr-avatar, #twtr-widget-1 .twtr-user {display: none}
+#twtr-widget-1 .twtr-tweet-text {margin-left: 0}
+#twtr-widget-1 i {display: block}
+#twtr-widget-1 h3 {font-size:11px !important}
+#twtr-widget-1 h4 {font-size:16px !important}
+#twtr-widget-1 .twtr-doc, #twtr-widget-1 .twtr-hd a, #twtr-widget-1 h3, #twtr-widget-1 h4 {background: #ebdaf2 !important; color: #6d2b8c !important}
+#twtr-widget-1 .twtr-tweet a {color: #9900cc !important}
+#twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a, #twtr-widget-1 .twtr-bd p {color: #333333 !important}
+#twtr-widget-1 .twtr-new-results, #twtr-widget-1 .twtr-results-inner, #twtr-widget-1 .twtr-timeline {background: #f7f0fa !important}
+ #blog-landing #content {background: #fff url('../images/blog/landing-header.png') 0 0 no-repeat}
+#blog-landing h1 {text-indent: -999em; height: 181px}
+#blog-landing #main {padding-left: 10px}
+#blog-landing .blog-item-set {margin-bottom: 20px; width: 608px; padding-bottom: 55px; position: relative}
+#blog-landing .blog-item {float: left; width: 294px}
+#blog-landing .blog-item .heading {position: relative}
+#blog-landing .blog-item-alt {float: right}
+#blog-landing .blog-item h2 {margin: 0; padding: 0; height: 70px; overflow: hidden; text-indent: -999em}
+#blog-landing .recent-post {padding: 10px 10px 0}
+#blog-landing .recent-post .title {font-size: 11px; margin: 0; padding: 0; color: #7f371e}
+#blog-landing .recent-post h3 {font-size: 17px; color: #7f371e; margin-top: 0; padding-top: 0}
+#blog-landing .blog-item .thumb {float: left}
+#blog-landing .blog-item .thumb a.img {display: block; overflow: hidden; padding: 3px 3px; height: 76px; width: 76px; background: url('../images/blog/thumb-bg.gif') no-repeat}
+#blog-landing .blog-item .thumb img {display: block; height: 76px; width: 76px; background: #ddd}
+#blog-landing .blog-item .thumb .comments {text-align: center; font-weight: bold; padding-top: 5px}
+#blog-landing .blog-item .summary {padding-left: 90px}
+#blog-landing .blog-item .more {position: absolute; width: 296px; bottom: 0; height: 55px}
+#blog-landing .blog-item .more ul {padding: 0 0 0 100px}
+#blog-landing .blog-item .more ul li {margin: 0; padding: 0; background-image: none}
+#blog-landing .blog-item a:hover {text-decoration: underline}
+#blog-landing .rss {position: absolute; top: 0; right: 0; text-indent: -999em; overflow: hidden; height: 25px; width: 25px}
+#blog-landing .conception-pregnancy {overflow: hidden; background: url('../images/blog/sprite-landing-conception-pregnancy.png') right bottom repeat-y}
+#blog-landing .conception h2 {background: url('../images/blog/sprite-landing-conception-pregnancy.png') 0 0 no-repeat}
+#blog-landing .conception .more {background: url('../images/blog/sprite-landing-conception-pregnancy.png') -620px bottom no-repeat}
+#blog-landing .conception title, #blog-landing .conception a {color: #7f371e}
+#blog-landing .pregnancy h2 {background: url('../images/blog/sprite-landing-conception-pregnancy.png') -314px 0 no-repeat}
+#blog-landing .pregnancy .more {background: url('../images/blog/sprite-landing-conception-pregnancy.png') -934px bottom no-repeat}
+#blog-landing .pregnancy .title, #blog-landing .pregnancy a {color: #a64132}
+#blog-landing .child-birth-baby-care {overflow: hidden; background: url('../images/blog/sprite-landing-child-birth-baby-care.png') right bottom repeat-y}
+#blog-landing .child-birth h2 {background: url('../images/blog/sprite-landing-child-birth-baby-care.png') 0 0 no-repeat}
+#blog-landing .child-birth .more {background: url('../images/blog/sprite-landing-child-birth-baby-care.png') -620px bottom no-repeat}
+#blog-landing .child-birth .title, #blog-landing .child-birth a {color: #d96602}
+#blog-landing .baby-care h2 {background: url('../images/blog/sprite-landing-child-birth-baby-care.png') -314px 0 no-repeat}
+#blog-landing .baby-care .more {background: url('../images/blog/sprite-landing-child-birth-baby-care.png') -934px bottom no-repeat}
+#blog-landing .baby-care .title, #blog-landing .baby-care a {color: #6aa128}
+#blog-landing .toddler-parenting {overflow: hidden; background: url('../images/blog/sprite-landing-todler-parenting.png') right bottom repeat-y}
+#blog-landing .toddler h2 {background: url('../images/blog/sprite-landing-todler-parenting.png') 0 0 no-repeat}
+#blog-landing .toddler .more {background: url('../images/blog/sprite-landing-todler-parenting.png') -620px bottom no-repeat}
+#blog-landing .toddler .title, #blog-landing .toddler a {color: #ed1c91}
+#blog-landing .parenting h2 {background: url('../images/blog/sprite-landing-todler-parenting.png') -314px 0 no-repeat}
+#blog-landing .parenting .more {background: url('../images/blog/sprite-landing-todler-parenting.png') -934px bottom no-repeat}
+#blog-landing .parenting .title, #blog-landing .parenting a {color: #b33663}
+#blog-landing .baby-products-promotions {overflow: hidden; background: url('../images/blog/sprite-landing-products-promotions.png') right bottom repeat-y}
+#blog-landing .baby-products h2 {height: 79px; background: url('../images/blog/sprite-landing-products-promotions.png') 0 0 no-repeat}
+#blog-landing .baby-products .more {background: url('../images/blog/sprite-landing-products-promotions.png') -620px bottom no-repeat}
+#blog-landing .baby-products .title, #blog-landing .baby-products a {color: #9900cc}
+#blog-landing .promotions h2 {height: 79px; background: url('../images/blog/sprite-landing-products-promotions.png') -314px 0 no-repeat}
+#blog-landing .promotions .more {background: url('../images/blog/sprite-landing-products-promotions.png') -934px bottom no-repeat}
+#blog-landing .promotions .title, #blog-landing .promotions a {color: #9900cc}
+ #bloggers .blogger{ width: 180px; height: 160px; margin: 0 20px 20px 0; padding: 10px; float :left}
+ #blogger #author {position: relative; clear: both; height: 136px; width: 960px; overflow: hidden; background: url('../images/blog/blogger-headline.png') no-repeat}
+#blogger #author .avatar {position: absolute; top: 13px; left: 13px}
+#blogger #author h1 {position: absolute; top: 46px; left: 150px}
+#blogger #author .about {position: absolute; top: 30px; right: 30px; width: 500px; height: 100px}
+#blogger #content {background: #fff}
+#blogger #main .blog-post .post {padding-top: 75px}
+#blogger #main .blog-post .baby-care-blog {background: url('../images/blog/blog-header-baby-care.gif') no-repeat}
+#blogger #main .blog-post .child-birth-blog {background: url('../images/blog/blog-header-child-birth.gif') no-repeat}
+#blogger #main .blog-post .conception-blog {background: url('../images/blog/blog-header-conception.gif') no-repeat}
+#blogger #main .blog-post .parenting-blog {background: url('../images/blog/blog-header-parenting.gif') no-repeat}
+#blogger #main .blog-post .pregnancy-blog {background: url('../images/blog/blog-header-pregnancy.gif') no-repeat}
+#blogger #main .blog-post .toddler-blog {background: url('../images/blog/blog-header-toddler.gif') no-repeat}
+#blogger #main .blog-post .baby-products-blog {background: url('../images/blog/blog-header-products.gif') no-repeat}
+#blogger #main .blog-post .promotions-blog {background: url('../images/blog/blog-header-promotions.gif') no-repeat}
+ #blog-header {clear: both; overflow: hidden; height: 173px; width: 958px; border-left:1px solid #E6E6E6; border-right:1px solid #E6E6E6}
+#blog-header h1, #blog-header p.blog-title, #blog-header .heading {text-indent: -999em; float: left}
+.silo-baby-care #blog-header {background: url('../images/blog/header-baby-care.jpg') no-repeat}
+.silo-child-birth #blog-header {background: url('../images/blog/header-child-birth.jpg') no-repeat}
+.silo-conception #blog-header {background: url('../images/blog/header-conception.jpg') no-repeat}
+.silo-parenting #blog-header {background: url('../images/blog/header-parenting.jpg') no-repeat}
+.silo-pregnancy #blog-header {background: url('../images/blog/header-pregnancy.jpg') no-repeat}
+.silo-toddler #blog-header {background: url('../images/blog/header-toddler.jpg') no-repeat}
+.silo-baby-products #blog-header {background: url('../images/blog/header-products.jpg') no-repeat}
+.silo-promotions #blog-header {background: url('../images/blog/header-promotions.jpg') no-repeat}
+ #blog-by-tag #blog-header{ background: url('../images/blog/blog-header-tags.gif') no-repeat 0 0 transparent; height: 71px; text-indent: 0}
+#blog-by-tag h1{ text-indent: 0; padding: 20px 0 0 20px}
+ .blog-subheader{ background: url('../images/blog/blog-by-month-subheader.gif') no-repeat 0 0 transparent; height: 50px; text-align: center; font-size: 25px; padding-top: 10px; margin: -20px 0 10px 0; color: #1292c9}
+.blog-subheader strong {color: #005980 !important}
+ #main .blog-post {overflow: hidden; padding-bottom: 30px}
+#main .social-widget {margin: 20px 0px}
+#main .blog-post .posted {float: left; width: 50px}
+#main .blog-post .posted .author .avatar {margin: 0; padding: 0; height: 50px; width: 50px}
+#main .blog-post .posted .author .avatar img {height: 50px; width: 50px; margin: 0; padding: 0}
+#main .blog-post .posted .author .name {text-align: center; color: #fff; background: #6e2b8c; margin: 0 0 10px; padding: 2px 2px 3px; -webkit-border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -moz-border-radius-bottomleft: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px}
+.silo-baby-care #main .blog-post .posted .author .name {background-color: #007843}
+.silo-toddler #main .blog-post .posted .author .name {background-color: #80002f}
+.silo-pregnancy #main .blog-post .posted .author .name {background-color: #005980}
+.silo-parenting #main .blog-post .posted .author .name {background-color: #800042}
+.silo-conception #main .blog-post .posted .author .name {background-color: #344b97}
+.silo-child-birth #main .blog-post .posted .author .name {background-color: #007889}
+#main .blog-post .posted .date {overflow: hidden; color: #6e2b8c; height: 50px; width: 50px; background: url('../images/blog/bg-date.gif') no-repeat}
+.silo-baby-care #main .blog-post .posted .date {color: #007843; background: url('../images/blog/bg-date-baby-care.gif') no-repeat}
+.silo-toddler #main .blog-post .posted .date {color: #80002f; background: url('../images/blog/bg-date-toddler.gif') no-repeat}
+.silo-pregnancy #main .blog-post .posted .date {color: #005980; background: url('../images/blog/bg-date-pregnancy.gif') no-repeat}
+.silo-parenting #main .blog-post .posted .date {color: #800042; background: url('../images/blog/bg-date-parenting.gif') no-repeat}
+.silo-conception #main .blog-post .posted .date {color: #344b97; background: url('../images/blog/bg-date-conception.gif') no-repeat}
+.silo-child-birth #main .blog-post .posted .date {color: #007889; background: url('../images/blog/bg-date-child-birth.gif') no-repeat}
+#main .blog-post .posted .date .day {display: block; height: 32px; padding-top: 3px; font-size: 27px; text-align: center; font-weight: bold}
+#main .blog-post .posted .date .month {display: block; font-size: 12px; text-align: center; text-transform: lowercase}
+#main .blog-post .post {float: right; width: 545px; margin-right: 10px}
+#blog-details #main .blog-post .post h1, #blogger #main .blog-post .post h2, #blog-silo #main .blog-post .post h2.headline {margin: 0; padding: 0 0 10px; font-size: 25px; font-weight: normal; text-transform: none; border-bottom: 1px dotted #c280e0}
+#blog-details #main .blog-post .post h1 a:hover, #blogger #main .blog-post .post h2 a:hover, #blog-silo #main .blog-post .post h2.headline a:hover {text-decoration: underline}
+.silo-baby-care #blog-details #main .blog-post .post h1 a, .silo-baby-care #blogger #main .blog-post .post h2 a, .silo-baby-care #blog-silo #main .blog-post .post h2.headline a {color: #007843}
+.silo-baby-care #blog-details #main .blog-post .post h1, .silo-baby-care #blogger #main .blog-post .post h2, .silo-baby-care #blog-silo #main .blog-post .post h2.headline {border-color: #007843}
+.silo-toddler #blog-details #main .blog-post .post h1, .silo-toddler #blogger #main .blog-post .post h2, .silo-toddler #blog-silo #main .blog-post .post h2.headline {border-color: #80002f}
+.silo-pregnancy #blog-details #main .blog-post .post h1, .silo-pregnancy #blogger #main .blog-post .post h2, .silo-pregnancy #blog-silo #main .blog-post .post h2.headline {border-color: #79bddc}
+.silo-conception #blog-details #main .blog-post .post h1, .silo-conception #blogger #main .blog-post .post h2, .silo-conception #blog-silo #main .blog-post .post h2.headline {border-color: #344b97}
+.silo-child-birth #blog-details #main .blog-post .post h1, .silo-child-birth #blogger #main .blog-post .post h2, .silo-child-birth #blog-silo #main .blog-post .post h2.headline {border-color: #1d8897}
+#main .blog-post .post .meta {overflow: hidden; padding-bottom: 10px}
+#main .blog-post .post .meta .tags {float: left}
+#main .blog-post .post .meta .comments {float: right}
+#main .blog-post .post .meta a {font-weight: bold}
+#main .blog-post .post .content {float: left; width: 336px; overflow: hidden}
+#main .blog-post .post .content .more a {padding: 0 20px; font-weight: bold; background: url('../images/blog/icon-more.gif') no-repeat}
+.silo-baby-care #main .blog-post .post .content .more a {background: url('../images/bullets/baby-care-more.gif') no-repeat}
+.silo-child-birth #main .blog-post .post .content .more a {background: url('../images/bullets/child-birth-more.gif') no-repeat}
+.silo-conception #main .blog-post .post .content .more a {background: url('../images/bullets/conception-more.gif') no-repeat}
+.silo-parenting #main .blog-post .post .content .more a {background: url('../images/bullets/parenting-more.gif') no-repeat}
+.silo-pregnancy #main .blog-post .post .content .more a {background: url('../images/bullets/pregnancy-more.gif') no-repeat}
+.silo-toddler #main .blog-post .post .content .more a {background: url('../images/bullets/toddler-more.gif') no-repeat}
+#main .blog-post .post .post-image {float: right; width: 196px; overflow: hidden; margin: 0 0 10px 10px}
+#main .blog-post .post .post-image img {display: block; width: 196px; text-indent: -999em; background: #ddd}
+#main .blog-post .post .content-full {clear: both; padding-top: 10px; background: none}
+#main .blog-post del {text-decoration: line-through}
+#main .blog-post #comments {clear: both; padding-right: 10px; padding-top: 10px; background: none}
+#main .blog-post #comments h2 {margin: 5px 0 20px 75px; padding-bottom: 5px; border-bottom: 1px solid}
+#main .blog-post #comments h2 a {float: right; font-size: 13px}
+#main .blog-post #comments .comment {overflow: hidden; padding: 5px 0 0; margin-bottom: 20px; background: url('../images/blog/comment-top.gif') top right no-repeat}
+#main .blog-post #comments .author {float: left; width: 50px; margin-left: 5px}
+#main .blog-post #comments .author .avatar {margin: 0; padding: 0; height: 50px; width: 50px}
+#main .blog-post #comments .author .avatar img {display: block; height: 50px; width: 50px; margin: 0; padding: 0; background: #ccc}
+#main .blog-post #comments .author .name {display: block; color: #333333; font-size: 11px; font-weight: bold; text-align: center; margin: 0 0 10px; padding: 4px 2px 3px}
+#main .blog-post #comments .comment .post {float: right; background: #f2f2f2 url('../images/blog/comment-bottom.gif') bottom right no-repeat; width: 522px; margin: 0; padding: 0 10px 5px; min-height: 95px; height: auto !important; height: 95px}
+#main .blog-post #comments .comment .post .date {font-size: 10px; color: #b2b2b2}
+#main .blog-post #comments .pagination {float: right; width: 542px; margin-top: 0}
+#main .blog-post #comments #post-reply {clear: both; padding-top: 20px; overflow: hidden}
+#main .blog-post #comments #post-reply form {overflow: hidden; float: right; height: 232px; width: 543px; background: url('../images/blog/comment-box.gif') no-repeat}
+#main .blog-post #comments #post-reply form textarea {display: block; margin: 20px 20px 0; height: 147px; width: 503px}
+#main .blog-post #comments #post-reply form .submit {display: block; margin: 12px 19px 0 0; padding: 0}
+ #sidebar .about-blogger {margin-top: -5px; background: url('../images/blog/sprite-blogger-box.png') right bottom no-repeat}
+#blog-header .about-blogger .wrap, #sidebar .about-blogger .wrap {overflow: hidden; width: 300px; padding-bottom: 12px; margin-bottom: 15px; background: url('../images/blog/sprite-blogger-box.png') left top no-repeat}
+#blog-header .about-blogger h2, #sidebar .about-blogger h2 {float: left; margin: 2px 0 0 15px}
+#blog-header .about-blogger h2 a, #sidebar .about-blogger h2 a {display: block; height: 142px; padding: 6px 7px 0}
+#blog-header .about-blogger .content, #sidebar .about-blogger .content {float: right; width: 125px; padding-top: 20px; margin-right: 25px}
+#blog-header .about-blogger .content p, #sidebar .about-blogger .content p {font-size: 13px; color: #69632e; line-height: 1.3em}
+#blog-header .about-blogger .content p.view-all, #sidebar .about-blogger .content p.view-all {font-size: 11px}
+#blog-header .about-blogger .content p.view-all a span, #sidebar .about-blogger .content p.view-all a span {display: block}
+#blog-header .about-blogger {border-bottom: 1px solid red}
+#blog-header .about-blogger .wrap {padding-bottom: 20px; background: none}
+#blog-header .about-blogger {float: right; margin-top: 8px; margin-right: 10px}
+ #sidebar .listing .heading {margin-bottom: 1px}
+#sidebar .listing li {display: block; padding: 10px 15px; width: 270px; font-size: 13px}
+#sidebar .listing li a {height: auto; width: auto}
+#sidebar .listing li .post {float: left; width: 213px}
+#sidebar .listing li .post a {line-height: 1.2em; padding-bottom: 2px}
+#sidebar .listing li .post .date {display: block; font-size: 10px; color: #666666}
+#sidebar .listing li .replies {float: right; width: 35px; color: #6e2b8c; font-size: 11px; text-align: center}
+#sidebar .listing li .replies strong {display: block; padding-bottom: 3px; font-size: 22px; text-align: center}
+ #sidebar .tags h2 {border-bottom:1px solid #6E2B8C; color: #6E2B8C !important; font-size:15px; font-weight:normal; margin:0 0 10px; padding:0 0 13px}
+#sidebar .tag-cloud li {display:inline-block; padding: 1px 2px; margin: 0}
+#sidebar .tag-cloud li a {color:#b266cc; background-color:#f7ecfa; font-size:16px; line-height:18px; padding:0 2px; text-decoration:none; border:none}
+#sidebar .tag-cloud li a:hover {color:#fff; background-color:#c67dde}
+ #sidebar .recent-posts-listing {background: #f0f7fa}
+#sidebar .recent-posts-listing .heading {margin-bottom: 1px; border-bottom: 1px solid #cbe7f2; background: #daebf2 url("../images/widgets/bg-listing-sidebar-heading-blue.png")}
+#sidebar .recent-posts-listing .heading .title {color: #005980}
+#sidebar .recent-posts-listing li {border-bottom: 1px dotted #1292c9}
+#sidebar .recent-posts-listing li.over {background: #daebf2}
+#sidebar .recent-posts-listing li a {color: #1292c9}
+#sidebar .recent-posts-listing li a:hover {color: #1182b3; background: #daebf2}
+#sidebar .recent-posts-listing ul li .replies, #sidebar .recent-posts-listing ul li .replies strong {color: #005980 !important}
+#sidebar .recent-posts-listing .archives {position: relative; clear: both; cursor: default; width: 301px; padding-bottom: 80px; background: #f0f7fa url('../images/blog/sidebar-blog-archive.gif') bottom right no-repeat}
+#sidebar .recent-posts-listing .archives h2 {color: #005980; font-size: 15px; width: 214px; padding: 15px 0 15px 10px}
+#sidebar .recent-posts-listing .archives form select {width: 195px; position: absolute; bottom: 30px; left: 10px}
+#sidebar .recent-posts-listing .archives form .submit {position: absolute; bottom: 28px; right: 0}
+#sidebar .forum-listing, #sidebar .forum-listing .heading {-webkit-border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px; -moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px; border-top-left-radius: 6px; border-top-right-radius: 6px}
+.silo-baby-care #sidebar .forum-listing .heading {background: #daf2e8; border-color: #79dcb0}
+.silo-baby-care #sidebar .forum-listing .heading .title {color: #3a996f}
+.silo-baby-care #sidebar .forum-listing li {background: #f0faf6; border-color: #80e0b7}
+.silo-baby-care #sidebar .forum-listing li.over, .silo-baby-care #sidebar .forum-listing li a:hover {background: #daf2e8}
+.silo-baby-care #sidebar .forum-listing .replies {color: #007843}
+.silo-toddler #sidebar .forum-listing .heading {background: #f2dae7; border-color: #800042}
+.silo-toddler #sidebar .forum-listing .heading .title {color: #800042}
+.silo-toddler #sidebar .forum-listing li {background: #faf0f5; border-color: #e080b2}
+.silo-toddler #sidebar .forum-listing li.over, .silo-toddler #sidebar .forum-listing li a:hover {background: #f2dae7}
+.silo-toddler #sidebar .forum-listing .replies {color: #800042}
+.silo-pregnancy #sidebar .forum-listing .heading {background: #daebf2; border-color: #79bddc}
+.silo-pregnancy #sidebar .forum-listing .heading .title {color: #005980}
+.silo-pregnancy #sidebar .forum-listing li {background: #f0f7fa; border-color: #79bddc}
+.silo-pregnancy #sidebar .forum-listing li.over, .silo-pregnancy #sidebar .forum-listing li a:hover {background: #daebf2}
+.silo-pregnancy #sidebar .forum-listing .replies {color: #005980}
+.silo-parenting #sidebar .forum-listing .heading {background: #f2dae3; border-color: #dc79a0}
+.silo-parenting #sidebar .forum-listing .heading .title {color: #80002f}
+.silo-parenting #sidebar .forum-listing li {background: #faf0f4; border-color: #dc79a0}
+.silo-parenting #sidebar .forum-listing li.over, .silo-parenting #sidebar .forum-listing li a:hover {background: #f2dae3}
+.silo-parenting #sidebar .forum-listing .replies {color: #80002f}
+.silo-conception #sidebar .forum-listing .heading {background: #dae0f2; border-color: #8097e0}
+.silo-conception #sidebar .forum-listing .heading .title {color: #344b97}
+.silo-conception #sidebar .forum-listing li {background: #f0f2fa; border-color: #8097e0}
+.silo-conception #sidebar .forum-listing li.over, .silo-conception #sidebar .forum-listing li a:hover {background: #dae0f2}
+.silo-conception #sidebar .forum-listing .replies {color: #344b97}
+.silo-child-birth #sidebar .forum-listing .heading {background: #daeff2; border-color: #79d0dc}
+.silo-child-birth #sidebar .forum-listing .heading .title {color: #007889}
+.silo-child-birth #sidebar .forum-listing li {background: #f0f2fa; border-color: #79d0dc}
+.silo-child-birth #sidebar .forum-listing li.over, .silo-child-birth #sidebar .forum-listing li a:hover {background: #daeff2}
+.silo-child-birth #sidebar .forum-listing .replies {color: #007889}
+  #huggies-bloggers, #huggies-guest-bloggers{ float:left; width: 302px; padding: 10px 0px 0px 0px; margin: 0 0 15px; background: url(../images/blog/bg-huggies-bloggers.jpg) top left no-repeat}
+#huggies-bloggers h3, #huggies-guest-bloggers h3{ padding:0px 0 0 10px; margin:0px; height:30px; font-size: 14px; color: #4c4822; font-family: Arial, Helvetica, sans-serif}
+#huggies-bloggers .footer, #huggies-guest-bloggers .footer{ clear: both; float:left; width: 302px; height: 10px; background: url(../images/blog/bg-huggies-bloggers.jpg) bottom left no-repeat}
+#huggies-bloggers ul, #huggies-guest-bloggers ul{ float:left; padding:0px 0 0 10px; margin:0px; list-style: none}
+#huggies-bloggers ul li{ float:left; padding:10px 0 0 0; margin:0 8px 0 0}
+#huggies-bloggers a{ display:block; width: 63px; height: 77px; text-indent: -999em; overflow: hidden}
+a#sarah{background: url(../images/blog/bloggers/blogger-icon-sarah.jpg) top left no-repeat;}
+a#laura{background: url(../images/blog/bloggers/blogger-icon-laura.jpg) top left no-repeat;}
+a#mel{background: url(../images/blog/bloggers/blogger-icon-mel.jpg) top left no-repeat;}
+a#rebecca{background: url(../images/blog/bloggers/blogger-icon-rebecca.jpg) top left no-repeat;}
+a#zona{background: url(../images/blog/bloggers/blogger-icon-zona.jpg) top left no-repeat;}
+a#leanne{background: url(../images/blog/bloggers/blogger-icon-leanne.jpg) top left no-repeat;}
+#huggies-guest-bloggers{ background: url(../images/blog/bg-huggies-guest-bloggers.jpg) top left no-repeat}
+#huggies-guest-bloggers .footer{ background: url(../images/blog/bg-huggies-guest-bloggers.jpg) bottom left no-repeat}
+#huggies-guest-bloggers a{ display:block; width: 210px; padding: 10px 10px 10px 70px; line-height: 1.5em; color: #666}
+#huggies-guest-bloggers a span{ display: block; padding: 5px 0 0 0; color: #fd9220; font-weight: bold}
+#huggies-guest-bloggers a#michael{ background: url(../images/blog/bloggers/blogger-icon-michael.jpg) top left no-repeat}
+#huggies-guest-bloggers a#harry{ background: url(../images/blog/bloggers/blogger-icon-harry.jpg) top left no-repeat}
+ #problem-areas {margin-bottom: 20px}
+#problem-areas h2 {font-size: 22px; font-family: "Century Gothic", Arial, Sans-Serif; font-weight: normal; border-bottom:3px solid #ff9500; margin: 0px; padding: 8px 0px}
+.problem {width: 300px; padding: 10px 0px; cursor:pointer; border-bottom:1px dotted #666666; display: block}
+.problem img {width: 75px; height: 75px; float: left}
+.problem-tout-desc {float: right; width: 216px}
+.problem-tout-desc a {font-size: 14px; font-weight: bold; margin-top: 3px; display: block}
+.problem-tout-desc .affects {color: #ff9500; font-size: 11px; margin-bottom: 3px}
+.problem-tout-desc p {margin: 0px}
+.problem:hover {background-color: #fffaf2}
+ #recipes-and-activities #tips_list {margin-left: 10px}
+#share-tip .tip-container {background: url(../../images/tips/tip-bg-long.png) repeat-y; width: 608px; margin-top: 20px}
+#share-tip .tip-container .tip{ background: url(../../images/tips/tip-bg.png) right bottom no-repeat; padding: 20px 20px 40px 15px}
+textarea#tip-text {width: 550px; height: 76px; padding: 0px 0px 20px 23px; font-size: 20px; line-height: 26px; color: black; font-family: Georgia, serif; background: url(../../images/tips/share-tip-bg-normal.png) top left no-repeat; border: none; resize: none; overflow: hidden; outline: none}
+#share-tip input[type='image'] {float: right; margin: 0px; padding: 0px}
+#share-tip .characters {float: left; font-size: 13px !important; margin-top: 4px !important}
+#share-tip .characters strong .countdown {color: black; font-weight: bold; font-family: Georgia, serif; font-size: 13px; border: none; text-align: center; outline: none; width: 25px}
+ #recent-tips h2, #more-tips h2 {margin-top: 0px; color: #b2a222 !important; background: url(../../images/tips/tip-icon.png) 10px 5px no-repeat; padding: 10px 0px 11px 45px; border-top: 1px solid #69632e; border-bottom: 1px dotted #69632e}
+#more-tips .tip-container, #tips-notice .tip-container {background: url(../../images/tips/tip-bg-long.png) repeat-y; width: 608px}
+#tips-notice .tip-container {margin-top: 20px}
+#more-tips .tip-container .tip, #tips-notice .tip-container .tip {background: url(../../images/tips/tip-bg.png) right bottom no-repeat; padding: 20px 15px 40px 15px}
+#tips-notice .tip-container .tip p {text-align: center}
+#sidebar .pluit-carousel #more-tips h2 {display: none}
+#recent-tips .tip-container {background: url(../../images/tips/tip-widget-bg-long.png) repeat-y; width: 300px}
+#recent-tips .tip-container .tip {background: url(../../images/tips/tip-widget-bg.png) right bottom no-repeat; padding: 10px 15px 40px 15px; height: 200px}
+.tip-container .tip p {font-family: Georgia, serif; font-size: 20px; line-height: 26px; margin: 10px 0px 10px 0px !important; color: #69632e}
+.tip-by img{ float: left}
+.tip-by p {font-size: 12px !important; padding: 0px 10px 2px 10px; background: white; display: block; float: left; border-top-right-radius: 15px; border-bottom-right-radius: 15px; -moz-border-radius-topright: 15px; -moz-border-radius-bottomright: 15px}
+#sidebar #recent-tips .pluit-carousel .viewport h2 {display:none !important}
+ .voting-wrap {float: right; overflow: hidden; margin: 0 0 25px 15px}
+#vote-widget {font-size: 10.5px; width: 184px; padding: 3px; background: #fff; overflow: hidden; border: 1px solid #ffb650; margin-bottom: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px}
+#vote-widget #entry-total-votes {font-weight: bold; font-size: 28px; color: #000; float: left; margin-right: 5px}
+#vote-widget #submit-your-vote {font-size: 10.5px}
+#vote-widget p {margin: 0px}
+#vote-widget em {font-weight: bold; font-style: normal; display: block; margin-bottom: 3px}
+#vote-widget a, #vote-widget .voted {display: block; clear: left; margin: 5px auto 0px; width: 182px; height: 29px; background: url(/images/recipes/button-bg.png) no-repeat; text-transform: uppercase; font-weight: bold; font-size: 14px; line-height: 29px; color: #fff !important; text-align: center; -webkit-text-shadow: 0px 1px 0px #d05e07; -moz-text-shadow: 0px 1px 0px #d05e07; text-shadow: 0px 1px 0px #d05e07}
+#vote-widget a:hover {color: #fff; background: url(/images/recipes/button-bg.png) no-repeat 0px -30px}
+#vote-widget .voted {color: #ffb650 !important; background: url(/images/recipes/button-bg.png) no-repeat 0px -60px; -webkit-text-shadow: 0px 1px 0px #fff; -moz-text-shadow: 0px 1px 0px #fff; text-shadow: 0px 1px 0px #fff}
+ .pluit-carousel {position: relative; margin-bottom: 1em}
+.pluit-carousel img {border: 0; display: block; cursor: pointer}
+.pluit-carousel ul {margin: 0; padding: 0; list-style-type: none}
+ .pluit-carousel .viewport {margin-bottom: 10px; overflow: hidden; position: relative}
+.pluit-carousel .viewport ul {width: 6000px}
+.pluit-carousel .viewport ul li {display: block; float: left; padding: 0; margin: 0}
+.pluit-carousel .viewport ul ul {width: auto; float: left}
+.pluit-carousel .viewport ul ul li {margin-right: 5px}
+ .pluit-carousel .nav {position: relative; padding: 0 3px; height: 10px}
+.pluit-carousel .nav li a {display: block; overflow: hidden; text-indent: -100em; background: url(../images/carousel_nav.png) no-repeat 0 0; outline: none}
+.pluit-carousel .nav li a:hover {background-position: -46px 0}
+.pluit-carousel .nav .prev {position: absolute; right: 22px}
+.pluit-carousel .nav .next {position: absolute; right: 5px}
+.pluit-carousel .nav .prev a, .pluit-carousel .nav .next a {width: 10px; height: 10px; background-position: -91px 0}
+.pluit-carousel .nav .prev a:hover {background-position: -179px 0}
+.pluit-carousel .nav .next a {background-position: -135px 0}
+.pluit-carousel .nav .next a:hover {background-position: -223px 0}
+.pluit-carousel .nav .pages {position: absolute; top: 0px; left: 2px}
+.pluit-carousel .nav .pages ul {float: left}
+.pluit-carousel .nav .pages li {float: left; margin-right: 8px}
+.pluit-carousel .nav .pages li a {width: 10px; height: 10px}
+.pluit-carousel .nav .pages li.active a {background-position: -46px 0}
+.pluit-carousel ul, .pluit-carousel .nav .pages, .pluit-carousel .nav {zoom: 1}
+.pluit-carousel ul:after, .pluit-carousel .nav .pages:after, .pluit-carousel .nav:after {content: "."; display: block; height: 0; clear: both; visibility: hidden}

@@ -1,0 +1,38 @@
+ul#more-tools{
+    z-index: 999;
+    left: -152px;
+    position: relative;
+    width: 248px;
+    padding-top:0px;
+    display:block
+}
+
+ul#more-tools li {
+    line-height: 0px;
+    display: block;
+    float:left;
+    height: 28px;
+    width: 233px;
+    margin: 0px !important;
+    padding: 3px 7px 0px 7px;
+    background: url(../images/header-bg.png) -709px -185px no-repeat !important
+}
+
+/* define first and last item for drop menu */
+#more-tools li.week-by-week{ padding-top: 8px; background: url(../images/header-bg.png) -709px -178px no-repeat !important}
+#more-tools li.mums-stories{ padding-bottom: 8px; background: url(../images/header-bg.png) -709px -336px no-repeat !important}
+
+/* menu item background change */
+#more-tools li a {background: none; display: block; width: 232px; height: 28px; padding:0px; background: url(../images/header-bg.png) -468px -222px no-repeat !important}
+#more-tools li a:hover{ color: #9900cc !important; background: none !important; background: url(../images/header-bg.png) -468px -190px no-repeat !important}
+
+/* menu item copy */
+#more-tools li a span {display: block; width: 200px; height: 22px; padding-left: 30px; padding-top: 8px}
+
+/* menu item icons */
+#more-tools li.week-by-week a span {background: url(../images/header-bg.png) -0px -189px no-repeat !important;}
+#more-tools li.baby-eye-colour a span {background: url(../images/header-bg.png) -0px -273px no-repeat !important;}
+#more-tools li.child-height-calculator a span {background: url(../images/header-bg.png) -0px -335px no-repeat !important;}
+#more-tools li.ebooks a span {background: url(../images/header-bg.png) -0px -305px no-repeat !important;}
+#more-tools li.baby-room-decorator a span {background: url(../images/header-bg.png) -2px -365px no-repeat !important;}
+#more-tools li.mums-stories a span {background: url(../images/header-bg.png) -0px -215px no-repeat !important;}

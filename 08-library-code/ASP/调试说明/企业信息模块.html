@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="说明.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="1" align="center" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+  <tr onclick="change_view('a3')">
+    <td height="25" align="center" class="STYLE1">企业信息模块</td>
+  </tr>
+  <tr>
+    <td height="25" align="center" valign="top"><table width="100%" border="1" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+      <tr>
+        <td height="25" align="center" bgcolor="#99CCFF">功能</td>
+        <td height="25" align="center" bgcolor="#99CCFF">后台页面</td>
+        <td align="center" bgcolor="#99CCFF">调用和判断关系</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">分离出的前台页面</td>
+        <td height="25" align="left">在根目录下的“ 简介前台”文件夹</td>
+        <td rowspan="18" align="left" valign="top"><ul>
+          <li>从 admin/LeftTree.asp 传id 到 admin/About_modi.asp </li>
+          <li>About_modi.asp  在 iframe 中调用根目录下的 editor.asp 并把 Action=about&amp;ID=&lt;%=ID%&gt;&quot; 传给editor.asp</li>
+          <li>editor.asp 在 iframe 中调用根目录下的 ProductContent.asp 并把 Action=&lt;%=trim(request(&quot;Action&quot;))%&gt;&amp;ID=&lt;%=trim(request(&quot;ID&quot;)) 传给 ProductContent.asp</li>
+          <li>ProductContent.asp 判断Action的类型并根据 id 把数据表 AboutUS 的内容读到在线编辑器中供修改</li>
+          <li>About_modi.asp 利用 function AddItem(strFileName) 读在线编辑器中的上传图片，利用 function CheckForm 读文本内容</li>
+          <li>About_modi.asp 把表单送给 about_save.asp。about_save.asp 根据id 判读并存储数据到表 AboutUs</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td width="19%" height="25" align="left"><a href="About_Modi.asp?ID=1" target="main">企业简介</a></td>
+        <td width="24%" rowspan="5" align="left">admin/About_modi.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left"><a href="About_Modi.asp?ID=2" target="main">企业文化</a></td>
+        </tr>
+      <tr>
+        <td height="25" align="left"><a href="About_Modi.asp?ID=3" target="main">成长历程</a></td>
+        </tr>
+      <tr>
+        <td height="25" align="left"><a href="About_Modi.asp?ID=4" target="main">组织机构</a></td>
+        </tr>
+      <tr>
+        <td height="25" align="left"><a href="About_Modi.asp?ID=5" target="main">联系我们</a></td>
+        </tr>
+      <tr>
+        <td height="25" align="left">分离出的前台页面</td>
+        <td height="25" align="left">在根目录下的“ 市场前台”文件夹</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">国内市场</td>
+        <td rowspan="2" align="left">admin/About_modi.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">国际市场</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">分离出的前台页面</td>
+        <td height="25" align="left">在根目录下的“ 荣誉前台”文件夹</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">管理企业荣誉</td>
+        <td height="25" align="left">admin/Manage_honor.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">添加企业荣誉</td>
+        <td height="25" align="left">admin/Manage_honor_add.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">修改企业荣誉</td>
+        <td height="25" align="left">admin/Manage_edithonor.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">删除企业荣誉</td>
+        <td height="25" align="left">admin/Manage_honor.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">管理企业形象</td>
+        <td height="25" align="left">admin/Manage_Img.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">添加企业形象</td>
+        <td height="25" align="left">admin/Manage_Img_add.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">修改企业形象</td>
+        <td height="25" align="left">admin/Manage_editImg.asp</td>
+        </tr>
+      <tr>
+        <td height="25" align="left">删除企业形象</td>
+        <td height="25" align="left">admin/Manage_Img.asp</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

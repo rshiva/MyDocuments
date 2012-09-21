@@ -1,0 +1,85 @@
+/* top container */
+div#today-on-huggies{
+    width: 628px;
+    height: 305px;
+    position: relative;
+    /*overflow: hidden;*/
+    float: left;
+    margin: 50px 50px 50px 500px;
+    border: 1px solid #d89ce8;
+}
+
+/* left */
+div#today-on-huggies .left-container{
+    width: 304px;
+    height: 304px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #d89ce8;
+}
+
+div#today-on-huggies .left-container .text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 10px;
+    width: 284px;
+    background: url(../images/bg-ask-expert-focus.png);
+}
+
+div#today-on-huggies .left-container .text a, div#today-on-huggies .left-container .text p{
+    color:#ffffff;
+}
+
+div#today-on-huggies .left-container .text .read-more{
+    float: right;
+}
+
+div#today-on-huggies .left-container .item .large{
+    width: 304px;
+    height: 304px;
+}
+
+/* right */
+div#today-on-huggies .right-container{
+    width: 322px;
+    height: 305px;
+    /*overflow: hidden;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #ffffff;
+}
+
+div#today-on-huggies .right-container .animated-menu{
+	float:left;
+}
+
+div#today-on-huggies .right-container .item{
+    width: 322px;
+    height: 75px;
+	float:left;
+    border-bottom: 1px dashed #d89ce8;
+    background: #faf0f8;
+}
+
+div#today-on-huggies .right-container .item .tiny{
+    width: 75px;
+    height: 75px;
+    float: right;
+}
+
+div#today-on-huggies .right-container .item .text{
+    width: 218px;
+    height: 55px;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+div#today-on-huggies .right-container .item .text .read-more{
+    display: none;
+}

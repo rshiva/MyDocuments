@@ -1,0 +1,19 @@
+/*predefine generic attribute for global elements*/
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre, a,abbr,acronym,address,big,cite,code, del,dfn,em,img,small,strike,strong,sub,sup,tt dd,dl,dt,li,ol,ul,fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+    text-decoration: none
+}
+table {border-collapse: collapse; border-spacing: 0}
+ol,ul {list-style: none}
+input:focus {outline: none;}
+
+

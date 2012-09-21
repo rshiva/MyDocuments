@@ -1,0 +1,48 @@
+div#tools-menu{
+    height: 36px;
+    overflow: visible;
+    background: url(../images/header-bg.png) 0 -108px no-repeat;
+}
+
+div#tools-menu ul {
+    height: 36px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+div#tools-menu ul li {
+    margin: 3px 4px 0 0;
+    display: block;
+    float: left;
+}
+
+#tools-menu li a {
+    display: block;
+    padding-top: 8px;
+    height: 20px;
+    padding-left: 30px;
+    color: #90C;
+}
+
+#tools-link {float: right !important; margin-right: 5px !important}
+
+li.more-tools {width: 99px;}
+li.book-club a {width: 65px;}
+li.baby-names a {width: 81px;}
+li.kids-activities a {width: 89px;}
+li.kids-activities a {width: 89px;}
+li.expert-panel a {width: 81px;}
+li.kids-recipes a {width: 79px;}
+li.photo-centre a {width: 83px;}
+li.baby-room-design a {width: 135px;}
+li.more-tools a {width: 69px;}
+
+li.book-club a:hover{ background: url(../images/header-bg.png) -5px -147px no-repeat !important;}
+li.baby-names a:hover{ background: url(../images/header-bg.png) -104px -147px no-repeat !important;}
+li.kids-activities a:hover{ background: url(../images/header-bg.png) -219px -147px no-repeat !important;}
+li.expert-panel a:hover{ background: url(../images/header-bg.png) -342px -147px no-repeat !important;}
+li.kids-recipes a:hover{ background: url(../images/header-bg.png) -457px -147px no-repeat !important;}
+li.photo-centre a:hover{ background: url(../images/header-bg.png) -570px -147px no-repeat !important;}
+li.baby-room-design a:hover{ background: url(../images/header-bg.png) -687px -147px no-repeat !important;}
+li.more-tools a:hover{ background: url(../images/header-bg.png) -856px -147px no-repeat !important;}
+li.more-tools .active{ background: url(../images/header-bg.png) -856px -147px no-repeat !important;}

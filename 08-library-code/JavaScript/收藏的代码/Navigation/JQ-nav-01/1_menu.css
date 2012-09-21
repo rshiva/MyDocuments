@@ -1,0 +1,9 @@
+body{margin:100px 0}
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden}.clear{display:inline-block}.clear{display:block}
+div#nav{height:70px; background:url(images/200811050820_nav_bg.png) repeat-x}
+div#nav ul{width:960px; margin:0 auto; list-style:none}
+div#nav ul li{float:left; height:35px; overflow:hidden; padding:0 2px 0 0; font: bold 12px/35px Arial; background:url(images/200811050820_nav_right.png) repeat-y right 0}
+div#nav ul li a{float:left; height:100%; padding:0 20px; background:url(images/200811050820_nav_sub.png) repeat-x; color:#fff; text-decoration:none}
+div#nav ul li a.hover{clear:both; background-position:0 -35px}
+div#nav ul li.on a{background-position:0 -35px}
+div#nav ul li.nobg{background:none}

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/myCss.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="javascripts/prototype/prototype.js"></script>
+<script type="text/javascript" src="javascripts/prototype/scriptaculous.js"></script>
+<script type="text/javascript" src="javascripts/js.js"></script>
+<script type="text/javascript">
+    document.observe('dom:loaded',function(){
+        var iDropDown=new dropDown("menu-container", {menu_selector:'ul',fade_duration:0.3, timeout:600 });
+    })
+</script>
+</head>
+
+<body>
+    <ul id="menu-container">
+        <li><a href="#">no dropDown</a></li>
+        <li><a href="#">no dropDown</a></li>
+        <li><a href="#">no dropDown</a></li>
+        <li id="tools-link">
+            <a href="#">has dropDown</a>
+            <ul id="more-tools" style="display:none;">
+                <li><a href="#">dropDown item</a></li>
+                <li><a href="#">dropDown item</a></li>
+                <li><a href="#">dropDown item</a></li>
+                <li><a href="#">dropDown item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">no dropDown</a></li>
+    </ul>
+</body>
+</html>

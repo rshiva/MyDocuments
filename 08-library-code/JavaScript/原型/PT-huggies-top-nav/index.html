@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/main-container.css" />
+<link type="text/css" rel="stylesheet" href="css/logo-and-search-bar.css" />
+<link type="text/css" rel="stylesheet" href="css/main-menu.css" />
+<link type="text/css" rel="stylesheet" href="css/tool-menu.css" />
+<link type="text/css" rel="stylesheet" href="css/drop-down.css" />
+
+<script type="text/javascript" src="javascripts/prototype/prototype.js"></script>
+<script type="text/javascript" src="javascripts/prototype/scriptaculous.js" ></script>
+<script type="text/javascript" src="javascripts/dropdown.js" ></script>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="logo" style="cursor: pointer;">
+                <a href="/" title="Huggies® home">Huggies®</a>
+                <span class="logo-nz">New Zealand</span>
+            </div>
+            
+            <div id="site-search">
+                <form id="search" action="/search/">
+                    <fieldset>
+                        <input type="hidden" name="cx" value="011149492506336809386:5h7wd_wrsyi" />
+                        <input type="hidden" name="cof" value="FORID:11" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <!-- AU cx value : 011149492506336809386:m9jtjvwdlui -->
+                        <!-- NZ cx value : 011149492506336809386:5h7wd_wrsyi -->
+                        <!-- google search setup -->
+                        <input id="search-field" class="input" type="text" value="Search here" name="q" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" />
+                        <input id="go-button" class="go" type="image" value="Go" name="sa" src="images/site-search-button.gif" title="Search" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="main-menu">
+                <ul>
+                    <li class="conception first"><a href="/conception">Conception</a></li>
+                    <li class="pregnancy"><a href="/pregnancy">Pregnancy</a></li>
+                    <li class="child-birth"><a href="/childbirth">Childbirth</a></li>
+                    <li class="baby-care"><a href="/baby-care">Baby care</a></li>
+                    <li class="toddler"><a href="/toddler">Toddler</a></li>
+                    <li class="parenting"><a href="/parenting">Parenting</a></li>
+                    <li class="blogs"><a href="/blog">Blogs</a></li>
+                    <li class="forum"><a href="/forum">Forum</a></li>
+                    <li class="nappies"><a href="/nappies">Products</a></li>
+                    <li class="promotions last"><a href="/promotions">Promotions</a></li>
+                </ul>
+            </div>
+
+            <div id="tools-menu">
+                <ul id="tools-dropdown">
+                    <li class="book-club" id=""><a href="http://www.huggiesbookclub.com.au" target="_blank" title="opens in new window">Book Club</a></li>
+                    <li class="baby-names" id=""><a href="/baby-names">Baby Names</a></li>
+                    <li class="kids-activities" id=""><a href="/kids-activities">Kids Activities</a></li>
+                    <li class="expert-panel" id=""><a href="/ask-experts">Expert Panel</a></li>
+                    <li class="kids-recipes" id=""><a href="/kids-recipes">Kids Recipes</a></li>
+                    <li class="photo-centre" id=""><a href="/benefits/photo-centre">Photo Centre</a></li>
+                    <li class="baby-room-design" id=""><a href="/baby-care/room-designs">Baby Room Designs</a></li>
+                    <li id="tools-link" class="more-tools"><a href="#" class="">More Tools</a>
+                        <ul id="more-tools" style="z-index: 9999; display: none;">
+                            <li class="week-by-week" id=""><a href="/pregnancy/week-by-week"><span>Week by Week Pregnancy Guide</span></a></li>
+                            <li class="baby-eye-colour" id=""><a href="/pregnancy/early-stages/eye-colour"><span>Baby's eye colour</span></a></li>
+                            <li class="child-height-calculator" id=""><a href="/pregnancy/early-stages/height"><span>Child Height Calculator</span></a></li>
+                            <li class="ebooks" id=""><a href="/parenting/ebooks"><span>Huggies eBooks</span></a></li>
+                            <li id="" class="baby-room-decorator"><a href="/pregnancy/baby-nursery/baby-room-decorator"><span>Baby Room Decorator</span></a></li>
+                            <li class="mums-stories" id=""><a href="/baby-care/health/genetic-disorders/share-your-story"><span>Share your story</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <script type="text/javascript">
+                    Event.observe(window, "load", function() {
+                            var mainmenu = new Dropdown("tools-dropdown", { menu_selector: 'ul', fade_duration:0.3,  timeout:600 });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

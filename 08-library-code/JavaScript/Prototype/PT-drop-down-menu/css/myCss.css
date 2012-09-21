@@ -1,0 +1,38 @@
+ul, li{
+    margin: 0px;
+    padding: 0px;
+	list-style-type: none;
+}
+
+#menu-container{
+    margin: 100px;
+    float: left;
+}
+
+#menu-container li{
+    float: left;
+    display: inline;
+}
+
+#menu-container li a{
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+#menu-container li a:hover{
+    background: #666666;
+    color: #ffffff;
+}
+
+#more-tools{
+    display: block;
+    width: 100px;
+}
+
+#more-tools li{
+    display: block;
+}

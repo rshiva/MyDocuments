@@ -1,0 +1,45 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, small, strike, strong, sub, sup, tt dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+    text-decoration: none;
+}
+
+body{
+    font: 10px/1.3em Arial, Verdana, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.4em !important;
+    line-height: 1.2em !important;
+    margin-bottom: 3px !important;
+}
+
+a {
+    color: #90C;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+img {
+    border: 0;
+}
+
+p {
+    margin: 0 0 .75em;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+div {
+    display: block;
+}

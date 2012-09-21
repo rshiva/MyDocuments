@@ -1,0 +1,180 @@
+#carousel {
+	position: relative;
+	width: 650px;
+	height: 400px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#carousel li a{
+	font-size:12px;
+	text-decoration: none;
+}
+
+img{
+	border:none;
+}
+
+/* ------------------------------------------------------------------ */
+/* IMAGES */
+
+
+
+#carousel .images {
+	display: none;
+	height: 90%;
+	padding: 0px;
+	margin: 0px;
+}
+#carousel .images.active {
+	display: block;
+}
+#carousel .images li {
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	margin: 0px;
+}
+#carousel .images li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE 6 & 7 */      
+	zoom: 1;
+}
+#carousel .images li a img {
+	float: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ------------------------------------------------------------------ */
+/* MENU */
+#carousel-menu {
+	clear: left;
+	height: 28px;
+	padding: 0px;
+}
+#carousel-menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	width: 95px;
+	height: 28px;
+	background: transparent;
+	margin: 0px 5px 5px 0px;
+	z-index: 9999;
+}
+#carousel-menu li, 
+#carousel-menu li a {
+	color: #e0edfb;
+	line-height: 28px;
+	text-align: center;
+}
+#carousel-menu li a {
+	width: 100%;
+	height: 100%;
+	font-weight: normal;
+	font-size: 1.1em;
+	display: block;
+	background-color: #e0edfb;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+#carousel-menu li a:hover {
+	text-decoration: none;
+}
+#carousel-menu li:last-child {
+	margin-right: 0px;
+}
+
+/* ------------------------------------------------------------------ */
+/* MENU ITEMS */
+#carousel-menu li.floral a { color: #d41832; background-color: #fbd9dd; }
+#carousel-menu li.marine a { color: #0083cb; background-color: #e0edfb; }
+#carousel-menu li.animal a { color: #7b603e; background-color: #efe3d3; }
+#carousel-menu li.fun a { color: #34915f; background-color: #cdecdb; }
+#carousel-menu li.kids a { color: #9576b3; background-color: #ece1f7; }
+#carousel-menu li.decor a { color: #cb7218; background-color: #fae7d6; }
+#carousel-menu li.active a { background-color: #0083cb; }
+#carousel-menu li.floral.active a { background-color: #d41832; }
+#carousel-menu li.marine.active a { background-color: #0083cb; }
+#carousel-menu li.animal.active a { background-color: #7b603e; }
+#carousel-menu li.fun.active a { background-color: #34915f; }
+#carousel-menu li.kids.active a { background-color: #9576b3; }
+#carousel-menu li.decor.active a { background-color: #cb7218; }
+#carousel-menu li.active a {
+	color: #fff;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+/* ARROWS */
+#carousel-direction {
+	position: absolute;
+	clear: left;
+	display: block;
+	top: 150px;
+	width: 100%;
+}
+#carousel-direction a {
+	background: #000;
+	font: 1em Arial;
+	width: 42px;
+	height: 42px;
+	text-decoration: none;
+	text-indent: -9999px;
+}
+#carousel-direction a.back {
+	margin-left: 20px;
+	background: transparent url(images/products/carousel/arrows.png) no-repeat 0px 0px;
+	float: left;
+}
+#carousel-direction a.back:hover {
+	background: transparent url(images/products/carousel/arrows.png) no-repeat 0px -42px;
+}
+#carousel-direction a.forward {
+	margin-right: 20px;
+	background: transparent url(images/products/carousel/arrows.png) no-repeat -42px 0px;
+	float: right;
+}
+#carousel-direction a.forward:hover {
+	background: transparent url(images/products/carousel/arrows.png) no-repeat -42px -42px;
+}
+
+/* ------------------------------------------------------------------ */
+/* INDICATORS */
+#carousel-indicators {
+	position: relative;
+	clear: left;
+	margin: 0px auto;
+	padding: 0px;
+	height: 15px;
+}
+#carousel-indicators li {
+	display: block;
+	width: 15px;
+	height: 16px;
+	margin-right: 10px;
+	text-indent: -9999px;
+	float: left;
+	list-style: none;
+}
+#carousel-indicators li:last-child {
+	margin-right: 0px;
+}
+#carousel-indicators li a {
+	display: block;
+	background: transparent url(images/products/carousel/indicators.png) no-repeat 0px 0px;
+	width: 100%;
+	height: 100%;
+}
+#carousel-indicators li a:hover { background-position: 0px -16px; }
+#carousel-indicators li.active a { background-position: 0px -32px; }

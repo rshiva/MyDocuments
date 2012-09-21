@@ -1,0 +1,210 @@
+.Gen
+{
+POSITION: relative
+}
+.heading
+{
+BACKGROUND: #eeeeee;
+COLOR: #000000
+}
+.HtmlEdit
+{
+BACKGROUND-COLOR: #eeeeee;
+POSITION: relative
+}
+.yToolbar
+{
+	BACKGROUND-COLOR: #dddddd;
+	BORDER-BOTTOM: buttonshadow 1px solid;
+	BORDER-LEFT: buttonhighlight 1px solid;
+	BORDER-RIGHT: buttonshadow 1px solid;
+	BORDER-TOP: buttonhighlight 1px solid;
+	HEIGHT: 28px;
+	LEFT: 0px;
+	POSITION: relative;
+	TOP: 0px;
+	width: 760px;
+
+}
+.Btn
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonface 1px solid;
+BORDER-LEFT: buttonface 1px solid;
+BORDER-RIGHT: buttonface 1px solid;
+BORDER-TOP: buttonface 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnMenu
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonface 1px solid;
+BORDER-LEFT: buttonface 1px solid;
+BORDER-RIGHT: buttonface 1px solid;
+BORDER-TOP: buttonface 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 10px
+}
+.Ico
+{
+LEFT: 2px;
+POSITION: absolute;
+TOP: 2px
+}
+.TBSep
+{
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+FONT-SIZE: 0px;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 1px
+}
+.TBGen
+{
+FONT: 9pt ËÎÌו,verdana,arial,sans-serif;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 3px
+}
+.TBHandle
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+FONT-SIZE: 1px;
+HEIGHT: 22px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 3px
+}
+.BtnMouseOverUp
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonshadow 1px solid;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnMouseOverDown
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnDown
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 24px
+}
+.BtnMenuMouseOverUp
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonshadow 1px solid;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 10px
+}
+.BtnMenuMouseOverDown
+{
+BACKGROUND-COLOR: #dddddd;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 10px
+}
+.BtnMenuDown
+{
+BACKGROUND-COLOR: #eeeeee;
+BORDER-BOTTOM: buttonhighlight 1px solid;
+BORDER-LEFT: buttonshadow 1px solid;
+BORDER-RIGHT: buttonhighlight 1px solid;
+BORDER-TOP: buttonshadow 1px solid;
+HEIGHT: 24px;
+POSITION: absolute;
+TOP: 1px;
+WIDTH: 10px
+}
+.IcoDown
+{
+LEFT: 3px;
+POSITION: absolute;
+TOP: 3px;
+}
+.IcoDownPressed
+{
+LEFT: 2px;
+POSITION: absolute;
+TOP: 2px
+}
+
+.nav_menu
+{
+	BACKGROUND-COLOR: #eeeeee;
+}
+.menu
+{
+	BACKGROUND-COLOR: #eeeeee;
+	width:90%;border: 1px; 
+
+}
+td.MenuBody
+{
+	BACKGROUND-COLOR: #eeeeee;
+}
+BODY
+{
+	BACKGROUND-COLOR: #dddddd;
+}
+TD
+{
+	font-size: 9pt;
+}
+A
+{
+	text-decoration: none;
+}
+A:hover
+{
+	COLOR: #ff6600;
+}
+A:link
+{
+	color: #555555;
+}
+A:visited
+{
+	color: #555555;
+}

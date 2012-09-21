@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Verdana, Sans-Serif;
+    background: #FAF0F8 url(../images/bg.jpg) top center no-repeat;
+}
+
+/* main container */
+div#page {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header container */
+div#header{
+    height: 162px;
+    width: 960px;
+    margin: 0 0 10px;
+    position: relative;
+    background: url(../images/header-bg.png) 0 18px no-repeat; /* move background image down a bit */
+    display: inline;
+    float: left;
+}
+

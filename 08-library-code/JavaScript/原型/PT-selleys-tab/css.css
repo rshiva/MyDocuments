@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#main-content {
+	width: 610px;
+	margin:50px;
+	background: #fff;
+}
+
+/***************** tabs *********************/
+ul#tabs {
+	float: left;
+	clear: both;
+	padding-left:0px !important;
+	list-style: none;
+	width: 320px;
+}
+
+#tabs li {
+	float: left;
+	padding: 0px !important;
+	margin: 0px 0px 0px 0px !important;
+	list-style: none;
+	border: 1px solid #ccc;	
+	border-bottom:none;
+	position: relative;
+	top: 2px;
+}
+
+#tabs a {
+	float: left;
+	padding: 10px 40px;
+	background: #e6e6e6 url(images/bg-icon-tab-off.gif) 10px 5px no-repeat;
+	text-decoration: none;
+	border-top: 1px solid white;
+	border-bottom: 1px solid #ccc;	
+	color: #006699;
+}
+
+#tabs a.active-tab {
+	background: #fff url(images/bg-icon-tab-on.gif) 10px 5px no-repeat;
+	color: #000;
+	border-bottom: 1px solid #fff;		
+}
+
+.active-tab-body {
+	display: block !important;	
+}
+
+.panel {
+	float: left;
+	clear: both;
+	display: none;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	width: 590px;
+	min-height: 350px;
+}
+
+.panel p{
+	padding: 0px 10px;
+}
+
+
+/***************** content *********************/
+#content ul li, #content ol li{
+	padding-left: 10px;
+	padding-right: 30px;
+}
+
+#content ol{
+	list-style-type: decimal;
+}
+
+#content ul{
+	padding-left: 0px;
+}
+
+#main-content ul li{
+	padding-left: 30px;
+	background: url(images/bg-bullet-blue.gif) 8px 3px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

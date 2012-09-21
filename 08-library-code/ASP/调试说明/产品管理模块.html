@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="说明.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="100%" border="1" align="center" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+  <tr onclick="change_view('a4')">
+    <td width="100%" height="25" colspan="4" align="center" class="STYLE1">产品管理模块</td>
+  </tr>
+  <tr>
+    <td height="25" colspan="4" align="center" valign="top"><table width="100%" border="1" cellpadding="2" cellspacing="0"  bordercolor="#CCCCCC" bordercolorlight="#cccccc"  bordercolordark="#FFFFFF">
+      <tr>
+        <td height="25" align="center" bgcolor="#99CCFF">功能</td>
+        <td height="25" align="center" bgcolor="#99CCFF">后台页面</td>
+        <td align="center" bgcolor="#99CCFF">图片和 flash 上传过程</td>
+      </tr>
+      <tr>
+        <td height="50" rowspan="2" align="left">分离出的前台页面</td>
+        <td height="25" align="left">在根目录下的“ 产品前台”文件夹<br /></td>
+        <td rowspan="14" align="left" valign="top"><ul>
+          <li>ProductAdd.asp 在 iframe 中调用根目录下的 editor.asp</li>
+          <li>editor.asp里的 function pic() 调用 editor_insertpic.asp</li>
+          <li>editor_insertpic.asp 调用 editor_SelectUpFile.asp 选取 UploadFiles中的图片</li>
+          <li>editor_insertpic.asp 在 iframe 中调用 upload_dialog.asp 并传递参数</li>
+          <li>Upfile_Dialog.asp 把表单传给 Upfile_Dialog.asp </li>
+          <li>Upfile_Dialog.asp 调用上传组件完成上传。同时通过第 113，114 行命令将上传文件参数返回给 editor_insertpic.asp 里 Form1 的两个表单项目。</li>
+          <li>editor_insertpic.asp 利用 function OK() 把参数返回Editor.asp</li>
+          <li>Editor.asp  里的 function pic() 利用 parent.AddItem(ss[1]);使用ProductAdd.asp里的function AddItem(strFileName) 获取到图片参数。</li>
+          <li>ProductAdd.asp 把所有参数通过表单送往 ProductSave.asp 存储</li>
+          <li>Flash 的上传方式基本和图片相同</li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td height="25" align="left"><span class="STYLE2"> Syscode.asp 关闭了在线订购功能</span></td>
+      </tr>
+      <tr>
+        <td width="19%" height="25" align="left">产品类别管理</td>
+        <td width="24%" height="25" align="left">admin/ClassManage.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加产品大类</td>
+        <td height="25" align="left">admin/ClassAddBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改产品大类</td>
+        <td height="25" align="left">admin/ClassModifyBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">删除产品大类</td>
+        <td height="25" align="left">admin/ClassDelBig.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加大类下面的小类</td>
+        <td height="25" align="left">admin/ClassAddSmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改大类下面的小类</td>
+        <td height="25" align="left">admin/ClassModifySmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">删除大类下面的小类</td>
+        <td height="25" align="left">admin/ClassDelSmall.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">产品管理</td>
+        <td height="25" align="left">admin/ProductManage.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">添加产品</td>
+        <td height="25" align="left">admin/ProductAdd.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">修改产品</td>
+        <td height="25" align="left">admin/ProductModify.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">删除产品</td>
+        <td height="25" align="left">admin/ProductDel.asp</td>
+      </tr>
+      <tr>
+        <td height="25" align="left">审核产品</td>
+        <td height="25" align="left">admin/ProductCheck.asp</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

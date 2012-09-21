@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/global.css" />
+<link type="text/css" rel="stylesheet" href="css/today-on-huggies.css" />
+
+<script type="text/javascript" src="javascripts/prototype/prototype.js"></script>
+<script type="text/javascript" src="javascripts/prototype/scriptaculous.js"></script>
+<script type="text/javascript" src="javascripts/animated_menu.js"></script>
+
+
+<script type="text/javascript">
+    document.observe('dom:loaded',function(){
+       var iMenu=new AnimatedMenu('today-on-huggies',2);
+       $('animationBtn').observe('click',function(){
+           iMenu.scroll();
+       });
+    });
+    // 
+</script>
+
+</head>
+
+<body>
+    <div id="today-on-huggies">
+        <div class="menu-container">
+            <div class="animated-menu">
+               <div class="item">
+                    <div class="text">
+                        <h4><a>Article0</a></h4>
+                        <p>Content for article0</p>
+                    </div>
+                    <img alt="" class="tiny" src="images/0.jpg" />
+                </div>
+
+
+                <div class="item">
+                    <div class="text">
+                        <h4><a>Article1</a></h4>
+                        <p>Content for article1</p>
+                    </div>
+                    <img alt="" class="tiny" src="images/1.jpg" />
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4><a>Article2</a></h4>
+                        <p>Content for article2</p>
+                    </div>
+                    <img alt="" class="tiny" src="images/2.jpg" />
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4><a>Article3</a></h4>
+                        <p>Content for article3</p>
+                    </div>
+                    <img alt="" class="tiny" src="images/3.jpg" />
+                </div>
+
+                <div class="item">
+                    <div class="text">
+                        <h4><a>Article4</a></h4>
+                        <p>Content for article4</p>
+                    </div>
+                    <img alt="" class="tiny" src="images/4.jpg" />
+                </div>
+        </div>
+        </div>
+    </div>
+    <input type="button" value="animate" id="animationBtn" />
+</body>
+</html>

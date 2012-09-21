@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title></title>
+<script type="text/javascript">
+    function whichElement(e){
+    var targ
+    if (!e) var e = window.event
+        if (e.target) targ = e.target
+        else if (e.srcElement) targ = e.srcElement
+            if (targ.nodeType == 3) // defeat Safari bug
+                targ = targ.parentNode
+        var tname
+        tname=targ.tagName
+        alert("You clicked on a " + tname + " element.")
+    }
+</script>
+</head>
+
+<body onmouseup="whichElement(event)">
+    <h2>This is a header</h2>
+    <p>This is a paragraph</p>
+    <img border="0" src="image_w3default.gif" alt="" />
+</body>
+</html>

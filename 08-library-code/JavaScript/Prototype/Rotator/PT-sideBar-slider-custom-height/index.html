@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>index</title>
+
+		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+		<script type="text/javascript" charset="utf-8" src="sidebar-slider.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			Event.observe(window,'load',function(){
+					var iSideBar=new sideBarSlider("sideBar-content-list","sideBar-display-list","sideBar-slider-mask");
+					$('animationBtn').observe('click',function(){
+			           iSideBar.animate();
+			       });
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="container">
+			<input type="button" id="animationBtn" value="click" style="margin-bottom:20px;" />
+			<div id="sideBar-slider">
+				<div class="header"></div>
+				<div class="body">
+					<div id="sideBar-slider-mask">
+						<ul id="sideBar-display-list">
+						</ul>
+					</div>
+				</div>
+				<div class="footer"><a href="/">Read More</a></div>
+				
+				<ul id="sideBar-content-list" style="display:none;">
+					<li class="item">
+						<h3>Article1</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu. </p>
+					</li>
+					<li class="item">
+						<h3>Article2</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et, accumsan id </p>
+					</li>
+					<li class="item">
+						<h3>Article3</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam.</p>
+					</li>
+					<li class="item">
+						<h3>Article4</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis</p>
+					</li>
+					<li class="item">
+						<h3>Article5</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et, accumsan id, rutrum ut, nisi. Vestibulum ante est, dignissim ut, commodo eu, rhoncus ac, nunc. </p>
+					</li>
+					<li class="item">
+						<h3>Article6</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. </p>
+					</li>
+					<li class="item">
+						<h3>Article7</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et, accumsan id, rutrum ut, nisi.</p>
+					</li>
+					<li class="item">
+						<h3>Article8</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est.</p>
+					</li>
+					<li class="item">
+						<h3>Article9</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu.</p>
+					</li>
+					<li class="item">
+						<h3>Article10</h3>
+						<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu. </p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>	
+</html>

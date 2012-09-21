@@ -1,0 +1,4 @@
+如何注册fso组件
+1、首先在系统盘中查找scrrun.dll，如果存在这个文件，请跳到第三步，如果没有，请执行第二步。
+2、在安装文件目录i386中找到scrrun.dl_，用winrar解压缩，得scrrun.dll，然后复制到x（你的系统盘）:\windows\system32\目录中。
+3、运行regsvr32 scrrun.dll即可。

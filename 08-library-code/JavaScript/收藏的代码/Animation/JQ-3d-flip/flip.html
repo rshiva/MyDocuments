@@ -1,0 +1,75 @@
+<!doctype>
+<html>
+	<head>
+		<title>Flip! A jQuery plugin v0.9.9</title>
+		<meta name="description" content="Flip is a jQuery plugin to apply flip animation to any element."/>
+		<meta name="keywords" content="flip, flipping, jquery, jquery plugin, plugin, animation plagin, javascript, css, border animation"/>
+		<meta name="charset" content="utf-8"/>		
+		<link rel="stylesheet" type="text/css" href="css/flip_099.css"/>
+		<!--[if IE]>
+			<script src="js/html5.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/flip_ie.css"/>
+		<![endif]-->		
+		<script src="js/jsapi"></script>
+		<script type="text/javascript">
+		  // Load jQuery
+		  google.load("jquery", "1");	
+		</script>
+		<script src="js/jquery-ui-1.7.2.custom.min.js"></script>
+		<script src="js/jquery.flip.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				$("#flipPad a:not(.revert)").bind("click",function(){
+					var $this = $(this);
+					$("#flipbox").flip({
+						direction: $this.attr("rel"),
+						color: $this.attr("rev"),
+						content: $this.attr("title"),//(new Date()).getTime(),
+						onBefore: function(){$(".revert").show()}
+					})
+					return false;
+				});
+				
+				$(".revert").bind("click",function(){
+					$("#flipbox").revertFlip();
+					return false;
+				});
+				
+				var changeMailTo = function(){
+					var mArr = ["@","smashup","luca",".it"];
+					$("#email").attr("href","mailto:"+mArr[2]+mArr[0]+mArr[1]+mArr[3]);
+				}
+				
+				$(".downloadBtn").click(function(){
+					pageTracker._trackPageview('download_flip');
+				});	
+				
+				setTimeout(changeMailTo,500);
+				
+			});
+		</script>					
+	</head>
+	<body>
+					
+					<div id="flipbox">Hello! I'm a flip-box! :)</div>
+					<div id="flipPad">
+						<a href="#" class="left" rel="rl" rev="#39AB3E" title="改变你喜欢内容！">left</a>
+						<a href="#" class="top" rel="bt" rev="#B0EB17" title="很好！">top</a>
+						<a href="#" class="bottom" rel="tb" rev="#82BD2E" title="Hey oh let's go!">bottom</a>
+						<a href="#" class="right" rel="lr" rev="#C8D97E" title="等待CSS3？">right</a>
+						<a href="#" class="revert">revert!</a>
+					</div>					
+ 
+					
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-181608-11");
+		pageTracker._trackPageview();
+		</script>		
+	</body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="圆形缩略图预览CSS+jQuery焦点图代码" />
+<title>圆形缩略图预览CSS+jQuery焦点图代码</title> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+        <noscript>
+            <style>
+                .cn-images img{position: relative;display: block;border-bottom: 5px solid #d0ab47;} 
+                .cn-slideshow{height: auto;}
+            </style>
+        </noscript>
+		<script id="barTmpl" type="text/x-jquery-tmpl">
+            <div class="cn-bar">
+                <div class="cn-nav">
+					<a href="#" class="cn-nav-prev">
+                        <span>Previous</span>
+						<div style="background-image:url(${prevSource});"></div> 
+					</a>
+					<a href="#" class="cn-nav-next">
+                        <span>Next</span>
+						<div style="background-image:url(${nextSource});"></div>
+					</a>
+                </div><!-- cn-nav -->
+                <div class="cn-nav-content">
+                    <div class="cn-nav-content-prev">
+                        <span>Previous image</span>
+                        <h3>${prevTitle}</h3>
+                    </div>
+                    <div class="cn-nav-content-current">
+                        <span>Currently viewing</span>
+                        <h2>${currentTitle}</h2>
+                    </div>
+                    <div class="cn-nav-content-next">
+                        <span>Next image</span>
+                        <h3>${nextTitle}</h3>
+                    </div>
+                </div>
+            </div>
+		</script>
+    </head>
+    <body>
+<!--广告区域开始-->
+<div style="height:90px; width:728px; padding-top:10px; margin:0px auto; ">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6110696270771103";
+/* 全站大横幅 */
+google_ad_slot = "4968847295";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!--广告区域结束--> 
+        <div class="container">
+            <div class="wrapper">
+                <div id="cn-slideshow" class="cn-slideshow">
+                    <div class="cn-images">
+                        <img src="images/large/1.jpg" alt="image01" title="Beautiful Scenery 1" data-thumb="images/thumbs/1.jpg" style="display:block;"/>
+                        <img src="images/large/2.jpg" alt="image02" title="Beautiful Scenery 2" data-thumb="images/thumbs/2.jpg"/>
+                        <img src="images/large/3.jpg" alt="image03" title="Beautiful Scenery 3" data-thumb="images/thumbs/3.jpg"/>
+                        <img src="images/large/4.jpg" alt="image04" title="Beautiful Scenery 4" data-thumb="images/thumbs/4.jpg"/>
+                    </div><!-- cn-images -->
+                </div><!-- cn-slideshow -->
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slideshow.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				$('#cn-slideshow').slideshow();
+            });
+        </script>
+</body>
+</html>	

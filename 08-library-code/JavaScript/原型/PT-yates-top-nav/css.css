@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, Sans-Serif;
+	background: white url('images/background_top.gif') top repeat-x;
+}
+
+/* FOUNDATIONS: Links
+-------------------------------------------------- */
+a {
+  color: #0D590D;
+}
+a:hover {
+	color: #8cc63f;
+}
+a img{
+	border:0;
+	text-decoration: none;
+}
+
+#header {
+	height: 180px;
+	width: 970px;
+	padding: 0 0px 0 0px;
+}
+
+/* logo */
+#header h1 {
+	margin: 10px 0 0 50px;
+	width: 300px;
+	height: 65px;
+	float: left;
+	background: url('images/logo_au.gif') no-repeat;
+}
+
+#header h2 {
+	display: none;
+}
+
+#header .skip-to {
+  display: none;
+}
+
+#coin-mask{
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:10px;
+	left:230px;
+	overflow:hidden;
+}
+
+#coin-shining{
+	position:absolute;
+	top:0;
+	left:-64px;
+}
+
+/* search */
+#cse-search-box {
+  position: relative;
+  float: right;
+  margin: 20px 0 0 0;
+  height: 20px;
+  width: 172px;
+}
+
+#cse-search-box label {
+  display: none;
+}
+
+#cse-search-box input.keywords {
+  position: absolute;
+	width: 121px;
+	height: 30px;
+	font-size: 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 15px;
+	padding-left: 10px;
+	border: 0;
+	left: 33px;
+	background: url('images/search_bg.gif') -40px 0px no-repeat;
+}
+
+#cse-search-box input.submit {
+   position: absolute;
+   left: 1px;
+	width: 32px;
+	height: 40px;
+	font-size: 10px;
+	border: 0;
+	margin: 0;
+	font-size: 5px;
+	padding-left: 25px;
+    cursor: pointer;
+	color: #8cc63f;
+	background: url('images/search_bg.gif') top left no-repeat;
+}
+
+/* top nav */
+#top-nav {
+  padding-top: 4px;
+  clear: both;
+}
+
+#top-nav ul {  
+  width: 1000px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 32px;
+}
+
+p, li {
+	font-size: 12px;
+	color: #505050;
+}
+
+#top-nav ul li{
+  float: left;
+  margin-right: 0px;
+}
+
+#top-nav ul li a{
+  padding: 7px 5px 3px 31px;
+  display: block;
+  height: 18px;
+  background: url('images/bg-nav-icons.png') bottom left no-repeat;
+  color: #00590D;
+  text-decoration: none;
+}
+#top-nav ul li a:hover{color:#C8163C;}
+
+#top-nav .nav-seed-finder a{width: 75px;background-position: 0px -30px;}
+#top-nav .nav-garden-expert a{width: 114px;background-position: -110px -30px;}
+#top-nav .nav-iphone-apps a{padding-left:25px;width: 98px;background-position: -267px -30px;}
+#top-nav .nav-virtual-garden a{width: 82px;background-position: -404px -30px;padding-left: 28px;}
+#top-nav .nav-garden-calendar a{width: 110px;background-position: -522px -30px;}
+#top-nav .nav-recipes a{width: 50px;background-position: -672px -30px;}
+#top-nav .nav-videos a{width: 40px;background-position: -761px -30px;}
+#top-nav .nav-store-locator a{width: 110px;background-position: -839px -30px;}
+
+#top-nav .nav-seed-finder a:hover{background-position: 0px 0px;}
+#top-nav .nav-garden-expert a:hover{background-position: -110px 0px;}
+#top-nav .nav-iphone-apps a:hover{background-position: -267px 0px;}
+#top-nav .nav-virtual-garden a:hover{background-position: -404px 0px;}
+#top-nav .nav-garden-calendar a:hover{background-position: -522px 0px;}
+#top-nav .nav-recipes a:hover{background-position: -672px 0px;}
+#top-nav .nav-videos a:hover{background-position: -761px 0px;}
+#top-nav .nav-store-locator a:hover{background-position: -839px 0px;}
+
+/* main nav */
+#main-nav {
+  position: absolute;
+  top: 118px;
+  z-index: 999;
+}
+#main-nav ul {  
+  width: 938px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 32px;
+}
+#main-nav ul li {
+  float: left;
+  font-size: 13px;
+  position: relative;
+  z-index: 9999;
+  font-weight: bold;
+}
+#main-nav ul li a {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  display: block;
+  float: left;
+  height: 24px;
+  padding: 8px 14px 0;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 1px #528223;
+}
+#main-nav ul li a:hover, #main-nav ul li a.active {  
+  color: #D31145;
+  background: #fff url('images/bg-nav-dropdown.gif') top left repeat-x !important;
+  border-left: 1px solid #1d802c;
+  text-shadow: none;
+}
+#main-nav ul li ul {
+  z-index:9999;
+  top: 30px;
+  left: 0;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 15px 0;
+  height: auto;
+  width: 168px;
+  background: url('images/bg-dropdown-footer.png') bottom left repeat-x !important;
+  /*border: 1px solid #1d802c;*/
+  border-top: 0px;
+  z-index: 99998;  
+ -webkit-border-radius: 0px 0px 10px 10px;
+ -moz-border-radius: 0px 0px 10px 10px;
+ border-radius: 0px 0px 10px 10px;    
+}
+#main-nav ul li ul li {
+   width: 165px;
+  display: block;
+  background: white;
+  border-left: 1px solid #528223;
+  border-right: 1px solid #528223;
+  float: none !important;
+}
+#main-nav ul li ul li a {
+  display: block;
+  float: none !important;
+  height: auto;
+  color: #262626;
+  font-size: 13px;
+  margin: 0 1px;
+  padding: 5px 9px 5px 9px;
+  font-weight: normal;
+  border-left: 0px;
+  text-shadow: none;
+	overflow: hidden;
+}
+*html  #main-nav ul li ul li a {
+  display: inline-block;
+  width: 100%;
+}
+#main-nav ul ul li a:hover {
+  color: #D31145;
+  border: 0px;
+  background: none !important;
+}
+
+
+/* member login */
+#halo{	
+ position: absolute;
+ top: 152px;
+ z-index: 100px; 
+ height: 26px;
+ width: 929px;
+ margin-left: 45px;
+}
+
+#membership-box { 
+  float: right;
+  margin: 0;
+}
+#membership-box p {
+  margin: 0;
+  padding-right: 10px;
+  padding-top: 8px;
+}
+#membership-box ul {
+  margin: 6px;
+  list-style: none;
+}
+#membership-box li {
+  float: left;
+  font-size: 11px;
+  padding: 0 8px;
+  margin: 0;
+  border-left: 1px dotted #aada33;
+  text-transform: capitalize;
+}
+#membership-box li a {
+  text-decoration: none;
+}
+
+/* bread crumbs */
+#bcbar { 
+  clear: both;
+  height: 26px;
+  width: 929px;
+  margin-left: 35px;
+  background: url('images/bcbarbg.gif') top right no-repeat;
+}
+#breadcrumbs {
+  position: absolute;
+  top: 153px;
+  left: 50px;
+  margin: 0;
+  padding: 6px 0 0 17px;
+  float: left;
+  list-style: none;
+  background: url('images/bg-home-icon.png') no-repeat top left;
+}
+#breadcrumbs li {
+  float: left;
+  font-size: 11px;
+  padding: 0 8px 0 17px;
+  background: url('images/tbc_arrow.gif') left no-repeat;
+}
+#breadcrumbs li a {
+ text-decoration: none;
+}
+#breadcrumbs li.first {
+  background: none;
+  padding-left: 5px;
+  color: #1d802c;
+}
+#breadcrumbs li.first a {
+  background: none;
+}
+
+
+
+
+
+
+
+
+
+
+

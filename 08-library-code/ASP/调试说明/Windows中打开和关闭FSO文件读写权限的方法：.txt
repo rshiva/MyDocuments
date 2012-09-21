@@ -1,0 +1,16 @@
+Windows中打开和关闭FSO文件读写权限的方法：
+
+windows98系统
+在DOS命令行状态输入以下命令：
+关闭命令：RegSvr32 /u C:\WINDOWS\SYSTEM\scrrun.dll
+打开命令：RegSvr32 C:\WINDOWS\SYSTEM\scrrun.dll
+
+win2000系统：
+在CMD命令行状态输入以下命令：
+关闭命令：RegSvr32 /u C:\WINNT\SYSTEM32\scrrun.dll
+打开命令：RegSvr32 C:\WINNT\SYSTEM32\scrrun.dll 
+
+Windows 2003：
+在MS－DOS状态下面键入：
+关闭命令：Regsvr32 /u c:\windows\system32\scrrun.dll
+打开命令：Regsvr32 c:\windows\system32\scrrun.dll

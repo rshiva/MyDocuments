@@ -1,0 +1,1 @@
+CDrag.mdb|News.asp|Pic.asp 这些是供测试的文件，需要在iis浏览才能看到效果，否则直接点击Index.htm看到相关效果，但是数据信息无法看到

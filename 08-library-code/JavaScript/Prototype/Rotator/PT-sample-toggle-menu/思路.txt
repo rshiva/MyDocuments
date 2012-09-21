@@ -1,0 +1,15 @@
+CSS
+
+* 把链接写在 <ul><li>里面，就像处理 nav 那样。
+* 把content写在 <div> 里面。把<div> 的 display 设置为 none
+
+
+JS
+* 给链接添加侦听器，click 调用  toggleController.toggleContent()；
+* Event.element(e) 取事件对象，导入。
+* 导入内容的 ID
+* 判断导入的链接是否有 className “active”
+	有，（内容正在被显示，使用隐藏动画）
+	没有，（内容正在被隐藏，调用显示动画）
+	
+	

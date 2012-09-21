@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container {
+	width: 850px;
+	margin:50px;
+}
+
+/***************** tabs nav*********************/
+#tabs{
+	width:800px;
+	float:left;
+}
+
+#tabs li{
+	display:inline;
+	float:left;
+	position:relative;
+	top:1px;
+}
+
+#tabs li a{
+	display:block;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	margin-right:1px;
+	padding:10px 20px 10px 35px;
+	color:#ffffff;
+	background:#4d4d4d url('images/white-arrow.png') 20px 12px no-repeat;
+}
+
+#tabs li a.active-tab{
+	color:#4d4d4d;
+	border:1px solid #4d4d4d;
+	border-bottom:none;
+	background:#ffffff url('images/dark-arrow.png') 20px 12px no-repeat;
+}
+
+
+/***************** tab content *********************/
+.tab-content{
+	width:800px;
+	float:left;
+	border:1px solid #4d4d4d;
+	padding:20px;
+	display:none;
+}
+
+.active-tab-body {
+	display: block !important;	
+}
+
+.tab-content h2{
+	margin-top:0px;
+	font-size:18px;
+	font-weight:bold;
+	color:#4d4d4d;
+}
+
+.tab-content li{
+	line-height:150%;
+	padding-left: 30px;
+	background: url(images/bg-bullet-blue.gif) 8px 3px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

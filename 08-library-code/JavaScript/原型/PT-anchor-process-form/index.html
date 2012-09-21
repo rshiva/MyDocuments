@@ -1,0 +1,1064 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/order-form.js"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/fancyboxes.js"></script>
+	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css/order-form.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript" charset="utf-8">
+		// <![CDATA[
+		var fb;
+		var orderForm;
+		document.observe('dom:loaded', function()
+		{
+			if (typeof vpsObj == 'undefined') {
+				vpsObj = false;
+			}
+			buildVPS(vpsObj);
+			fb = new FancyBoxes();
+			orderForm = new OrderForm(
+				'vps-order-form',
+				$('form-container').down('.progress'),
+				'overview-header',
+				'overview-footer'
+			);
+		});
+		// ]]>
+	</script>
+
+	<noscript>
+		<div class="noscript">
+			<p>
+				You need to enable Javascript to use this form.<br />
+				Please <a href="http://www.enable-javascript.com/" target="_blank">enable Javascript</a> in your web browser, and reload the page.
+			</p>
+		</div>
+	</noscript>
+	
+	<div id="main" style="margin-top:50px;">
+
+
+		<div id="form-container" class="interactive-form">
+
+			<div class="progress">
+				<ol id="order-progress" class="clearfix">
+					<li class="first current">
+						<a rel="packages">
+							<span class="text">VPS Packages</span>
+							<span class="status"></span>
+						</a>
+					</li>
+					<li>
+						<a rel="customise">
+							<span class="text">Customise</span>
+							<span class="status" style="display: none;"></span>
+						</a>
+					</li>
+					<li>
+						<a rel="extras" class="extras">
+							<span class="text">Extras</span>
+							<span class="status" style="display: none;"></span>
+						</a>
+					</li>
+					<li>
+						<a rel="contact" class="contract">
+							<span class="text">Contact</span>
+							<span class="status" style="display: none;"></span>
+						</a>
+					</li>
+					<li class="last">
+						<a rel="confirmation">
+							<span class="text">Confirmation</span>
+							<span class="status" style="display: none;"></span>
+						</a>
+					</li>
+				</ol>
+				<div class="thermometer">
+					<div class="mercury"></div>
+				</div>
+			</div>
+<!-- progress bar finish -->
+			
+			<form id="vps-order-form" method="post" action="https://buildsystem.anchor.net.au/">
+
+				<input type="hidden" name="recipient" value="orders@anchor.com.au" />
+				<input type="hidden" name="subject" value="Virtual Private Server Order Form" />
+				<input type="hidden" name="redirect" value="/servers/quotes/vps-order-confirmation/" />
+				<input type="hidden" name="monkeys" />
+				<input type="hidden" name="emailAddress" />
+
+				<div class="overview clearfix" id="overview-header">
+					<div class="pricing first setup">
+						<div class="wrapper">
+							<h5>Setup</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">One time cost</p>
+						</div>
+					</div>
+					<div class="pricing vps">
+						<div class="wrapper">
+							<h5>VPS Ongoing</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing customisation">
+						<div class="wrapper">
+							<h5>Customisation</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing extras">
+						<div class="wrapper">
+							<h5>Extras</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Monthly cost</p>
+							<span class="logic plus"></span>
+						</div>
+					</div>
+					<div class="pricing total last">
+						<div class="wrapper">
+							<h5>Total</h5>
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<p class="per">Setup + First month</p>
+							<span class="logic equals"></span>
+						</div>
+					</div>
+<!-- header first row finish -->
+					<div class="next-month">
+						<div class="pricing long">
+							<div class="wrapper">
+								<h5>Starting next month, you will be charged:</h5>
+							</div>
+						</div>
+						<div class="pricing total">
+							<div class="wrapper">
+								<h5>
+									$
+									<span class="amount">0</span>
+									<span>monthly</span>
+								</h5>
+							</div>
+						</div>
+					</div>
+<!-- header second row finish -->
+				</div>
+<!-- header finish -->
+
+				<div class="fieldset-wrapper">
+					<fieldset id="packages" style="xdisplay: none;">
+
+						<legend>VPS Packages</legend>
+
+						<div class="field clearfix last validate validate[selectOne]" id="vps">
+							<div class="product">
+								<div class="field-contents">
+									<ul class="headings clearfix">
+										<li>RAM</li>
+										<li>Storage</li>
+										<li class="allowance">Data Allowance</li>
+										<li>Cost</li>
+									</ul>
+									<ul class="radios straight clearfix">
+										<li>
+											<label class="radio clearfix">
+												<input type="radio" name="vps" value="a" />
+												<span class="content clearfix">
+													<span class="title">
+														VPS A
+													</span>
+													<span class="ram stat">
+														512 MB
+													</span>
+													<span class="storage stat">
+														10 GB
+													</span>
+													<span class="allowance stat">
+														10 GB
+													</span>
+													<span class="cost stat">
+														$80 per month
+													</span>
+												</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div class="costing" style="display: none;">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+<!-- step1 finish -->
+
+					<fieldset id="customise" style="display: none;">
+						<legend>Customise</legend>
+
+						<div class="field clearfix validate validate[selectOne]" id="operating-systems">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Select your operating system</h3>
+								</div>
+								<div class="field-contents">
+									<ul class="radios squares clearfix">
+										<li>
+											<label class="radio square debian">
+												<input type="radio" name="operating-system" value="Debian" />
+												<span class="content">
+													<span class="title">Debian</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio square cent-os">
+												<input type="radio" name="operating-system" value="CentOS" />
+												<span class="content">
+													<span class="title">CentOS</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio square red-hat">
+												<input type="radio" name="operating-system" value="Red Hat" />
+												<span class="content">
+													<span class="title">Red Hat</span>
+													<span class="note">Version 6.1</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="radio square windows toggler rel[ssh-key]">
+												<input type="radio" name="operating-system" value="Windows" />
+												<span class="content">
+													<span class="title">Windows</span>
+													<span class="note">2008 Web Edition R2</span>
+												</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div class="costing" style="display: none;">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix validate validate[selectOne]" id="support-packs">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Select your support pack</h3>
+									<a href="#tooltip" class="tooltip-link" title="more information">
+										help
+									</a>
+									<div class="tooltip-content" style="display: none;">
+										<div class="wrapper">
+											<p>
+												<strong>Monitor:</strong> professionally managed hardware<br />
+												<strong>Secure:</strong> managed server security<br />
+												<strong>Complete:</strong> hosting managed all the way to the code
+											</p>
+											<img src="/images/order-form/tooltip-arrow.png" alt="" class="arrow" />
+										</div>
+									</div>
+									<p class="note">
+										<a href="/management/support-packs/" onclick="window.open(this.href); return false;">more info</a>
+									</p>
+								</div>
+								<div class="field-contents">
+									<ul class="radios squares clearfix">
+										<li>
+											<label class="radio monitor">
+												<input type="radio" name="support-pack" value="Monitor" />
+												<span class="content">Monitor</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio secure">
+												<input type="radio" name="support-pack" value="Secure" />
+												<span class="content">Secure</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio complete">
+												<input type="radio" name="support-pack" value="Complete" />
+												<span class="content">Complete</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div class="costing" style="display: none;">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix validate validate[required] validate[username]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="username">
+										Choose your desired username
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<input type="text" class="text large" name="username" id="username" />
+									</div>
+									<p class="field-note">
+										Your username can only contain letters <code>a-z</code>, numbers <code>0-9</code>, the symbols <code>-_</code>, and <br />
+										no white space.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix last validate validate[domain]">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="domain-name">
+										Domain Name
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<input type="text" class="text large" name="domain-name" id="domain-name" />
+									</div>
+									<p class="field-note">
+										Your domain should look something like <code>yourdomain.com</code>.<br />
+										There is no need to include the protocol <code><del>http://</del></code>.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+<!-- step2 finish -->
+
+
+					<fieldset id="extras" style="display: none;">
+						<legend>Extras</legend>
+
+						<div class="field clearfix" id="service-upgrades">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Service Upgrades
+									</h3>
+								</div>
+								<div class="field-subheader clearfix">
+									<h4>Secure Port</h4>
+									<a href="#tooltip" class="tooltip-link" title="more information">
+										help
+									</a>
+									<div class="tooltip-content" style="display: none;">
+										<div class="wrapper">
+											<p>
+												<strong>Shared</strong>:
+												Firewalls you from the Internet but doesn&rsquo;t separate you from other Anchor customers using the same service.<br />
+												<strong>Private</strong>:
+												Firewall will isolate traffic to your individual server.
+											</p>
+											<img src="/images/order-form/tooltip-arrow.png" alt="" class="arrow" />
+										</div>
+									</div>
+								</div>
+								<div class="field-contents validate validate[selectOne] first" id="secure-port">
+									<ul class="radios clearfix">
+										<li>
+											<label class="radio clearfix">
+												<input type="radio" name="secure-port" value="None" />
+												<span class="content">None</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio clearfix">
+												<input type="radio" name="secure-port" value="Shared" />
+												<span class="content">Shared</span>
+											</label>
+										</li>
+										<li>
+											<label class="radio clearfix">
+												<input type="radio" name="secure-port" value="Private" />
+												<span class="content">Private</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="field-subheader clearfix">
+									<h4>Backups</h4>
+								</div>
+								<div class="field-contents" id="backups">
+									<ul class="checkboxes two-column clearfix">
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="backups" value="Online Disk" />
+												<span class="content">
+													<span class="title">Online Disk</span>
+													<span class="note">$3/GB per month</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="backups" value="Offsite Tapes" />
+												<span class="content">
+													<span class="title">Offsite Tapes</span>
+													<span class="note">$13.75/GB per month</span>
+												</span>
+												<span class="version"></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="summary">
+								<div class="costing" style="display: none;">
+									<p class="per">Monthly cost</p>
+									<p class="price">
+										<span class="currency">$</span>
+										<span class="amount">0</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix" id="required-packages">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Required Packages
+									</h3>
+									<p class="note">You can select more than one added-on package</p>
+								</div>
+								<div class="field-contents">
+									<ul class="checkboxes two-column clearfix">
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="Apache" />
+												<span class="content">
+													<span class="title">Apache</span>
+													<span class="note">Version 2.2</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="PostgreSQL" />
+												<span class="content">
+													<span class="title">PostgreSQL</span>
+													<span class="note">Version 8.4</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="nginx" />
+												<span class="content">
+													<span class="title">nginx</span>
+													<span class="note">Version 0.7</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="MySQL" />
+												<span class="content">
+													<span class="title">MySQL</span>
+													<span class="note">Version 5.1</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="IIS" />
+												<span class="content">
+													<span class="title">IIS</span>
+													<span class="note">Version 7</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="MSSQL" />
+												<span class="content">
+													<span class="title">MSSQL</span>
+													<span class="note">Version 2008 R2</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="Ruby" />
+												<span class="content">
+													<span class="title">Ruby</span>
+													<span class="note">Version 4.5</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="Zope" />
+												<span class="content">
+													<span class="title">Zope</span>
+													<span class="note">Version 3.7</span>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="checkbox clearfix">
+												<input type="checkbox" name="required-packages[]" value="Tomcat" />
+												<span class="content">
+													<span class="title">Tomcat</span>
+													<span class="note">Version 6.0</span>
+												</span>
+											</label>
+										</li>
+										<li class="last">
+											<label class="checkbox clearfix toggler rel[special-build] rel[special-build-notice]">
+												<input type="checkbox" name="required-packages[]" value="Special Build" />
+												<span class="content">
+													<span class="title">Special Build</span>
+													<span class="note">Version ?</span>
+												</span>
+											</label>
+										</li>
+									</ul>
+									<div id="special-build" class="field-input" style="display: none;">
+										<label for="special-build-comment" class="subhead">
+											Tell us what you want and we&rsquo;ll give you a quote
+										</label>
+										<textarea name="special-build-comment" id="special-build-comment" rows="6" cols="80"></textarea>
+									</div>
+									<p class="field-note"><strong>Please note:</strong> some packages may be disabled because they are not available on the operating system you selected.</p>
+								</div>
+							</div>
+							<div class="summary">
+							</div>
+						</div>
+
+
+						<div class="field clearfix last" id="ssh-key">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>
+										Provide SSH Key
+									</h3>
+									<!-- <a href="#tooltip" class="tooltip-link" title="more information">
+										help
+									</a>
+									<div class="tooltip-content" style="display: none;">
+										<div class="wrapper">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<img src="/images/order-form/tooltip-arrow.png" alt="" class="arrow" />
+										</div>
+									</div> -->
+								</div>
+								<div class="field-contents">
+									<div class="field-input last">
+										<label class="checkbox large clearfix toggler rel[ssh-key-container]">
+											<input type="checkbox" name="use-ssh-key" value="Yes" />
+											<span class="content">
+												Yes, I would like to provide SSH Key(s)
+											</span>
+										</label>
+									</div>
+									<div id="ssh-key-container" class="add-another field-input validate validate[required]" style="display: none;">
+										<ul>
+											<li>
+												<textarea name="ssh-key[]" rows="6" cols="80"></textarea>
+											</li>
+										</ul>
+										<a href="#add-another">
+											Add another key
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<label for="additional-comments">
+										Additional Comments
+									</label>
+								</div>
+								<div class="field-contents">
+									<div class="field-input">
+										<textarea name="additional-comments" id="additional-comments" rows="6" cols="80"></textarea>
+									</div>
+									<p class="field-note">Add anything special or extra about this server that we may need to know about.</p>
+								</div>
+							</div>
+						</div>
+
+					</fieldset>
+<!-- step3 finish -->
+
+					<fieldset id="contact" style="display: none;">
+						<legend>Contact</legend>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Contact Details</h3>
+								</div>
+								<div class="field-contents">
+									<div class="field-input right-align">
+										<label for="title">Title</label>
+										<select name="title" id="title">
+											<option value="Mr.">Mr.</option>
+											<option value="Mrs.">Mrs.</option>
+											<option value="Miss">Miss</option>
+											<option value="Ms.">Ms.</option>
+											<option value="Dr.">Dr.</option>
+											<option value="Prof.">Prof.</option>
+										</select>
+									</div>
+									<div class="field-input right-align">
+										<h5>Your name</h5>
+										<div class="field-element clearfix">
+											<div class="left validate validate[required]">
+												<input type="text" class="text" name="first-name" id="first-name" />
+												<p class="field-note">First name</p>
+											</div>
+											<div class="right validate validate[required]">
+												<input type="text" class="text" name="last-name" id="last-name" />
+												<p class="field-note">Last name</p>
+											</div>
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required] validate[email]">
+										<label for="contact-email">Contact email</label>
+										<div class="field-element">
+											<input type="text" class="text email" name="contact-email" id="contact-email" />
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="contact-phone">Contact phone</label>
+										<div class="field-element">
+											<input type="text" class="text phone" name="contact-phone" id="contact-phone" />
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="address">Address</label>
+										<div class="field-element">
+											<input type="text" class="text" name="address" id="address" />
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[required]">
+										<label for="city">City</label>
+										<div class="field-element">
+											<input type="text" class="text" name="city" id="city" />
+										</div>
+									</div>
+									<div class="field-input right-align state last">
+										<label for="state">State</label>
+										<div class="field-element">
+											<select name="state" id="state">
+											<option value="NSW">NSW</option>
+											<option value="VIC">VIC</option>
+											<option value="QLD">QLD</option>
+											<option value="SA">SA</option>
+											<option value="WA">WA</option>
+											<option value="TAS">TAS</option>
+											<option value="NT">NT</option>
+											<option value="ACT">ACT</option>
+											</select>
+										</div>
+									</div>
+									<div class="field-input right-align validate validate[postcode] validate[required] postcode last">
+										<label for="postcode">Postcode</label>
+										<div class="field-element">
+											<input type="text" class="text int" name="postcode" id="postcode" maxlength="4" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="summary">
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Company Details</h3>
+								</div>
+								<div class="field-contents">
+									<div class="field-input right-align">
+										<label for="company-name">Company name</label>
+										<div class="field-element">
+											<input type="text" class="text" name="company-name" id="company-name" />
+										</div>
+									</div>
+									<div class="field-input right-align last validate validate[abn]">
+										<label for="company-abn">Company ABN</label>
+										<div class="field-element">
+											<input type="text" class="text" name="company-abn" id="company-abn" />
+										</div>
+									</div>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Payment Option</h3>
+								</div>
+								<div class="field-contents validate validate[selectOne]">
+									<div class="field-input right-align last">
+										<h5>Payment type</h5>
+										<div class="field-element clearfix">
+											<ul class="radios payment-types">
+												<li>
+													<label class="radio toggler opener rel[credit-card-details]">
+														<input type="radio" name="payment-type" value="Credit Card" />
+														<span class="content credit-card">
+															<img src="/images/order-form/payment-type-credit.png" alt="Visa, Mastercard" />
+															<span>Credit Card</span>
+														</span>
+													</label>
+												</li>
+												<li>
+													<label class="radio toggler closer rel[credit-card-details]">
+														<input type="radio" name="payment-type" value="EFTPOS" />
+														<span class="content eftpos">
+															<img src="/images/order-form/payment-type-eftpos.png" alt="EFTPOS" />
+															<span>EFTPOS</span>
+														</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div id="credit-card-details" style="display: none;">
+										<div class="field-input right-align validate validate[required]">
+											<label for="card-name">Name on card</label>
+											<div class="field-element">
+												<input type="text" class="text" name="card-name" id="card-name" />
+											</div>
+										</div>
+										<div class="field-input right-align validate validate[cardNumber] validate[required]">
+											<label for="card-number">Card number</label>
+											<div class="field-element">
+												<input type="text" class="text" name="card-number" id="card-number" />
+											</div>
+										</div>
+										<div class="field-input right-align">
+											<label for="expiry-month">Expiry date</label>
+											<div class="field-element">
+												<select name="expiry-month" id="expiry-month">
+													<option value="1">01</option>
+													<option value="2">02</option>
+													<option value="3">03</option>
+													<option value="4">04</option>
+													<option value="5">05</option>
+													<option value="6">06</option>
+													<option value="7">07</option>
+													<option value="8">08</option>
+													<option value="9">09</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+												<select name="expiry-year" id="expiry-year">
+													<option value="2011">2011</option>
+													<option value="2012">2012</option>
+													<option value="2013">2013</option>
+													<option value="2014">2014</option>
+													<option value="2015">2015</option>
+													<option value="2016">2016</option>
+													<option value="2017">2017</option>
+													<option value="2018">2018</option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021">2021</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="field-input right-align validate validate[int] validate[required] last">
+											<label for="card-code">Card security code</label>
+											<div class="field-element clearfix">
+												<div class="card-code">
+													<input type="text" class="text" name="card-code" id="card-code" maxlength="3" />
+												</div>
+												<img src="/images/order-form/payment-card-security.gif" alt="Card security code diagram" class="card-code" />
+												<p class="field-note">
+													The last 3 digits on the back of your card
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+					</fieldset>
+<!-- step4 finish -->
+
+					<fieldset id="confirmation" style="display: none;">
+						<legend>Confirmation</legend>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Your VPS</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Operating System</dt>
+										<dd class="operating-system"></dd>
+										<dt>HDD</dt>
+										<dd class="vps-storage"></dd>
+										<dt>RAM</dt>
+										<dd class="vps-ram"></dd>
+										<dt class="last">Data Allowance</dt>
+										<dd class="vps-allowance"></dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Support Pack</h3>
+									<p class="support-pack confirmation"></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Service Upgrades</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Backups</dt>
+										<dd class="backups"></dd>
+										<dt class="last">Secure Port</dt>
+										<dd class="last secure-port"></dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Required Packages</h3>
+								</div>
+								<div class="field-contents">
+									<ul class="required-packages">
+										<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Username</h3>
+									<p class="username confirmation">&nbsp;</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field single clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Domain name</h3>
+									<p class="domain-name confirmation">&nbsp;</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Additional Comments</h3>
+								</div>
+								<div class="field-contents">
+									<p class="additional-comments"></p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Contact Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Name</dt>
+										<dd>
+											<span class="title">&nbsp;</span>
+											<span class="first-name">&nbsp;</span>
+											<span class="last-name">&nbsp;</span>
+										</dd>
+										<dt>Email</dt>
+										<dd class="contact-email">&nbsp;</dd>
+										<dt>Phone</dt>
+										<dd class="contact-phone">&nbsp;</dd>
+										<dt class="last">Address</dt>
+										<dd class="last">
+											<span class="address">&nbsp;</span>,<br />
+											<span class="city">&nbsp;</span>
+											<span class="state">&nbsp;</span>
+											<span class="postcode">&nbsp;</span>
+										</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Company Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Company name</dt>
+										<dd class="company-name">&nbsp;</dd>
+										<dt class="last">Company ABN</dt>
+										<dd class="last company-abn">&nbsp;</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+						<div class="field clearfix last">
+							<div class="product">
+								<div class="field-header clearfix">
+									<h3>Payment Details</h3>
+								</div>
+								<div class="field-contents">
+									<dl class="clearfix">
+										<dt>Payment Type</dt>
+										<dd class="payment-type">&nbsp;</dd>
+										<dt class="credit-card">Name on Card</dt>
+										<dd class="credit-card card-name">&nbsp;</dd>
+										<dt class="credit-card">Card Number</dt>
+										<dd class="credit-card card-number">&nbsp;</dd>
+										<dt class="credit-card">Expiry Date</dt>
+										<dd class="credit-card card-expiry">&nbsp;</dd>
+										<dt class="credit-card">Security Code</dt>
+										<dd class="credit-card card-code">&nbsp;</dd>
+										<dt class="credit-card last">Credit Card Type</dt>
+										<dd class="credit-card last card-type">&nbsp;</dd>
+									</dl>
+								</div>
+								<div class="summary"></div>
+							</div>
+						</div>
+
+					</fieldset>
+<!-- step5 finish -->
+				</div>
+
+				<div class="overview" id="overview-footer" style="display: none;">
+					<div id="special-build-notice" class="notice" style="display: none;">
+						<p>We&rsquo;ll contact you regarding the exact price of your build.</p>
+					</div>
+					<div class="pricing long">
+						<div class="wrapper"><h4>Setup + First month</h4></div>
+					</div>
+					<div class="pricing total">
+						<div class="wrapper">
+							<p class="price">
+								<span class="currency">$</span>
+								<span class="amount">0</span>
+							</p>
+							<span class="logic equals"></span>
+						</div>
+					</div>
+					<div class="next-month clearfix">
+						<div class="pricing long">
+							<div class="wrapper"><h5>Starting next month, you will be charged</h5></div>
+						</div>
+						<div class="pricing total">
+							<div class="wrapper">
+								<h5>
+									$
+									<span class="amount">0</span>
+									<span>monthly</span>
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- total finish -->
+				<div class="navigation">
+					<div class="buttons clearfix">
+						<a href="#back" class="back button">Back</a>
+						<a href="#next" class="next button">Next</a>
+						<input type="submit" class="submit button" value="Order" />
+					</div>
+				</div>
+<!-- nav finish -->
+			</form>
+		<div>
+	</div>
+	</div>
+	</div>	
+</body>
+</html>

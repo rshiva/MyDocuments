@@ -1,0 +1,48 @@
+MD5 in 8 lines of perl5
+The MD5 algorithm (Message Digest 5) is a cryptographic message digest 
+algorithm. It is the message digest algorithm used by PGP 2.x. 
+MD5 was designed by Ron Rivest, who is also the `R' in `RSA'. MD5 is described 
+in rfc1321. C source code is included with the RFC. 
+John Allen <allen@grumman.com> wrote this implementation of MD5 optimised for 
+size, in 8 lines of perl5: 
+
+
+
+#!/bin/perl -iH9T4C`>_-JXF8NMS^$#)4=@<,$18%"0X4!`L0%P8*#Q4``04``04#!P`` ~JLA
+@A=unpack N4C24,unpack u,$^I;@K=map{int abs 2**32*sin$_}1..64;sub L{($x=pop)
+<<($n=pop)|2**$n-1&$x>>32-$n}sub M{($x=pop)-($m=1+~0)*int$x/$m}do{$l+=$r=read
+STDIN,$_,64;$r++,$_.="\x80"if$r<64&&!$p++;@W=unpack V16,$_."\0"x7;$W[14]=$l*8
+if$r<57;($a,$b,$c,$d)=@A;for(0..63){$a=M$b+L$A[4+4*($_>>4)+$_%4],M&{(sub{$b&$c
+|$d&~$b},sub{$b&$d|$c&~$d},sub{$b^$c^$d},sub{$c^($b|~$d)})[$z=$_/16]}+$W[($A[
+20+$z]+$A[24+$z]*($_%16))%16]+$K[$_]+$a;($a,$b,$c,$d)=($d,$a,$b,$c)}$v=a;for(
+@A[0..3]){$_=M$_+${$v++}}}while$r>56;print unpack H32,pack V4,@A # RSA's MD5
+
+
+
+MD5 creates a 128 bit hash (4 32 bit ints), which is designed so that it should 
+be computationaly expensive to find a text which matches a given hash. ie if you 
+have a hash for document A, H(A), it is difficult to find a document B which has 
+the same hash, and even more difficult to arrange that document B says what you 
+want it to say. 
+Example
+For example here is how to use John's SHA implementation: 
+% echo squeamish ossifrage | md5
+9469c6c14b5ed78b8aef396d2f9f96d7
+output is in hex. As expected the hash of a message differing by only one letter 
+produces an entirely different hash: 
+% echo squeamish ossifrag3 | md5
+39a5af4479676e60ccb090dff16a4a8f
+Hashes are used (amongst other things) in digital signatures, it is common to 
+digitally sign a hash of a message rather than the whole message. This is what 
+the block of text at the bottom of a PGP clearsigned document is, the MD5 digest 
+of the message, encrypted with the authors secret key. 
+Actually somewhat amusingly, it is possible to use the above md5 implementation 
+together with the rsa in 3 lines of perl implementation, and Mark Shoulson's 
+pgpacket util (for extracting pgp keys in hex) to produce a PGP compatible 
+signature. 
+Well it made me chuckle when I got it to work, after I realised I now had enough 
+components to put it together. 
+John also wrote a SHA in few lines of perl5. 
+
+
+Comments, html bugs to me (Adam Back) at <aba@dcs.ex.ac.uk> 

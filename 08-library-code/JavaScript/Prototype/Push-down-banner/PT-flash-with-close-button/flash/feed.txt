@@ -1,0 +1,16 @@
+// 当 html 读取结束后，使用 swfobject 在页面内渲染 flash
+// 创建 huggies
+
+
+openBanner : function(fBanner,fHeight){	
+	// 导入 banner container，banner height
+	// 如果转场效果，将banner 的高度从 1 延伸的 100
+}
+
+closeBanner : function(fBanner) {
+	// 将banner container 的 display 设为 none
+}
+
+onFlashLoaded : function(){
+	// JS 读取结束后，返回 true
+}

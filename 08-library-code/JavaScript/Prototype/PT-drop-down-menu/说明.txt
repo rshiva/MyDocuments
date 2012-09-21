@@ -1,0 +1,51 @@
+CSS
+* <ul><li><a> 做菜单
+
+* <ul><li> 的 list-style-type:none 去 bullet
+* <ul><li> 的 display: inline + float：left 呈横排
+
+* <a> display:block + width + height 定义按钮尺寸
+* a:hover 定义 rollover style
+
+
+
+JS
+设置关键参数
+	this.defaultOptions={
+		timeout: 500,
+		fade_duration: 0.25,
+		menu_selector: 'ul',
+		control_selector: 'li'
+	};
+检查导入的option，如果有项目缺失。从default option 里读参数
+	
+this.controls = 所有的 li
+
+添加侦听器，mouseOver li 的时候执行 showMenu(this,node)
+
+show(node){
+	this.active=node 不反应，退出
+	this.active!=node, this.active!=null 马上隐藏 this.active 下面的 ul
+	如果 node 下面有 ul，显示ul
+	this.active = node;
+	set_timeOut_events()
+}
+
+hideMenu(node,flag){
+	选择 node 下面的ul
+	flag = ture 马上隐藏
+	flag =false 用动画隐藏
+}
+
+setup_timeout_events(){
+	显示 ul 后的侦听器
+}
+
+remove_timeout_events{
+	隐藏 ul 后的侦听器
+}
+
+start_timeout{执行 timeout}
+
+stop_timeout{终止 timeout}
+

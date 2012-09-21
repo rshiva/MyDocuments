@@ -1,0 +1,462 @@
+ {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #efeee9; COLOR: #ddeaf2; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A {
+	COLOR: #ddeaf2; outline: 0
+}
+H1 {
+	FONT-WEIGHT: normal
+}
+H2 {
+	FONT-WEIGHT: normal
+}
+UL {
+	LIST-STYLE-POSITION: inside
+}
+#pagewrapper {
+	LEFT: 0px; OVERFLOW: hidden; WIDTH: 100%; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+#navigation {
+	Z-INDEX: 10; MARGIN-LEFT: 600px; WIDTH: 440px; POSITION: absolute; TOP: 20px
+}
+#navigation UL {
+	WIDTH: 440px
+}
+#navigation LI {
+	DISPLAY: block; FLOAT: left; LIST-STYLE-TYPE: none; HEIGHT: 33px
+}
+#navigation A {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; TEXT-TRANSFORM: uppercase; LINE-HEIGHT: 33px; HEIGHT: 33px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#navigation #linkHome {
+	WIDTH: 72px; MARGIN-RIGHT: 5px
+}
+#navigation #linkHome:hover {
+	BACKGROUND: url(../images/homehover.gif)
+}
+#navigation .active#linkHome {
+	BACKGROUND: url(../images/homehover.gif)
+}
+#navigation #linkPack {
+	WIDTH: 72px; MARGIN-RIGHT: 5px
+}
+#navigation #linkPack:hover {
+	BACKGROUND: url(../images/homehover.gif)
+}
+#navigation .active#linkPack {
+	BACKGROUND: url(../images/homehover.gif)
+}
+#navigation #linkPortfolio {
+	WIDTH: 100px; MARGIN-RIGHT: 5px
+}
+#navigation #linkPortfolio:hover {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+#navigation .active#linkPortfolio {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+#navigation #linkContact {
+	WIDTH: 89px; MARGIN-RIGHT: 5px
+}
+#navigation #linkContact:hover {
+	BACKGROUND: url(../images/contacthover.gif)
+}
+#navigation .active#linkContact {
+	BACKGROUND: url(../images/contacthover.gif)
+}
+#scrollwrapper {
+	Z-INDEX: 1; OVERFLOW: hidden; WIDTH: 100%; POSITION: relative; HEIGHT: 100%
+}
+#scrollinnerwrapper {
+	Z-INDEX: 1; WIDTH: 100%; POSITION: relative; HEIGHT: 100%
+}
+.scrolling-content {
+	WIDTH: 0px; POSITION: absolute; HEIGHT: 0px
+}
+#topleftwrapper {
+	BACKGROUND: url(../images/topleftcorrection.jpg) repeat-x; LEFT: 0px; WIDTH: 3055px; TOP: 0px; HEIGHT: 700px
+}
+#topleft {
+	BACKGROUND: url(../images/tl.jpg) no-repeat left top; WIDTH: 940px; HEIGHT: 700px
+}
+#toprightwrapper {
+	BACKGROUND: url(../images/topleftcorrection.jpg) repeat-x; LEFT: 2115px; WIDTH: 3055px; TOP: 0px; HEIGHT: 700px
+}
+#topright {
+	BACKGROUND: url(../images/tr.jpg) no-repeat left top; WIDTH: 940px; HEIGHT: 700px
+}
+#middleleftwrapper {
+	BACKGROUND: url(../images/middleleftcorrection.jpg) repeat-x; LEFT: 0px; WIDTH: 3055px; TOP: 700px; HEIGHT: 700px
+}
+#middlerightwrapper {
+	BACKGROUND: url(../images/middleleftcorrection.jpg) repeat-x; LEFT: 2115px; WIDTH: 3055px; TOP: 700px; HEIGHT: 700px
+}
+#bottomleftwrapper {
+	BACKGROUND: url(../images/bottomleftcorrection.jpg) repeat-x; LEFT: 0px; WIDTH: 3055px; TOP: 1400px; HEIGHT: 700px
+}
+#bottomleft {
+	BACKGROUND: url(../images/bl.jpg) no-repeat left top; WIDTH: 940px; HEIGHT: 700px
+}
+#bottomrightwrapper {
+	BACKGROUND: url(../images/bottomrightcorrection.jpg) repeat-x; LEFT: 2115px; WIDTH: 3055px; TOP: 1400px; HEIGHT: 700px
+}
+#bottomright {
+	BACKGROUND: url(../images/br.jpg) no-repeat left top; WIDTH: 940px; HEIGHT: 700px
+}
+#slideoutbox {
+	MARGIN-TOP: 262px; MARGIN-LEFT: 0px; WIDTH: 150px; POSITION: absolute
+}
+#languages {
+	PADDING-LEFT: 30px
+}
+#srpski {
+	DISPLAY: block; BACKGROUND: url(../images/srpski.png); FLOAT: left; WIDTH: 55px; MARGIN-RIGHT: 12px; HEIGHT: 40px
+}
+#deutsch {
+	MARGIN-TOP: 11px; DISPLAY: block; BACKGROUND: url(../images/deutsch.png); FLOAT: left; WIDTH: 50px; HEIGHT: 40px
+}
+#srpski SPAN {
+	DISPLAY: none
+}
+#deutsch SPAN {
+	DISPLAY: none
+}
+#toggle {
+	MARGIN-TOP: 44px; DISPLAY: block; BACKGROUND: url(../images/bubble.png); MARGIN-LEFT: 25px; WIDTH: 66px; HEIGHT: 62px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#toggle:hover {
+	MARGIN-TOP: 43px; MARGIN-LEFT: 24px
+}
+#toggle SPAN {
+	FONT-SIZE: 24px; WIDTH: 66px; LINE-HEIGHT: 62px; HEIGHT: 62px
+}
+.headinghome {
+	MARGIN-TOP: 80px; PADDING-LEFT: 35px; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(../images/h1.gif) no-repeat left top; MARGIN-LEFT: 380px; COLOR: #dfecf4; LINE-HEIGHT: 40px; POSITION: absolute; HEIGHT: 40px
+}
+.nofrks {
+	MARGIN-TOP: 390px; FONT-SIZE: 11px; MARGIN-LEFT: 590px; CURSOR: default; COLOR: #636e2c; POSITION: absolute
+}
+.nofrks:hover {
+	COLOR: #999999
+}
+.entrytext1 {
+	MARGIN-TOP: 130px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 420px; WIDTH: 250px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute; HEIGHT: 50px
+}
+.entrytext1 A {
+	COLOR: #d9aa06; TEXT-DECORATION: none
+}
+.entrytext1 A:hover {
+	CURSOR: pointer! important; TEXT-DECORATION: underline
+}
+.entrytext2 {
+	MARGIN-TOP: 130px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 690px; WIDTH: 250px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute; HEIGHT: 50px
+}
+.entrytext3 {
+	MARGIN-TOP: 210px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 420px; WIDTH: 250px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute; HEIGHT: 50px
+}
+.entrytext4 {
+	MARGIN-TOP: 210px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 690px; WIDTH: 250px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute; HEIGHT: 50px
+}
+.entrytext1:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+.entrytext2:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+.entrytext3:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+.entrytext4:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+.sloganunderlight {
+	MARGIN-TOP: 394px; MARGIN-LEFT: 262px; COLOR: #636e2c; POSITION: absolute
+}
+.sloganunderlight:hover {
+	CURSOR: default; COLOR: #dfecf4
+}
+.copyright {
+	MARGIN-TOP: 440px; FONT-SIZE: 11px; MARGIN-LEFT: 74px; COLOR: #37576b; LINE-HEIGHT: 20px; POSITION: absolute; TEXT-ALIGN: center
+}
+.copyright A {
+	COLOR: #417798; TEXT-DECORATION: none
+}
+.copyright A:hover {
+	
+}
+.headingoffers {
+	MARGIN-TOP: 100px; PADDING-LEFT: 35px; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(../images/h2offers.gif) no-repeat left top; MARGIN-LEFT: 724px; COLOR: #dfecf4; LINE-HEIGHT: 30px; POSITION: absolute; HEIGHT: 30px
+}
+.offerstext {
+	MARGIN-TOP: 140px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 764px; WIDTH: 250px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute
+}
+.offerstext:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+#billboardnavigation {
+	Z-INDEX: 10; MARGIN-LEFT: 60px; POSITION: absolute; TOP: 67px
+}
+#billboardnavigation LI {
+	DISPLAY: block; BACKGROUND: url(../images/billbnav.gif) no-repeat left top; FLOAT: left; MARGIN-RIGHT: 16px; LIST-STYLE-TYPE: none; HEIGHT: 14px
+}
+#billboardnavigation A {
+	PADDING-RIGHT: 4px; DISPLAY: block; PADDING-LEFT: 16px; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; TEXT-TRANSFORM: uppercase; COLOR: #417798; HEIGHT: 30px; TEXT-DECORATION: none
+}
+#billboardnavigation A:hover {
+	BACKGROUND-POSITION: 6px 13px; BACKGROUND-IMAGE: url(../images/blilboardlink.gif); COLOR: #4287ae; BACKGROUND-REPEAT: no-repeat
+}
+#billboardnavigation A.active {
+	BACKGROUND-POSITION: 6px 13px; BACKGROUND-IMAGE: url(../images/blilboardlink.gif); COLOR: #4287ae; BACKGROUND-REPEAT: no-repeat
+}
+#billboardscrollwrapper {
+	MARGIN-TOP: 85px; MARGIN-LEFT: 59px; OVERFLOW: hidden; WIDTH: 596px; COLOR: #417798; POSITION: absolute; HEIGHT: 338px
+}
+#billboardscrollwrapper A {
+	COLOR: #c57917; TEXT-DECORATION: none
+}
+#billboardintrotext {
+	PADDING-LEFT: 10px; BACKGROUND: url(../images/billintro.gif) no-repeat right 50%; LEFT: 0px; WIDTH: 586px; TOP: 0px; HEIGHT: 348px
+}
+#paket1 {
+	PADDING-LEFT: 10px; BACKGROUND: url(../images/pack1.gif) no-repeat right 50%; LEFT: 596px; WIDTH: 586px; TOP: 0px; HEIGHT: 348px
+}
+#paket1 .orange {
+	COLOR: #c57917
+}
+#paket2 {
+	PADDING-LEFT: 10px; BACKGROUND: url(../images/pack2.gif) no-repeat right 50%; LEFT: 1192px; WIDTH: 586px; TOP: 0px; HEIGHT: 348px
+}
+#paket3 {
+	PADDING-LEFT: 10px; BACKGROUND: url(../images/pack3.gif) no-repeat right 50%; LEFT: 1788px; WIDTH: 586px; TOP: 0px; HEIGHT: 348px
+}
+#paket4 {
+	PADDING-LEFT: 10px; BACKGROUND: url(../images/pack4.gif) no-repeat right 50%; LEFT: 2384px; WIDTH: 586px; TOP: 0px; HEIGHT: 348px
+}
+.under {
+	MARGIN-BOTTOM: 5px; MARGIN-LEFT: 10px
+}
+#design {
+	BACKGROUND-POSITION: 420px -48px; BACKGROUND-IMAGE: url(../images/design.gif); BACKGROUND-REPEAT: no-repeat
+}
+#coding {
+	BACKGROUND-POSITION: 345px -49px; BACKGROUND-IMAGE: url(../images/cssxhtml.gif); BACKGROUND-REPEAT: no-repeat
+}
+#programming {
+	BACKGROUND-POSITION: 300px -50px; BACKGROUND-IMAGE: url(../images/cms.gif); BACKGROUND-REPEAT: no-repeat
+}
+#webmastering {
+	BACKGROUND-POSITION: 200px -4px; BACKGROUND-IMAGE: url(../images/webmastering.gif); BACKGROUND-REPEAT: no-repeat
+}
+.hidden {
+	VISIBILITY: hidden; WIDTH: 0px; HEIGHT: 0px
+}
+H3.nofrksoffers {
+	MARGIN-TOP: 15px; PADDING-LEFT: 70px; FONT-SIZE: 14px; BACKGROUND: url(../images/nofrks.gif) no-repeat left 50%; MARGIN-BOTTOM: 5px; MARGIN-LEFT: 7px; LINE-HEIGHT: 40px; HEIGHT: 27px
+}
+H3.basic {
+	MARGIN-TOP: 10px; BACKGROUND: url(../images/basic.gif); MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 200px; HEIGHT: 47px
+}
+H3.advanced {
+	MARGIN-TOP: 10px; BACKGROUND: url(../images/advanced.gif); MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 200px; HEIGHT: 47px
+}
+H3.premium {
+	MARGIN-TOP: 10px; BACKGROUND: url(../images/premium.gif); MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 200px; HEIGHT: 47px
+}
+H3.joomlapro {
+	MARGIN-TOP: 10px; BACKGROUND: url(../images/joomlapro.gif); MARGIN-BOTTOM: 5px; MARGIN-LEFT: 5px; WIDTH: 200px; HEIGHT: 47px
+}
+.packimages {
+	MARGIN-LEFT: 50px; HEIGHT: 83px
+}
+.plus {
+	BACKGROUND: url(../images/plus.gif); FLOAT: left; WIDTH: 23px; HEIGHT: 83px
+}
+.design {
+	MARGIN-TOP: 1px; BACKGROUND: url(../images/design.gif); FLOAT: left; WIDTH: 66px; HEIGHT: 83px
+}
+.cssxhtml {
+	MARGIN-TOP: 1px; BACKGROUND: url(../images/cssxhtml.gif); FLOAT: left; WIDTH: 81px; HEIGHT: 83px
+}
+.cms {
+	MARGIN-TOP: 1px; BACKGROUND: url(../images/cms.gif); FLOAT: left; WIDTH: 51px; HEIGHT: 83px
+}
+.modules {
+	MARGIN-TOP: 1px; BACKGROUND: url(../images/modules.gif); FLOAT: left; WIDTH: 64px; HEIGHT: 83px
+}
+.joomla {
+	MARGIN-TOP: 1px; BACKGROUND: url(../images/joomla.gif); FLOAT: left; WIDTH: 55px; HEIGHT: 83px
+}
+.design:hover {
+	BACKGROUND-POSITION: 0px -1px; MARGIN-BOTTOM: 1px; HEIGHT: 84px
+}
+.cssxhtml:hover {
+	BACKGROUND-POSITION: 0px -1px; MARGIN-BOTTOM: 1px; HEIGHT: 84px
+}
+.cms:hover {
+	BACKGROUND-POSITION: 0px -1px; MARGIN-BOTTOM: 1px; HEIGHT: 84px
+}
+.modules:hover {
+	BACKGROUND-POSITION: 0px -1px; MARGIN-BOTTOM: 1px; HEIGHT: 84px
+}
+.joomla:hover {
+	BACKGROUND-POSITION: 0px -1px; MARGIN-BOTTOM: 1px; HEIGHT: 84px
+}
+.pricebasic {
+	RIGHT: 0px; BACKGROUND: url(../images/pricebasic.gif); WIDTH: 163px; BOTTOM: 7px; POSITION: absolute; HEIGHT: 47px
+}
+.priceadvanced {
+	RIGHT: 0px; BACKGROUND: url(../images/priceadvanced.gif); WIDTH: 163px; BOTTOM: 7px; POSITION: absolute; HEIGHT: 47px
+}
+.pricepremium {
+	RIGHT: 0px; BACKGROUND: url(../images/pricepremium.gif); WIDTH: 163px; BOTTOM: 7px; POSITION: absolute; HEIGHT: 47px
+}
+.pricejoomla {
+	RIGHT: 0px; BACKGROUND: url(../images/pricejoomla.gif); WIDTH: 163px; BOTTOM: 7px; POSITION: absolute; HEIGHT: 47px
+}
+.headingportfolio {
+	MARGIN-TOP: 200px; PADDING-LEFT: 35px; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(../images/h2portfolio.gif) no-repeat left top; MARGIN-LEFT: 10px; COLOR: #dfecf4; LINE-HEIGHT: 30px; POSITION: absolute; HEIGHT: 30px
+}
+.portfoliotext {
+	MARGIN-TOP: 240px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN-LEFT: 45px; WIDTH: 215px; COLOR: #dfecf4; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute
+}
+.portfoliotext:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+#clients {
+	MARGIN-TOP: 100px; FONT-SIZE: 14px; MARGIN-LEFT: 351px; WIDTH: 588px; LINE-HEIGHT: 18px; POSITION: absolute; HEIGHT: 120px
+}
+#clients UL.left {
+	MARGIN-TOP: 18px; PADDING-LEFT: 10px; FLOAT: left; WIDTH: 176px; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+#clients UL.middle {
+	MARGIN-TOP: 18px; PADDING-LEFT: 10px; FLOAT: left; WIDTH: 176px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+#clients UL.right {
+	MARGIN-TOP: 18px; PADDING-LEFT: 10px; FLOAT: left; WIDTH: 176px; TEXT-ALIGN: left
+}
+#clients LI {
+	FLOAT: left; WIDTH: 100%; LIST-STYLE-TYPE: none
+}
+#clients A {
+	COLOR: #dfecf4; TEXT-DECORATION: none
+}
+#clients A:hover {
+	COLOR: #d9aa06
+}
+#clients A.active {
+	FONT-WEIGHT: bold; COLOR: #d9aa06
+}
+#clients A.inactive {
+	FONT-WEIGHT: normal; COLOR: #dfecf4
+}
+.random {
+	FLOAT: right
+}
+.details {
+	MARGIN-TOP: 250px; PADDING-LEFT: 30px; FONT-SIZE: 14px; MARGIN-LEFT: 325px; WIDTH: 500px; LINE-HEIGHT: 22px; POSITION: absolute; HEIGHT: 320px
+}
+.detailstext A {
+	TEXT-DECORATION: none
+}
+.detailstext A:hover {
+	COLOR: #d9aa06
+}
+.detailsimage {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 90px; POSITION: absolute
+}
+H4 {
+	FONT-SIZE: 16px; MARGIN-BOTTOM: 2px; COLOR: #dfecf4
+}
+.headingcontact {
+	MARGIN-TOP: 220px; PADDING-LEFT: 35px; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(../images/h2contact.gif) no-repeat left top; MARGIN-LEFT: 240px; COLOR: #dfecf4; LINE-HEIGHT: 30px; POSITION: absolute; HEIGHT: 30px
+}
+.adress {
+	MARGIN-TOP: 280px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 280px; WIDTH: 200px; BORDER-BOTTOM: #417798 2px solid; POSITION: absolute
+}
+.adress:hover {
+	CURSOR: default; BORDER-BOTTOM: #dfecf4 2px solid
+}
+#contactform {
+	MARGIN-TOP: 160px; PADDING-LEFT: 20px; BACKGROUND: url(../images/form.gif) no-repeat; MARGIN-LEFT: 508px; WIDTH: 416px; COLOR: #ddeaf2; PADDING-TOP: 20px; POSITION: absolute; HEIGHT: 290px
+}
+.contacttext {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; WIDTH: 130px; BORDER-TOP-STYLE: none; PADDING-TOP: 12px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+.contacttext_err {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; WIDTH: 130px; COLOR: #d71a1a; BORDER-TOP-STYLE: none; PADDING-TOP: 12px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 20px; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+.contactselect {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 10px; FONT-SIZE: 14px; FLOAT: left; BACKGROUND-IMAGE: url(../images/inputbox.gif); MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; WIDTH: 230px; COLOR: #5c9ac3; PADDING-TOP: 12px; HEIGHT: 20px
+}
+.contactselect_err {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 10px; FONT-SIZE: 14px; FLOAT: left; BACKGROUND-IMAGE: url(../images/inputerror.gif); MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; WIDTH: 230px; COLOR: #5c9ac3; PADDING-TOP: 12px; HEIGHT: 20px
+}
+.contactselect_err:unknown {
+	BACKGROUND-POSITION: 0px -40px; COLOR: #ddeaf2
+}
+.contactselect:unknown {
+	BACKGROUND-POSITION: 0px -40px; COLOR: #ddeaf2
+}
+.contacttextarea {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 10px; FONT-SIZE: 14px; FLOAT: left; BACKGROUND-IMAGE: url(../images/textarea.gif); MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; MARGIN-LEFT: -1px; OVERFLOW: auto; WIDTH: 232px; COLOR: #5c9ac3; PADDING-TOP: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 196px
+}
+.contacttextarea:unknown {
+	BACKGROUND-POSITION: 0px -220px; COLOR: #ddeaf2
+}
+.contacttextarea_err {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: 0px 0px; PADDING-LEFT: 10px; FONT-SIZE: 14px; FLOAT: left; BACKGROUND-IMAGE: url(../images/textarea-error.gif); MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 12px; MARGIN-LEFT: -1px; OVERFLOW: auto; WIDTH: 232px; COLOR: #5c9ac3; PADDING-TOP: 12px; HEIGHT: 196px
+}
+.contacttextarea_err:unknown {
+	BACKGROUND-POSITION: 0px -220px; COLOR: #ddeaf2
+}
+.clear {
+	CLEAR: both; VISIBILITY: hidden; WIDTH: 0px! important; HEIGHT: 0px! important
+}
+.buttonreset {
+	BACKGROUND-POSITION: 0px 0px; MARGIN-TOP: -120px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../images/sendreset.gif); MARGIN-LEFT: 0px; WIDTH: 60px; COLOR: #ddeaf2; POSITION: absolute; HEIGHT: 30px
+}
+.buttonsend {
+	BACKGROUND-POSITION: 0px 0px; MARGIN-TOP: -120px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../images/sendreset.gif); MARGIN-LEFT: 68px; WIDTH: 60px; COLOR: #ddeaf2; POSITION: absolute; HEIGHT: 30px
+}
+.buttonsend:hover {
+	BACKGROUND-POSITION: 0px -30px; CURSOR: pointer! important; COLOR: #40769a
+}
+.buttonreset:hover {
+	BACKGROUND-POSITION: 0px -30px; CURSOR: pointer! important; COLOR: #40769a
+}
+.buttonsend:unknown {
+	outline: none
+}
+.buttonreset:unknown {
+	outline: none
+}
+BODY#german #navigation #linkPack {
+	WIDTH: 100px; MARGIN-RIGHT: 5px
+}
+BODY#german #navigation #linkPack:hover {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+BODY#german #navigation .active#linkPack {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+BODY#serbian #navigation #linkHome {
+	WIDTH: 100px; MARGIN-RIGHT: 5px
+}
+BODY#serbian #navigation #linkHome:hover {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+BODY#serbian #navigation .active#linkHome {
+	BACKGROUND: url(../images/portfoliohover.gif)
+}
+BODY#serbian #navigation #linkPack {
+	WIDTH: 89px
+}
+BODY#serbian #navigation #linkPack:hover {
+	BACKGROUND: url(../images/contacthover.gif)
+}
+BODY#serbian #navigation .active#linkPack {
+	BACKGROUND: url(../images/contacthover.gif)
+}

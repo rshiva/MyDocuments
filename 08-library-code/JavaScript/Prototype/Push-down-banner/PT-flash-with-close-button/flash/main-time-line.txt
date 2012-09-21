@@ -1,0 +1,7 @@
+创建 FlashTracker 和 Blaster 的实例
+
+设置 promotion information
+	其中 clickLocation 是通过 ExternalInterface.call 调用浏览器 window object 的 window.location.href.toString 方法获取当前的 URL
+	
+给隐形按钮（覆盖整个 banner）添加 listener
+	在 listener 里调用 FlashTracker 的 countTotalClick() 计算总点击， countClickLocation() 点击位置，reDirect() 导向目的连接。

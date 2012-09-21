@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>index</title>
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="js.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			Event.observe(window,'load',function(){
+				var iFlippy=new flippy("flippy","flippy-content","flippy-btn","flippy-nav");
+			}); 
+		</script>
+	</head>
+	<body>
+		<div id="flippy">
+			<div id="content1" class="flippy-content">
+				<h2>Article 1</h2>
+				<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et, accumsan id, rutrum ut, nisi. Vestibulum ante est, dignissim ut, commodo eu, rhoncus ac, nunc. </p>
+				<p><a class="more" href="#" alt="">Read More</a></p>
+			</div>
+			
+			<div id="content2" class="flippy-content" style="display:none">
+				<h2>Article 2</h2>
+				<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam.</p>
+				<p><a class="more" href="#" alt="">Read More</a></p>
+			</div>
+			
+			<div id="content3" class="flippy-content" style="display:none;">
+				<h2>Article 3</h2>
+				<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et. </p>
+				<p><a class="more" href="#" alt="">Read More</a></p>
+			</div>
+			
+			<div id="content4" class="flippy-content" style="display:none;">
+				<h2>Article 4</h2>
+				<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et. Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu.</p>
+				<p><a class="more" href="#" alt="">Read More</a></p>
+			</div>
+			
+			<div id="flippy-nav">
+				<ul>
+					<li class="current"><a class="flippy-btn" href="#" alt="">1</a></li>
+					<li><a class="flippy-btn" href="#" alt="">2</a></li>
+					<li><a class="flippy-btn" href="#" alt="">3</a></li>
+					<li><a class="flippy-btn" href="#" alt="">4</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>	
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>index</title>
+		<link rel="stylesheet" href="base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/prototype.js"></script>
+		<script type="text/javascript" charset="utf-8" src="javascripts/prototype/scriptaculous.js"></script>
+		<script type="text/javascript" charset="utf-8" src="javascripts/cookies_helper.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			Event.observe(window,'load',function(){
+				iPushDown=new pushDownBanner("pushDown-content","pushDown-openBtn","pushDown-closeBtn",true);
+			}); 
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<h2 id="pushDown-openBtn"><a href="#">Article Title</a></h2>
+			<div id="pushDown-content" class="/" style="overflow: visible; display:none;">
+				<img src="images/img.jpg" alt="" />
+				<h2>Article title</h2>
+				<p>Urna non sem sollicitudin tempor. In hac habitasse platea dictumst. Cras egestas, elit sed vestibulum mollis, sapien nibh fermentum arcu, ut auctor arcu lectus et diam. Vestibulum tortor est, fringilla et, accumsan id, rutrum ut, nisi. Vestibulum ante est, dignissim ut, commodo eu, rhoncus ac, nunc. </p>
+				<a id="pushDown-closeBtn">CLOSE</a>
+			</div>
+		</div>
+	</body>	
+</html>

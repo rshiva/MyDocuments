@@ -1,0 +1,19 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, small, strike, strong, sub, sup, tt dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+    text-decoration: none;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+    font: 13px Arial,Verdana,Sans-Serif;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+
