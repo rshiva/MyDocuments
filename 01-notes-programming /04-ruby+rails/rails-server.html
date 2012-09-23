@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link href="css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>A History of Ruby on Rails Deployment</h1>
+ 
+ <p>Ruby on Rails is a powerful tool for converting a user’s web request into dynamic Hypertext Markup Language (HTML). Rails does not, however, actually communicate with the user itself. Like all web application frameworks, it communicates via a web server. The web server listens for Hypertext Transfer Protocol (HTTP) requests, passes them to the Rails process, retrieves the result, and returns that result back over the wire to the user.</p>
+ <p>The initial server used for Rails was WEBrick, which is written entirely with Ruby and bundled with releases of the Ruby interpreter. Because it is available in any environment that can run Rails, WEBrick remains the default server for Rails and is invoked by the Script/Server command from a Rails application, if no other server is available. However, its performance and scalability characteristics are poor, and it’s rarely used in production.</p>
+ <p>Over time, a server named Mongrel has emerged as the most commonly used alternative to WEBrick for both development and production, due to better performance and greater flexibility. In development mode, typically a single Mongrel instance is run; however, in production, a cluster of multiple instances is run for increased performance. (Until very recently, Rail’s single-threaded nature made multiple servers a practical requirement for any production system.) The resulting Mongrel cluster requires separate load-balancing software to distribute requests among the Mongrel instances. In production, load balancing for Mongrel is often handled by an external web server, such as Apache, which also handles requests for static content not managed by Rails.</p>
+ <p> Other languages used for web frameworks, such as PHP and Python, frequently use an Apache module designed to interact with that language, such as mod_php or mod_python. For various non-technical reasons, development on an Apache module for Ruby lagged behind other application server solutions until Phusion released what had been called mod_rails under the name Phusion Passenger. Phusion Passenger, like the other Apache modules, uses Apache to handle basic web server and load-balancing needs while Passenger handles the interaction with Ruby and Rails.</p>
+</body>
+</html>
