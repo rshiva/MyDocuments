@@ -1,0 +1,158 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1         28351          28351        Scene 1
+    2         17709          46060          2
+    3             2          46062          3
+    4             2          46064          4
+    5             2          46066          5
+    6            10          46076          6
+    7             2          46078          7
+    8             2          46080          8
+    9             2          46082          9
+   10             2          46084          10
+   11             2          46086          11
+   12             2          46088          12
+   13             2          46090          13
+   14             2          46092          14
+   15             2          46094          15
+   16           308          46402          16
+   17             2          46404          17
+   18             2          46406          18
+   19             2          46408          19
+   20          1498          47906          20
+   21           406          48312          21
+   22           106          48418          22
+   23             2          48420          23
+   24             2          48422          24
+   25             2          48424          25
+   26             2          48426          26
+   27             2          48428          27
+   28             2          48430          28
+   29             2          48432          29
+   30             2          48434          30
+   31             2          48436          31
+   32             2          48438          32
+   33             2          48440          33
+   34             2          48442          34
+   35             2          48444          35
+   36             2          48446          36
+   37             2          48448          37
+   38             2          48450          38
+   39           166          48616        Scene 2
+   40             2          48618          2
+   41             2          48620          3
+   42             2          48622          4
+   43             2          48624          5
+   44             2          48626          6
+   45             2          48628          7
+   46             2          48630          8
+   47             2          48632          9
+   48             2          48634          10
+   49             2          48636          11
+   50             2          48638          12
+   51             2          48640          13
+   52             2          48642          14
+   53             2          48644          15
+   54             2          48646          16
+   55             2          48648          17
+   56             2          48650          18
+   57             2          48652          19
+   58            15          48667          20
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                         128           562
+Scene 2                           0             0
+
+Embedded Objects                822             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+but89                             0             0
+drawinplace                       0             0
+tellmoviebut                     33             0
+trainsback                       49             0
+ppshad                           90             0
+loader                            0             0
+cropmarksguide                    0             0
+cropmark                          0             0
+mainbkgnd                        56             0
+temp9                            62             0
+colorsgraphic                     0             0
+traincolors                       0             0
+arrowbut                        111             0
+allshapes                         0             0
+totaltrain                        0             0
+spacing illustrator               0             0
+traintoalphaforalphamov           0             0
+alphamov                          0             0
+grow                              0             0
+circle9                           0             0
+helptext                        174          1711
+panic                           236             0
+logo                              0             0
+trianglenewgraphic               36             0
+starnewgraphic                   54             0
+squarenewgraphic                  0             0
+funknewgraphic                  106             0
+circlenewgraphic                 60             0
+arrow9                            0             0
+erasermovie                       0             0
+erasergraphic                   102            46
+eraserbut                         0             0
+caboose                         111             0
+grain                            98             0
+pass                            130             0
+coalcar                         283             0
+train                           298             0
+funk                              0             0
+star                              0             0
+triangle                          0             0
+square                            0             0
+circlegraphic                     0             0
+backgraphic                      48             0
+background                        0             0
+piebut                            0             0
+pie                              35             0
+invisobut                        35             0
+circle                            0             0
+edge                             33             0
+sliderbut                        52             0
+drawslider                        0             0
+line                             31             0
+slider                           56             0
+tempgr                            0             0
+temp                              0             0
+buttontemp                        0             0
+arrow                            52             0
+indicator                         0             0
+drawer                            0            40
+drawerinplace                     0             0
+drawerwhileinplace                0             0
+eraser                            0            39
+but                             144             0
+repeat                            0             0
+Push Button Red                 126             0
+Diamond Blue                      0             0
+
+Bitmap                     Compressed  Original    Compression
+-----------------------    ----------  ----------  ------------
+train.gif                        352        2756   Lossless
+NEMAnim_F01.gif                  958        5808   Lossless
+NEMAnim_F03.gif                 1006        5808   Lossless
+NEMAnim_F02.gif                 1061        5808   Lossless
+NEMAnim_F04.gif                  979        5808   Lossless
+NEMAnim_F05.gif                  988        5808   Lossless
+NEMAnim_F06.gif                  981        5808   Lossless
+NEMAnim_F07.gif                  969        5808   Lossless
+NEMAnim_F08.gif                 1178        5808   Lossless
+NEMAnim_F09.gif                  969        5808   Lossless
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Times New Roman               746        adersw
+CommercialScrD                862        Paeiklnr
+CopperplateTBolCon           4448         !"'(),-.:@BCFISWYabcdefghiklmnoprstuvwxyz

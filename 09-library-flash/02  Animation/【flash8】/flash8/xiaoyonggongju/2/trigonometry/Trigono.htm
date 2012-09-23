@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+   <TITLE>Flash Bible - ActionScript - Plug & Play - Trigonometric Functions</TITLE>
+   <META NAME="Author" CONTENT="copyright John Croteau & Flash Central 1997, 1998, 1999">
+   <META NAME="Description" CONTENT="Technical Notes for Flash">
+   <META NAME="Rating" CONTENT="General">
+   <META NAME="ROBOTS" CONTENT="ALL">
+   <META NAME="Keywords" CONTENT="Trig, Trigonometry, Plug and Play, ActionScript, Action Scripting, Flash, Splash, Macromedia, Technical Notes, Tech Notes, FAQ, Flash 3, Flash 4">
+</HEAD>
+<BODY>
+
+<CENTER>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/Flash3/cabs/swflash.cab#version=3,0,0,0"
+ WIDTH=550 HEIGHT=70>
+
+<PARAM NAME=movie VALUE="FB_Logo.swf">
+<PARAM NAME=loop VALUE=false>
+<PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high>
+<PARAM NAME=salign VALUE=T>
+<PARAM NAME=wmode VALUE=transparent>
+<PARAM NAME=bgcolor VALUE=#FFFFFF>
+
+<EMBED src="FB_Logo.swf" loop=false menu=false quality=high salign=T wmode=transparent bgcolor=#FFFFFF
+   WIDTH=550 HEIGHT=70
+   PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</EMBED>
+<NOEMBED><A HREF="/Tech" TARGET="_self"><IMG SRC="FT-Logo.gif" WIDTH=137 HEIGHT=70 BORDER=0></A></NOEMBED>
+</OBJECT>
+<BR>
+
+<Font Size =+2 Color = #996600>Plug & Play - Trig Functions</Font><P>
+</CENTER>
+<BLOCKQUOTE>
+We have two Plug & Play Trig movie clips (MCs).
+They both work the same but one just includes the sine and cosine functions    
+whereas the other has all 6 of the standard trigonometry functions. 
+The Sine & Cosine MC (3K) is found in the Sine-Cosine MC layer; 
+it is a guide layer because it is not used in the demo. 
+The TrigAll MC (4.2K) with all six trig functions is in the TrigAll MC layer. 
+Copy the needed MC to the main timeline of your FLA. 
+Make sure the Movie Clip is available from the place you will Call it. 
+Normally it is best to put it in a layer of its own so it will always be available.
+<P>
+These functions will work with any angle value (in degrees up to 11 digits long) including negative values and values above 360.
+Angles are rounded and not truncated to the nearest degree before processing. 
+Tangent, cotangent, secant and cosecant will return an infinite number for some angles and 
+Flash will return an error (#ERROR#) for these infinite numbers and for any division by zero. 
+In frame 1 of the Trig (TrigAll) MC there is a setting for 'Infinity' which is preset to 999999999 to provide a numeric value for infinity instead of the string error message. 
+You can change this to any value you desire.
+
+<PRE>
+Trig Functions: 
+
+   Sine         sin
+   Cosine       cos
+   Tangent      tan
+   Cotangent    cot
+   Secant       sec
+   Cosecant     csc
+</PRE>
+
+<P>
+</BLOCKQUOTE>
+<CENTER>
+
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/Flash3/cabs/swflash.cab#version=3,0,0,0"
+ WIDTH=380 HEIGHT=200>
+
+<PARAM NAME=movie VALUE="Trig.swf">
+<PARAM NAME=quality VALUE=high>
+<PARAM NAME=salign VALUE=B>
+<PARAM NAME=bgcolor VALUE=#00CCFF>
+
+<EMBED src="Trig.swf" quality=high salign=B wmode=transparent bgcolor=#00CCFF
+   WIDTH=575 HEIGHT=310
+   PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</EMBED>
+<NOEMBED><A HREF="/Tech" TARGET="_self"><IMG SRC="FT-Logo.gif" WIDTH=137 HEIGHT=70 BORDER=0></A></NOEMBED>
+</OBJECT>
+<BR>
+<A HREF="Trig">Download FLA in Zip format</A>
+</CENTER>
+<BLOCKQUOTE>
+<Font Size =+1 Color = #996600>Using the Routines</Font></Font><BR>
+If your variable is already named Angle then all you have to do is Call the appropriate function below: 
+The result of the function will be returned in the variable Answer.
+<PRE>
+     Call ("/Trig:sin")
+     Call ("/Trig:cos")
+     Call ("/Trig:tan")
+     Call ("/Trig:cot")
+     Call ("/Trig:sec")
+     Call ("/Trig:csc")
+</PRE>
+If your input variable is not named Angle then you will need to set Angle to be equal to your variable before the Call.
+Also, if the variable you will use with the result is not 'Answer' then following the Call you will need to set your variable to equal Answer.
+In the statement below substitute the name of your output variable for 'YourVarNameOut'.
+<PRE>
+Set Variable: "Angle" = YourVarNameIn
+  Call ("/Trig:sin")
+Set Variable: "YourVarNameOut" = Answer
+</PRE>
+
+</BLOCKQUOTE>
+<BR><BR><BR>
+</BODY>
+</HTML>

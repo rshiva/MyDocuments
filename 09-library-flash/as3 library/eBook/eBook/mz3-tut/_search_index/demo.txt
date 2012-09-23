@@ -1,0 +1,679 @@
+VservU-Kopf.jpg
+LogoMZ3.png
+flag.de.gif
+flag.en.gif
+pdf.jpg 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+Tutorial T-1 
+
+User Manuel 
+
+PDF2MZ3 Tools 
+
+ 
+
+Converting a PDF File into a MegaZine3 Flipbook 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Download Tutorial 1 
+
+ 
+
+
+Document Draft: 1-3-2 MegaZine3 is free for personal use 
+MZ3-Version: V2.0.x Commercial Licenses are available in our shop 
+Date: APR 24, 2010 
+
+ 
+
+
+ 
+
+Table of Content 
+
+ 
+Preparation __________________________________________________________________________ 3 
+Overview __________________________________________________________________________ 3 
+Downloads _________________________________________________________________________ 4 
+First Test ___________________________________________________________________________ 5 
+Directory Structure __________________________________________________________________ 5 
+MegaZine3 Framework _______________________________________________________________ 7 
+Summary __________________________________________________________________________ 7 
+Converting a PDF File into a MegaZine3 Flipbook ____________________________________________ 8 
+Step 1: calling _set_version ____________________________________________________________ 8 
+Second Step: Presenting the built Book __________________________________________________ 9 
+Solving the “FLASH sandbox“Problem ____________________________________________________ 10 
+Directory Structure ___________________________________________________________________ 12 
+Updates/Upgrades ___________________________________________________________________ 13 
+Links _______________________________________________________________________________ 13 
+Common Problems and Solutions ________________________________________________________ 14 
+
+Preparation 
+
+Overview 
+
+This tutorial shows the use of the pdf2mz3 tools, a set o f command files supporting in an easy and fast 
+creation of MegaZine3 Flipbooks out of PDF files 
+
+Three command files work together: 
+
+1. _set_version Inputs are book name, version name, number of pages 
+If a version name is given, a version specific configuration file is created (first time) 
+or used (if already present) present 
+Calls _set_param, followed by _pdf2mz3 
+Optimal you can suppress the (repeated) conversion of PDF pages and define, 
+what kind of book should be created (server version or preparation for media like 
+CD, DVD, download or Memory Stick 
+2. _set_param.bat this is the core configuration file. Many parameters can be set; all are commented. 
+3. _pdf2mz3.bat this command file does all the work: creation of the directory structure, conversion 
+of the swf pages out of the PDF file, building of the megazine.mz3 and index files. 
+
+
+For the conversion of the PDF data into swf pages the tool pdf2sfw is used and must be installed on your 
+computer. 
+
+As preparation the following steps are needed: 
+
+1. Download of the complete pdf2mz3 demo package and the pdf2swf software 
+2. Creation of a folder to hold all future books and the MegaZine3 software (the base folder, named as 
+you like it) 
+3. Unzip the pdf2mz3 demo package into that folder. This provides everything needed: 
+the 3 pdf2mz3 Tool files and a complete MegaZine3 version (Binaries) 
+4. Install pdf2swf tools into the default folder 
+5. Copy the PDF files you want to convert into the base folder 
+6. Optional: modify the parameters in _set_param.bat 
+7. Call _set_version and enter all 5 requested parameters: 
+a. book name (identical with your PDF name 
+b. version name 
+c. page count 
+d. Flags to suppress conversion of pages and defining what book to build 
+
+
+
+8. Adjust FLASH security settings 
+9. For an online presence: 
+Upload the base folder (without PDF files and Media-Folders “book_CD” to your server 
+
+
+ 
+
+
+MZ3-Logo.png
+Important: Avoid special characters in your PDF file and book name 
+Use letters, digits and “_” only 
+No space within the name or the command files will not work! 
+All pages of the PDF file must have the same size and aspect ratio 
+The PDF file must not be password protected. 
+
+ 
+
+You can follow a brief FaceBook video to see how fast a setup and conversion can be: 
+
+http://www.youtube.com/watch?v=WpVxrp52t1w 
+
+ 
+
+Downloads 
+
+The safest way is to download the complete pdf2mz3 demo package, containing the pdf2mz3 tools, a 
+complete MegaZine3 version, a demo PDF file (license overview) and this tutorial. 
+
+ 
+
+Full ldf2mz3 demo 
+
+ 
+
+ 
+
+
+pdf2mz3 tools only 
+(download link) 
+
+ 
+
+ 
+
+
+Please download the needed 3rd party tool pdf2swf here: 
+
+How to install 
+pdf2swf 
+Online Video 
+
+ 
+
+
+The installation of pdf2swf is shown in a short 
+video you can also download as multimedia PDF file 
+(Acrobat Reader version 9 needed!). 
+
+pdf2swf Tools 
+(download link) 
+
+ 
+
+ 
+
+
+
+First Test 
+
+After the download of the complete package (see green button on Downloads page 4) please follow these 
+steps to prove everything is working: 
+
+• Unzip the package into a new folder, named at will. This folder will take all future books and the 
+MegaZine3 software. You might have several of such folders, with different versions of the 
+MegaZine3 Software, different projects of your publications, newspapers by year, … 
+
+
+All books in one base folder share the same version of MegaZine3 
+
+• Install pdf2swf in the default folder (see Downloads: pdf2swf package, link on previous page). 
+• Start „_set_version.bat“ with a double click. 
+• Accept all proposed default values 
+• Check the information in the black DOS-like window that opens and then click any key to see the 
+converted book 
+
+
+The demo book first opens in full screen. It is the media version, ready to be copied “as is” onto a CD, DVD 
+or stick. Or as offered for download. 
+
+Leave full screen mode in hitting <ESC>. Go back to the command window and hit any key again to start 
+the book as „server version „ in your browser 
+
+Most probably you now do not see any content but only empty, grey pages. 
+Please follow the steps explained in this tutorial in chapterSolving the “FLASH sandbox“ProblemSolving 
+the “FLASH sandbox“Problem on page 10 to exclude your base folder from those checks... 
+
+After doing so in pointing to your base folder refresh your browser and the book now should work. 
+
+Now everything is prepared and you can start mass production of MegaZine3 books out of all your PDF 
+files. All pages of a PDF book should be in one file and must have the same dimension. 
+
+The next chapter provides more details on the conversion, describing some additional options and 
+provides background information. At the end of this paper you’ll find some hints for Common Problems 
+and Solutions. 
+
+Directory Structure 
+
+The name of your base folder can be freely defined. In this package we used mz3-demo as name. 
+You can have several of such base folders to hold different projects or Software and configuration 
+versions. But all such base folders must include the pdf2mz3 tool files and a complete MegaZine3 
+Software 
+
+With the first start of pdf2mz3 a standard directory structure is created to hodl all your future files.. 
+Thais is realized by pdf2mz3.bat, which is called last 
+
+_set_version - _set_param - pdf2mz3 . 
+
+
+dir2.jpg 
+
+
+The pdf2mz3 tools are located in the base folder 
+together with the Megazine3 software, and, after 
+the first conversion process, the _search folder for 
+the search index files and the index file, which will 
+start the related MZ3 book. 
+
+The folder _custom_files is the place for your 
+customized data: company logo, special preloader, 
+modified pagebackground. 
+
+In absence of such files the standard and default 
+logo and preloader will be used. 
+
+
+ 
+
+ 
+
+Use _set_version to start every conversion. You 
+can enter the following parameters: 
+
+• Name of book 
+• Name of version 
+• Page count 
+• Do PDF conversion: yes/no 
+• Select what kind of book should be built: 
+server version or media version or both or 
+none 
+
+
+After providing the last parameter, the folders 
+and files are created and the conversion 
+performed, depending on what you selected. 
+
+After the conversion and when all files are 
+created, first the “CD book” is shown, and with 
+the next click in the command window the server 
+version is output in your browser (if you had the 
+tools create both versions). 
+
+ 
+
+ 
+
+
+MegaZine3 Framework 
+
+A complete MegaZine3 software binary package must be located in the base folder. You should use the 
+version that comes with the demo package (highly suggested, because with that the file megazine.exe is 
+provided, which is needed to build the media books!). 
+
+The pdf2mz3 tools manage everything for you and enable the use of one MegaZine3 version for all books 
+in the base folder. This makes maintenance easy. Because of the separation of custom specific files (like 
+logo, preloader) and the megazine software, later updates are easy. 
+
+Durch diese automatische Verwaltung sind Änderungen schnell gemacht. 
+
+Summary 
+
+• Every book needs to have a unique name without any special characters 
+• The book must be named after the PDF file (without extension) 
+• That book name is used for all derivative names and folders created automatically by the pdf2mz3 
+tools 
+• The folder _custom_files can be used to personalize your books with own logo and preloader. 
+With future tools (no more batch file based but with a GUI) we plan to support management of 
+customized ASUL files also. 
+• The book folder contains the megazine.mz3 file and data folders and files (pages, images, video, 
+sound). The related index file is located in the base folder. 
+• Books prepared for media are collected in folder named bookname_CD. Those books are either 
+started automatically by the autostart file provided or in calling 
+bookname_CD\megazine\megazine.exe 
+• If you define a version name (anything else but „n2 which tells the tools that now version should 
+be created), the same pdf file is used but a different _set_param file and book folder are created. 
+Example: version name: 1, 
+A folder demo_1\ will be created for pages converted out of the demo.pdf file. 
+A _set_param_1.bat will be created as copy of the standard _set_param.bat file where you can do 
+all modifications needed for the new version 1... 
+With the next call of _set_version.bat, providing the same book and version name, All modified 
+parameters of _set_param_1.bat will be used to create the MZ3 book demo_1. 
+• If in _custom_files a custom_logo, custom_pagebackground custom_preloader.swf are found, 
+those files will be used instead of the default file, the MegaZine3 Logo and MegaZine3-Preloader. 
+Fort he logo pagebackground .png, .jpg or.swf filescan be used. 
+
+
+. 
+
+
+screen1.jpg
+Converting a PDF File into a MegaZine3 Flipbook 
+
+The next chapters explain the conversion process and options in more detail. 
+
+Step 1: calling _set_version 
+
+If you already copied your PDF file into the base folder, you immediately can start in calling _set_version 
+with s double click. 
+
+You have to enter book and version name, page count and the control flags; or take the defaults. 
+
+ 
+
+ 
+Default name for book name is “demo”. Enter the name of your PDF file; without the .pdf extension. 
+And remember: rename your pdf file if you used special characters: a space will not work! 
+
+Next you can enter a version name, which will be appended to the book name with a „_“ separating both. 
+If you use that version name the first time, a _set_param file with that version name will not yet exist and 
+created for you automatically as copy of the standard _set_param file. You then can modify that file to do 
+the configuration for your version. This helps in testing different sets of parameters for the same book; 
+like quality settings, books size, zoom scales … 
+
+After entering the page count you can control how the pdf2mz3 tools behave: 
+You can skip conversion, whish is useful, if you already did a conversion already and only want to test a 
+new set of parameters, especially with big books. You can save a lot of time with that... 
+
+With the last parameter you decide what kind of book will be created: 
+
+• Server version 
+Only the MegaZine3 file megazine.mz3, the related index_bookname.html file, the book specific 
+folders pages, jpgpng, sound and video are built. 
+If you want to go online with your book, you upload the complete base folder (avoid uploading the 
+pdf files and the *_CD folders; not needed on the server side). If you built a new MZ3 book you 
+after that only upload the index file and the book folder. 
+• Book on Media version 
+everything needed will be put into one folder called bookname_CD, including the complete 
+MegaZine3 software, the customized files and the megazine executable. No index file needed but 
+an autoexec file provided. Advantage: no FLASH security problems. Disadvantage: no preloader, 
+complete copy of MegaZine3 needed. 
+
+
+
+IE-1.png
+Second Step: Presenting the built Book 
+
+The final book can be admired in your default browser after you read the information provided in the 
+command window, and after a click of whatever key 
+
+In case you built a media version, that book will show up immediately in full screen. 
+
+After checking of the book on how it behaves (the „look and feel“), including verification of additional 
+features as search (did you provide the book.txt file in _search_files?!) and customized 
+logo/preloader/pagebackground, you can start the server version with a next hit of any key in the 
+command window. 
+
+In case you see empty, grey pages as shown below, you did not do your FLASH security settings, the PDF 
+file is protected or the pages have not been convert yet (no page_lqx.swf files present). 
+Or something else went wrong… 
+
+ 
+
+ 
+
+The above screenshot shows: 
+
+• A modified Preloader, because a custom_preloader.swf file was located in the _custom_files 
+folder (not part of the demo package!) 
+• A modified page background, because a file custom_pagebackground.png was located in folder 
+_custom_files 
+• In case you provided your web address in _set_param.bat, a click on the logo will call that site. 
+
+
+ 
+
+
+IE-4.png 
+
+
+Solving the “FLASH sandbox“Problem 
+
+Flash is pretty picky regarding security, what in general is a good thing. But can drive you nuts ;-) 
+
+Flash does not allow moving deliberately across folder margins what is necessary if several books should 
+share one MageZine3 software installation. 
+
+Remark: 
+To have several different books sharing one MegaZine3 installation, the path and pointing to the pages 
+and images must be defined as relative path. Like “../book_1/pages/page_l1.swf 
+With „..“ telling the OS to go one folder up in the directory tree. Since all relative paths are based on the 
+location of the megazine/megazine.swf file, such relative path names are necessary. 
+
+To allow FLASH to move freely within a certain folder, that name of the folder must be added to the list of 
+folders accepted. This checking and security encapsulation also is known as “sandbox problem”. Try to 
+google for that and you’ll get several hits! 
+
+Fortunately there is an easy way to overcome that problem, which only exists on your local PC. On the 
+server side this is not requested. 
+
+The link needed to adjust the settings can be found in right clicking inside the books; or to be more 
+precise: within the container of the book (close to the book edge will do it). Flash has to have the focus 
+also, so probably you have to left click into the book first. 
+
+With the right click the Adobe “about window” opens: 
+
+And after a clicking on the question mark (this is a new behavior with the latest version!) an Adobe 
+window opens where you can do your setting. 
+
+
+IE-5.png
+IE-9.png
+IE-7.png
+IE-8.png
+Click on „global security settings“so a new page opens where you can with setting add“ can add your 
+folder to the list. 
+
+
+ 
+
+ 
+
+After that FLASH allows free access within that folder. If you 
+create a new folder, you have to add that folder to the list 
+also… same procedure. 
+
+ 
+
+ 
+
+Please keep in mind: 
+If you run into enpty, grey pages, this whould ring a the „FLASH security setting bell“! 
+
+Another possibility is that the pages cannot be found or the path is incorrect. If you use the pdf2mz2 tools 
+and carefully read the information presented, that usually is not the point. If you modify the index and 
+megazine.mz3 files directly (what is a common thing once you’re more experienced), this might become 
+your main problem. Then the console (hit the „#“ key when Flash has the focus) will give you some hints; 
+if it is enabled. What is the case if you use the pdf2mz3 tools ;-) 
+Also using http://validome.org can be very helpful to valiate your megazine.mz3 file. Again: ldf2mz3 
+should avoid those problems and create working files. 
+
+ 
+
+
+Directory Structure 
+
+These folders are created for you: 
+
+• _custom_files: folder to provide your modified custom files like: 
+o custom_preloader.swf 
+Will be used when file with that name it is present 
+o logo as png, jpg or swf file 
+Will be used when file with that name it is present 
+o pagebackground, as png, jpg or swf file 
+Placed behind the book and only visible if the front or back cover are opened (and the 
+book is closed, consuming only one page on stage). In that case the book gives room for 
+the pagebackground 
+
+
+
+• _search_index 
+The folder all your search index files go, you can create out of your PDF files with Acrobat using 
+<file – save text – text (available)>; or similar 
+• Demo 
+The folder your books is located in: here the megazine.mz3 file goes and all the folders for the 
+content like pages/, jpgpng/, sound, video 
+• demo/pages 
+Used to save the converted pages, named page_ln.swf and page_hn.swf, with „n“ being the page 
+number. The –l stands for lower quality and is used for monitor output, the _h is for the higher 
+quality files, used for prints. 
+Changing the zoomscale parameter you also can use the higher resolution pages for output on screen 
+when the actual zoom scale becomes higher than the defined trigger level for zoomscale. 
+Then for higher zoom levels the higher quality pages can be reloaded. 
+• demo/jpgpng 
+Folder prepared to hold images in jpg or png format; for individually designed pages 
+• demo/thumbs 
+This folder is for jpg images of pages, that can be used as thumbnails. To work like that the images 
+must be named 0.jpg, 1.jpg, 2.jpg, … and have the correct dimension/size. Which is 25% of a book’s 
+pagesize by default. Those thumbnails will be used by MegaZine3 at start up, as long as thumbnails 
+are not yet built our of the real, dynamic pages. If you have users with low performance computers 
+but good internet connection, this can speed up the availability of thumbnails. 
+• Thumbnails werden zur Seitenvorschau in der Übersicht verwendet und auch zur Darstelllung einer 
+
+
+Generated Files: 
+
+• Megazine.mz3: The mz3 key file, defining the book 
+• Index_demo.html: The related index file, named after the book: index_book.html 
+
+
+ 
+
+
+vservu1.png
+mighty2.png
+mighty1.png
+Updates/Upgrades 
+
+The MegaZine3 Framework can be accessed for future updates and upgrades via www.vservu.com or 
+www.megazine3.de, where download links are presented: 
+
+ 
+
+ 
+You can simply copy a complete set of MegaZine3 Binaries into your base folder. All customized data is 
+kept separate and will be copied into the megazine structure with the first call of pdf2mz3 tools 
+(_set_version in most cased) again. 
+
+Links 
+
+To learn more on how to configure the MegaZine3 system and more about all possible options and 
+parameters can be found in the Wiki. We might provide additional sources from time to time. 
+
+The Wiki lists all parameters and provides many details. Also more tutorials can be found. 
+
+ 
+
+
+
+Common Problems and Solutions 
+
+Due to our worldwide presence, we encounter many different setups. We cannot test every possible 
+configuration, but this list of potential problems hopefully helps: 
+
+Effekt 
+
+Potential problem 
+
+Hints for solutions 
+
+No book, monitor 
+shows a completely 
+grey window 
+
+Preloader file not found, 
+not called due to wrong 
+configuration of 
+index.html or defect 
+
+Is there a file named preloader.swf in folder 
+megazine/? If not: run _set_version again and 
+monitor the messages output in the window. 
+
+If there is a custom_preloader.sfw file, please rename 
+or take out, so MegaZine3 is using the default file. 
+
+Is another index.html working with MegaZine3? 
+
+No PDF conversion 
+
+Pdf2swf not installed 
+correctly, path to pdf2swf 
+incorrect 
+
+Re-install pdf2swf (see Fehler! Verweisquelle konnte 
+nicht gefunden werden.). 
+Adjust path to pdf2swf.exe in _set_param.bat. . 
+
+Book can be 
+opened and flipped, 
+but pages are 
+empty/grey 
+
+Access denied by FLASH 
+security settings 
+
+PDF file password 
+protected? 
+
+ 
+
+ 
+
+No swf pages converted 
+yet; no data available. 
+Wrong path to data 
+
+Click right into a grey page to have the Adobe „about 
+window“ opened. Change security settings to allows 
+access to your book folder.Solving the “FLASH 
+sandbox“Problem 
+
+Take out pass word protection in PDF file 
+
+Are pdf pages present?? 
+Check parameters you enter in _set_version. 
+Check information presented in command window. 
+
+Search plugin not 
+working 
+
+You need a special, 
+separate text file as index 
+file fort he search 
+
+Create such text file using Adobe Acrobat and save the 
+text file into the folder _search_index. 
+
+Creation in Acrobat is similar to 
+<File – save as text– Text (available)> 
+
+The message 
+„install Flash 
+Player“ pops up 
+
+No Flash Player available 
+or version outdated... 
+No MegaZine3 SW 
+present 
+
+Install Flash Player and/or update to latest revision.. 
+
+Check if folder megazine\ is existent in your base 
+folder. Did you download the latest version of 
+MegaZine3 and unzipped into the base directory? 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+forum1.png
+mighty3.png
+Many more details are discussed in our forum: 
+
+ 
+
+ 
+
+You can purchase commercial licenses in our 
+shop: 
+
+Enjoy using MegaZine3 and many happy 
+customers/user! 
+If you are happy with MegaZine2: 
+Please let others know! 
+To not miss any news, update or tutorial we 
+suggest you register our RSS feed at „New “ and 
+or Blogs: 
+http://www.vservu.com/News.htm 
+http://www.vservu.com/blogs 
+
+
+VservU-Kopf.jpg
+back.png
+LogoMZ3.png 
+
+
+
+

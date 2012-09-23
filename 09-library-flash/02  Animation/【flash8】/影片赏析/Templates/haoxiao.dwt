@@ -1,0 +1,27 @@
+<html>
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>闪吧资源</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body bgcolor="#FFFFFF" background="front_back2.gif" leftmargin="0" topmargin="0">
+<table width="779" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" valign="top" width="78"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="80" height="490">
+        <param name=movie value="2.swf">
+        <param name=quality value=high>
+        <embed src="2.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="80" height="490">
+        </embed> 
+      </object></td>
+    <td rowspan="2" valign="top" width="700"> 
+      <div align="right"></div>
+      <div align="center"><!-- #BeginEditable "2" -->{2}<!-- #EndEditable --></div>
+    </td>
+  </tr>
+  <tr> </tr>
+</table>
+</body>
+</html>

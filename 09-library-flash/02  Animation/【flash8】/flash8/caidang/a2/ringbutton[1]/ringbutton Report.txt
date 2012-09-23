@@ -1,0 +1,29 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          2271           2271        Intro
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Intro                             0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Animation                         0             0
+Ring                             98             0
+Ball                             92             0
+Circle 1                         78             0
+Button                            0            78
+Circle 2                          0             0
+
+Event sounds: 11KHz Mono 2 bit ADPCM
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+Sound                         769        11KHz Mono 2 bit ADPCM
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Arial Black                   344        Eenrt

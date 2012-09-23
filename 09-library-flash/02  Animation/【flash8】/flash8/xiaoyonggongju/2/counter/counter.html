@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<TITLE>Flash 4 - HitCounter</TITLE>
+</HEAD>
+<BODY>
+
+<h1>Flash 4 - HitCounter</h1>
+<p>
+This Counter reads the value from a textfile or from given parameter (same swf-file).
+</p>
+
+<p>
+<b>1. Variant: Reading from file &quot;counter.txt&quot;</b><br>
+The file has to be in the same direktory, with the following
+contents:<br>
+<pre>
+--- File: counter.txt -----------------------------------------------------------
+counter=01508
+---------------------------------------------------------------------------------</pre>
+</p>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=counter WIDTH=75 HEIGHT=20>
+ <PARAM NAME=movie VALUE="counter.swf">
+ <PARAM NAME=menu VALUE=false>
+ <PARAM NAME=quality VALUE=high>
+ <PARAM NAME=bgcolor VALUE=#FFFFFF>
+ <EMBED src="counter.swf" menu=false quality=high bgcolor=#FFFFFF
+ 	WIDTH=75 HEIGHT=20 TYPE="application/x-shockwave-flash" 
+	PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+
+
+
+
+<p>
+<b>2. Variant: Reading from given parameter</b><br>
+If you store the hits within a SQL-Database or use ASP.<br>
+Change the HTML code.<br>
+Object-Tag:<br>
+<pre>&lt;PARAM NAME=movie VALUE="counter.swf?c=12345"&gt;</pre>
+Embed-Tag:<br>
+<pre>&lt;EMBED src="counter.swf?c=12345" ...</pre>
+<b>Remember to change both, object param AND embed !!!</b>
+</p>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=counter WIDTH=75 HEIGHT=20>
+ <PARAM NAME=movie VALUE="counter.swf?c=12345">
+ <PARAM NAME=menu VALUE=false>
+ <PARAM NAME=quality VALUE=high>
+ <PARAM NAME=bgcolor VALUE=#FFFFFF>
+ <EMBED src="counter.swf?c=12345" menu=false quality=high bgcolor=#FFFFFF
+ 	WIDTH=75 HEIGHT=20 TYPE="application/x-shockwave-flash" 
+	PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+
+<br><br>
+<font size="-1">
+Flash 4 HitCounter by D. Schwarz (<a href="mailto:d.schwarz@gmx.net">d.schwarz@gmx.net</a>)
+</font>
+</BODY>
+</HTML>

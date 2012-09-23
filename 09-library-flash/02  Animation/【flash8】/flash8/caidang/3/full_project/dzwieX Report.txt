@@ -1,0 +1,34 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1            44             44        Scene 1
+    2            20             64          2
+    3            15             79          3
+    4         33935          34014          4
+    5             2          34016          5
+    6            29          34045          6
+    7             2          34047          7
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+music button                      0             0
+sound                           101             0
+no sound                         37             0
+note_1                            0             0
+tone_down                        37             0
+tone_up                           0             0
+note_1a                        2439             0
+noki                             34             0
+note_2                            0             0
+
+Event sounds: 22KHz Stereo 80 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+nowa.wav                    28927        22KHz Stereo 80 kbps MP3

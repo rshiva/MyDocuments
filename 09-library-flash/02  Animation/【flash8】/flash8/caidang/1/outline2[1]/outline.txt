@@ -1,0 +1,27 @@
+Title=This is me!&
+&ttlMaps=4&
+&nmMap1=the Mind&
+&ttlMap1Children=1&
+&nm1_1=Taijiquan&
+&urlDoc_1_1=http://www.derijen.nl/taiji&
+&nmMap2=A Day's Work&
+&ttlMap2Children=1&
+&nm2_1=My Employer&
+&urlDoc_2_1=http://www.kw1c.nl&
+&ttlMap3Children=3&
+&nmMap3=Flash&
+&nm3_1=Flashzone&
+&urlDoc_3_1=http://www.flashzone.com&
+&nm3_2=Flashkit&
+&urlDoc_3_2=http://www.flashkit.com&
+&nm3_3=Flasher&
+&urlDoc_3_3=http://www.flasher.com&
+&nmMap4=Aware&
+&ttlMap4Children=1&
+&nm4_1=Authorware&
+&urlDoc_4_1=http://www.kw1c.nl/aware&
+&ttlMap5Children=1&
+&ttlMap6Children=1&
+&AllDone=True&
+
+

@@ -1,0 +1,39 @@
+===================================
+What's New for Puyo Puyo Flash 2.00  
+May 24th, 1999
+presented by tkc productions
+===================================
+
+Developer's Notes:
+- this has been tested to work 100% on Win98 Netscape 4.5 and Win98 Internet Explorer 4.0
+- to work properly, ensure that Javascript support is enabled within the browser
+
+
+Enhancements:
+- Smoothed out the menu transitions
+- To complement the puyo atmosphere, more sound effects have been added
+- Theme music track has been added to the main menu screen
+- 3 game music tracks are now selectable from the options screen
+- Selected options are displayed immediately on the main menu screen
+- To give a more consistent style to the game screen, a new look has been given
+  to the game buttons
+- Added keys for right-hand play
+- Personal high score is now saved on the client machine in a javascript cookie
+- Personal high score is now loaded when the client machine accesses the page
+- Personal high score can be reset to zero from the options screen
+- Credits section updated with new contributors
+- Added hidden outtake in the credits section =)
+
+
+Fixes:
+- corrected the mix up of colors when the flash puyos eliminated a lot of puyos at once
+- corrected the problem of top puyos being eliminated without being the correct color
+
+
+Known Bugs:
+- in Netscape, dropping down the puyos with the keyboard sometimes randomizes the next set
+  of colors
+- when loading a different music track, Netscape sometimes loads the music track again even
+  when it's already saved in the cache
+- in Internet Explorer 5.0, the keyboard input does not work
+- Macintosh computers may have problems with keyboard input in all versions of Internet Explorer

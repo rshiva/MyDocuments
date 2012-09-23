@@ -1,0 +1,32 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          9801           9801        Scene 1
+    2             2           9803          2
+    3           211          10014          3
+    4             2          10016          4
+    5            15          10031          5
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                          82             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+pallete                         590             0
+color                           280             0
+marker                           32             0
+iconcr                           61             0
+iconln                           29             0
+iconsq                           34             0
+iconarrow                        52             0
+select                            0             0
+arrowcontrol                      0             0
+objectcontrol                     0             0
+buttoncontrol                   195             0
+controlpallete                  396             0
+But                              38             0
+But1                            123             0
+object                          213             0

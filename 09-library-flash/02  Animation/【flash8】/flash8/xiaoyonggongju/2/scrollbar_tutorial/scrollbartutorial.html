@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Flash 4 Generic Scroll Bar Tutorial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Generic Scroll Bar</h1>
+<p>by Bill Tagliaferro<br>
+  [<a href="scrollbartutorial">Download Source</a>]</p>
+<p>This tutorial is designed to show you how to build a generic scroll bar that can be used for most any application that requires scroll bar capability.  It can be used both
+horizontally and vertically, and can be duplicated as many times as needed in a particular scene.<p >
+<!-- Generic Scroll Bar (C) Copyright ENS Inc. -->
+<center>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=scrollbar WIDTH=550 HEIGHT=250>
+	<PARAM NAME=movie VALUE="scrollbar.swf"> 
+	<PARAM NAME=quality VALUE=high> 
+	<PARAM NAME=bgcolor VALUE=#000000> 
+	<EMBED src="scrollbar.swf" 
+		quality=high 
+		bgcolor=#000000  
+		WIDTH=550 
+		HEIGHT=250 
+		TYPE="application/x-shockwave-flash" 
+		PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+	</EMBED>
+</OBJECT>
+</center>
+</p>
+
+<p>This tutorial is intended for intermediate Flash 4 users.</p>
+<ul>
+  <li>No previous tutorials are required.</li>
+  <li>Download the <a href="scrollbartutorial">source</a> files and have them unzipped for review during this tutorial.</li>
+</ul>
+<hr>
+<h2>Step-by-step</h2>
+<h3>Overview:</h3>
+<p >Scroll bars have numerous applications.  They often give a viewer control over what or how they view your movie elements.
+By building a generic scroll bar you will master the techniques for this project as well as have a scroll bar that can be
+added to your library of objects.  The whole process can be summarized as follows:</p>
+<ol>
+  <li>Building the images for the bar and scroller.</li><br>
+  <li>Assign the actions to the scroller.</li><br>
+  <li>Adding the scroll bar to a movie scene.</li><br>
+</ol>
+<hr>
+<i><b>Background</b></i><br>
+<p >A scroll bar in general will have a minimum and maximum value.  These values are part of the overall design of your movie.  
+In practice they might represent percentages, or scale factors, or numerical values etc.  What we want
+here is a <i><b>generic</b></i> scroll bar so that we can use it for any application we want.  
+To do this we will build a scroll bar that returns values from 0 to 1.  In this case the general formula for scrolling will be:<br>
+<blockquote><b>movievalue = minimum + scrollvalue * (maximum - minimum)</b></blockquote>
+The movievalue would then be used according to your design.  For example it might set the alpha property, or the x/y scale property.</p>
+<center>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=scrollsample WIDTH=550 HEIGHT=250>
+	<PARAM NAME=movie VALUE="scrollsample.swf"> 
+	<PARAM NAME=quality VALUE=high> 
+	<PARAM NAME=bgcolor VALUE=#000000> 
+	<EMBED src="scrollsample.swf" 
+		quality=high 
+		bgcolor=#000000  
+		WIDTH=550 
+		HEIGHT=250 
+		TYPE="application/x-shockwave-flash" 
+		PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+	</EMBED>
+</OBJECT>
+</center>
+
+
+<ol type=1>
+<br><br><li>Building the images for the bar and scroller.  
+	<p>Keep in mind that whatever it is that you plan to drag (i.e. the scroller) will be a movie clip of a button.  It will be actions
+		associated with this button that do most of the work.</p>
+	<ol type=a>
+		<li>The first step is to build a button to be used as the slider.  For simplicity, just build a simple square button (<b>CTRL + F8</b>).  Give it any name you like and don't worry about the button states.
+		<li>Decide how long your slide bar will be.  It can be vertical or horizontal.  It this tutorial I used a vertical bar 200 pixels long and the same width as the slide button.
+		<li>Create a new movie clip (<b>CTRL + F8</b>).  Name this clip "SliderMovie".
+		<li>Drop an instance of your button into this clip and center it (<b>CTRL + K</b>).
+		<li>Double click on the button to open its Instance Properties window and click on the <b>Action Tab</b>.
+		<li>Assign the following actions to the button:<br><br>
+			On (Press)<br>
+      		<span style="margin-left:2%">Start Drag ("", L=0, T=-100, R=0, B=100)</span>
+			End On<br>
+			On (Release, Release Outside)<br>
+      		<span style="margin-left:2%">Stop Drag</span>
+			End On<br><br><br>
+			Key Points:<br>
+			<ol type=i>
+				<li>In this tutorial I used a vertical bar so the <b>Left (L)</b> and <b>Right(R)</b> values are 0.
+				<li>The bar is going to be 200 pixels long and will be centered so the <b>Top (T)</b> value is -100 and the <b>Bottom (B)</b> is +100.
+				<li>You can always rotate the final Scroll Bar 90 degrees if you want a horizontal bar.
+			</ol><br><br>
+		<li><b>Don't go on until you understand these actions or you will have difficulty with your final scroll bar.</b>	<br><br>
+	</ol>
+	
+<br><br><li>Assigning the actions to the scroller.
+
+	<ol type=a>
+		<li>Now create another new movie clip (<b>CTRL + F8</b>).  Name this clip "ScrollBar".
+		<li>Using your drawing tools (<b>Rectangle Tool</b>) draw your slider bar 200 pixels heigh and the same width as your button.
+		<li>Center the bar (<b>CTRL + K</b>).
+		<li>Drop an instance of your "SliderMovie" into this clip and center it horizontally (<b>CTRL + K</b>) and place it vertically where you want it to start.  
+		<li>Double click on the "SliderMovie" to open its Instance Properties window and click on the <b>Definitions Tab</b>.
+		<li>Make sure its behavior is "Movie Clip" and give it an Instance Name of "Slider".
+		<li>Insert an additional keyframe for a total of 2.
+		<li>Double click on the keyframe 1 to open its Frame Properties window and click on the <b>Action Tab</b>.
+		<li>Assign the following action to this frame:<br><br>
+			Set Variable: "scrollvalue" = (100 - slider:_y)/200
+			<br><br>
+			Key Points:<br>
+			<ol type=i>
+				<li>The bar I used was 200 pixels high and centered between -100 and +100.
+				<li>Scrollvalue will be a number between 0 and 1 depending on the Slider position.
+				<li>If your slide moves horizontally, then change _y to _x.
+			</ol><br><br>
+		<li>Double click on the keyframe 2 to open its Frame Properties window and click on the <b>Action Tab</b>.
+		<li>Assign the following action to this frame:<br><br>
+			Go to and Play (1)
+			<br><br>
+	</ol>
+<br><br><li>Adding the scroll bar to a movie scene.
+	<ol type=a>
+		<li>Drop an instance of "ScrollBar" into your scene.
+		<li>Double click on the "ScrollBar" to open its Instance Properties window and click on the <b>Definitions Tab</b>.
+		<li>Make sure its behavior is "Movie Clip" and give it an Instance Name of "Scroll1".
+		<blockquote>The value of the Scroll Bar will be located in "Scroll1:scrollvalue"</blockquote>
+		<li>YOU'RE DONE!.  However, to see what you've done we will build a display to see your Scroll Bar in action.
+		<ol type=i>
+			<li>Using your tools add a textfield to your scene.
+			<li>Right click on this text field and give it a variable name of "display".
+			<li>Decide on the range of values you want to scroll between and pick a minimum and maximum.
+			<li>Double click on the keyframe 1 to open its Frame Properties window and click on the <b>Action Tab</b>.
+			<li>Assign the following action to this frame:<br><br>
+			Set Variable: "display" = scroll1:scrollvalue
+			<br><br>
+		</ol>
+	</ol>
+</ol>
+<hr>
+<h2>Need More Help?</h2>
+<p>[<a href="scrollbartutorial">Download Source</a>]<br>Don't forget to get the source files and look them over.</p>
+<hr>
+<h2>Troubleshooting</h2>
+<p>The main problem you will have in this tutorial is remembering the paths to movie clips and variables.
+Try to use names that you will remember and have some association with the movie, instance or variable.</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+http://www.liquidjourney.com     ::     source@liquidjourney.com
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Open Source Flash/ActionScript
+Modify and/or extend the code in this file... 
+Return any breakthroughs of brilliance
+Please give credit where credit is due.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+updated 12.21.2005 
+
+AS 2.0 / Flash 7
+

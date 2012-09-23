@@ -1,0 +1,4 @@
+<flash_project name="~preview" version="1">
+    <project_file path="./~preview.fla" filetype="fla" profile="" />
+    <project_file path="./.\SmokeEffect.as" filetype="as" />
+</flash_project>

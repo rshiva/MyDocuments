@@ -1,0 +1,26 @@
+
+
+Date: 	  1-5-2000
+Name: 	webgrrl.swf
+Author:     Marc de Ruijter
+Infol:	organic@ipr.nl
+
+This grrl was created with Poser 4 and all frames were exported in 3D Studio (.3DS) format.
+Then these frames were imported in Vecta 3D to convert the 3D mesh into 2D vector images and exported as .SWF which was  imported in Flash for further editing.
+
+
+Greetinx,
+
+M@ой
+
+*** it ain't much, but it got P ***
+
+
+
+
+
+Poser 		www.metacreations.com
+Flash		www.macromedia.com  (oh, you knew :)
+Vecta 3D		www.vecta3d.com
+
+

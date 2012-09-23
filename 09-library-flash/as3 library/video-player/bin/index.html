@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Poise Player</title>
+	<script type="text/javascript" src="javascripts/swfobject/swfobject.js"></script>
+</head>
+
+<body>
+
+	<div id="Poise-Video-Player">
+		<h1>Poise Pilates</h1>
+		<p>short description about Poise Pilates</p>
+		<p><a href="http://get.adobe.com/flashplayer">Get Flash</a> to see this player.</p>
+	</div>
+	      
+	<script type="text/javascript">
+		var vars = {file:"test.flv", image:"flash/preview.jpg"};
+		var params = {movie: 'flash/player.swf', allowScriptAccess: 'always', allowfullscreen:'true'};
+		var attributes = {id: 'Poise-Video-Player', name:'player'};
+		swfobject.embedSWF('flash/player.swf', 'Poise-Video-Player', '480', '289', '9.0.45', '/javascripts/swfobject/expressinstall.swf', vars, params, attributes );
+	</script>
+
+</body>
+</html>

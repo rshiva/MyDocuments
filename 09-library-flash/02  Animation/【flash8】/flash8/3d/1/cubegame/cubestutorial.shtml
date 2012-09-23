@@ -1,0 +1,149 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!-- Flash Kit Tutorials Page - Tute title here -->
+<!-- Site by Mark Fennell (c) 1999-2000 Mark_Fennell@Bigpond.com -->
+
+<HTML>
+<HEAD>
+	<TITLE>Flash Kit Tutorial - The Cube Game</TITLE>
+	<META NAME="description" CONTENT="Flash Kit.  Tute title here">
+	<META NAME="keywords" CONTENT="Flash kit,  Tute title here">
+	<LINK REL="stylesheet" href="/styles/styles.css" type="text/css">
+</HEAD>
+
+<body>
+<!--#include virtual="/includes/adcode.html"-->	
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="CENTER" bgcolor="#000000">
+	<tr>
+		<td>
+			<table width="100%" border="0" cellspacing="1" cellpadding="3" align="CENTER">
+			<tr bgcolor="#ffdb5a">
+				<td>
+				<font face="Verdana, Arial, Helvetica" size="2" color="#000000"><b>
+<!-- **************************   TITLE HERE   ****************************************************************** -->
+				<a href="http://www.flashkit.com/tutorials/links/index.shtml">Tutorials</a> :
+<!-- **************************   END TITLE    *************************************************************** -->
+				</b></font></td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		
+    <td align=left> <font face="Verdana, Arial, Helvetica" size="2" color="#000000"><b> 
+      <!-- ******************************************************************************************** --> 
+      Author: <a href="mailto:flash@copes.net">Dan Copeland</a> | Website: <a href="http://www.copes.net/flashface" target="_blank">www.copes.net/flashface</a> 
+      <!-- ******************************************************************************************** --> 
+      </B></FONT> </td>
+	</tr>
+</TABLE>
+<P>
+<FONT Class=text>
+<!-- ******************************************************************************************** -->
+<!-- ******************************************************************************************** -->
+
+
+<h2><img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center>The 
+  Cube Game</h2>
+
+<DIV class=main>
+<p>
+  <b>Assumed Knowledge:<br>
+  <ul>
+    <li type="disc">Flash 4 <font class=text><b>Basics </b></font></li>
+    <li type="disc">Beginner's knowledge, really.</li>
+  </ul>
+  </b> 
+  <p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="300" height="230" align="left" name="Cubes">
+      <param name="SRC" value="http://www.copes.net/flashface/flash/cubegame.swf">
+      <embed src="http://www.copes.net/flashface/flash/cubegame.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="300" height="230" align="left" name="Cubes">
+      </embed> 
+    </object>This isn't so much a game as it is an example for beginners. In order 
+    to learn what you can do with layers and 3D, must grasp the concept behind 
+    what makes something 3D. (ie. If it looks 3D, then<b> it is ! </b>)<br>
+  </p>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>Sorry, no real tutorial for this one. Although, the best way to learn is 
+    on your own, I find!</p>
+  <p>First, download the .FLA below ( flaped 9k). It should provide quite a bit 
+    of info for the learning beginner. Try to substitute symbols for different 
+    symbols. See what you can create! Cubes are a great device for simple(or complex) 
+    menus and interfaces, experiment!</p>
+  <hr>
+
+<h2><img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center>Need Help on this Topic?</h2>
+<DIV CLASS=main>  
+<FONT Class=text>
+		<p>Our Flashkit moderators and members of the flash community who have registered on the <b><a href="/board/index.shtml" target="_top">Flashkit Discussion Board</a></b>, collectively hold a great deal of knowledge and experience.  If you're having problems, post it up on the board!  Someone will know the answer.</p>
+</font></DIV><FONT Class=text>
+
+<h2><img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center>Flashkit Resources for this Tutorial</h2>
+<DIV CLASS=main>
+<FONT Class=text>
+		<ul>
+		<li>Flashkit will look after this</li>
+		<li></li>
+		<li></li>
+		</ul>
+</font></DIV><FONT Class=text>
+
+<br>
+<h2><img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center>Download my Example .fla</h2>
+	<B>
+  <img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center> 
+  <font face="Verdana" size=2><a href="ftp://203.39.170.10/pub/tutorials/flas/Cubes.fla">Download 
+  the .fla</a> (flaped 9k)</font> <FONT FACE="verdana, arial, helvetica" SIZE=2> 
+  <P>
+	<FONT size=1>
+	PC - <a href="http://www.winfla.com" target="_blank">Get Winfla</a> | 
+	Mac - <a href="http://www.aladdinsys.com/downloads/index.html" target="_blank">Get Stuffit</a>
+	</FONT>		
+	</FONT></B>
+
+</font></font></DIV><FONT Class=text><FONT Class=text>
+<h2><img src="/graphics/board_arrow.gif" width=17 height=13 border="0" align=center>Your Feedback!</h2>
+<DIV CLASS=main>  
+<FONT Class=text>
+	<form action="http://www.flashkit.com/cgi-bin/links_tute/rate.pl" method="POST">	
+		<input type=hidden name="ID" value="20">
+		<p>Please rate this tutorial between one and ten, with ten being the best!</p>
+		<div class="margin">	
+			<p><select name=rate>
+				<option>1
+				<option>2
+				<option>3
+				<option>4
+				<option>5
+				<option>6
+				<option>7
+				<option>8
+				<option>9
+				<option selected>10
+			   </select>
+			   <input type=submit value="Rate this Link">
+			</p>
+		</div>
+	</form>
+</font></DIV><FONT Class=text>
+<P>
+<!--#include virtual="/includes/footer.html"-->	  
+
+</FONT><DIV id=counter style="position:absolute; visibility: hidden; left:0px; top:0px; width:0px; height:0px; z-index:2"><FONT Class=text>
+		<!-- BEGIN WEBSIDESTORY CODE v5 -->
+		<!-- COPYRIGHT 1998-1999 WEBSIDESTORY, INC. ALL RIGHTS RESERVED.  U.S. PATENT PENDING. -->
+		<A HREF="http://rd1.hitbox.com/rd?acct=WQ591017O3AAWREN0&p=s">
+		<IMG src="http://hg1.hitbox.com/HG?hc=w104&l=y&hb=WQ591017O3AAWREN0&cd=1&n=Tutorials+SimpleGuess" height=62 width=88 ALT="Click Here!" border=0></A>
+		<!-- END WEBSIDESTORY CODE  -->		
+
+</font>
+</DIV>
+<!-- ******************************************************************************************** -->
+<!-- ******************************************************************************************** -->
+</font></font></font>
