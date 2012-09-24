@@ -1,0 +1,3 @@
+link1=http://www.macromedia.com/
+&link2=http://www.corel.com
+&link3=http://www.adobe.com

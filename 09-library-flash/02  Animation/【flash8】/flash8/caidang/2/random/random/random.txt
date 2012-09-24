@@ -1,0 +1,8 @@
+random1= welcome
+&random2= welcome2
+&random3= welcome3
+&random4= welcome4
+&random5= welcome5
+&random6= welcome6
+&random7=welcome7
+&numbers=7

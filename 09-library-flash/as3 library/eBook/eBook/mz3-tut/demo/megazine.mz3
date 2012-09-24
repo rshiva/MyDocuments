@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE book SYSTEM "http://megazine.mightypirates.de/megazine2.dtd"> 
+<book plugins="console, keyboardnavigation, batchpages, navigationbar, links, swfaddress, search, print, printpdf,  pdflinks, bookmarks, anchors" 
+	pagewidth="408" pageheight="528"  
+	errorlevel="ERROR" 
+	thumbloadtext="wait" 
+	zoomminscale="0.25" zoommaxscale="4.0" 
+	zoomsnap="0.25,0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0" 
+	zoomsteps="2" 
+	dragrange="20" 
+	maxloaded="32" 
+	qualitycontrol="true" 
+	thumbpath="../demo/thumbs/" 
+	thumbscale="0.25" 
+	searchmethod="client" 
+	searchindex="../_search_index/demo.txt" 
+	cornerhint="false" 
+	pagethickness="0.7" 
+	shadows="0.3" 
+	searchclear="false" 
+	startpage="1" 
+	centercovers="false" 
+	pageoffset="0"> 
+<background> 
+    <box background="image(custom_logo.png)" width="160" height="45" anchors="pw-w,ph-h" url="http://vservu.de/" target="_blank"/> 
+</background> 
+<pagebackground> 
+	<box background="image(custom_pagebackground.png)" width="408+408" height="528" anchors="0,0"  target="_self"/> 
+</pagebackground> 
+<chapter 	
+	pages="scale('../demo/pages/page_l{{num}}.swf'); 
+	print('../demo/pages/page_h{{num}}.swf'); 
+	count(1,4); 
+	settings(true, false, false, false, false)"> 
+</chapter> 
+</book> 

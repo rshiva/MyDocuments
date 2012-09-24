@@ -1,0 +1,29 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          7176           7176        Scene 1
+    2          1102           8278          2
+    3           104           8382          3
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0           484
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Clock                          3141           149
+Button                           35             0
+0                                 0            47
+Pointer                         303             0
+
+Event sounds: 11KHz Mono 16 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+Endoturn                      535        11KHz Mono 16 kbps MP3
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Courier New Cyr Bold         1846        )-.12369:AEOPRSTZ

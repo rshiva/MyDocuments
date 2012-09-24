@@ -1,0 +1,22 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1            51             51        Szene 1
+    2            21             72          2
+    3            15             87          3
+    4         12248          12335          4
+    5            10          12345          5
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Szene 1                           0            39
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+timer                          9804             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Arial                        1969         ./0123456789BKs

@@ -1,0 +1,25 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1         14375          14375        Scene 1
+    2            18          14393          2
+    3           401          14794          3
+    4            44          14838          4
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                          64           127
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+bn                              174            42
+simbol_tr                         0             0
+mask                             40             0
+text_sym                          0            85
+char1                             0             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+MagistralBlackC Italic      10887         !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~€‚ƒ„…†‡ˆ‰Š‹Œ‘’“”•–—˜™š›œŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßàáâãäåæçèéêëìíîïğñòóôõö÷øùúûüışÿ

@@ -1,0 +1,173 @@
+Please report any bugs at our bugtracker at http://bugs.mightypirates.de/projects/show/mz3v2, thank you.
+Note that you will have to register to report a new issue (bug report or feature request).
+
+Version 2.0.7a [2010/04/19]
+- Fixed: links plugin was broken.
+
+Version 2.0.7 [2010/04/18]
+- Added: possibility to change the tooltip design in the megazine.asul file.
+- Added: bookmarks plugin.
+- Added: pdflinks plugin. Handles links in PDF files converted using pdf2swf (if the -s internallinkfunction=true parameter was used). 
+- Added: attribute book@zoomsnap, which allows snap levels when zooming in or out. The scaling at which liquid scaling takes effect is an implicit/dynamic snap value automatically generated.
+- Added: attribute book@zoomliquidscaling, which defaults to true. Setting it to false will disable use of liquid scaling (even if zooming is possible), i.e. only zoomstep and/or zoomsnap will be relevant.
+- Added: getter to txt element to get access to underlying TextField object.
+- Change: sidebar plugin can now be used with scaling books, and when book@centercovers is active.
+- Change: for those developers who used it directly, the tween package has changed. Tweens now take a simple function reference instead of a class instance with a function (which was kinda Javaish) for less overhead. Also, tween functions can now be retrieved from the TweenFunctions class's getFunction() method (see constants for possible functions).
+- Change: updated logger / console, now allowing formatted output, and a more explicit source (normally the class that logs the message).
+- Change: ASUL buttons are now more flexible (e.g. children can resize dynamically), because they no longer use Flash's SimpleButton component.
+- Change: some more control attributes for hflow and vflow.
+- Change: setting book@allowcrossdomaindata to true now causes an automatic check for a crossdomain.xml file on the remote server.
+- Change: reduced use of cacheAsBitmap and using opaqueBackground where possible, improving performance a bit.
+- Change: improved performance while dragging pages and using custom cursors (i.e. handcursor="false", the default).
+- Change: some major AS3 API changes. Please read the SVN change logs for more information, if you are an AS3 developer.
+- Change: the default log level is "NONE" now. So remember to set book@errorlevel to something when using the console plugin.
+- Fixed: search results not showing the first time when using book@searchmethod=server.
+- Fixed: book@startpage issues.
+- Fixed: help text not properly showing sometimes.
+- Fixed: loading order issue for images.
+- Fixed: memory leaks / engine not being completely removed from memory when MegaZine.destroy() is called (there still a few minor problems, e.g. with the googleanalytics plugin, but the resulting memory clutter is very very small, and only happens when repeatedly creating and destroying book instances, which should be a rare enough case).
+- Fixed: book@maxloaded=0 not working (= all pages) and issue when more pages were added dynamically.
+- Fixed: all the.. small things.
+
+Version 2.0.6 [2010/02/18]
+- Added: new functionality in batchpages plugin, allowing more flexible setup, additionally controlling scaling levels and language. This is done using defintions, e.g. pages="scale('some/url{{num}}.swf', 0.5); scale('some/url{{num}}_big.swf', 2)".
+- Added: attribute txt@rasterize, which defaults to true, but can be set to false to disable rastering of text elements (e.g. to allow links in the text).
+- Added: attribute img@keepar. When set to true, if only one size (width or height) is given, the other one will be adjusted accordingly, to keep the aspect ratio of the image.
+- Added: attribute img@sameappdomain. If set to true the loaded swf will be loaded into the ApplicationDomain of the engine.
+- Added: possibility to open print frame via API and JavaScript.
+- Added: printpdf plugin: the same as the print plugin, but allows printing directly to PDF format using AlivePDF.
+- Added: attribute book@pluginpath, allows setting the path where the plugins can be found.
+- Added: the print plugin's attribute page@print is now localizable using the following definition syntax: lang(path)[;lang(path)]. E.g. en(en.swf);de(de.swf).
+- Added: possibility to define a default cursor (see megazine.asul).
+- Added: attribute book@zoomstep, allowing to set the zoom step size (e.g. if zoomminscale=0.5 and zoommaxscale=1.5, setting zoomstep to 0.5 would result in 2 possible scaling steps, each of the size 0.75. At least when using the buttons in the navigationbar and the mouse wheel. It's still possible to reach other scalings using the API).
+- Added: FlashVAR basePath, which can be used to set a base path, which is used to resolve all relative URLs (this includes GUI definitions, sounds, plugins etc, not only page elements). So to use a common engine with a single GUI you'll need to adjust the guipath now. But that's still better than having to adjust the paths of every single element in the book.
+- Changed: megazine.js, access to Flash element should now behave more stable than before (e.g. when editing the DOM). Also see http://megazine.mightypirates.de/forum/index.php/topic,890.0.html
+- Changed: the load functions in the IMegaZine interface have a slightly different signature now, used for passing the basePath and additional config values (e.g. when creating a book purely through ActionScript3).
+- Fixed: @shadows="0" caused a null pointer exception, effectively making it impossible to completely disable shadows.
+- Fixed: a possible problem with img@rasterize.
+- Fixed: Fixed a bug in the SWFAddress plugin that overrode the book@startpage attribute even if no deep link was given when opening a page.
+- Fixed: bug in ASUL that could cause collapsed elements to not expand anymore.
+- Fixed: possible problems with scale+lang based attribute settings.
+- Fixed: bug in print plugin that occured when printing only the even part of a loaded spread page.
+- Fixed: some small issues in the print plugin.
+- Fixed: help text disappearing.
+
+Version 2.0.5 [2010/01/28]
+- Added: ProgressEvent to MegaZine class. This also means, that the preloader is now more meaningful as it includes the loading progress of the engine itself, not just the megazine.swf. Furthermore the parsing of the page data has been distributed over multiple frames, which should avoid freezing the application in books with a lot of pages.
+- Added: print plugin.
+- Changed: in the batchpages plugin, the subsettings (after the question mark) have slightly changed. "s" now results in page@buffer="true", and instead the new "r" results in img@rasterize="true" (previously the result of "s").
+- Changed: plugin constructor. This is very IMPORTANT for DEVELOPERS: the way plugin data such as name and version is set has changed. These parameters a no longer passed as multiple arguments to the superconstructor, but in a wrapper class (PluginData). The reason for this is to allow plugin subclassing, i.e. to write plugins that extend existing plugins, but still allow them to change such information (e.g. if additionally, localizations should be loaded).
+- Changed: updated to new version of SWFObject and SWFAddress.
+- Changed: book@centercovers is now a bit more flexible, allowing different sizes for the page container (e.g. the viewport in the default megazine.asul). Related to http://megazine.mightypirates.de/forum/index.php/topic,879.0.html
+- Fixed: bug in plugin initialization that could lead to a wrong initialization order.
+- Fixed: issue with ASUL elements not having their max/minsize properly updated if based on parent size if resize="true" was set.
+- Fixed: issue related to using scaling dependant attributes when no language was set manually.
+- Fixed: the search plugin's highlighting now works even if a background is set.
+- Fixed: buttons added to navigation bar by other plugins (e.g. slideshow, options, ...) will now appear in a fixed position, and not be placed randomly (based on the order in which the plugins finished loading).
+
+Version 2.0.4 [2009/12/29]
+- Added: a workaround similar to the normal nocache workaround which should make it unnecessary to clear the cache after updating to a new version of the engine.
+- Added: attribute vid@aa, activating antialiasing for videos.
+- Added: attribute page@buffer_aa, activating antialiasing for buffered pages. This is automatically disabled while the user is not dragging a page.
+- Added: attribute book@edgeclickable, to adjust whether a click on the book's edge should trigger a jump in the book.
+- Added: attribute book@thumbpath, defining a path to a directory containg pregenerated thumbnail images.
+- Added: support for scale9grid for ASUL backgrounds (attribute asulobject@scale9grid).
+- Added: book@fadein, to determine whether the book should fade in initially (when the state changes to loaded and page content loading begins). This now defaults to false.
+- Added: events to search plugin fired when a search is performed and a result is clicked.
+- Changed: when loading other swfs via ASUL (background="image(some.swf)") it is now possible to pass a query string along (i.e. background="image(some.swf?var=value)"); using a query string will circumvent cached loading, though (NOT the Flash cache, though, just the temporarily inbuilt one which is used speed up loading multiple elements from the exact same source, e.g. images for the page buttons in the navigationbar).
+- Changed: improved performance a bit. I think.
+- Changed: for developers, there are now two types of ZoomChange and PageChange events. One which is fired instantly (default) and a "delayed" variant, which only fires once per "batch change", to make it easier skipping pages that are flipped over (e.g. during a multiflip).
+- Fixed: gotoPrevPage in megazine.js is now correctly named as gotoPreviousPage.
+- Fixed: sidebar now correctly allows more than one ASUL component directly inside the <content> tags (not just one).
+- Fixed: states of buttons can now be dynamically sized using anchors without breaking functionality.
+- Fixed: small initial size problem of the progressbar.
+- Fixed: possible issue with initial position of the scroll bar's scroll handle.
+- Fixed: navigation by clicking on the book edge in right to left books.
+- Fixed: tooltips and overlays won't break when removing and readding the instance form / to the stage.
+- Fixed: issues when destroying instances.
+
+Version 2.0.3b [2009/12/01]
+- Fixed: book@asulextension attribute didn't apply to the megazine.asul.
+
+Version 2.0.3 [2009/11/30]
+- Added: attribute book@searchresults, which can be used to define additional return values to use in the LNG_SEARCH_RESULT_INFO string (first parameter will always be the page number). Defaults to 'matches', storing the number of matches found on the page.
+- Added: attribute book@asulextension, allowing to change the file extension used for ASUL defintions. This should only be used if the hosting server does not support custom extensions for XML files.
+- Added: attribute book@rotate, which allows to select an angle by which to rotate the book (e.g. 90 degrees for vertical flipping).
+- Added: attribute book@consolekey, allowing to set the key that opens the console.
+- Added: the functions for chapter and page removal are now available through the IMegaZine interface, but might still be a little unstable.
+- Added: made chapter and page adding and removal available through the console and the JavaScript API.
+- Added: sidebar plugin. This plugin allows you display contextual information depending on which page the user currently is on.
+- Added: event when page scaling changes. This fires after a small delay, so that only one event gets fired after the scaling has been consistent for that delay.
+- Added: possibility to set attributes based on the current book scaling level using @scale in element's child nodes (much like @lang).
+- Changed: book zoom now behaves a little different. Zooming in or out is no longer absolute (10% of the original size per default), but instead 10% of the possible scale range (e.g. if zoomminscale=0.5 and zoommaxscale=2, the scale range is 2-0.5=1.5, meaning every zoom step would be approximately 0.15). Note that there is a correction factored in to keep the overall zoomsteps similar in size (i.e when zooming from 0.5 to 0.65 will approximately scale the same width in pixels as would 1.85 to 2).
+- Changed: ASUL updated plus some minor fixes. Layouts do not "compress" their children any longer. The attributes for maximum and minimum sizes are now reevaluated as necessary (similar to anchors), allowing dynamic sizes for layouts.
+- Changed: plugin related interfaces changed slightly, mainly regarding the register() function (which now no longer takes any arguments). For plugin developers this means you will have to replace
+    override public function register(manager:IPluginManager, megazine:IMegaZine, settings:ISettings):void {
+        super(manager, megazine, settings);
+        ...
+    }
+    with simply
+    override protected function register():void {
+        ...
+    }
+- Changed: flag icon buttons in the language chooser of the navigation bar are now customizable in the navigationbar.asul.
+- Changed: plugins using JavaScript functionality don't have to actively register with the JavaScript plugin anymore, they just have to implement the IExternalInterfaceEnabled interface.
+- Fixed: some possible drag cursor behavior when using cornerhinting.
+- Fixed: localization issues with nav element.
+- Fixed: some cleanup issues when unloading elements.
+- Fixed: possible glitches regarding spread pages (right page using thumbnail preview even though left half with content is loaded).
+
+Version 2.0.2 [2009/11/17]
+- Added: attribute book@reflectionoffset, allowing to display the reflection at a distance to the pages (e.g. because of book thickness).
+- Added: relevant for plugin developers: settings can now have aliases (e.g. same setting can be set using different attributes).
+- Added: attribute for initial book scaling, book@zoominit. This will cause the book zoom not to use liquid scaling intially, but zoom to given level.
+- Added: attribute book@zoomdoubleclick to enable double click on pages for toggling full zoom and liquid scaling. Important: this will disable all interaction on pages.
+- Added: search plugin, allowing to search inside the book using an index.
+- Change: improved performance with SWF content.
+- Change: moved pageoffset setting back to core.
+- Change: some attribute name changes for better grouping (plugins' attributes should all start with the same prefix, preferrably the name of the plugin or a shortcut for it. E.g. attributes for the gallery plugin start with 'gallery', one's for the googleanalytics plugin start with 'ga'). Old names are still working as aliases, but may be removed in the future. Affected attributes are:
+  - maxscale -> zoommaxscale
+  - minscale -> zoomminscale
+  - wheelzoom -> zoomwheel
+  - openhelp -> helpopen
+  - enablejs -> jsenabled
+  - overlaylinks -> linksoverlay
+  - buttoncolors -> navbarbuttoncolors [this alias will probably not be removed]
+  - colorizefullchapter -> navbarcolorizefullchapter [this alias will probably not be removed]
+  - flagpath -> navbarflagpath [this alias will probably not be removed]
+- Fixed: setting the title to an empty string did not suppress titles generated by linking elements using the links plugin.
+- Fixed: wrong reflection rendering when using book thickness (book@maxthickness > 0).
+- Fixed: issue with ASUL that could result in randomly incorrect results when resizing.
+- Fixed: memory leaking issue with named ASUL elements.
+- Fixed: graphic glitch with book edges (could show up before the pages finished turning, thus being displayed as single lines).
+- Fixed: reduced memory footprint when using buffered pages by disposing the buffer if the page is not loaded.
+
+Version 2.0.1 [2009/11/07]
+- Added: thumbnails are now used as full page previews when a page is not loaded (book@pagepreview).
+- Added: book edge is now generated. Can be adjusted using book@maxthickness, book@pagethickness, book@spinecurvature, book@spinecolor. Can also be used to navigate by clicking on it.
+- Added: book edge color can be set using the book@edgecolor, chapter@edgecolor and page@edgecolor attributes (overrides like bgcolor). Uses page's background color if not set.
+- Added: possibility to activate and deactivate corner hinting via the API (also via JavaScript).
+- Added: attribute book@wheelzoom, to disable zooming via mousewheel (of the book).
+- Added: attribtute @padding for ASUL components, allowing the definition of a padding.
+- Added: attribute book@autodrag, allowing to disable automatic dragging if moving the cursor over page corners.
+- Added: attribute book@thumbscale, allowing to set the size of the thumbnails.
+- Added/Change: forgot to document a new attribute for the video in the last release, used the chance to rename it (better naming). Attribute vid@preview allows displaying a preview image with a playbutton on top which will we displayed and will have to be clicked before loading the actual video.
+- Added: attributes for keyboard navigation plugin to allow which keys to use.
+- Change: changed zooming API a little to make it easier to work with.
+- Change: unloaded pages now display "?" when generating the thumbnails for the first time (instead of "Loading...").
+- Change: gallery plugin now uses padding for thumbnail, moved thumbnail to top left per default.
+- Change: thumbnails are now pagesize / 4 (instead of previously pagesize / 5), for cleaner downsampling.
+- Change: updated the DTD for the book definition (moved to megazine2.dtd) and added DTD for ASUL definitions.
+- Fixed: some issues if pages finished loading while being dragged.
+- Fixed: an issue where buffering might not be properly ended.
+- Fixed: possible nullpointer exception when a drag failed starting.
+- Fixed: bug with element@gallerybutton attribute.
+
+Version 2.0.0 [2009/10/20]
+- Low level refactoring and rewriting of the old code base.
+- Plugin architecture. Per default the book will be very rudimentary, now. Use the book@plugins attribute to load plugins providing wanted functionality.
+- ASUL framework, allowing GUI adjustments via XML files. This allows restyling of the GUI without changing actual code, and thus without recompiling.
+- Spreadpage functionality. Use <spreadpage> to define a spread page, allowing the use of dynamic content over a double page.
+- Improved liquid scaling / zoom. It is now possible to zoom the actual pages, and liquid scaling does not affect the GUI anymore. Use the book@minscale and book@maxscale to define allowed scale range, e.g. minscale="0.5".
+- Possibilty to define an overall background and more flexible way to define pre and postpage (book/background and book/pagebackground).
+- Improved page turn animation.

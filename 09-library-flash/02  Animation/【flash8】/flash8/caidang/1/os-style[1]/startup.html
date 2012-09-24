@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>JCK-os: Running</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin Clock (use: Just create an text field with the name "clock")
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+if(timerRunning)
+clearTimeout(timerID);
+timerRunning = false;
+}
+function showtime () {
+var movie = window.document.movie;
+var now = new Date();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+var seconds = now.getSeconds()
+var timeValue = "" + ((hours >12) ? hours :hours)
+if (timeValue == "0") timeValue = 0;
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+timeValue += (hours >= 12) ? " " : " "
+movie.SetVariable("clock", timeValue);
+timerID = setTimeout("showtime()",1000);
+timerRunning = true;
+}
+function startclock() {
+stopclock();
+showtime();
+}
+// End Clock -->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="#000000" onLoad="startclock()">
+
+<center>
+  <p><OBJECT CLASSID="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" CODEBASE="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0"" ID=movie WIDTH=100% HEIGHT=100% name="movie">
+      <PARAM NAME=movie VALUE="os-style.swf">
+      <PARAM NAME=menu VALUE=false>
+      <PARAM NAME=quality VALUE=high>
+      <PARAM NAME=bgcolor VALUE=#000000>
+      <EMBED NAME=movie SRC="os-style.swf" WIDTH=100% HEIGHT=100%
+        SWLIVECONNECT=true QUALITY=high>
+      </EMBED> 
+    </OBJECT> </p>
+  </center>
+</BODY>
+</HTML>

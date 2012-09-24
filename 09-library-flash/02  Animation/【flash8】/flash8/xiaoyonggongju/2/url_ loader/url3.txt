@@ -1,0 +1,3 @@
+link1=mailto:potap@mail.primorye.ru
+&link2=mailto:potap@mail.primorye.ru
+&link3=mailto:potap@mail.primorye.ru

@@ -1,0 +1,24 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          2665           2665        Scene 1
+    2             2           2667          2
+    3           352           3019          3
+    4            44           3063          4
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+mask                             38             0
+text_sym                          0           170
+text                              0             0
+char1                             0             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+MagistralBlackC Italic       1476         .ACGSWacefiklnoprstuwx

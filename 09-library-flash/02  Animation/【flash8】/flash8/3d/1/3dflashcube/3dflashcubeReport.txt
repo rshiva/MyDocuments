@@ -1,0 +1,40 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          4727           4727        Scene 1
+    2          7212          11939          2
+    3            15          11954          3
+    4             2          11956          4
+    5            13          11969          5
+    6          1755          13724          6
+    7           867          14591          7
+    8            31          14622          8
+    9            30          14652          9
+   10          1242          15894          10
+   11          1615          17509          11
+   12           389          17898          12
+   13           977          18875          13
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0           119
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+control surface                 173             0
+cos_small                         0             0
+get flash                         0           141
+get flash button                 37           150
+invisible dot                     0             0
+line1                            64             0
+loading                           0           181
+sin_small                         0             0
+flash8.0                         87           147
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+ºÚÌå                          745        Ô´Õ¾×Ê
+Arial Black                  1474        ./08:AFHLSaefhlnpsty
+Verdana Bold Italic          1754         ,.4FITacdefghilnoprstuvy

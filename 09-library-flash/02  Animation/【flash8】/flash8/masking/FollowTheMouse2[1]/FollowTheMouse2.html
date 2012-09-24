@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<TITLE>FollowTheMouse2</TITLE>
+</HEAD>
+<BODY>
+<!-- URL's used in the movie-->
+<!-- text used in the movie--><font face="Arial" size="4"><b>HOW TO MAKE CUSTOM
+SHAPE MASKS EASILY FROM 3D SOFTWARE:<br>
+<br>
+</b></font><font color="#000080"><font size="2" face="Arial">(</font><font size="2" face="Arial">The
+following &quot;fla&quot; visual is 256K. When it loads, you will see that I
+have rendered a figure in many positions in a 3D program, then created masks for
+each pose so that you can see behind the figure to objects created in Flash on a
+lower layer. Normally, the creation of masks can be time consuming. This
+tutorial will explain how to create custom masks quickly to match your rendered
+object.)</font></font>
+<p>&nbsp;</p>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="330" bgcolor="#C0C0C0" height="240">
+    <tr>
+      <td width="100%">
+        <p align="center">
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=FollowTheMouse2 WIDTH=300 HEIGHT=220>
+ <PARAM NAME=movie VALUE="FollowTheMouse2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="FollowTheMouse2.swf" quality=high bgcolor=#FFFFFF  WIDTH=300 HEIGHT=220 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+      </td>
+    </tr>
+  </table>
+</div>
+<p><font face="Arial"><b>What am I talking about?</b> Well... say you want to
+create any number of frames from your 3D software and then MASK each frame for
+use in Flash over top of some other background...&nbsp; like in the sample
+above. (Because of the file size resulting from many bitmaps in a Flash file,
+I'd recommend using this on a CD-ROM and not on the web...) <b>Creating masks by
+hand </b>gets VERY tiring and time consuming. Trust me. I did it the first time
+round. I was not satisfied with the results, so I came up with the following
+method...</font></p>
+<p><font face="Arial"><b>Step 1) </b>For this example I used Poser 4, by
+MetaCreations. Any 3D software will work as long as you can set your lighting to
+custom values. Let me explain: I created one frame, one figure. That's it. Then
+I determined 20 coordinates that I wanted the figure to look at when the mouse
+is moved around... I chose 20 because it's a small amount and I didn't mind
+rendering 20 copies of the figure. </font></p>
+<p><!-- URL's used in the movie-->
+<!-- text used in the movie-->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" ID="grid" sample WIDTH="100" HEIGHT="100">
+  <param NAME="movie" VALUE="grid sample.swf">
+  <param NAME="quality" VALUE="high">
+  <param NAME="bgcolor" VALUE="#FFFFFF"><embed src="grid%20sample.swf" quality="high" WIDTH="100" HEIGHT="100" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</object>
+</p>
+<p><font face="Arial"><b>Step 2) </b>Render the figure looking at one of those
+points. </font></p>
+<p><font face="Arial"><b>Step 3) </b>HERE IS THE TRICK: Now, before moving the
+pose to the next grid location, set your <font color="#800080"><b>ambient
+lighting</b></font> to BLACK. In fact, set ALL your lighting to BLACK. All
+reflections to OFF. Set your background rendering color to WHITE. When you
+render the pose this time, what you will end up with is a solid black image,
+like this: (I added the grey border in HTML&nbsp; so you can see what's going
+on...)</font></p>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="120" bgcolor="#C0C0C0" height="320">
+    <tr>
+      <td width="100%">
+        <p align="center"><img border="0" src="Mask1.gif" width="90" height="280"></td>
+    </tr>
+  </table>
+</div>
+<p><font face="Arial">The solid black image is EXACTLY the same as the 3D shape.</font></p>
+<p><font face="Arial"><b>Step 4) </b>Now that you've done say... a whole bunch
+of these... here's another trick... if you name your series of bitmaps with
+consecutive numbers... like this... &quot;File 001.bmp&quot;, &quot;File
+002.bmp&quot;, &quot;File 003.bmp&quot; ... When you import the first file of
+your 3D object into the first frame of a new Movie Object, Flash recognizes that
+the bitmap is the first in a whole series, and asks you if you want to import
+the rest! Say OK. All the rest are imported into consecutive frames in the
+timeline. Timesaver! </font></p>
+<p><font face="Arial"><b>Step 5) </b>Create a second layer, above the imported
+3D objects, and call it &quot;mask&quot;.</font></p>
+<p><font face="Arial"><b>Step 6) </b>Import all the black and white only files
+into the layer the same way you imported your 3D artwork into the other layer.</font></p>
+<p><font face="Arial"><b>Step 7) </b>Now, click on the first frame of the black
+and white only mask of your figure... then select from Flash's Menu &gt; Modify
+&gt; Trace Bitmap...</font></p>
+<p><font face="Arial"><b>Step 8) </b>I was impressed with Flash's ability to
+accurately trace a bitmap! Once the bitmap has been traced you can keep the
+flash trace artwork and delete the bitmap you just traced. Do that for the rest
+of the frames of your artwork.</font></p>
+<p><font face="Arial"><b>Step 9) </b>Finally, select the Layer from the Layers
+list in Flash and Right Click on it, then select &quot;Mask&quot; to convert all
+the artwork in that layer into a mask. </font></p>
+<p>&nbsp;</p>
+<p><font face="Arial">That's it! You may find Flash's Trace Bitmap... to be not
+quite perfect. None of the bitmap tracers I have seen are perfect. Corel has
+one. Adobe has one. I have seen other ones... but you always have to do some
+final manual tweaking of the mask using the paintbrush and eraser brush directly
+on the shape that you traced. Still, this method is MUCH QUICKER than doing it
+all by hand.</font></p>
+<p><font face="Arial">And you can create some nice effects with 3D.</font></p>
+<p><font face="Arial">: )</font></p>
+<p><font face="Arial"><b>by:
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" ID="FlashJunkie" WIDTH="90" HEIGHT="30">
+  <param NAME="movie" VALUE="FlashJunkie.swf">
+  <param NAME="quality" VALUE="high">
+  <param NAME="bgcolor" VALUE="#9966FF"><embed src="FlashJunkie.swf" quality="high" bgcolor="#9966FF" WIDTH="90" HEIGHT="30" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</object>
+</b></font></p>
+</BODY>
+</HTML>

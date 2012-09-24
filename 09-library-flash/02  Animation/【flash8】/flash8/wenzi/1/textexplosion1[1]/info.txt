@@ -1,0 +1,24 @@
+*********************** d i s c l a i m e r**************************
+*                                                                   *
+*   This flash-intro was made by © 2000 Patrick Jansen Vormgeving   *
+*   You may modify and use this file for personal use, as long as   *
+*   you leave a notice of artistic creation by Patrick Jansen       *
+*   Vormgeving either in source code or in copyrights-section of    *
+*   resulting work.                                                 *
+*                                                                   *
+*********************************************************************
+
+
+I have been thinking about a 'generated'-flashfile by using txt documents
+to variables, thereby leaving it easyer to change the text. The problem
+which then will occur is bypassing the difference between very short words
+and very long words. And i think it will be too much trouble, since this 
+file is not difficult to adapt and also flash3-compatible. In this file 
+you will be able to change the letters. Try to 'centre' your word(s)! 
+what...? What i mean is.. the effect will start at the letter "E" in the
+middle, followed by the letters "S" and "N" and so on. If your word(s) is
+smaller then mine, take out the letters which are not used. If your word(s)
+are longer, then you will have to change the MoveClip explosie also, it 
+will be more complicated but not undoable.
+
+Patrick Jansen

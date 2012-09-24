@@ -1,0 +1,81 @@
+Password Login with Sounds
+Created by Blackout(MT)
+http://www.bwd.tsx.org
+
+In this fla file, you will find :
+- Login.fla (The sample Logon source file)
+- Login.swf (The generated SWF file)
+
+--------------------------------------------------------------------------
+
+Instructions:
+in the libary there is a Movie Called 'Movie.Drag me in2 your FLA'
+just drag that into your Movie n every thing else will go in.
+
+Now how this FLA works:
+FRAME 1.
+Edit the Movie n in the first frame it sets the variables.
+
+Set Variable: "thepassword" = "letmein"
+Set Variable: "passbox" = ""
+Stop
+
+the first variable sets the password for the logon,
+the default is "letmein" it can be changed to anything u want,
+i.e. "thepassword" = "DogSnot" now your password is DogSnot
+the second variable is the box that u type your pass into
+
+FRAME 2.
+this frame does all most nothing, all it does is play the
+sound if u got your password wrong then returns the frame
+1 waiting for your next try.
+
+FRAME 3.
+same as FRAME 2 but instead it play the "Access Grained" wave
+and goes to FRAME 4 
+
+FRAME 4.
+this frame is the members section its slef, put what eva u
+want in this frame, theres 2 variables set in the prop.
+
+Set Variable: "passbox" = thepassword
+Set Variable: "passstatus" = "Welcome to the members section"
+Stop
+
+the first variable just shows the user the current password
+the second variable Displays a welcome message, u could change
+this to a movie a use the 'Tell Target' command to display 
+something more complex.
+
+one last this.
+
+THE LOGON BUTTON
+
+On (Release, Key: <Enter>)
+      If (passbox eq thepassword)
+            Go to and Play (3)
+      Else
+            Set Variable: "passstatus" = "Incorrect Password,
+                Please Check Your E-M@il For The New Password"
+            Play
+      End If
+End On
+
+this button just compares the text in "passbox" to the variable
+"thepassword" and if they r the same it goes to FRAME 3,
+if it doesnt it sets the variable "passstatus" = "Incorrect etc"
+so it displays the message to the user, then goes to FRAME 2
+and does FRAME 2's actions.
+
+--------------------------------------------------------------------------
+
+Feel free to use, modify, or do anything you want with it just tell us
+what you done, and were i can get the fla so i can c what you done. :P
+
+Any comments or suggestions, you can email me at blackout_48@hotmail.com
+
+Hope you'll find this useful!
+
+Blackout(MT)
+Blackout Web Design
+http://www.bwd.tsx.org

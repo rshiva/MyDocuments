@@ -1,0 +1,13 @@
+MegaZine3 v2.0.7a (released version with link patch)
+
+The batch files release is 1.8.8.
+1.8.8 modified preloader logic: now a version specific preloader is supported. If in folder _custom_files a file bookname_versionname.swf is present, that one will be used
+1.8.7 more options tested and some bugs fixed. A bookmark example was built in preparation for a future tutorial. Some more error messages built in
+The batch files are commented and most of the supported features had been used and are tested.
+
+No warranty, and in future we'll more likely provide something with a GUI and prgrammed (instead of using batch command files).
+But this can take a while... so for the meanwhhile feel free to use and modify to your needs.
+
+The tutorial roughly describes some of the features; it is intended to help you getting your first book fast and give you an example of a working directory structure and megazine.mz3 and index.files.
+
+

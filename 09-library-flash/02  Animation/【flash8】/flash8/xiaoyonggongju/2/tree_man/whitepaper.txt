@@ -1,0 +1,98 @@
+Links TreeManager
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ DataRetrieval
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  CF writes the items out in a straight 
+  format. First item is stored with a 
+  checkmark, so we can query for this
+  item individually.
+  
+  Output Data:
+   Format: item[unique_id]_[field]=[value]
+   Fields:
+     Name
+     LinkID
+     Description
+     URL
+     Child
+     Parent
+     Previous
+     Next
+     Closed
+     Private (fornow)
+     
+   Data Query:
+     SELECT * FROM Links2 WHERE Owner = #OwnerID#
+  
+ Item Deletion
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Items are removed by dropping them 
+  out from the tree list.
+
+  Each individual item and child will 
+  be added to a DeletedItems comma 
+  delimited list.
+  
+ Item Addition
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  Items are given a randomly generated
+  name (Characters and numbers), which
+  is compared against for uniqueness by
+  verifying that (NewName)_Name <> ""
+  (Assuming that the Name field cannot
+  be null.)
+  
+  This item is then added to a comma
+  delimited list called AddedItems.
+  
+ Data Storing
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  The tree itself (reparsing it and 
+  copying the items to a sublevel MC)
+  along with the DeletedItems,
+  AddedItems, a comma list of 
+  ItemsInTree and FirstNode variables
+  are all sent to a CF page.
+  
+  The CF page then removes all items 
+  listed in the DeletedItems list.
+  
+  Next we add all items listed in the
+  AddedItems list, but as we add them,
+  we set a structure that remembers 
+  each item from this list, an 
+  associates the new ID number with 
+  it.
+  
+  Lastly, we update each element of 
+  the tree with it's new values. In 
+  this part, we also have to update
+  the new tree items, because they 
+  could (and will) have references to
+  new items themselves.
+  
+   Closer look at the processes:
+     Loop through the DeletedItems
+     list.  Remove each item where
+       LinkID = #Right(ListItem, Len(ListItem)-4)#
+     
+     Loop through AddedItems.
+     Insert Query to create the
+     items, sans data. Modify a Struct
+     NewItemNumbers so that each new 
+     element has a slot, along with 
+     the new number.
+     
+     Lastly, Loop through ItemsInTree.
+     If [item]_id <> 0, then update 
+     that item.
+     Otherwise, retrieve the itemID
+     from NewItemNumbers, using the
+     [item] itself.
+     
+     During the update, if any of the
+     relational vars contains a member
+     of the NewItemNumbers struct, use
+     that number, otherwise, rip out
+     the number from the item name.

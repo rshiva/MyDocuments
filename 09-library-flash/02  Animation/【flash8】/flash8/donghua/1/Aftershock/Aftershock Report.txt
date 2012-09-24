@@ -1,0 +1,28 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1         10054          10054        Scene 1
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+.                                 0             0
+Animation                        36             0
+Drishtikone                       0            70
+Com                               0            36
+Glow Orb                        205             0
+Ray                              56             0
+FPlogoV2                          0             0
+title                            45           171
+flash8                         1699             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Arial Rounded MT Bold        2246         ().:@ACKRS_abcdefhiklmorsty
+Stencil Sans Bold Italic      423        CMO
+Stencil Sans Bold            1234         DEHIKNORST

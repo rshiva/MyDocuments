@@ -1,0 +1,26 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          4021           4021        Scene 1
+    2             2           4023          2
+    3           428           4451          3
+    4            44           4495          4
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                         118           148
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+3                                 0             0
+2                                 0             0
+1                               261             0
+urlbn                             0             0
+lettr_movie                       0             0
+lettr                             0             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+MagistralC Bold Italic       2685         ./:ACDFGabefghlmnoprstuy

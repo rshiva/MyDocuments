@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>Flash 4 Loops and If/Else Statements Tutorial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<h1>Loops and If/Else Actions Tutorial 101</h1>
+<p>by Bill Tagliaferro<br>
+  [<a href="mousetracktutorial.fla">Download Source</a>]</p>
+<p>This tutorial is designed to show you how to use Loop Actions and If/Else Actions.  In conjunction with this you will also see how movie clips can be used to sample properties and events in the background.  This is a very powerful capability that allows movies to perform parallel processing (several computations going on at the same time, not in sequence).<p >
+<!--X Y Mouse Position (C) Copyright ENS Inc. -->
+<center>
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0"
+ ID=mousetrack WIDTH=550 HEIGHT=400>
+	<PARAM NAME=movie VALUE="mousetrack.swf"> 
+	<PARAM NAME=quality VALUE=high> 
+	<PARAM NAME=bgcolor VALUE=#000000> 
+	<EMBED src="mousetrack.swf" 
+		quality=high 
+		bgcolor=#000000  
+		WIDTH=550 
+		HEIGHT=400 
+		TYPE="application/x-shockwave-flash" 
+		PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+	</EMBED>
+</OBJECT>
+</center>
+</p>
+
+<p>This tutorial is intended for beginning Flash 4 users.</p>
+<ul>
+  <li>No previous tutorials are required.</li>
+  <li>Download the <a href="mousetracktutorial.fla">source</a> files and have them unzipped for review during this tutorial.</li>
+</ul>
+<hr>
+<h2>Step-by-step</h2>
+<h3>Overview:</h3>
+<p >Like it or not, if you want to get the most out of Flash 4, you will need to learn the Flash 4 programing language.  So for all those graphic artists out there that may be knee-jerking to this, rest assured that anyone can learn programming, while only some will ever be good graphic artists.
+What you will learn with this tutorial is the following:</p>
+<ol>
+  <li>How to make a movie clip follow the mouse.</li><br>
+  <li>How to use the <b>Loop</b> action.</li><br>
+  <li>How to use the <b>If and Else</b> actions.</li><br>
+</ol>
+<hr>
+<i><b>Making your movie.</b></i><br>
+<p >In this tutorial there are both foreground movie clips and background movie clips.  Background movie clips are continuously running but they don't directly display anything.  Foreground movie clips will have images, button etc. that can be seen.
+	Background movie will be used to keep track of the mouse position and the distance from the mouse to each bird.  They will perform the check to see if the mouse is near a bird and set its visibility accordingly.  The foreground movie clips will contain the birds and the Mouth Man image that follows the mouse.  All other images will be placed directly on the stage.  O.K. so let's get started.</p>
+<ol type=1>
+	<li>Start Flash and set the movie properties <b>Modify | Movie</b> to Frame Rate = 20, Dimensions = 550x400, and Background=Black.  
+<br><br><li>First we will make the Mouthman graphic follow the mouse.
+	<ol type=a>
+		<li>Select <b>Libraries | Graphic </b> and then choose the Mouthman image.
+		<li>Drag the Mouthman graphic onto the stage.
+		<li>Double click on the Mouthman image to open the Instance Properties window.
+		<li>Select <b>Behavior | Movie Clip</b> and give it an <b>Instance Name</b> of <b>MouthMan</b>
+		<li>The first frame of the movie is a keyframe.  Double click on this to open the Frame Properties window.
+		<li>Select the <b>Actions</b> tab.
+		<li>Add an action by clicking on the <b>+</b> sign and then choose <b>Drag Movie Clip</b>
+		<li>The options for this action will appear on the right.  Type<b>MouthMan</b> in the window and select <b>Lock Mouse to Center</b>.
+		<li> The action should look like this:<br><br><ul><li>Start Drag ("MouthMan", lockcenter)</ul><br>
+		<li>Finally, insert a blank frame <b>F5</b> and give it a stop action.
+		<li>Test your movie ( <b>Control | Test Movie </b>) to see if the Mouthman follows the mouse.  If not double check your steps and fix any problems until it works.		
+	</ol>
+<br><br><li>Now we will add the Birds
+	<ol type=a>
+		<li>Select <b>Libraries | Graphic </b> and then choose the Bird image.
+		<li>Drag the Bird graphic onto the stage.
+		<li>Double click on the Bird image to open the Instance Properties window.
+		<li>Select <b>Behavior | Movie Clip</b> and give it an <b>Instance Name</b> of <b>Bird1</b>
+		<li>Repeat steps b, c, and d two more times, changing the bird number to 2 and 3 respectively.
+		<li>You should have three birds on stage now named Bird1, Bird2, and Bird3.
+	</ol>
+<br><br><li>Now for the programming part.
+	<ol type=a>
+		<li>If your Library window isn't open then select <b>Window | Library or press CTRL-L</b> to open it.
+		<li>Select <b>Options | New Symbol</b> in the library window.
+		<li>Give it the name <b>Bird Hit Detect</b> and select <b>Movie Clip</b> for the behavior.
+		<li>Highlight frame 2 and press <b>F5</b> to insert another frame.
+		<li>Double click on keyframe 1 to open the Frame Properties window.
+		<li>Select the <b>Actions</b> tab.
+		<li>The actions in this keyframe must accomplish two things:
+		<ol type=i>
+			<li>It must have a <b>Loop</b> (a set of statements that are repeated) that checks each bird to see if the mouse is near or not, and
+			<li>It must set the visibility to FALSE if the mouse near and TRUE if the mouse is not near.  Think of it like this:<br><br>
+					<font color="#800080">Loop over three birds<br>
+					<span style="margin-left:2%">
+					check if mouse is near a bird<br>
+					set visibility<br>
+					</span>
+					End Loop (i.e. Next Bird)</font><br><br>
+			<li>First the Loop.  The <b>Loop While and End Loop</b> surrounds a set of statements that will be executed as long as the condition statement is TRUE.
+				In our case we will have a bird counter <b>n</b> that goes from 1 to 3.  As long as n is less than or equal to 3 we will continue our loop.  The first thing
+				we must do is to set n to 1 for the first bird.  Then at the very bottom of our loop we will add 1 to it each time we finish the statements in the loop.
+				This looks like:<br><br>
+				<font  color="#800080">Set Variable: "n" = 1<br>
+				Loop While (n<=3)<br>
+					<span style="margin-left:2%">
+					--- other statements will go here ----<br>
+      				Set Variable: "n" = n+1<br>
+					</span>
+				End Loop</font><br><br>
+			<li>Determine if the mouse is near one of the birds.  Sorry if this sounds a bit mathematical but once you understand it you can use it in many applications.
+				Basically, what we are doing is computing the distance the mouse is from each bird.  If that distance is smaller than the size of the bird then we found the bird and we turn it off.
+				So, if we let the distance the mouse is from the bird be the variable <b>dp</b> and we let the size of the bird be the variable <b>rad</b>, then we have found a bird
+				whenever <b>dp is less than rad</b>.  This is where the <b>IF and ELSE</b> actions come in.
+				In english: IF dp is less than rad set visibility to FALSE, ELSE (or otherwise) set visibility to TRUE.
+				This looks like this:<br><br>
+				<font  color="#800080">Set Variable: "n" = 1<br>
+				Loop While (n<=3)<br>
+					<span style="margin-left:2%">
+					--- other statements will go here ----<br>
+      				If (dp < rad)<br>
+            				<span style="margin-left:2%">
+						Set Property (bird, Visibility) = False<br>
+						</span>
+     					Else<br>
+            				<span style="margin-left:2%">
+            				Set Property (bird, Visibility) = True<br>
+						</span>
+      				End If<br>
+      				Set Variable: "n" = n+1<br>
+					</SPAN>
+				End Loop</font><br><br>
+			<li>Now we have to set (compute) the distance (dp) and the size (rad) variables.  The distance squared between two points on the screen is the sum of the differences squared between their coordinates.
+				In other words:<br><br>
+					<ul>distance^2 = (X2 - X1)^2 + (Y2 - Y1)^2  <br><br>where X1 and Y1 is the location of the mouse and X2 and Y2 is the location of the bird.
+					</ul><br><br>
+					To make our lives more easy we will just use the width of the bird image as its size (this is best for square images).
+					The actions for this Hit Detection now looks like this:<br><br>
+
+				<font  color="#800080">Set Variable: "n" = 1 <br>
+				Loop While (n<=3)<br>
+					<span style="margin-left:2%">
+      				Set Variable: "bird" = "/Bird"&n<br>
+      				Set Variable: "dx" = GetProperty (bird,_x) - GetProperty ("/MouthMan",_x)<br>
+      				Set Variable: "dy" = GetProperty (bird,_y) - GetProperty ("/MouthMan",_y)<br>
+      				Set Variable: "dx" = dx*dx<br>
+      				Set Variable: "dy" = dy*dy<br>
+      				Set Variable: "rad" = GetProperty (bird,_width)<br>
+      				Set Variable: "rad" = rad*rad<br>
+      				Set Variable: "dp" = dx + dy<br>
+      				If (dp < rad)<br>
+						<span style="margin-left:2%">
+            				Set Property (bird, Visibility) = False<br>
+						</span>
+      				Else<br>
+						<span style="margin-left:2%">
+            				Set Property (bird, Visibility) = True<br>
+						</span>
+      				End If<br>
+      				Set Variable: "n" = n+1<br>
+					</span>
+				End Loop</font><br><br clear="all">
+				<img src="mousetrack1.jpg" width="400" height="238" border="0">
+			<br clear="all">
+			<li>Remember, this is the Hit Detector and it must be placed on stage.  It is a background movie clip.  Drag it from your symbol library
+				and place it anywhere you like on stage.  It will appear as a small white dot.
+			</ol>
+	</ol>
+<br><br><li>At this point your movie is complete as far as the mouse tracking and detection of bird positions.  The remainder of this tutorial
+	deals with the display of the mouse position.  This is not a necessary addition.  It is included just for fun.<br><br>
+	The technique used here to display the mouse position can also be used during development of the main movie 
+	to display variables for debug and checkout.  The idea is just a simple background movie that is constantly getting the
+	value of a variable and placing it in a display.  The display elements or fields can be placed directly on stage of they can be part of the
+	movie clip that is sampling the mouse position.  It this case the display fields will be placed directly on stage.
+	<ol type=a>
+		<li>Select <b>Text Tool</b> and select the <b>Text Field</b> option.
+		<li>Drag the Mouthman graphic onto the stage.
+		<li>Drag and area on stage where you want to display the X position of the mouse.
+		<li>Repeat the above step for the Y position display.
+		<li>Using the Text Tool without the Text Field selected, give these fields a label, like "X = " or something.
+		<li>Now using the <b>Arrow Tool</b> right click on one of the <b>Text Fields</b> and choose <b>Properties</b>.
+		<li>In the Text Field Properties window type the Variable name <b>xDisplay</b>, and un-check the <b>Draw Border and Background</b> box.  Then click <b>OK</b>.
+		<li>Repeat the last two steps for the <b>yDisplay</b>.
+		<li>Now for the background movie that will get the X and Y values and place them in the display.
+		<ol type=i>
+			<li>On your symbol library window select <b>Options | New Symbol</b> and give it a name <b>Clip Position</b> and a Behavior of <b>Movie Clip</b>.
+			<li>On the time line select the second frame and hit <b>F5</b> to insert a blank frame.  This forces the first frame to be executed over and over again when placed in the main movie.
+			<li>Now double click on the first keyframe and choose the <b>Actions</b> tab.
+			<li>There will be 4 actions, 2 for the x position (get the x position and display it) and 2 for the y position (same as x).<br><br>
+				<font  color="#800080">Set Variable: "xval" = GetProperty ("/MouthMan",_x)<br>
+				Set Variable: "yval" = GetProperty ("/MouthMan",_y)<br>
+				Set Variable: "/:xDisplay" = xval<br>
+				Set Variable: "/:yDisplay" = yval</font><br><br>
+				Note: that this can be accomplished with only two lines.  The extra lines are here for illustration.
+			<li>Now go back to your main scene and drop this movie clip somewhere on stage.
+		</ol>
+	</ol>
+</ol>
+<hr>
+<h2>Need More Help?</h2>
+<p>[<a href="mousetracktutorial.fla">Download Source</a>]<br>Don't forget to get the source files and look them over.</p>
+<hr>
+<h2>Troubleshooting</h2>
+<p>It's safe to say that there are a number of potential pitfalls in building a Flash 4 movie of this type.  Although this is a rather simple illustration of Flash 4 programming
+it is filled with movie clip references and variables.  My suggestion in making a movie of this type is to have
+paper and pencil handy and define variables and movie clips before hand.  Make notes as you work.  Be consistent in your naming convention.</p>
+</body>
+</html>

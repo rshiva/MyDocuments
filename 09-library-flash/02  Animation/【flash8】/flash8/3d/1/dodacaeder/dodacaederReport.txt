@@ -1,0 +1,24 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1         37533          37533        Scene 1
+    2           389          37922          2
+    3            66          37988          3
+    4            40          38028        Scene 2
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                           0             0
+Scene 2                           0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+animatie                      34343             0
+flash8.0                         86           147
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+ºÚÌå                          745        Ô´Õ¾×Ê
+Arial Black                  1474        ./08:AFHLSaefhlnpsty

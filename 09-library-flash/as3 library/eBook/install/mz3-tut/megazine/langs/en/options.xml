@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang id="en">
+	<langstring name="LNG_SETTINGS">Options</langstring>
+	<langstring name="LNG_SETTINGS_ACCEPT">Save settings</langstring>
+	<langstring name="LNG_SHADOWS">Shadows</langstring>
+	<langstring name="LNG_SHADOWS_LONG">Toggles the use of shadows and highlights for pages while turning. Slight impact on performance.</langstring>
+	<langstring name="LNG_REFLECTION">Reflection</langstring>
+	<langstring name="LNG_REFLECTION_LONG">Toggles the use of the page reflection below the actual book. Heavy impact on performance.</langstring>
+</lang>

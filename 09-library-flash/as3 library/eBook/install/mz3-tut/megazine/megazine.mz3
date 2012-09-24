@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book SYSTEM "http://megazine.mightypirates.de/megazine2.dtd">
+<book>
+<!--
+	Replace the <book> tag above with this one to have all common plugins loaded (all except elementids, googleanalytics, password, search and sidebar).
+<book plugins="anchors, backgroundsounds, batchpages, console, gallery, help, javascript, keyboardnavigation, links, navigationbar, options, overlays, print, slideshow, swfaddress, titles">
+-->
+	<background>
+		<!--
+			Note: if it bothers you, you may delete the "Powered by MegaZine3" link by removing the following box tag.
+			But we would appreciate it if you'd leave it in to spread the word. Thanks!
+		-->
+		<box background="image(gui/engine/poweredby.png)" width="160" height="45" anchors="pw-w,ph-h" url="http://megazine.mightypirates.de/" target="_blank"/>
+	</background>
+	<chapter>
+		<page/>
+		<page/>
+	</chapter>
+</book>

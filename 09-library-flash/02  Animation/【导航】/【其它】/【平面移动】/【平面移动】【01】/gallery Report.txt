@@ -1,0 +1,26 @@
+gallery.swf       1         222162         222162    Scene 1 
+Scene 1                                0             0                   399
+
+Symbol 15                              0             0                     0
+Symbol 14                              0             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+                                   50             0                     0
+Symbol 3                              67             0                     0
+Symbol 2                               0             0                   170
+                                   0             0                     0
+                                    120             0                     0
+
+               163    Symbol 2:Layer 2:1
+                 7    Symbol 2:Layer 2:2
+                47    Scene 1:Layer 5:1:                44    Scene 1:Layer 5:1:                46    Scene 1:Layer 5:1:                44    Scene 1:Layer 5:1:                41    Scene 1:Layer 5:1:                43    Scene 1:Layer 5:1:                46    Scene 1:Layer 5:1:                43    Scene 1:Layer 5:1:                45    Scene 1:Layer 5:1:
+                      25665      720000                         26756      720000                         26570      720000                         22575      720000                         12373      723604                         23915      722400                         23921      720000                         25535      721200                         26436      720000                       5136      120000   JPEG 
+
+
+

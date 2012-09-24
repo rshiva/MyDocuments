@@ -1,0 +1,41 @@
+******************
+Civic Video
+www.civicvideo.com.au
+
+and 
+
+Blunt Consulting
+www.blunt.com.au
+
+proudly present
+******************
+
+Civic Adventures
+
+1. Epiode 1, The Phantom Menace
+2. Copyright Issues
+3. Tech notes
+
+
+1. 	Episode 1 The Phantom Menace was developed Blunt Consulting
+	If you would like to win a fantastic prize,
+	head over to www.civicvideo.com.au
+	and submit your idea today.
+
+2.	All parts of this flash movie may be considered open source.
+	The 3d Civic Video logo is produced by Blunt Consulting 
+	and may be used as an example of 3D graphics
+
+3.1	The vast majority of effects are motion tweening utilizing nested symbols
+	reused where possible.
+
+3.3	There is a simple preloader at start
+
+3.4	Where possible (and remembered) symbols are named in a scene
+	hierarchy format.
+
+*******************
+Are you a web designer interested in freelance web work?
+send your resume to 
+jobs@blunt.com.au
+*******************

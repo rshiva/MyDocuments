@@ -1,0 +1,3 @@
+link1=http://www.flashzone.com/
+&link2=http://www.flash.ru
+&link3=http://www.shockwave.com

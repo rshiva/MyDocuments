@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE>Tree Demo</TITLE>
+</HEAD>
+<BODY bgcolor="#353859" TEXT="Silver" LINK="Silver" VLINK="Silver" ALINK="White">
+<FONT FACE="Tahoma,Helvetica,Arial,sans-serif" SIZE="3">
+<P ALIGN="center">
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0"
+ ID=treeman WIDTH=250 HEIGHT=500>
+ <PARAM NAME=movie VALUE="treeman.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#353859> <EMBED src="treeman.swf" quality=high bgcolor=#353859  WIDTH=250 HEIGHT=500 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+</OBJECT>
+<BR><A HREF="treeman"><B>Download the Source</B></A>
+<BR><FONT SIZE="2"><A HREF="tree.htm"><B>View the Tree Browser</B></A>
+<P ALIGN="center"><TABLE WIDTH="250" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR><TD><FONT FACE="Tahoma,Helvetica,Arial,sans-serif" SIZE="2">
+Ok this system is complete as far as I am concerned.
+I'm not going to present any further versions (unless 
+I fix the scrollto bug) as the remaining procedures
+are all server-side.
+<P><B>Done or Working:</B>
+<UL COMPACT>
+<LI>Parsing.
+<LI>Branch control.
+<LI>Advanced, Generic Scrollbars.
+<LI>Item Selection.
+<LI>Edit Function.
+<LI>Delete Function.
+<LI>Add Function.
+<LI>Miscellaneous: Expand/Collapse all, Clear and Remove all (under arrow at top right).
+<LI>Basic dragging operation.
+<LI>Autoscrolling on Drag operation.
+<LI>Drop part of drag and drop!
+<LI>AutoExpand on Drag operation.
+<LI>Horizontal Scrolling.
+<LI>Horizontal AutoScroll on drag.
+</UL>
+<P><B>Next:</B>
+<BR>(<A HREF="whitepaper.txt">View "whitepaper" work</A>)
+<UL COMPACT>
+<LI>Transfer data to and from server.  (Not going to be visible to the rest of the world.)
+</UL>
+<P><B>Repairs:</B>
+<UL COMPACT>
+<LI><B>Scrollto on returning from drag:</B>
+<BR>Doesn't seem to like to scroll to the bottom object.
+<BR>Probably related to timing issues (ie, textbox hasn't been redrawn yet.)
+</UL>
+</TD></TR></TABLE>
+</FONT>
+</BODY>
+</HTML>
