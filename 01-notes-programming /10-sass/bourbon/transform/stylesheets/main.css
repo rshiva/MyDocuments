@@ -1,0 +1,33 @@
+.box, #box1, #box2 {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  float: left; }
+
+#box1 {
+  background-color: #1e5799;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #1e5799), color-stop(100%, #3dc3d1));
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px); }
+
+#box2 {
+  background-color: #1e5799;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, color-stop(0%, #1e5799), color-stop(100%, #3dc3d1));
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  background-image: radial-gradient(50% 50%, ellipse cover, #1e5799, #3dc3d1);
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top; }
