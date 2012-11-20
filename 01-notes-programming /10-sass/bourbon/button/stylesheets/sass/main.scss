@@ -1,0 +1,13 @@
+@import "../bourbon/bourbon";
+
+#btn1{
+	  @include button(#ef629b);
+}
+
+#btn2{
+	  @include button(pill, #f26522);
+}
+
+#btn3{
+	@include button(shiny, #ff0000);
+}

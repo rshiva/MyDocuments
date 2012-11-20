@@ -1,0 +1,15 @@
+@import "../bourbon/bourbon";
+
+.box{
+	margin:50px;
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+#box1{
+	@extend .box;
+	@include hide-text;
+}
+
+
