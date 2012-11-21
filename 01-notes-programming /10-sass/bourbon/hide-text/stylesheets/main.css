@@ -1,0 +1,12 @@
+.box, #box1 {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  float: left; }
+
+#box1 {
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none; }

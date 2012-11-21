@@ -1,0 +1,28 @@
+@import "../bourbon/bourbon";
+
+.box{
+	margin:50px;
+	width:200px;
+	height:200px;
+	float:left;
+	@include radial-gradient(#1e5799, #3dc3d1);
+}
+
+#box1{
+	@extend .box;
+	@include border-radius(10px);
+}
+
+#box2{
+	@extend .box;
+	@include border-radius(5px 5px 2px 2px);
+}
+
+#box3{
+	@extend .box;
+	@include border-top-left-radius(5px);
+	@include border-top-right-radius(5px);
+	@include border-bottom-right-radius(5px);
+	@include border-bottom-left-radius(5px);
+}
+

@@ -1,0 +1,29 @@
+@import "../bourbon/bourbon";
+
+.box{
+	margin:50px;
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+#box1{
+	@extend .box;
+	@include linear-gradient(#1e5799, #2989d8);
+}
+
+#box2{
+	@extend .box;
+	@include linear-gradient(top, #8fdce5, #3dc3d1);
+}
+
+#box3{
+	@extend .box;
+	@include linear-gradient(top, #8fdce5, #3dc3d1, $fallback: red);
+}
+
+#box4{
+	@extend .box;
+	@include linear-gradient(50deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+}
+

@@ -1,0 +1,5 @@
+@import "../bourbon/bourbon";
+
+div {
+  @include clearfix;
+}
