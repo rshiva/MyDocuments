@@ -1,9 +1,8 @@
 The different between develop mode with production mode
 Models, Views, Controllers architecture
 rails MVC workflow
-
-
-
+Object Relational Mapping
+Active Record
 
 create a rails application
 generate a new controller Say with hello and goodbye method
