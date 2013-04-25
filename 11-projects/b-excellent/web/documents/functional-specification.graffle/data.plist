@@ -271,7 +271,7 @@
 
 \f0\b\fs68 \cf2 b-excellent
 \f1 .
-\f0 com Website Functional Specification  }</string>
+\f0 com Functional Specification  }</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1221,7 +1221,7 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2013-04-25 11:41:54 +0000</string>
+	<string>2013-04-25 21:51:11 +0000</string>
 	<key>Modifier</key>
 	<string>harry</string>
 	<key>NotesVisible</key>
@@ -1538,7 +1538,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{477.38993474825133, 334.03668484092555}, {611.50390625, 166}}</string>
+					<string>{{477.38993474825133, 334.03668484092555}, {574.1815185546875, 92}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1598,13 +1598,10 @@
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\slleading300
 \ls1\ilvl0
 \f0\fs36 \cf0 {\listtext	1.	}
-\f1 \'ca\'b9\'d3\'c3\'b4\'ab\'cd\'b3\'d2\'b3\'c3\'e6\'bc\'bc\'ca\'f5\'bf\'aa\'b7\'a2\'b5\'c4\'cd\'f8\'d5\'be\'bf\'cd\'bb\'a7\'d4\'da\'b7\'c3\'ce\'ca\'ca\'b1\'d0\'e8\'d2\'aa\'b2\'bb\'b6\'cf\'b5\'f7\'d5\'fb\'cf\'d4\'ca\'be\'b1\'c8\'c0\'fd\'a1\'a3\'c3\'bf\'b4\'ce\'d6\'bb\'c4\'dc\'e4\'af\'c0\'c0\'d2\'b3\'c3\'e6\'b5\'c4\'d2\'bb\'b2\'bf\'b7\'d6\'a1\'a3
+\f1 \'bf\'cd\'bb\'a7\'d4\'da\'b7\'c3\'ce\'ca\'ca\'b9\'d3\'c3\'b4\'ab\'cd\'b3\'d2\'b3\'c3\'e6\'bc\'bc\'ca\'f5\'bf\'aa\'b7\'a2\'b5\'c4\'cd\'f8\'d5\'be\'ca\'b1\'a3\'ac\'d0\'e8\'d2\'aa\'b5\'f7\'d5\'fb\'cf\'d4\'ca\'be\'b1\'c8\'c0\'fd\'a3\'ac\'c3\'bf\'b4\'ce\'d6\'bb\'c4\'dc\'e4\'af\'c0\'c0\'d2\'b3\'c3\'e6\'b5\'c4\'d2\'bb\'b2\'bf\'b7\'d6\'a1\'a3
 \f0 \
-{\listtext	2.	}
-\f1 \'b2\'bb\'d6\'a7\'b3\'d6 Flash \'b6\'af\'bb\'ad
-\f0 \
-\
- }</string>
+{\listtext	2.	}Iphone 
+\f1 \'b2\'bb\'d6\'a7\'b3\'d6 Flash\'a1\'a3 }</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1777,7 +1774,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {480, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {832, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -1829,7 +1826,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'ce\'aa\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'b5\'c4\'b7\'c3\'ce\'ca\'cc\'e1\'b9\'a9\'d3\'d1\'c9\'c6\'b5\'c4\'bd\'e7\'c3\'e6}</string>
+\f0\fs64 \cf0 \'c8\'c3\'b7\'c3\'bf\'cd\'c4\'dc\'ca\'b9\'d3\'c3\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'a3\'a8\'ca\'d6\'bb\'fa\'a3\'ac\'c6\'bd\'b0\'e5\'b5\'e7\'c4\'d4\'a3\'a9\'b7\'bd\'b1\'e3\'b5\'c4\'e4\'af\'c0\'c0\'cd\'f8\'d5\'be}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2352,7 +2349,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {480, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {832, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2404,7 +2401,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'ce\'aa\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'b5\'c4\'b7\'c3\'ce\'ca\'cc\'e1\'b9\'a9\'d3\'d1\'c9\'c6\'b5\'c4\'bd\'e7\'c3\'e6}</string>
+\f0\fs64 \cf0 \'c8\'c3\'b7\'c3\'bf\'cd\'c4\'dc\'ca\'b9\'d3\'c3\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'a3\'a8\'ca\'d6\'bb\'fa\'a3\'ac\'c6\'bd\'b0\'e5\'b5\'e7\'c4\'d4\'a3\'a9\'b7\'bd\'b1\'e3\'b5\'c4\'e4\'af\'c0\'c0\'cd\'f8\'d5\'be}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2780,7 +2777,7 @@
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'b5\'b1\'bf\'cd\'bb\'a7\'b4\'f2\'d3\'a1\'cd\'f8\'d5\'be\'d2\'b3\'c3\'e6\'ca\'b1\'a3\'a8\'b1\'c8\'c8\'e7\'bf\'ce\'b3\'cc\'bc\'f2\'bd\'e9\'a3\'a9\'a3\'ac\'d0\'e8\'d2\'aa\'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1\'ca\'e4\'b3\'f6\'a1\'a3}</string>
+\f1 \'b5\'b1\'bf\'cd\'bb\'a7\'b4\'f2\'d3\'a1\'d2\'b3\'c3\'e6\'ca\'b1\'a3\'a8\'b1\'c8\'c8\'e7\'bf\'ce\'b3\'cc\'bc\'f2\'bd\'e9\'a3\'a9\'a3\'ac\'d0\'e8\'d2\'aa\'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1\'ca\'e4\'b3\'f6\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -2846,7 +2843,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {356, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {420, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2898,7 +2895,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1 + \'b0\'e6\'c8\'a8\'b1\'a3\'bb\'a4\'cb\'ae\'d3\'a1}</string>
+\f0\fs64 \cf0 \'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1\'ca\'e4\'b3\'f6 + \'b0\'e6\'c8\'a8\'b1\'a3\'bb\'a4\'cb\'ae\'d3\'a1}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3340,7 +3337,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {356, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {420, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3392,7 +3389,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1 + \'b0\'e6\'c8\'a8\'b1\'a3\'bb\'a4\'cb\'ae\'d3\'a1}</string>
+\f0\fs64 \cf0 \'d3\'c5\'bb\'af\'b4\'f2\'d3\'a1\'ca\'e4\'b3\'f6 + \'b0\'e6\'c8\'a8\'b1\'a3\'bb\'a4\'cb\'ae\'d3\'a1}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -3820,7 +3817,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {736, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {800, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -3872,7 +3869,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'cd\'a8\'b9\'fd\'ba\'f3\'cc\'a8\'cc\'ed\'bc\'d3\'d0\'c2\'bf\'ce\'b3\'cc\'a3\'ac\'b1\'e0\'bc\'ad\'bf\'ce\'b3\'cc\'bc\'f2\'bd\'e9\'a3\'ac\'c9\'e8\'b6\'a8\'bf\'aa\'bf\'ce\'ca\'b1\'bc\'e4}</string>
+\f0\fs64 \cf0 \'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'ba\'f3\'cc\'a8\'cc\'ed\'bc\'d3\'d0\'c2\'bf\'ce\'b3\'cc\'a3\'ac\'b1\'e0\'bc\'ad\'bf\'ce\'b3\'cc\'bc\'f2\'bd\'e9\'a3\'ac\'c9\'e8\'b6\'a8\'bf\'aa\'bf\'ce\'ca\'b1\'bc\'e4}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -7327,7 +7324,8 @@
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
 \'91\'ec\'89\'7a
-\f1 \'d6\'ca\'c1\'bf}</string>
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\'d6\'ca\'c1\'bf}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -7516,7 +7514,8 @@
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
 \'8e\'d0\'89\'ef
-\f1 \'d4\'f0\'c8\'ce\'d3\'eb\'bf\'c9\'b3\'d6\'d0\'f8\'d0\'d4\'b7\'a2\'d5\'b9}</string>
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\'d4\'f0\'c8\'ce\'d3\'eb\'bf\'c9\'b3\'d6\'d0\'f8\'d0\'d4\'b7\'a2\'d5\'b9}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -7598,7 +7597,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {256, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {320, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -7650,7 +7649,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'b7\'d6\'c0\'e0\'e4\'af\'c0\'c0\'cb\'f9\'d3\'d0\'bf\'ce\'b3\'cc}</string>
+\f0\fs64 \cf0 \'c4\'dc\'b9\'bb\'b7\'d6\'c0\'e0\'e4\'af\'c0\'c0\'cb\'f9\'d3\'d0\'bf\'ce\'b3\'cc}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -7981,7 +7980,7 @@
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 350.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 350.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8050,7 +8049,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 374.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 374.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8110,7 +8109,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 374.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 374.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8170,7 +8169,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 350.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 350.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8239,7 +8238,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 422.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 422.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8299,7 +8298,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 422.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 422.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8359,7 +8358,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 327.08108541739836}, {271.86196899414062, 23}}</string>
+							<string>{{854.53962260659932, 327.08111593497642}, {293.748046875, 23}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8419,7 +8418,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 327.08108541739836}, {271.86196899414062, 23}}</string>
+							<string>{{560.79151469644307, 327.08111593497642}, {293.74810791015625, 23}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8479,7 +8478,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 398.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 398.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8541,7 +8540,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 398.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 398.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8603,7 +8602,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 446.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 446.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8665,7 +8664,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 446.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 446.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8727,7 +8726,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 470.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 470.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8787,7 +8786,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 470.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 470.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8847,7 +8846,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 494.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 494.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8909,7 +8908,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 494.08108541739836}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 494.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -8971,7 +8970,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 518.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 518.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9031,7 +9030,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 518.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 518.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9091,7 +9090,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 542.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 542.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9153,7 +9152,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 542.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 542.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9215,7 +9214,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 566.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 566.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9275,7 +9274,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 566.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 566.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9335,7 +9334,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 590.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 590.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9397,7 +9396,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 590.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 590.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9459,7 +9458,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 614.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 614.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9519,7 +9518,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 614.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 614.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9579,7 +9578,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 638.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 638.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9641,7 +9640,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 638.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 638.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9703,7 +9702,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 662.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 662.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9763,7 +9762,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 662.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 662.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9823,7 +9822,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{832.65349894937276, 686.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{854.53962260659932, 686.08111593497642}, {293.748046875, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -9885,7 +9884,7 @@
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{560.79151469644307, 686.0810854173983}, {271.86196899414062, 24}}</string>
+							<string>{{560.79151469644307, 686.08111593497642}, {293.74810791015625, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -10282,7 +10281,8 @@
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
 \'91\'ec\'89\'7a
-\f1 \'d6\'ca\'c1\'bf}</string>
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\'d6\'ca\'c1\'bf}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -10471,7 +10471,8 @@
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
 \'8e\'d0\'89\'ef
-\f1 \'d4\'f0\'c8\'ce\'d3\'eb\'bf\'c9\'b3\'d6\'d0\'f8\'d0\'d4\'b7\'a2\'d5\'b9}</string>
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\'d4\'f0\'c8\'ce\'d3\'eb\'bf\'c9\'b3\'d6\'d0\'f8\'d0\'d4\'b7\'a2\'d5\'b9}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -17389,7 +17390,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849533129072, 141.21827318842165}, {480, 64}}</string>
+					<string>{{72.70849533129072, 141.21827318842165}, {544, 64}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -17441,7 +17442,7 @@ Select a date range\
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'b2\'e9\'d1\'af\'cc\'d8\'b6\'a8\'ca\'b1\'bc\'e4\'b6\'ce\'c4\'da\'bf\'c9\'d2\'d4\'d1\'a1\'d4\'f1\'b5\'c4\'bf\'ce\'b3\'cc}</string>
+\f0\fs64 \cf0 \'c4\'dc\'b9\'bb\'b2\'e9\'d1\'af\'cc\'d8\'b6\'a8\'ca\'b1\'bc\'e4\'b6\'ce\'c4\'da\'bf\'c9\'d2\'d4\'d1\'a1\'d4\'f1\'b5\'c4\'bf\'ce\'b3\'cc}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -17968,7 +17969,7 @@ Select a date range\
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{122.59649421423296, 631.74364022225382}, {518.10235595703125, 70}}</string>
+					<string>{{122.59649421423296, 649.74364022225382}, {518.10235595703125, 70}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -18040,7 +18041,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{128.72393372720472, 604.15661795137748}, {84, 15}}</string>
+					<string>{{128.72393372720472, 622.15661795137748}, {84, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -18122,8 +18123,8 @@ Select a date range\
 							<integer>43501</integer>
 							<key>Points</key>
 							<array>
-								<string>{550.62930663253894, 581.15826666768544}</string>
-								<string>{602.36670663253892, 551.1583179098069}</string>
+								<string>{550.62930663253894, 599.15826666768544}</string>
+								<string>{602.36670663253892, 569.1583179098069}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18160,8 +18161,8 @@ Select a date range\
 							<integer>43502</integer>
 							<key>Points</key>
 							<array>
-								<string>{550.62930663253894, 551.1583179098069}</string>
-								<string>{602.36670663253892, 581.15826666768544}</string>
+								<string>{550.62930663253894, 569.1583179098069}</string>
+								<string>{602.36670663253892, 599.15826666768544}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18193,7 +18194,7 @@ Select a date range\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{550.62930663253894, 551.15831790980701}, {51.737299999999998, 29.999542867350684}}</string>
+							<string>{{550.62930663253894, 569.15831790980701}, {51.737299999999998, 29.999542867350684}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -18255,8 +18256,8 @@ Select a date range\
 							<integer>43497</integer>
 							<key>Points</key>
 							<array>
-								<string>{485.40828220434912, 581.15835414943103}</string>
-								<string>{537.1456822043491, 551.15840539155238}</string>
+								<string>{485.40828220434912, 599.15835414943103}</string>
+								<string>{537.1456822043491, 569.15840539155238}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18293,8 +18294,8 @@ Select a date range\
 							<integer>43498</integer>
 							<key>Points</key>
 							<array>
-								<string>{485.40828220434912, 551.15840539155238}</string>
-								<string>{537.1456822043491, 581.15835414943103}</string>
+								<string>{485.40828220434912, 569.15840539155238}</string>
+								<string>{537.1456822043491, 599.15835414943103}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18326,7 +18327,7 @@ Select a date range\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{485.40828220434912, 551.15840539155261}, {51.737299999999998, 29.999542867350684}}</string>
+							<string>{{485.40828220434912, 569.15840539155261}, {51.737299999999998, 29.999542867350684}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -18388,8 +18389,8 @@ Select a date range\
 							<integer>43493</integer>
 							<key>Points</key>
 							<array>
-								<string>{420.18726535950884, 581.15826666768521}</string>
-								<string>{471.92466535950888, 551.15831790980667}</string>
+								<string>{420.18726535950884, 599.15826666768521}</string>
+								<string>{471.92466535950888, 569.15831790980667}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18426,8 +18427,8 @@ Select a date range\
 							<integer>43494</integer>
 							<key>Points</key>
 							<array>
-								<string>{420.18726535950884, 551.15831790980667}</string>
-								<string>{471.92466535950888, 581.15826666768521}</string>
+								<string>{420.18726535950884, 569.15831790980667}</string>
+								<string>{471.92466535950888, 599.15826666768521}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18459,7 +18460,7 @@ Select a date range\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{420.18726535950884, 551.15831790980678}, {51.737299999999998, 29.999542867350684}}</string>
+							<string>{{420.18726535950884, 569.15831790980678}, {51.737299999999998, 29.999542867350684}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -18521,8 +18522,8 @@ Select a date range\
 							<integer>2929</integer>
 							<key>Points</key>
 							<array>
-								<string>{354.96624093131868, 581.15835414943081}</string>
-								<string>{406.70364093131872, 551.15840539155215}</string>
+								<string>{354.96624093131868, 599.15835414943081}</string>
+								<string>{406.70364093131872, 569.15840539155215}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18559,8 +18560,8 @@ Select a date range\
 							<integer>2930</integer>
 							<key>Points</key>
 							<array>
-								<string>{354.96624093131868, 551.15840539155215}</string>
-								<string>{406.70364093131872, 581.15835414943081}</string>
+								<string>{354.96624093131868, 569.15840539155215}</string>
+								<string>{406.70364093131872, 599.15835414943081}</string>
 							</array>
 							<key>Style</key>
 							<dict>
@@ -18592,7 +18593,7 @@ Select a date range\
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{354.96624093131868, 551.15840539155238}, {51.737299999999998, 29.999542867350684}}</string>
+							<string>{{354.96624093131868, 569.15840539155238}, {51.737299999999998, 29.999542867350684}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -18644,7 +18645,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{269.47684276561989, 540.57567953205103}, {61.054347826086961, 45.790760869565226}}</string>
+					<string>{{269.47684276561989, 558.57567953205103}, {61.054347826086961, 45.790760869565226}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -18674,7 +18675,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{194.24517682963753, 542.97105856621579}, {61.054347826086961, 41}}</string>
+					<string>{{194.24517682963753, 560.97105856621579}, {61.054347826086961, 41}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -18704,7 +18705,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{127.91119169217808, 542.97105095009147}, {58.721138000488281, 51.924709320068359}}</string>
+					<string>{{127.91119169217808, 560.97105095009147}, {58.721138000488281, 51.924709320068359}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -18734,7 +18735,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{127.91119721597403, 518.64865659856366}, {252, 15}}</string>
+					<string>{{127.91119721597403, 536.64865659856366}, {252, 15}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -18806,7 +18807,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{129.53667705228997, 329.16023688704269}, {144, 25}}</string>
+					<string>{{129.53667705228997, 347.16023688704269}, {144, 25}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -18869,7 +18870,7 @@ Select a date range\
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{129.53668149834766, 367.60501798676364}, {502.59652709960938, 140.43144226074219}}</string>
+					<string>{{129.53668149834766, 385.60501798676364}, {502.59652709960938, 140.43144226074219}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -18945,7 +18946,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 							<array>
 								<dict>
 									<key>Bounds</key>
-									<string>{{135.36516655076937, 272.79361430774117}, {505.10641694068914, 9.2140346765518188}}</string>
+									<string>{{135.36516655076937, 290.79361430774117}, {505.10641694068914, 9.2140346765518188}}</string>
 									<key>Class</key>
 									<string>ShapedGraphic</string>
 									<key>FontInfo</key>
@@ -19022,7 +19023,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<array>
 														<dict>
 															<key>Bounds</key>
-															<string>{{155.25027208481603, 294.66005426764468}, {3.5427968038350333, 0.6185074343880016}}</string>
+															<string>{{155.25027208481603, 312.66005426764468}, {3.5427968038350333, 0.6185074343880016}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19057,7 +19058,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{155.25027208481603, 293.43090204179259}, {3.5427968038350333, 0.6185074343880016}}</string>
+															<string>{{155.25027208481603, 311.43090204179259}, {3.5427968038350333, 0.6185074343880016}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19092,7 +19093,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{155.25027208481598, 294.92664700428611}, {0, 0}}</string>
+															<string>{{155.25027208481598, 312.92664700428611}, {0, 0}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19148,7 +19149,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{155.25027208481598, 293.67845244010272}, {0, 0}}</string>
+															<string>{{155.25027208481598, 311.67845244010272}, {0, 0}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19211,10 +19212,10 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 															<integer>43421</integer>
 															<key>Points</key>
 															<array>
-																<string>{154.3669124606686, 293.37316075781956}</string>
-																<string>{154.37210191015788, 296.16931314766401}</string>
-																<string>{159.52868488584338, 296.16931314766401}</string>
-																<string>{159.5234954363543, 293.37316075781956}</string>
+																<string>{154.3669124606686, 311.37316075781956}</string>
+																<string>{154.37210191015788, 314.16931314766401}</string>
+																<string>{159.52868488584338, 314.16931314766401}</string>
+																<string>{159.5234954363543, 311.37316075781956}</string>
 															</array>
 															<key>Style</key>
 															<dict>
@@ -19244,7 +19245,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{154.34903769020599, 293.35411841948809}, {5.1923671129405458, 2.8151640147268768}}</string>
+															<string>{{154.34903769020599, 311.35411841948809}, {5.1923671129405458, 2.8151640147268768}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19296,7 +19297,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{153.59714411978274, 293.00152802586535}, {6.6965809418559026, 1.1331051283836362}}</string>
+															<string>{{153.59714411978274, 311.00152802586535}, {6.6965809418559026, 1.1331051283836362}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19349,7 +19350,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{154.5831395227149, 291.38968622644722}, {0.526910753877461, 0.5613282065302132}}</string>
+															<string>{{154.5831395227149, 309.38968622644722}, {0.526910753877461, 0.5613282065302132}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19402,7 +19403,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{153.59483769778768, 291.38968622644722}, {0.52692632222592828, 0.5613282065302132}}</string>
+															<string>{{153.59483769778768, 309.38968622644722}, {0.52692632222592828, 0.5613282065302132}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19455,7 +19456,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{152.82910559539366, 290.58806520958723}, {8.2324273484349213, 4.1866055067439865}}</string>
+															<string>{{152.82910559539366, 308.58806520958723}, {8.2324273484349213, 4.1866055067439865}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19515,10 +19516,10 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 															<integer>43427</integer>
 															<key>Points</key>
 															<array>
-																<string>{154.36691246066854, 291.37862938483528}</string>
-																<string>{154.36691246066854, 288.33738367259485}</string>
-																<string>{159.52349543635421, 288.33738367259485}</string>
-																<string>{159.52349543635421, 291.37862938483528}</string>
+																<string>{154.36691246066854, 309.37862938483528}</string>
+																<string>{154.36691246066854, 306.33738367259485}</string>
+																<string>{159.52349543635421, 306.33738367259485}</string>
+																<string>{159.52349543635421, 309.37862938483528}</string>
 															</array>
 															<key>Style</key>
 															<dict>
@@ -19548,7 +19549,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{154.36691246066837, 288.33738367259474}, {5.1565714435756194, 2.5427480081697293}}</string>
+															<string>{{154.36691246066837, 306.33738367259474}, {5.1565714435756194, 2.5427480081697293}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19604,7 +19605,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{150.0262262657719, 285.8035241365431}, {13.838531970977781, 12.899648547172546}}</string>
+													<string>{{150.0262262657719, 303.8035241365431}, {13.838531970977781, 12.899648547172546}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -19686,7 +19687,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<array>
 														<dict>
 															<key>Bounds</key>
-															<string>{{138.88851445112985, 293.79700635294103}, {1.3608870000809441, 2.1420664962251981}}</string>
+															<string>{{138.88851445112985, 311.79700635294103}, {1.3608870000809441, 2.1420664962251981}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19741,7 +19742,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{135.82812310574815, 288.56773453950865}, {7.3228898346424121, 7.3712277412414551}}</string>
+															<string>{{135.82812310574815, 306.56773453950865}, {7.3228898346424121, 7.3712277412414551}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -19828,7 +19829,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{132.57030203758035, 285.8035241365431}, {13.838531970977783, 12.899648547172546}}</string>
+													<string>{{132.57030203758035, 303.8035241365431}, {13.838531970977783, 12.899648547172546}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -19905,7 +19906,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{103.85211920700878, 288.56773453950865}, {5.3087145704865497, 7.3712277412414551}}</string>
+													<string>{{103.85211920700878, 306.56773453950865}, {5.3087145704865497, 7.3712277412414551}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>FontInfo</key>
@@ -19980,7 +19981,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{119.16024561275422, 288.56773453950865}, {5.3087145704865497, 7.3712277412414551}}</string>
+													<string>{{119.16024561275422, 306.56773453950865}, {5.3087145704865497, 7.3712277412414551}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>FontInfo</key>
@@ -20069,8 +20070,8 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 															<real>-1</real>
 															<key>Points</key>
 															<array>
-																<string>{114.09096070958577, 285.91636534788211}</string>
-																<string>{114.09096070958577, 298.59014719168334}</string>
+																<string>{114.09096070958577, 303.91636534788211}</string>
+																<string>{114.09096070958577, 316.59014719168334}</string>
 															</array>
 															<key>Style</key>
 															<dict>
@@ -20098,7 +20099,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{98.970634714796049, 285.8035241365431}, {29.982332726120962, 12.899648547172546}}</string>
+															<string>{{98.970634714796049, 303.8035241365431}, {29.982332726120962, 12.899648547172546}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>FontInfo</key>
@@ -20202,7 +20203,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<array>
 														<dict>
 															<key>Bounds</key>
-															<string>{{171.66680724088744, 288.56773453950865}, {6.9192659854888987, 7.3712277412414551}}</string>
+															<string>{{171.66680724088744, 306.56773453950865}, {6.9192659854888987, 7.3712277412414551}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -20237,7 +20238,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{167.48180453066433, 285.8035241365431}, {14.780186411052956, 12.899648547172546}}</string>
+															<string>{{167.48180453066433, 303.8035241365431}, {14.780186411052956, 12.899648547172546}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -20349,7 +20350,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 																	<array>
 																		<dict>
 																			<key>Bounds</key>
-																			<string>{{187.3158804780681, 288.18393928178148}, {4.8707307996600884, 6.7456562136014329}}</string>
+																			<string>{{187.3158804780681, 306.18393928178148}, {4.8707307996600884, 6.7456562136014329}}</string>
 																			<key>Class</key>
 																			<string>ShapedGraphic</string>
 																			<key>ID</key>
@@ -20410,7 +20411,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 																		</dict>
 																		<dict>
 																			<key>Bounds</key>
-																			<string>{{187.2695121161872, 289.59233861882888}, {1.4372481276770428, 0.97813050392866119}}</string>
+																			<string>{{187.2695121161872, 307.59233861882888}, {1.4372481276770428, 0.97813050392866119}}</string>
 																			<key>Class</key>
 																			<string>ShapedGraphic</string>
 																			<key>FontInfo</key>
@@ -20504,7 +20505,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 																		</dict>
 																		<dict>
 																			<key>Bounds</key>
-																			<string>{{182.94544490735623, 290.50278811841213}, {7.7225281700094524, 3.5580018908381432}}</string>
+																			<string>{{182.94544490735623, 308.50278811841213}, {7.7225281700094524, 3.5580018908381432}}</string>
 																			<key>Class</key>
 																			<string>ShapedGraphic</string>
 																			<key>FontInfo</key>
@@ -20662,7 +20663,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 																</dict>
 																<dict>
 																	<key>Bounds</key>
-																	<string>{{184.59084289078311, 288.14542461683334}, {7.551456254363063, 8.2158475865920391}}</string>
+																	<string>{{184.59084289078311, 306.14542461683334}, {7.551456254363063, 8.2158475865920391}}</string>
 																	<key>Class</key>
 																	<string>ShapedGraphic</string>
 																	<key>FontInfo</key>
@@ -20718,7 +20719,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 														</dict>
 														<dict>
 															<key>Bounds</key>
-															<string>{{178.5860732263761, 285.8035241365431}, {375.05708292692913, 12.899648547172546}}</string>
+															<string>{{178.5860732263761, 303.8035241365431}, {375.05708292692913, 12.899648547172546}}</string>
 															<key>Class</key>
 															<string>ShapedGraphic</string>
 															<key>ID</key>
@@ -20783,7 +20784,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{542.74012277667089, 288.56773453950865}, {3.9729733362078674, 4.884028076791763}}</string>
+													<string>{{542.74012277667089, 306.56773453950865}, {3.9729733362078674, 4.884028076791763}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -20851,11 +20852,11 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<integer>43455</integer>
 													<key>Points</key>
 													<array>
-														<string>{544.2369906515321, 290.34788603901842}</string>
-														<string>{547.0029672292311, 288.7950140615302}</string>
-														<string>{550.35592820469901, 292.36760244011845}</string>
-														<string>{547.0029672292311, 295.9389622807501}</string>
-														<string>{544.34423927430691, 294.545185968677}</string>
+														<string>{544.2369906515321, 308.34788603901842}</string>
+														<string>{547.0029672292311, 306.7950140615302}</string>
+														<string>{550.35592820469901, 310.36760244011845}</string>
+														<string>{547.0029672292311, 313.9389622807501}</string>
+														<string>{544.34423927430691, 312.545185968677}</string>
 													</array>
 													<key>Style</key>
 													<dict>
@@ -20896,7 +20897,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{666.78238070402938, 274.43967088925808}, {9.0094609186053312, 2.3902803050319337}}</string>
+													<string>{{666.78238070402938, 292.43967088925808}, {9.0094609186053312, 2.3902803050319337}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -20948,7 +20949,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{665.6291697064479, 273.86403942956508}, {11.239713327378047, 5.5488636775334674}}</string>
+													<string>{{665.6291697064479, 291.86403942956508}, {11.239713327378047, 5.5488636775334674}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21036,7 +21037,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{122.67857704527552, 273.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
+													<string>{{122.67857704527552, 291.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21088,7 +21089,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{121.73478916485472, 272.79361430774111}, {7.2182359366118876, 7.6897262065609313}}</string>
+													<string>{{121.73478916485472, 290.79361430774111}, {7.2182359366118876, 7.6897262065609313}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21158,7 +21159,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{111.296499820246, 273.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
+													<string>{{111.296499820246, 291.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21210,7 +21211,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{110.35271193982504, 272.79361430774111}, {7.2182359366118911, 7.6897262065609313}}</string>
+													<string>{{110.35271193982504, 290.79361430774111}, {7.2182359366118911, 7.6897262065609313}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21280,7 +21281,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{99.914480255766463, 273.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
+													<string>{{99.914480255766463, 291.24583912966631}, {5.3303891711860896, 3.3124946077386546}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21332,7 +21333,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{98.97063471479585, 272.79361430774111}, {7.2182359366118876, 7.6897262065609313}}</string>
+													<string>{{98.97063471479585, 290.79361430774111}, {7.2182359366118876, 7.6897262065609313}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21397,7 +21398,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{557.80394143257899, 285.8035241365431}, {118.49243000149728, 12.899648547172546}}</string>
+											<string>{{557.80394143257899, 303.8035241365431}, {118.49243000149728, 12.899648547172546}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>ID</key>
@@ -21484,8 +21485,8 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<integer>43472</integer>
 													<key>Points</key>
 													<array>
-														<string>{679.21976131294491, 739.69301499327025}</string>
-														<string>{680.54595396016396, 738.29493879834752}</string>
+														<string>{679.21976131294491, 757.69301499327025}</string>
+														<string>{680.54595396016396, 756.29493879834752}</string>
 													</array>
 													<key>Style</key>
 													<dict>
@@ -21523,8 +21524,8 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<integer>43473</integer>
 													<key>Points</key>
 													<array>
-														<string>{677.21317417715375, 739.69301499327003}</string>
-														<string>{680.54018790517671, 736.17571082274048}</string>
+														<string>{677.21317417715375, 757.69301499327003}</string>
+														<string>{680.54018790517671, 754.17571082274048}</string>
 													</array>
 													<key>Style</key>
 													<dict>
@@ -21562,8 +21563,8 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 													<integer>43474</integer>
 													<key>Points</key>
 													<array>
-														<string>{675.14316043649603, 739.69301499327048}</string>
-														<string>{680.54595396016521, 733.98952752848447}</string>
+														<string>{675.14316043649603, 757.69301499327048}</string>
+														<string>{680.54595396016521, 751.98952752848447}</string>
 													</array>
 													<key>Style</key>
 													<dict>
@@ -21593,7 +21594,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{91.330092910869439, 729.30572656790366}, {590.44403076171875, 11.671110590298964}}</string>
+											<string>{{91.330092910869439, 747.30572656790366}, {590.44403076171875, 11.671110590298964}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>ID</key>
@@ -21652,7 +21653,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 								</dict>
 								<dict>
 									<key>Bounds</key>
-									<string>{{91.330092910869439, 269.21826171875017}, {590.44403076171875, 33.784793814023338}}</string>
+									<string>{{91.330092910869439, 287.21826171875017}, {590.44403076171875, 33.784793814023338}}</string>
 									<key>Class</key>
 									<string>ShapedGraphic</string>
 									<key>ID</key>
@@ -21717,7 +21718,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{676.19258244429352, 723.77730576197348}, {3.7479703384697443, 3.6857981513142586}}</string>
+													<string>{{676.19258244429352, 741.77730576197348}, {3.7479703384697443, 3.6857981513142586}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>HFlip</key>
@@ -21763,7 +21764,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{674.27825218830844, 721.32022984822629}, {7.4958714842796317, 7.9858038541674619}}</string>
+													<string>{{674.27825218830844, 739.32022984822629}, {7.4958714842796317, 7.9858038541674619}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>HFlip</key>
@@ -21833,7 +21834,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 											<array>
 												<dict>
 													<key>Bounds</key>
-													<string>{{676.20411455426995, 716.21074048558899}, {3.7479357421398145, 3.685804294004039}}</string>
+													<string>{{676.20411455426995, 734.21074048558899}, {3.7479357421398145, 3.685804294004039}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21879,7 +21880,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 												</dict>
 												<dict>
 													<key>Bounds</key>
-													<string>{{674.27825218830844, 714.21436630566939}, {7.495871484279629, 7.9858652810652968}}</string>
+													<string>{{674.27825218830844, 732.21436630566939}, {7.495871484279629, 7.9858652810652968}}</string>
 													<key>Class</key>
 													<string>ShapedGraphic</string>
 													<key>ID</key>
@@ -21944,7 +21945,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{675.00477511678469, 306.07440042495756}, {6.2304530566334488, 61.023691686232866}}</string>
+											<string>{{675.00477511678469, 324.07440042495756}, {6.2304530566334488, 61.023691686232866}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>HFlip</key>
@@ -22012,7 +22013,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{674.27825218830867, 303.00305553277337}, {7.4958714842794736, 426.30267103513069}}</string>
+											<string>{{674.27825218830867, 321.00305553277337}, {7.4958714842794736, 426.30267103513069}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>HFlip</key>
@@ -22088,7 +22089,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 								</dict>
 								<dict>
 									<key>Bounds</key>
-									<string>{{91.330092910869439, 269.21826171875}, {590.44403076171875, 471.75857543945307}}</string>
+									<string>{{91.330092910869439, 287.21826171875}, {590.44403076171875, 471.75857543945307}}</string>
 									<key>Class</key>
 									<string>ShapedGraphic</string>
 									<key>ID</key>
@@ -22235,7 +22236,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'b5\'b1\'bf\'cd\'bb\'a7\'e4\'af\'c0\'c0\'c5\'e0\'d1\'b5\'bf\'ce\'b3\'cc\'be\'df\'cc\'e5\'c4\'da\'c8\'dd\'ca\'b1\'a3\'ac\'bf\'c9\'d2\'d4\'bf\'b4\'b5\'bd\'b6\'bc\'d3\'d0\'c4\'c7\'d0\'a9\'c6\'f3\'d2\'b5\'d1\'a1\'d4\'f1\'c1\'cb\'d5\'e2\'b8\'f6\'bf\'ce\'b3\'cc\'a3\'ac\'d2\'d4\'bc\'b0\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'cc\'e1\'b9\'a9\'b5\'c4\'c6\'e4\'cb\'fb\'cf\'e0\'b9\'d8\'bf\'ce\'b3\'cc}</string>
+\f0\fs64 \cf0 \'b5\'b1\'bf\'cd\'bb\'a7\'e4\'af\'c0\'c0\'c5\'e0\'d1\'b5\'bf\'ce\'b3\'cc\'c4\'da\'c8\'dd\'ca\'b1\'a3\'ac\'bf\'c9\'d2\'d4\'bf\'b4\'b5\'bd\'b6\'bc\'d3\'d0\'c4\'c7\'d0\'a9\'c6\'f3\'d2\'b5\'d1\'a1\'d4\'f1\'c1\'cb\'d5\'e2\'b8\'f6\'bf\'ce\'b3\'cc\'a3\'ac\'d2\'d4\'bc\'b0\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'cc\'e1\'b9\'a9\'b5\'c4\'c6\'e4\'cb\'fb\'cf\'e0\'b9\'d8\'bf\'ce\'b3\'cc\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -22714,14 +22715,15 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						<integer>0</integer>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red51\green51\blue51;\red0\green102\blue221;}
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraKakuProN-W3;\f2\fnil\fcharset134 STHeitiSC-Light;
+}
+{\colortbl;\red255\green255\blue255;\red51\green51\blue51;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading32
 
 \f0\b\fs24 \cf2 \
 
-\b0\fs20 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed... \
-O\cf3 More...}</string>
+\f1\b0\fs20 \'96\'7b
+\f2 \'bf\'ce\'b3\'cc\'ca\'b9\'d1\'a7\'d4\'b1\'c1\'cb\'bd\'e2\'cf\'d6\'b4\'fa\'ce\'ef\'c1\'f7\'b9\'dc\'c0\'ed\'ca\'c7\'d2\'bb\'b8\'f6\'b4\'d3\'ca\'d0\'b3\'a1\'d4\'a4\'b2\'e2\'a1\'a2\'b2\'fa\'c4\'dc\'b9\'e6\'bb\'ae\'a1\'a2\'b2\'c9\'b9\'ba\'a1\'a2\'b2\'fa\'c6\'b7\'bf\'aa\'b7\'a2\'a1\'a2\'ce\'ef\'c1\'cf\'b9\'dc\'c0\'ed\'d6\'c1\'b7\'cf\'ce\'ef\'b4\'a6\'c0\'ed\'b5\'c4\'d7\'db ...}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -22784,7 +22786,7 @@ O\cf3 More...}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{747.50580518584047, 323.66903868289353}, {36, 10}}</string>
+					<string>{{747.50580518584047, 323.66903868289353}, {96, 13}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -22815,15 +22817,17 @@ O\cf3 More...}</string>
 					</dict>
 					<key>Text</key>
 					<dict>
+						<key>Align</key>
+						<integer>0</integer>
 						<key>Pad</key>
 						<integer>0</integer>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
 \cocoascreenfonts1{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+{\colortbl;\red255\green255\blue255;\red51\green51\blue51;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading32
 
-\f0\b\fs18 \cf0 \'bf\'ce\'b3\'cc\'c3\'fb\'b3\'c6}</string>
+\f0\b\fs24 \cf2 \'ce\'ef\'c1\'f7\'ba\'cd\'b9\'a9\'d3\'a6\'c1\'b4\'b9\'dc\'c0\'ed}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -24550,15 +24554,35 @@ O\cf3 More...}</string>
 								<integer>0</integer>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;}
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset128 HiraKakuProN-W3;
+}
 {\colortbl;\red255\green255\blue255;\red51\green51\blue51;\red0\green102\blue221;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading32
 
-\f0\b\fs24 \cf2 \'bf\'ce\'b3\'cc\'c3\'fb\'b3\'c6
+\f0\b\fs24 \cf2 \'ce\'ef\'c1\'f7\'ba\'cd\'b9\'a9\'d3\'a6\'c1\'b4\'b9\'dc\'c0\'ed
+\f1 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading32
+
+\f2\b0\fs20 \cf2 \'96\'7b
+\f0 \'bf\'ce\'b3\'cc\'ca\'b9\'d1\'a7\'d4\'b1\'c1\'cb\'bd\'e2\'cf\'d6\'b4\'fa\'ce\'ef\'c1\'f7\'b9\'dc\'c0\'ed\'ca\'c7\'d2\'bb\'b8\'f6\'b4\'d3\'ca\'d0\'b3\'a1\'d4\'a4\'b2\'e2\'a1\'a2\'b2\'fa\'c4\'dc\'b9\'e6\'bb\'ae\'a1\'a2\'b2\'c9\'b9\'ba\'a1\'a2\'b2\'fa\'c6\'b7\'bf\'aa\'b7\'a2\'a1\'a2\'ce\'ef\'c1\'cf\'b9\'dc\'c0\'ed\'d6\'c1\'b7\'cf\'ce\'ef\'b4\'a6\'c0\'ed\'b5\'c4\'d7\'db
 \f1 \
 
-\b0\fs20 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed... \
-One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed... One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed... One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed... \cf3 More...}</string>
+\f2 \'8d\'87\'90\'ab\'8c\'6e
+\f0 \'cd\'b3\'a3\'ac\'b2\'a2\'d7\'a5\'d7\'a1\'ce\'ef\'c1\'f7\'b9\'dc\'c0\'ed\'d2\'aa\'cb\'d8
+\f1 - 
+\f2 \'90\'4d\'91\'a7\'93\'49\'96\'da
+\f0 \'b1\'ea\'b6\'a8\'cf\'f2\'ba\'cd\'b3\'cc
+\f2 \'8f\'98
+\f0 \'bb\'ba\'bd\'e2\'b5\'c4\'d3\'d0\'d0\'a7\'d4\'cb\'d0\'d0\'a3\'ac\'c0\'a9\'b4\'f3\'c6\'f3\'d2\'b5\'b5\'c4\'c9\'fa\'b4\'e6\'bf\'d5\'bc\'e4\'ba\'cd\'be\'ba\'d5\'f9\'d3\'c5\'ca\'c6\'a1\'a3
+\f2 \'93\'af
+\f0 \'ca\'b1\'a3\'ac\'bd\'e1\'ba\'cf\'d6\'d0\'b9\'fa\'c6\'f3\'d2\'b5\'b5\'c4\'ca\'b5\'bc\'ca\'c7\'e9\'bf\'f6\'a3\'ac\'ca\'b5\'ca\'a9\'b9\'fd\'b3\'cc\'d6\'d0\'b3\'c9\'b9\'a6\'b5\'c4\'be\'ad\'d1\'e9\'ba\'cd\'ca\'a7\'b0\'dc\'b5\'c4\'bd\'cc\'d1\'b5\'a3\'ac\'bc\'b0\'c5\'b7\'c3\'c0\'d7\'ee\'d0\'c2\'b5\'c4\'b7\'a2\'d5\'b9\'b6\'af\'cc\'ac\'a3\'ac\'cf\'b5\'cd\'b3\'b5\'c4\'bd\'e9\'c9\'dc
+\f2 \'8b\'9f
+\f0 \'d3\'a6\'c1\'b4\'b9\'dc\'c0\'ed\'cf\'e0\'b9\'d8\'d6\'aa\'ca\'b6\'ba\'cd\'b7\'e1\'b8\'bb\'b5\'c4\'b0\'b8\'c0\'fd\'a3\'ac\'ca\'b9\'c4\'fa\'c4\'dc\'b9\'bb\'b8\'d0\'ce\'f2\'b5\'bd\'b9\'ab
+\f2 \'8e\'69\'8d\'dd\'95\'a8\'97\'ac\'98\'61\'8b\'9f
+\f0 \'d3\'a6\'c1\'b4\'b9\'dc\'c0\'ed\'b7\'bd\'c3\'e6\'b5\'c4\'d3\'c5\'ca\'c6\'ba\'cd\'b2\'bb\'d7\'e3\'a3\'ac\'b4\'d3\'b6\'f8\'cc\'e1\'d0\'d1\'c4\'fa
+\f2 \'88\'c8\'8d\'c5
+\f0 \'be\'ad\'bc\'c3\'b5\'c4\'b3\'c9\'b1\'be\'c0\'b4\'b9\'dc\'c0\'ed\'c4\'fa\'b5\'c4\'b9\'a9\'d3\'a6\'c1\'b4\'a3\'ac\'d4\'cb\'d7\'f7\'c4\'fa\'b5\'c4\'ce\'ef\'c1\'f7\'cc\'e5\'cf\'b5\'a1\'a3
+\f1  \cf3 More...}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
@@ -24828,7 +24852,7 @@ One morning, when Gregor Samsa woke from troubled dreams, he found himself trans
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'be\'ab\'c6\'b7\'bf\'ce\'b3\'cc\'d4\'da\'cf\'df\'d5\'b9\'ca\'be\'a3\'ac\'b6\'d4\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'c8\'ab\'c3\'e6\'d6\'a7\'b3\'d6}</string>
+\f0\fs64 \cf0 \'be\'ab\'c6\'b7\'bf\'ce\'b3\'cc\'d4\'da\'cf\'df\'d5\'b9\'ca\'be\'a3\'ac\'c8\'ab\'c3\'e6\'d6\'a7\'b3\'d6\'d2\'c6\'b6\'af\'c9\'e8\'b1\'b8\'b5\'c4\'b7\'c3\'ce\'ca}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -28812,7 +28836,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'cd\'a8\'b9\'fd\'c9\'e7\'bd\'bb\'cd\'f8\'c2\'e7\'b6\'d4\'bf\'ce\'b3\'cc\'bd\'f8\'d0\'d0\'cd\'c6\'b9\'e3}</string>
+\f0\fs64 \cf0 \'d6\'a7\'b3\'d6\'cd\'a8\'b9\'fd\'c9\'e7\'bd\'bb\'cd\'f8\'c2\'e7\'b7\'d6\'cf\'ed\'cd\'f8\'d5\'be\'c4\'da\'c8\'dd}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -29486,7 +29510,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'bf\'cd\'bb\'a7\'b5\'e3\'bb\'f7\'b0\'b4\'c5\'a5\'a3\'ac\'cc\'ee\'d0\'b4\'bc\'f2\'b5\'a5\'b1\'ed\'b8\'f1\'a1\'a3\'d0\'e8\'c7\'f3\'bb\'e1\'b1\'bb\'cb\'cd\'b5\'bd\'ba\'f3\'cc\'a8\'d3\'c9\'bf\'cd\'bb\'a7\'b4\'fa\'b1\'ed\'b4\'a6\'c0\'ed}</string>
+\f1 \'bf\'cd\'bb\'a7\'b5\'e3\'bb\'f7\'b0\'b4\'c5\'a5\'a3\'ac\'cc\'ee\'d0\'b4\'bc\'f2\'b5\'a5\'b1\'ed\'b8\'f1\'ba\'f3\'d0\'e8\'c7\'f3\'bb\'e1\'b1\'bb\'cb\'cd\'b5\'bd\'ba\'f3\'cc\'a8\'d3\'c9\'bf\'cd\'bb\'a7\'b4\'fa\'b1\'ed\'b4\'a6\'c0\'ed}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -29840,7 +29864,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{112.72110643584112, 587.70215504232738}, {135.92222786174025, 11.9779}}</string>
+							<string>{{112.72110643584112, 515.70215504232738}, {135.92222786174025, 11.9779}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>ID</key>
@@ -29892,7 +29916,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{111.53667994608789, 587.21815504232745}, {137.85906982421872, 23.613600000000002}}</string>
+							<string>{{111.53667994608789, 515.21815504232745}, {137.85906982421872, 23.613600000000002}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FontInfo</key>
@@ -30076,7 +30100,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{111.53668149834766, 367.60501798676364}, {254.77413940429688, 140.43144226074219}}</string>
+					<string>{{111.53668149834766, 367.60501798676364}, {476.772216796875, 140.43144226074219}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -33571,13 +33595,61 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 			<key>GraphicsList</key>
 			<array>
 				<dict>
+					<key>Bounds</key>
+					<string>{{85.337841692635209, 308.90986532945408}, {134, 13}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>FitText</key>
+					<string>YES</string>
+					<key>Flow</key>
+					<string>Resize</string>
+					<key>ID</key>
+					<integer>46274</integer>
+					<key>Shape</key>
+					<string>Rectangle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Pad</key>
+						<integer>0</integer>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 \'d7\'dc\'b9\'b2\'a3\'ba30\'b8\'f6\'d0\'c2\'d0\'e8\'b5\'c8\'b4\'fd\'b4\'a6\'c0\'ed}</string>
+						<key>VerticalPad</key>
+						<integer>0</integer>
+					</dict>
+					<key>Wrap</key>
+					<string>NO</string>
+				</dict>
+				<dict>
 					<key>Class</key>
 					<string>TableGroup</string>
 					<key>Graphics</key>
 					<array>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 341.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 368.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33646,7 +33718,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 365.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 392.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33706,7 +33778,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 365.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 392.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33766,7 +33838,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 341.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 368.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33835,7 +33907,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 413.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 440.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33895,7 +33967,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 413.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 440.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -33955,7 +34027,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 318.4433122868345}, {286.03561401367188, 23}}</string>
+							<string>{{369.77131903441943, 345.4433122868345}, {286.03561401367188, 23}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34015,7 +34087,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 318.4433122868345}, {286.03579711914062, 23}}</string>
+							<string>{{83.735537174067872, 345.4433122868345}, {286.03579711914062, 23}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34075,7 +34147,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 389.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 416.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34137,7 +34209,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 389.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 416.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34199,7 +34271,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 437.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 464.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34261,7 +34333,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 437.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 464.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34323,7 +34395,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 461.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 488.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34383,7 +34455,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 461.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 488.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34443,7 +34515,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 485.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 512.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34505,7 +34577,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 485.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 512.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34567,7 +34639,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 509.4433122868345}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 536.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34627,7 +34699,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 509.4433122868345}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 536.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34687,7 +34759,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 533.4433122868345}, {286.03579711914062, 24.000030517578125}}</string>
+							<string>{{83.735537174067872, 560.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34749,7 +34821,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 533.4433122868345}, {286.03561401367188, 24.000030517578125}}</string>
+							<string>{{369.77131903441943, 560.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34811,7 +34883,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 557.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 584.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34871,7 +34943,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 557.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 584.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34931,7 +35003,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 581.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 608.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -34993,7 +35065,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 581.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 608.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35055,7 +35127,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 605.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 632.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35115,7 +35187,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 605.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 632.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35175,7 +35247,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 629.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 656.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35237,7 +35309,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 629.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 656.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35299,7 +35371,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 653.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 680.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35359,7 +35431,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 653.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 680.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35419,7 +35491,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{369.77131903441943, 677.44334280441262}, {286.03561401367188, 24}}</string>
+							<string>{{369.77131903441943, 704.4433122868345}, {286.03561401367188, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35481,7 +35553,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{83.735537174067872, 677.44334280441262}, {286.03579711914062, 24}}</string>
+							<string>{{83.735537174067872, 704.4433122868345}, {286.03579711914062, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35543,7 +35615,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 629.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 656.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35605,7 +35677,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 653.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 680.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35665,7 +35737,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 557.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 584.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35725,7 +35797,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 677.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 704.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35787,7 +35859,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 365.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 392.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35847,7 +35919,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 485.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 512.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35909,7 +35981,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 341.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 368.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -35978,7 +36050,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 413.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 440.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36038,7 +36110,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 605.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 632.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36098,7 +36170,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 318.4433122868345}, {286.03564453125, 23}}</string>
+							<string>{{655.80694830688037, 345.4433122868345}, {286.03564453125, 23}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36158,7 +36230,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 533.4433122868345}, {286.03564453125, 24.000030517578125}}</string>
+							<string>{{655.80694830688037, 560.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36220,7 +36292,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 389.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 416.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36282,7 +36354,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 509.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 536.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36342,7 +36414,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 461.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 488.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36402,7 +36474,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 581.44334280441262}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 608.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -36464,7 +36536,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{655.80694830688037, 437.4433122868345}, {286.03564453125, 24}}</string>
+							<string>{{655.80694830688037, 464.4433122868345}, {286.03564453125, 24}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
@@ -37399,15 +37471,63 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 			<key>GraphicsList</key>
 			<array>
 				<dict>
+					<key>Bounds</key>
+					<string>{{88.337841692635209, 308.90986532945408}, {146, 13}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>FitText</key>
+					<string>YES</string>
+					<key>Flow</key>
+					<string>Resize</string>
+					<key>ID</key>
+					<integer>46274</integer>
+					<key>Shape</key>
+					<string>Rectangle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Pad</key>
+						<integer>0</integer>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 \'d7\'dc\'b9\'b2\'a3\'ba15\'b8\'f6\'d0\'e8\'c7\'f3\'d5\'fd\'d4\'da\'b4\'a6\'c0\'ed\'d6\'d0}</string>
+						<key>VerticalPad</key>
+						<integer>0</integer>
+					</dict>
+					<key>Wrap</key>
+					<string>NO</string>
+				</dict>
+				<dict>
 					<key>Class</key>
 					<string>LineGraphic</string>
 					<key>ID</key>
 					<integer>46214</integer>
 					<key>Points</key>
 					<array>
-						<string>{91.664091939839551, 652.24518346055459}</string>
-						<string>{951.54441447438558, 651.24518351479333}</string>
-						<string>{951.54441447438558, 651.24518351479333}</string>
+						<string>{91.664091939839551, 679.24518346055459}</string>
+						<string>{951.54441447438558, 678.24518351479333}</string>
+						<string>{951.54441447438558, 678.24518351479333}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -37433,7 +37553,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{94.723939936240342, 538.66559680130115}, {60, 13}}</string>
+					<string>{{94.723939936240342, 565.66559680130115}, {60, 13}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -37481,7 +37601,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{91.723935174903701, 560.97002929566384}, {639.62744140625, 59.899616241455078}}</string>
+					<string>{{91.723935174903701, 587.97002929566384}, {639.62744140625, 59.899616241455078}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -37548,9 +37668,9 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 					<integer>46211</integer>
 					<key>Points</key>
 					<array>
-						<string>{91.723937357722122, 517.09074173161832}</string>
-						<string>{951.60425989226815, 516.09074178585706}</string>
-						<string>{951.60425989226815, 516.09074178585706}</string>
+						<string>{91.723937357722122, 544.09074173161832}</string>
+						<string>{951.60425989226815, 543.09074178585706}</string>
+						<string>{951.60425989226815, 543.09074178585706}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -37576,7 +37696,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{94.723939936240072, 408.00030815159971}, {60, 13}}</string>
+					<string>{{94.723939936240072, 435.00030815159971}, {60, 13}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -37624,7 +37744,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{91.723935174903431, 430.3047406459624}, {639.62744140625, 59.899616241455078}}</string>
+					<string>{{91.723935174903431, 457.3047406459624}, {639.62744140625, 59.899616241455078}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -37691,9 +37811,9 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 					<integer>46207</integer>
 					<key>Points</key>
 					<array>
-						<string>{91.723940172699855, 396.37452403386175}</string>
-						<string>{951.60426270724588, 395.37452408810049}</string>
-						<string>{951.60426270724588, 395.37452408810049}</string>
+						<string>{91.723940172699855, 423.37452403386175}</string>
+						<string>{951.60426270724588, 422.37452408810049}</string>
+						<string>{951.60426270724588, 422.37452408810049}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -37719,7 +37839,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{91.027028472466128, 351.13514236233095}, {222.20077514648438, 23.613600000000002}}</string>
+					<string>{{91.027028472466128, 378.13514236233095}, {222.20077514648438, 23.613600000000002}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -37779,7 +37899,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{91.027028472466128, 318.62548933645024}, {222.20077514648438, 23.613600000000002}}</string>
+					<string>{{91.027028472466128, 345.62548933645024}, {222.20077514648438, 23.613600000000002}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FontInfo</key>
@@ -38059,7 +38179,8 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'d0\'c2\'d0\'e8\cf3 \'c7\'f3}</string>
+\'d0\'c2\'d0\'e8\cf3 \expnd0\expndtw0\kerning0
+\'c7\'f3}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -38333,7 +38454,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'bf\'cd\'bb\'a7\'b4\'fa\'b1\'ed\'d4\'da\'ba\'cd\'bf\'cd\'bb\'a7\'bd\'d3\'b4\'a5\'b9\'fd\'b3\'cc\'d6\'d0\'a3\'ac\'b6\'d4\'c3\'bf\'b4\'ce\'b9\'b5\'cd\'a8\'b5\'c4\'c7\'e9\'bf\'f6\'d7\'f7\'bc\'c7\'c2\'bc\'d2\'d4\'b1\'b8\'bd\'ab\'c0\'b4\'b2\'e9\'d1\'af}</string>
+\f1 \'d4\'da\'ba\'cd\'bf\'cd\'bb\'a7\'bd\'d3\'b4\'a5\'b9\'fd\'b3\'cc\'d6\'d0\'a3\'ac\'b6\'d4\'c3\'bf\'b4\'ce\'b9\'b5\'cd\'a8\'b5\'c4\'c7\'e9\'bf\'f6\'d7\'f7\'bc\'c7\'c2\'bc\'d2\'d4\'b1\'b8\'bd\'ab\'c0\'b4\'b2\'e9\'d1\'af}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -41854,7 +41975,7 @@ Assertively evolve long-term high-impact vortals through visionary solutions. Pr
 							<array>
 								<dict>
 									<key>Bounds</key>
-									<string>{{201.11217772925073, 320.23786031570984}, {100.62033843994141, 34}}</string>
+									<string>{{201.112181543948, 320.23786031570984}, {100.62033081054688, 34}}</string>
 									<key>Class</key>
 									<string>ShapedGraphic</string>
 									<key>FitText</key>
@@ -42268,7 +42389,8 @@ Featured}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs24 \cf2 \expnd0\expndtw0\kerning0
-\'d0\'c2\'d0\'e8\cf3 \'c7\'f3}</string>
+\'d0\'c2\'d0\'e8\cf3 \expnd0\expndtw0\kerning0
+\'c7\'f3}</string>
 									</dict>
 									<key>VFlip</key>
 									<string>YES</string>
@@ -44796,7 +44918,7 @@ Featured}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading300
 
-\f0\fs36 \cf0 \'b0\'d1\'d3\'ca\'bc\'fe\'c8\'ba\'b7\'a2\'b8\'f8\'bf\'cd\'bb\'a7\'a1\'a3\'b1\'c8\'c8\'e7\'cb\'b5\'b8\'e6\'cb\'df\'b6\'d4\'c5\'e0\'d1\'b5\'d2\'b5\'ce\'f1\'b8\'d0\'d0\'cb\'c8\'a4\'b5\'c4\'bf\'cd\'bb\'a7\'bd\'fc\'c6\'da\'d3\'d0\'ca\'b2\'c3\'b4\'d0\'c2\'bf\'ce\'b3\'cc\'a1\'a3}</string>
+\f0\fs36 \cf0 \'b0\'d1\'d3\'ca\'bc\'fe\'c8\'ba\'b7\'a2\'b8\'f8\'c4\'bf\'b1\'ea\'c8\'cb\'c8\'ba\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -44858,7 +44980,7 @@ Featured}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading300
 
-\f0\fs36 \cf0 \'d4\'da\'d3\'ca\'bc\'fe\'cd\'c6\'cb\'cd\'cf\'b5\'cd\'b3\'c9\'cf\'d7\'ab\'d0\'b4\'d3\'ca\'bc\'fe}</string>
+\f0\fs36 \cf0 \'d7\'ab\'d0\'b4\'d3\'ca\'bc\'fe}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -47313,7 +47435,7 @@ Featured}</string>
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'ce\'aa\'cb\'f9\'d3\'d0\'cf\'d6\'d3\'d0\'bf\'cd\'bb\'a7\'bd\'a8\'c1\'a2\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ac\'cd\'a8\'b9\'fd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3\'a3\'ac\'b8\'f9\'be\'dd\'cb\'fb\'c3\'c7\'b5\'c4\'d0\'e8\'c7\'f3\'b6\'a8\'c6\'da\'d3\'d0\'d5\'eb\'b6\'d4\'d0\'d4\'b5\'c4\'b7\'a2\'cb\'cd\'d3\'ca\'bc\'fe}</string>
+\f1 \'bd\'a8\'c1\'a2\'bf\'cd\'bb\'a7\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ac\'cd\'a8\'b9\'fd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3\'a3\'ac\'b8\'f9\'be\'dd\'cb\'fb\'c3\'c7\'b5\'c4\'d0\'e8\'c7\'f3\'b6\'a8\'c6\'da\'a3\'ac\'d3\'d0\'d5\'eb\'b6\'d4\'d0\'d4\'b5\'c4\'b7\'a2\'cb\'cd\'d3\'ca\'bc\'fe\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -47431,7 +47553,7 @@ Featured}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'bf\'cd\'bb\'a7\'ca\'fd\'be\'dd\'bf\'e2\'ba\'cd\'d3\'ca\'bc\'fe\'cd\'c6\'cb\'cd\'cf\'b5\'cd\'b3}</string>
+\f0\fs64 \cf0 \'bf\'cd\'bb\'a7\'ca\'fd\'be\'dd\'bf\'e2\'ba\'cd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -47776,7 +47898,7 @@ Featured}</string>
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'cd\'a8\'b9\'fd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3\'bf\'c9\'d2\'d4\'b7\'bd\'b1\'e3\'b5\'c4\'d7\'ab\'d0\'b4\'d3\'ca\'bc\'fe\'ba\'cd\'c9\'cf\'b4\'ab\'cd\'bc\'c6\'ac\'a3\'ac\'d5\'e2\'ca\'c7\'ce\'d2\'b8\'f8 www.12wbt.com \'d7\'f6\'b5\'c4\'c4\'a3\'b0\'e5}</string>
+\f1 \'cd\'a8\'b9\'fd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3\'b7\'bd\'b1\'e3\'b5\'c4\'d7\'ab\'d0\'b4\'d3\'ca\'bc\'fe\'ba\'cd\'c9\'cf\'b4\'ab\'cd\'bc\'c6\'ac\'a3\'ac\'d5\'e2\'ca\'c7\'ce\'d2\'b8\'f8 www.12wbt.com \'d7\'f6\'b5\'c4\'c4\'a3\'b0\'e5}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -47894,7 +48016,7 @@ Featured}</string>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
 
-\f0\fs64 \cf0 \'bf\'cd\'bb\'a7\'ca\'fd\'be\'dd\'bf\'e2\'ba\'cd\'d3\'ca\'bc\'fe\'cd\'c6\'cb\'cd\'cf\'b5\'cd\'b3}</string>
+\f0\fs64 \cf0 \'bf\'cd\'bb\'a7\'ca\'fd\'be\'dd\'bf\'e2\'ba\'cd\'d3\'ca\'bc\'fe\'cf\'b5\'cd\'b3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -50159,7 +50281,7 @@ Featured}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{650.46717487825038, 682.36229616854791}, {414, 19}}</string>
+					<string>{{650.46717487825038, 655.36229616854791}, {414, 19}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -50214,7 +50336,7 @@ Featured}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{105.27591368810539, 721.35136345690432}, {414, 19}}</string>
+					<string>{{105.27591368810539, 694.35136345690432}, {414, 19}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -50269,7 +50391,7 @@ Featured}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{630.68726870208673, 327.67312787752201}, {320.0262451171875, 373.68917846679688}}</string>
+					<string>{{630.68726870208673, 300.67312787752201}, {320.0262451171875, 373.68917846679688}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -50299,7 +50421,7 @@ Featured}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{111.77592048755804, 352.87196075521666}, {463.65414428710938, 348.4903564453125}}</string>
+					<string>{{111.77592048755804, 325.87196075521666}, {463.65414428710938, 348.4903564453125}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -50329,7 +50451,7 @@ Featured}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{72.70849609375, 195.87065948093158}, {1026.001953125, 108}}</string>
+					<string>{{72.70849609375, 195.87065948093158}, {1047.9459228515625, 69}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -50389,7 +50511,7 @@ Featured}</string>
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\slleading300
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'d7\'f7\'ce\'aa\'cf\'d6\'d3\'d0\'bf\'cd\'bb\'a7\'a3\'ac\'bf\'c9\'d2\'d4\'d4\'da\'cf\'df\'d1\'af\'ce\'ca\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'d7\'a8\'bc\'d2\'cd\'c5\'b6\'d3\'a1\'a3\'ce\'d2\'d3\'c3 www.selleys.com.au \'ce\'aa\'c0\'fd\'d7\'d3\'cb\'b5\'c3\'f7\'d2\'bb\'cf\'c2\'b4\'f3\'d6\'c2\'b5\'c4\'b9\'a4\'d7\'f7\'c1\'f7\'b3\'cc\'a1\'a3\'be\'a1\'b9\'dc\'d5\'e2\'ca\'c7\'d2\'bb\'b8\'f6\'d3\'d0\'b9\'d8\'bc\'d2\'cd\'a5\'d7\'b0\'d0\'de\'b5\'c4\'cd\'f8\'d5\'be\'a3\'ac\'b5\'ab\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\'b4\'f3\'b2\'bf\'b7\'d6\'b5\'c4\'c9\'cc\'d2\'b5\'c2\'df\'bc\'ad\'a3\'ac\'bd\'f6\'d0\'e8\'d2\'aa\'b8\'f9\'be\'dd\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'b5\'c4\'c7\'e9\'bf\'f6\'d7\'f6\'d0\'a9\'d0\'a1\'b5\'c4\'d0\'de\'b8\'c4\'a1\'a3\'b5\'b1\'c8\'bb\'bd\'e7\'c3\'e6\'d2\'aa\'d6\'d8\'d0\'c2\'c9\'e8\'bc\'c6\'a1\'a3}</string>
+\f1 \'cf\'d6\'d3\'d0\'bf\'cd\'bb\'a7\'bf\'c9\'d2\'d4\'cd\'a8\'b9\'fd\'cd\'f8\'d5\'be\'bb\'f1\'b5\'c3\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'d7\'a8\'bc\'d2\'cd\'c5\'b6\'d3\'b5\'c4\'b0\'ef\'d6\'fa\'a1\'a3\'ce\'d2\'d3\'c3 www.selleys.com.au \'ce\'aa\'c0\'fd\'d7\'d3\'cb\'b5\'c3\'f7\'d2\'bb\'cf\'c2\'b4\'f3\'d6\'c2\'b5\'c4\'b9\'a4\'d7\'f7\'c1\'f7\'b3\'cc\'a1\'a3\'b5\'b1\'c8\'bb\'ce\'d2\'c3\'c7\'b5\'c4\'d7\'ee\'d6\'d5\'c4\'bf\'b5\'c4\'bb\'b9\'ca\'c7\'cf\'a3\'cd\'fb\'bf\'cd\'bb\'a7\'b4\'d3\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'b9\'ba\'c2\'f2\'c5\'e0\'d1\'b5\'bb\'f2\'d7\'c9\'d1\'af\'b7\'fe\'ce\'f1\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -51139,7 +51261,7 @@ Featured}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{715.52510789502367, 538.78765348609124}, {181, 19}}</string>
+					<string>{{713.08688391808255, 547.78765348609124}, {180, 19}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -51369,7 +51491,7 @@ Featured}</string>
 \pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\slleading300
 \ls1\ilvl0
 \f0\fs48 \cf0 {\listtext	\'95	}
-\f1 \'cf\'d6\'d3\'d0\'bf\'cd\'bb\'a7\'bf\'c9\'d2\'d4\'ba\'cd\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'d7\'a8\'bc\'d2\'ba\'cd\'c6\'e4\'cb\'fb\'bf\'cd\'bb\'a7\'b9\'b2\'cf\'ed\'b9\'a4\'d7\'f7\'d6\'d0\'b5\'c4\'d0\'c4\'b5\'c3\'ba\'cd\'b8\'d0\'ca\'dc\'a1\'a3\'ce\'d2\'d3\'c3 www.poise.com.au \'ce\'aa\'c0\'fd\'d7\'d3\'cb\'b5\'c3\'f7\'d2\'bb\'cf\'c2\'b4\'f3\'d6\'c2\'b5\'c4\'b9\'a4\'d7\'f7\'c1\'f7\'b3\'cc\'a1\'a3\'cd\'acAsk an Expert \'d2\'bb\'d1\'f9\'a3\'ac\'b5\'ab\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\'b4\'f3\'b2\'bf\'b7\'d6\'b5\'c4\'c9\'cc\'d2\'b5\'c2\'df\'bc\'ad\'a3\'ac\'bd\'f6\'d0\'e8\'d2\'aa\'b8\'f9\'be\'dd\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'b5\'c4\'c7\'e9\'bf\'f6\'d7\'f6\'d0\'a9\'d0\'a1\'b5\'c4\'d0\'de\'b8\'c4\'a1\'a3\'b5\'b1\'c8\'bb\'bd\'e7\'c3\'e6\'d2\'aa\'d6\'d8\'d0\'c2\'c9\'e8\'bc\'c6\'a1\'a3}</string>
+\f1 \'cf\'d6\'d3\'d0\'bf\'cd\'bb\'a7\'bc\'e4\'b9\'b2\'cf\'ed\'b9\'a4\'d7\'f7\'d6\'d0\'b5\'c4\'d0\'c4\'b5\'c3\'ba\'cd\'b8\'d0\'ca\'dc\'a1\'a3\'ce\'d2\'d3\'c3 www.poise.com.au \'ce\'aa\'c0\'fd\'d7\'d3\'cb\'b5\'c3\'f7\'d2\'bb\'cf\'c2\'b4\'f3\'d6\'c2\'b5\'c4\'b9\'a4\'d7\'f7\'c1\'f7\'b3\'cc\'a1\'a3\'cd\'acAsk an Expert \'d2\'bb\'d1\'f9\'a3\'ac\'b5\'ab\'ce\'d2\'c3\'c7\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\'b4\'f3\'b2\'bf\'b7\'d6\'b5\'c4\'c9\'cc\'d2\'b5\'c2\'df\'bc\'ad\'a3\'ac\'bd\'f6\'d0\'e8\'d2\'aa\'b8\'f9\'be\'dd\'b0\'ae\'bf\'cb\'cb\'bc\'c2\'d7\'b5\'c4\'c7\'e9\'bf\'f6\'d7\'f6\'d0\'a9\'d0\'a1\'b5\'c4\'d0\'de\'b8\'c4\'a1\'a3\'b5\'b1\'c8\'bb\'bd\'e7\'c3\'e6\'d2\'aa\'d6\'d8\'d0\'c2\'c9\'e8\'bc\'c6\'a1\'a3}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -51571,7 +51693,7 @@ Featured}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>20</integer>
+		<integer>18</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
