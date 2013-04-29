@@ -1172,7 +1172,7 @@ Files &amp; Information Sharing}</string>
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2013-04-28 23:45:35 +0000</string>
+	<string>2013-04-29 20:32:49 +0000</string>
 	<key>Modifier</key>
 	<string>harry</string>
 	<key>NotesVisible</key>
@@ -4085,7 +4085,7 @@ Files &amp; Information Sharing}</string>
 \ls1\ilvl0
 \f0\fs36 \cf0 {\listtext	1.	}
 \f1 \'b7\'c3\'ce\'ca
-\f0  {\field{\*\fldinst{HYPERLINK "https://sites.google.com/site/gangwangbexcellent/"}}{\fldrslt https://sites.google.com/site/gangwangbexcellent/}}\
+\f0  {\field{\*\fldinst{HYPERLINK "https://sites.google.com/site/gangwangbexcellent/"}}{\fldrslt http://test5.gang.webfactional.com/admin/pages}}   user:harry  pwd:harry\
 {\listtext	2.	}
 \f1 \'b4\'b4\'bd\'a8\'d2\'b3\'c3\'e6\'ba\'cd\'c9\'cf\'b4\'ab\'ce\'c4\'bc\'fe
 \f0 	}</string>
@@ -4292,7 +4292,7 @@ Files &amp; Information Sharing}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>2</integer>
+		<integer>3</integer>
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
