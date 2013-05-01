@@ -1,0 +1,8 @@
+@charset "utf-8";
+#sidebar li li{
+	background: url(../images/double_line.gif) repeat-x left bottom;
+	padding:0 0 8px 0px;
+}
+#sidebar ul.sub-menu, #sidebar ul ul ul{margin-left:10px;}
+#sidebar ul.sub-menu li, #sidebar ul ul ul li{ padding:0 0 0 20px; padding-bottom:8px}
+#footer ul{list-style-type:none; margin:0; padding:0; list-style-position:outside}

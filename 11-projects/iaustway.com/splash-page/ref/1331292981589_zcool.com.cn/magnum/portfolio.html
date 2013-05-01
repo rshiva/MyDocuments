@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>Magnum</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/inner.css" rel="stylesheet" type="text/css" />
+<link href="styles/prettyPhoto.css" rel="stylesheet"  type="text/css" media="screen" title="prettyPhoto" />
+<!--[if lt IE 9]>
+<link href="styles/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/fade.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//Menu
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 27,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason. 
+					 
+	/* portfolio gallery */
+	jQuery('a[data-rel]').each(function() {jQuery(this).attr('rel', jQuery(this).data('rel'));});
+	jQuery("a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'facebook',slideshow:2000});
+					 
+});
+</script>
+</head>
+<body>
+
+<div id="outer-container">
+	<div id="container">
+    	<div id="top">
+        	<div id="logo"><a href="index.html"><img src="images/logo.png" alt=""  /></a></div><!-- end #logo -->
+            <div id="nav">
+                <ul id="topnav" class="sf-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="single-product.html">Product Details</a></li>
+                            <li><a href="single.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" class="current">Portfolio</a>
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio One Column</a></li>
+                            <li><a href="portfolio2.html">Portfolio Two Column</a></li>
+                            <li><a href="portfolio3.html">Portfolio Three Column</a></li>
+                            <li><a href="portfolio4.html">Portfolio Four Column</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul><!-- #topnav -->
+            </div><!-- #nav -->	
+        </div><!-- end #top -->
+        
+        <div id="header" class="innerpage">
+        	<div class="shadow"></div>
+        	<div class="container940">
+        		<h1 class="pagetitle">Portfolio 1 Column</h1>
+                <div class="pagedesc">This can be your Tagline or something you want.</div>
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #header -->
+        
+        
+		<div id="content">
+        	<div id="main">
+            
+                <div id="ts-display-portfolio">
+                <ul id="ts-display-pf-col-1">
+                    <li>
+                        <div class="ts-display-pf-img">
+                            <a class="image" href="images/content/pf/pf1.jpg" data-rel="prettyPhoto[mixed]" >
+                            <span class="rollover"></span>
+                            <img src="images/content/pf/pf1.jpg" alt="" /></a>
+                            <span class="shadowimg540"></span>
+                        </div>
+                        <div class="ts-display-pf-text">
+                            <h2 class="posttitle colortext">Etiam tincidunt felis posuere nisl.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam eget justo mollis pellentesque. Ut consectetur velit enim. Maecenas auctor congue velit quis vestibulum. Sed vitae metus nisi, non lobortis ante.</p>
+                            <a href="#" class="button">Read More</a> <a href="#" class="button">Visit Website &rarr;</a>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                    </li>
+                    <li>
+                        <div class="ts-display-pf-img">
+                            <a class="image" href="images/content/pf/pf2.jpg" data-rel="prettyPhoto[mixed]" >
+                            <span class="rollover"></span>
+                            <img src="images/content/pf/pf2.jpg" alt="" /></a>
+                            <span class="shadowimg540"></span>
+                        </div>
+                        <div class="ts-display-pf-text">
+                            <h2 class="posttitle colortext">Fusce eget leo quis tellus. </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam eget justo mollis pellentesque. Ut consectetur velit enim. Maecenas auctor congue velit quis vestibulum. Sed vitae metus nisi, non lobortis ante.</p>
+                            <a href="#" class="button">Read More</a> <a href="#" class="button">Visit Website &rarr;</a>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                    </li>
+                    <li>
+                        <div class="ts-display-pf-img">
+                            <a class="image" href="images/content/pf/pf3.jpg" data-rel="prettyPhoto[mixed]" >
+                            <span class="rollover"></span>
+                            <img src="images/content/pf/pf3.jpg" alt="" /></a>
+                            <span class="shadowimg540"></span>
+                        </div>
+                        <div class="ts-display-pf-text">
+                            <h2 class="posttitle colortext">Pellentesque habitant morbi tristique.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam eget justo mollis pellentesque. Ut consectetur velit enim. Maecenas auctor congue velit quis vestibulum. Sed vitae metus nisi, non lobortis ante.</p>
+                            <a href="#" class="button">Read More</a> <a href="#" class="button">Visit Website &rarr;</a>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                    </li>
+                    <li>
+                        <div class="ts-display-pf-img">
+                            <a class="image" href="images/content/pf/pf4.jpg" data-rel="prettyPhoto[mixed]" >
+                            <span class="rollover"></span>
+                            <img src="images/content/pf/pf4.jpg" alt="" /></a>
+                            <span class="shadowimg540"></span>
+                        </div>
+                        <div class="ts-display-pf-text">
+                            <h2 class="posttitle colortext">Aenean ullamcorper sapien nec.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam eget justo mollis pellentesque. Ut consectetur velit enim. Maecenas auctor congue velit quis vestibulum. Sed vitae metus nisi, non lobortis ante.</p>
+                            <a href="#" class="button">Read More</a> <a href="#" class="button">Visit Website &rarr;</a>
+                        </div>
+                        <div class="ts-display-clear"></div>
+                    </li>
+                </ul>
+                </div><!-- end #ts-display-portfolio -->
+                
+                <div id="nav-below" class="navigation">
+                    <div class="nav-previous"><span class="meta-nav"><a href="#">&larr; Older Post</a></span></div>
+                    <div class="nav-next"><span class="meta-nav"><a href="#">Newer Post &rarr;</a></span></div>
+                </div><!-- #nav-below -->
+                
+            	<div class="clear"></div><!-- clear float -->
+            </div><!-- end #main -->
+		</div><!-- end #content -->
+        
+		<div id="footer">
+        <div id="footer-pattern">
+        
+			<div class="container940">
+            	<div id="footcol1">
+                	<ul>
+                    	<li class="widget-container">
+                            <h2 class="widget-title">Latest Articles</h2>
+                            <ul id="recentpostwidget">
+                                <li>
+                                    <img src="images/content/pic5.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                                <li>
+                                    <img src="images/content/pic6.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol2">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Blogroll</h2>
+                            <ul>
+                            	<li><a href="#">Vivamus hendrerit venenatis quam</a></li>
+                                <li><a href="#">Aenean congue nisl in nibh</a></li>
+                                <li><a href="#">Proin tempus tempus orci eu imperdiet</a></li>
+                                <li><a href="#">Mauris interdum</a></li>
+                                <li><a href="#">Donec id turpis at risus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol3">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Gallery</h2>
+                            <ul id="flickr">
+                            	<li><a href="#"><img src="images/content/pic7.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic8.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic9.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic10.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic11.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic12.jpg" alt="" class="frame" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol4">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">About Magnum</h2>
+                            <div class="textwidget">
+                            <p>
+                            Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et imperdiet odio magna lobortis purus. 
+                            </p>
+                            <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui. </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           
+            <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+            
+        </div><!-- end #footer-pattern -->  
+		</div><!-- end #footer -->
+        
+        <div id="after-footer">
+        	<div class="container940">
+                <div id="sn">
+                	<ul>
+                    	<li><a href="#"><img src="images/icons/fb.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/stumbleupon.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/lastfm.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/twitter.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/youtube.png" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="footertext">
+                    Copyright &copy;2012 Magnum.  All Rights Reserved.
+                </div>
+               <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #after-footer -->
+        
+	</div><!-- end #container -->
+</div><!-- end #outer-container -->
+		
+</body>
+</html>

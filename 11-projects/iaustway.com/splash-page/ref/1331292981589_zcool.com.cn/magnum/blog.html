@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>Magnum</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/inner.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<link href="styles/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//Menu
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 27,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason. 
+					 
+});
+</script>
+</head>
+<body>
+
+<div id="outer-container">
+	<div id="container">
+    	<div id="top">
+        	<div id="logo"><a href="index.html"><img src="images/logo.png" alt=""  /></a></div><!-- end #logo -->
+            <div id="nav">
+                <ul id="topnav" class="sf-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="single-product.html">Product Details</a></li>
+                            <li><a href="single.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Portfolio</a>
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio One Column</a></li>
+                            <li><a href="portfolio2.html">Portfolio Two Column</a></li>
+                            <li><a href="portfolio3.html">Portfolio Three Column</a></li>
+                            <li><a href="portfolio4.html">Portfolio Four Column</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html" class="current">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul><!-- #topnav -->
+            </div><!-- #nav -->	
+        </div><!-- end #top -->
+        
+        <div id="header" class="innerpage">
+        	<div class="shadow"></div>
+        	<div class="container940">
+        		<h1 class="pagetitle">Blog</h1>
+                <div class="pagedesc">This can be your Tagline or something you want.</div>
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #header -->
+        
+        
+		<div id="content" class="withsidebar">
+        	<div id="main">
+            	<div id="maincontent">
+                     
+                     <div class="post">
+                         <img src="images/content/post1.jpg" alt="" class="frame" />
+                         <span class="shadowimg610"></span>
+                         <div class="entry-utility">
+                            <span class="postauthor"><img src="images/icons/author.png" alt="" /><a href="#">Richard Johnson</a></span>
+                            <span class="postdate"><img src="images/icons/date.png" alt="" />January 17, 2012</span>
+                            <span class="postcomm"><img src="images/icons/comment.png" alt="" /><a href="#">0 Comment</a></span>
+                            <span class="postcat"><img src="images/icons/cat.png" alt="" /><a href="#">Site Templates</a></span>
+                         </div>
+                         <div class="entry-content">
+                         	<h2 class="posttitle"><a href="single.html">Etiam tincidunt felis posuere nisl.</a></h2>
+                            <p>Nam ac eros sit amet justo lacinia iaculis. Nam a tincidunt velit. Etiam nec diam vitae urna hendrerit placerat. In cursus placerat mauris id imperdiet.</p>
+                            <a href="single.html" class="button">Read More</a>
+                         </div>
+                         <div class="clear"></div><!-- clear float -->
+                     </div><!-- .post -->
+                     
+                     <div class="post">
+                         <img src="images/content/post2.jpg" alt="" class="frame" />
+                         <span class="shadowimg610"></span>
+                         <div class="entry-utility">
+                            <span class="postauthor"><img src="images/icons/author.png" alt="" /><a href="#">Richard Johnson</a></span>
+                            <span class="postdate"><img src="images/icons/date.png" alt="" />January 17, 2012</span>
+                            <span class="postcomm"><img src="images/icons/comment.png" alt="" /><a href="#">0 Comment</a></span>
+                            <span class="postcat"><img src="images/icons/cat.png" alt="" /><a href="#">Site Templates</a></span>
+                         </div>
+                         <div class="entry-content">
+                         	<h2 class="posttitle"><a href="single.html">Curabitur vitae semper tellus.</a></h2>
+                            <p>Nam ac eros sit amet justo lacinia iaculis. Nam a tincidunt velit. Etiam nec diam vitae urna hendrerit placerat. In cursus placerat mauris id imperdiet.</p>
+                            <a href="single.html" class="button">Read More</a>
+                         </div>
+                         <div class="clear"></div><!-- clear float -->
+                     </div><!-- .post -->
+                     
+                     <div class="post">
+                         <img src="images/content/post3.jpg" alt="" class="frame" />
+                         <span class="shadowimg610"></span>
+                         <div class="entry-utility">
+                            <span class="postauthor"><img src="images/icons/author.png" alt="" /><a href="#">Richard Johnson</a></span>
+                            <span class="postdate"><img src="images/icons/date.png" alt="" />January 17, 2012</span>
+                            <span class="postcomm"><img src="images/icons/comment.png" alt="" /><a href="#">0 Comment</a></span>
+                            <span class="postcat"><img src="images/icons/cat.png" alt="" /><a href="#">Site Templates</a></span>
+                         </div>
+                         <div class="entry-content">
+                         	<h2 class="posttitle"><a href="single.html">Nam ac eros sit amet justo.</a></h2>
+                            <p>Nam ac eros sit amet justo lacinia iaculis. Nam a tincidunt velit. Etiam nec diam vitae urna hendrerit placerat. In cursus placerat mauris id imperdiet.</p>
+                            <a href="single.html" class="button">Read More</a>
+                         </div>
+                         <div class="clear"></div><!-- clear float -->
+                     </div><!-- .post -->
+                     
+                     <div class="post">
+                         <img src="images/content/post4.jpg" alt="" class="frame" />
+                         <span class="shadowimg610"></span>
+                         <div class="entry-utility">
+                            <span class="postauthor"><img src="images/icons/author.png" alt="" /><a href="#">Richard Johnson</a></span>
+                            <span class="postdate"><img src="images/icons/date.png" alt="" />January 17, 2012</span>
+                            <span class="postcomm"><img src="images/icons/comment.png" alt="" /><a href="#">0 Comment</a></span>
+                            <span class="postcat"><img src="images/icons/cat.png" alt="" /><a href="#">Site Templates</a></span>
+                         </div>
+                         <div class="entry-content">
+                         	<h2 class="posttitle"><a href="single.html">Etiam nec diam vitae urna.</a></h2>
+                            <p>Nam ac eros sit amet justo lacinia iaculis. Nam a tincidunt velit. Etiam nec diam vitae urna hendrerit placerat. In cursus placerat mauris id imperdiet.</p>
+                            <a href="single.html" class="button">Read More</a>
+                         </div>
+                         <div class="clear"></div><!-- clear float -->
+                     </div><!-- .post -->
+                     
+                    <div id="nav-below" class="navigation">
+                        <div class="nav-previous"><span class="meta-nav"><a href="#">&larr; Older Post</a></span></div>
+                        <div class="nav-next"><span class="meta-nav"><a href="#">Newer Post &rarr;</a></span></div>
+                    </div><!-- #nav-below -->
+                    
+                     <div class="clear"></div><!-- clear float -->
+                </div><!-- end #maincontent -->
+                <div id="sidebar">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Text Widget</h2>
+                            <div class="textwidget">
+                            <span class="colortext">Cras faucibus ante ut diam</span> laoreet a congue mi aliquam. Sed interdum nisl pharetra ipsum aliquet tempus.
+                            </div>
+                        </li>
+                    	<li class="widget-container">
+                            <h2 class="widget-title">Recent Comments</h2>
+                            <ul id="recentcommentwidget">
+                                <li>
+                                    <img src="images/content/imgcomm1.jpg" alt="" class="alignleft" />
+                                    <span class="colortext">Marina Whitty</span>
+                                    <span><a href="#">Mauris interdum lectus accumsan viverra. Curabitur dictum felis.</a></span>
+                                    <span class="clear"></span>
+                                </li>
+                                <li>
+                                    <img src="images/content/imgcomm2.jpg" alt="" class="alignleft" />
+                                    <span class="colortext">Raymond Knox</span>
+                                     <span><a href="#">Mauris interdum lectus accumsan viverra. Curabitur dictum felis.</a></span>
+                                    <span class="clear"></span>
+                                </li>
+                                <li>
+                                    <img src="images/content/imgcomm3.jpg" alt="" class="alignleft" />
+                                    <span class="colortext">Aiko Takamichi</span>
+                                     <span><a href="#">Mauris interdum lectus accumsan viverra. Curabitur dictum felis.</a></span>
+                                    <span class="clear"></span>
+                                </li>
+                            </ul>
+                        </li>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Latest Post</h2>
+                            <ul>
+                            	<li><a href="#">Powerful Design by Templatesquare</a></li>
+                                <li><a href="#">How Does it Works ?</a></li>
+                                <li><a href="#">The History about Magnum</a></li>
+                                <li><a href="#">Photography Design</a></li>
+                            </ul>
+                        </li>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title">Tags</h2>
+                            <span class="tag"><span class="left"></span><span class="middle"><a href='#'>Design</a></span><span class="right"></span></span>
+                            <span class="tag"><span class="left"></span><span class="middle"><a href='#'>Site Templates</a></span><span class="right"></span></span>
+                            <span class="tag"><span class="left"></span><span class="middle"><a href='#'>Photography Design</a></span><span class="right"></span></span>
+                            <span class="tag"><span class="left"></span><span class="middle"><a href='#'>Music</a></span><span class="right"></span></span>
+                            <span class="tag"><span class="left"></span><span class="middle"><a href='#'>Wordpress</a></span><span class="right"></span></span>
+                            <div class="clear"></div>
+                        </li>
+                    	<li class="widget-container">
+                            <h2 class="widget-title">Recent Projects</h2>
+                            <ul id="recentprojectwidget">
+                                <li>
+                                    <a href="#"><img src="images/content/rp1.jpg" alt="" class="alignleft" /></a>
+                                    <span class="colortext">Project by: Andrew Saltchesse</span><br/>
+                                    <span class="date">Januari 17, 2012</span>
+                                    <span class="clear"></span>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/content/rp2.jpg" alt="" class="alignleft" /></a>
+                                    <span class="colortext">Project by: Rachel Carrisa</span><br/>
+                                    <span class="date">Januari 17, 2012</span>
+                                    <span class="clear"></span>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/content/rp3.jpg" alt="" class="alignleft" /></a>
+                                    <span class="colortext">Project by: Diana Rose</span><br/>
+                                    <span class="date">Januari 17, 2012</span>
+                                    <span class="clear"></span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- end #sidebar -->
+                
+                <div class="clear"></div><!-- clear float -->
+            </div><!-- end #main -->
+		</div><!-- end #content -->
+        
+		<div id="footer">
+        <div id="footer-pattern">
+        
+			<div class="container940">
+            	<div id="footcol1">
+                	<ul>
+                    	<li class="widget-container">
+                            <h2 class="widget-title">Latest Articles</h2>
+                            <ul id="recentpostwidget">
+                                <li>
+                                    <img src="images/content/pic5.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                                <li>
+                                    <img src="images/content/pic6.jpg" alt="" class="alignleft frame" />
+                                    <h5><a href="#">Hello World!!</a></h5>
+                                    <span>Lorem ipsum dolor sit amet...</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol2">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Blogroll</h2>
+                            <ul>
+                            	<li><a href="#">Vivamus hendrerit venenatis quam</a></li>
+                                <li><a href="#">Aenean congue nisl in nibh</a></li>
+                                <li><a href="#">Proin tempus tempus orci eu imperdiet</a></li>
+                                <li><a href="#">Mauris interdum</a></li>
+                                <li><a href="#">Donec id turpis at risus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol3">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">Gallery</h2>
+                            <ul id="flickr">
+                            	<li><a href="#"><img src="images/content/pic7.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic8.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic9.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic10.jpg" alt="" class="frame" /></a></li>
+                                <li><a href="#"><img src="images/content/pic11.jpg" alt="" class="frame" /></a></li>
+                                <li class="nomargin"><a href="#"><img src="images/content/pic12.jpg" alt="" class="frame" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footcol4">
+                	<ul>
+                        <li class="widget-container">
+                        	<h2 class="widget-title">About Magnum</h2>
+                            <div class="textwidget">
+                            <p>
+                            Nulla interdum, enim eu dictum pellentesque, ipsum elit varius purus, et imperdiet odio magna lobortis purus. 
+                            </p>
+                            <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed mauris at eros mollis ultricies vitae porta dui. </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           
+            <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+            
+        </div><!-- end #footer-pattern -->  
+		</div><!-- end #footer -->
+        
+        <div id="after-footer">
+        	<div class="container940">
+                <div id="sn">
+                	<ul>
+                    	<li><a href="#"><img src="images/icons/fb.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/stumbleupon.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/lastfm.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/twitter.png" alt="" /></a></li>
+                        <li><a href="#"><img src="images/icons/youtube.png" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="footertext">
+                    Copyright &copy;2012 Magnum.  All Rights Reserved.
+                </div>
+               <div class="clear"></div><!-- clear float -->
+            </div><!-- end container940 -->
+        </div><!-- end #after-footer -->
+        
+	</div><!-- end #container -->
+</div><!-- end #outer-container -->
+		
+</body>
+</html>
