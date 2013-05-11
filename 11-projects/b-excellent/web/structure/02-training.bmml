@@ -1,0 +1,14 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1540" measuredH="669" mockupW="1130" mockupH="612">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::SiteMap" x="720" y="119" w="-1" h="-1" measuredW="820" measuredH="550" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20%u57F9%u8BAD%u7C7B%u4E1A%u52A1%0A--%20%u57F9%u8BAD%u6D41%u7A0B%0A--%20%u7CBE%u54C1%u8BFE%u7A0B%u63A8%u8350%0A--%20%u5353%u8D8A%u8D28%u91CF%u7C7B%u57F9%u8BAD%0A---%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A----%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A-----%20......%0A--%20%u521B%u65B0%u4E0E%u53D1%u5C55%u7C7B%u57F9%u8BAD%0A---%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A----%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A-----%20......%0A--%20%u8FD0%u8425%u89E3%u51B3%u65B9%u6848%u7C7B%u57F9%u8BAD%0A---%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A----%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A-----%20......%0A--%20%u53EF%u6301%u7EED%u53D1%u5C55%u7C7B%u57F9%u8BAD%0A---%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A----%20%u5177%u4F53%u8BFE%u7A0B%u9875%0A-----%20......%0A--%20%u8BFE%u7A0B%u67E5%u8BE2</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::StickyNote" x="410" y="57" w="267" h="123" measuredW="109" measuredH="123" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%u57F9%u8BAD%u5230%u5E95%u662F%u79F0%u4E3A%u65B9%u6848%u597D%u8FD8%u662F%u79F0%u4E3A%u8BFE%u7A0B%u597D%uFF1F</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
