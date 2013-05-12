@@ -1,0 +1,108 @@
+#loginbody {
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+.menu, #login {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#adminboxall {
+    margin-top: 100px;
+    text-align: center;
+    background: #fff url(LoginImages/logbj.gif) repeat-x;
+}
+.clearbox {
+    border-top: 1px solid transparent !important;
+    margin-top: -1px !important;
+    border-top: 0;
+    margin-top: 0;
+    clear: both;
+    visibility: hidden;
+}
+.adminboxtop {
+    background: url(LoginImages/admin_top.gif) no-repeat center top;
+    height: 167px;
+}
+#adminboxmain {
+    background: url(LoginImages/admin_main.gif) no-repeat center top;
+    height: 39px;
+}
+.menu {
+    width: 460px;
+    padding-top: 6px;
+    text-align: right;
+}
+.adminboxbottom {
+    background: url(LoginImages/admin_bottom.gif) no-repeat center top;
+    height: 87px;
+}
+#login {
+    width: 550px;
+}
+#login ul, #login li {
+    display: inline;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.text, .textCode {
+    filter: glow(color=#3171c4, strength=1);
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+}
+.text {
+    width: 115px;
+}
+.textCode {
+    width: 200px;
+}
+.box1, .box2, .box3, .box4 {
+    height: 21px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 21px;
+}
+.box1, .box2, .box3, .box4 {
+    padding-left: 22px;
+}
+.box1 {
+    width: 85px;
+    background: url(LoginImages/logyh.gif) no-repeat;
+}
+.box2 {
+    width: 85px;
+    background: url(LoginImages/logmm.gif) no-repeat;
+}
+.box3 {
+    width: 85px;
+    background: url(LoginImages/loggl.gif) no-repeat;
+}
+.box4 {
+    width: 180px;
+    background: url(LoginImages/logyz.gif) no-repeat;
+}
+.box4 img {
+    margin-left: 0px;
+}
+.boxcontent, .boxcontent2 {
+    font-family: Arial, ËÎÌו;
+    height: 21px;
+    border: 0px;
+    padding: 0px;
+    background: none;
+    line-height: 21px;
+    float: left;
+}
+.boxcontent {
+    width: 72px;
+    margin: 2px 0px;
+}
+.boxcontent2 {
+    font-family: Arial, ËÎÌו;
+    width: 50px;
+    margin: 2px 10px 0px 0px;
+}

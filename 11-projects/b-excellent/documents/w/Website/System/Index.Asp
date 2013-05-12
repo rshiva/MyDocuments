@@ -1,0 +1,1 @@
+<%response.redirect "Admin_Index.Asp"%>
