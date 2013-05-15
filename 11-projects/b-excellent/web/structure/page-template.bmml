@@ -10,5 +10,10 @@
         <src>./assets/symbols.bmml#Bootstrap Grid Large</src>
       </controlProperties>
     </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::ButtonBar" x="253" y="240" w="-1" h="-1" measuredW="156" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>One%2C%20Two%2C%20Three</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
