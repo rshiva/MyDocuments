@@ -252,7 +252,7 @@
         <borderStyle>none</borderStyle>
         <color>15658734</color>
         <italic>true</italic>
-        <size>18</size>
+        <size>16</size>
         <text>%20%5Bx%5D%20%u6838%u5FC3%u80FD%u529B%0A%20%5Bx%5D%20%u6211%u4EEC%u7684%u7406%u5FF5%0A%20%5Bx%5D%20%u6211%u4EEC%u7684%u4F18%u52BF%0A%20%5Bx%5D%20%u90E8%u5206%u8BB2%u5E08/%u54A8%u8BE2%u5E08%u7B80%u4ECB%0A%20%5Bx%5D%20%u5BA2%u6237%u540D%u5F55</text>
       </controlProperties>
     </control>
@@ -267,7 +267,7 @@
         <borderStyle>none</borderStyle>
         <color>15658734</color>
         <italic>true</italic>
-        <size>18</size>
+        <size>16</size>
         <text>%20%5Bx%5D%20%u57F9%u8BAD%u6D41%u7A0B%0A%20%5Bx%5D%20%u7CBE%u54C1%u57F9%u8BAD%u8BFE%u7A0B%0A%20%5Bx%5D%20%u5353%u8D8A%u8D28%u91CF%u57F9%u8BAD%u8BFE%u7A0B%0A%20%5Bx%5D%20%u521B%u65B0%u4E0E%u53D1%u5C55%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u8FD0%u8425%u89E3%u51B3%u65B9%u6848%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u793E%u4F1A%u8D23%u4EFB%u4E0E%u53EF%u6301%u7EED%u53D1%u5C55%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u57F9%u8BAD%u8BFE%u7A0B%u67E5%u8BE2%0A%20%5Bx%5D%20%u6210%u529F%u6848%u4F8B/%u5BA2%u6237%u53CD%u9988</text>
       </controlProperties>
     </control>
@@ -277,12 +277,12 @@
         <text>%u54A8%u8BE2%u7C7B%u4E1A%u52A1</text>
       </controlProperties>
     </control>
-    <control controlID="86" controlTypeID="com.balsamiq.mockups::Tree" x="778" y="1525" w="306" h="272" measuredW="300" measuredH="272" zOrder="47" locked="false" isInGroup="-1">
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::Tree" x="778" y="1525" w="306" h="272" measuredW="300" measuredH="252" zOrder="47" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <color>15658734</color>
         <italic>true</italic>
-        <size>18</size>
+        <size>16</size>
         <text>%20%5Bx%5D%20%u9AD8%u7AEF%u5BA2%u6237%u63D0%u4F9B%u5168%u65B9%u4F4D%u89E3%u51B3%u65B9%u6848%0A%20%5Bx%5D%20%20%u7535%u5B50%u7535%u5668%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u6C7D%u8F66%u5236%u9020%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u6750%u6599%u673A%u68B0%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u822A%u7A7A%u822A%u5929%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u65B0%u80FD%u6E90%u884C%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u77F3%u6CB9%u5316%u5DE5%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u98DF%u54C1%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u5236%u836F%uFF0F%u533B%u7597%u5668%u6750%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u670D%u52A1%u884C%u4E1A%u4E1A%u6848%u4F8B</text>
       </controlProperties>
     </control>
@@ -310,7 +310,7 @@
         <borderStyle>none</borderStyle>
         <color>15658734</color>
         <italic>true</italic>
-        <size>18</size>
+        <size>16</size>
         <text>%20_%20%u5BCC%u529B%u57CE%20D9-1501%20%u5BA4%2C%20%u671D%u9633%u533A%u4E1C%u4E09%u73AF%20%0A%20_%20%u4E2D%u56FD%20%u5317%u4EAC%20100022%0A%20_%20%u7535%u8BDD%uFF1A%2886-10%29%205876%206475%20%0A%20_%20%u4F20%u771F%uFF1A%2886-10%29%205876%206474%0A%20_%20%u8054%u7CFB%u4EBA%uFF1A%u5F20%u5BB6%u8F76%20%0A%20_%20%u90AE%u7BB1%uFF1Ajack.zhang@b-excellent.com</text>
       </controlProperties>
     </control>
