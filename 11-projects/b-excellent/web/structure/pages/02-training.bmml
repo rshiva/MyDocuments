@@ -8,20 +8,20 @@
     <control controlID="4" controlTypeID="com.balsamiq.mockups::Component" x="219" y="318" w="1170" h="1512" measuredW="1170" measuredH="1512" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <override controlID="89" x="0" y="0" w="1170" h="1512"/>
-        <override controlID="89:5:3" x="300" y="0" w="70" h="1512"/>
-        <override controlID="89:5:4" x="400" y="0" w="70" h="1512"/>
-        <override controlID="89:5:8" x="800" y="0" w="70" h="1512"/>
-        <override controlID="89:5:11" x="1100" y="0" w="70" h="1512"/>
-        <override controlID="-1"/>
-        <override controlID="89:5:6" x="600" y="0" w="70" h="1512"/>
-        <override controlID="89:5:1" x="100" y="0" w="70" h="1512"/>
-        <override controlID="89:5:0" x="0" y="0" w="70" h="1512"/>
-        <override controlID="89:5:10" x="1000" y="0" w="70" h="1512"/>
         <override controlID="89:5:9" x="900" y="0" w="70" h="1512"/>
-        <override controlID="89:5:2" x="200" y="0" w="70" h="1512"/>
+        <override controlID="-1"/>
+        <override controlID="89:5:11" x="1100" y="0" w="70" h="1512"/>
         <override controlID="89:5:7" x="700" y="0" w="70" h="1512"/>
-        <override controlID="89:5:5" x="500" y="0" w="70" h="1512"/>
+        <override controlID="89:5:2" x="200" y="0" w="70" h="1512"/>
         <override controlID="89:5" x="0" y="0" w="1170" h="1512"/>
+        <override controlID="89:5:1" x="100" y="0" w="70" h="1512"/>
+        <override controlID="89:5:6" x="600" y="0" w="70" h="1512"/>
+        <override controlID="89:5:0" x="0" y="0" w="70" h="1512"/>
+        <override controlID="89:5:8" x="800" y="0" w="70" h="1512"/>
+        <override controlID="89:5:4" x="400" y="0" w="70" h="1512"/>
+        <override controlID="89:5:3" x="300" y="0" w="70" h="1512"/>
+        <override controlID="89:5:5" x="500" y="0" w="70" h="1512"/>
+        <override controlID="89:5:10" x="1000" y="0" w="70" h="1512"/>
         <src>../assets/symbols.bmml#Bootstrap%20Grid%20Large</src>
       </controlProperties>
     </control>
