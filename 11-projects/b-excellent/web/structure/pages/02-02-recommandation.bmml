@@ -156,13 +156,13 @@
         <vLines>true</vLines>
       </controlProperties>
     </control>
-    <control controlID="194" controlTypeID="com.balsamiq.mockups::Paragraph" x="219" y="527" w="856" h="211" measuredW="200" measuredH="80" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="194" controlTypeID="com.balsamiq.mockups::Paragraph" x="219" y="527" w="856" h="155" measuredW="200" measuredH="80" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <size>16</size>
-        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%0A%20%0AAn%20utinam%20semper%20tacimates%20est.%20At%20eum%20ancillae%20repudiandae%2C%20mel%20an%20elitr%20argumentum.%20Nulla%20consul%20temporibus%20est%20et.%20Tamquam%20expetenda%20assentior%20ad%20sed%2C%20eu%20laoreet%20sadipscing%20quo.%20Sit%20ei%20laudem%20persius%2C%20ea%20pri%20tota%20iisque%20imperdiet.%20Cum%20ei%20ridens%20adversarium%2C%20ut%20putant%20eruditi%20est%2C%20est%20omnes%20verear%20eleifend%20in.%0A%20%0AQui%20ex%20wisi%20maiorum.%20Scripta%20accusam%20placerat%20in%20mea%2C%20in%20has%20vulputate%20comprehensam.%20Per%20mollis%20dolorum%20an.%20Nec%20exerci%20aliquid%20volumus%20ad%2C%20suas%20sale%20graeci%20an%20has.%20Te%20eam%20quaestio%20assentior%2C%20ferri%20nulla%20vim%20cu.</text>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%0A%20%0AAn%20utinam%20semper%20tacimates%20est.%20At%20eum%20ancillae%20repudiandae%2C%20mel%20an%20elitr%20argumentum.%20Nulla%20consul%20temporibus%20est%20et.%20Tamquam%20expetenda%20assentior%20ad%20sed%2C%20eu%20laoreet%20sadipscing%20quo.%20Sit%20ei%20laudem%20persius%2C%20ea%20pri%20tota%20iisque%20imperdiet.%20Cum%20ei%20ridens%20adversarium%2C%20ut%20putant%20eruditi%20est%2C%20est%20omnes%20verear%20eleifend%20in.</text>
       </controlProperties>
     </control>
-    <control controlID="212" controlTypeID="__group__" x="183" y="765" w="897" h="224" measuredW="897" measuredH="224" zOrder="13" locked="true" isInGroup="-1">
+    <control controlID="212" controlTypeID="__group__" x="185" y="697" w="897" h="224" measuredW="897" measuredH="224" zOrder="13" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="217" y="0" w="143" h="163" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="212">
           <controlProperties>
@@ -226,94 +226,84 @@
         <control controlID="9" controlTypeID="com.balsamiq.mockups::HRule" x="212" y="58" w="685" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="212"/>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="219" controlTypeID="com.balsamiq.mockups::HRule" x="211" y="1093" w="879" h="-1" measuredW="100" measuredH="10" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>10066329</color>
-      </controlProperties>
-    </control>
-    <control controlID="243" controlTypeID="com.balsamiq.mockups::Paragraph" x="311" y="883" w="269" h="80" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>24</size>
-        <text>%u5B9E%u7528%u91C7%u8D2D%u8C08%u5224</text>
-      </controlProperties>
-    </control>
-    <control controlID="244" controlTypeID="com.balsamiq.mockups::Paragraph" x="311" y="922" w="779" h="91" measuredW="200" measuredH="80" zOrder="16" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>14</size>
-        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20</text>
-      </controlProperties>
-    </control>
-    <control controlID="245" controlTypeID="com.balsamiq.mockups::Paragraph" x="328" y="1316" w="225" h="80" measuredW="200" measuredH="80" zOrder="17" locked="false" isInGroup="-1">
-      <controlProperties>
-        <bold>true</bold>
-        <italic>true</italic>
-        <size>18</size>
-        <text>%u9009%u62E9%u4E86%u8FD9%u4E00%u8BFE%u7A0B%u7684%u4F01%u4E1A</text>
-      </controlProperties>
-    </control>
-    <control controlID="273" controlTypeID="__group__" x="519" y="1017" w="400" h="39" measuredW="400" measuredH="39" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="292" controlTypeID="__group__" x="264" y="1011" w="811" h="344" measuredW="811" measuredH="344" zOrder="14" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::IconLabel" x="0" y="0" w="64" h="-1" measuredW="64" measuredH="39" zOrder="0" locked="false" isInGroup="273">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="0" w="269" h="80" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="292">
           <controlProperties>
-            <icon>SkypeIcon%7Csmall</icon>
-            <text>Icon%20Name</text>
+            <size>24</size>
+            <text>%u5B9E%u7528%u91C7%u8D2D%u8C08%u5224</text>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::IconLabel" x="84" y="0" w="64" h="-1" measuredW="64" measuredH="39" zOrder="1" locked="false" isInGroup="273">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="2" y="40" w="809" h="157" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="292">
           <controlProperties>
-            <icon>SkypeIcon%7Csmall</icon>
-            <text>Icon%20Name</text>
+            <size>14</size>
+            <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20%0A%20%0Aappellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::IconLabel" x="168" y="0" w="64" h="-1" measuredW="64" measuredH="39" zOrder="2" locked="false" isInGroup="273">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="233" w="225" h="62" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="292">
           <controlProperties>
-            <icon>SkypeIcon%7Csmall</icon>
-            <text>Icon%20Name</text>
-          </controlProperties>
-        </control>
-        <control controlID="3" controlTypeID="com.balsamiq.mockups::IconLabel" x="252" y="0" w="64" h="-1" measuredW="64" measuredH="39" zOrder="3" locked="false" isInGroup="273">
-          <controlProperties>
-            <icon>SkypeIcon%7Csmall</icon>
-            <text>Icon%20Name</text>
-          </controlProperties>
-        </control>
-        <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="336" y="0" w="64" h="-1" measuredW="64" measuredH="39" zOrder="4" locked="false" isInGroup="273">
-          <controlProperties>
-            <icon>SkypeIcon%7Csmall</icon>
-            <text>Icon%20Name</text>
-          </controlProperties>
-        </control>
-      </groupChildrenDescriptors>
-    </control>
-    <control controlID="274" controlTypeID="__group__" x="215" y="881" w="77" h="56" measuredW="77" measuredH="56" zOrder="19" locked="false" isInGroup="-1">
-      <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="77" h="56" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="274">
-          <controlProperties>
-            <borderColor>3355443</borderColor>
-            <borderStyle>square</borderStyle>
-            <color>16777215</color>
-          </controlProperties>
-        </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="10" y="26" w="61" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="274">
-          <controlProperties>
+            <bold>true</bold>
+            <italic>true</italic>
             <size>16</size>
-            <text>%u4E3A%u671F2%u5929</text>
+            <text>%u9009%u62E9%u4E86%u8FD9%u4E00%u8BFE%u7A0B%u7684%u4F01%u4E1A</text>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="2" w="77" h="14" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="274">
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::PointyButton" x="693" y="317" w="-1" h="-1" measuredW="103" measuredH="27" zOrder="3" locked="false" isInGroup="292">
           <controlProperties>
-            <borderColor>3355443</borderColor>
-            <borderStyle>square</borderStyle>
-            <color>14540253</color>
+            <direction>center</direction>
+            <size>16</size>
+            <text>%20%20%u8BE6%u7EC6%u4FE1%u606F%20%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="200" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="4" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="284" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="5" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::IconLabel" x="368" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="6" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::IconLabel" x="452" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="7" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="536" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="8" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="209" w="794" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="292">
+          <controlProperties>
+            <color>10066329</color>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="271" w="794" h="-1" measuredW="100" measuredH="10" zOrder="10" locked="false" isInGroup="292">
+          <controlProperties>
+            <color>10066329</color>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="275" controlTypeID="com.balsamiq.mockups::PointyButton" x="311" y="1021" w="-1" h="-1" measuredW="194" measuredH="27" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="293" controlTypeID="com.balsamiq.mockups::Paragraph" x="211" y="798" w="871" h="155" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <size>16</size>
-        <text>%u9009%u62E9%u8FC7%u8FD9%u4E00%u8BFE%u7A0B%u7684%u4F01%u4E1A%20%20%20</text>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%0A%20%0AAn%20utinam%20semper%20tacimates%20est.%20At%20eum%20ancillae%20repudiandae%2C%20mel%20an%20elitr%20argumentum.%20Nulla%20consul%20temporibus%20est%20et.%20Tamquam%20expetenda%20assentior%20ad%20sed%2C%20eu%20laoreet%20sadipscing%20quo.%20Sit%20ei%20laudem%20persius%2C%20ea%20pri%20tota%20iisque%20imperdiet.%20Cum%20ei%20ridens%20adversarium%2C%20ut%20putant%20eruditi%20est%2C%20est%20omnes%20verear%20eleifend%20in.</text>
       </controlProperties>
     </control>
+    <control controlID="298" controlTypeID="com.balsamiq.mockups::HRule" x="213" y="1390" w="869" h="-1" measuredW="100" measuredH="10" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="299" controlTypeID="com.balsamiq.mockups::HRule" x="213" y="968" w="869" h="-1" measuredW="100" measuredH="10" zOrder="17" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
