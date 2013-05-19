@@ -47,16 +47,5 @@
         <text>02-03-01</text>
       </controlProperties>
     </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="522" y="474" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="8" locked="false" isInGroup="-1">
-      <controlProperties>
-        <icon>Help2Icon%7Clarge</icon>
-      </controlProperties>
-    </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::Paragraph" x="517" y="541" w="552" h="56" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1">
-      <controlProperties>
-        <size>14</size>
-        <text>%u57F9%u8BAD%u65B9%u6848%u548C%u57F9%u8BAD%u8BFE%u7A0B%u90A3%u4E2A%u8BF4%u6CD5%u66F4%u597D%u4E9B</text>
-      </controlProperties>
-    </control>
   </controls>
 </mockup>
