@@ -1,0 +1,309 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2170" measuredH="3148" mockupW="2014" mockupH="3099">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="156" y="49" w="1294" h="3099" measuredW="450" measuredH="400" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//www.b-excellent.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Component" x="211" y="316" w="1170" h="1512" measuredW="1170" measuredH="1512" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <override controlID="89" x="0" y="0" w="1170" h="1512"/>
+        <override controlID="89:5:9" x="900" y="0" w="70" h="1512"/>
+        <override controlID="-1"/>
+        <override controlID="89:5:11" x="1100" y="0" w="70" h="1512"/>
+        <override controlID="89:5:7" x="700" y="0" w="70" h="1512"/>
+        <override controlID="89:5:2" x="200" y="0" w="70" h="1512"/>
+        <override controlID="89:5" x="0" y="0" w="1170" h="1512"/>
+        <override controlID="89:5:1" x="100" y="0" w="70" h="1512"/>
+        <override controlID="89:5:6" x="600" y="0" w="70" h="1512"/>
+        <override controlID="89:5:0" x="0" y="0" w="70" h="1512"/>
+        <override controlID="89:5:8" x="800" y="0" w="70" h="1512"/>
+        <override controlID="89:5:4" x="400" y="0" w="70" h="1512"/>
+        <override controlID="89:5:3" x="300" y="0" w="70" h="1512"/>
+        <override controlID="89:5:5" x="500" y="0" w="70" h="1512"/>
+        <override controlID="89:5:10" x="1000" y="0" w="70" h="1512"/>
+        <src>../assets/symbols.bmml#Bootstrap%20Grid%20Large</src>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::ButtonBar" x="219" y="270" w="1175" h="41" measuredW="584" measuredH="30" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <size>16</size>
+        <text>%u9996%u9875%2C%20%u5173%u4E8E%u6211%u4EEC%2C%20%u57F9%u8BAD%u7C7B%u4E1A%u52A1%2C%20%u54A8%u8BE2%u7C7B%u4E1A%u52A1%2C%20%u4E13%u5BB6%u7B54%u7591%2C%20Blog%2C%20%u8054%u7CFB%u6211%u4EEC</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::SearchBox" x="1119" y="193" w="270" h="-1" measuredW="120" measuredH="25" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>search</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="223" y="325" w="-1" h="-1" measuredW="205" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>13</size>
+        <text>%u9996%u9875%2C%20%u57F9%u8BAD%u7C7B%u4E1A%u52A1%20%2C%20%u7CBE%u54C1%u8BFE%u7A0B%u63A8%u8350</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Menu" x="1119" y="553" w="270" h="-1" measuredW="150" measuredH="213" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <text>%u57F9%u8BAD%u6D41%u7A0B%0A---%0A%u7CBE%u54C1%u8BFE%u7A0B%u63A8%u8350%0A---%0A%u5353%u8D8A%u8D28%u91CF%u7C7B%u8BFE%u7A0B%0A---%0A%u8FD0%u8425%u89E3%u51B3%u65B9%u6848%u7C7B%u8BFE%u7A0B%0A---%0A%u521B%u65B0%u4E0E%u53D1%u5C55%u7C7B%u8BFE%u7A0B%0A---%0A%u793E%u4F1A%u8D23%u4EFB%u4E0E%u53EF%u6301%u7EED%u53D1%u5C55%u7C7B%u8BFE%u7A0B%0A---%0A%u8BFE%u7A0B%u67E5%u8BE2%0A---%0A%u6210%u529F%u6848%u4F8B/%u5BA2%u6237%u53CD%u9988</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Label" x="219" y="399" w="-1" h="-1" measuredW="240" measuredH="48" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>%u7CBE%u54C1%u8BFE%u7A0B%u63A8%u8350</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::HRule" x="219" y="361" w="1170" h="-1" measuredW="100" measuredH="10" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.5</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::Title" x="1119" y="526" w="-1" h="-1" measuredW="122" measuredH="19" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>%3C%3C%20%u8FD4%u56DE%u57F9%u8BAD%u4E1A%u52A1</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="__group__" x="157" y="2717" w="1294" h="422" measuredW="1294" measuredH="422" zOrder="8" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="0" y="0" w="1294" h="422" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="109">
+          <controlProperties>
+            <color>15658734</color>
+            <text/>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="62" y="33" w="-1" h="-1" measuredW="112" measuredH="36" zOrder="1" locked="false" isInGroup="109">
+          <controlProperties>
+            <size>28</size>
+            <text>%u6709%u5173%u6211%u4EEC</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Tree" x="40" y="86" w="-1" h="-1" measuredW="300" measuredH="225" zOrder="2" locked="false" isInGroup="109">
+          <controlProperties>
+            <borderStyle>none</borderStyle>
+            <color>15658734</color>
+            <italic>true</italic>
+            <size>16</size>
+            <text>%20%5Bx%5D%20%u6838%u5FC3%u80FD%u529B%0A%20%5Bx%5D%20%u6211%u4EEC%u7684%u7406%u5FF5%0A%20%5Bx%5D%20%u6211%u4EEC%u7684%u4F18%u52BF%0A%20%5Bx%5D%20%u90E8%u5206%u8BB2%u5E08/%u54A8%u8BE2%u5E08%u7B80%u4ECB%0A%20%5Bx%5D%20%u5BA2%u6237%u540D%u5F55</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="305" y="33" w="-1" h="-1" measuredW="140" measuredH="36" zOrder="3" locked="false" isInGroup="109">
+          <controlProperties>
+            <size>28</size>
+            <text>%u57F9%u8BAD%u7C7B%u4E1A%u52A1</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Tree" x="283" y="86" w="339" h="236" measuredW="300" measuredH="225" zOrder="4" locked="false" isInGroup="109">
+          <controlProperties>
+            <borderStyle>none</borderStyle>
+            <color>15658734</color>
+            <italic>true</italic>
+            <size>16</size>
+            <text>%20%5Bx%5D%20%u57F9%u8BAD%u6D41%u7A0B%0A%20%5Bx%5D%20%u7CBE%u54C1%u57F9%u8BAD%u8BFE%u7A0B%0A%20%5Bx%5D%20%u5353%u8D8A%u8D28%u91CF%u57F9%u8BAD%u8BFE%u7A0B%0A%20%5Bx%5D%20%u521B%u65B0%u4E0E%u53D1%u5C55%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u8FD0%u8425%u89E3%u51B3%u65B9%u6848%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u793E%u4F1A%u8D23%u4EFB%u4E0E%u53EF%u6301%u7EED%u53D1%u5C55%u57F9%u8BAD%u8BFE%u7A0B%20%0A%20%5Bx%5D%20%u57F9%u8BAD%u8BFE%u7A0B%u67E5%u8BE2%0A%20%5Bx%5D%20%u6210%u529F%u6848%u4F8B/%u5BA2%u6237%u53CD%u9988</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="643" y="35" w="-1" h="-1" measuredW="140" measuredH="36" zOrder="5" locked="false" isInGroup="109">
+          <controlProperties>
+            <size>28</size>
+            <text>%u54A8%u8BE2%u7C7B%u4E1A%u52A1</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Tree" x="913" y="84" w="367" h="225" measuredW="300" measuredH="225" zOrder="6" locked="false" isInGroup="109">
+          <controlProperties>
+            <borderStyle>none</borderStyle>
+            <color>15658734</color>
+            <italic>true</italic>
+            <size>16</size>
+            <text>%20_%20%u5BCC%u529B%u57CE%20D9-1501%20%u5BA4%2C%20%u671D%u9633%u533A%u4E1C%u4E09%u73AF%20%0A%20_%20%u4E2D%u56FD%20%u5317%u4EAC%20100022%0A%20_%20%u7535%u8BDD%uFF1A%2886-10%29%205876%206475%20%0A%20_%20%u4F20%u771F%uFF1A%2886-10%29%205876%206474%0A%20_%20%u8054%u7CFB%u4EBA%uFF1A%u5F20%u5BB6%u8F76%20%0A%20_%20%u90AE%u7BB1%uFF1Ajack.zhang@b-excellent.com</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Tree" x="621" y="88" w="306" h="272" measuredW="300" measuredH="252" zOrder="7" locked="false" isInGroup="109">
+          <controlProperties>
+            <borderStyle>none</borderStyle>
+            <color>15658734</color>
+            <italic>true</italic>
+            <size>16</size>
+            <text>%20%5Bx%5D%20%u9AD8%u7AEF%u5BA2%u6237%u63D0%u4F9B%u5168%u65B9%u4F4D%u89E3%u51B3%u65B9%u6848%0A%20%5Bx%5D%20%20%u7535%u5B50%u7535%u5668%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u6C7D%u8F66%u5236%u9020%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u6750%u6599%u673A%u68B0%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u822A%u7A7A%u822A%u5929%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u65B0%u80FD%u6E90%u884C%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u77F3%u6CB9%u5316%u5DE5%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u98DF%u54C1%u884C%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u5236%u836F%uFF0F%u533B%u7597%u5668%u6750%u4E1A%u6848%u4F8B%0A%20%5Bx%5D%20%20%u670D%u52A1%u884C%u4E1A%u4E1A%u6848%u4F8B</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="963" y="33" w="-1" h="-1" measuredW="112" measuredH="36" zOrder="8" locked="false" isInGroup="109">
+          <controlProperties>
+            <size>28</size>
+            <text>%u8054%u7CFB%u6211%u4EEC</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::TextInput" x="0" y="395" w="1294" h="-1" measuredW="458" measuredH="27" zOrder="9" locked="false" isInGroup="109">
+          <controlProperties>
+            <align>center</align>
+            <color>6710886</color>
+            <text>%u7231%u514B%u601D%u4F26%u4F01%u4E1A%u7BA1%u7406%u987E%u95EE%u6709%u9650%u516C%u53F8%20ICP%u590710033806%u53F7%202012%20All%20rights%20reserved.</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::HRule" x="219" y="481" w="1170" h="-1" measuredW="100" measuredH="10" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.5</backgroundAlpha>
+      </controlProperties>
+    </control>
+    <control controlID="193" controlTypeID="com.balsamiq.mockups::DataGrid" x="1548" y="594" w="622" h="387" measuredW="80" measuredH="26" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hLines>true</hLines>
+        <size>18</size>
+        <text>k%2Ck%2Ck%2C</text>
+        <vLines>true</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="194" controlTypeID="com.balsamiq.mockups::Paragraph" x="219" y="527" w="856" h="155" measuredW="200" measuredH="80" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%0A%20%0AAn%20utinam%20semper%20tacimates%20est.%20At%20eum%20ancillae%20repudiandae%2C%20mel%20an%20elitr%20argumentum.%20Nulla%20consul%20temporibus%20est%20et.%20Tamquam%20expetenda%20assentior%20ad%20sed%2C%20eu%20laoreet%20sadipscing%20quo.%20Sit%20ei%20laudem%20persius%2C%20ea%20pri%20tota%20iisque%20imperdiet.%20Cum%20ei%20ridens%20adversarium%2C%20ut%20putant%20eruditi%20est%2C%20est%20omnes%20verear%20eleifend%20in.</text>
+      </controlProperties>
+    </control>
+    <control controlID="212" controlTypeID="__group__" x="185" y="697" w="897" h="224" measuredW="897" measuredH="224" zOrder="13" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="217" y="0" w="143" h="163" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="212">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>15658734</color>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="241" y="21" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="1" locked="false" isInGroup="212">
+          <controlProperties>
+            <size>24</size>
+            <text>%u5353%u8D8A%u8D28%u91CF</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="27" y="0" w="185" h="163" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="212">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>16777215</color>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Title" x="48" y="21" w="-1" h="-1" measuredW="144" measuredH="27" zOrder="3" locked="false" isInGroup="212">
+          <controlProperties>
+            <size>24</size>
+            <text>%u8FD0%u8425%u89E3%u51B3%u65B9%u6848</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="365" y="2" w="162" h="163" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="212">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>14540253</color>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Title" x="388" y="21" w="-1" h="-1" measuredW="120" measuredH="27" zOrder="5" locked="false" isInGroup="212">
+          <controlProperties>
+            <size>24</size>
+            <text>%u521B%u65B0%u4E0E%u53D1%u5C55</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Canvas" x="531" y="2" w="282" h="163" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="212">
+          <controlProperties>
+            <borderColor>3355443</borderColor>
+            <borderStyle>square</borderStyle>
+            <color>14540253</color>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="552" y="19" w="-1" h="-1" measuredW="240" measuredH="27" zOrder="7" locked="false" isInGroup="212">
+          <controlProperties>
+            <size>24</size>
+            <text>%u793E%u4F1A%u8D23%u4EFB%u4E0E%u53EF%u6301%u7EED%u53D1%u5C55</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="61" w="871" h="163" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="212">
+          <controlProperties>
+            <borderColor>10066329</borderColor>
+            <borderStyle>none</borderStyle>
+            <color>16777215</color>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::HRule" x="212" y="58" w="685" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="212"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="292" controlTypeID="__group__" x="264" y="1011" w="811" h="344" measuredW="811" measuredH="344" zOrder="14" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="0" w="269" h="80" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="292">
+          <controlProperties>
+            <size>24</size>
+            <text>%u5B9E%u7528%u91C7%u8D2D%u8C08%u5224</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="2" y="40" w="809" h="157" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="292">
+          <controlProperties>
+            <size>14</size>
+            <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20%0A%20%0Aappellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="233" w="225" h="62" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="292">
+          <controlProperties>
+            <bold>true</bold>
+            <italic>true</italic>
+            <size>16</size>
+            <text>%u9009%u62E9%u4E86%u8FD9%u4E00%u8BFE%u7A0B%u7684%u4F01%u4E1A</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::PointyButton" x="693" y="317" w="-1" h="-1" measuredW="103" measuredH="27" zOrder="3" locked="false" isInGroup="292">
+          <controlProperties>
+            <direction>center</direction>
+            <size>16</size>
+            <text>%20%20%u8BE6%u7EC6%u4FE1%u606F%20%20</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::IconLabel" x="200" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="4" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="284" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="5" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::IconLabel" x="368" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="6" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="7" controlTypeID="com.balsamiq.mockups::IconLabel" x="452" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="7" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="536" y="225" w="64" h="-1" measuredW="64" measuredH="39" zOrder="8" locked="false" isInGroup="292">
+          <controlProperties>
+            <icon>SkypeIcon%7Csmall</icon>
+            <text>Icon%20Name</text>
+          </controlProperties>
+        </control>
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="209" w="794" h="-1" measuredW="100" measuredH="10" zOrder="9" locked="false" isInGroup="292">
+          <controlProperties>
+            <color>10066329</color>
+          </controlProperties>
+        </control>
+        <control controlID="10" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="271" w="794" h="-1" measuredW="100" measuredH="10" zOrder="10" locked="false" isInGroup="292">
+          <controlProperties>
+            <color>10066329</color>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="293" controlTypeID="com.balsamiq.mockups::Paragraph" x="211" y="798" w="871" h="155" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20quo%20recteque%20conceptam%20no%2C%20blandit%20urbanitas%20no%20sed.%20Paulo%20mandamus%20scripserit%20usu%20ex%2C%20option%20iuvaret%20sed%20cu.%20Per%20at%20tale%20discere%20qualisque%2C%20elit%20aeterno%20electram%20vix%20ei.%20Ea%20albucius%20abhorreant%20nam%2C%20cum%20ne%20nominati%20appellantur.Ei%20vero%20tractatos%20his.%20Nec%20at%20lucilius%20salutandi%20euripidis.%20Essent%20doctus%20an%20nam.%20%0A%20%0AAn%20utinam%20semper%20tacimates%20est.%20At%20eum%20ancillae%20repudiandae%2C%20mel%20an%20elitr%20argumentum.%20Nulla%20consul%20temporibus%20est%20et.%20Tamquam%20expetenda%20assentior%20ad%20sed%2C%20eu%20laoreet%20sadipscing%20quo.%20Sit%20ei%20laudem%20persius%2C%20ea%20pri%20tota%20iisque%20imperdiet.%20Cum%20ei%20ridens%20adversarium%2C%20ut%20putant%20eruditi%20est%2C%20est%20omnes%20verear%20eleifend%20in.</text>
+      </controlProperties>
+    </control>
+    <control controlID="298" controlTypeID="com.balsamiq.mockups::HRule" x="213" y="1390" w="869" h="-1" measuredW="100" measuredH="10" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="299" controlTypeID="com.balsamiq.mockups::HRule" x="213" y="968" w="869" h="-1" measuredW="100" measuredH="10" zOrder="17" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
