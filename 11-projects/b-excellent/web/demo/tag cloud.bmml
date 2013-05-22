@@ -195,5 +195,11 @@
       </controlProperties>
     </control>
     <control controlID="76" controlTypeID="com.balsamiq.mockups::CoverFlow" x="1180" y="1242" w="-1" h="-1" measuredW="493" measuredH="198" zOrder="25" locked="false" isInGroup="-1"/>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::Title" x="1015" y="1287" w="-1" h="-1" measuredW="86" measuredH="75" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>72</size>
+        <text>Or</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
