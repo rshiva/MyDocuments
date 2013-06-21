@@ -1,1 +1,0 @@
-<%Const Str_In_Data = "Free Edition"%>
